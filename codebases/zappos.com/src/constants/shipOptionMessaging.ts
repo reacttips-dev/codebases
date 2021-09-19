@@ -1,0 +1,13 @@
+export const VIP_PERK_TEXT = 'As a VIP member, all shipping options are FREE! Thanks for being a VIP!';
+export const VIP_NON_PERK_TEXT = 'FREE VIP Shipping';
+export const PRIME_PERK_TEXT = 'As a Prime member, you have more FREE shipping options to choose from.';
+export const PRIME_NON_PERK_TEXT = 'FREE Prime Shipping';
+export const HOLIDAY_PERK_TEXT = 'FREE shipping to all customers for the holidays!';
+export const HOLIDAY_NON_PERK_TEXT = 'FREE shipping to all customers for the holidays';
+export const BASE_PERK_TEXT = 'All Zappos customers get FREE Zappos Standard Shipping!';
+export const BASE_NON_PERK_TEXT = 'FREE Zappos Standard Shipping';
+export const BUSINESS_UNKNOWN_PERK_TEXT = 'We\'re experiencing shipping delays. We\'ll email when your order ships.';
+export const BUSINESS_UNKNOWN_NON_PERK_TEXT = 'Select to see delivery date';
+export const BUSINESS_UNKNOWN_NON_PERK_TEXT_WHEN_SELECTED = '';
+export const EGC_PRICE_LINE_TEXT = 'Free Delivery';
+export const BASE_FREE_SHIPPING_TEXT = 'Free Shipping';

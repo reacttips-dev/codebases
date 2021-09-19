@@ -10,6 +10,12 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ### SendBird (https://dashboard.sendbird.com)
 
+Categories: messaging
+
+### Zappos (https://www.zappos.com/)
+
+Categories: eCommerce
+
 
 ## Contribute
 
