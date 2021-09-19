@@ -1,0 +1,1 @@
+chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/ublock/js/scriptlets/subscriber.js

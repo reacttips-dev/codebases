@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Gellix';
+  font-weight: normal;
+  src: url('gellix/Gellix-Regular.eot');
+  src: url('gellix/Gellix-Regular.eot?#iefix') format('embedded-opentype'),
+    url('gellix/Gellix-Regular.woff2') format('woff2'),
+    url('gellix/Gellix-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gellix';
+  font-weight: 500;
+  src: url('gellix/Gellix-Medium.eot');
+  src: url('gellix/Gellix-Medium.eot?#iefix') format('embedded-opentype'),
+    url('gellix/Gellix-Medium.woff2') format('woff2'),
+    url('gellix/Gellix-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gellix';
+  font-weight: 600;
+  src: url('gellix/Gellix-SemiBold.eot');
+  src: url('gellix/Gellix-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('gellix/Gellix-SemiBold.woff2') format('woff2'),
+    url('gellix/Gellix-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gellix';
+  font-weight: bold;
+  src: url('gellix/Gellix-Bold.eot');
+  src: url('gellix/Gellix-Bold.eot?#iefix') format('embedded-opentype'),
+    url('gellix/Gellix-Bold.woff2') format('woff2'),
+    url('gellix/Gellix-Bold.woff') format('woff');
+}
