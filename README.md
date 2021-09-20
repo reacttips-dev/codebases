@@ -12,10 +12,11 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 * Follow tempalate: NAME (URL) - CATEGORIES / ADDED_BY, ADDED_AT. eg: Zappos (https://www.zappos.com/) - eCommerce / Cong Nguyen, 2021/09/20
 
 ### A
+* Anchor (https://anchor.fm/) - Audio / Cong Nguyen, 2021/09/20
 
 ---
 ### B
-* Bestbuy (https://bestbuy.ca) - Commerce / Cong Nguyen, 2021/09/20
+* Bestbuy (https://bestbuy.ca) - eCommerce / Cong Nguyen, 2021/09/20
 
 ---
 ### C

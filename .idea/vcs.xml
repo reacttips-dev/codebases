@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/codebases/bestbuy.ca/src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/dashboard.sendbird.com/webpack---/app" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/st-ar.cdn.postman.com" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/codebases/webpack---" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/webpack---/src" vcs="Git" />
   </component>
 </project>
