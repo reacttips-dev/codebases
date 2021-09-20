@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ArrowRightSmall (props) {
+    return React.createElement("svg",props,React.createElement("path",{"d":"M0 4h11.253M8 .5L11.5 4 8 7.5","fill":"transparent","stroke":"currentColor"}));
+}
+
+ArrowRightSmall.defaultProps = {"viewBox":"0 0 12 8"};
+
+module.exports = ArrowRightSmall;
+
+ArrowRightSmall.default = ArrowRightSmall;

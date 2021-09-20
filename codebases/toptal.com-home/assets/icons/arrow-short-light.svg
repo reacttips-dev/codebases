@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ArrowShortLight (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","stroke":"currentColor"},[React.createElement("path",{"d":"M13.242 1L1.294 12.932l11.948 11.931","key":0}),React.createElement("path",{"d":"M1.516 12.932h30.042","key":1})]));
+}
+
+ArrowShortLight.defaultProps = {"viewBox":"0 0 33 26"};
+
+module.exports = ArrowShortLight;
+
+ArrowShortLight.default = ArrowShortLight;

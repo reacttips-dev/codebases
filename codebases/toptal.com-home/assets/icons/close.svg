@@ -1,0 +1,11 @@
+var React = require('react');
+
+function Close (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"currentColor","fillRule":"evenodd"},[React.createElement("path",{"d":"M0 1l11 11 1-1L1 0z","key":0}),React.createElement("path",{"d":"M12 1L1 12l-1-1L11 0z","key":1})]));
+}
+
+Close.defaultProps = {"viewBox":"0 0 12 12"};
+
+module.exports = Close;
+
+Close.default = Close;

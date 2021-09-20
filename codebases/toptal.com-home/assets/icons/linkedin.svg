@@ -1,0 +1,11 @@
+var React = require('react');
+
+function Linkedin (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},React.createElement("path",{"d":"M11.927 11.93H9.854V8.682c0-.775-.015-1.772-1.08-1.772-1.081 0-1.246.843-1.246 1.715v3.305H5.455V5.25h1.991v.91h.027c.278-.524.955-1.079 1.966-1.079 2.1 0 2.489 1.383 2.489 3.183v3.666zM3.113 4.336c-.667 0-1.203-.54-1.203-1.205a1.203 1.203 0 112.407 0c0 .665-.54 1.205-1.204 1.205zm1.04 7.594h-2.08V5.25h2.08v6.68zM12.965 0H1.033A1.02 1.02 0 000 1.009V12.99A1.02 1.02 0 001.033 14h11.93c.57 0 1.037-.45 1.037-1.009V1.01C14 .452 13.533 0 12.963 0h.002z","id":"linkedin-a"})),React.createElement("use",{"fill":"currentColor","fillRule":"nonzero","xlinkHref":"#linkedin-a","key":1})]);
+}
+
+Linkedin.defaultProps = {"viewBox":"0 0 14 14"};
+
+module.exports = Linkedin;
+
+Linkedin.default = Linkedin;

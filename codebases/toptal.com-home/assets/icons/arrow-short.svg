@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ArrowShort (props) {
+    return React.createElement("svg",props,React.createElement("g",{"stroke":"currentColor","fill":"none","fillRule":"evenodd"},[React.createElement("path",{"d":"M1 7.698l7.5 8 7.5-8","key":0}),React.createElement("path",{"strokeLinecap":"square","d":"M8.5 14.5V1.009","key":1})]));
+}
+
+ArrowShort.defaultProps = {"viewBox":"0 0 17 17"};
+
+module.exports = ArrowShort;
+
+ArrowShort.default = ArrowShort;
