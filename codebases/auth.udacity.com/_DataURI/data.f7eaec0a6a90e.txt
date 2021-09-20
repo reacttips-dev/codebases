@@ -1,0 +1,1 @@
+chrome-extension://mddofjlammcffeigngeniglccdbfgnhh/static/css/app.css

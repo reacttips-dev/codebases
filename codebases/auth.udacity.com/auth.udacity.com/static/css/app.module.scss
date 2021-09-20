@@ -1,0 +1,43 @@
+@import '../assets/styles/shared';
+
+:global {
+  body {
+    background-color: $vds-color-white;
+  }
+
+  body * {
+    box-sizing: border-box;
+  }
+
+  a.forgot-password {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  // Tos styles for all forms.
+  .tos-blurb {
+    font-size: 14px;
+    line-height: 1.6;
+    color: $vds-color-silver;
+    max-width: 500px;
+    margin: 20px 0;
+    text-align: left;
+  }
+  body[dir='rtl'] {
+    .tos-blurb {
+      text-align: right;
+    }
+  }
+}
+
+.content {
+  padding: 40px;
+}
+
+@include mq($until: tablet) {
+  .content {
+    padding: 25px;
+  }
+}
+
+

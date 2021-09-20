@@ -1,0 +1,74 @@
+@import '../../assets/styles/shared';
+
+.tabbed-pane {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 3px 0 rgba(117, 124, 129, 0.12);
+  max-width: 620px;
+  border: 1px solid $vds-color-silver-lighter;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+}
+
+._tab {
+  flex: auto;
+  padding: $vds-spacing-2x;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  box-shadow: none;
+  border-radius: 0;
+
+  & + ._tab {
+    border-left: 1px solid $vds-color-silver-lighter;
+  }
+
+  &:hover,
+  &:focus {
+    background: $vds-color-white !important;
+  }
+}
+
+.tab {
+  composes: _tab;
+  cursor: pointer;
+  background: $vds-color-silver-lightest;
+  border-bottom: 1px solid $vds-color-silver-lighter;
+  font-weight: 600;
+  color: $vds-color-silver;
+}
+
+.tab-selected {
+  composes: _tab;
+  cursor: default;
+  background: $vds-color-white;
+  font-weight: bold;
+  color: $vds-color-slate;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.content {
+  background: $vds-color-white;
+  padding: 40px 60px;
+}
+
+@include mq($until: tablet) {
+  .content {
+    padding: 30px;
+  }
+}
+
+body[dir='rtl'] {
+  ._tab + ._tab {
+    border-left: 0;
+    border-right: 1px solid $vds-color-silver-lighter;
+  }
+}

@@ -6,13 +6,14 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ## Index
 
-**Notes:** 
+**Notes:**
 * Before you submit a PR to add a codebase to this repo, you must add it to index
 * Try to keep these items bellow in alphabet sort
 * Follow tempalate: NAME (URL) - CATEGORIES / ADDED_BY, ADDED_AT. eg: Zappos (https://www.zappos.com/) - eCommerce / Cong Nguyen, 2021/09/20
 
 ### A
 * Anchor (https://anchor.fm/) - Audio / Cong Nguyen, 2021/09/20
+* Auth Udacity - (https://auth.udacity.com/) - education / Nguy Thang, 2021/09/20
 
 ---
 ### B

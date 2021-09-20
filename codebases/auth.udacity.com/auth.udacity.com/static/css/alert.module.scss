@@ -1,0 +1,28 @@
+@import '../../assets/styles/shared';
+
+._alert {
+  padding: 20px 25px;
+  border-radius: 2px;
+  color: $vds-color-white;
+  text-align: left;
+}
+
+.success {
+  composes: _alert;
+  background-color: $vds-color-green;
+}
+
+.error {
+  composes: _alert;
+  background-color: $vds-color-red;
+}
+
+.hidden {
+  display: none;
+}
+
+body[dir='rtl'] {
+  ._alert {
+    text-align: right;
+  }
+}

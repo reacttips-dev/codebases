@@ -1,0 +1,25 @@
+@import '../../assets/styles/shared';
+
+.age-modal {
+  max-width: 670px;
+  padding-left: 20px;
+  a {
+    text-decoration: underline;
+    font-weight: 400;
+  }
+}
+
+.description {
+  background: $vds-color-white;
+  text-align: left;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: $vds-color-black;
+  margin: 40px 10px 40px 0;
+}
+
+@include mq($from: tablet) {
+  .description {
+    margin: 50px 30px;
+  }
+}

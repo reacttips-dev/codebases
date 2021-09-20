@@ -1,0 +1,30 @@
+@import '../../assets/styles/shared';
+
+.alerts {
+  margin-bottom: 20px;
+
+  & > div + div {
+    margin-top: 20px;
+  }
+}
+
+.primary-button {
+  width: 100%;
+}
+
+.error {
+  color: $vds-color-red;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.form {
+  margin: 0px 0 30px;
+  color: $vds-color-silver-lightest;
+}
+
+@include mq($until: tablet) {
+  .header {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../assets/styles/shared';
+
+.contain {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 80%;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: $vds-color-silver-lightest;
+  border: none;
+  margin: 20px 0;
+}
+
+.text {
+  margin: 0 10px;
+  transform: translateY(-3px);
+  min-width: 32px;
+}
