@@ -1,0 +1,1 @@
+module.exports.AttachmentTypes = ['computer', 'trello', 'link', 'google-drive', 'dropbox', 'box', 'onedrive'];

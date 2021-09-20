@@ -1,0 +1,13 @@
+import api from "!../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js";
+            import content from "!!../../../../../node_modules/css-loader/dist/cjs.js??ref--8-1!../../../../../node_modules/postcss-loader/dist/cjs.js??ref--8-2!../../../../../node_modules/less-loader/dist/cjs.js??ref--8-3!./up-next-section.less";
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+export default content.locals || {};
