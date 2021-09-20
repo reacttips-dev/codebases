@@ -20,7 +20,7 @@ Categories: eCommerce
 
 Categories: education
 
-### Classroom Udacity (https://toptal.com) - Homepage
+### Toptal Homepage (https://toptal.com)
 
 Categories: freelance
 
