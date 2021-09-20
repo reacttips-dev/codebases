@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ArrowRightLong (props) {
+    return React.createElement("svg",props,React.createElement("path",{"fill":"transparent","stroke":"currentColor","d":"M22.75.594L27.125 4.5 22.75 8.406M27.125 4.5H0"}));
+}
+
+ArrowRightLong.defaultProps = {"viewBox":"0 0 28 9"};
+
+module.exports = ArrowRightLong;
+
+ArrowRightLong.default = ArrowRightLong;

@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ToptalLogo (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},[React.createElement("filter",{"id":"a","height":"114.8%","width":"120.1%","x":"-10.1%","y":"-3.7%","key":0},[React.createElement("feOffset",{"dy":"1","in":"SourceAlpha","result":"shadowOffsetOuter1","key":0}),React.createElement("feGaussianBlur",{"in":"shadowOffsetOuter1","result":"shadowBlurOuter1","stdDeviation":".5","key":1}),React.createElement("feColorMatrix",{"in":"shadowBlurOuter1","values":"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0","key":2})]),React.createElement("path",{"id":"b","d":"m19.94 11.657-5.59-5.355a3.564 3.564 0 0 0 -.144-.134l-6.409-6.143-2.823 2.685 4.129 3.953-9.062 8.64 5.59 5.356c.078.074.156.148.228.213l6.368 6.103 2.787-2.655-4.165-3.993 9.092-8.67zm-11.613 5.717a.425.425 0 0 1 -.25 0c-.082-.025-.15-.06-.294-.203l-1.643-1.575c-.145-.14-.186-.208-.207-.288a.374.374 0 0 1 0-.238c.026-.079.062-.143.212-.282l5.176-4.94c.145-.138.218-.178.3-.197a.425.425 0 0 1 .25 0c.082.024.15.06.294.203l1.643 1.575c.145.139.186.208.207.288a.374.374 0 0 1 0 .237c-.026.08-.062.144-.212.283l-5.176 4.939c-.15.139-.223.178-.3.198z","key":1})]),React.createElement("g",{"fill":"none","key":1},[React.createElement("g",{"transform":"translate(1)","key":0},[React.createElement("use",{"fill":"#000","filter":"url(#a)","xlinkHref":"#b","key":0}),React.createElement("use",{"fill":"#fff","xlinkHref":"#b","key":1})]),React.createElement("path",{"d":"m18.128 1.303c0-.347.124-.644.383-.892.26-.248.57-.371.927-.371.363 0 .674.123.933.371s.389.545.389.892c0 .352-.13.644-.389.887-.26.247-.57.366-.933.366a1.28 1.28 0 0 1 -.927-.366 1.16 1.16 0 0 1 -.383-.887zm.217 0c0 .292.104.545.316.748.213.203.472.307.783.307.305 0 .564-.104.777-.307a1.01 1.01 0 0 0 .32-.748c0-.292-.108-.545-.32-.748a1.069 1.069 0 0 0 -.777-.312c-.306 0-.565.104-.778.312a.995.995 0 0 0 -.32.748zm1.41.689-.353-.6h-.238v.6h-.218v-1.378h.586c.29 0 .46.164.46.392 0 .193-.15.337-.352.376l.358.61h-.244zm-.592-1.194v.416h.337c.186 0 .28-.07.28-.208 0-.144-.094-.213-.28-.213z","fill":"#fff","key":1})])]);
+}
+
+ToptalLogo.defaultProps = {"viewBox":"0 0 22 29"};
+
+module.exports = ToptalLogo;
+
+ToptalLogo.default = ToptalLogo;

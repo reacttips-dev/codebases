@@ -1,0 +1,11 @@
+var React = require('react');
+
+function Play (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","fillRule":"evenodd"},[React.createElement("circle",{"fill":"#FFF","opacity":".7","cx":"34","cy":"34","r":"34","key":0}),React.createElement("path",{"d":"M27.55 47a.7.7 0 0 1-.24-.04c-.19-.07-.31-.22-.31-.38V22.42c0-.16.12-.31.31-.38a.7.7 0 0 1 .59.05l19.9 12.09c.12.07.2.2.2.32 0 .13-.08.25-.2.32L27.9 46.91c-.1.06-.22.09-.35.09z","fill":"#204ECF","key":1})]));
+}
+
+Play.defaultProps = {"viewBox":"0 0 68 68"};
+
+module.exports = Play;
+
+Play.default = Play;

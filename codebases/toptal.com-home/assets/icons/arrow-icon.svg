@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ArrowIcon (props) {
+    return React.createElement("svg",props,React.createElement("g",{"stroke":"currentColor","fill":"none","fillRule":"evenodd"},React.createElement("path",{"d":"M0 3.607h11.253M8 .107l3.5 3.5-3.5 3.5"})));
+}
+
+ArrowIcon.defaultProps = {"viewBox":"0 0 12 8"};
+
+module.exports = ArrowIcon;
+
+ArrowIcon.default = ArrowIcon;

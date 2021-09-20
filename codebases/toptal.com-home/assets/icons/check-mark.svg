@@ -1,0 +1,11 @@
+var React = require('react');
+
+function CheckMark (props) {
+    return React.createElement("svg",props,React.createElement("path",{"d":"M1 8l4.5 4.5L15 0","stroke":"currentColor","fill":"none"}));
+}
+
+CheckMark.defaultProps = {"viewBox":"0 0 16 13"};
+
+module.exports = CheckMark;
+
+CheckMark.default = CheckMark;

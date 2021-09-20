@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ChevronRightLarge (props) {
+    return React.createElement("svg",props,React.createElement("path",{"d":"m.707.707 13.678 13.678-13.678 13.677","fill":"none","stroke":"currentColor"}));
+}
+
+ChevronRightLarge.defaultProps = {"viewBox":"0 0 15 29"};
+
+module.exports = ChevronRightLarge;
+
+ChevronRightLarge.default = ChevronRightLarge;

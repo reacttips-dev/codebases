@@ -1,0 +1,11 @@
+var React = require('react');
+
+function Link (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},React.createElement("path",{"d":"M1 15V1h6v1H2v12h12V9h1v6H1zM15 1v5h-1V2.706L8.5 8.207 7.793 7.5 13.292 2H10V1h5z","id":"vertical-tab-link-a"})),React.createElement("g",{"transform":"translate(-1 -1)","fill":"none","fillRule":"evenodd","key":1},[React.createElement("mask",{"id":"vertical-tab-link-b","fill":"#fff","key":0},React.createElement("use",{"xlinkHref":"#vertical-tab-link-a"})),React.createElement("use",{"fill":"#000","fillRule":"nonzero","xlinkHref":"#vertical-tab-link-a","key":1}),React.createElement("g",{"mask":"url(#vertical-tab-link-b)","fill":"currentColor","key":2},React.createElement("path",{"d":"M0 0h16v16H0z"}))])]);
+}
+
+Link.defaultProps = {"viewBox":"0 0 14 14"};
+
+module.exports = Link;
+
+Link.default = Link;
