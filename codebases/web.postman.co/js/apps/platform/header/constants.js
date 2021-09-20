@@ -1,0 +1,1 @@
+export const SIGNED_OUT_HEADER_BREAKPOINT = 975;

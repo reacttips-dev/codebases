@@ -61,6 +61,8 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### P
+### Postman Web (https://web.postman.co) - Cong Nguyen, 2021/09/20
+Categories: other
 
 ---
 ### Q
@@ -71,12 +73,12 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ---
 ### S
 ### SendBird (https://dashboard.sendbird.com) - Cong Nguyen, 2021/09/20
-**Categories**: messaging
+Categories: messaging
 
 ---
 ### T
 ### Toptal Homepage (https://toptal.com) - Nguy Thang, 2021/09/20
-**Categories**: freelance
+Categories: freelance
 
 ---
 ### U
@@ -96,7 +98,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ---
 ### Z
 ### Zappos (https://www.zappos.com/) - Cong Nguyen, 2021/09/20
-**Categories**: eCommerce
+Categories: eCommerce
 
 
 ## Contribute

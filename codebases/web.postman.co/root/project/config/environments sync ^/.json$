@@ -1,0 +1,39 @@
+var map = {
+	"./default/browser/base.json": 3105,
+	"./default/browser/beta.json": 3109,
+	"./default/browser/dev.json": 3110,
+	"./default/browser/prod.json": 3111,
+	"./default/browser/stage.json": 3112,
+	"./default/desktop/base.json": 3106,
+	"./default/desktop/beta.json": 3113,
+	"./default/desktop/canary.json": 3114,
+	"./default/desktop/dev.json": 3115,
+	"./default/desktop/prod.json": 3116,
+	"./default/desktop/stage.json": 3117,
+	"./default/desktop/test.json": 3118,
+	"./gw/browser/base.json": 3107,
+	"./gw/browser/beta.json": 3119,
+	"./gw/browser/dev.json": 3120,
+	"./gw/browser/prod.json": 3121,
+	"./gw/browser/stage.json": 3122
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 3108;
