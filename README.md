@@ -76,6 +76,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### T
+* Telegram (https://web.telegram.org) - Messaging / Cong Nguyen, 2021/09/20
 * Toptal Homepage (https://toptal.com) - freelance / Nguy Thang, 2021/09/20
 
 ---
