@@ -6,9 +6,8 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ## Index
 
-> NOTE: Before you submit a PR to add a codebase to this repo, you must add it to index
-
 **Notes:** 
+* Before you submit a PR to add a codebase to this repo, you must add it to index
 * Try to keep these items bellow in alphabet sort
 * Follow tempalate: [NAME]([URL]) - [added_by], [added_at], eg: Zappos (https://www.zappos.com/) - Cong Nguyen, 2021/09/20
 
@@ -17,7 +16,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ---
 ### B
 #### Bestbuy (https://bestbuy.ca) - Cong Nguyen, 2021/09/20
-**Categories**: education
+**Categories**: eCommerce
 
 ---
 ### C
