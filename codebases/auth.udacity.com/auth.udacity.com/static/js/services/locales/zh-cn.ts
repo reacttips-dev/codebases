@@ -1,0 +1,217 @@
+export default {
+  'Your student account is your portal to all things Udacity: your classroom, projects, forums, career resources, and more!':
+    '使用优达学城帐号登录“我的教室”，学习课程、提交项目、访问论坛并获得所有学习资源！',
+  "No user exists with email '<%= email_address %>'":
+    "邮箱 '<%= email_address %>' 不存在或不合法",
+  'Unable to send reset password email at this time':
+    '暂时无法发送重置密码邮件，请稍后重试',
+  'Reset Your Password': '重置密码',
+  'Please provide the email address you used when you signed up for your Udacity account.':
+    '请输入你注册 Udacity（优达学城）时的邮箱',
+  'We will send you an email with a link to reset your password.':
+    '重置密码的链接将会发到你的邮箱',
+  'Send Email': '发电子邮件',
+  'Please make sure your password and password confirmation match':
+    '请确认你输入的密码和确认密码匹配',
+  'The password reset token is either invalid or expired.':
+    '重置密码的链接已经过期或者不合法',
+  'Password must be at least 8 characters.': '密码长度不能小于8位',
+  'Unable to reset your password at this time.': '暂时无法重置密码，请稍后重试',
+  'Your password has been updated successfully!':
+    '你的密码已经重置成功，请使用新密码登录',
+  'You must provide an email address': '邮箱地址不能为空',
+  'Change My Password': '修改密码',
+  'Password Reset': '重启密码',
+  'Enter your new password for your student account.': '输入新的密码',
+  'New password': '新密码',
+  'Confirm new password': '确认新密码',
+  'Reset Password': '重置密码',
+  'You will be redirected within a few seconds,': '你所在的页面即将被跳转，',
+  'or click here to continue': '或点击这里继续',
+  'There is no Udacity account linked to this account. Are you trying to create a new Udacity account?':
+    '这个账号没有绑定任何 Udacity 账号，你确定需要创建一个新的 Udacity 账号么？',
+  'An email with password reset instructions has been sent to your email address':
+    '重置密码的链接已经发送到你的邮箱',
+  'Must specify an email and password': '邮箱和密码不能为空',
+  'The email or password you entered is invalid': '你输入的邮箱或者密码不合法',
+  'Unable to sign in at this time.': '暂时无法登录，请稍后重试',
+  'Sign in to your account': '帐号登录',
+  'Sign In': '登录',
+  'Email Address': '电子邮箱',
+  Password: '密码',
+  'Forgot your password?': '忘记密码？',
+  'Sign Up': '注册',
+  Bind: '绑定',
+  'Account Bind': '帐号绑定',
+  Reauthorize: '重新授权',
+  'This account already exists': '帐户已存在',
+  'Passwords do not match': '2 次输入密码不同',
+  'Password must contain at least 8 characters': '密码长度不小于8位',
+  'Must be specified': '不能为空',
+  'Is not a valid email': '邮箱不合法',
+  'This email is already registered': '邮箱已经被使用，请更换邮箱后重试',
+  'Unable to sign up at this time': '目前无法注册',
+  'Create your account': '帐号注册',
+  'First Name': '名',
+  'Last Name': '姓',
+  'User Name*': '姓名（张三）',
+  'Cellphone*': '输入手机号',
+  'sms code*': '输入6位数验证码',
+  'Confirm Password': '确认密码',
+  'or sign in with one of these services': '或者使用下面这些服务登录',
+  'Bind to WeChat and complete login': '用微信扫描完成登录',
+  Skip: '跳过',
+  'Send Code': '获取验证码',
+  'By clicking sign up, you agree to our ':
+    '点击“注册”或“下一步”即表示我同意 Udacity 的',
+  'Privacy Policy': '《隐私政策》',
+  'Pleae wait for seconds': '发送太频繁，请稍后再试',
+  'Send failed': '发送失败',
+  'verify code sent': '验证码发送成功',
+  'Retry after <%= rateRemain %> seconds': '<%= rateRemain %> 秒后重试',
+  'Invalid verification code': '你输入的验证码有误，请检查后重试',
+  'Phone number taken': '手机号已被使用，请更换手机号后重试',
+  'https://www.udacity.com/legal/terms-of-service':
+    'https://cn.udacity.com/legal/terms-of-service',
+  'Cellphone blocked, please contact support@youdaxue.com':
+    '你的手机号由于操作过于频繁已被屏蔽，请联系 support@youdaxue.com',
+  'Invalid recaptcha': '验证码非法',
+  'Confirm send SMS': '确定发送短信',
+  'Input recaptcha': '请输入图片上的验证码',
+  'The verification link is invalid.': '验证链接无效。',
+  'Unable to verify your email at this time': '这次无法验证你的邮箱。 ',
+  'Your email has been verified!': '你的邮箱已验证成功！',
+  'Email Verification': '验证邮箱 ',
+  Day: '日',
+  Month: '月',
+  Year: '年',
+  'Authorities in your region require us to collect your age to comply with local data privacy and collection regulations.':
+    '你所在的地区机构要求我们遵守当地的数据隐私保护和信息收集条款，并在此基础上收集你的年龄信息。',
+  Jan: '一月',
+  Feb: '二月',
+  Mar: '三月',
+  Apr: '四月',
+  May: '五月',
+  Jun: '六月',
+  Jul: '七月',
+  Aug: '八月',
+  Sep: '九月',
+  Oct: '十月',
+  Nov: '十一月',
+  Dec: '十二月',
+  'The day is not in this month': '日期不在该月份中',
+  "By clicking Sign In, you agree to our <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> and our <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>.":
+    "在登录时，你已同意遵守优达学城 <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> 与 <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>",
+  "By clicking Sign Up, you agree to our <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> and our <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>.":
+    "在注册时，你已同意遵守优达学城 <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> 与 <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>",
+  'Why do I need to provide my birthday?': '为什么我需要提供我的生日信息?',
+  'Your Birthday': '你的生日',
+  'Birthday does not meet the criteria to register in your region.':
+    '生日信息不符合规范，无法在你的所在地注册。',
+  'Terms of Use': '《使用条款》',
+  'Authorities in your region require us to ask for your birthday to comply with data privacy laws.':
+    '你所在的地区当局要求我们收集你的个人生日信息，并遵守数据隐私的法律法规。',
+  'One last thing': '最后一点',
+  'Hello,': '你好，',
+  'Udacity is required to limit access to its content, programs and platform to those meeting the legal minimum age requirements for your region.':
+    '在你所在的地区，Udacity 受法律约束，其内容、项目与平台仅开放给达到法定年龄要求的人群。 ',
+  'We will be unable to register you as a user on our site right now, but please check back once you reach the age requirements for your region.':
+    '我们暂时不能为你提供注册用户的渠道，当你达到你所在地区的法定年龄要求时，即可在 Udacity 平台进行注册。',
+  "For more details, please visit our <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>. ":
+    "想了解更多信息，请访问我们的<a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>。",
+  "Please feel free to contact us at <a href='<%= support_link %>'><%= support_email %></a> if you feel you received this notice in error.":
+    "如果你发现信息有误，欢迎发送邮件至 <a href='<%= support_link %>'><%= support_email %></a> 联系我们。  ",
+  'Dear Student,': '亲爱的学员，',
+  'In order to comply with regulations we can only provide access to our content, programs and platform to those meeting legal minimum age requirements for your region.':
+    '为遵守当地法律法规，我们仅能针对符合法定年龄的用户提供 Udacity 内容、项目与平台服务。',
+  'We hope that you enjoyed your courses at Udacity but your registration will unfortunately be terminated at the end of your course. We encourage you to register again in the future when you meet the age requirements for your region.':
+    '我们希望你在 Udacity 学习愉快。非常遗憾你的注册账号将在课程结束之际被终止使用。 我们强烈推荐你在符合当地法定年龄要求后，再次在 Udacity 平台进行注册。 ',
+  'Sorry, we are unable to process that at this time':
+    '不好意思，我们目前无法处理该事宜。',
+  "<%= terms_of_user_action %>, you agree to our <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> and our <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>.":
+    "<%= terms_of_user_action %>，你已同意遵守优达学城 <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> 与 <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>",
+  'By clicking Scan QRCode': '在扫描二维码时',
+  'By long pressing QRCode': '在长按二维码时',
+  'The token is either invalid or expired.': '令牌已失效或已过期。',
+  'Security authentication with WeChat QRCode': '请使用微信扫码安全登录',
+  'Long Press the QRCode to security authentication with WeChat':
+    '请长按二维码使用微信安全登录',
+  'Log in with your password': '使用邮箱登录',
+  'Use WeChat quick signin': '微信扫码一键注册',
+  'QRCode is expired': '二维码已过期',
+  'Click to refresh': '点击刷新',
+  'QRCode is scanned': '扫码成功！',
+  'Password is known to be too common.': '你的密码强度太弱',
+  'Password cannot be your name or email address.': '密码不能为你的邮箱或姓名',
+  'Please reauthorize and continue': '请重新授权并注册账户',
+  'This page is outdated, please reauthorize': '本页面已经过期，请重新授权',
+  'system error, please reauthorize': '系统错误，请重新授权',
+  'This phone number is already linked': '该手机号已经被使用，请更换之后重试',
+  'You have made too many requests. Please try again in an hour.':
+    '你已提请多次操作。请一小时后重试。',
+  or: '或者',
+  'Sorry, your account does not have that enabled. Please sign in with another option.':
+    '对不起，该账户无法使用目前方式登录。请选择其他方式登录。',
+  'Unable to sign in with your organization. You can try again or sign in with another option.':
+    '无法使用该企业账号登录。请重试或者选择其他方式登录。',
+  'Must specify an email': '请输入邮箱',
+  'Sign in with a different account': '使用其他账号',
+  'Build skills for today, tomorrow, and beyond.<br/>Education to future-proof your career.':
+    '掌握前沿技术，加速你的晋升和转行。<br/>未来，从这里开始！',
+  'Enter your organization email address': '请输入你的企业邮箱',
+  Continue: '继续',
+  "By clicking Continue, you agree to our <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> and our <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>.":
+    "如继续，代表你已同意遵守优达学城 <a href='<%= terms_of_service_link %>'><%= terms_of_service %></a> 与 <a href='<%= privacy_policy_link %>'><%= privacy_policy %></a>",
+  'Phone No': '手机号',
+  'Sign in with <%= provider %>': '使用 <%= provider %> 账号登录',
+  'Sign up with <%= provider %>': '使用 <%= provider %> 账号注册',
+  'Sign in with your organization': '企业登录',
+  'https://www.udacity.com/legal/privacy':
+    'https://www.udacity.com/legal/privacy',
+  'mailto:support@udacity.com': 'mailto:support@udacity.com',
+  'support@udacity.com': 'support@udacity.com',
+  'You must enter an authorization code.': '请输入授权码',
+  'Two Factor Authentication': '双重因素认证',
+  'Authentication code': '授权码',
+  'Copied!': '复制成功',
+  'Copy Codes': '点击复制',
+  'There was an error signing in to Georgia Tech.':
+    '登录 Georgia Tech 发生错误。',
+  'That account is missing an email address.': '该账号缺少邮箱',
+  'That account is missing a first name.': '该账号缺少名字',
+  'That account is missing a last name.': '该账号缺少姓',
+  'That account is already linked to a Udacity account.':
+    '该账号已被其他 Udacity 绑定。',
+  'There is no Udacity account linked to that account.':
+    '该账号尚未绑定任何 Udacity 账号。',
+  'There was an error, please try again.': '发生未知错误，请重试。',
+  'Please verify the email address on that account and try again.':
+    '请确认邮箱地址后重试。',
+  'Please verify your Udacity account email address and try again.':
+    '请确认你的 Udacity 账号的邮箱后重试。',
+  'There was an error loading that account.': '加载账户信息时发生错误。',
+  'You already have two factor authentication enabled.':
+    '你已经开启过双重因素认证。',
+  'The authentication code was invalid.': '授权码不合法。',
+  'Two factor authentication is now enabled!': '你已成功开启双重因素认证！',
+  'Got it!': '确认',
+  Next: '下一步',
+  'Enable Two Factor Authentication': '开启双重因素认证',
+  'https://www.udacity.com': 'https://www.udacity.com',
+  'Unable to sign in at this time': '服务器发生错误，暂时无法登录',
+  'Terms of Use Acceptance': '《使用条款》',
+  Submit: '提交',
+  'Unable to access your account.': '无法访问你的账户',
+  'Your authentication code was invalid': '你提供的授权码非法',
+  'Unable to fetch your backup codes at this time': '暂时无法获取你的备份代码',
+  'New backup codes created.': '新的备份代码已经创建。',
+  'Unable to reset backup codes at this time': '暂时无法重置备份代码',
+  'Two factor is enabled on your account': '你的账号已经开启双重因素认证',
+  'Two factor is not enabled on your account': '你的账号尚未开启双重因素认证',
+  'Two Factor': '双重因素认证',
+  Remove: '删除',
+  Enable: '开启',
+  Reset: '重置',
+  'Backup Codes': '双重因素备份代码',
+  View: '显示'
+};

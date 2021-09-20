@@ -1,0 +1,30 @@
+@import '../../assets/styles/shared';
+
+.header {
+  display: flex;
+  background: $vds-color-white;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
+}
+
+.logo-base {
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 200px;
+  height: 35px;
+}
+
+.none {
+  display: none;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

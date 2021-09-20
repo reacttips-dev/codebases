@@ -1,0 +1,1 @@
+chrome-extension://ienfalfjdbdpebioblfackkekamfmbnh/ng-validate.js

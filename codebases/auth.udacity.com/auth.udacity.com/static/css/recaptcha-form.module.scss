@@ -1,0 +1,16 @@
+@import '../../../assets/styles/shared';
+
+.recaptcha {
+  margin-top: 20px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include mq($until: tablet) {
+  .recaptcha {
+    transform: scale(0.8);
+    transform-origin: 0 0;
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../../assets/styles/shared';
+
+.description {
+  color: $vds-color-silver;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 460px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.link {
+  margin-left: 15px;
+  a {
+    text-decoration: underline;
+    text-decoration-color: $vds-color-cerulean;
+    font-weight: normal;
+  }
+  a:hover {
+    color: $vds-color-cerulean;
+  }
+}
+
+.form {
+  @include mq($from: tablet) {
+    .select + .select {
+      margin-top: 0 !important;
+      margin-left: 24px;
+    }
+  }
+  .select + .select {
+    margin-top: 20px;
+  }
+  text-align: left;
+}
+
+body[dir='rtl'] {
+  .description,
+  .form {
+    text-align: right;
+  }
+
+  .link {
+    margin-left: 0;
+    margin-right: 15px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  @include mq($from: tablet) {
+    .select + .select {
+      margin-top: 0 !important;
+      margin-left: 0;
+      margin-right: 24px;
+    }
+  }
+}

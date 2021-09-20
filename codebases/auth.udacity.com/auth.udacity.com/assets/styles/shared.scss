@@ -1,0 +1,10 @@
+@import "@udacity/veritas-styles/dist/foundation.scss";
+@import '~sass-mq';
+
+$form-element-border-radius: 4px;
+
+a {
+  color: $vds-color-cerulean-dark;
+  font-weight: $vds-font-weight-semibold;
+  text-decoration: none;
+}

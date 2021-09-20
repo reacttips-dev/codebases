@@ -1,0 +1,49 @@
+@import '../../assets/styles/shared';
+
+.select {
+  @include mq($from: tablet) {
+    height: 48px;
+    width: 100px;
+  }
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid $vds-color-silver-lighter;
+  font-size: 14px;
+  border-radius: 2px;
+  color: $vds-color-black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('../../assets/images/icon-caret-down-md.svg') transparent no-repeat right;
+  background-size: 24px;
+  &:focus {
+    outline: none;
+    border-color: $vds-color-cerulean;
+  }
+  &:invalid {
+    color: $vds-color-silver;
+  }
+}
+/* clear firefox default select option style */
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 $vds-color-silver;
+}
+option:not(:checked) {
+  color: $vds-color-silver;
+}
+
+.option {
+  composes: select;
+}
+
+.select-error {
+  composes: select;
+  border-color: $vds-color-red !important;
+}
+
+body[dir='rtl'] {
+  .select {
+    background-position: left;
+  }
+}
