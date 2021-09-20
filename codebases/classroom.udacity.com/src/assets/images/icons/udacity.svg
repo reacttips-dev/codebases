@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "images/udacity-8a6d3.svg";
