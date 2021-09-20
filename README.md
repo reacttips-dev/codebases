@@ -16,6 +16,10 @@ Categories: messaging
 
 Categories: eCommerce
 
+### Classroom Udacity (https://classroom.udacity.com)
+
+Categories: education
+
 
 ## Contribute
 
