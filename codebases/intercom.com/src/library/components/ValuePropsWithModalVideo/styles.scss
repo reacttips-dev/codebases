@@ -1,0 +1,38 @@
+
+import postcssStyledJsxUrlLoader_0 from '../../images/checkmark.svg';
+import css from 'styled-jsx/css';
+
+export default css`.value-props__wrapper {
+  margin-bottom: 30px;
+
+  .heading {
+    margin-bottom: 20px;
+  }
+
+  li {
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+
+    @include media-query(mobile) {
+      justify-content: center;
+    }
+
+    .checkmark {
+      display: inline-block;
+      background-image: url("${postcssStyledJsxUrlLoader_0}");
+      background-repeat: no-repeat;
+      height: 12px;
+      width: 12px;
+      margin-right: 10px;
+
+      @include media-query(mobile) {
+        margin-right: 7px;
+      }
+    }
+  }
+}
+`

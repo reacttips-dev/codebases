@@ -1,0 +1,10 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+@import 'vendor/react-slick';
+@import '@reach/menu-button/styles';
+@import 'swiper/swiper.scss';
+@import 'swiper/components/navigation/navigation';
+`

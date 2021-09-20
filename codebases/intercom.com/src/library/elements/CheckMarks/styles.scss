@@ -1,0 +1,87 @@
+
+import postcssStyledJsxUrlLoader_0 from '../../images/checkmark.svg';
+import postcssStyledJsxUrlLoader_1 from '../../images/bullet-point.svg';
+import postcssStyledJsxUrlLoader_2 from '../../images/checkmark-white.svg';
+import css from 'styled-jsx/css';
+
+export default css`// Default theme
+.list-container {
+  display: grid;
+}
+
+.headline {
+  text-transform: uppercase;
+  padding-bottom: 13px;
+}
+
+.checkmarks {
+  list-style: none;
+  flex-direction: row;
+}
+
+.checkmarks-item {
+  display: inline-block;
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.checkmarks-icon {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+  background: url("${postcssStyledJsxUrlLoader_0}") no-repeat;
+  background-size: 100%;
+
+  &.bullet-point {
+    background: url("${postcssStyledJsxUrlLoader_1}") no-repeat;
+  }
+}
+
+.checkmarks.vertical .checkmarks-item {
+  width: 100%;
+}
+
+.checkmarks.large .checkmarks-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 1.5em;
+}
+
+.checkmarks.white {
+  .checkmarks-item {
+    color: $white;
+  }
+
+  .checkmarks-icon {
+    background: url("${postcssStyledJsxUrlLoader_2}") no-repeat;
+  }
+}
+
+@include media-query(tablet) {
+  .checkmarks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .checkmarks-item {
+    margin-right: 25px;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Inbound theme
+.list-container.inbound {
+  .checkmarks {
+    margin-left: 10px;
+  }
+}
+`

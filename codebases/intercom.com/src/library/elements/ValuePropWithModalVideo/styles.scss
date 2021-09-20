@@ -1,0 +1,85 @@
+
+import postcssStyledJsxUrlLoader_0 from '../../images/modal-bottom-curve-texture.svg';
+import css from 'styled-jsx/css';
+
+export default css`.vp-modal-trigger {
+  border-bottom: 1px dotted;
+  line-height: 1.4;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.vp-modal-content {
+  margin-bottom: 50px;
+  background-color: $white;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    background-color: inherit;
+    mask-repeat: repeat no-repeat;
+    mask-image: url("${postcssStyledJsxUrlLoader_0}");
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: -55px;
+    height: 60px;
+  }
+
+  .close-button {
+    position: absolute;
+    z-index: 1;
+    right: -40px;
+    top: -40px;
+
+    @include media-query(mobile) {
+      right: 0;
+    }
+
+    @media (max-width: 475px) {
+      top: 5px;
+    }
+  }
+
+  .vp-video__wrapper {
+    .video-poster-button {
+      cursor: pointer;
+
+      &.video--playing {
+        display: none;
+      }
+    }
+
+    .poster-img,
+    .video {
+      width: 100%;
+    }
+
+    .video {
+      display: none;
+
+      &.video--playing {
+        display: block;
+      }
+    }
+  }
+
+  .vp-content__wrapper {
+    padding: 20px 40px 30px;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+
+      @include media-query(mobile) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+`

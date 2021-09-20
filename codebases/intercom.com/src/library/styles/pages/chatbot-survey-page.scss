@@ -1,0 +1,40 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+#layout-wrapper.chatbot-survey-page {
+  .section--heroEmailCapture {
+    height: 40vw;
+    min-height: 450px;
+    max-height: 650px;
+
+    .headline,
+    .subheading {
+      max-width: 70%;
+    }
+
+    .background-aux-content {
+      transform: translateY(-50%);
+      bottom: unset;
+      top: 35%;
+    }
+  }
+  @media (max-width: 850px) {
+    .section--heroEmailCapture {
+      .headline,
+      .subheading {
+        max-width: 90%;
+      }
+      .background-aux-content {
+        display: none;
+      }
+    }
+  }
+
+  .section--featureSpotlight {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+`

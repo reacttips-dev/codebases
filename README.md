@@ -27,7 +27,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### E
-* Elastic (https://cloud.elastic.co) - searching / Cong Nguyen, 2021/09/20
+* Elastic (https://cloud.elastic.co) - Searching / Cong Nguyen, 2021/09/20
 
 ---
 ### F
@@ -40,6 +40,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### I
+* Intercom (https://intercom.com) - Messaging / Cong Nguyen, 2021/09/20
 
 ---
 ### J
@@ -71,7 +72,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### S
-* SendBird (https://dashboard.sendbird.com) - messaging / Cong Nguyen, 2021/09/20
+* SendBird (https://dashboard.sendbird.com) - Messaging / Cong Nguyen, 2021/09/20
 
 ---
 ### T

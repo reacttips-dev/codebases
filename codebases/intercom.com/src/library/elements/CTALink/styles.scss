@@ -1,0 +1,15 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.cta-link {
+  @include button;
+
+  svg {
+    margin-left: 8px;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+}
+`

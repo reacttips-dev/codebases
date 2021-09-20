@@ -1,0 +1,69 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+@media (max-width: 1289px) {
+  .jump-link {
+    display: none;
+  }
+}
+
+@media (min-width: 1290px) {
+  .jump-link {
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    animation-delay: 8s;
+    animation-duration: 25s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    z-index: 100;
+  }
+
+  .jump-link__text {
+    padding: 0 20px 0 10px;
+  }
+
+  @keyframes jump-link__bounce {
+    0%,
+    4%,
+    8% {
+      transform: translateY(0);
+    }
+    2%,
+    6%,
+    10% {
+      transform: translateY(10px);
+    }
+    12%,
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .jump-link__bounce {
+    animation-name: jump-link__bounce;
+  }
+
+  .jump-link__hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+  }
+
+  .jump-link__visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+  }
+}
+`

@@ -1,0 +1,140 @@
+
+import postcssStyledJsxUrlLoader_0 from '../../images/checkmark.svg';
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.rich-text {
+  h1,
+  h2 {
+    font-family: $fontGraphik;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+
+  a:hover,
+  a:focus {
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
+
+  b {
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 1.5em;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 27px;
+      background-image: url("${postcssStyledJsxUrlLoader_0}");
+      background-size: 1em auto;
+      background-repeat: no-repeat;
+      background-position: center left;
+    }
+  }
+
+  span {
+    word-break: initial;
+  }
+
+  ul {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  ol {
+    padding-left: 1.5em;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  ol li {
+    list-style-type: decimal;
+  }
+}
+
+.rich-text__typography {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    margin: 2rem 0 1rem 0;
+    scroll-margin-top: 130px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 4.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  ul,
+  ol {
+    margin: 1rem 0;
+  }
+}
+`

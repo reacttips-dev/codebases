@@ -1,0 +1,5 @@
+import 'whatwg-fetch'
+import 'core-js/modules/es.object.assign'
+import 'picturefill'
+import 'smoothscroll-polyfill'
+import 'focus-visible'

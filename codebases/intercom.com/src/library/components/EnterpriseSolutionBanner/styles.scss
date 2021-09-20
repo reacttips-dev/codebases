@@ -1,0 +1,113 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.enterprise-solution-banner {
+  display: grid;
+  grid-template-columns: [left-gutter] 1fr [content] 12fr [right-gutter] 1fr;
+  border-radius: 6px;
+
+  &__background {
+    display: grid;
+    background-color: inherit;
+    padding: 32px 0 32px 0;
+    position: relative;
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    grid-column: content;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__lead {
+    grid-row: 1;
+    grid-column: 1 / span 5;
+    text-align: left;
+    align-self: end;
+    display: block;
+    justify-items: unset;
+  }
+
+  &__heading {
+    word-break: break-word;
+    margin: 0;
+    width: 50%;
+  }
+
+  &__subheading {
+    margin: 20px 0 0;
+    ul {
+      text-align: left;
+    }
+  }
+
+  &__icon {
+    &-wrapper {
+      position: relative;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 26px;
+      flex-direction: row;
+      justify-content: unset;
+      padding-bottom: 12px;
+      width: 14rem;
+      border-bottom: 1px dotted $black;
+    }
+
+    width: 45px;
+    position: relative;
+    margin-right: 20px;
+  }
+
+  &__children {
+    grid-row: 2;
+    grid-column: 1 / span 5;
+    text-align: left;
+  }
+
+  &__cta {
+    display: inline-block;
+    margin-top: 21px;
+  }
+
+  &__media {
+    display: grid;
+    grid-row: 1 / span 2;
+    grid-column: 7 / span 6;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 25px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__image-wrapper {
+    overflow: hidden;
+  }
+
+  @include media-query(mobile) {
+    &__children {
+      grid-column: 1 / span 12;
+    }
+
+    &__lead {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  @include media-query(desktop) {
+    grid-template-columns: [left-gutter] 2.5fr [content] 12fr [right-gutter] 2.5fr;
+
+    &__background {
+      padding-bottom: 37px;
+    }
+  }
+}
+`

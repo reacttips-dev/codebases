@@ -1,0 +1,79 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+#layout-wrapper.what-is-intercom {
+  #site-header {
+    margin-top: 0;
+    padding-top: 50px;
+    background-color: $light-gray;
+    transition: background-color 0.2s ease-in;
+
+    &.header--fixed {
+      background-color: #fff;
+    }
+
+    &.header__mobile-menu--active {
+      background: #fff;
+    }
+  }
+
+  #main {
+    margin-top: -70px;
+    padding-top: 0;
+  }
+
+  .crosslink-cards .headline {
+    max-width: 650px;
+  }
+
+  .header-nav-mobile__menu {
+    top: 116px;
+  }
+
+  @include media-query(laptop) {
+    .multifeature-spotlight {
+      &-background {
+        grid-template-columns: repeat(14, 1fr);
+        grid-column: 1 / span 14;
+      }
+      &__main-content-area {
+        grid-column: 1 / span 5;
+      }
+      &__image-area {
+        grid-column: 8 / span 7;
+      }
+      &__cta {
+        grid-column: 1 / span 4;
+      }
+    }
+  }
+  @include media-query(desktop) {
+    .section--featureSpotlightVertical {
+      .content {
+        max-width: 800px;
+      }
+    }
+
+    .section--cardList {
+      margin-bottom: 140px;
+    }
+
+    .section--largeTestimonial {
+      margin-bottom: 160px;
+    }
+
+    .section--multiFeatureSpotlight {
+      margin-bottom: 150px;
+      .rich-text p {
+        margin: 0;
+      }
+    }
+
+    .section--whatsIncluded {
+      margin-bottom: 150px;
+    }
+  }
+}
+`

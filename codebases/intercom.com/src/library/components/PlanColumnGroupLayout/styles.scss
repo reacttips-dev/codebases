@@ -1,0 +1,70 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.plan-column-group-wrapper {
+  padding: 0 24px 20px;
+}
+
+.plan-column-group {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $container-max-width;
+  padding-top: 24px;
+
+  &__header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: $fontGraphik;
+
+    @include media-query(tablet) {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+  }
+
+  &__children {
+    display: flex;
+    justify-content: center;
+
+    > * {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
+
+    @include media-query(mobile) {
+      flex-direction: column;
+
+      > * + * {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__banner {
+    width: 100%;
+    max-width: $container-max-width;
+    padding: 24px 10px;
+    margin: 0 auto;
+
+    @include media-query(mobile) {
+      max-width: 400px;
+    }
+
+    @include media-query(desktopLg) {
+      padding: 24px 20px;
+    }
+  }
+
+  &__texture .magic-line {
+    right: -12px;
+  }
+}
+`

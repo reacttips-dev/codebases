@@ -1,0 +1,131 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+$messenger-z-index: 2147483000;
+
+.exit-intent {
+  display: none;
+  z-index: $messenger-z-index + 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 0;
+
+  transition: 400ms transform ease, 0s visibility 400ms;
+  transform: translateY(calc(100% + 2em));
+  visibility: hidden;
+
+  &--open {
+    transition: transform 400ms ease;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  &__background-color {
+    &--white {
+      background: $white;
+    }
+    &--lightgray {
+      background: $light-gray;
+    }
+    &--teal {
+      background: $teal;
+    }
+  }
+
+  &__wrapper {
+    height: 500px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 2px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 0 40px;
+  }
+
+  &__content {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 5em 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > * {
+      flex: 1 0 0;
+    }
+  }
+
+  &__close {
+    @include focusable;
+
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+
+    &:focus {
+      position: absolute;
+    }
+  }
+
+  &__book-description {
+    display: flex;
+    align-items: center;
+    margin-inline-start: 7em;
+
+    > * + * {
+      margin-inline-start: 2rem;
+    }
+  }
+
+  &__image {
+    max-height: 15rem;
+    max-width: 15rem;
+    width: auto;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: grid;
+    margin-top: 1rem;
+    gap: 1rem;
+    grid-template-areas:
+      'first-name last-name'
+      'email      email'
+      'consent    consent'
+      'submit     submit';
+
+    .marketo-form-field:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      grid-area: first-name;
+    }
+
+    .marketo-form-field:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      grid-area: last-name;
+    }
+
+    .marketo-form-field:nth-of-type(3) {
+      grid-area: email;
+      margin-bottom: 0;
+    }
+
+    .marketo-form-field:nth-of-type(4) {
+      grid-area: consent;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-query(laptop) {
+  .exit-intent {
+    display: block;
+  }
+}
+`

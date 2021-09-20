@@ -1,0 +1,106 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.plan-columns-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  flex: 1;
+
+  @include media-query(desktop) {
+    margin-bottom: 0px;
+
+    &:first-child {
+      align-items: flex-end;
+    }
+
+    &:last-child {
+      align-items: flex-start;
+    }
+
+    &--single-child:last-child {
+      align-items: center;
+    }
+  }
+}
+
+.plan-columns {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
+
+  @include media-query(desktopLg) {
+    min-width: 400px;
+  }
+
+  @media (max-width: 665px) {
+    flex-wrap: wrap;
+  }
+}
+
+.plan-columns > * {
+  flex-grow: 1;
+}
+
+.plan-columns__gutter > * {
+  @include media-query(tablet) {
+    margin-bottom: map-get($grid-gap-map, desktop);
+  }
+}
+
+//only adds left gutter to even children on medium-size screens
+.plan-columns__gutter > * + *:nth-child(even) {
+  @include media-query(tablet) {
+    margin-left: map-get($grid-gap-map, desktop);
+  }
+}
+
+.plan-columns__gutter > * + * {
+  @include media-query(desktop) {
+    margin-left: map-get($grid-gap-map, desktop);
+  }
+}
+
+.plan-columns--wide {
+  justify-content: center;
+
+  @include media-query(desktop) {
+    min-width: 820px;
+  }
+}
+
+.plan-columns > *:first-child {
+  @include media-query(tablet) {
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.plan-columns > *:last-child {
+  @include media-query(tablet) {
+    border-bottom-right-radius: 8px;
+  }
+}
+
+.plan-columns__header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+
+  @include media-query(tablet) {
+    font-size: 16px;
+  }
+}
+`

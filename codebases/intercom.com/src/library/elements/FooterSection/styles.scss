@@ -1,0 +1,16 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.footer-section {
+  &__header {
+    margin: 0 0 8px;
+  }
+
+  &__list-item {
+    width: 100%;
+    margin: 0;
+  }
+}
+`

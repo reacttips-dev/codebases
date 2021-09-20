@@ -1,0 +1,28 @@
+
+import css from 'styled-jsx/css';
+
+export default css`.locale-picker__container {
+  & ul {
+    margin-left: -10px;
+  }
+
+  & li {
+    display: inline-block;
+  }
+}
+
+.locale-picker__link {
+  @include focusable($inlineOffset: 0, $blockOffset: 0);
+
+  display: block;
+  color: $black;
+  text-decoration: none;
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+  }
+}
+`

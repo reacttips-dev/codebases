@@ -1,0 +1,49 @@
+
+import postcssStyledJsxUrlLoader_0 from '../../images/edge-texture.svg';
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.hero-wrapper {
+  &--lightgray {
+    background-color: $light-gray;
+  }
+  &--teal {
+    background-color: $teal;
+  }
+  &--white {
+    background-color: $white;
+  }
+
+  &.hero--bottom-texture {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      height: 18px;
+      left: -3vw;
+      mask-image: url("${postcssStyledJsxUrlLoader_0}");
+      mask-repeat: repeat no-repeat;
+      width: 106vw;
+      z-index: 1;
+      bottom: -18px;
+    }
+  }
+
+  .hero {
+    @include media-query(mobile) {
+      grid-row-gap: 20px;
+    }
+  }
+
+  .left-align {
+    .watch-demo-wrapper {
+      @include media-query(tablet) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+`

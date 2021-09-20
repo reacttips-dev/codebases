@@ -1,0 +1,114 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+#layout-wrapper.resolution-bot-lp {
+  #site-header {
+    margin-top: 0;
+    padding-top: 50px;
+    background-color: $teal;
+    transition: background-color 0.2s ease-in;
+
+    &.header--fixed {
+      background-color: #fff;
+    }
+
+    &.header__mobile-menu--active {
+      background: #fff;
+    }
+  }
+
+  #main {
+    margin-top: -70px;
+    padding-top: 0;
+  }
+
+  .section--featureSpotlightVertical {
+    margin-bottom: 0;
+
+    .feature-spotlight-vertical__eyebrow {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+    }
+
+    .feature-spotlight-vertical__eyebrow span {
+      font-size: 15px;
+    }
+
+    .feature-spotlight-vertical__lower-content {
+      margin-top: 12px;
+
+      .video-player-wrapper,
+      video {
+        height: auto;
+      }
+    }
+
+    .feature-spotlight-vertical--image-on-top .feature-spotlight-vertical__subheading {
+      order: 0;
+
+      p,
+      a {
+        font-size: 16px;
+      }
+    }
+
+    .feature-spotlight-vertical__content {
+      margin-top: 0;
+    }
+
+    .cta-link {
+      width: 100%;
+    }
+  }
+
+  .section--featureSpotlightVertical + .section--multiFeatureSpotlight {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .section--multiFeatureSpotlight + .section--statistics {
+    margin-top: 0;
+
+    .statistics {
+      padding-top: 100px;
+    }
+  }
+
+  @include media-query(laptop) {
+    .section--featureSpotlightVertical {
+      .feature-spotlight-vertical--image-on-top .feature-spotlight-vertical__subheading {
+        max-width: 770px;
+
+        p {
+          font-size: 24px;
+        }
+
+        a {
+          font-size: 16px;
+        }
+      }
+
+      .feature-spotlight-vertical.feature-spotlight-vertical--wide
+        .feature-spotlight-vertical__lower-content {
+        padding: 0;
+        max-width: 1230px;
+      }
+
+      .cta-link {
+        width: auto;
+      }
+
+      .feature-spotlight-vertical__eyebrow {
+        top: 50px;
+      }
+
+      .feature-spotlight-vertical__eyebrow span {
+        font-size: 24px;
+      }
+    }
+  }
+}
+`

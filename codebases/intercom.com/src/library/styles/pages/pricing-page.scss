@@ -1,0 +1,32 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+#layout-wrapper.pricing-page {
+  #main {
+    padding-top: 0;
+
+    @include media-query(tablet) {
+      padding-top: 20px;
+    }
+  }
+
+  .section--headingBlock {
+    padding-bottom: 20px;
+    margin: 0;
+
+    h1 span {
+      font-size: 32px;
+
+      @include media-query(tablet) {
+        font-size: 36px;
+      }
+    }
+
+    @include media-query(tablet) {
+      margin: 20px 0;
+    }
+  }
+}
+`

@@ -1,0 +1,52 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.addon-pricing {
+  &__container {
+    padding: 16px;
+
+    > * + * {
+      padding-top: 20px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &__table {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    > * {
+      padding: 12px 14px;
+    }
+
+    &--header {
+      color: $white;
+      background-color: $black;
+    }
+
+    &--header,
+    &--row {
+      display: flex;
+
+      > * {
+        width: 50%;
+      }
+    }
+
+    &--row {
+      border-bottom: 1px solid $black;
+    }
+
+    &--row:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+`

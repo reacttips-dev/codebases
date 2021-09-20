@@ -1,0 +1,105 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+#layout-wrapper.mobile-page {
+  section {
+    .heading-block {
+      position: relative;
+      padding-top: 40px;
+    }
+    .heading-block::before {
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+  section:nth-of-type(3) {
+    .heading-block::before {
+      content: 'Powered by Intercom Platform';
+    }
+  }
+
+  section:nth-of-type(5) {
+    .heading-block::before {
+      content: 'Powered by Intercom Messages';
+    }
+  }
+
+  section:nth-of-type(8) {
+    .heading-block::before {
+      content: 'Powered by Intercom Articles';
+    }
+  }
+
+  section:nth-of-type(12) {
+    .heading-block::before {
+      content: 'Powered by Intercom Inbox';
+    }
+  }
+
+  .section--multiFeatureSpotlight {
+    margin-top: 0;
+  }
+
+  .multifeature-spotlight-background {
+    padding-top: 0;
+  }
+
+  .section--cardsWithImage .card-wrapper {
+    margin-bottom: 40px;
+
+    picture {
+      position: relative;
+      max-width: 250px;
+      margin: 0 auto 30px;
+    }
+
+    picture::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -7%;
+      width: 104%;
+      height: 114%;
+      transform: translateX(-50%);
+      border-radius: 30px;
+      box-shadow: 0 0 10px #ccc;
+    }
+  }
+
+  .section--featureSpotlight {
+    margin-top: 0;
+
+    .feature-spotlight__background {
+      padding-top: 20px;
+    }
+
+    .feature-spotlight__heading span {
+      font-size: 36px;
+    }
+
+    img {
+      max-height: 600px;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .section--cardsWithImage {
+    @include media-query(tablet) {
+      .card-wrapper {
+        max-width: 350px;
+        margin: 18px;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+`

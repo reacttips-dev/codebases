@@ -1,0 +1,164 @@
+
+import postcssStyledJsxUrlLoader_0 from '../../images/modal-edge-texture.svg';
+import postcssStyledJsxUrlLoader_1 from '../../images/modal-bottom-edge-texture.svg';
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.watch-demo-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  .cta-link {
+    @include button;
+  }
+}
+
+.watch-demo-form-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  margin-bottom: 15px;
+
+  &--lightgray {
+    background-color: $light-gray;
+  }
+  &--teal {
+    background-color: $teal;
+  }
+  &--white {
+    background-color: $white;
+  }
+
+  &:after {
+    content: '';
+    background-color: inherit;
+    mask-repeat: repeat no-repeat;
+    mask-image: url("${postcssStyledJsxUrlLoader_0}");
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    height: 70px;
+  }
+
+  &--with-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'image content';
+    gap: 0;
+    padding: 0;
+
+    @include media-query(mobile) {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'image' 'content';
+
+      &:after {
+        content: '';
+        background-color: inherit;
+        mask-repeat: repeat no-repeat;
+        mask-image: url("${postcssStyledJsxUrlLoader_1}");
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        height: 33px;
+      }
+    }
+
+    &:after {
+      content: none;
+    }
+  }
+
+  .watch-demo-image-wrapper {
+    grid-area: image;
+    position: relative;
+    z-index: 1;
+
+    @include media-query(tablet) {
+      &:after {
+        content: '';
+        background-color: $light-gray;
+        mask-repeat: repeat no-repeat;
+        position: absolute;
+        z-index: 2;
+        left: 1px;
+        right: 0;
+        bottom: -13px;
+        height: 21px;
+      }
+    }
+    .watch-demo-image {
+      background-color: $light-gray;
+      padding: 50px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include media-query(mobile) {
+        max-height: 120px;
+      }
+
+      img {
+        width: 90%;
+
+        @include media-query(mobile) {
+          height: 100px;
+          width: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  .watch-demo-content-wrapper {
+    grid-area: content;
+    position: relative;
+    z-index: 1;
+    @include media-query(tablet) {
+      &:after {
+        content: '';
+        background-color: white;
+        mask-repeat: repeat no-repeat;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: -13px;
+        height: 21px;
+      }
+    }
+    .watch-demo-content {
+      padding: 50px 35px 25px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .watch-demo-close-button {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+  }
+
+  & > .heading {
+    text-align: center;
+  }
+
+  p:not(.heading) {
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+`

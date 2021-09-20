@@ -1,0 +1,58 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+#layout-wrapper.homepage-dis {
+  .section--heroEmailCapture {
+    .headline {
+      max-width: 550px;
+      @include media-query(laptop) {
+        max-width: 670px;
+      }
+      @include media-query(desktopLg) {
+        max-width: 1024px;
+      }
+    }
+    .background-aux-content {
+      bottom: -140px;
+    }
+  }
+  .section--logoParty {
+    margin-bottom: 0;
+
+    .logo-party {
+      padding: 60px 0;
+      @include media-query(tablet) {
+        padding: 125px 0 70px;
+      }
+    }
+    .cta-link {
+      background-color: transparent;
+      color: $black;
+      border: 0;
+    }
+  }
+
+  .section--solutionCards {
+    margin-top: 5em;
+    margin-bottom: 9em;
+  }
+
+  .section--featureSpotlightVertical {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 18px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section--largeTestimonial {
+    margin-top: -18px;
+  }
+
+  .section--capabilitiesCarousel {
+    margin-bottom: 175px;
+  }
+}
+`

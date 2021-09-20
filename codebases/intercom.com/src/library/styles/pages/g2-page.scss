@@ -1,0 +1,20 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+#layout-wrapper.g2-page {
+  .section--featureSpotlight {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .feature-spotlight__background {
+    padding: 0;
+
+    &::after {
+      height: 0;
+    }
+  }
+}
+`

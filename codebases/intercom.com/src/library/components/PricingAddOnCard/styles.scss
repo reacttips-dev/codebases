@@ -1,0 +1,195 @@
+
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+.addon-card {
+  padding: 15px 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid $light-gray;
+  position: relative;
+  max-width: 350px;
+  background-color: $white;
+
+  @include media-query(tablet) {
+    border: none;
+    max-width: 300px;
+  }
+
+  &.horizontal {
+    flex: 1;
+    flex-direction: row;
+    max-width: 820px;
+    padding: 0;
+  }
+
+  &__left {
+    border-right: 2px solid $light-gray;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 25px;
+  }
+
+  &__left-headline {
+    align-items: center;
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__show-on-desktop {
+    height: 90px;
+  }
+
+  &__banner {
+    display: none;
+
+    @include media-query(tablet) {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 30px;
+      padding: 0 10px;
+      background-color: $light-gray;
+      left: 0px;
+      top: -15px;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+
+  &__icon {
+    height: 48px;
+    padding-right: 15px;
+  }
+
+  &__price-for-period--dollar-amount {
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  &__pricing-modal-button {
+    border-bottom: 1px dotted $black;
+    line-height: 1.4;
+    margin: 8px 0;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__pricing-tooltip {
+    border-bottom: 1px dotted $black;
+    display: inline-block;
+    line-height: 1.4;
+    margin: 8px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &.right {
+      flex: 2 1 auto;
+      padding: 15px;
+    }
+
+    & > * {
+      padding: 10px;
+    }
+  }
+
+  &__feature-list {
+    padding-left: 26px;
+
+    &--hidden {
+      display: none;
+
+      @include media-query(tablet) {
+        display: block;
+      }
+    }
+  }
+
+  &__feature-list-item {
+    list-style: disc;
+    padding-bottom: 16px;
+  }
+
+  &__details-toggle {
+    margin-bottom: 10px;
+
+    span {
+      margin-left: 7px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $black;
+    }
+
+    @include media-query(tablet) {
+      display: none;
+    }
+  }
+
+  &__details-arrow--rotate {
+    transform: rotate(90deg);
+  }
+
+  &__cta {
+    height: 70px;
+    padding-left: 10px;
+
+    &.left {
+      height: unset;
+      margin-top: 12px;
+      padding-left: unset;
+    }
+
+    a {
+      width: 100%;
+
+      @media (max-width: 767px) {
+        padding: 12px 16px;
+      }
+
+      @include media-query(tablet) {
+        width: unset;
+      }
+    }
+
+    .cta-link__arrow {
+      display: none;
+    }
+  }
+
+  &__show-on-desktop {
+    display: none;
+
+    @media (min-width: 1270px) {
+      display: block;
+    }
+  }
+
+  &__hide-on-desktop {
+    @media (min-width: 1270px) {
+      display: none;
+    }
+  }
+}
+`

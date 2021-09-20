@@ -1,0 +1,132 @@
+
+import postcssStyledJsxUrlLoader_0 from '../fonts/Graphik-Regular.woff2';
+import postcssStyledJsxUrlLoader_1 from '../fonts/Graphik-Regular.woff';
+import postcssStyledJsxUrlLoader_2 from '../fonts/Graphik-Bold.woff2';
+import postcssStyledJsxUrlLoader_3 from '../fonts/Graphik-Bold.woff';
+import postcssStyledJsxUrlLoader_4 from '../fonts/Graphik-RegularItalic.woff2';
+import postcssStyledJsxUrlLoader_5 from '../fonts/Graphik-RegularItalic.woff';
+import postcssStyledJsxUrlLoader_6 from '../fonts/Graphik-Semibold.woff2';
+import postcssStyledJsxUrlLoader_7 from '../fonts/Graphik-Semibold.woff';
+import postcssStyledJsxUrlLoader_8 from '../fonts/Graphik-SemiboldItalic.woff2';
+import postcssStyledJsxUrlLoader_9 from '../fonts/Graphik-SemiboldItalic.woff';
+import postcssStyledJsxUrlLoader_10 from '../fonts/Graphik-BoldItalic.woff2';
+import postcssStyledJsxUrlLoader_11 from '../fonts/Graphik-BoldItalic.woff';
+import postcssStyledJsxUrlLoader_12 from '../fonts/SmileScript.woff2';
+import postcssStyledJsxUrlLoader_13 from '../fonts/SmileScript.woff';
+import postcssStyledJsxUrlLoader_14 from '../fonts/Graphik-Regular.woff2';
+import postcssStyledJsxUrlLoader_15 from '../fonts/Graphik-Regular.woff';
+import postcssStyledJsxUrlLoader_16 from '../fonts/Honey-BoldBanner.woff2';
+import postcssStyledJsxUrlLoader_17 from '../fonts/Honey-BoldBanner.woff';
+import postcssStyledJsxUrlLoader_18 from '../fonts/Honey-ExtraboldBanner.woff2';
+import postcssStyledJsxUrlLoader_19 from '../fonts/Honey-ExtraboldBanner.woff';
+import postcssStyledJsxUrlLoader_20 from '../fonts/IntercomBrand-Medium.woff2';
+import postcssStyledJsxUrlLoader_21 from '../fonts/IntercomBrand-Medium.woff';
+import css from 'styled-jsx/css';
+
+export default css.global`/* @styled-jsx=global */
+
+@font-face {
+  font-family: 'Graphik';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_0}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_1}") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_2}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_3}") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_4}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_5}") format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_6}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_7}") format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_8}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_9}") format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_10}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_11}") format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Smile Script';
+  src: url("${postcssStyledJsxUrlLoader_12}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_13}") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*
+  Needed to only apply "Honey Bold Banner" to texts with bold or bold+
+  font-weight and use Graphik Regular for all non-bold texts
+*/
+@font-face {
+  font-family: 'Honey Bold Banner';
+  src: url("${postcssStyledJsxUrlLoader_14}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_15}") format('woff');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Honey Bold Banner';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_16}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_17}") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Honey Bold Banner';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_18}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_19}") format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Intercom Brand';
+  font-display: block;
+  src: url("${postcssStyledJsxUrlLoader_20}") format('woff2'),
+    url("${postcssStyledJsxUrlLoader_21}") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@import 'src/styles/themes/default-global.scss';
+`
