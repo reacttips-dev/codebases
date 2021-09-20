@@ -2,7 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/codebases/anchor.fm" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/bestbuy.ca/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/codebases/cloud.elastic.co" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/dashboard.sendbird.com/webpack---/app" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/st-ar.cdn.postman.com" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/webpack---" vcs="Git" />
