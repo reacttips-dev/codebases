@@ -1,0 +1,16 @@
+export const BUTTON_COPY = {
+  SAVE_DRAFT: 'Save as a draft',
+  UPDATE_DRAFT: 'Update saved draft',
+  REVERT_DRAFT: 'Revert to draft',
+  SAVING: 'Saving...',
+  SUBMITTING: 'Submitting...',
+  SPOTIFY_EXCLUSIVE_PUBLISH: 'Publish',
+  NEEDS_REVIEW: 'Submit episode for review',
+  PUBLISH: 'Publish now',
+  PUBLISHING: 'Publishing...',
+  NEXT: 'Next',
+  UPDATE_EPISODE: 'Update episode',
+  UPDATING: 'Updating...',
+  SCHEDULE_EPISODE: 'Schedule episode',
+  SCHEDULING: 'Scheduling...',
+};
