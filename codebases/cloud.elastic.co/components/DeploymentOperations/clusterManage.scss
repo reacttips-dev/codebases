@@ -1,0 +1,92 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+
+.clusterManage-addons {
+  margin-top: $paddingLarge;
+  margin-bottom: $paddingLarge;
+}
+
+.clusterManage-clusterNameRow {
+  width: 25rem;
+  max-width: 100%;
+}
+
+.manageSectionDivider {
+  border-bottom: .3rem solid initial;
+  padding: $paddingTight;
+  margin: $paddingSmall;
+}
+
+.dangerZoneDescription {
+  margin-top: $paddingTight;
+}
+
+.tempShieldUsers-table {
+  margin-right: $paddingTight;
+
+  td {
+    padding-top: $paddingTiny;
+    padding-bottom: $paddingTiny;
+  }
+}
+
+.tempShieldUsers-password {
+  padding: $paddingTight $paddingSmall;
+  margin: $paddingTight 0 $paddingTight;
+  border-radius: $borderRadius;
+}
+
+.tempShieldUsers-passwordText,
+.tempShieldUsers-passwordCopy {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tempShieldUsers-passwordText {
+  width: 'calc(100% - 65px)';
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tempShieldUsers-copyButton {
+  width: 65px;
+  margin-top: -$paddingSmaller;
+}
+
+@media only screen and (max-width: ($tableSmall - $subPixel)) {
+  .tempShieldUsers-table thead {
+    display: none;
+  }
+
+  .tempShieldUsers-table table,
+  .tempShieldUsers-table tbody,
+  .tempShieldUsers-table tr,
+  .tempShieldUsers-table td {
+    display: block;
+  }
+
+  .tempShieldUsers-table .cloudTable-inlineLabel {
+    display: block;
+  }
+}
+
+.tempShieldUsers-charLimit {
+  float: right;
+  margin-left: $paddingBase;
+}

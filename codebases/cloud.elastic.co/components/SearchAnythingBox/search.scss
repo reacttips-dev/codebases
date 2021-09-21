@@ -1,0 +1,70 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+
+.search-container {
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  z-index: 9;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+}
+
+.search-results-none {
+  padding: $paddingBase;
+}
+
+.search-results-list {
+  max-width: 26rem;
+}
+
+.search-result {
+  &.is-active {
+    background-color: $colorHoverState;
+  }
+}
+
+.search-result em {
+  font-style: normal;
+  background-color: $euiColorHighlight;
+}
+
+.search-result a {
+  display: block;
+  padding: $paddingBase;
+}
+
+.search-result a:hover {
+  background-color: $colorHoverState;
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+    background-color: $euiColorLightShade;
+  }
+}
+
+.searchResult-description {
+  word-break: break-all;
+}
+
+.searchResult-highlights {
+  word-break: break-all;
+}

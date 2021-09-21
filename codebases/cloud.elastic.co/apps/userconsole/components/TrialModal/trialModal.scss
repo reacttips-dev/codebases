@@ -1,0 +1,79 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables.scss';
+
+.trialModal {
+  padding: $paddingJumbo;
+
+  .trialModalBody {
+    .euiModalBody__overflow {
+      overflow: visible;
+      text-align: center;
+    }
+
+    .euiFormRow__labelWrapper {
+      margin-top: $paddingTight;
+      margin-bottom: $paddingLarge;
+
+      .euiFormRow__label {
+        font-size: $euiFontSizeS;
+      }
+    }
+  }
+
+  .extendModalFooter {
+    padding-bottom: $paddingJumbo;
+  }
+
+  .extendModalFooter-infoMessage {
+    line-height: $euiFontSizeL;
+  }
+
+  .extendModalHeader {
+    justify-content: center;
+  }
+
+  .trialModalHeader {
+    justify-content: center;
+    padding: 0px 0px 16px 0px;
+  }
+
+  @media only screen and (max-width: $euiBreakpointM) {
+    .extendModalFooter .euiFlexGroup {
+      flex-direction: row;
+    }
+
+    .trialModalHeader .euiFlexItem {
+      align-items: center;
+    }
+
+    .feature .euiFlexItem {
+      flex-basis: 0%!important;
+      margin-left: $paddingSmall!important;
+      margin-right: $paddingSmall!important;
+    }
+  }
+
+  .unlockFeatures .euiFlexItem {
+    text-align: left;
+  }
+
+  .trialModalFooter {
+    padding-bottom: 0;
+  }
+}

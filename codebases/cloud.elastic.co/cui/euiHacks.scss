@@ -1,0 +1,132 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../styles/variables.scss';
+
+// HACK: I don't know why EUI sets this to 20px, but it's broken.
+.euiTableHeaderCell, .euiTableRowCell {
+  max-width: none;
+}
+
+.euiStep .euiTitle {
+  margin-top: 0; // override a base.scss style
+}
+
+.euiErrorBoundary pre {
+  white-space: pre-wrap;
+}
+
+.euiPage {
+  padding: 0;
+}
+
+.euiFlyoutHeader .euiTitle {
+  margin-bottom: 0; // override base.scss styling
+}
+
+// fixes a bug in EUI @ 0.0.2 that's fixed in `master`.
+.euiProgress {
+  display: block;
+}
+
+// removes annoying min-width from EUI buttons, which complicates our layouts.
+.euiButton {
+  min-width: auto;
+}
+
+.euiHorizontalRule {
+  // Sometimes Chrome "calculates" an element height of e.g. 0.990px, which it
+  // rounds down, thereby hiding the element.
+  height: 1.1px;
+}
+
+.euiFilterGroup__popoverPanel .euiFilterSelect__items {
+  max-height: 350px;
+}
+
+// Needed so that Header sections are vertically centered
+.euiHeaderSectionItem {
+  display: flex;
+}
+
+.euiToolTip--m {
+  max-width: 500px;
+}
+
+// otherwise tables within tables have a white background for the header
+.euiTable {
+  background-color: inherit;
+}
+
+.euiFormHelpText-zeroPad {
+  padding-top: 0;
+}
+
+// The EUI table animation when expanding or collapsing detail rows is nice
+// However, it hides detail rows overflowing 1000px, which is too little for some of our needs.
+.euiTableRow-isExpandedRow .euiTableCellContent {
+  animation: none;
+}
+
+// Reapply configuration modal display bug fix
+.euiModal .euiCodeBlock {
+  word-break: break-all;
+}
+
+.euiText .cuiMarkdown p:last-child {
+  margin-bottom: 0;
+}
+
+.euiContextMenuItem--s {
+  padding: $euiSizeS;
+}
+
+.euiTableRow:hover .euiTableCellContent--showOnHover .euiTableCellContent__hoverItem:not(:disabled) .euiButtonIcon {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.euiLoadingContent__singleLineBackground {
+  $euiGradientStartStop: tint($euiColorLightShade, 65%);
+  $euiGradientMiddle: tint($euiColorLightShade, 50%);
+
+  background: linear-gradient(
+    to right,
+    $euiGradientStartStop 45%,
+    $euiGradientMiddle 50%,
+    $euiGradientStartStop 55%,
+  );
+}
+
+.euiTheme-dark .euiLoadingContent__singleLineBackground {
+  @import '../styles/variables.scss';
+
+  $euiGradientStartStop: shade($euiColorDarkestShade, 12%);
+  $euiGradientMiddle: shade($euiColorDarkestShade, 24%);
+
+  background: linear-gradient(
+    to right,
+    $euiGradientStartStop 45%,
+    $euiGradientMiddle 50%,
+    $euiGradientStartStop 55%,
+  );
+}
+
+// without this rule, filter groups wouldn't wrap in all cases and it breaks down responsiveness around ipad size
+.euiFilterGroup {
+  flex-wrap: wrap;
+}

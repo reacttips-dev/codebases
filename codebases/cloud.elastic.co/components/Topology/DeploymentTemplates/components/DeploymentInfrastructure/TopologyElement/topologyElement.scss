@@ -1,0 +1,98 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../../../styles/variables';
+
+.deploymentInfrastructure-topologyElement {
+  position: relative;
+  margin: 0 0 $paddingJumbo;
+}
+
+.deploymentInfrastructure-topologyElement-row {
+  margin-left: 0;
+
+  & > :first-child {
+    width: 10rem;
+    padding-right: $euiSizeM; // we want a larger distance between label and control than the flex gutter; euiSizeM to increase large gutter by 1.5x
+  }
+}
+
+.deploymentInfrastructure-topologyElement-row-label {
+  text-align: right;
+
+  @media screen and (max-width: $euiBreakpointM) {
+    text-align: left;
+  }
+}
+
+.deploymentInfrastructure-topologyElement-unshadedArea {
+  padding: $paddingLargest;
+}
+
+.deploymentInfrastructure-topologyElement-shadedArea {
+  padding: $paddingLargest;
+  background: $euiColorLightestShade;
+  border-radius: 0 0 $euiBorderRadius $euiBorderRadius;
+
+  .euiTheme-dark & {
+    @import '../../../../../../styles/dark-variables.scss';
+
+    background-color: $euiColorLightestShade;
+    border-color: $euiColorLightShade;
+  }
+}
+
+.deploymentInfrastructure-topologyElement-sizePicker {
+  margin-top: -8px;
+}
+
+.deploymentInfrastructure-topologyElement-sizeSlider-radioLegend {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-right: $euiSizeM * 3; // make flush with label: 2 for the gutter, 1 for the extra padding added to the label above
+  text-align: right;
+}
+
+// make the AZ radios inline and normal font size instead of EUI's smaller font size
+.deploymentInfrastructure-topologyElement-zoneCount {
+  .euiRadio.euiRadioGroup__item { // over-specific to beat EUI internal specificity
+    display: inline-block;
+    margin-top: 0;
+    margin-right: $paddingEvenLarger;
+
+    label {
+      font-size: inherit;
+      z-index: 0;
+    }
+  }
+}
+
+.topology-element-title {
+  margin: $paddingLarge;
+}
+
+.instance-heading-rule {
+  margin-left: 12px!important;
+  width: 80px!important;
+  height: 2px;
+  background: $euiColorPrimary;
+}
+
+.disabled-topology-element {
+  padding: $paddingLargest $paddingLarge;
+}

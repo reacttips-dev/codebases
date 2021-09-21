@@ -1,0 +1,70 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables.scss';
+
+.node-visualization-attribute-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 $paddingSmaller 2px;
+  padding-right: $paddingLarge;
+
+  .node-visualization-attribute-list-item {
+    display: flex;
+    align-items: center;
+    color: $euiColorDarkShade;
+    line-height: 1.5;
+
+    &::after {
+      content: '\00b7';
+      margin: 0 $paddingSmaller;
+      vertical-align: middle;
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+
+    .euiText {
+      display: inline-block;
+    }
+
+    .euiHealth {
+      vertical-align: middle;
+      margin-left: -2px;
+    }
+
+    .nodes-visualization-instance-name-with-type {
+      margin-right: $paddingSmaller;
+    }
+
+    > .node-visualization-attribute-list {
+      padding-right: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+
+      > .node-visualization-attribute-list-item {
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

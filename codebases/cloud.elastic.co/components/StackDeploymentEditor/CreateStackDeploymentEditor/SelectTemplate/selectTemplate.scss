@@ -1,0 +1,58 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+@import '../../../../styles/variables.scss';
+
+.createPricingRates {
+  min-width: 10.5rem;
+  margin-right: -1.5rem;
+
+  .euiDescriptionList.euiDescriptionList--column .euiDescriptionList__title,
+  .euiDescriptionList.euiDescriptionList--column .euiDescriptionList__description {
+    font-size: $euiFontSizeXS;
+    color: $euiTextSubduedColor;
+
+    @media screen and (max-width: $euiBreakpointM) {
+      font-size: $euiFontSizeS;
+    }
+  }
+}
+
+.euiFlexGroup .euiFlexItem.bottomNavigationButtons {
+  margin-bottom: -$euiSizeM;
+}
+
+
+.userconsole-pricing-rates.euiDescriptionList.euiDescriptionList--column {
+  max-width: 380px;
+  align-items: center;
+
+  @media screen and (max-width: $euiBreakpointM) {
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+
+    .euiDescriptionList__description, .euiDescriptionList__title {
+      width: auto;
+    }
+  }
+}
+
+.desktop-only-spacer {
+  @media screen and (max-width: $euiBreakpointM) {
+    display: none;
+  }
+}

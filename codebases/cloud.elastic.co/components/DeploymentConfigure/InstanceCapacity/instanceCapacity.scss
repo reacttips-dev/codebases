@@ -1,0 +1,115 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../styles/variables.scss';
+
+.instanceCapacity {
+  .discreteSlider-radios {
+    margin-bottom: 2rem; // clear the recommended size indicator
+  }
+
+  .discreteSlider-label-button {
+    white-space: pre;
+  }
+
+  input[type='range'] {
+    &::-webkit-slider-runnable-track {
+      height: $paddingBase;
+    }
+
+    &::-webkit-slider-thumb {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    &::-moz-range-track {
+      height: $paddingBase;
+    }
+
+    &::-moz-range-thumb {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    &:focus::-moz-range-track {
+      background-color: $euiColorPrimary;
+      border-color: $euiColorPrimary;
+    }
+
+    &::-ms-track {
+      height: $paddingBase;
+    }
+
+    &::-ms-thumb {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
+
+.discreteSlider-label {
+  position: relative;
+}
+
+.cluster-size-recommendation {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  width: 16rem;
+
+  /* Horizontal line */
+  .cluster-size-recommendation-line {
+    height: 2px;
+    margin: 6px 0 4px;
+    background: lighten($euiColorMediumShade, 20%);
+    position: relative;
+
+    /* Leading tick */
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 10px;
+      background: lighten($euiColorMediumShade, 20%);
+      position: absolute;
+      top: -4px;
+      left: -2px;
+    }
+
+    /* Trailing arrow */
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 10px solid lighten($euiColorMediumShade, 20%);
+      border-bottom: 5px solid transparent;
+      position: absolute;
+      top: -4px;
+      right: -10px;
+    }
+  }
+
+  .cluster-size-recommendation-text {
+    /* Account for leading tick above */
+    margin-left: -2px;
+    color: $euiColorMediumShade;
+    text-align: left;
+    white-space: nowrap;
+  }
+}

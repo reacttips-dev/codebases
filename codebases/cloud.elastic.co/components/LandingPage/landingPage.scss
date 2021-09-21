@@ -1,0 +1,178 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/containers.scss';
+@import '~@elastic/eui/src/global_styling/mixins/_responsive.scss';
+
+.landing-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  &.scroll-landing {
+    @include indifferentRootContainer();
+    align-items: stretch;
+  }
+
+  &.static-landing {
+    @include staticRootContainer();
+
+    .landing-page-wrapper {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .left {
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    @include euiBreakpoint('m') {
+      min-width: 512px; // reserve space for the business end on a narrow viewport
+    }
+
+  }
+
+  .right {
+    background-color: $euiColorPrimary;
+
+    .euiTheme-dark & {
+      @import '../../styles/dark-variables.scss';
+      background-color: $euiColorPrimary;
+    }
+  }
+}
+
+.landing-page-logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  position: absolute;
+  right: -3.8rem;
+  top: 42%;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background: $euiColorEmptyShade;
+
+  .euiTheme-dark & {
+    background: $euiColorDarkestShade;
+  }
+
+  .euiIcon {
+    height: 100%;
+    width: 100%;
+  }
+
+  .loading-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+
+    &.loading {
+      border: 3px solid $euiColorEmptyShade;
+      border-top-color: $euiColorVis0;
+      animation: euiLoadingSpinner 0.8s infinite linear;
+    }
+  }
+
+}
+
+@include euiBreakpoint('xs', 's') {
+  .landing-page-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    position: initial;
+    margin-top: $paddingLargest;
+
+    height: 70px;
+    width: 70px;
+
+    border-radius: 35px;
+    padding: 0;
+
+    .loading-indicator {
+      position: initial;
+
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: -4.4rem;
+
+      height: 70px;
+      width: 70px;
+
+      border-radius: 35px;
+    }
+
+    .euiIcon {
+      height: 50%;
+      width: 50%;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 0.15rem;
+    }
+  }
+
+  .left {
+    min-width: 0;
+  }
+
+  .left-content {
+    padding-top: 0;
+  }
+
+  .euiFlexGroup--responsive .euiFlexItem.right {
+    margin-bottom: 0 !important;
+  }
+}
+
+.landing-page-support {
+  padding-top: 1rem;
+  margin-top: auto;
+  margin-bottom: $paddingLarger;
+  text-align: center;
+}
+
+.landing-page-elasticLogo {
+  margin-top: $paddingBase;
+}
+
+.left-content {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.landing-page-privacy {
+  color: $euiColorMediumShade;
+  font-size: 12px;
+  margin: $paddingTiny auto;
+  max-width: 75%;
+}
+
+.landing-page-link {
+  color: $euiColorMediumShade!important;
+}

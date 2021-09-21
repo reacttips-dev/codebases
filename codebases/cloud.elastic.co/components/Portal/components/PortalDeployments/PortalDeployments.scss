@@ -1,0 +1,72 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables';
+
+.portal-deployment-list {
+  min-width: 650px;
+
+  @media screen and (max-width: $euiBreakpointL) {
+    min-width: auto;
+  }
+
+  &.portal-deployment-list-empty {
+    .euiTableCellContent__text {
+      width: 100%;
+    }
+  }
+
+  tbody .euiTableCellContent {
+    .deployments-table-privacy-container {
+      max-width: 100%;
+    }
+
+    .deployments-table-deployment-name {
+      max-width: 100%;
+      display: inline-flex;
+
+      .deployments-table-deployment-name-link {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .deployments-table-launch-application-link-button {
+      display: inline-block;
+    }
+
+    .deployments-table-deployment-region,
+    .deployments-table-launch-application-link-button {
+      word-break: normal;
+    }
+  }
+
+  .deployments-table-launch-application {
+    .euiLink {
+      padding-left: $paddingTight;
+    }
+  }
+
+  .deployments-table-deployment-platform-region-cell {
+    .deployments-table-deployment-region {
+      position: relative;
+      top: -$paddingSmaller;
+      padding-left: $paddingTight;
+    }
+  }
+}

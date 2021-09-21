@@ -1,0 +1,175 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+
+.cloud-signup-page {
+  width: 100%;
+  min-height: 100%;
+  padding: $paddingJumbo;
+  background-image: url('../../files/pattern-header-top-left-light.svg'), url('../../files/pattern-footer-bottom-right-light.svg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-color: $euiColorLightestShade;
+  display: flex;
+  flex-flow: column;
+
+  .euiTheme-dark & {
+    background-image: url('../../files/pattern-header-top-left-dark.svg'), url('../../files/pattern-footer-bottom-right-dark.svg');
+    background-color: shadeOrTint($euiColorDarkestShade, 45%, 0%);
+  }
+
+  .cloud-signup-page-logo {
+    position: relative;
+  }
+
+  .cloud-signup-page-elastic-logo {
+    width: auto;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cloud-signup-page-content {
+    flex: 1 1 auto;
+    margin: $paddingJumbo 0;
+  }
+
+  .cloud-signup-page-panel {
+    width: auto;
+    margin: 0 auto;
+    max-width: 875px;
+
+    &-narrow {
+      max-width: 430px;
+    }
+  }
+
+  .cloud-signup-page-form-panel {
+    margin-top: $paddingJumbo;
+    margin-bottom: $paddingJumbo;
+    padding: $paddingJumbo;
+  }
+
+  .cloud-signup-page-form-panel-title {
+    font-size: $euiSizeL;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .cloud-signup-page-form-wrapper,
+  .cloud-signup-page-description-wrapper {
+    padding: 0 $paddingLarger;
+  }
+
+  .cloud-signup-page-form-wrapper {
+    position: relative;
+
+    &::after {
+      content: '';
+      background-color: $euiColorLightShade;
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      right: -20px;
+    }
+  }
+
+  .cloud-signup-page-on-prem-title {
+    text-align: center;
+  }
+}
+
+.cloud-signup-page-on-prem-panel {
+  max-width: 430px;
+  margin: auto;
+}
+
+@media only screen and (max-height: 845px) {
+  .cloud-signup-page {
+    .cloud-signup-page-content {
+      margin: $paddingLargest 0;
+    }
+
+    .cloud-signup-page-form-panel {
+      margin-top: $paddingLargest;
+      margin-bottom: $paddingLargest;
+      padding: $paddingEvenLarger;
+    }
+  }
+}
+
+@media screen and (min-width: $euiBreakpointS) and (max-width: $euiBreakpointM) {
+  .cloud-signup-page {
+    .cloud-signup-page-logo {
+      height: 50px;
+    }
+
+    .cloud-signup-page-elastic-logo {
+      transform: translate(-50%, -23%);
+    }
+  }
+}
+
+@media only screen and (max-width: $euiBreakpointS) {
+  .cloud-signup-page {
+    padding: $paddingEvenLarger;
+    background-image: none;
+
+    .euiTheme-dark & {
+      background-image: none;
+    }
+
+    .cloud-signup-page-logo {
+      height: 100px;
+    }
+
+    .cloud-signup-page-elastic-logo {
+      transform: translate(-50%, -40%);
+    }
+
+    .cloud-signup-page-content {
+      margin: 0;
+    }
+
+    .cloud-signup-page-form-panel-title {
+      margin-bottom: $paddingTight;
+    }
+
+    .cloud-signup-page-form-wrapper::after,
+    .cloud-signup-page-description-wrapper {
+      display: none;
+    }
+
+    .cloud-signup-page-panel {
+      box-shadow: none;
+      background: transparent;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .cloud-signup-page-form-panel {
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+      border: none;
+    }
+  }
+}

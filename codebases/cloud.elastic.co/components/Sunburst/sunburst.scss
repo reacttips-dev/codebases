@@ -1,0 +1,67 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+
+.sunburst {
+  .center-text {
+    fill: $euiColorDarkShade;
+
+    .title {
+      font-size: 1.3em;
+    }
+
+    .value {
+      font-size: 3em;
+    }
+  }
+
+  .transparent {
+    opacity: 0;
+  }
+
+  .segment--started { fill: #6AB975; }
+  .segment--relocating { fill: #6EADC1; }
+  .segment--initializing { fill: #9980B2; }
+  // Inspired by http { fill://colorbrewer2.org/#type=sequential&scheme=YlOrRd&n=9
+  .segment--unassigned { fill: #800026; }
+  .segment--unassigned_index_created { fill: #BD0026; }
+  .segment--unassigned_new_index_restored { fill: #E31A1C; }
+  .segment--unassigned_allocation_failed { fill: #FC4E2A; }
+  .segment--unassigned_cluster_recovered { fill: #FD8D3C; }
+  .segment--unassigned_primary_failed { fill: #FEB24C; }
+  .segment--unassigned_node_left { fill: #FED976; }
+  .segment--none { fill: #FEB24C; }
+
+  path {
+    transition: opacity ease-in-out 0.1s;
+    stroke: $euiColorEmptyShade;
+    stroke-width: 1px;
+  }
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+
+    .center-text {
+      fill: $euiTextColor;
+    }
+
+    path {
+      stroke: $euiColorEmptyShade;
+    }
+  }
+}

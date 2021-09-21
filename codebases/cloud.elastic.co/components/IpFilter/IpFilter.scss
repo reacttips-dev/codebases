@@ -1,0 +1,74 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+
+.ip-filter-rules-set-ruleset-name {
+  color: $euiColorPrimary;
+  display: inline-flex;
+  text-align: left;
+  flex-grow: 1;
+  align-items: flex-start;
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+    color: $euiColorDarkestShade;
+  }
+
+  .euiButtonEmpty__content {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.ipFilter-ruleset-container {
+  .euiTableRow.euiTableRow-isExpandedRow {
+    .euiTableRowCell, .euiTableHeaderCell {
+      background: $euiColorLightestShade;
+
+      .euiTheme-dark & {
+        @import '../../styles/dark-variables.scss';
+        background: $euiColorLightestShade;
+      }
+    }
+
+    .euiTableHeaderCell {
+      border-bottom: none;
+    }
+  }
+
+  .ipFilter-title-description {
+    flex-grow: 1;
+  }
+}
+
+.ipFilter-ruleset-ViewRuleset {
+  padding: $paddingTight $paddingJumbo;
+  @include euiBreakpoint('xs','s') {
+    padding: $paddingTiny;
+  }
+}
+
+.ipFilter-form-description {
+  width: 500px;
+  max-width: 500px;
+}
+
+.ipFilter-form-name {
+  width: 350px;
+  max-width: 350px;
+}

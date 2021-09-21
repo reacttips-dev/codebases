@@ -1,0 +1,145 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../../styles/variables.scss';
+
+// Prevents the "sticky sidebar" from dissapearing once it hits the bottom of the element
+[data-app='appContentBody'] {
+  position: relative;
+}
+
+// Squeeze element spacing so they don't sprawl down the page.
+.euiDescriptionList .create-deployment-from-template--summary-item {
+  margin-top: $paddingTiny;
+}
+
+.create-deployment-from-template--snapshots-deployment {
+  // Long deployment names with spaces will wrap appropriately, but long deployment names
+  // without any word breaks will be trimmed so as not to overflow the page width.
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Change width of summary titles and descriptions
+.create-deployment-from-template--summary {
+  .create-deployment-from-template--summary-title {
+    margin-top: $paddingLargest;
+    margin-bottom: $paddingSmaller;
+    color: $euiColorMediumShade;
+
+    &.total {
+      border-top: 1px solid $euiColorLightShade;
+      padding-top: $paddingEvenLarger;
+    }
+
+    &+.create-deployment-from-template--summary-subtitle {
+      margin-top: 0px;
+    }
+  }
+
+  .create-deployment-from-template--summary-subtitle {
+    margin-top: $paddingBase;
+    color: $euiColorMediumShade;
+  }
+
+  .euiDescriptionList.euiDescriptionList--column.euiDescriptionList--compressed .euiDescriptionList__title {
+    flex-grow: 1;
+  }
+
+  .euiDescriptionList--column .euiDescriptionList__description {
+    text-align: right;
+    flex-grow: 2;
+    text-transform: uppercase;
+  }
+
+  .euiDescriptionList--column .euiDescriptionList__description .architecture-summary--version {
+    text-transform: none;
+  }
+
+  .annual-prices-selector {
+    width: 100%;
+    border-radius: 0 2px 2px 0;
+
+    .euiFilterButton {
+      color: $euiColorPrimary;
+      border-radius: 0 2px 2px 0;
+      background: transparent;
+      width: 50%;
+
+      &:first-child {
+
+        border-radius: 2px 0 0 2px;
+      }
+
+      .price-filter-discount {
+        display: inline;
+      }
+    }
+
+    .euiFilterButton-hasActiveFilters {
+      background: $euiColorPrimary;
+      color: $euiColorEmptyShade;
+      font-weight: 400;
+    }
+  }
+
+  .euiDescriptionList--column.euiDescriptionList--compressed .euiDescriptionList__description.inTrialConverting-prices {
+    color: $euiColorSecondary;
+  }
+
+  .price-filter-claim {
+    width: 100%;
+    margin: $paddingTight 0;
+    color: $euiColorDarkShade;
+    background: $euiColorLightestShade;
+    text-align: center;
+  }
+
+  .euiDescriptionList.support-list {
+
+    .euiDescriptionList__title {
+      flex-basis: 10%;
+    }
+
+    .euiDescriptionList__description {
+      flex-basis: 90%;
+      text-align: left;
+      text-transform: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $euiBreakpointM) {
+  .create-deployment-action-button {
+    width: 100%;
+  }
+}
+
+
+.pricesDescriptionValue {
+  font-weight: bold;
+}
+
+.hourly-discount {
+  width: 10rem;
+  margin-left: auto;
+}
+
+.hourly-before-discount {
+  text-decoration: line-through;
+  color: $euiColorMediumShade;
+}

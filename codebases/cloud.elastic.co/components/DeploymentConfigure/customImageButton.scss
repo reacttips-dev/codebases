@@ -1,0 +1,191 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/euiEffects.scss';
+
+.customImageButton,
+.customImageButton-selected,
+.customImageButton-disabled {
+  border: 1px solid $euiColorLightShade;
+  flex: 1;
+  border-radius: 4px;
+  @include smoothTransition(); // Ensures smooth transition on Eui hover bounce effect
+  max-width: 17rem;
+  min-width: 17rem;
+  min-height: 6.25rem;
+  font-size: $euiFontSizeS;
+  overflow: visible;
+  background-color: $euiColorLightestShade;
+  cursor: pointer;
+
+  svg {
+    fill: $euiColorDarkestShade;
+
+    .euiTheme-dark & {
+      @import '../../styles/dark-variables.scss';
+      fill: $euiColorFullShade;
+    }
+  }
+
+  .euiTitle,
+  .customImageButton-title {
+    font-weight: 600;
+    color: $euiColorDarkestShade;
+    display: block;
+
+    .euiTheme-dark & {
+      @import '../../styles/dark-variables.scss';
+      color: $euiColorDarkestShade;
+    }
+  }
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+    border-color: $euiColorLightShade;
+    background-color: $euiColorLightShade;
+  }
+
+  &:hover, &:focus {
+    @include euiHoverEffect();
+    @include euiDarkHoverEffect();
+  }
+
+  &:enabled {
+    &:hover, &:focus {
+      @include euiHoverEffect();
+      @include euiDarkHoverEffect();
+      background: $euiColorPrimary;
+      border-color: transparent;
+
+      svg {
+        fill: $euiColorEmptyShade;
+      }
+    }
+  }
+}
+
+.customImageButton-selected {
+  cursor: default;
+  background: $euiColorPrimary;
+  border-color: transparent;
+
+  .customImageButton-title,
+  .euiTitle {
+    color: $euiColorDarkestShade;
+    text-decoration: underline;
+  }
+
+  .customImageButton-description,
+  .euiText {
+    text-decoration: none;
+  }
+
+  svg {
+    fill: $euiColorEmptyShade;
+  }
+
+  @include euiDarkHoverEffect($transformAmount: 0px);
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+
+    svg {
+      fill: $euiColorFullShade;
+    }
+  }
+}
+
+.customImageButton:disabled,
+.customImageButton-disabled {
+  background: $euiColorLightestShade;
+  border-color: $euiColorLightShade;
+  box-shadow: none;
+
+  .customImageButton-title,
+  .customImageButton-description,
+  .euiTitle, .euiText, .euiLink {
+    color: $euiColorMediumShade;
+  }
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+    background: transparent;
+    border-color: $euiColorLightShade;
+    box-shadow: none;
+
+    .customImageButton-title,
+    .customImageButton-description,
+    .euiTitle, .euiText .euiTextColor, .euiLink {
+      color: $euiColorDarkShade;
+    }
+  }
+
+  &:hover {
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    @include euiDarkHoverEffect(0px, transparent, $euiColorDarkestShade);
+  }
+}
+
+.shortVariant {
+  min-height: 2.375rem;
+}
+
+.condensedVariant {
+  min-width: auto;
+  min-height: 2.75rem;
+
+  .customImageButton-image,
+  .customImageButton-image img {
+    height: auto;
+    display: inline-block;
+    margin: auto;
+    margin-right: $paddingLarge;
+  }
+}
+
+.customImageButton-image,
+.customImageButton-image img {
+  height: 2rem;
+  display: block;
+  margin: $paddingLarge auto;
+}
+
+.customImageButton-description {
+  color: $euiColorMediumShade;
+}
+
+// Editing tooltip
+.customImageButton-tooltip {
+  float: right;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.tooltip-bump {
+  margin-left: 16px;
+}
+
+@media only screen and (max-width: ($euiBreakpointM)) {
+  .customImageButton,
+  .customImageButton-selected {
+    max-width: none;
+  }
+}

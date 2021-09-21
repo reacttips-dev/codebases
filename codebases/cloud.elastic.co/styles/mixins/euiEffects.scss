@@ -1,0 +1,59 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+/****
+ ** EUI Effects Mixins
+ ****
+ *
+ * These mixins are used to replicate some of the hover
+ * effects that are provided by EUI but are only available on
+ * euiButton and euiCard. Import these variables if you have
+ * custom Cloud elements that should use these effects.
+ **/
+
+// Eui Animation variables
+$euiAnimSlightBounce: cubic-bezier(.34, 1.61, .7, 1);
+$euiAnimSlightResistance: cubic-bezier(.694, .0482, .335, 1);
+
+
+// Should be added to regular state
+@mixin smoothTransition($animationType: $euiAnimSlightResistance) {
+  transition: all 150ms $animationType;
+}
+
+
+@mixin euiHoverEffect($transformAmount: -2px,
+  $backgroundColor: $euiColorLightestShade,
+  $borderColor: darken($euiColorLightShade, 3%),
+  $boxShadow1: rgba(152, 162, 179, 0.15),
+  $boxShadow2: rgba(152, 162, 179, 0.3)) {
+  transform: translateY($transformAmount);
+  background-color: $backgroundColor;
+  border-color: $borderColor;
+  box-shadow: 0 4px 8px 0 $boxShadow1, 0 2px 2px -1px $boxShadow2;
+}
+
+@mixin euiDarkHoverEffect($transformAmount: -2px,
+  $darkBackgroundColor: #282F32,
+  $darkBorderColor: #3D6371,
+  $darkBoxShadow1: rgba(0, 0, 0, 0.15),
+  $darkBoxShadow2: rgba(0, 0, 0, 0.3)) {
+  .euiTheme-dark & {
+    @import '../dark-variables.scss';
+    @include euiHoverEffect($transformAmount, lighten($euiColorEmptyShade,3%), $darkBorderColor, $darkBoxShadow1, $darkBoxShadow2);
+  }
+}

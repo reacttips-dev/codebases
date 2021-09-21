@@ -1,0 +1,194 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/containers.scss';
+@import '~@elastic/eui/src/global_styling/mixins/_responsive.scss';
+
+.landing-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url('../../files/Portal-background-gray-left.svg'), url('../../files/Portal-background-gray-right.svg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+
+  .euiTheme-dark & {
+    background-image: url('../../files/Portal-background-dark-left.svg'), url('../../files/Portal-background-dark-right.svg');
+  }
+
+  @media screen and (max-width: $euiBreakpointM) {
+    background-image: none;
+  }
+
+  .titlePane-panel {
+    background: $euiColorPrimary;
+    width: 100%;
+    padding: 0 $euiSizeXXL;
+    height: 80px;
+
+    .euiTheme-dark & {
+      @import '../../styles/dark-variables.scss';
+      background-color: $euiColorPrimary;
+    }
+  }
+
+  &.static-landing {
+    @include staticRootContainer();
+
+    .landing-page-wrapper {
+      height: 100%;
+      width: 100%;
+      align-content: stretch;
+    }
+  }
+
+  &.scroll-landing {
+    @include indifferentRootContainer();
+
+    .landing-page-wrapper {
+      height: 100%;
+      width: 100%;
+      align-content: space-between;
+    }
+  }
+
+  .titlePane-panel h1 {
+    height: 80px;
+    line-height: 80px;
+
+    .landing-container-logo-title {
+      height: 40px;
+      width: auto;
+    }
+
+    @media screen and (max-width: $euiBreakpointM) {
+      height: 62px;
+      line-height: 62px;
+      visibility: hidden;
+    }
+  }
+
+  .landing-container-body {
+    flex-basis: 100%;
+
+    &>.euiFlexGroup--gutterExtraLarge {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+  }
+
+  .landing-container-title {
+    font-weight: 400;
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (max-width: $euiBreakpointM) {
+      font-size: $euiFontSizeL;
+    }
+  }
+
+  .landing-container-logo-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+    padding: 1.55rem;
+    margin: 0 auto 10px auto;
+    height: 96px;
+    width: 96px;
+    border-radius: 46px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: $euiColorEmptyShade;
+
+    .euiTheme-dark & {
+      background: $euiColorDarkestShade;
+    }
+
+    .euiIcon {
+      height: 100%;
+      width: 100%;
+    }
+
+    .loading-indicator {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 96px;
+      width: 96px;
+      border-radius: 46px;
+
+      &.loading {
+        border: 3px solid $euiColorEmptyShade;
+        border-top-color: $euiColorVis0;
+        animation: euiLoadingSpinner 0.8s infinite linear;
+
+        .euiTheme-dark & {
+          border-color: $euiColorDarkestShade;
+          border-top-color: $euiColorVis0;
+        }
+      }
+    }
+  }
+
+  @include euiBreakpoint('xs', 's') {
+    .landing-container-logo-wrapper {
+      height: 72px;
+      width: 72px;
+      border-radius: 35px;
+      padding: 1.3rem;
+
+      .loading-indicator {
+        height: 72px;
+        width: 72px;
+      }
+    }
+  }
+
+  .landing-container-wrapper-footer {
+    flex-basis: 100%;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    padding: $euiSizeXL 0;
+
+    @media screen and (max-width: $euiBreakpointM) {
+      padding: $euiSizeL 0;
+      justify-content: space-evenly;
+    }
+
+    .euiLink {
+      color: $euiColorMediumShade;
+      font-size: $euiFontSizeXS;
+      padding: 0 $euiSizeXL;
+
+      @media screen and (max-width: $euiBreakpointM) {
+        padding: 0;
+      }
+
+      &:hover {
+        color: $euiColorDarkShade;
+
+        .euiTheme-dark & {
+          color: $euiColorLightShade;
+        }
+      }
+    }
+  }
+}

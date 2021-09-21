@@ -1,0 +1,84 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import './variables.scss';
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::before,
+[data-tooltip]::after {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  top: 101%;
+  z-index: $zTooltips;
+  opacity: 0.95;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  left: -0.65rem;
+
+  padding: $paddingSmall;
+  white-space: nowrap;
+  text-decoration: none;
+  text-indent: 0;
+  overflow: visible;
+
+  font-size: 0.8em;
+  font-weight: normal;
+  color: $euiColorEmptyShade;
+  background-color: $euiColorDarkestShade;
+  border-radius: $borderRadius;
+}
+
+[data-tooltip]::after {
+  content: '';
+  left: -0.2rem;
+  margin-top: -0.45rem;
+  border-left: 0.45rem solid transparent;
+  border-right: 0.45rem solid transparent;
+  border-bottom: 0.45rem solid $euiColorDarkestShade;
+}
+
+[data-tooltip-right]::before {
+  top: -0.2rem;
+  left: 105%;
+}
+
+[data-tooltip-right]::after {
+  top: 0.7rem;
+  right: -5%;
+  border-top: 0.45rem solid transparent;
+  border-bottom: 0.45rem solid transparent;
+  border-right: 0.45rem solid $euiColorDarkestShade;
+}
+
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+  display: block;
+  transform: translateY(8px);
+}
+
+@media only print {
+  [data-tooltip]::before,
+  [data-tooltip]::after {
+    display: none;
+  }
+}

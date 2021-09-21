@@ -1,0 +1,49 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '~@elastic/eui/src/global_styling/mixins/_responsive.scss';
+@import '../../../../../styles/variables.scss';
+
+.architectureViz {
+  flex-shrink: 0;
+
+  @media screen and (max-width: $euiBreakpointXL) {
+
+    .pricing-summary-trialButtons {
+      flex-wrap: wrap;
+
+      &>.euiFlexItem {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: $euiBreakpointM) {
+    width: auto;
+  }
+
+  .euiDescriptionList.euiDescriptionList--column.euiDescriptionList--compressed {
+
+    .euiDescriptionList__description {
+      text-align: right;
+    }
+  }
+}
+
+.stickyViz {
+  width: 24rem;
+}
+

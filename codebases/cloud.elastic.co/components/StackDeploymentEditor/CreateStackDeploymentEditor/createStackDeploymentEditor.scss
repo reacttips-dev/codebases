@@ -1,0 +1,72 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../styles/variables.scss';
+
+.create-deployment-panel {
+  width: auto;
+  margin: 0 auto;
+
+  .create-deployment-placeholder .euiFieldText {
+    color: $euiColorMediumShade;
+
+    &:focus {
+      color: $euiColorDarkestShade;
+    }
+  }
+}
+
+.select-template-panel {
+  max-width: 746px;
+  margin-top: $euiSizeS!important;
+}
+
+.configure-deployment-panel, .configure-deployment-footer {
+  width: auto;
+  margin: 0 auto;
+  max-width: 833px;
+}
+
+.configure-deployment-footer {
+  border-radius: 0 0 4px 4px!important;
+  padding: $paddingEvenLarger 60px;
+}
+
+.configure-deployment-panel {
+  border-radius: 4px 4px 0 0!important;
+}
+
+.create-deployment-panel-title {
+  padding: 60px 60px $euiSizeS 60px;
+}
+
+.create-deployment-panel-body {
+  padding: $euiSizeS 60px;
+
+  @media screen and (max-width: $euiBreakpointS) {
+    padding: $euiSizeS;
+  }
+}
+
+.euiPanel .create-deployment-footer {
+  padding: $euiSizeL 60px;
+  box-shadow: 1px -2px 8px #DFDFDF !important;
+
+  .euiTheme-dark & {
+    box-shadow: 1px -2px 8px $euiColorDarkestShade !important;
+  }
+}

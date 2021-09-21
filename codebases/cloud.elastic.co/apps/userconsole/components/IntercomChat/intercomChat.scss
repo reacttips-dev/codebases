@@ -1,0 +1,100 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '~@elastic/eui/src/global_styling/variables/_index.scss';
+@import '~@elastic/eui/src/global_styling/mixins/_index.scss';
+
+.chat-iframe {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 9999; // our chrome header has z-index: 1000
+  @include euiBreakpoint('xs', 's', 'm') {
+    // We're not going to bother showing this chat on mobile, the experience wouldn't be great and we're assuming most of our
+    // users are on desktop screens. Also this is a test run right now, if we like it, we can think about turning this on.
+    display: none;
+  }
+}
+
+.chat-iframe-large {
+  height: 80%;
+
+  // Yes I'm well aware that this is hideous. BUT otherwise intercom either loads weird (if given too little space) or it will block
+  // hit targets behind the transparent part of the iframe (when it's too big). This still leaves us with a little deadspace to the
+  // left of intercom, but I've reduced it as much as possible.
+  @include euiBreakpoint('m', 'l') {
+    width: 46%;
+  }
+  @media screen and (min-width: 1070px) and (max-width: 1200px) {
+    width: 43%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1300px) {
+    width: 39%;
+  }
+  @media screen and (min-width: 1300px) and (max-width: 1400px) {
+    width: 36%;
+  }
+  @media screen and (min-width: 1400px) and (max-width: 1550px) {
+    width: 33%;
+  }
+  @media screen and (min-width: 1550px) and (max-width: 1650px) {
+    width: 30%;
+  }
+  @media screen and (min-width: 1650px) and (max-width: 1800px) {
+    width: 28%;
+  }
+  @media screen and (min-width: 1800px) and (max-width: 2000px) {
+    width: 26%;
+  }
+  @media screen and (min-width: 2000px) and (max-width: 2500px) {
+    width: 23%;
+  }
+  @media screen and (min-width: 2500px) {
+    width: 19%;
+  }
+}
+
+.chat-iframe-small {
+  height: 100px;
+  width: 100px;
+  display: none;
+}
+
+.chat-iframe-toggleBtn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 10000;
+  width: 5rem;
+  cursor: pointer;
+
+  @include euiBreakpoint('xs', 's', 'm') {
+    // We're not going to bother showing this chat on mobile, the experience wouldn't be great and we're assuming most of our
+    // are on desktop screens.
+    display: none;
+  }
+}
+
+.chat-iframe-iconShown {
+  opacity: 1;
+}
+
+.chat-iframe-iconHidden {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  pointer-events: none;
+}

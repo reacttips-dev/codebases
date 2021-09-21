@@ -1,0 +1,32 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../../../../styles/variables.scss';
+
+.configure-deployment-scripting {
+  label {
+    margin-bottom: 0;
+  }
+
+  // This is a bit of a hack. We're reusing the existing scripting components in Create / Edit Deployment,
+  // but their use of titles is out-of-keeping with the design. This calms down the titles without getting
+  // into reworking or parameterizing the React components.
+  .euiTitle {
+    font-size: $euiFontSize;
+    font-weight: 400;
+  }
+}

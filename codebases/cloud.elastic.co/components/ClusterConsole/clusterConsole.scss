@@ -1,0 +1,56 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+
+.clusterConsole {
+  .ReactCodeMirror {
+    // Default styling caps this to 700px, but for responses from the cluster that seems unnecessary.
+    max-width: initial;
+  }
+}
+
+.clusterConsole--requestBody {
+  margin-top: $paddingBase;
+}
+
+.clusterConsole--response {
+  margin: 0;
+  padding: $paddingBase;
+}
+
+.clusterConsole--response-info {
+  background-color: $euiColorLightShade;
+}
+
+.clusterConsole--response-success {
+  background-color: $euiColorSecondary;
+  color: $euiColorEmptyShade;
+}
+
+.clusterConsole--response-redirect {
+  background-color: $euiColorWarning;
+}
+
+.clusterConsole--response-error {
+  background-color: $euiColorDanger;
+  color: $euiColorEmptyShade;
+}
+
+.clusterConsole--outputBody {
+  word-break: break-word;
+}

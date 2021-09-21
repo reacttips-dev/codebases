@@ -1,0 +1,113 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../styles/variables.scss';
+
+.cloud-landing-page {
+  width: 100%;
+  min-height: 100%;
+  padding: $paddingJumbo;
+  background-image: url('../../../files/pattern-header-top-left-light.svg'), url('../../../files/pattern-footer-bottom-left.svg'), url('../../../files/pattern-footer-bottom-right-light.svg');
+  background-position: top left, 50px 95%, bottom right;
+  background-repeat: no-repeat;
+  background-color: $euiColorLightestShade;
+  display: flex;
+  flex-flow: column;
+
+  .euiTheme-dark & {
+    background-image: url('../../../files/pattern-header-top-left-dark.svg'), url('../../../files/pattern-footer-bottom-left.svg'), url('../../../files/pattern-footer-bottom-right-dark.svg');
+    background-color: shadeOrTint($euiColorDarkestShade, 45%, 0%);
+  }
+
+  .cloud-landing-page-logo {
+    height: 30px;
+  }
+
+  .cloud-landing-page-panel {
+    width: auto;
+    margin: 0 auto;
+    max-width: 875px;
+
+    &-narrow {
+      max-width: 430px;
+    }
+  }
+
+  .cloud-landing-page-form-panel {
+    margin-top: $paddingJumbo;
+    margin-bottom: $paddingJumbo;
+    padding: $paddingJumbo;
+
+    .cloud-landing-page-form-submit-button {
+      &:disabled {
+        background-color: rgba(105, 112, 125, 0.2);
+        border-color: transparent;
+        box-shadow: none;
+      }
+    }
+
+    .google-signup-form-button,
+    .google-signup-form-button:hover,
+    .azure-signup-form-button,
+    .azure-signup-form-button:hover {
+      background-color: rgba(0, 109, 228, 0.2);
+      border-color: transparent;
+      box-shadow: none;
+
+      .euiText {
+        font-weight: 500;
+      }
+    }
+
+    .social-signup-form-separator {
+      color: $euiTextSubduedColor;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      &::before,
+      &::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid $euiColorLightShade;
+      }
+
+      &::before {
+        margin-right: .75em;
+      }
+
+      &::after {
+        margin-left: .75em;
+      }
+    }
+  }
+
+  .cloud-landing-page-panel-image {
+    width: 200px;
+    height: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .cloud-landing-page-form-panel-title {
+    font-size: $euiSizeL;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+}

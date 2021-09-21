@@ -1,0 +1,43 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import './mixins/containers.scss';
+@import '~@elastic/eui/src/global_styling/variables/_animations.scss';
+
+#app-root {
+  @include indifferentRootContainer();
+}
+
+.content {
+  margin-top: $paddingLarge;
+}
+
+.fullWidth {
+  margin-left: -$paddingBase;
+  margin-right: -$paddingBase;
+}
+
+// smooth transition between light and dark modes
+html, .euiHeader, .euiHeaderSection, .euiPanel {
+  transition:
+  background-color $euiAnimSpeedNormal ease,
+  border-color $euiAnimSpeedNormal ease;
+}
+
+.euiTitle, .euiSideNavItemButton {
+  transition: color $euiAnimSpeedNormal ease;
+}

@@ -1,0 +1,137 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '~@elastic/eui/src/global_styling/functions/_colors.scss';
+@import '../../styles/variables.scss';
+
+.chromeHeaderLink {
+  width: 100%;
+  display: flex;
+
+  span {
+    justify-content: left;
+
+    svg {
+      fill: $euiColorMediumShade;
+    }
+  }
+
+  &:hover, &:focus {
+    background: $euiColorLightestShade;
+
+    .euiTheme-dark & {
+      @import '../../styles/dark-variables.scss';
+      background: $euiColorLightestShade;
+    }
+  }
+}
+
+.chromeHeader-trialUser {
+  align-items: center;
+}
+
+.chromeHeader-search {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin: 0 12px;
+  width: 100%;
+
+  .euiFormControlLayout {
+    transition: width 0.2s ease-in-out;
+    width: 40px;
+  }
+
+  .euiFieldText--withIcon {
+    padding-left: 28px;
+  }
+
+  .euiIcon {
+    pointer-events: none;
+  }
+
+  .search-container,
+  .euiFieldText {
+    width: 100%;
+  }
+}
+
+.chromeHeader-searchCollapsed {
+  text-align: center;
+
+  // we need both because: svg icon is hard to style, but input needs override as well
+  .euiFormControlLayout,
+  .euiFieldText--withIcon {
+    cursor: pointer;
+  }
+
+  /* force the input to be small so it doesn't show placeholder text */
+  .typeahead-input {
+    width: 36px;
+  }
+
+  /* center the search icon while we have a minimized input */
+  .euiFormControlLayout--compressed .euiFormControlLayoutIcons {
+    left: 12px;
+  }
+}
+
+.chromeHeader-searchExpanded {
+  .euiFormControlLayout {
+    width: 24rem;
+  }
+
+  .euiFieldText--withIcon {
+    padding-left: 40px;
+  }
+}
+
+.chromeHeader--hasSudo {
+  box-shadow: 0 2px 2px -1px $euiColorAccent;
+}
+
+.chromeHeader-popoverItem-header {
+  padding: $euiSizeS $euiSizeM;
+  background-color: $euiColorLightestShade;
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+    background-color: $euiColorLightestShade;
+  }
+}
+
+.chromeHeader-userMenuPopover {
+  .euiPopover__panelArrow.euiPopover__panelArrow--bottom::after {
+    border-bottom-color: $euiColorLightestShade;
+  }
+
+  .euiPopover__panelArrow.euiPopover__panelArrow--left::after {
+    border-left-color: $euiColorLightestShade;
+  }
+
+  .euiTheme-dark & {
+    @import '../../styles/dark-variables.scss';
+
+    .euiPopover__panelArrow.euiPopover__panelArrow--bottom::after {
+      border-bottom-color: $euiColorLightestShade;
+    }
+
+    .euiPopover__panelArrow.euiPopover__panelArrow--left::after {
+      border-left-color: $euiColorLightestShade;
+    }
+  }
+}

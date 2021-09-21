@@ -1,0 +1,38 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../../../styles/variables.scss';
+
+.stack-deployment-pricing-table-header {
+  text-align: left;
+
+  .cloud-signup-page-elastic-logo {
+    width: 120px;
+    height: auto;
+  }
+}
+
+.stack-deployment-pricing-table-header-buttons {
+  .stack-deployment-pricing-table-login-link.euiButton,
+  .stack-deployment-pricing-table-login-link.euiButton:focus,
+  .stack-deployment-pricing-table-login-link.euiButton:hover {
+    background-color: rgba(0, 109, 228, 0.2);
+    border-color: transparent;
+    box-shadow: none;
+    color: $euiColorPrimaryText;
+  }
+}

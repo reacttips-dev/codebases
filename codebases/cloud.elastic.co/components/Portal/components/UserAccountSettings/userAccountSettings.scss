@@ -1,0 +1,49 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables.scss';
+
+.cloud-portal-user-account-settings {
+
+  .user-settings-profile-edit-button {
+    .fieldEditButton {
+      span {
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  .user-settings-profile-card-button-password {
+    width: 175px;
+  }
+
+  .euiFormControlLayout--group .euiFormControlLayout__append {
+    border-left: transparent;
+    border-radius: 0;
+  }
+
+  .user-settings-disabled-label {
+    .euiTextColor--subdued {
+      color: lighten($euiColorMediumShade, 8%);
+    }
+  }
+
+  .profile-wrapper {
+    max-width: 1552px;
+    margin: 0 auto;
+  }
+}

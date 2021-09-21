@@ -1,0 +1,64 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables.scss';
+
+.portal-deployments-trial-status-info {
+  position: relative;
+
+  .euiCallOut {
+    padding: $paddingSmaller $paddingLargest $paddingLarge;
+
+    &.portal-deployments-request-trial-extension-error {
+      padding-top: $paddingLarge;
+
+      .euiCallOutHeader {
+        .euiIcon {
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+
+  .portal-deployments-trial-status-info-close-button {
+    position: absolute;
+    right: $euiSize;
+    top: $paddingBase;
+  }
+
+  .portal-deployments-request-trial-extension-link-button {
+    height: auto;
+    vertical-align: baseline;
+
+    .euiButtonEmpty__content {
+      padding: 0;
+    }
+
+    .euiButtonEmpty__text {
+      line-height: normal;
+    }
+  }
+}
+
+@media only screen and (max-width: $euiBreakpointS) {
+  .portal-deployments-trial-status-info {
+    .euiCallOut {
+      padding-right: $euiSizeXXL;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables.scss';
+
+.cloud-portal-thumbnail {
+  .cloud-portal-thumbnail-title {
+    white-space: nowrap;
+  }
+
+  .cloud-portal-tile-inner-content-title {
+    font-weight: normal;
+    font-size: $euiFontSizeS;
+  }
+
+  .cloud-portal-thumbnail-image-panel {
+    position: relative;
+    max-width: 90px;
+
+    .cloud-portal-thumbnail-image {
+      max-width: 90px;
+      min-width: 90px;
+      border-radius: 5px;
+      padding: $paddingSmaller;
+      height: 60px;
+    }
+
+    .cloud-portal-play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+      opacity: 0.85;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: rgba(0,0,0,0.8);
+        box-shadow: 0 0 10px $euiColorSecondary;
+      }
+    }
+  }
+}

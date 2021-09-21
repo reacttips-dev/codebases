@@ -1,0 +1,79 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '~@elastic/eui/src/global_styling/functions/_index.scss';
+@import '~@elastic/eui/src/global_styling/variables/_index.scss';
+@import '~@elastic/eui/src/global_styling/mixins/_index.scss';
+
+$colorHoverState: lighten($euiColorLightShade, 8%);
+$colorDarkSelectedState: rgba(77, 161, 192, 0.1);
+
+$cloudCustomTinyFont: 0.625rem; // 10px
+
+// Added these here for reference
+
+/* Typography
+Ref: @elastic/eui/src/global_styling/variables/_typography.scss
+
+$euiFontSize:       1rem     / 16px
+$euiFontSizeXS:     0.75rem  / 12px
+$euiFontSizeS:      0.875rem / 14px
+$euiFontSizeM:      1.15rem  / 18px
+$euiFontSizeL:      1.25rem  / 20px
+$euiFontSizeXL:     1.75rem  / 28px
+$euiFontSizeXXL:    2.25rem  / 36px
+
+*/
+
+/* Padding
+Ref: @elastic/eui/src/global_styling/variables/_size.scss
+
+$euiSize:     1rem    / 16px
+$euiSizeXS:   0.25rem / 4px
+$euiSizeS:    0.5rem  / 8px
+$euiSizeM:    0.75rem / 12px
+$euiSizeL:    1.5rem  / 24px
+$euiSizeXL:   2rem    / 32px
+$euiSizeXXL:  2.5rem  / 40px
+
+*/
+
+$borderRadius: $euiSizeXS;
+
+$paddingTiny:       0.125rem;
+$paddingSmaller:    $euiSizeXS;
+$paddingSmall:      0.375rem;
+$paddingTight:      $euiSizeS;
+$paddingBase:       0.625rem;
+$paddingLarge:      $euiSizeM;
+$paddingLarger:     0.875rem;
+$paddingLargest:    $euiSize;
+$paddingEvenLarger: $euiSizeL;
+$paddingJumbo:      $euiSizeXL;
+
+$euiBreakpointXS:   0px;
+$euiBreakpointS:    575px;
+$euiBreakpointM:    768px;
+$euiBreakpointL:    992px;
+$euiBreakpointXL:   1200px;
+
+$zTooltips: 1000;
+$zFlyouts:  $euiZModal;
+
+$tableSmall: 700px;
+
+$subPixel: 0.00000001px;

@@ -1,0 +1,84 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../styles/variables.scss';
+
+.statusWrapper {
+  display: inline-flex;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 0.25rem;
+}
+
+.status-background {
+  color: $euiColorEmptyShade;
+
+  &.status--pending {
+    background-color: $euiColorVis5;
+
+    .euiLoadingSpinner {
+      border-color: transparent $euiColorFullShade $euiColorFullShade $euiColorFullShade;
+    }
+  }
+
+  &.status--ok {
+    background-color: $euiColorSecondary;
+  }
+
+  &.status--error {
+    background-color: $euiColorDanger;
+  }
+
+  &.status--warning {
+    background-color: $euiColorWarning;
+  }
+
+  &.status--stopped {
+    background-color: $euiColorLightestShade;
+    color: $euiColorMediumShade;
+  }
+
+  &.status--quiet {
+    opacity: 0.1;
+  }
+}
+
+.status-foreground {
+  &.status--ok {
+    color: $euiColorSecondary;
+  }
+
+  &.status--error {
+    color: $euiColorDanger;
+  }
+
+  &.status--warning {
+    color: $euiColorWarning;
+  }
+
+  &.status--stopped {
+    color: $euiColorMediumShade;
+  }
+
+  &.status--quiet {
+    opacity: 0.1;
+  }
+}

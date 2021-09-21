@@ -1,0 +1,53 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '~@elastic/eui/src/global_styling/mixins/_responsive.scss';
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/euiEffects.scss';
+
+.deploymentCard {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  min-height: 275px;
+
+  @include smoothTransition();
+
+  @include euiBreakpoint('xl') {
+    min-height: 300px;
+  }
+}
+
+.deploymentCard-displayName {
+  // Guard against really, really long names
+  max-width: 350px;
+}
+
+.deploymentCard-displayNameInner {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deploymentCard-problemNodesText {
+  border-bottom: 1px dashed $euiColorWarning;
+}
+
+.deploymentCard-problemNodesText--red {
+  border-bottom-color: $euiColorDanger;
+}

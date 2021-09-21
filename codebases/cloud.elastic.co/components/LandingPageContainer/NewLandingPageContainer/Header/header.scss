@@ -1,0 +1,54 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables.scss';
+
+.cloud-landing-page-logo {
+  position: relative;
+}
+
+.cloud-landing-page-elastic-logo {
+  width: auto;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cloud-landing-page-login-link,
+.cloud-landing-page-sign-up-link {
+  margin-left: $paddingLarge;
+}
+
+.cloud-landing-page-login-link-mobile,
+.cloud-landing-page-sign-up-link-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: $euiBreakpointS) {
+  .cloud-landing-page-login-link,
+  .cloud-landing-page-sign-up-link {
+    display: none;
+  }
+
+  .cloud-landing-page-login-link-mobile,
+  .cloud-landing-page-sign-up-link-mobile {
+    display: block;
+    text-align: right;
+  }
+}

@@ -1,0 +1,63 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../styles/variables.scss';
+
+.chrome-header-navigation-section-item {
+  padding-left: $paddingLargest;
+
+  &:hover {
+    background: transparent;
+  }
+
+  .euiHeaderBreadcrumbs {
+    margin-left: $paddingLarge;
+  }
+
+  .euiHeaderLogo {
+    padding: 0;
+    min-width: auto;
+  }
+}
+
+.header-breadcrumbs {
+  padding: 0 0.2rem;
+  z-index: 0;
+}
+
+.header-breadcrumbs-loading {
+  display: flex;
+  align-items: center;
+  margin: 0 $paddingLarge;
+  width: 100%;
+
+  .euiLoadingContent {
+    width: 100%;
+  }
+
+  .euiLoadingContent__singleLine:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.headerNavigation_logo .euiHeaderLogo__text {
+  display: flex;
+}
+
+.headerNavigation_elasticMark {
+  fill: $euiColorGhost;
+}

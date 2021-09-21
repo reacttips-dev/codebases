@@ -1,0 +1,116 @@
+/*
+ * ELASTICSEARCH CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright Elasticsearch B.V. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Elasticsearch B.V. and its suppliers, if any.
+ * The intellectual and technical concepts contained herein
+ * are proprietary to Elasticsearch B.V. and its suppliers and
+ * may be covered by U.S. and Foreign Patents, patents in
+ * process, and are protected by trade secret or copyright
+ * law.  Dissemination of this information or reproduction of
+ * this material is strictly forbidden unless prior written
+ * permission is obtained from Elasticsearch B.V.
+ */
+
+@import '../../../../styles/variables.scss';
+@import '~@elastic/eui/src/global_styling/mixins/_responsive.scss';
+
+$legendCircleDiameter: 18px;
+$vizCircleDiameter: 36px;
+
+.create-deployment-divider {
+  margin-bottom: $paddingSmall;
+
+  .euiTitle {
+    margin-bottom: 0;
+  }
+}
+
+.deployment-template-inline-label {
+  // Align to start of container
+  padding-left: 0;
+  // Content gets chopped with default padding, swapping it to margin fixes it.
+  padding-right: 0;
+  margin-right: 10px;
+}
+
+.create-deployment-template-summary {
+  border-top: 1px solid $euiColorLightShade;
+  border-bottom: 1px solid $euiColorLightShade;
+  background-color: $euiColorLightestShade;
+  margin-top: $paddingBase;
+  margin-bottom: $paddingBase;
+
+  .euiTheme-dark & {
+    border-top: 1px solid $euiColorDarkShade;
+    border-bottom: 1px solid $euiColorMediumShade;
+    background-color: $euiColorDarkShade;
+
+    .euiButton {
+      @import '../../../../styles/dark-variables.scss';
+      background-color: $euiColorEmptyShade;
+    }
+  }
+
+  .euiTitle {
+    margin-bottom: 0;
+  }
+
+  .euiButton {
+    background-color: $euiColorEmptyShade;
+    overflow: visible;
+  }
+}
+
+.instance-summary-circle {
+  color: $euiColorEmptyShade;
+  border-radius: 50%;
+  background-color: $euiColorLightestShade;
+
+  width: $vizCircleDiameter;
+  height: $vizCircleDiameter;
+  display: block;
+
+  // Requires a bit of nudging to align properly
+  line-height: $vizCircleDiameter + 1;
+
+  text-align: center;
+  vertical-align: top;
+
+  margin-right: $vizCircleDiameter / 2;
+  margin-bottom: $vizCircleDiameter / 2;
+}
+
+.create-deployment-summary-zone-key {
+  background-color: $euiColorLightestShade;
+  border: 1px solid $euiColorLightShade;
+  border-radius: 4px;
+  padding: $paddingLarge $paddingBase $paddingLarge $paddingLarge;
+
+  .euiTheme-dark & {
+    @import '../../../../styles/dark-variables.scss';
+
+    background-color: $euiColorLightestShade;
+    border-color: $euiColorLightShade;
+  }
+
+  .zone-key__legend {
+    border-radius: 50px;
+    display: block;
+    width: $legendCircleDiameter;
+    height: $legendCircleDiameter;
+    background-color: $euiColorLightestShade;
+  }
+
+  .zone-key__instance-name {
+    display: block;
+    line-height: 1rem; // ensure alignment with the legend circle
+  }
+}
+
+.deploymentTemplateWizard .euiStepHorizontal__title {
+  white-space: nowrap; // prevent two-line step titles
+}
