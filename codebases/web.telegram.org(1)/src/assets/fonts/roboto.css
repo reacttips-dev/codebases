@@ -1,0 +1,146 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.499af208fa04aa805317cf014d869692.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.6b69287db14836e8ccee577d6457b127.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.350ec982325895563ada47d14c7936da.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.af30acd9d70ade5b828db02d25348da2.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.62afd8a72052ca925aafb4006fddff88.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.009379f5feecd3ef689ad46e029b31e6.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(KFOmCnqEu92Fr1Mu4mxKKTU1Kg.465390c6e54c60f4a15ff698f372e858.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.66efaee062df58309edc4cdfaef3f094.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.3e1bb90afe5eb4a94c5ffdb911fd21d0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.acd64c8bf32762464b8f2c0600dc2b89.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.cab892ae9aa422233ea43db289e0c038.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.01bafbfbc1e4ebe0139d259614d5c12d.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.d3c211af53a789d2f9fd79599baca39a.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.324b1e6d0f5ae7c6ab42fed5516c7b3d.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Persian, v30.0.0, https://github.com/rastikerdar/vazir-font */
+@font-face {
+  font-family: Vazir;
+  src: url(Vazir-Regular-WOL.4a4990b236f65249e65964ba9615df52.woff2) format('woff2'),
+  url(Vazir-Regular-WOL.a6f663c7a4c514c9de9923658fc1842e.woff) format('woff');
+  font-weight: normal;
+  font-display:swap;
+  unicode-range:U+0627-06FF;
+}
+
+/* Persian, v30.0.0, https://github.com/rastikerdar/vazir-font */
+@font-face {
+  font-family: Vazir;
+  src: url(Vazir-Medium-WOL.107ead8042d2d2a1082704d7ab2bbf75.woff2) format('woff2'),
+  url(Vazir-Medium-WOL.25ba8d95080e1e2952f4d5d51de2fb8c.woff) format('woff');
+  font-weight: 500;
+  font-display:swap;
+  unicode-range: U+0600-06FF;
+}
