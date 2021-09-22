@@ -104,6 +104,11 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 * Zappos (https://www.zappos.com/) - eCommerce / Cong Nguyen, 2021/09/20
 
 
-## Contribute
-
+## How to contribute
 Contributions are always welcome, no matter how large or small!
+
+_(document how to make a PR is in construction)_
+
+## Community
+We have a facebook group for update and talking about these codebases.
+Unfortunately, only Vietnamese is supported now. [Click here](https://www.facebook.com/groups/codebases) to visit our group.
