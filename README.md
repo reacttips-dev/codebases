@@ -41,7 +41,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### I
-* Intercom (https://intercom.com) - Messaging / Cong Nguyen, 2021/09/20
+* Intercom (https://intercom.com) - Messaging, Nextjs, SSR / Cong Nguyen, 2021/09/20
 
 ---
 ### J
@@ -63,7 +63,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### P
-* Postman Web (https://web.postman.co) - other / Cong Nguyen, 2021/09/20
+* Postman Web (https://web.postman.co) - electron / Cong Nguyen, 2021/09/20
 
 ---
 ### Q
@@ -74,6 +74,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ---
 ### S
 * SendBird (https://dashboard.sendbird.com) - Messaging / Cong Nguyen, 2021/09/20
+* Skillshare (https:/skillshare.com) - Education / Cong Nguyen, 2021/09/22
 
 ---
 ### T

@@ -1,0 +1,26 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+import React from 'react';
+import styled from 'styled-components';
+var BadgeStyle = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    display: flex;\n\n    .gradient {\n        background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.6), rgba(216, 216, 216, 0));\n        pointer-events: none;\n    }\n\n    svg {\n        display: inline-block;\n        height: 100%;\n        pointer-events: none;\n        position: absolute;\n        vertical-align: middle;\n        z-index: 3;\n    }\n"], ["\n    display: flex;\n\n    .gradient {\n        background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.6), rgba(216, 216, 216, 0));\n        pointer-events: none;\n    }\n\n    svg {\n        display: inline-block;\n        height: 100%;\n        pointer-events: none;\n        position: absolute;\n        vertical-align: middle;\n        z-index: 3;\n    }\n"])));
+export var SkillshareOriginalBadge = function (props) {
+    return (React.createElement(BadgeStyle, { className: "skillshare-original-badge" },
+        props.gradient && React.createElement("div", { className: "gradient" }),
+        React.createElement("svg", { viewBox: "0 0 97 24", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+            React.createElement("title", null, "Skillshare Original"),
+            React.createElement("g", { clipPath: "url(#clip0)" },
+                React.createElement("path", { d: "M0.235352 9.68567C0.235352 4.88246 3.59666 0.757812 9.27495 0.757812C14.9581 0.757812 18.3146 4.88246 18.3146 9.68082C18.3146 14.4792 14.9532 18.6038 9.27495 18.6038C3.59666 18.6087 0.235352 14.484 0.235352 9.68567ZM14.2343 9.68567C14.2343 6.74365 12.4954 4.25722 9.27981 4.25722C6.03993 4.25722 4.30099 6.74365 4.32527 9.68567C4.30099 12.6277 6.03993 15.1141 9.27981 15.1141C12.4905 15.1093 14.2343 12.6277 14.2343 9.68567Z", fill: "white" }),
+                React.createElement("path", { d: "M21.4863 6.50104H25.1828V8.93899C25.5957 7.20383 26.9703 6.31201 28.3984 6.31201C28.8356 6.31201 29.0736 6.33625 29.365 6.40895V9.83566C28.9278 9.78719 28.7141 9.76295 28.2527 9.76295C26.4409 9.76295 25.1828 10.8486 25.1828 13.6453V18.1334H21.4863V6.50104Z", fill: "white" }),
+                React.createElement("path", { d: "M41.1102 22.3696C39.925 21.6474 39.0798 20.3921 39.0312 19.1368H42.8005C42.9706 20.0528 43.7672 20.6102 45.2681 20.6102C46.9828 20.6102 48.0222 19.8638 48.0222 17.7893V16.2432C47.4442 17.4016 45.8947 18.1238 44.3743 18.1238C40.9159 18.1238 38.8369 15.6131 38.8369 12.1913C38.8369 8.76939 41.0616 6.18604 44.4229 6.18604C46.021 6.18604 47.4442 6.95668 48.0271 8.16354V6.50108H51.7236V17.3774C51.6993 19.6214 50.9027 21.2839 49.4746 22.2727C48.4108 23.0191 46.9828 23.3099 45.3167 23.3099C43.6506 23.3099 42.2468 23.0482 41.1102 22.3696ZM48.1922 12.2397C48.1922 10.553 47.1528 9.20076 45.3895 9.20076C43.7234 9.20076 42.6354 10.4803 42.6354 12.2397C42.6354 13.9991 43.7234 15.2787 45.3895 15.2787C47.1528 15.2787 48.1922 13.9313 48.1922 12.2397Z", fill: "white" }),
+                React.createElement("path", { d: "M62.0845 6.50108H65.7809V8.18777C66.4561 6.88398 67.787 6.18604 69.5503 6.18604C72.3773 6.18604 73.8054 7.77579 73.8054 10.9359V18.1238H70.0846V12.1428C70.0846 10.1895 69.526 9.2977 68.0299 9.2977C66.5533 9.2977 65.7809 10.2622 65.7809 12.0459V18.1238H62.0845V6.50108Z", fill: "white" }),
+                React.createElement("path", { d: "M76.3943 12.3124C76.3943 8.83725 78.5461 6.18604 81.9317 6.18604C83.6221 6.18604 84.953 6.98091 85.5796 8.16354V6.50108H89.2518V18.1286H85.5796V16.4855C84.953 17.6439 83.5006 18.4388 81.8831 18.4388C78.4004 18.4388 76.3943 15.8118 76.3943 12.3124ZM85.7253 12.3124C85.7253 10.65 84.783 9.27346 82.9469 9.27346C81.2322 9.27346 80.1685 10.553 80.1685 12.3124C80.1685 14.0718 81.2322 15.3756 82.9469 15.3756C84.783 15.3756 85.7253 14.004 85.7253 12.3124Z", fill: "white" }),
+                React.createElement("path", { d: "M92.6619 1.24219H96.3583V18.1285H92.6619V1.24219Z", fill: "white" }),
+                React.createElement("path", { d: "M54.3708 2.73509C54.3708 1.33435 55.4249 0.200195 56.9113 0.200195C58.3976 0.200195 59.4808 1.33435 59.4808 2.73509C59.4808 4.11159 58.3976 5.24574 56.9113 5.24574C55.4249 5.24574 54.3708 4.11159 54.3708 2.73509Z", fill: "#00FF84" }),
+                React.createElement("path", { d: "M58.752 6.50098H55.075V18.1285H58.752V6.50098Z", fill: "white" }),
+                React.createElement("path", { d: "M31.6335 2.73509C31.6335 1.33435 32.6876 0.200195 34.174 0.200195C35.6603 0.200195 36.7435 1.33435 36.7435 2.73509C36.7435 4.11159 35.6603 5.24574 34.174 5.24574C32.6876 5.24574 31.6335 4.11159 31.6335 2.73509Z", fill: "#00FF84" }),
+                React.createElement("path", { d: "M36.0149 6.50098H32.3379V18.1285H36.0149V6.50098Z", fill: "white" })))));
+};
+var templateObject_1;
+//# sourceMappingURL=skillshare-original.js.map

@@ -1,0 +1,25 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+import React from 'react';
+import styled from 'styled-components';
+import { Loading } from '../../Loading';
+import { colors } from '../../themes';
+import { color, typography } from '../../themes/utils';
+import { buttonColors, buttonStyle } from './button';
+var ButtonStyle = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    ", "\n\n    height: 40px;\n    width: 100%;\n    border: 1px solid ", ";\n    border-radius: 4px;\n\n    svg {\n        position: absolute;\n        top: 11px;\n        left: 11px;\n        width: 18px;\n        height: 18px;\n        display: inline-block;\n        fill: none;\n\n        path {\n            fill: #1877f2;\n            stroke: none;\n        }\n    }\n\n    .text {\n        ", "\n        font-size: 15px;\n        line-height: 19.2px;\n        font-weight: bold;\n        letter-spacing: 0.2px;\n        color: ", ";\n        position: absolute;\n        left: 80px;\n        top: 10px;\n    }\n\n    &:active {\n        transform: translateY(1px);\n    }\n\n    &:hover {\n        border-color: ", ";\n    }\n\n    &:disabled,\n    &.disabled {\n        cursor: default !important;\n        color: ", " !important;\n        background-color: ", " !important;\n        border-color: ", " !important;\n\n        &:active {\n            top: 0;\n        }\n\n        svg {\n            path {\n                fill: #394649;\n            }\n        }\n    }\n"], ["\n    ", "\n\n    height: 40px;\n    width: 100%;\n    border: 1px solid ", ";\n    border-radius: 4px;\n\n    svg {\n        position: absolute;\n        top: 11px;\n        left: 11px;\n        width: 18px;\n        height: 18px;\n        display: inline-block;\n        fill: none;\n\n        path {\n            fill: #1877f2;\n            stroke: none;\n        }\n    }\n\n    .text {\n        ", "\n        font-size: 15px;\n        line-height: 19.2px;\n        font-weight: bold;\n        letter-spacing: 0.2px;\n        color: ", ";\n        position: absolute;\n        left: 80px;\n        top: 10px;\n    }\n\n    &:active {\n        transform: translateY(1px);\n    }\n\n    &:hover {\n        border-color: ", ";\n    }\n\n    &:disabled,\n    &.disabled {\n        cursor: default !important;\n        color: ", " !important;\n        background-color: ", " !important;\n        border-color: ", " !important;\n\n        &:active {\n            top: 0;\n        }\n\n        svg {\n            path {\n                fill: #394649;\n            }\n        }\n    }\n"])), buttonStyle(buttonColors.white), color(function (c) { return c.charcoal; }), typography(function (t) { return t.normal; }), color(function (c) { return c.navy; }), color(function (c) { return c.navy; }), color(function (c) { return c.white; }), color(function (c) { return c.concrete; }), color(function (c) { return c.concrete; }));
+export var FaceBookButton = function (_a) {
+    var text = _a.text, onClick = _a.onClick, isFacebookLoading = _a.isFacebookLoading;
+    return (React.createElement(ButtonStyle, { disabled: isFacebookLoading, className: "facebook-button", onClick: onClick }, isFacebookLoading ? (React.createElement(React.Fragment, null,
+        React.createElement(FaceBookLogoDisabled, null),
+        React.createElement(Loading, { size: 39, fillColor: colors.black }))) : (React.createElement(React.Fragment, null,
+        React.createElement(FaceBookLogo, null),
+        React.createElement("span", { className: "text" }, text)))));
+};
+var FaceBookLogo = function () { return (React.createElement("svg", { width: "20", height: "20", viewBox: "0 0 20 20", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20 10.0611C20 4.50451 15.5229 0 10 0C4.47715 0 0 4.50451 0 10.0611C0 15.0829 3.65686 19.2452 8.4375 20V12.9694H5.89844V10.0611H8.4375V7.84452C8.4375 5.32296 9.93043 3.93012 12.2146 3.93012C13.3087 3.93012 14.4531 4.12663 14.4531 4.12663V6.60261H13.1921C11.9499 6.60261 11.5625 7.37816 11.5625 8.17381V10.0611H14.3359L13.8926 12.9694H11.5625V20C16.3431 19.2452 20 15.0829 20 10.0611Z", fill: "#1877F2" }))); };
+var FaceBookLogoDisabled = function () { return (React.createElement("svg", { width: "20", height: "20", viewBox: "0 0 20 20", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+    React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M20 10.0611C20 4.50451 15.5229 0 10 0C4.47715 0 0 4.50451 0 10.0611C0 15.0829 3.65686 19.2452 8.4375 20V12.9694H5.89844V10.0611H8.4375V7.84452C8.4375 5.32296 9.93043 3.93012 12.2146 3.93012C13.3087 3.93012 14.4531 4.12663 14.4531 4.12663V6.60261H13.1921C11.9499 6.60261 11.5625 7.37816 11.5625 8.17381V10.0611H14.3359L13.8926 12.9694H11.5625V20C16.3431 19.2452 20 15.0829 20 10.0611Z", fill: "#394649" }))); };
+var templateObject_1;
+//# sourceMappingURL=facebook-button.js.map

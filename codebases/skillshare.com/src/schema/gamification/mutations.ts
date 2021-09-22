@@ -1,0 +1,10 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+import { gql } from 'apollo-boost';
+export var MarkGamificationCompletionMessageShownMutation = gql(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    mutation MarkGamificationCompletionMessageShown($input: MarkGamificationCompletionMessageShownInput) {\n        markGamificationCompletionMessageShown(input: $input) {\n            clientMutationId\n        }\n    }\n"], ["\n    mutation MarkGamificationCompletionMessageShown($input: MarkGamificationCompletionMessageShownInput) {\n        markGamificationCompletionMessageShown(input: $input) {\n            clientMutationId\n        }\n    }\n"])));
+export var MarkGamificationActionToastShownMutation = gql(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    mutation MarkGamificationActionToastShown($input: MarkGamificationActionToastShownInput!) {\n        markGamificationActionToastShown(input: $input) {\n            clientMutationId\n        }\n    }\n"], ["\n    mutation MarkGamificationActionToastShown($input: MarkGamificationActionToastShownInput!) {\n        markGamificationActionToastShown(input: $input) {\n            clientMutationId\n        }\n    }\n"])));
+export var MarkGamificationActionPopoversShownMutation = gql(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    mutation MarkGamificationActionPopoversShown($input: MarkGamificationActionPopoversShownInput!) {\n        markGamificationActionPopoversShown(input: $input) {\n            clientMutationId\n        }\n    }\n"], ["\n    mutation MarkGamificationActionPopoversShown($input: MarkGamificationActionPopoversShownInput!) {\n        markGamificationActionPopoversShown(input: $input) {\n            clientMutationId\n        }\n    }\n"])));
+var templateObject_1, templateObject_2, templateObject_3;
+//# sourceMappingURL=mutations.js.map

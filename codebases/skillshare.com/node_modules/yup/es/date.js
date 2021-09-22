@@ -1,0 +1,84 @@
+import MixedSchema from './mixed';
+import inherits from './util/inherits';
+import isoParse from './util/isodate';
+import { date as locale } from './locale';
+import isAbsent from './util/isAbsent';
+import Ref from './Reference';
+var invalidDate = new Date('');
+
+var isDate = function isDate(obj) {
+  return Object.prototype.toString.call(obj) === '[object Date]';
+};
+
+export default DateSchema;
+
+function DateSchema() {
+  var _this = this;
+
+  if (!(this instanceof DateSchema)) return new DateSchema();
+  MixedSchema.call(this, {
+    type: 'date'
+  });
+  this.withMutation(function () {
+    _this.transform(function (value) {
+      if (this.isType(value)) return value;
+      value = isoParse(value); // 0 is a valid timestamp equivalent to 1970-01-01T00:00:00Z(unix epoch) or before.
+
+      return !isNaN(value) ? new Date(value) : invalidDate;
+    });
+  });
+}
+
+inherits(DateSchema, MixedSchema, {
+  _typeCheck: function _typeCheck(v) {
+    return isDate(v) && !isNaN(v.getTime());
+  },
+  min: function min(_min, message) {
+    if (message === void 0) {
+      message = locale.min;
+    }
+
+    var limit = _min;
+
+    if (!Ref.isRef(limit)) {
+      limit = this.cast(_min);
+      if (!this._typeCheck(limit)) throw new TypeError('`min` must be a Date or a value that can be `cast()` to a Date');
+    }
+
+    return this.test({
+      message: message,
+      name: 'min',
+      exclusive: true,
+      params: {
+        min: _min
+      },
+      test: function test(value) {
+        return isAbsent(value) || value >= this.resolve(limit);
+      }
+    });
+  },
+  max: function max(_max, message) {
+    if (message === void 0) {
+      message = locale.max;
+    }
+
+    var limit = _max;
+
+    if (!Ref.isRef(limit)) {
+      limit = this.cast(_max);
+      if (!this._typeCheck(limit)) throw new TypeError('`max` must be a Date or a value that can be `cast()` to a Date');
+    }
+
+    return this.test({
+      message: message,
+      name: 'max',
+      exclusive: true,
+      params: {
+        max: _max
+      },
+      test: function test(value) {
+        return isAbsent(value) || value <= this.resolve(limit);
+      }
+    });
+  }
+});

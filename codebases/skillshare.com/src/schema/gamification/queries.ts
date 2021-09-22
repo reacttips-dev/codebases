@@ -1,0 +1,10 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+import { gql } from 'apollo-boost';
+export var GetGamificationActionsQuery = gql(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    query GetGamificationActions {\n        gamification {\n            actions {\n                title\n                popoverText\n                linkUrl\n                showPopoverOnLoad\n                isCompleted\n            }\n        }\n    }\n"], ["\n    query GetGamificationActions {\n        gamification {\n            actions {\n                title\n                popoverText\n                linkUrl\n                showPopoverOnLoad\n                isCompleted\n            }\n        }\n    }\n"])));
+export var GetGamificationCompletionQuery = gql(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    query GetGamificationCompletion {\n        gamification {\n            showCompletionMessage\n        }\n    }\n"], ["\n    query GetGamificationCompletion {\n        gamification {\n            showCompletionMessage\n        }\n    }\n"])));
+export var GetGamificationToastQuery = gql(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    query GetGamificationToast($step: GamificationStep!) {\n        gamification {\n            toast: action(step: $step) {\n                showToast\n            }\n            joinSkillshare: action(step: JOIN_SKILLSHARE) {\n                isCompleted\n            }\n        }\n    }\n"], ["\n    query GetGamificationToast($step: GamificationStep!) {\n        gamification {\n            toast: action(step: $step) {\n                showToast\n            }\n            joinSkillshare: action(step: JOIN_SKILLSHARE) {\n                isCompleted\n            }\n        }\n    }\n"])));
+var templateObject_1, templateObject_2, templateObject_3;
+//# sourceMappingURL=queries.js.map

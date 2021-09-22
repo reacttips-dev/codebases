@@ -1,0 +1,11 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+import { gql } from 'apollo-boost';
+export var CreateCommentMutation = gql(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    mutation CreateComment($input: CreateCommentInput!) {\n        createComment(input: $input) {\n            newComment {\n                key\n                contentHTML\n            }\n        }\n    }\n"], ["\n    mutation CreateComment($input: CreateCommentInput!) {\n        createComment(input: $input) {\n            newComment {\n                key\n                contentHTML\n            }\n        }\n    }\n"])));
+export var UpdateCommentMutation = gql(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    mutation UpdateComment($input: UpdateCommentInput!) {\n        updateComment(input: $input) {\n            updatedComment {\n                key\n                contentHTML\n            }\n        }\n    }\n"], ["\n    mutation UpdateComment($input: UpdateCommentInput!) {\n        updateComment(input: $input) {\n            updatedComment {\n                key\n                contentHTML\n            }\n        }\n    }\n"])));
+export var DeleteCommentMutation = gql(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    mutation DeleteComment($input: DeleteCommentInput!) {\n        deleteComment(input: $input) {\n            id\n        }\n    }\n"], ["\n    mutation DeleteComment($input: DeleteCommentInput!) {\n        deleteComment(input: $input) {\n            id\n        }\n    }\n"])));
+export var UpdateCommentStateMutation = gql(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n    mutation UpdateCommentState($input: UpdateCommentStateInput!) {\n        updateCommentState(input: $input) @client {\n            comment {\n                id\n            }\n        }\n    }\n"], ["\n    mutation UpdateCommentState($input: UpdateCommentStateInput!) {\n        updateCommentState(input: $input) @client {\n            comment {\n                id\n            }\n        }\n    }\n"])));
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
+//# sourceMappingURL=mutations.js.map

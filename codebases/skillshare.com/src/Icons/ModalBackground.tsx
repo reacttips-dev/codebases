@@ -1,0 +1,4 @@
+import React from 'react';
+export var ModalBackground = function () { return (React.createElement("svg", { width: "560", height: "376", viewBox: "0 0 560 376", fill: "currentColor" },
+    React.createElement("path", { d: "M493.001 -33.9996C477.002 59.9991 369.001 112.087 299.501 77.5436C230.001 43.0007 208.001 -56.9995 208.001 -86.9993C208.001 -109.385 -10.4999 -33.9994 33.001 64.5006C76.502 163.001 430.501 -10.6044 349 -58.9994C267.499 -107.394 141.501 33.5007 200.001 85.0007C258.501 136.501 504 -3.99959 449.501 -33.9996C360.505 -82.9889 336.501 218.5 449.501 243.501C486.179 251.615 523 160.5 504.001 116.001", stroke: "#00FF84", strokeWidth: "5", strokeLinecap: "round", strokeLinejoin: "round" }))); };
+//# sourceMappingURL=ModalBackground.js.map
