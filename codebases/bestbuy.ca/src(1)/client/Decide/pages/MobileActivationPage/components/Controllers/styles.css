@@ -1,0 +1,43 @@
+.stepsControllers_3FBJI {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+.stepsControllers_3FBJI > button:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.stepsControllers_3FBJI > button {
+    height: 48px;
+}
+
+.continueButton_2xP9h span {
+    padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+    .stepsControllers_3FBJI {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .continueButton_2xP9h {
+        height: 48px;
+        min-width: 160px;
+        margin: 0 24px 0 0;
+    }
+
+    .cancelButton_ZWmi9 {
+        width: 96px;
+    }
+}

@@ -1,0 +1,23 @@
+
+
+.container_2eR50 {
+    background: #f4f6f9;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    z-index: 2;
+}
+
+.icon_1np5B {
+    height: 80%;
+    width: 60%;
+    max-width: 200px;
+    margin: 40px 0;
+}

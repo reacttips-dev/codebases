@@ -1,0 +1,133 @@
+
+
+.dividerWithMargin_2Rrzf {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+}
+
+.backDivider_R6K_d {
+    margin: 0 0 16px !important;
+}
+
+.reviewWrapper_AUqIN {
+    padding: 24px 16px;
+    font-size: 16px;
+    line-height: 16px;
+    border-top: 1px solid #e0e6ef;
+}
+
+.reviewListWrapper_1NTto {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.reviewListWrapper_1NTto li:last-child {
+    margin-bottom: 0;
+}
+
+.sellerDescription_6gQ3N {
+    margin-bottom: 0;
+}
+
+.summaryContainer_2atjM {
+    padding: 0;
+}
+
+.sellerReviewTitle_1TVD4 {
+    padding: 0 16px 16px;
+    margin: 0;
+}
+
+.sellerTitle_3Rx0J {
+    padding: 0 16px;
+}
+
+.loadMore_3FG8- {
+    width: 100%;
+}
+
+.reviewWrapper_AUqIN {
+    padding: 24px 16px;
+    font-size: 16px;
+    line-height: 16px;
+    border-top: 0;
+}
+
+.ratingContainer_3lenx {
+    padding: 0 0 16px;
+    margin: 0 16px;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+.dividerWithMargin_2Rrzf {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+}
+
+.summaryContainer_2atjM {
+    padding: 24px 0;
+    margin: 0 16px;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+.sellerReviewLink_2unz1:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .ratingContainer_3lenx {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .ratingContainer_3lenx {
+        padding: 0;
+        margin: 0 24px;
+        border-bottom: 1px solid #e0e6ef;
+    }
+
+    .dividerWithMargin_2Rrzf {
+        margin-left: 24px !important;
+        margin-right: 24px !important;
+    }
+
+    .loadMoreDivider_2QeB9 {
+        margin-bottom: 24px !important;
+    }
+
+    .backButtonContainer_2mpMe {
+        padding-left: 8px;
+    }
+
+    .content_3086A {
+        max-width: 66.66666667%;
+        margin: 0 auto;
+    }
+
+    .backButtonContainer_2mpMe {
+        padding-left: 16px;
+    }
+
+    .summaryContainer_2atjM {
+        margin: 0 24px;
+    }
+
+    .ratingContainer_3lenx {
+        padding: 0;
+        margin: 0 24px;
+    }
+
+    .sellerReviewTitle_1TVD4 {
+        padding: 0 24px 16px;
+        margin: 0;
+    }
+
+    .sellerTitle_3Rx0J {
+        padding: 0 24px;
+    }
+
+    .reviewWrapper_AUqIN {
+        padding: 24px;
+    }
+}

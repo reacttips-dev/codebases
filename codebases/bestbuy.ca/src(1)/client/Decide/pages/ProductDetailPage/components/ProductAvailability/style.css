@@ -1,0 +1,242 @@
+.storeAvailabilityContainer_1Ez2A {
+    min-height: auto;
+}
+
+.onlineAvailabilityContainer_1F3kv.unavailableContainer_302Lh,
+.storeAvailabilityContainer_1Ez2A.unavailableContainer_302Lh {
+    min-height: auto;
+}
+
+.targettedContentMessageTitle_tqDK5 {
+    line-height: 20px;
+    font-size: 14px;
+    color: #1d252c;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.targettedSpecialDelivery_Ob92w {
+    clear: both;
+    font-size: 14px;
+    margin: 16px 0 0;
+}
+
+.targettedContentMessageBody_3nj0z {
+    margin: 0 0 0 32px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.targettedSpecialDelivery_Ob92w p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.specialDeliveryLink_1UIVd {
+    padding: 4px 0;
+    margin: 0 0 0 32px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icon_2A4zh.rightArrowIcon_3tm4W {
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.availabilityMessageProduct_ZCIQp {
+    position: relative;
+}
+
+.availabilityMessageProduct_ZCIQp .availabilityMessage_ig-s5,
+    .availabilityMessageProduct_ZCIQp .shippingAvailability_2fAWI {
+        line-height: 24px;
+        font-size: 16px;
+        color: #1d252c;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+.availabilityMessage_ig-s5 {
+    margin-top: 8px;
+}
+
+.shippingAvailability_2fAWI {
+    margin-top: 12px;
+}
+
+.productReleaseDate_KWl-L {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+
+.icon_2A4zh.arrowIcon_191m1 {
+    color: #0046be;
+}
+
+.iconStyle_3_diZ {
+    float: left;
+    margin-bottom: -2px;
+    margin-right: 8px;
+    position: relative;
+    bottom: 2px;
+    width: 24px;
+    height: 24px;
+}
+
+.storeListIcons_1I_xM {
+    float: left;
+    margin: 2px 8px 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.availabilityHeaderIcon_2me1X {
+    float: left;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.deliveryContainer_deHn7 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 40px;
+}
+
+.deliveryContainer_deHn7 a {
+    color: #0046be;
+}
+
+.reserveAndPickupTitle_2HNBB {
+    color: #1d252c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.deliveryDate_3TjVv {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 0 0 40px;
+}
+
+.deliveryMessage_1Wdya {
+    margin-top: 0;
+}
+
+.storesNearCity_2PscU {
+    color: #1d252c;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-left: 40px;
+}
+
+.updateLocation_3EwlE {
+    color: #0046be;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.updateLocation_3EwlE span:hover,
+.updateLocation_3EwlE span:focus {
+    text-decoration: underline;
+}
+
+.stores_3zKxZ {
+    color: #1d252c;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    padding-top: 0;
+    margin-left: 40px;
+}
+
+.fluidRow_1-dCG {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.pickupStoreReserveButton_87Pyj {
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+}
+
+.pickupStoreUnavailable_2t5c7 {
+    margin-right: 16px;
+    color: #55555a;
+}
+
+.reserveLink_1Uq-C {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+    margin: 8px 0 0 33px;
+    height: 20px;
+}
+
+.storeStatusMessageContainer_2TB1d {
+    margin: 16px 0;
+}
+
+.deliverySubHeaderLink_2tFW1 {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.divider_5TmTH {
+    margin: 24px 0;
+}
+
+.shippingAvailabilityTitle_sEapu {
+    height: auto;
+}
+
+.availabilityMessageTitle_3Qo22 {
+    padding-top: 8px;
+    display: block;
+    line-height: 24px;
+    font-size: 16px;
+    color: #1d252c;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.noPaddingTop_3NKR_ {
+    padding-top: 0;
+}
+
+.postalCode_1ji5l {
+    margin: 16px 0 0 40px;
+}
+
+.storeName_3vxg1 {
+    font-weight: 600;
+}
+
+.verticalLine_3o3-r {
+    color: #e0e6ef;
+    margin: 0 8px;
+}
+
+.lowInventoryMsg_3xjAm {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex
+}
+
+.lowInventoryMsg_3xjAm.oneLeft_1ndu- {
+    font-weight: 600;
+}
+
+.lowInventoryMsg_3xjAm svg {
+        width: 14px;
+        margin-right: 4px;
+}

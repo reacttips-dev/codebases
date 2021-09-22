@@ -1,0 +1,89 @@
+.prodListingBanner_WvZTx {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    min-height: 420px;
+    margin: 0;
+    box-sizing: border-box;
+    color: #1d252c;
+    overflow: hidden
+}
+.prodListingBanner_WvZTx.dark_GBP3X {
+    color: #fff;
+}
+.prodListingBanner_WvZTx .background_33crN div {
+            background-size: 768px;
+        }
+.prodListingBanner_WvZTx .foregroundImage_36PZm {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+                flex: 1;
+        padding: 0 24px;
+        position: relative
+}
+.prodListingBanner_WvZTx .foregroundImage_36PZm > picture {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%);
+}
+.prodListingBanner_WvZTx .foregroundImage_36PZm > picture img {
+                margin: 0;
+                max-height: 100px;
+}
+.prodListingBanner_WvZTx .bannerContent_7L96a {
+        padding: 24px;
+        padding-top: 0;
+        font-size: 14px;
+}
+.prodListingBanner_WvZTx .bannerContent_7L96a .headline_2yztI {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+.prodListingBanner_WvZTx .bannerContent_7L96a p {
+            margin: 0;
+        }
+.prodListingBanner_WvZTx .ctaBlock_2mSFQ {
+        -webkit-box-align: start;
+        -webkit-align-items: start;
+                align-items: start;
+}
+.prodListingBanner_WvZTx .logoContainer_2QJi8 {
+        text-align: left
+}
+.prodListingBanner_WvZTx .logoContainer_2QJi8 > img {
+    max-height: 32px;
+    max-width: 100%;
+}
+.prodListingBanner_WvZTx.textOnly_3ok8- .foregroundImage_36PZm {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0;
+                    flex: 0;
+}
+.prodListingBanner_WvZTx.textOnly_3ok8- .bannerContent_7L96a {
+            margin: auto 0;
+            padding-top: 24px;
+}
+.prodListingBanner_WvZTx.textOnly_3ok8- .logoContainer_2QJi8 > img {
+            max-height: 48px;
+}
+@media (max-width: 767px) {
+    .prodListingBanner_WvZTx {
+        display: block;
+        min-height: auto;
+    }
+
+        .prodListingBanner_WvZTx .foregroundImage_36PZm {
+            height: 148px;
+        }
+    .prodListingBanner_WvZTx.textOnly_3ok8- .foregroundImage_36PZm {
+                height: 0;
+    }
+}

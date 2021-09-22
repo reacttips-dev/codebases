@@ -1,0 +1,99 @@
+
+
+.flexBannerContainer_3XO2d {
+    box-shadow: 0 0 0 1px rgba(224, 224, 224, 1);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+}
+
+.flexRow_1KvPp {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+}
+
+.flexRow_1KvPp .bannerContent_1MriW {
+    padding: 16px 16px 24px;
+    box-sizing: border-box;
+}
+
+.bannerContent_1MriW {
+    padding: 8px 16px 16px;
+    position: relative;
+}
+
+.bodyText_1tKlM {
+    color: #1d252c;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 0 0;
+}
+
+.bannerLink_3GHfF:hover {
+    text-decoration: none;
+}
+
+.highlightedText_1kfsz {
+    margin: 8px 0 0;
+    color: #bb0628;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.materialOverride_3vvge.icon_30lVa {
+    height: 14px;
+    width: 14px;
+}
+
+.imagePositionWrapper_1QwQv img {
+    position: relative;
+    object-fit: cover;
+    object-position: center center;
+    height: auto;
+    min-height: 176px;
+    width: 100%;
+    display: block;
+}
+
+.flexBannerButton__7j40 {
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+    .singleBannerLayout_2MV7K {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+    }
+
+    .singleBannerLayout_2MV7K .bannerContent_1MriW {
+        padding: 8px 16px 16px;
+    }
+
+    .singleBannerLayout_2MV7K .imagePositionWrapper_1QwQv > div,
+    .singleBannerLayout_2MV7K .imagePositionWrapper_1QwQv > div > div,
+    .singleBannerLayout_2MV7K .imagePositionWrapper_1QwQv > div > div > div,
+    .singleBannerLayout_2MV7K .imagePositionWrapper_1QwQv > div > div > img {
+        height: 100%;
+        min-height: 176px;
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    .singleBannerLayout_2MV7K {
+        display: block;
+    }
+}

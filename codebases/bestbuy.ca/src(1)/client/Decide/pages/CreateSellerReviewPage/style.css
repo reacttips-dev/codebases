@@ -1,0 +1,78 @@
+
+
+.formContainer_39gYH {
+    padding: 0 16px;
+    margin-bottom: 24px;
+}
+
+.instructionContainer_3VZah {
+    padding: 0 16px;
+}
+
+.instructionContent_3Zz4u ul {
+    margin-bottom: 24px;
+}
+
+.termsContainer_25Njr {
+    color: #55555a;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 24px;
+}
+
+.ratingValue_9Xg1Q {
+    font-weight: bold;
+}
+
+.error_2KEWu {
+    color: #bb0628 !important;
+    padding: 16px;
+}
+
+.returnButton_6S_K7 {
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.circularProgress_3CrUF {
+    margin-top: 64px;
+    margin-left: 45%;
+    color: #1d252c;
+}
+
+@media (min-width: 768px) {
+    .container_EwahQ {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        width: 100%;
+    }
+
+    .divider_3l_kk {
+        display: none;
+    }
+
+    .formContainer_39gYH {
+        padding: 0 16px;
+        margin-bottom: 32px;
+        border-right: solid 1px #e0e6ef;
+    }
+
+    .termsContainer_25Njr {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .instructionContainer_3VZah {
+        padding: 0 24px;
+    }
+
+    .formContainer_39gYH {
+        padding: 0 24px;
+    }
+
+    .error_2KEWu {
+        padding: 0 24px;
+    }
+}

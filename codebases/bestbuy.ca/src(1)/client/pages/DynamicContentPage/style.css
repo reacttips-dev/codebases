@@ -1,0 +1,37 @@
+
+
+.pageContentContainer_3slMV {
+    overflow-x: hidden;
+}
+
+.titleHeader_2koDC {
+    padding-bottom: 16px;
+}
+
+.sectionContainer_1kzTq {
+    width: 100%;
+}
+
+.navigationContainer_kmv09 {
+    margin: 0 16px 16px;
+}
+
+.breadcrumbs_2Fhb8 {
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .titleHeader_2koDC {
+        padding-top: 0;
+    }
+
+    .breadcrumbs_2Fhb8 {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navigationContainer_kmv09 {
+        margin: 0;
+    }
+}

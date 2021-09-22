@@ -1,0 +1,58 @@
+
+
+.rightEndPrice_6y_hS {
+    position: relative;
+    font-size: 18px;
+    top: 2px;
+    vertical-align: top;
+}
+
+.small_3ifZO .rightEndPrice_6y_hS,
+.medium_za6t1 .rightEndPrice_6y_hS {
+    font-size: 0.7em;
+}
+
+.large_3aP7Z .rightEndPrice_6y_hS {
+    font-size: 0.5em;
+}
+
+.hidden_2dkHX {
+    display: none;
+}
+
+.salePrice_kTFZ3 {
+    color: #bb0628;
+    line-height: 1;
+    margin-top: 0 !important;
+}
+
+.price_FHDfG {
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.small_3ifZO {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.medium_za6t1 {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.large_3aP7Z {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.screenReaderOnly_3anTj {
+    position: absolute;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

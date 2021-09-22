@@ -1,0 +1,161 @@
+
+
+.sliderContainer_9JFkq {
+    margin-bottom: 163px;
+}
+
+.container_1icpG {
+    position: relative;
+}
+
+.container_1icpG .sliderContainer_9JFkq ul {
+    bottom: -139px;
+    overflow: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container_1icpG .sliderContainer_9JFkq ul::-webkit-scrollbar {
+    display: none;
+}
+
+.container_1icpG .sliderContainer_9JFkq li {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    height: 72px;
+    width: 72px;
+    margin: 0 24px 0 0;
+}
+
+.container_1icpG .sliderContainer_9JFkq li img {
+    border: 4px solid #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 72px;
+    width: 72px;
+    margin-top: 0;
+}
+
+.container_1icpG .sliderContainer_9JFkq li:hover,
+.container_1icpG .sliderContainer_9JFkq li:focus {
+    border: 2px solid transparent;
+}
+
+.container_1icpG .sliderContainer_9JFkq li[class^=slick-active] {
+    border: 2px solid #001e73;
+}
+
+.container_1icpG .sliderContainer_9JFkq li[class^=slick-active]:focus,
+.container_1icpG .sliderContainer_9JFkq li[class^=slick-active]:active {
+    cursor: default;
+    border: 2px solid #001e73;
+    box-shadow: none;
+}
+
+.container_1icpG .sliderIndexTitle_3gNH_ {
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -35px;
+}
+
+@media (min-width: 768px) {
+    .container_1icpG {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq li:hover,
+    .container_1icpG .sliderContainer_9JFkq li:focus {
+        border: 1px solid #0046be;
+        box-shadow: inset 0 0 0 1px #0046be;
+    }
+
+    .container_1icpG .productImageContainer_3LL_Q {
+        margin-bottom: 10px;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq li {
+        margin-left: 8px !important;
+        width: 44px !important;
+        height: 44px !important;
+        border: 1px solid rgba(0, 0, 0, .32);
+        border-radius: 4px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    /*
+        Reduce thumbnail sizes to prevent wrapping until we implement a coursel feature
+    */
+    .container_1icpG .sliderContainer_9JFkq li img {
+        width: 36px;
+        height: 36px;
+        margin-top: 3px;
+        border-radius: 2px;
+    }
+
+    /*
+        Slick's classes do not get hashed like our classes do, so we need to use this class selector
+    */
+    .container_1icpG .sliderContainer_9JFkq li[class^=slick-active] img {
+        margin-top: 2px;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq li[class^=slick-active] {
+        border: 2px solid #001e73;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width: 60px;
+        height: 60px;
+        vertical-align: top;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq li[class^=slick-active]:hover,
+    .container_1icpG .sliderContainer_9JFkq li[class^=slick-active]:active,
+    .container_1icpG .sliderContainer_9JFkq li[class^=slick-active]:focus,
+    .container_1icpG .sliderContainer_9JFkq li[class^=slick-active]:active {
+        cursor: default;
+        border: 2px solid #001e73;
+        box-shadow: none;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq li:first-child {
+        margin-left: 0 !important;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq ul {
+        bottom: -96px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container_1icpG .sliderContainer_9JFkq {
+        margin-bottom: 190px;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq ul {
+        bottom: -139px;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq li {
+        width: 72px !important;
+        height: 72px !important;
+        margin-left: 16px !important;
+        border: 1px solid transparent;
+    }
+
+    .container_1icpG .sliderContainer_9JFkq li img {
+        width: 64px;
+        height: 64px;
+        margin-top: 3px;
+    }
+
+    .container_1icpG .sliderIndexTitle_3gNH_ {
+        bottom: -46px;
+    }
+}

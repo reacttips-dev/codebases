@@ -1,0 +1,44 @@
+
+
+.recommendationSummaryTitle_36z18 {
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: top;
+    margin-bottom: 16px;
+}
+
+.recommendationSummaryDescription_Rw2SR {
+    color: #1d252c;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.boldedText_3-Yzd {
+    font-weight: 600;
+}
+
+.percentageContainer_1Xk9N {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.percentage_34Ose {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 0 8px;
+}
+
+.happyFace_2xA3C {
+    width: 24px;
+}

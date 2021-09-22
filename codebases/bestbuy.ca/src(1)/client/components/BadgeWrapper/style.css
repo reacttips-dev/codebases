@@ -1,0 +1,11 @@
+.badgeWrpDefault_2Eb6h > div {
+    max-width: 132px;
+    word-break: break-all;
+    overflow: hidden;
+}
+.badgeWrpDefault_2Eb6h > div::after {
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border-right-color: white;
+}

@@ -1,0 +1,152 @@
+@media (max-width: 767px) {
+    .attributeGroup_1ldTY {
+        margin: -8px 0 8px;
+    }
+}
+
+.col_3jYsd {
+    padding: 0;
+}
+
+.review_2no-M {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.reviewListWrapper_9ePD3 .review_2no-M:last-child {
+    margin-bottom: 0;
+}
+
+.reviewListWrapper_9ePD3 .review_2no-M:last-child .reviewContent_XCspv {
+    margin-bottom: 0;
+}
+
+.review_2no-M:last-child hr {
+    display: none;
+}
+
+.reviewItem_2m0nJ {
+    font-size: 12px;
+    line-height: 16px;
+    word-wrap: break-word;
+    position: relative;
+    margin: 0;
+}
+
+.reviewTitle_1qq1j {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.ratingBlock_3Svd9 {
+    height: 16px;
+    margin-bottom: 4px;
+}
+
+.reviewContent_XCspv {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.reviewContent_XCspv p {
+    margin-bottom: 0;
+}
+
+.reviewerInfo_twVGf {
+    color: #55555a;
+    margin-bottom: 16px;
+}
+
+.isVerifiedPurchaser_2qO3y {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #1d252c;
+}
+
+.isVerifiedPurchaserIcon_1C7Lx {
+    height: 16px;
+    width: 16px;
+    margin: 0 4px -4px 0;
+}
+
+/* Temporary fill colour. Do this in @bbyca/bbyca-components after */
+
+.isVerifiedPurchaser_2qO3y svg {
+    fill: #4976e6;
+}
+
+.author_20vgR {
+    margin-bottom: 0;
+}
+
+.locationAndTime_3MA78,
+.syndicationSource_1jzwk {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+.syndicationSource_1jzwk {
+    margin-top: 16px;
+}
+
+/* Product Review Page specific styles */
+
+.reviewItemDivider_2vivm {
+    margin: 32px 0;
+    height: 1px;
+    border: none;
+    -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+    background: #e0e6ef;
+}
+
+.recommendedIconsContainer_3sOAY {
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+}
+
+.friendRecommendationTextContainer_1Cqdj {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.friendRecommendationOption_vxQ_h {
+    font-weight: 700;
+}
+
+.recommendedIcons_1e-hN {
+    height: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .rightColumn_2vhC8 {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .isVerifiedPurchaser_2qO3y {
+        border-right: 1px solid #c5cbd5;
+        display: inline;
+        display: initial;
+        margin-right: 8px;
+        padding-right: 8px;
+    }
+
+    .ratingBlock_3Svd9 {
+        display: inline-block;
+        margin: 0 4px 16px 0;
+    }
+
+    .reviewTitle_1qq1j {
+        display: inline-block;
+        vertical-align: 2px;
+    }
+}

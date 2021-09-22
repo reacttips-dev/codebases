@@ -1,0 +1,39 @@
+.promoItemsTable_OPNYj {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .promoItemsTable_OPNYj .itemLevelDiscountDescription_dYGvA {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0 0 16px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .promoItemsTable_OPNYj td.leftCol_1mUt1 {
+        text-align: left;
+    }
+
+    .promoItemsTable_OPNYj td.rightCol_QIvlk {
+        font-weight: 600;
+        text-align: right;
+        position: relative
+    }
+
+    .promoItemsTable_OPNYj td.rightCol_QIvlk > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+    .promoItemsTable_OPNYj .promoTotalText_a3Sck {
+        font-weight: 600;
+        padding: 0;
+    }
+
+    .promoItemsTable_OPNYj .promoTotalValue_12OR0 {
+        color: #bb0628;
+        padding: 0;
+    }

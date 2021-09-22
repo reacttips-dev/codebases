@@ -1,0 +1,62 @@
+.planWrapper_AH_o5 {
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 6px;
+    width: 240px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.geekSquadLogo_1rV8v {
+    float: left;
+    margin-bottom: 24px;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+    width: 40px;
+    height: 32px;
+}
+
+.benefitsWrapper_2HPmu {
+    font-weight: 600;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    display: block;
+    margin-left: 40px;
+}
+
+.dialog_3XGgc {
+    color: #1d252c;
+    padding: 24px;
+}
+
+.dialogContainer_1YGnD .dialogBody_1l82i {
+    max-width: 768px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.dialogTitle_7sMyE {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.button_3x_OL.continueShopping_1KHF7 {
+    height: 48px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 2px;
+    color: #0046be;
+    width: 100%;
+    background-color: #fff;
+}
+
+.button_3x_OL.continueShopping_1KHF7:hover {
+    background-color: #f4f6f9;
+}
+
+.messageContainer_3uzE2 {
+    padding: 24px;
+}

@@ -1,0 +1,92 @@
+.countdownClock_6dpKv {
+    margin: 16px 0 8px;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+}
+
+    .countdownClock_6dpKv .label_1o5Jf {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .countdownClock_6dpKv .counter_1cC41 {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .countdownClock_6dpKv .unitSection_1q_Ex {
+        -webkit-flex-shrink: 1;
+                flex-shrink: 1;
+    }
+
+    .countdownClock_6dpKv .unitSection_1q_Ex .cardContainer_qL1iF {
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            margin: 0 0.5ch 16px 0;
+            font-size: 11vw;
+            font-weight: 700;
+        }
+
+    .countdownClock_6dpKv .unitSection_1q_Ex .cardContainer_qL1iF .title_3Yw-r {
+                position: absolute;
+                bottom: -16px;
+                left: 0;
+                font-size: 10px;
+                text-transform: uppercase;
+                text-align: center;
+                width: 100%;
+            }
+
+    .countdownClock_6dpKv .unitSection_1q_Ex .cardContainer_qL1iF .flipCard_B-FBM::after {
+                content: ":";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                -webkit-transform: translateY(-60%) translateX(100%);
+                        transform: translateY(-60%) translateX(100%);
+                width: 25%;
+                text-align: center;
+                font-size: 0.75em;
+            }
+
+    .countdownClock_6dpKv .unitSection_1q_Ex:last-child .cardContainer_qL1iF {
+                margin-right: 0;
+}
+
+    .countdownClock_6dpKv .unitSection_1q_Ex:last-child .cardContainer_qL1iF .flipCard_B-FBM::after {
+                    display: none;
+                }
+
+    .countdownClock_6dpKv .unitSection_1q_Ex:last-child .title_3Yw-r {
+                margin-right: 0;
+}
+@media (min-width: 768px) {
+            .countdownClock_6dpKv .unitSection_1q_Ex .cardContainer_qL1iF {
+                font-size: 5vw;
+                margin-bottom: 18px;
+            }
+
+                .countdownClock_6dpKv .unitSection_1q_Ex .cardContainer_qL1iF .title_3Yw-r {
+                    font-size: 12px;
+                    bottom: -18px;
+                }
+}
+@media (min-width: 1025px) {
+            .countdownClock_6dpKv .unitSection_1q_Ex .cardContainer_qL1iF {
+                font-size: 4vw;
+                font-weight: 700;
+            }
+}
+@media (min-width: 1281px) {
+            .countdownClock_6dpKv .unitSection_1q_Ex .cardContainer_qL1iF {
+                font-size: 64px;
+            }
+}

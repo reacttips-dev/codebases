@@ -1,0 +1,128 @@
+.headerTitle_bTgp2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+
+.headerContent_2EEIi {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.headerHelper_1vJ2a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #55555a;
+    margin-bottom: 24px;
+}
+
+.sectionTitle_1XEpR {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 24px;
+    padding-top: 0;
+}
+
+.halfinput_1i7t8,
+.fullinput_2pojQ {
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.halfinput_1i7t8 label,
+.fullinput_2pojQ label,
+.radioGroup_uqgqd label {
+    margin-bottom: 8px;
+}
+
+.radioGroup_uqgqd {
+    padding-bottom: 12px;
+}
+
+.otherMarketplaceUrls_1pn2e {
+    margin-bottom: 8px;
+}
+
+.categoriesLabel_12nXE {
+    color: #1d252c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.errorMsg_2tUMC {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    height: auto;
+    margin-top: -2px;
+    padding-bottom: 12px;
+    color: #bb0628;
+    -webkit-transition: all 200ms 0ms ease-in-out, opacity 1000ms;
+    transition: all 200ms 0ms ease-in-out, opacity 1000ms;
+}
+
+.brandsLabel_1UVEk {
+    margin-top: 12px;
+}
+
+.legalContainer_2-9R6 {
+    color: #1d252c;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    margin: 24px 0 64px;
+}
+
+@media (min-width: 768px) {
+    .fullName_tqyDu,
+    .cityProvince_2JyQY {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        gap: 24px;
+    }
+
+    .halfinput_1i7t8 {
+        width: 48%;
+    }
+
+    .sectionTitle_1XEpR {
+        padding-top: 8px;
+    }
+
+    .halfinput_1i7t8 label,
+    .radioGroup_uqgqd label {
+        width: 662px;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Container for flexboxes */
+    .checkBoxRow_18VO4 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+        width: 840px;
+    }
+
+    /* Create two equal columns */
+    .checkBoxColumn_T3XL3 {
+        -webkit-box-flex: 45%;
+        -webkit-flex: 45%;
+                flex: 45%;
+    }
+}

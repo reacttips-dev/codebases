@@ -1,0 +1,59 @@
+
+
+.offersContainer_3qj_5 {
+    margin: 8px 0;
+}
+
+li.offerItem_1gsnn:last-child {
+    margin-bottom: 0;
+}
+
+.offerItem_1gsnn {
+    margin-bottom: 8px;
+    line-height: 20px;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.showClickable_VgLuA {
+    font-weight: 600;
+}
+
+.container_BGGX_ {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+    font-size: 14px;
+    margin: 0 16px 16px;
+}
+
+.callOutTitle_NRbU7 {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.callOutTitle_NRbU7,
+.callOutMessage_2pO-x {
+    display: block;
+    line-height: 20px;
+}
+
+.addToCartIcon_13OSn {
+    margin-right: 9px;
+    min-height: 24px;
+    min-width: 24px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 768px) {
+    .container_BGGX_ {
+        margin: 0 0 16px;
+    }
+}

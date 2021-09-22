@@ -1,0 +1,51 @@
+.reviewsListContainer_34mWL {
+    padding: 0 16px;
+}
+
+.reviewsTabContainer_1y4c0 {
+    padding-top: 8px;
+}
+
+.customMargin_3YLAT {
+    margin-bottom: 32px;
+}
+
+.exploreReviewContainer_3pLTA {
+    padding: 0 16px 32px;
+    text-align: center;
+}
+
+.customButtonMargin_15NhW {
+    margin-right: 0;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .reviewsListContainer_34mWL {
+        padding: 0;
+    }
+
+    .customMargin_3YLAT {
+        margin-bottom: 8px;
+    }
+
+    .exploreReviewContainer_3pLTA {
+        padding-left: 0;
+        padding-bottom: 8px;
+    }
+
+    .customButtonMargin_15NhW {
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .customMargin_3YLAT {
+        margin-bottom: 16px;
+    }
+
+    .exploreReviewContainer_3pLTA {
+        padding: 0;
+    }
+}

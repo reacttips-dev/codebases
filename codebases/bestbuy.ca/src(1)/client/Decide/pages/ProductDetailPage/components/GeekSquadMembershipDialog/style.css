@@ -1,0 +1,86 @@
+
+
+.container_3jVLQ.dialogRoot_3d2le {
+    padding-top: 0 !important;
+    top: -20px;
+}
+
+.dialogBody_9CTzl {
+    padding: 24px 16px 8px;
+    border-radius: 2px;
+}
+
+/*
+    This media-query rule is targetting the GSHM dialog since its content
+    is too big to fit the screen.
+*/
+
+@media only screen and (max-width: 767px) {
+    .dialogBody_9CTzl {
+        width: auto !important;
+        margin: 0 8px !important;
+        -webkit-transform: translate(0, 42px) !important;
+                transform: translate(0, 42px) !important;
+    }
+
+    .dialogBody_9CTzl:lang(fr) {
+        -webkit-transform: translate(0, 16px) !important;
+                transform: translate(0, 16px) !important;
+    }
+}
+
+.dialogHeader_wC3jl {
+    color: #1d252c;
+}
+
+.termsLink_2V4v0 {
+    color: #0046be;
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.termsLink_2V4v0 svg {
+    overflow: visible;
+}
+
+.button_4WLoF.continueShopping_2_MhT {
+    height: 48px;
+    font-weight: button;
+    border-radius: 2px;
+}
+
+ol li:last-child {
+    margin-bottom: 0;
+}
+
+ol li a {
+    color: #0046be;
+}
+
+.materialOverride_2Bwn3.checkbox_31ONF {
+    font-size: 14px;
+}
+
+.materialOverride_2Bwn3.checkbox_31ONF ~ .checkboxLabel_1UIFn {
+    color: inherit;
+}
+
+.button_4WLoF.continueShopping_2_MhT {
+    color: #0046be;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0 0;
+}
+
+.productName_2UTSq {
+    color: #1d252c;
+    margin: 16px 0;
+}
+
+.icon_3Mhlf.arrowIcon_iZeVv {
+    fill: #0046be;
+    height: 16px;
+    width: 16px;
+}

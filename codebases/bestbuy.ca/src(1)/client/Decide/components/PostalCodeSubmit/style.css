@@ -1,0 +1,23 @@
+.searchButton_26Jer {
+    height: 48px;
+    margin: 3px 0 0 -1px;
+    border-radius: 0 2px 2px 0;
+}
+
+.postalCodeInput_3Gl7R [type*="text"] {
+    text-transform: uppercase;
+}
+
+.inputContainer_12LiZ {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+}
+
+.buttonMargin_2ixju {
+    margin-top: 23px;
+}

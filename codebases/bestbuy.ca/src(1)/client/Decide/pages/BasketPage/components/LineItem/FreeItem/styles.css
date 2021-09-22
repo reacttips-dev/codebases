@@ -1,0 +1,53 @@
+.container_3mL1K {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.freeItemHeader_VIvPp {
+    padding-bottom: 0;
+    font-weight: 600;
+}
+
+.freeItemContent_bgqxc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin: 8px 0 16px;
+}
+
+.freeItemContent_bgqxc div:not(:last-child) {
+        margin-right: 16px;
+    }
+
+.details_UbyPe {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+}
+
+.quantity_1_0EH {
+    color: rgba(0, 0, 0, .52);
+}
+
+.thumbnail_3UtLY {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+.discount_xC3Ni {
+    color: #bb0628;
+}
+
+.offer_1SmXQ {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.offer_1SmXQ p {
+        font-size: 14px;
+    }
+
+.freeItems_3nBmk hr:last-of-type {
+        display: none;
+    }

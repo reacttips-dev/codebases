@@ -1,0 +1,57 @@
+
+
+.zoomButtonsContainer_3k7DO {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    position: absolute;
+    right: 16px;
+    z-index: 5;
+}
+
+.cursorGrab_24Zo5 {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.zoomButtonsContainer_3k7DO .zoomButton_2UWGG {
+    background-color: rgba(255, 255, 255, .64);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 8px 0;
+}
+
+.zoomButtonsContainer_3k7DO .zoomButton_2UWGG > [class^="content"] {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.zoomableContainer_1brxx {
+    position: relative;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+.zoomableContainer_1brxx [class*="react-transform-component"] {
+    margin: 0 auto;
+    overflow: visible !important;
+    overflow: initial !important;
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+    .zoomButtonsContainer_3k7DO {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .zoomButtonsContainer_3k7DO {
+        top: 64px;
+    }
+}

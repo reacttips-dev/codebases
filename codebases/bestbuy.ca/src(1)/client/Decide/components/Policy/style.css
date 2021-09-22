@@ -1,0 +1,43 @@
+.policy_3KLxX {
+    line-height: 24px;
+}
+
+.policy_3KLxX *:last-child {
+    margin-bottom: 0;
+}
+
+.policy_3KLxX table {
+    margin-bottom: 24px;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.policy_3KLxX tr:nth-child(even) {
+    background: #f4f6f9;
+}
+
+.policy_3KLxX th {
+    background: #4976e6;
+    border-bottom: 1px solid #fff;
+    padding: 4px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.policy_3KLxX td {
+    padding: 4px;
+}
+
+.policy_3KLxX b {
+    font-weight: 600;
+}
+
+.policy_3KLxX sub {
+    bottom: 16px;
+}

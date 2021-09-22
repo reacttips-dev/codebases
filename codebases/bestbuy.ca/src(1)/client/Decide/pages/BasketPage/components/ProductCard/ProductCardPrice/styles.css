@@ -1,0 +1,9 @@
+/* override price margin */
+.productPricing_2Qo7t > span > div {
+    margin: 0;
+}
+@media (min-width: 1025px) {
+    .productPricing_2Qo7t {
+        text-align: right;
+    }
+}

@@ -1,0 +1,15 @@
+.attributeSection_2BS3C button {
+    font-size: 12px;
+}
+
+.rangeSelection_Nx2hl [class*="tile"]:first-child {
+    border-radius: 16px 0 0 16px;
+}
+
+.rangeSelection_Nx2hl [class*="tile"]:last-child {
+    border-radius: 0 16px 16px 0;
+}
+
+.rangeSelection_Nx2hl [class*="tile"] {
+    height: 16px;
+}

@@ -1,0 +1,202 @@
+
+
+.itemContainer_21qVw.selected_29DbX,
+.itemContainer_21qVw.selected_29DbX:hover {
+    border: #001e73 2px solid;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.productImageSliderContainer_3jVPL div {
+    outline: none;
+}
+
+.productImageSliderContainer_3jVPL [class^="slick-track"] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.productImageSliderContainer_3jVPL [class^="slick-track"] > div {
+        height: auto;
+        width: 100%;
+    }
+
+.itemContainer_21qVw {
+    border: transparent 2px solid;
+    border-radius: 4px;
+    margin: 16px 8px;
+    padding: 4px;
+    width: 64px;
+    height: 64px;
+}
+
+.itemContainer_21qVw:hover {
+    border: transparent 2px solid;
+}
+
+.button_3Ug_1 {
+    background: none;
+    cursor: pointer;
+}
+
+.icon_2w6u5.sliderPrevArrow_1VeGY {
+    left: 6px;
+    height: 32px;
+    width: 32px;
+}
+
+.icon_2w6u5.sliderNextArrow_2LNqi {
+    right: 6px;
+    height: 32px;
+    width: 32px;
+}
+
+.icon_2w6u5.sliderNextArrow_2LNqi,
+.icon_2w6u5.sliderPrevArrow_1VeGY {
+    fill: #0046be;
+}
+
+.icon_2w6u5.sliderNextArrow_2LNqi:hover,
+.icon_2w6u5.sliderPrevArrow_1VeGY:hover,
+.icon_2w6u5.sliderNextArrow_2LNqi:focus,
+.icon_2w6u5.sliderPrevArrow_1VeGY:focus {
+    fill: #2c75c3;
+}
+
+.icon_2w6u5.sliderNextArrow_2LNqi.disabled_VtQsS,
+.icon_2w6u5.sliderPrevArrow_1VeGY.disabled_VtQsS {
+    fill: #55555a;
+}
+
+.icon_2w6u5.sliderNextArrow_2LNqi.disabled_VtQsS:hover,
+.icon_2w6u5.sliderPrevArrow_1VeGY.disabled_VtQsS:hover {
+    background-color: rgba(255, 255, 255, .64);
+    cursor: default;
+}
+
+.imageCounterMessage_13_kB {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.slideShowContainer_2rHWe {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.slideShowContainer_2rHWe div[class^=slick-list] {
+    margin: 0 16px;
+}
+
+.gallerySlider_343ys {
+    margin: 0 40px;
+}
+
+.sliderButton_1DTU7 {
+    background-color: transparent;
+}
+
+[class*="x-modal-container"] .slideShowContainer_2rHWe {
+    bottom: -163px;
+}
+
+.videoThumbnailContainer_ktTzz [class~="x-displaying-img"] {
+    width: 64px;
+    height: 64px;
+}
+
+.videoThumbnailContainer_ktTzz [class~="x-displaying-img"] img[class~="x-img-mask"] {
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    .productImageContainer_38CZm {
+        margin-bottom: 10px;
+    }
+
+    .icon_2w6u5.sliderPrevArrow_1VeGY {
+        left: -32px;
+    }
+
+    .icon_2w6u5.sliderNextArrow_2LNqi {
+        right: -32px;
+    }
+
+    .gallerySlider_343ys {
+        margin: 0 20px;
+    }
+
+    .productImageSliderContainer_3jVPL [class*="slick-slider"] {
+        margin-bottom: 0;
+    }
+
+    [class="modal"] .productImageSliderContainer_3jVPL [class*="slick-slider"] [class="slick-track"] .itemContainer_21qVw {
+        width: 64px;
+    }
+
+    .imageCounterMessage_13_kB {
+        position: relative;
+        bottom: -24px;
+    }
+
+    [class~="x-modal-container"] .imageCounterMessage_13_kB {
+        bottom: -15px;
+        position: relative;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .icon_2w6u5.sliderNextArrow_2LNqi,
+    .icon_2w6u5.sliderPrevArrow_1VeGY {
+        height: 40px;
+        width: 40px;
+    }
+
+    .gallerySlider_343ys {
+        margin: 0 40px;
+    }
+
+    .itemContainer_21qVw:hover {
+        border: #0046be 2px solid;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    [class="modal"] .productImageSliderContainer_3jVPL [class*="slick-slider"] [class="slick-track"] .itemContainer_21qVw {
+        width: 64px;
+    }
+
+    [class~="x-gallery-control"] .itemContainer_21qVw {
+        display: inline-block;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+    [class*="x-modal-container"] .slideShowContainer_2rHWe {
+        width: 100%;
+        height: 163px;
+    }
+}
+
+.middle_2-PA2 {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle_2-PA2 img {
+    padding: 9px;
+}

@@ -1,0 +1,39 @@
+.overallRatingSummary_h3WOS {
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    line-height: 34px;
+}
+
+.overallRatingSummary_h3WOS svg {
+    width: 32px;
+    height: 32px;
+}
+
+.overallRatingSummary_h3WOS button {
+    cursor: default;
+}
+
+.overallScore_1vKOX {
+    font-size: 56px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 1;
+    margin-right: 16px;
+    cursor: default;
+}
+
+.overallRating_2kAeM {
+    color: #1d252c;
+    font-size: 14px;
+    margin-left: 4px;
+    cursor: auto;
+    cursor: initial;
+}
+
+@media (min-width: 768px) {
+    .overallRatingSummary_h3WOS {
+        margin-bottom: 24px;
+    }
+}

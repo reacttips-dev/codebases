@@ -1,0 +1,31 @@
+.bodyContent_2CbIN {
+    margin-bottom: 16px;
+}
+
+.desktopTitle_3NWgU {
+    display: none;
+}
+
+.breadCrumbs_3tBD- {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+@media (min-width: 1025px) {
+    .bodyContent_2CbIN {
+        margin-bottom: 24px;
+    }
+
+    .mobileTitle_1A8ib {
+        display: none;
+    }
+
+    .desktopTitle_3NWgU {
+        display: block;
+    }
+
+    .breadCrumbs_3tBD- {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+}

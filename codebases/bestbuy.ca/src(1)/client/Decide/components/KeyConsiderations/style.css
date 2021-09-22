@@ -1,0 +1,33 @@
+.heading_25QQB {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.heading_25QQB span {
+    font-weight: 300;
+    color: #55555a;
+    font-size: 14px;
+}
+
+.description_tnKF6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+}
+
+.keyConsiderationsContainer_1z8pv .heading_25QQB,
+.keyConsiderationsContainer_1z8pv .description_tnKF6 {
+    font-size: 16px;
+}
+
+.keyConsiderationsContainer_1z8pv fieldset {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .keyConsiderationsContainer_1z8pv fieldset {
+        max-width: 290px;
+    }
+}

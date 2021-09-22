@@ -1,0 +1,63 @@
+
+
+.expandableList_2K0VR [class*="bodyContainer"] {
+    padding: 0;
+}
+
+.container_ZVvkg {
+    padding: 0 16px 8px;
+}
+
+.categoryName_1ljEf {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px
+}
+
+.categoryName_1ljEf > a {
+    color: #1d252c;
+}
+
+.categoryName_1ljEf > a:hover,
+    .categoryName_1ljEf > a:focus {
+    text-decoration: underline;
+}
+
+.categoryActive_30b1J {
+    font-weight: 600;
+}
+
+.facetName_3uuRc {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+div .categoryName_1ljEf:last-child {
+    margin-bottom: 16px;
+}
+
+div .categoryName_1ljEf:first-child {
+    margin-top: 8px;
+}
+
+.subCategories_1rXnz {
+    margin-top: 24px;
+    margin-left: 24px
+}
+
+.subCategories_1rXnz:empty {
+    margin: 0;
+}
+
+.productCount_1bTjO {
+    color: #55555a;
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+@media (min-width: 1025px) {
+    .container_ZVvkg {
+        padding: 0 16px 8px 0;
+    }
+}

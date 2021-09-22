@@ -1,0 +1,16 @@
+.soldByBestBuy_44tSZ {
+    font-size: 14px;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    box-sizing: border-box;
+}
+
+.soldByBestBuy_44tSZ svg {
+    margin-right: 8px;
+    position: relative;
+}

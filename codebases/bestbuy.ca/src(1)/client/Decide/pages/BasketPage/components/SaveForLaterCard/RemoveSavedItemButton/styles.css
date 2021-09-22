@@ -1,0 +1,17 @@
+.removeSavedItemButton_QckzF > span {
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.removeSavedItemButtonIcon_1pmnm {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+}

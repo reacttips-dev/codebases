@@ -1,0 +1,6 @@
+import * as React from "react";
+import * as styles from "../style.css";
+export const Filter = ({ className = "", color = "blue", viewBox = "4 4 24 24", }) => (React.createElement("svg", { className: `${styles[color]} ${className} ${styles.icon}`, viewBox: viewBox },
+    React.createElement("path", { d: "M12.25,22.83a.9.9,0,0,0,.9-.91.9.9,0,0,0-1.8,0A.9.9,0,\n            0,0,12.25,22.83Zm-2.12-1.58a2.25,2.25,0,0,1,4.24,0h9.88a.75.75,0,0,1,0,\n            1.5H14.37a2.25,2.25,0,0,1-4.24,0H7.75a.75.75,0,0,1,0-1.5Zm9.62-4.43a.89.89,0,0,0,\n            .9-.89.9.9,0,1,0-1.8,0A.89.89,0,0,0,19.75,16.82Zm-2.12-1.57a2.25,2.25,0,0,1,4.24,\n            0h2.38a.75.75,0,0,1,0,1.5H21.87a2.25,2.25,0,0,1-4.24,0H7.75a.75.75,0,0,1,\n            0-1.5Zm-5.38-4.43a.89.89,0,0,0,.9-.89.9.9,0,1,0-1.8,0A.89.89,0,0,0,12.25,\n            10.82ZM10.13,9.25a2.25,2.25,0,0,1,4.24,0h9.88a.75.75,0,0,1,0,1.5H14.37a2.25,2.25,0,0,1-4.24,0H7.75a.75.75,0,0,1,0-1.5Z" })));
+export default Filter;
+//# sourceMappingURL=Filter.js.map

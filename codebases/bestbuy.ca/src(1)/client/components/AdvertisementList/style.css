@@ -1,0 +1,31 @@
+
+
+.advertisementListContainer_1HIqu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 16px 0 24px;
+}
+
+.advertisementListItemWrapper_2VURs {
+    margin: 8px;
+    -webkit-align-self: flex-end;
+            align-self: flex-end;
+}
+
+@media (min-width: 1025px) {
+    .advertisementListContainer_1HIqu {
+        margin: 24px 0 32px;
+    }
+
+    .advertisementListItemWrapper_2VURs {
+        margin: 16px;
+    }
+}

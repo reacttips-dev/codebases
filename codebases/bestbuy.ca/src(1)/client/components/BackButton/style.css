@@ -1,0 +1,31 @@
+
+
+.button_1di-3.backButton_IOfhe,
+.button_1di-3.backButton_IOfhe:hover,
+.button_1di-3.backButton_IOfhe,
+.button_1di-3.backButton_IOfhe:focus {
+    background-color: #fff;
+    border-bottom: none;
+    color: #0046be;
+    font-size: 14px;
+    height: 48px;
+    padding: 8px 12px;
+    text-align: left;
+    width: 100%;
+}
+
+.button_1di-3.backButton_IOfhe:hover {
+    text-decoration: underline;
+}
+
+.button_1di-3.backButton_IOfhe span {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+}
+
+.backButton_IOfhe .backButtonIcon_1NCZS {
+    height: 16px;
+    width: 16px;
+    padding-right: 4px;
+}

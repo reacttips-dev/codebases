@@ -1,0 +1,28 @@
+
+
+.link_ldnKD {
+    color: #0046be;
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+/* target container div inside ProductImage component */
+
+.image_1EvX_ > div > div {
+    width: 75%;
+}
+
+@media (min-width: 1025px) {
+    .image_1EvX_ > div > div {
+        width: 57%;
+    }
+}
+
+.image_1EvX_ img {
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}

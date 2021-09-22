@@ -1,0 +1,87 @@
+.updatePostalCode_3C6cq .epcHeader_fRkVs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+        margin-bottom: 4px;
+    }
+    .updatePostalCode_3C6cq .epcHeader_fRkVs .imgCol_2IlO- {
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 1;
+                    order: 1;
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            min-height: 32px;
+            background-size: 32px auto;
+            background-position: center;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                    align-items: center;
+        }
+    .updatePostalCode_3C6cq .epcHeader_fRkVs .textCol_1DN1y {
+            -webkit-box-ordinal-group: 3;
+            -webkit-order: 2;
+                    order: 2;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                    align-items: center;
+        }
+    .updatePostalCode_3C6cq .epcHeader_fRkVs .textCol_1DN1y h2 {
+                margin-bottom: 0;
+            }
+    .updatePostalCode_3C6cq .epcHeaderRow_2h2kJ {
+        margin-bottom: 8px;
+    }
+    .updatePostalCode_3C6cq .zipCodeButton__8xwJ {
+        white-space: nowrap;
+    }
+
+.deliveryIcon_CV3wI {
+    width: 35px;
+    height: 32px;
+}
+
+.epcInputContainer_3jtwe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-self: flex-start;
+            align-self: flex-start;
+}
+
+.epcInputContainer_3jtwe label {
+        margin: 0;
+    }
+
+.epcInputContainer_3jtwe input[type="text"] {
+        border: 1px solid rgb(173, 173, 173);
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-right: 0;
+        height: 45px;
+        text-transform: uppercase;
+    }
+
+.epcInputContainer_3jtwe button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 45px;
+    }

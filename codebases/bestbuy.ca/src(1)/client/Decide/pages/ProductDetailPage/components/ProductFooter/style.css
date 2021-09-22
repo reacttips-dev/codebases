@@ -1,0 +1,37 @@
+
+
+.header_3X4FQ {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+            flex: 1 100%;
+    margin: 24px 0 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.divider_1EIyV {
+    height: 1px;
+    margin: 0 -16px;
+    border: none;
+    -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.productFooter_3kgRq {
+    margin: 0 16px;
+}
+
+@media (min-width: 1025px) {
+    .header_3X4FQ {
+        margin: 32px 0 16px;
+    }
+
+    .divider_1EIyV {
+        margin: 0;
+    }
+
+    .productFooter_3kgRq {
+        margin: 0 24px;
+    }
+}

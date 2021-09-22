@@ -1,0 +1,140 @@
+.container_DS9bH {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+.adSlot_aMMZV {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .section_1qnRI {
+        height: 100%;
+    }
+}
+
+.singleButton_1aTOv {
+    text-align: center;
+}
+
+.sectionTitle_x2Bri {
+    text-align: center
+}
+
+.sectionTitle_x2Bri.dark_2bhxu {
+    color: #fff;
+    fill: #fff;
+}
+
+.sectionText_yG4nF {
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.shopByCategoryHeader_1MqE8 .sectionTitle_x2Bri:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.skuListSection_2Z4WI > div {
+    margin-bottom: 0;
+}
+
+.firstAdBanner_3DpFS {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.offerListSection_3KTjK {
+    position: relative
+}
+
+.offerListSection_3KTjK.backgroundPadding_3XXwY {
+    padding: 48px 0;
+}
+
+.storySection_2P57G,
+.textBlockSection_2WROJ {
+    position: relative;
+}
+
+.anchorNavSection_A_Mi4 {
+    margin-bottom: 32px;
+}
+
+.hideContainer_3fLsh {
+    display: none;
+}
+
+.showContainer_2l0im {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .firstAdBanner_3DpFS {
+        margin-bottom: 16px;
+    }
+
+    .textBlockContainer_1jjPD .textBlock_23xTG p {
+        font-size: 16px;
+    }
+
+    .offerListSection_3KTjK.backgroundPadding_3XXwY {
+        padding: 64px 0;
+    }
+
+    .anchorNavSection_A_Mi4 {
+        margin-bottom: 64px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .firstAdBanner_3DpFS {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .textBlockContainer_1jjPD {
+        padding: 32px 0;
+    }
+
+    .promoBannerContainer_qCg9X ~ hr {
+        margin-left: 24px;
+    }
+
+    .sectionTitle_x2Bri {
+        margin: 0 24px 32px;
+    }
+
+    .container_DS9bH .featureBannerSection_nSfzQ.hasNav_3HKhL {
+        margin-left: 0;
+        width: inherit;
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .container_DS9bH .featureBannerSection_nSfzQ.hasNav_3HKhL svg.slick-prev {
+        left: 24px;
+    }
+
+    .container_DS9bH .featureBannerSection_nSfzQ.hasNav_3HKhL svg.slick-next {
+        right: 24px;
+    }
+}

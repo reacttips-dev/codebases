@@ -1,0 +1,85 @@
+
+
+.contentContainer_3jS31 {
+    position: relative;
+}
+
+.contentContainer_3jS31.xs_marginBottom_none_2kWdW {
+    margin-bottom: 0;
+}
+
+.contentContainer_3jS31.xs_marginBottom_xs_3S_aY {
+    margin-bottom: 32px;
+}
+
+.contentContainer_3jS31.xs_marginBottom_s_3QukH {
+    margin-bottom: 48px;
+}
+
+.contentContainer_3jS31.xs_marginBottom_m_3Cqxn {
+    margin-bottom: 64px;
+}
+
+.contentContainer_3jS31.xs_marginBottom_l_3lT4t {
+    margin-bottom: 96px;
+}
+
+@media (min-width: 768px) {
+    .contentContainer_3jS31.xs_marginBottom_none_2kWdW,
+    .contentContainer_3jS31.xs_marginBottom_xs_3S_aY,
+    .contentContainer_3jS31.xs_marginBottom_s_3QukH,
+    .contentContainer_3jS31.xs_marginBottom_m_3Cqxn,
+    .contentContainer_3jS31.xs_marginBottom_l_3lT4t {
+        margin-bottom: auto;
+    }
+
+    .contentContainer_3jS31.s_marginBottom_none_1-qSF {
+        margin-bottom: 0;
+    }
+
+    .contentContainer_3jS31.s_marginBottom_xs_335UT {
+        margin-bottom: 32px;
+    }
+
+    .contentContainer_3jS31.s_marginBottom_s_2jKR8 {
+        margin-bottom: 48px;
+    }
+
+    .contentContainer_3jS31.s_marginBottom_m_3hdPx {
+        margin-bottom: 64px;
+    }
+
+    .contentContainer_3jS31.s_marginBottom_l_3rcqI {
+        margin-bottom: 96px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .contentContainer_3jS31.s_marginBottom_none_1-qSF,
+    .contentContainer_3jS31.s_marginBottom_xs_335UT,
+    .contentContainer_3jS31.s_marginBottom_s_2jKR8,
+    .contentContainer_3jS31.s_marginBottom_m_3hdPx,
+    .contentContainer_3jS31.s_marginBottom_l_3rcqI {
+        margin-bottom: auto;
+    }
+
+    .contentContainer_3jS31.m_marginBottom_none_JrmZa {
+        margin-bottom: 0;
+    }
+
+    .contentContainer_3jS31.m_marginBottom_xs_23UUc {
+        margin-bottom: 32px;
+    }
+
+    .contentContainer_3jS31.m_marginBottom_s_3Qeia {
+        margin-bottom: 48px;
+    }
+
+    .contentContainer_3jS31.m_marginBottom_m_yLaUb {
+        margin-bottom: 64px;
+    }
+
+    .contentContainer_3jS31.m_marginBottom_l_ejh0j {
+        margin-bottom: 96px;
+    }
+}

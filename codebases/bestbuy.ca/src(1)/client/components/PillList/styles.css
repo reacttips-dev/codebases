@@ -1,0 +1,61 @@
+
+
+.container_1lbbF {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.pill_2ra42 {
+    list-style: none;
+    font-size: 14px;
+    color: #0046be;
+    padding: 4px 36px 4px 12px;
+    background-color: #f0f5ff;
+    border-radius: 24px;
+    margin: 0 8px 8px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.pill_2ra42:hover {
+    background-color: #0046be;
+    color: #fff;
+}
+
+.pill_2ra42:hover .remove_3-4v1 {
+        fill: #fff;
+    }
+
+.remove_3-4v1 {
+    width: 100%;
+}
+
+.removeBtn_TuiyL {
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+
+.clearAll_1WS6s {
+    color: #0046be;
+    font-size: 14px;
+    font-weight: 600;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    margin: 0 0 0 16px;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.clearAll_1WS6s button {
+    background: none;
+}
+
+.clearAll_1WS6s:hover {
+    text-decoration: underline;
+}

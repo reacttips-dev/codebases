@@ -1,0 +1,73 @@
+.reviewsStatsContainer_37pYP {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    padding: 0 16px 32px;
+}
+
+.reviewsTabContainer_2eeqn {
+    padding-top: 8px;
+}
+
+.reviewsStatsRightPane_1t9yW {
+    border-bottom: 0;
+    padding: 32px 0 0;
+    margin-top: 32px;
+    border-top: 1px solid #e0e6ef;
+}
+
+.noBorder_1QYzn {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.recommendationSummary_2irZy {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+@media (min-width: 768px) {
+    .reviewsStatsContainer_37pYP {
+        padding: 0 0 32px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .reviewsStatsLeftPane_3VWQY {
+        -webkit-flex-basis: 50%;
+                flex-basis: 50%;
+    }
+
+    .noBorder_1QYzn,
+    .reviewsStatsRightPane_1t9yW {
+        padding: 0 0 0 48px;
+        margin: 0 0 0 48px;
+        border-top: 0;
+        border-left: 1px solid #e0e6ef;
+        -webkit-flex-basis: 50%;
+                flex-basis: 50%;
+    }
+
+    .noBorder_1QYzn {
+        border: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .reviewsStatsRightPane_1t9yW {
+        padding-left: 64px;
+        margin-left: 64px;
+    }
+
+    .reviewsStatsContainer_37pYP {
+        padding: 0 calc(100% - 768px) 32px 0;
+    }
+}

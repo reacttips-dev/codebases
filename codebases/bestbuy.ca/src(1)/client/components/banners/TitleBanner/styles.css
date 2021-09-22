@@ -1,0 +1,58 @@
+.titleBanner_3QLvg {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    min-height: 64px;
+    padding: 16px;
+}
+
+    .titleBanner_3QLvg .bannerContent_3fP1d {
+        text-align: center;
+    }
+
+    .titleBanner_3QLvg .ctaBlock_1QXIZ {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        margin: 8px 0 0;
+    }
+
+    .titleBanner_3QLvg .ctaBlock_1QXIZ a {
+            margin: 0;
+        }
+
+    .titleBanner_3QLvg .headline_1muyV {
+        margin-bottom: 0;
+    }
+
+    .titleBanner_3QLvg .subHeadline_1_rfU {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        margin: 8px 0 0;
+    }
+
+    .titleBanner_3QLvg .disclaimer_2HQjJ {
+        margin: 8px 0 0;
+    }
+
+.titleBanner_3QLvg.dark_3KRqp {
+    color: #fff;
+}
+@media (min-width: 1025px) {
+    .titleBanner_3QLvg {
+        padding: 16px 80px;
+    }
+}

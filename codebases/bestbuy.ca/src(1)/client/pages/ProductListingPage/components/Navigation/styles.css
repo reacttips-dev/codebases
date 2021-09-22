@@ -1,0 +1,12 @@
+.desktopNavigation_32iob {
+    display: none;
+}
+@media (min-width: 1025px) {
+    .mobileNavigation_3oJKy {
+        display: none;
+    }
+
+    .desktopNavigation_32iob {
+        display: block;
+    }
+}

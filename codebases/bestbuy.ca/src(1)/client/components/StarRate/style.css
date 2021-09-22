@@ -1,0 +1,97 @@
+.starRateContainer_3dnAH {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.ratingLink_38Jhn {
+    font-weight: 500;
+    background: none;
+}
+
+.feedbackStarContainer_2eC1W {
+    height: 16px;
+    margin: 0 4px 4px 0;
+}
+
+.feedbackStarContainer_2eC1W a:first-child svg {
+    margin-left: 0;
+}
+
+.feedbackStarContainer_2eC1W button {
+    background-color: transparent;
+}
+
+.fullStar_365cI,
+.emptyStar_1G0Fx {
+    display: inline-block;
+    height: 16px;
+    margin-right: 2px;
+    width: 16px;
+}
+
+.ratings_I_BnL {
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.ratableStar_3ea3F {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    margin-right: 2px;
+}
+
+.ratableStar_3ea3F.mediumStars_10drJ {
+    width: 32px;
+    margin-right: 0;
+}
+
+.ratableStar_3ea3F.largeStars_2XPqh {
+    width: 52px;
+    margin-right: 0;
+}
+
+.partialStar_1Zt5f {
+    position: absolute;
+    top: 2px;
+    overflow: hidden;
+    width: 16px;
+}
+
+[class*="reviewItem"] .partialStar_1Zt5f {
+    top: 0;
+}
+
+.mediumStars_10drJ .partialStar_1Zt5f,
+.largeStars_2XPqh .partialStar_1Zt5f {
+    top: 0;
+}
+
+.reviews_1KIjQ,
+.ratings_I_BnL {
+    font-size: 12px;
+    line-height: 16px;
+    color: #0046be;
+}
+
+.reviews_1KIjQ {
+    margin: 2px 16px 0 0;
+}
+
+.reviews_1KIjQ a:focus,
+.reviews_1KIjQ a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.reviewCountContainer_2EO6o {
+    margin-right: 2px;
+}
+
+[class*="reviewItem"] .feedbackStarContainer_2eC1W button,
+[class*="overallRatingContent"] .feedbackStarContainer_2eC1W button {
+    cursor: default;
+}

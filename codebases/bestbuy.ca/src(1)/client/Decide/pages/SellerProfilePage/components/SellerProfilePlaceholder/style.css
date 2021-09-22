@@ -1,0 +1,118 @@
+
+
+.container_ZZwyA {
+    padding: 0 24px;
+}
+
+.topHr_2-W1z {
+    margin: 0 0 16px;
+    height: 1px;
+    border: 0;
+    background-color: #e0e6ef;
+}
+
+.bottomHr_3iqAq {
+    margin: 16px 0 0;
+    height: 1px;
+    border: 0;
+    background-color: #e0e6ef;
+}
+
+.authorPlaceholder_3mcmK,
+.namePlaceholder_PNeHx,
+.ratingPlaceholder_3VCwE,
+.policyPlaceholder_1g1Gq,
+.reviewPlaceholder_3BI3E,
+.reviewRatingPlaceholder_SIRWj,
+.titlePlaceholder_R8if5,
+.descriptionPlaceholder_1Pyfs {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.authorPlaceholder_3mcmK, .namePlaceholder_PNeHx, .ratingPlaceholder_3VCwE, .policyPlaceholder_1g1Gq, .reviewPlaceholder_3BI3E, .reviewRatingPlaceholder_SIRWj, .titlePlaceholder_R8if5, .descriptionPlaceholder_1Pyfs {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.namePlaceholder_PNeHx {
+    margin: 16px 0 0;
+    height: 20px;
+    width: 90%;
+}
+
+.ratingPlaceholder_3VCwE {
+    height: 40px;
+    width: 280px;
+    margin-top: 16px;
+}
+
+.descriptionPlaceholder_1Pyfs {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.policyPlaceholder_1g1Gq {
+    margin: 16px 0;
+    height: 34px;
+    width: 180px;
+}
+
+.titlePlaceholder_R8if5 {
+    height: 40px;
+    width: 200px;
+    margin-top: 16px;
+}
+
+.reviewRatingPlaceholder_SIRWj {
+    height: 20px;
+    width: 90px;
+    margin-top: 16px;
+}
+
+.reviewPlaceholder_3BI3E {
+    height: 20px;
+    width: 220px;
+    margin-top: 4px;
+}
+
+.authorPlaceholder_3mcmK {
+    height: 16px;
+    width: 50px;
+    margin: 16px 0;
+}
+
+@media (min-width: 1025px) {
+    .container_ZZwyA {
+        max-width: 66.66666667%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .descriptionPlaceholder_1Pyfs {
+        height: 20px;
+        width: 80%;
+        margin: 16px 0;
+    }
+
+    .namePlaceholder_PNeHx {
+        margin: 16px 0 0;
+        height: 20px;
+        width: 70%;
+    }
+}

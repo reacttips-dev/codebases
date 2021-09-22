@@ -1,0 +1,22 @@
+.boxContentsContainer_1bKGR {
+    padding: 8px 16px 24px;
+}
+
+.boxContents_2Q4kV {
+    padding-left: 24px;
+    margin-bottom: 0;
+}
+
+.boxContents_2Q4kV li:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .boxContentsContainer_1bKGR {
+        padding: 0;
+    }
+
+    .boxContents_2Q4kV {
+        padding-left: 32px;
+    }
+}

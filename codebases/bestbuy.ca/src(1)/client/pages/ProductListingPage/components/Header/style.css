@@ -1,0 +1,38 @@
+
+
+.titleHeader_srY8W {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.desktopOnly__j8hc .titleHeader_srY8W {
+        display: none;
+    }
+
+.desktopOnly__j8hc .breadcrumb_iafPH {
+        border: none;
+    }
+
+@media (min-width: 768px) {
+    .titleHeader_srY8W {
+        padding-top: 0;
+    }
+
+    .titleHeaderOnly_2Uydi {
+        padding-top: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .desktopOnly__j8hc .titleHeader_srY8W {
+        display: block;
+    }
+
+    .titleHeader_srY8W {
+        padding-bottom: 24px;
+    }
+
+    .titleHeaderOnly_2Uydi {
+        padding-top: 24px;
+    }
+}

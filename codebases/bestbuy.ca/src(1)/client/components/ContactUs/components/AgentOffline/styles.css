@@ -1,0 +1,19 @@
+
+
+.disabledComponent_2FHEc {
+    background-color: #f4f6f9;
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .08);
+}
+
+.logo_VB5xC {
+    height: 42px;
+    width: 42px;
+    fill: var(--gray);
+}
+
+.chatStatus_3nPIy {
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+    font-weight: 600;
+}

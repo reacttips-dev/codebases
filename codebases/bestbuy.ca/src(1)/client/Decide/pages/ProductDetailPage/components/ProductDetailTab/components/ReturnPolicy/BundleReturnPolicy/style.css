@@ -1,0 +1,12 @@
+.bundleReturnPolicy_2heuu {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d252c;
+    margin: 0;
+    padding: 8px 16px 24px;
+}
+@media (min-width: 768px) {
+    .bundleReturnPolicy_2heuu {
+        padding: 0;
+    }
+}

@@ -1,0 +1,37 @@
+
+
+.hidden_3LpeU {
+    display: none;
+}
+
+.displayingImage_3xp0y {
+    position: relative;
+}
+
+.displayingImage_3xp0y img {
+    position: relative;
+    z-index: 1;
+}
+
+.sliderTarget_2Q87g {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.middle_1qXv8 {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    height: 70%;
+}

@@ -1,0 +1,15 @@
+.videoAspectContainer_3ka4Y {
+    position: relative;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    padding-top: 56.25%;
+}
+
+    .videoAspectContainer_3ka4Y .videoIframe_2Mi8N {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }

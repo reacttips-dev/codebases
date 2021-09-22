@@ -1,0 +1,37 @@
+.container_3Sp8P {
+    max-width: calc(1281px - 1px);
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .globalOverlay_3Vudt {
+        background: rgba(0, 0, 0, .5);
+        bottom: 0;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        -webkit-transition: none;
+        transition: none;
+        z-index: 1010;
+    }
+}
+
+.globalOverlay_3Vudt {
+    background: rgba(0, 0, 0, .5);
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    z-index: 1010;
+}
+
+.npsSurveyModal_2lrZ_ {
+    z-index: 1055;
+}

@@ -1,0 +1,44 @@
+
+
+.loadingIndicator_16pdJ {
+    margin-top: 36px;
+    text-align: center;
+}
+
+.link_GKRoG {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin: 16px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.backArrow_3zcaN {
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+.offerContainer_1QGad {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+.content_3hXD3 {
+    margin: 0 16px;
+}
+
+.content_3hXD3 > div {
+    text-align: left !important;
+}
+
+@media (min-width: 768px) {
+    .divider_NCImL {
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+.warrantyBoxContainer_3tzjj {
+    padding: 16px 0;
+}
+
+.warrantyBoxContainer_3tzjj .warrantyBox_2Hr6N:last-child {
+    margin-bottom: 0;
+}
+
+.warrantyConditionsText_3Bk5b {
+    color: #55555a;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 8px 0 0;
+}
+
+@media (min-width: 1025px) {
+    .warrantyBoxContainer_3tzjj {
+        width: 300px;
+    }
+}

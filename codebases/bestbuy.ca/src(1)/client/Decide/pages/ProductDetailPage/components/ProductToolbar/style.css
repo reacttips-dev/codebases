@@ -1,0 +1,131 @@
+.container_3Vo4U {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #e0e6ef;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 10;
+    width: 100%;
+    background-color: #fff !important;
+}
+
+.loadingButtons_272pD .button_3uJIW.addToCartButton_1op0t,
+.loadingButtons_272pD .addToCartButton_1op0t,
+.loadingButtons_272pD .button_3uJIW.reserveInStoreButton_2Z4tx {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+
+    border: none;
+}
+
+.loadingButtons_272pD .button_3uJIW.addToCartButton_1op0t, .loadingButtons_272pD .addToCartButton_1op0t, .loadingButtons_272pD .button_3uJIW.reserveInStoreButton_2Z4tx {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.button_3uJIW.addToCartButton_1op0t {
+    margin: 8px;
+    padding: 0;
+    width: 100%;
+}
+
+.button_3uJIW.reserveInStoreButton_2Z4tx {
+    height: 48px;
+    width: 100%;
+    margin: 8px 8px 8px 0;
+    padding: 0;
+}
+
+.button_3uJIW.geekSquadMembershipDialogOpenButton_3cNLB {
+    height: 48px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fff200;
+    color: #1d252c;
+    padding-left: 4px;
+    padding-right: 2px;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.button_3uJIW.geekSquadMembershipDialogOpenButton_3cNLB.disabled_25qlX {
+    background-color: #c5cbd5;
+    border-color: #c5cbd5;
+}
+
+.button_3uJIW.geekSquadMembershipDialogOpenButton_3cNLB:hover,
+.button_3uJIW.geekSquadMembershipDialogOpenButton_3cNLB:focus {
+    background-color: #fff200
+}
+
+.button_3uJIW.geekSquadMembershipDialogOpenButton_3cNLB:hover.disabled_25qlX, .button_3uJIW.geekSquadMembershipDialogOpenButton_3cNLB:focus.disabled_25qlX {
+    background-color: #c5cbd5;
+    border-color: #c5cbd5;
+}
+
+.addToCartButtonContainer_3_s4w {
+    margin: 8px;
+    min-width: 64px;
+    width: 100%;
+}
+
+.loadingReserveInStoreButton_3jwOz {
+    background-color: #0046be !important;
+}
+
+@media (min-width: 768px) {
+    .container_3Vo4U {
+        position: static;
+        border-top: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+                flex-flow: column;
+        background-color: transparent !important;
+        margin: 0;
+        width: auto;
+    }
+
+    .button_3uJIW.reserveInStoreButton_2Z4tx {
+        width: 100%;
+        margin: 0 0 24px;
+    }
+
+    .button_3uJIW.addToCartButton_1op0t,
+    .addToCartButtonContainer_3_s4w {
+        margin: 0 0 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container_3Vo4U {
+        margin: 0;
+    }
+}

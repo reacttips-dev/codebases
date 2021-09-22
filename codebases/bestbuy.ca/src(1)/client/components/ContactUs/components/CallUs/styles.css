@@ -1,0 +1,44 @@
+.boxComponent_3aqdP {
+    border: 2px solid #e0e6ef;
+    border-radius: 4px;
+    padding: 38px 24px 16px;
+    margin: 12px 0;
+}
+
+.link_3RFs8,
+.link_3RFs8:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.enabledComponent_3-rw9 {
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .16);
+    padding: 38px 24px 16px;
+}
+
+.enabledComponent_3-rw9:hover {
+    border: 2px solid #0046be;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boxComponent_3aqdP {
+        margin: 12px 0;
+        height: 95%;
+        box-sizing: border-box;
+    }
+}
+
+.callUs_1byZv {
+    color: #0046be;
+}
+
+.callUsAvailability_Xby8K {
+    margin-bottom: 54px;
+}
+
+.phoneLogo_3dzqs {
+    height: 48px;
+    width: 48px;
+}

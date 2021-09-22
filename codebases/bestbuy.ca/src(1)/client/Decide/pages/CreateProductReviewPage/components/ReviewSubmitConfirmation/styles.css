@@ -1,0 +1,36 @@
+
+
+.reviewSubmitConfirmationContainer_2qDX3 {
+    padding: 24px 16px;
+}
+
+.thanksHeadline_66slj {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.startShoppingLink_2JfF_ {
+    color: #0046be;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0 0 8px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.rightArrowIcon_2K0A4 {
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+
+@media (min-width: 1025px) {
+    .reviewSubmitConfirmationContainer_2qDX3 {
+        padding: 24px;
+    }
+}

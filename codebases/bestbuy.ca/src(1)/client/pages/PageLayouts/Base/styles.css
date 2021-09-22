@@ -1,0 +1,14 @@
+.loadingScreen_2TNc8 {
+    height: 450px;
+    position: relative;
+}
+
+    .loadingScreen_2TNc8 .spinner_iKwwW {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }

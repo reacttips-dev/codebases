@@ -1,0 +1,73 @@
+.pricePlaceholder_3Fpa0,
+.downPlaceholder_3GkOd,
+.monthlyPlaceholder_3bZFA,
+.cellPhonePlanPricePlaceHolder_dhsgX {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+        .pricePlaceholder_3Fpa0, .downPlaceholder_3GkOd, .monthlyPlaceholder_3bZFA, .cellPhonePlanPricePlaceHolder_dhsgX {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.pricing_1j6Gn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.half_w-Tox {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+            align-items: baseline;
+}
+
+.pricePlaceholder_3Fpa0 {
+    height: 40px;
+    width: 50px;
+    background-color: #e0e6ef;
+    margin-right: 4px;
+}
+
+.downPlaceholder_3GkOd {
+    height: 18px;
+    width: 60px;
+    background-color: #e0e6ef;
+}
+
+.monthlyPlaceholder_3bZFA {
+    height: 18px;
+    width: 80px;
+    background-color: #e0e6ef;
+}
+
+.cellPhonePlanPricePlaceHolder_dhsgX {
+    height: 14px;
+    width: 100%;
+    background-color: #e0e6ef;
+    margin-bottom: 16px;
+}

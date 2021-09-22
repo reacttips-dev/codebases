@@ -1,0 +1,45 @@
+.boxComponent_3vpZH {
+    border: 2px solid #e0e6ef;
+    border-radius: 4px;
+    padding: 38px 24px 16px;
+    margin: 12px 0;
+}
+
+.link_pljq7,
+.link_pljq7:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.enabledComponent_1H0lo {
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .16);
+    padding: 38px 24px 16px;
+}
+
+.enabledComponent_1H0lo:hover {
+    border: 2px solid #0046be;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boxComponent_3vpZH {
+        margin: 12px 0;
+        height: 95%;
+        box-sizing: border-box;
+    }
+}
+
+.emailLogo_9Nr2H {
+    height: 48px;
+    width: 48px;
+}
+
+.emailHeader_1v2iJ {
+    color: #0046be;
+    text-decoration: none;
+}
+
+.emailBody_3wsNI {
+    color: #1d252c;
+}

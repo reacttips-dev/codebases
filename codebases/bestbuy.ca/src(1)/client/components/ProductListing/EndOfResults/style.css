@@ -1,0 +1,14 @@
+
+
+.endOfList_b04RG {
+    background: #f4f6f9;
+    color: #55555a;
+    padding: 24px 0;
+    text-align: center;
+}
+
+@media (min-width: 1025px) {
+    .endOfList_b04RG {
+        margin: 0 24px;
+    }
+}

@@ -1,0 +1,33 @@
+
+
+.messageBoxRebranding_3AXfa {
+    margin: 0 16px;
+}
+
+.messageTitle_3_SC0 {
+    font-weight: 600;
+}
+
+.messageDetails_1diL7 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 40px;
+    font-weight: normal;
+}
+
+.icon_12AwQ.iconStyleMessage_4lars {
+    float: left;
+    height: 24px;
+    margin: 0 16px 0 0;
+    width: 24px;
+}
+
+@media (min-width: 768px) {
+    .messageBoxRebranding_3AXfa {
+        margin: 0;
+    }
+}
+
+.messageDetailsWrapper_1RWji {
+    font-weight: normal;
+}

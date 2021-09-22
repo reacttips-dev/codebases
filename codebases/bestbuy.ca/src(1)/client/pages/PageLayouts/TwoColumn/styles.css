@@ -1,0 +1,98 @@
+.twoColumn_s09m6 {
+    margin: 0 16px;
+}
+
+    .twoColumn_s09m6 .sideBar_3fD3X {
+        padding: 0;
+        margin-bottom: 32px;
+    }
+
+    .twoColumn_s09m6 .browserSizeLayout_1IYd4 {
+        margin-left: calc(-50vw + 50%);
+        width: 100vw;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .twoColumn_s09m6 .browserSizeLayout_1IYd4 .siteSizeLayout_2G5t3 {
+            padding-left: 16px;
+            padding-right: 16px;
+            box-sizing: border-box;
+        }
+
+    .twoColumn_s09m6 .siteSizeLayout_2G5t3 {
+        width: 100%;
+    }
+
+    .twoColumn_s09m6 .backgroundMountedContent_2R9PO {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+@media (min-width: 768px) {
+        .twoColumn_s09m6 .sideBar_3fD3X {
+            margin-bottom: 48px;
+        }
+}
+@media (min-width: 1025px) {
+    .twoColumn_s09m6 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+        margin: 0 24px;
+    }
+
+        .twoColumn_s09m6 .browserSizeLayout_1IYd4 {
+            margin-left: 0;
+            width: 100%;
+            overflow: visible;
+        }
+
+            .twoColumn_s09m6 .browserSizeLayout_1IYd4 .siteSizeLayout_2G5t3 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .twoColumn_s09m6 .browserSizeLayout_1IYd4 .backgroundMountedContent_2R9PO {
+                padding-left: 24px;
+                padding-right: 24px;
+                box-sizing: border-box;
+            }
+
+        .twoColumn_s09m6 .textContent_1rPoG {
+            max-width: 700px;
+        }
+            .twoColumn_s09m6 .backgroundMountedContent_2R9PO .textContent_1rPoG {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        .twoColumn_s09m6 .main_7Bnep {
+            box-sizing: border-box;
+            width: 75%;
+            padding-top: 16px;
+        }
+
+        .twoColumn_s09m6 .sideBar_3fD3X {
+            padding: 16px 24px 24px 0;
+            box-sizing: border-box;
+            width: 25%;
+            margin: 0;
+        }
+
+        .twoColumn_s09m6 .header_1MAAp {
+            width: 100%;
+        }
+
+        .twoColumn_s09m6 .footer_3wlcT {
+            width: 100%;
+        }
+
+            .twoColumn_s09m6 .footer_3wlcT .textContent_1rPoG {
+                max-width: 700px;
+                margin-left: 25%;
+                margin-right: auto;
+            }
+}

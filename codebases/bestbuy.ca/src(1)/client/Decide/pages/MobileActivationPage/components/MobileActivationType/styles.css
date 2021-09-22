@@ -1,0 +1,227 @@
+.selectableCardsContainer_2CU40 {
+    margin: 0 0 20px;
+}
+
+.cardsStyle_25G9E {
+    display: block;
+    padding-bottom: 16px;
+    width: 106%;
+    margin-left: -3%;
+}
+
+.cardsStyle_25G9E > div {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+            flex: 1 1 0;
+    margin: 16px 0;
+}
+
+.cardsStyle_25G9E > div > div {
+    min-height: 100%;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px transparent;
+}
+
+.cardsStyle_25G9E > div > div > span,
+.cardsStyle_25G9E > div > div > svg {
+    margin: 16px 16px 0;
+}
+
+.cardStyle_1d62L {
+    padding: 32px 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.cardsStyle_25G9E span,
+.cardsStyle_25G9E svg {
+    height: 24px;
+    width: 24px;
+    font-weight: 600;
+}
+
+.cardsStyle_25G9E h2 {
+    font-weight: 700;
+}
+
+.cardStyle_1d62L > :last-child {
+    margin-bottom: 0;
+}
+
+.cardsStyle_25G9E > div > div[class*="selected"],
+.cardsStyle_25G9E > div > div:hover {
+    border: 1px solid #0046be;
+    box-shadow: inset 0 0 0 1px #0046be;
+}
+
+.error_I1tBv {
+    display: block;
+}
+
+.error_I1tBv > div > div {
+    border: 1px solid #bb0628;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #bb0628;
+}
+
+.errorMessage_1wjJm {
+    color: #bb0628;
+}
+
+.title_3bP-d {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.activationQuestion_Piryc {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+.descriptionContainer_J1TVV {
+    margin-bottom: 32px;
+}
+
+.carrierLabel_1dAvm {
+    display: inline;
+    text-transform: capitalize;
+}
+
+.carrierUpperCase_16SIM {
+    text-transform: uppercase;
+}
+
+.postalCodeUpperCase_3Kcx9 input {
+    text-transform: uppercase;
+}
+
+.firstCardContainer_PFmSn {
+    padding-bottom: 0;
+}
+
+.expandableContainerShown_1-m1t {
+    margin: 24px 0 16px;
+}
+
+.cardsStyle_25G9E.upgradeCheckShown__8wCE {
+    margin-bottom: 0;
+}
+
+.upgradeCheckTitle_29dDs {
+    margin: 0 0 8px;
+}
+
+.requiredText_3I_V0 {
+    font-size: 12px;
+    color: #55555a;
+    margin-bottom: 24px;
+}
+
+.mediumInput_1GN-s {
+    margin-right: 24px;
+}
+
+.globalErrorMessageContainer_3IU3u {
+    margin-bottom: 24px;
+}
+
+a.storeLocatorLink_TTKPA {
+    display: inline;
+    margin: 0;
+}
+
+.recaptcha_2GoMY {
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .cardsStyle_25G9E {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        padding: 0 0 48px;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .cardsStyle_25G9E > div {
+        margin: 0 16px 0 0;
+    }
+
+    .cardsStyle_25G9E > div:last-child {
+        margin: 0;
+    }
+
+    .cardStyle_1d62L {
+        margin: auto;
+        width: 79%;
+        padding-top: 0;
+    }
+
+    .title_3bP-d {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 48px;
+    }
+
+    .activationQuestion_Piryc {
+        font-size: 24px;
+        line-height: 32px;
+        width: 100%;
+    }
+
+    .errorMessage_1wjJm {
+        margin: -24px 0 24px;
+    }
+
+    .descriptionContainer_J1TVV {
+        margin-bottom: 48px;
+    }
+
+    .mediumInput_1GN-s {
+        width: 290px;
+    }
+
+    .expandableContainerShown_1-m1t {
+        margin: 0;
+    }
+
+    .upgradeCheckShown__8wCE {
+        padding: 0 0 32px;
+    }
+
+    .globalErrorMessageContainer_3IU3u {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .mobileActivationType_2vM4S {
+        width: 918px;
+        margin: 0 auto;
+    }
+
+    .cardsStyle_25G9E > div {
+        margin: 0 24px 0 0;
+    }
+
+    .globalErrorMessageContainer_3IU3u {
+        width: 66.667%;
+    }
+}

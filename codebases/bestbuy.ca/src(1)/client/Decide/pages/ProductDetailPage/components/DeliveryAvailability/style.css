@@ -1,0 +1,100 @@
+.onlineAvailabilityContainer_1PWFT,
+.scheduledDeliveryContainer_1fp2z {
+    margin: 0 16px 0 0;
+}
+
+.availabilityMessageProduct_9cD-V {
+    line-height: 20px;
+    font-size: 14px;
+    color: #1d252c;
+    font-weight: 600;
+}
+
+.availabilityMessageProduct_9cD-V .availabilityMessage_3k2fo {
+    margin-top: 12px;
+    display: inline-block;
+}
+
+.deliveryDate_3ylG6 {
+    padding-left: 40px;
+}
+
+.deliveryDate_3ylG6 p {
+    color: #1d252c;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.deliveryDate_3ylG6 p:first-of-type {
+    margin-bottom: 8px;
+}
+
+.icon_mVDNu.iconStyle_33RUM {
+    float: left;
+    height: 32px;
+    margin-right: 8px;
+    width: 32px;
+    position: relative;
+    bottom: 3px;
+}
+
+.scheduledDeliveryTitle_3Po9m,
+.shippingAvailabilityTitle_2Ekie {
+    color: #1d252c;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 8px;
+    line-height: 24px;
+}
+
+.scheduledDeliveryMessage_37ikt:first-of-type {
+    margin-bottom: 8px;
+}
+
+.specialDelivery_2DeNr {
+    font-size: 14px;
+    margin: 0 16px 16px 40px;
+}
+
+.postalCode_3wnY3 {
+    margin: 8px 0 0 40px;
+}
+
+.postalCode_3wnY3 [class*="postalCodeInput"] {
+    padding-bottom: 0;
+}
+
+.scheduledDelivery_3TAQn {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    
+}
+
+.scheduledDelivery_3TAQn .home_RFhg0 {
+        font-weight: 900;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+.scheduledDelivery_3TAQn .details_2ko-L {
+        font-weight: 600;
+    }
+
+.scheduledDelivery_3TAQn .chevron_28EzA {
+        height: 16px;
+        width: 16px;
+        position: relative;
+        top: 4px;
+        left: 2px;
+    }
+
+@media (min-width: 768px) {
+    .scheduledDeliveryContainer_1fp2z,
+    .onlineAvailabilityContainer_1PWFT {
+        margin: 0;
+    }
+}

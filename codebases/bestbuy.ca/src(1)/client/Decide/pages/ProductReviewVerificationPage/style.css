@@ -1,0 +1,33 @@
+
+
+.reviewEmailVerificationContainer_1hpkA {
+    margin: 0 auto;
+    max-width: calc(1281px - 1px);
+    padding: 24px;
+}
+
+.thanksHeadline_2-Etj {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.startShoppingLink_15k8_ {
+    color: #0046be;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0 0 8px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.rightArrowIcon_2aNG3 {
+    fill: #0046be;
+    height: 22px;
+    position: relative;
+    top: 2px;
+}

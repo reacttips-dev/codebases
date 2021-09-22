@@ -1,0 +1,89 @@
+.helpPage_MezNh {
+    overflow: auto;
+}
+
+.breadCrumbs_3_P7Z {
+    margin-bottom: 24px;
+}
+
+.help_2zSvh.backToHelpCategory_1mbhr {
+    background: #fff;
+    color: #0046be;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e6ef;
+    text-align: left;
+    width: 100%;
+    height: 48px;
+    margin-left: 4px;
+}
+
+.helpPageHeader_OrRhD {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.helpPageContent_31qg2 {
+    max-width: none;
+    margin-bottom: 48px;
+}
+
+.helpPageContent_31qg2 .helpBody_24Kgu {
+        margin: 0;
+    }
+
+.helpPageContent_31qg2 .contactUs_1Ojce {
+        text-align: left;
+        width: 100%;
+        max-width: none;
+    }
+
+.helpCategoryList_2HFmk {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.helpCategoryListItem_1DLWx {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.helpCategoryListItem_1DLWx .helpCategory_33wzp {
+        font-size: 16px;
+        color: #0046be;
+        font-weight: 600;
+        margin: 16px 0;
+    }
+
+.icon_252Se.arrowIcon_1nMdY {
+    color: #0046be;
+    height: 16px;
+    width: 16px;
+}
+
+@media (min-width: 768px) {
+    .breadCrumbs_3_P7Z {
+        margin-bottom: 0;
+    }
+
+    .helpPageContent_31qg2 {
+        margin-bottom: 64px;
+    }
+
+    .helpPageHeader_OrRhD.twoCol_3Uf0_ {
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .helpPageHeader_OrRhD {
+        margin: 0 0 24px
+    }
+    .helpPageHeader_OrRhD.twoCol_3Uf0_ {
+        margin-top: 0;
+    }
+
+    .mobileNav_3LgIH,
+    .mobilePageHeader_2mubH {
+        display: none;
+    }
+}

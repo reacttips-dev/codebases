@@ -1,0 +1,95 @@
+
+
+.container_2haQT {
+    color: #1d252c;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+    .container_2haQT .footer_1LyDZ {
+        line-height: 20px;
+    }
+
+.priceContainer_1WY68 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin-bottom: 4px
+}
+
+.priceContainer_1WY68 > div {
+    width: 100%;
+}
+
+.price_3zm7E {
+    margin-left: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 26.39%;
+    position: relative;
+    font-size: 14px
+}
+
+.price_3zm7E > span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.price_3zm7E > span > div {
+    margin-bottom: 0;
+}
+
+.blockCap_XOFJP .cap_KNuvQ {
+    width: 73.61%;
+}
+
+.warrantyOptionsTitle_14UDG {
+    margin-bottom: 8px;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.warrantyOptions_2vs-x {
+    padding-bottom: 0;
+}
+
+.warrantyBenefitsContainer_1GGdf {
+    margin-top: 16px;
+}
+
+.warrantyBenefitsContainer_1GGdf a {
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+.warrantyBenefitsContainer_1GGdf .warrantyBenefits_3wvZi {
+        margin-top: 16px;
+    }
+
+@media only screen and (max-width: 400px) {
+    .price_3zm7E {
+        margin-left: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .blockCap_XOFJP .cap_KNuvQ {
+        width: 73.9%;
+    }
+
+    .price_3zm7E {
+        width: 26.1%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .blockCap_XOFJP .cap_KNuvQ {
+        width: 300px;
+    }
+}

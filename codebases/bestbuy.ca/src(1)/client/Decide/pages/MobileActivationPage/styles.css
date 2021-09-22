@@ -1,0 +1,143 @@
+.pageContainer_1xF-V {
+    margin: 0 auto;
+    position: relative;
+    background: -webkit-linear-gradient(315deg, #fff, #f4f6f9);
+    background: linear-gradient(135deg, #fff, #f4f6f9);
+}
+
+.contentContainer_33HFk {
+    text-transform: none;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.backButtonContainer_333eV {
+    display: inline-block;
+}
+
+.confirmationTextContainer_1Zt2n {
+    margin-top: 16px;
+}
+
+.description_4MIyq {
+    white-space: pre-line;
+}
+
+.inputMargin_1A7P5 {
+    margin: 0;
+}
+
+.topMargin_3U0rP {
+    margin-top: 30px;
+}
+
+.hidden_3ua_w {
+    display: none;
+}
+
+.storeHelpText_2fTvd {
+    margin-top: 16px;
+}
+
+.title_2eqPJ {
+    font-weight: 700;
+}
+
+.flexContainer_Pojsq {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: normal;
+    -webkit-align-items: normal;
+            align-items: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+}
+
+.mediumInput_1hNxB {
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.horizontalDivider_s-rp0 {
+    height: 1px;
+    width: 100%;
+}
+
+.helpLink_E7Eyi {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.requiredText_1JJtV {
+    margin: 32px 0 24px;
+}
+
+.submitButton_1-Kaj {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contentContainer_33HFk {
+        padding: 48px 16px 64px;
+    }
+
+    .title_2eqPJ {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+    }
+
+    .descriptionContainer_3Khl8 {
+        margin: 48px 0 16px;
+    }
+
+    .inputMargin_1A7P5 {
+        margin-right: 10px;
+    }
+
+    .flexContainer_Pojsq {
+        width: 50%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .mediumInput_1hNxB {
+        width: 50%;
+        padding-bottom: 24px;
+    }
+
+    .requiredText_1JJtV {
+        margin-top: 48px;
+    }
+
+    .confirmationTextContainer_1Zt2n {
+        margin-top: 48px;
+    }
+
+    .continueButton_9CrY8 {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .cancelButton_1o1d4 {
+        width: 48px;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .confirmationContainer_3YdYZ {
+        margin: 0 auto;
+    }
+}

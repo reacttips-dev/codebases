@@ -1,0 +1,13 @@
+.inputContainer_255PK {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+}
+
+.inputContainer_255PK label {
+    margin: 0 0 3px;
+}

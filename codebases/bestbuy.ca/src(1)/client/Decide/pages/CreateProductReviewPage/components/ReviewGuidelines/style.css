@@ -1,0 +1,18 @@
+
+
+.reviewGuidelines_QD8Ix {
+    margin-top: 8px;
+}
+
+.reviewGuidelines_QD8Ix li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d252c;
+}
+
+@media (min-width: 1025px) {
+    .reviewGuidelines_QD8Ix {
+        width: 380px;
+        margin: 0 0 0 128px;
+    }
+}

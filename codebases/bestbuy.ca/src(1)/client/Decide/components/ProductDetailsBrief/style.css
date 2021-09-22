@@ -1,0 +1,39 @@
+
+
+.productDetailsBrief_3EGbL {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.productDetailsBrief_3EGbL > div:first-of-type {
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+            flex-grow: 0;
+}
+
+.productDetailsBrief_3EGbL img {
+    width: 96px;
+}
+
+.detailsContainer_3wvvA {
+    margin-left: 16px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+            flex-grow: 1;
+}
+
+.productName_WUrjJ {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    color: #1d252c;
+    font-weight: 400;
+}
+
+.productName_WUrjJ:hover {
+    text-decoration: underline;
+}

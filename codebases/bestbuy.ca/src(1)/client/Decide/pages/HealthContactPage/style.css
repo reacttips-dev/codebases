@@ -1,0 +1,118 @@
+.backdrop_3-Nyn {
+    background: -webkit-linear-gradient(315deg, #fff, #f4f6f9);
+    background: linear-gradient(135deg, #fff, #f4f6f9);
+    padding: 12px 6px 0;
+}
+
+.fullHeight_3EmmF {
+    height: 50vh;
+}
+
+.backButtonContainer_vvSUG {
+    display: inline-block;
+}
+
+.description_38wzV {
+    white-space: pre-line;
+}
+
+.inputMargin_1DKdX {
+    margin: 0;
+}
+
+.hidden_37N-9 {
+    display: none;
+}
+
+.storeHelpText_9n2Ro {
+    margin-top: 16px;
+}
+
+.sectionTitle_UerBw {
+    margin-bottom: 24px !important;
+}
+
+.flexContainer_UvEl_ {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: normal;
+    -webkit-align-items: normal;
+            align-items: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+}
+
+.mediumInput_3wWCC {
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.horizontalDivider_30Pab {
+    height: 1px;
+    width: 100%;
+}
+
+.helpLink_OsG4l {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.requiredText_g62PG {
+    margin: 32px 0 24px;
+    font-size: 14px;
+    color: #55555a;
+}
+
+.formFooter_YUh_1 {
+    font-size: 14px;
+    margin: 32px 0;
+}
+
+.submitButton_1r_GQ {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .inputMargin_1DKdX {
+        margin-right: 10px;
+    }
+
+    .flexContainer_UvEl_ {
+        width: 50%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .mediumInput_3wWCC {
+        width: 50%;
+        padding-bottom: 24px;
+    }
+
+    .formFooter_YUh_1 {
+        width: 70%;
+    }
+
+    .submitButton_1r_GQ {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .detailsContainer_2vU2T {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .description_38wzV {
+        width: 70%;
+    }
+}

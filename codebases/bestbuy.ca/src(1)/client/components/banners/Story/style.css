@@ -1,0 +1,103 @@
+.StoryContainer_2Afaq {
+    position: relative;
+    color: #1d252c
+
+    /**
+    * Clearfix needed to prevent collapsing margin on header.
+    /** ------------------------- */
+}
+
+.StoryContainer_2Afaq::before,
+    .StoryContainer_2Afaq::after {
+    content: "";
+    display: table;
+}
+
+.StoryContainer_2Afaq {
+
+    /** ------------------------- */
+
+    /**
+    * Applies top margin - only if a bg is applied
+    /** ------------------------- */
+}
+
+.StoryContainer_2Afaq.hasBackground_1ri3E .SectionTitle_2vLn-, .StoryContainer_2Afaq.dark_1UjlC .SectionTitle_2vLn- {
+            margin-top: 48px;
+}
+
+.StoryContainer_2Afaq {
+
+    /** ------------------------- */
+}
+
+.StoryContainer_2Afaq.dark_1UjlC {
+    color: #fff;
+}
+
+.StoryContainer_2Afaq.dark_1UjlC .StoryBackground_1URlx {
+            background-color: #1d252c;
+}
+
+.StoryContainer_2Afaq .SectionTitle_2vLn- {
+        padding: 0;
+        font-weight: 800;
+        text-align: center;
+        margin: 0 0 24px;
+}
+
+/*Conditional Margin/Padding based off CMS styling */
+
+.StoryContainer_2Afaq > .lastChild_1upon:not(.singleStory_2YHQZ),
+    .StoryContainer_2Afaq .lastChild_1upon.bgImg_2wYXP {
+        margin-bottom: 0;
+}
+
+.StoryContainer_2Afaq > .singleStory_2YHQZ:not(.bgImg_2wYXP) {
+        margin-top: 0;
+}
+
+.StoryContainer_2Afaq > .singleStory_2YHQZ.bgImg_2wYXP:not(.bgColor_3eI8q) {
+        margin-bottom: 0;
+}
+
+.StoryContainer_2Afaq > .lastChild_1upon.longRow_33yZb:not(.bgColor_3eI8q) {
+        padding-bottom: 0;
+}
+
+.StoryContainer_2Afaq > .storyRowItem_1zTTs:not(.bgColor_3eI8q):not(.bgImg_2wYXP):not(.longRow_33yZb) {
+        margin-top: 0;
+}
+
+.StoryContainer_2Afaq > .longRow_33yZb:not(.bgColor_3eI8q):not(.bgImg_2wYXP) {
+        padding-top: 0;
+}
+
+.StoryBackground_1URlx {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .StoryContainer_2Afaq {
+        /**
+        * Applies top margin - only if a bg is applied
+        /** ------------------------- */
+    }
+    .StoryContainer_2Afaq.hasBackground_1ri3E .SectionTitle_2vLn-, .StoryContainer_2Afaq.dark_1UjlC .SectionTitle_2vLn- {
+                margin-top: 64px;
+    }
+    .StoryContainer_2Afaq {
+
+        /** ------------------------- */
+    }
+}
+
+@media (min-width: 1025px) {
+        .StoryContainer_2Afaq .SectionTitle_2vLn- {
+            font-size: 24px;
+        }
+}

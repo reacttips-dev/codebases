@@ -1,0 +1,19 @@
+.logoContainer_BUPkH {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+    .logoContainer_BUPkH .logo_wQp4G {
+        width: auto;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+@media (min-width: 768px) {
+    .logoContainer_BUPkH {
+        text-align: left;
+    }
+
+        .logoContainer_BUPkH .logo_wQp4G {
+            max-width: 50%;
+        }
+}

@@ -1,0 +1,17 @@
+.headline_2Ik-v {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+@media (min-width: 768px) {
+    .headline_2Ik-v {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+@media (min-width: 1025px) {
+    .headline_2Ik-v {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

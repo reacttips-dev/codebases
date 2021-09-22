@@ -1,0 +1,283 @@
+.backToSearchResults_14dEc {
+    background: #fff !important;
+    color: #0046be !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid #e0e6ef !important;
+    text-align: left !important;
+    width: 100% !important;
+    height: 48px !important;
+}
+
+.backToSearchResults_14dEc > div {
+    padding-top: 4px;
+    height: 44px;
+}
+
+.productName_2tmUm {
+    margin: 16px 16px 4px;
+    color: #1d252c;
+}
+
+.pricingContainer_T4-Jq {
+    margin: 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.productContent_1WAIm {
+    padding: 24px 16px 0;
+}
+
+.productItemSaleRegularPrice_2RPoB {
+    color: #9b9b9b;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #9b9b9b;
+            text-decoration-color: #9b9b9b;
+}
+
+.topHr_3jWuq {
+    margin: 0 0 16px;
+    height: 1px;
+    border: 0;
+    background-color: #e0e6ef;
+}
+
+.bottomHr_2slcd {
+    margin: 16px 0 0;
+    height: 1px;
+    border: 0;
+    background-color: #e0e6ef;
+}
+
+.largeRatingConainer_IKfku {
+    display: inline-block;
+    margin-right: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.seeAllSellers_2CPKZ {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 16px 48px;
+}
+
+.overview_2qjbA {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1d252c;
+}
+
+.overviewContainer_12wDl {
+    padding: 24px 16px;
+}
+
+.description_1yEhy {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d252c;
+    margin-bottom: 0;
+}
+
+.emptyImageDivider_2ocDV {
+    margin-top: 16px !important;
+}
+
+.pageEnd_3JayS {
+    margin-bottom: 64px;
+}
+
+.pdpRatingContainer_1rB5H {
+    margin: 8px 16px 16px;
+}
+
+.soldByBestBuy_1dTKF {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.soldByBestBuy_1dTKF svg {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 8px;
+    position: relative;
+}
+
+.dividerWithMargin_3sFQg {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+}
+
+.productWarrantiesContainer_2sCOX {
+    margin: 24px 16px 8px;
+}
+
+.warrantyOptions_3LvKf {
+    margin-left: 32px;
+}
+
+.icon_Tw7hF.arrowIcon_un9Jw {
+    color: #0046be;
+    height: 16px;
+    position: relative;
+    right: 0;
+    top: 2px;
+    width: 16px;
+}
+
+.collapseColContainer_1h1rZ {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.sellersPlaceholder_3RpIM {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.sellersPlaceholder_3RpIM {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.sellersPlaceholder_3RpIM {
+    width: 125px;
+    height: 20px;
+    margin: 16px 0 16px 64px;
+}
+
+.mobilePlanInquiryToolBar_20qyY {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #e0e6ef;
+    background-color: #fff;
+    z-index: 10;
+    margin: 0 auto;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.customBreadcrumbListPadding_UmjWj {
+    padding: 12px 16px;
+}
+
+@media (min-width: 768px) {
+    .productName_2tmUm {
+        margin: 0 16px 4px;
+    }
+
+    .pricingContainer_T4-Jq {
+        margin: 24px 0 16px;
+    }
+
+    .productInfoContainer_2MteV {
+        padding: 24px 16px;
+        border-bottom: solid 1px #e0e6ef;
+    }
+
+    .productInfoContainer_2MteV:last-child {
+        border-bottom: 0;
+    }
+
+    .pageEnd_3JayS {
+        margin-bottom: 0;
+    }
+
+    .soldByBestBuy_1dTKF {
+        margin: 16px 0;
+    }
+
+    .productContent_1WAIm {
+        padding-right: 24px;
+    }
+
+    .collapseColContainer_1h1rZ {
+        margin-bottom: 8px;
+        padding-right: 16px;
+    }
+
+    .seeAllSellers_2CPKZ {
+        margin: 16px 0 16px 32px;
+    }
+
+    .productWarrantiesContainer_2sCOX {
+        margin: 16px 0;
+    }
+
+    .sellersPlaceholder_3RpIM {
+        margin: 16px 0 8px 32px;
+    }
+
+    .overviewContainer_12wDl {
+        padding: 24px 16px;
+        border-bottom: solid 1px #e0e6ef;
+    }
+}
+
+@media (min-width: 1025px) {
+    .productName_2tmUm {
+        margin: 0 24px 4px;
+    }
+
+    .productInfoContainer_2MteV {
+        box-sizing: border-box;
+        padding: 0 24px 32px;
+        border-bottom: 0;
+    }
+
+    .productContent_1WAIm {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .pricingContainer_T4-Jq {
+        margin-right: 0;
+    }
+
+    .overviewContainer_12wDl {
+        padding: 0 0 32px;
+        border-bottom: 0;
+    }
+
+    .dividerWithMargin_3sFQg {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .collapseColContainer_1h1rZ {
+        padding-right: 24px;
+    }
+
+    .pdpFooterAdsBeforeDivider_1urj2 {
+        margin: 0 24px;
+    }
+
+    .customBreadcrumbListPadding_UmjWj {
+        padding: 12px 24px;
+    }
+}

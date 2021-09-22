@@ -1,0 +1,35 @@
+
+
+.sortLabel_1M6yJ {
+    display: none;
+}
+
+.container_MIc_k {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.select_2DHZW label {
+    display: none;
+}
+
+.productSortDropdown_1VTnZ {
+    width: 100%;
+}
+
+@media (min-width: 1025px) {
+    .container_MIc_k {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+        margin-left: 24px;
+    }
+
+    .sortLabel_1M6yJ {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 8px;
+    }
+}

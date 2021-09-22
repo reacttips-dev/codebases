@@ -1,0 +1,28 @@
+
+
+.emailUsPage_17nAN {
+    padding: 0 16px;
+    background: -webkit-linear-gradient(315deg, #fff 0%, #f4f6f9 100%);
+    background: linear-gradient(135deg, #fff 0%, #f4f6f9 100%);
+}
+
+.emailUsForm_Ica6Z {
+    padding-bottom: 80px;
+    padding-top: 64px;
+}
+
+.emailUsForm_Ica6Z a {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .emailUsPage_17nAN {
+        padding: 0;
+        margin-left: 24px;
+    }
+
+    .emailUsForm_Ica6Z {
+        padding: 64px 84px 80px;
+        max-width: 768px;
+    }
+}

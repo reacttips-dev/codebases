@@ -1,0 +1,15 @@
+.pricePerMonth_3KgGO {
+    display: inline-block;
+}
+
+.pricePerMonth_3KgGO [class^="price"] {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 0 0 8px;
+    border-left: 1px solid #c5cbd5;
+}
+
+.pricePerMonth_3KgGO.hideDecimals_3_X3S [class^="rightEndPrice"] {
+    display: none;
+}

@@ -1,0 +1,159 @@
+.pricingContainer_9GyCd {
+    margin: 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.productWarrantiesContainer_1JDH_ {
+    margin: 0;
+}
+
+.sellersPlaceholder_1Kmt0 {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.sellersPlaceholder_1Kmt0 {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.sellersPlaceholder_1Kmt0 {
+    width: 125px;
+    height: 20px;
+    margin: 16px 0 16px 64px;
+}
+
+.seeAllSellers_3Wj0h {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icon_LE6te.arrowIcon_3szcA {
+    color: #0046be;
+    height: 16px;
+    position: relative;
+    right: 0;
+    top: 2px;
+    width: 16px;
+}
+
+.correctionNoticeContainer_2Ac8Z {
+    margin: 24px 0;
+}
+
+.productWarranties_hVjSy {
+    margin-left: 40px;
+    padding-bottom: 0;
+}
+
+.productWarrantiesContainer_1JDH_ svg {
+    width: 32px;
+    height: 20px;
+}
+
+.badgeWrp_lXmlg {
+    margin: 24px 16px -12px;
+}
+
+.divider_3Oebm {
+    margin: 0;
+}
+
+.productActionWrapperNonMobile_10B89 {
+    display: none;
+}
+
+.productServicesContainer_rlfPZ {
+    margin: 24px 16px 0 0;
+}
+
+.productDetails_3neAl {
+    padding: 32px 16px;
+    background-color: #f4f6f9;
+    border-radius: 4px;
+}
+
+.dividerSection_2SK3B {
+    margin: 24px 0;
+}
+
+.productByBestBuy_1OScV {
+    margin: 0 0 24px;
+}
+
+.productByBestBuy_1OScV svg {
+    width: 27px;
+    height: 16px;
+}
+
+.productByBestBuy_1OScV span {
+    margin-left: 5px;
+}
+
+.productWarrantiesContainer_1JDH_ p {
+    margin-top: 0;
+}
+
+.sellerSectionTop_cQnXd {
+    margin: 0 0 16px;
+}
+
+.sellerSectionBottom_1tv2i {
+    margin: 16px 0 24px;
+}
+
+@media (min-width: 768px) {
+    .pricingContainer_9GyCd {
+        margin: 24px 0 16px;
+    }
+
+    .soldByBestBuy_2EY5d {
+        margin: 0 0 16px;
+    }
+
+    .sellersPlaceholder_1Kmt0 {
+        margin: 16px 0 8px 48px;
+    }
+
+    .badgeWrp_lXmlg {
+        margin: 24px 0 -20px;
+    }
+
+    .productActionWrapperNonMobile_10B89 {
+        display: block;
+    }
+
+    .productDetails_3neAl {
+        padding: 32px 24px;
+    }
+
+    .sellerSectionTop_cQnXd {
+        margin-top: 8px;
+    }
+
+    .sellerSectionBottom_1tv2i {
+        margin-bottom: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .pricingContainer_9GyCd {
+        margin-right: 0;
+    }
+}

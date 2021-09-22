@@ -1,0 +1,68 @@
+
+
+.globalPencilBanner_JDDsP {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    font-size: 12px;
+    position: relative;
+    min-height: 32px;
+    padding: 8px 16px;
+}
+
+.messageContent_1N18a {
+    z-index: 1;
+    text-align: center;
+}
+
+.messageContent_1N18a .messageTitle_2OhEa,
+.messageContent_1N18a .messageDetails_2OzI3 {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.light_v4N41 .messageTitle_2OhEa,
+.light_v4N41 .messageDetails_2OzI3 {
+    color: #1d252c;
+}
+
+.dark_InT3m .messageTitle_2OhEa,
+.dark_InT3m .messageDetails_2OzI3,
+.dark_InT3m .ctaLink_2qI7d {
+    color: #fff;
+}
+
+.messageTitle_2OhEa {
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.messageContent_1N18a .messageDetails_2OzI3 {
+    margin: 4px 8px 4px 0;
+}
+
+.messageContent_1N18a .messageDetails_2OzI3,
+.messageContent_1N18a .ctaLink_2qI7d,
+.messageContent_1N18a .messageSubcontent_2h4Gz,
+.messageContent_1N18a .messageTitle_2OhEa {
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .ctaLink_2qI7d {
+        display: block;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 1025px) {
+    .globalPencilBanner_JDDsP {
+        padding: 8px 24px;
+    }
+}

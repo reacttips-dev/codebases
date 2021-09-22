@@ -1,0 +1,51 @@
+
+
+.benefitsPageContainer_Dl1EW {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.benefitsPageContainer_Dl1EW .backBtnContainer_2qvWp {
+    margin: 0 0 16px 16px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.backBtnContainer_2qvWp .backButton_29WGZ {
+    position: relative;
+    padding-left: 19px;
+    font-size: 14px;
+    height: 20px;
+}
+
+.backBtnContainer_2qvWp .leftChevron_3HmCt {
+    position: absolute;
+    width: 16px;
+    left: 0;
+    top: 1.6px;
+}
+
+.benefitsPageContainer_Dl1EW a {
+    text-decoration: none;
+    color: #0046be;
+    font-weight: 600;
+}
+
+.benefitsPageContainer_Dl1EW a:hover {
+    text-decoration: underline;
+}
+
+.benefitsPageContainer_Dl1EW hr {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .benefitsPageContainer_Dl1EW hr {
+        height: 0;
+    }
+
+    .benefitsPageContainer_Dl1EW .backBtnContainer_2qvWp {
+        margin: 0 24px;
+    }
+}

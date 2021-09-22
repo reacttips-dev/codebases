@@ -1,0 +1,38 @@
+
+
+.content_bK_Rp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+.icon_WXhre {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    fill: #1d252c;
+}
+
+.textContainer_1rcqI p {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .content_bK_Rp {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+    }
+
+    .icon_WXhre {
+        margin: 0;
+    }
+}

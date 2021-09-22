@@ -1,0 +1,9 @@
+.mediumInput_FXMXx {
+    width: 100%;
+    padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+    .mediumInput_FXMXx {
+        width: 190px;
+    }
+}

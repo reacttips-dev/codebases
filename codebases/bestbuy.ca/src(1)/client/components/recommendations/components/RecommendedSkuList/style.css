@@ -1,0 +1,20 @@
+
+
+.header_3F_1L {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+            flex: 1 100%;
+    margin: 24px 0 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.recommendedSkuList_dYRMC {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 1025px) {
+    .header_3F_1L {
+        margin: 32px 0 16px;
+    }
+}

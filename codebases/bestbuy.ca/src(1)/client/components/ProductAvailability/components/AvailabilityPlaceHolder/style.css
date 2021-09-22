@@ -1,0 +1,62 @@
+.container_2dyp6 {
+    margin: 16px;
+}
+
+.availabilityContainer_3khtV {
+    width: 100%;
+}
+
+.placeholderContainer_239Er {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.titlePlaceholder_3yNBK,
+.descriptionPlaceholder_2oSPX,
+.iconPlaceholder_3whgT {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.titlePlaceholder_3yNBK, .descriptionPlaceholder_2oSPX, .iconPlaceholder_3whgT {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.iconPlaceholder_3whgT {
+    height: 40px;
+    min-width: 40px;
+    margin-right: 8px;
+}
+
+.titlePlaceholder_3yNBK {
+    height: 20px;
+    width: 65%;
+    margin-bottom: 2px;
+}
+
+.descriptionPlaceholder_2oSPX {
+    height: 20px;
+    width: 85%;
+}
+
+@media (min-width: 768px) {
+    .container_2dyp6 {
+        margin: 0 0 16px;
+    }
+}

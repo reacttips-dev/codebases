@@ -1,0 +1,117 @@
+.icon_1ucxw.sliderPrevArrow_VaXfd {
+    left: 16px;
+}
+
+.icon_1ucxw.sliderNextArrow_1Uf-W {
+    right: 16px;
+}
+
+.icon_1ucxw.sliderNextArrow_1Uf-W,
+.icon_1ucxw.sliderPrevArrow_VaXfd {
+    background-color: rgba(255, 255, 255, .64);
+    border-radius: 50%;
+    padding: 4px;
+    fill: #0046be;
+    height: 32px;
+    width: 32px;
+    z-index: 1;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+}
+
+.icon_1ucxw.sliderNextArrow_1Uf-W:hover,
+.icon_1ucxw.sliderPrevArrow_VaXfd:hover {
+    background-color: #fff;
+}
+
+.icon_1ucxw.sliderNextArrow_1Uf-W.disabled_305W8,
+.icon_1ucxw.sliderPrevArrow_VaXfd.disabled_305W8 {
+    fill: #55555a;
+}
+
+.icon_1ucxw.sliderNextArrow_1Uf-W.disabled_305W8:hover,
+.icon_1ucxw.sliderPrevArrow_VaXfd.disabled_305W8:hover {
+    background-color: rgba(255, 255, 255, .64);
+    cursor: default;
+}
+
+.dots_1R5EX {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: auto;
+    background: #fff;
+    line-height: 0;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .25);
+}
+
+.dots_1R5EX li {
+        margin: 0;
+        width: auto;
+        height: auto
+    }
+
+.dots_1R5EX li button {
+    position: relative;
+    font-size: 0;
+    opacity: 1;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.dots_1R5EX li button::before {
+    display: none;
+}
+
+.dots_1R5EX li button::after {
+    content: "";
+    display: block;
+    position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    top: 50%;
+    background: #c5cbd5;
+}
+
+.dots_1R5EX li button:hover::after {
+    background: #001e73;
+}
+
+.dots_1R5EX li.slick-active button::after {
+    background: #001e73;
+}
+
+.featureBanner_287l8 {
+    box-sizing: border-box;
+    max-height: 576px;
+    height: 576px;
+    padding-bottom: 48px;
+}
+
+.adSlot_2G2GF iframe {
+    pointer-events: none;
+}
+
+.featureBannerSlideshow_3AsgK .slick-slider {
+        position: static;
+    }
+
+.featureBannerSlideshow_3AsgK .featureBannerContainer_1V7Mo {
+        margin: 0;
+    }
+
+@media (min-width: 768px) {
+    .featureBanner_287l8 {
+        height: 448px;
+        max-width: 1232px;
+    }
+}

@@ -1,0 +1,39 @@
+.headline_tk6r1 {
+    padding: 16px 16px 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.productDetailsBriefLink_1TrCi:hover {
+    -webkit-text-decoration: black;
+            text-decoration: black;
+}
+
+.reviewSubmitErrorContainer_3DO8v {
+    padding: 24px 16px;
+}
+
+.customBreadcrumbListPadding_1uwIq {
+    padding: 12px 16px;
+}
+
+@media (min-width: 768px) {
+    .headline_tk6r1 {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .headline_tk6r1 {
+        padding: 0 24px;
+    }
+
+    .muiOverride_3no6Q.dividerWithMargin_2GHAm {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .customBreadcrumbListPadding_1uwIq {
+        padding: 12px 24px;
+    }
+}

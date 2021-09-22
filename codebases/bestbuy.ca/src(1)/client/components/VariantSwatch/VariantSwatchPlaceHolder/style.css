@@ -1,0 +1,52 @@
+.container_jLN1I {
+    margin: 0 16px;
+}
+
+.variantHeaderPlaceholder_vbsgN,
+.variantSwatchesPlaceholder_1adu6 {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.variantHeaderPlaceholder_vbsgN, .variantSwatchesPlaceholder_1adu6 {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.variantHeaderPlaceholder_vbsgN {
+    margin: 24px 0 12px;
+    height: 20px;
+    width: 112px;
+}
+
+.swatchContainer_VDuED {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.variantSwatchesPlaceholder_1adu6 {
+    margin-right: 16px;
+    height: 40px;
+    width: 40px;
+}
+
+@media (min-width: 768px) {
+    .container_jLN1I {
+        margin: 0;
+    }
+}

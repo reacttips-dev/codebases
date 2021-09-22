@@ -1,0 +1,47 @@
+/* Responsive square trick used here: https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
+
+/* Responsive trick */
+
+.applyResponsiveSquareTrick_35RAF > div {
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+}
+
+/* Responsive square trick */
+
+.applyResponsiveSquareTrick_35RAF > div::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+/* Responsive square trick */
+
+.applyResponsiveSquareTrick_35RAF > div > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* disable double tap to zoom on ios 10+:
+https://stackoverflow.com/questions/46167604/ios-html-disable-double-tap-to-zoom */
+
+.touchActionManipulation_31CMi {
+    touch-action: manipulation;
+}
+
+.cursorDefault_2p1ri {
+    cursor: default;
+}
+
+.cursorPointer_37cTx {
+    cursor: pointer;
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+    div.productImageContainer_1V2HD > div {
+        max-width: 100vh;
+    }
+}

@@ -1,0 +1,31 @@
+.boxComponent_2fuaZ {
+    border: 2px solid #e0e6ef;
+    border-radius: 4px;
+    padding: 38px 24px 16px;
+    margin: 12px 0;
+}
+
+.link_3eQrU,
+.link_3eQrU:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.enabledComponent_2PQxh {
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .16);
+    padding: 38px 24px 16px;
+}
+
+.enabledComponent_2PQxh:hover {
+    border: 2px solid #0046be;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boxComponent_2fuaZ {
+        margin: 12px 0;
+        height: 95%;
+        box-sizing: border-box;
+    }
+}

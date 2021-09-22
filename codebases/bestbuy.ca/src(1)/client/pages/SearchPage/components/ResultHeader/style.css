@@ -1,0 +1,155 @@
+
+
+.container_1WlsT {
+    background-color: #f4f6f9;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container_1WlsT.noResults_IhsAX {
+    padding: 14px 16px;
+}
+
+.switchFormControl_1csGS,
+.switchRpuToggleFormControl_1AnMI {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin: 0;
+}
+
+.materialOverride_STCNx.toolbarGroup_3ajOC {
+    min-height: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+    width: 100%;
+}
+
+.materialOverride_STCNx.toolbar_3Up8B {
+    height: 100%;
+    min-height: 0;
+    width: 100%;
+    max-width: calc(1281px - 1px);
+    padding: 0;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.materialOverride_STCNx.toolbarTitle_2lgWp {
+    color: #55555a;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    min-height: 0;
+    padding: 0;
+}
+
+.switchFormControl_1csGS.switchLabelRoot_174Sh,
+.switchRpuToggleFormControl_1AnMI.switchLabelRoot_174Sh {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 16px 0;
+}
+
+.switchFormControl_1csGS .switchLabelText_2Yoro,
+.switchRpuToggleFormControl_1AnMI .switchLabelText_2Yoro {
+    font-family: inherit;
+}
+
+.switchThumb_2DYJ5 {
+    color: #001e73;
+}
+
+.switchToggle_1W_0E .switchBar_1TT7s,
+.switchRpuToggle_M78b_ .switchBar_1TT7s {
+    width: 36px;
+}
+
+.switchToggle_1W_0E .switchBase_orIXd,
+.switchToggle_1W_0E .switchChecked_3dj4f,
+.switchRpuToggle_M78b_ .switchBase_orIXd,
+.switchRpuToggle_M78b_ .switchChecked_3dj4f {
+    height: auto;
+    width: 26px;
+}
+
+.switchToggle_1W_0E .switchChecked_3dj4f,
+.switchRpuToggle_M78b_ .switchChecked_3dj4f {
+    -webkit-transform: translateX(16px);
+            transform: translateX(16px);
+}
+
+.switchFormControl_1csGS .switchToggle_1W_0E,
+.switchRpuToggleFormControl_1AnMI .switchRpuToggle_M78b_ {
+    width: 40px;
+    margin-left: 8px;
+}
+
+.switchFormControl_1csGS .switchToggle_1W_0E .switchChecked_3dj4f + .switchBar_1TT7s,
+.switchRpuToggleFormControl_1AnMI .switchRpuToggle_M78b_ .switchChecked_3dj4f + .switchBar_1TT7s {
+    background-color: rgba(8, 94, 185, 1);
+}
+
+.hr_2j55M {
+    margin: 16px 0 8px;
+    color: #55555a;
+    width: 100%;
+    height: 1px;
+}
+
+@media (min-width: 1025px) {
+    .container_1WlsT {
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hr_2j55M {
+        display: none;
+    }
+
+    .materialOverride_STCNx.toolbar_3Up8B {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .materialOverride_STCNx.toolbarGroup_3ajOC {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        width: auto;
+    }
+
+    .switchFormControl_1csGS,
+    .switchRpuToggleFormControl_1AnMI {
+        width: auto;
+    }
+
+    .switchFormControl_1csGS.switchLabelRoot_174Sh,
+    .switchRpuToggleFormControl_1AnMI.switchLabelRoot_174Sh {
+        margin-left: 16px;
+    }
+}

@@ -1,0 +1,40 @@
+.readMoreToggle_3HkvG {
+    padding: 0 16px;
+}
+
+.readMoreToggle_3HkvG button {
+    margin: 8px 0 0;
+}
+
+.readMoreBody_OAsbp {
+    padding: 0;
+    font-size: 16px;
+}
+
+@media (min-width: 1025px) {
+    .moreInformation_1u1Nn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+    }
+
+    .bundle_2RaA_ {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        width: 60%;
+    }
+
+    .supportContent_2_u6f {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+                flex: 0 0 auto;
+        -webkit-flex-basis: 33.33%;
+                flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+}

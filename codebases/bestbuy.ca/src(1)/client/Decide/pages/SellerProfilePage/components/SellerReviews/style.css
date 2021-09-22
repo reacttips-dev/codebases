@@ -1,0 +1,46 @@
+.reviewWrapper_13L37 {
+    padding: 16px 0 32px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.reviewListWrapper_2Ob53 {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.reviewListWrapper_2Ob53 li:last-child {
+    margin-bottom: 0;
+}
+
+.rightArrowIcon_32xbq {
+    margin-bottom: -4px;
+}
+
+.icon_d4REG.rightArrowIcon_32xbq {
+    fill: #0046be;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: -1px;
+}
+
+.reviewListWrapper_2Ob53 li {
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .reviewWrapper_13L37 {
+        padding-top: 0;
+        padding-bottom: 32px;
+        border-top: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .reviewWrapper_13L37 {
+        padding: 0;
+        margin-bottom: 64px;
+    }
+}

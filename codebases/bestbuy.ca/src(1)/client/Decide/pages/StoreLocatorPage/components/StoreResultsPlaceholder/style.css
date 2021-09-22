@@ -1,0 +1,67 @@
+
+
+.container_1KZFd {
+    padding: 0 0 24px;
+}
+
+.topHr_38cdD {
+    margin: 0 0 16px;
+    height: 1px;
+    border: 0;
+    background-color: #e0e6ef;
+}
+
+.listTitlePlaceholder_UHNnw {
+    margin: 24px 0 8px 16px;
+    height: 24px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #e0e6ef;
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.listTitlePlaceholder_UHNnw {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.listItemPlaceholder_bUMT6 {
+    height: 146px;
+    width: 100%;
+    margin-top: 24px;
+    background-color: #e0e6ef;
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.listItemPlaceholder_bUMT6 {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }

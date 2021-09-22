@@ -1,0 +1,542 @@
+
+
+.container_21hGe {
+    position: relative;
+}
+
+.sliderContainer_m5nB5 .productImage_1NbKv {
+    min-width: 250px;
+}
+
+.sliderContainer_m5nB5 [class^="slick-track"] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-bottom: 16px;
+}
+
+/** Overridden by other styles, maybe we don't need it */
+
+.sliderContainer_m5nB5 [class^="slick-track"] > div {
+    height: auto;
+    width: 100%;
+}
+
+.navigationExpandIcon_2-lKx {
+    background: none;
+    text-align: right; /* align icon right */
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+.navigationExpandIcon_2-lKx img {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 5px;
+}
+
+[class*="x-thumbnail-gallery-control"] [class*="slick-slide"] > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.gallerySlider_3ZgWq {
+    margin: 16px auto;
+}
+
+.thumbnailItemContainer_CWxw7 {
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    width: 64px !important; /* Override react-slick style */
+    height: 64px;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: flex !important; /* Override react-slick style */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.thumbnailItemContainer_CWxw7:hover {
+    border: transparent 2px solid;
+    cursor: pointer;
+}
+
+.thumbnailItemContainer_CWxw7.selected_3UTTA,
+.thumbnailItemContainer_CWxw7.selected_3UTTA:hover {
+    border: #001e73 2px solid;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.thumbnailItemContainer_CWxw7 img {
+    width: 100%;
+}
+
+.thumbnailItemContainer_CWxw7 svg {
+    margin: 15px;
+}
+
+/* Specificity to override "position: relative" style of .displayingImage */
+
+.thumbnailItemContainer_CWxw7 img[class*="middle"] {
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.thumbnailItemButton_31BH- {
+    background-color: transparent;
+}
+
+.slideShowContainer_1NmHT {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.slideShowContainer_1NmHT.hasImage_HT4lS {
+    height: 101px;
+}
+
+.slideShowContainer_1NmHT.singleImage_1Z9Io {
+    display: none;
+}
+
+.productImageSliderContainer_1XC21 div {
+    outline: none;
+}
+
+.productImageSliderContainer_1XC21 [class^="slick-track"] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.productImageSliderContainer_1XC21 [class^="slick-track"] > div {
+    height: auto;
+    width: 100%;
+}
+
+.button_17yNS {
+    cursor: pointer;
+}
+
+.icon_2g-vF.sliderPrevArrow_37AmG {
+    left: -32px;
+    height: 32px;
+    width: 32px;
+}
+
+.icon_2g-vF.sliderNextArrow_G3QRI {
+    right: -32px;
+    height: 32px;
+    width: 32px;
+}
+
+.icon_2g-vF.sliderNextArrow_G3QRI,
+.icon_2g-vF.sliderPrevArrow_37AmG {
+    fill: #0046be;
+}
+
+.icon_2g-vF.sliderNextArrow_G3QRI:hover,
+.icon_2g-vF.sliderPrevArrow_37AmG:hover,
+.icon_2g-vF.sliderNextArrow_G3QRI:focus,
+.icon_2g-vF.sliderPrevArrow_37AmG:focus {
+    fill: #2c75c3;
+}
+
+.icon_2g-vF.sliderNextArrow_G3QRI.disabled_282sF,
+.icon_2g-vF.sliderPrevArrow_37AmG.disabled_282sF {
+    fill: #55555a;
+}
+
+.icon_2g-vF.sliderNextArrow_G3QRI.disabled_282sF:hover,
+.icon_2g-vF.sliderPrevArrow_37AmG.disabled_282sF:hover {
+    background-color: rgba(255, 255, 255, .64);
+    cursor: default;
+}
+
+.imageCounterMessage_KVbF0 {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 16px 0;
+}
+
+/** Margin left and right auto for IE/Edge */
+
+.sliderContainer_m5nB5 [class*="displayingImage"] {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sliderContainer_m5nB5 [class*="x-zoomable-container"] [class*="displayingImage"] {
+    cursor: pointer;
+}
+
+/** ===========  Styles for Modal container   ========= */
+
+[class~="x-modal-container"] .sliderContainer_m5nB5 [class~="slick-list"],
+[class~="x-modal-container"] .sliderContainer_m5nB5 [class~="slick-track"],
+[class~="x-modal-container"] .sliderContainer_m5nB5.singleImage_1Z9Io [class~="slick-list"],
+[class~="x-modal-container"] .sliderContainer_m5nB5.singleImage_1Z9Io [class~="slick-track"] {
+    /**
+        Fallback for lame browsers, like IE, that don't support nested calc
+        https://caniuse.com/#feat=mdn-css_types_calc_nested
+    */
+    height: calc(100vh - 181px);
+    height: calc(var(--vh) * 100 - 181px);
+}
+
+[class~="x-modal-container"] .sliderContainer_m5nB5 [class~="slick-list"],
+[class~="x-modal-container"] .sliderContainer_m5nB5.singleImage_1Z9Io [class~="slick-list"] {
+    margin-top: 32px;
+}
+
+[class~="x-modal-container"] [class*="mediaGalleryContainer"] {
+    min-height: 250px;
+}
+
+[class~="x-modal-container"] .sliderContainer_m5nB5 [class~="x-zoomable-container"] img {
+    min-height: 250px;
+
+    /** Fallback for lame browsers, like IE, that don't support nested calc */
+    max-height: calc(100vh - 181px);
+    max-height: calc(var(--vh) * 100 - 181px);
+    min-width: 250px;
+
+    /** Fallback for lame browsers, like IE, that don't support nested calc */
+    max-width: calc(100vh - 181px);
+    max-width: calc(var(--vh) * 100 - 181px);
+}
+
+[class~="x-modal-container"] .sliderContainer_m5nB5 img {
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class*="x-modal-container"] .slideShowContainer_1NmHT {
+    margin: 24px 16px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class*="x-modal-container"] [class*="modal"] a[class*="closeIcon"] {
+    background-color: rgba(255, 255, 255, .64);
+}
+
+[class*="x-modal-container"] [class*="closeIcon"] img {
+    width: 18px;
+    height: 18px;
+}
+
+[class*="x-modal-container"] .slideShowContainer_1NmHT.singleImage_1Z9Io {
+    display: block;
+}
+
+[class*="x-modal-container"] [class*="x-zoom-buttons-container"] {
+    display: none;
+}
+
+[class*="x-modal-container"] [class*="sliderContainer"] div[class~="x-placeholder-image"] {
+    /** Override the inline width and height when image is displayed in modal */
+    width: 500px !important;
+    height: 500px !important;
+    margin: auto;
+    cursor: pointer;
+}
+
+/** =========================================================== */
+
+/** ==========  Styles for Thumbnail Slider to have items spaced 16px in between === */
+
+/** This styles and media queries are based on responsive settings for react-slick thumbnail slider */
+
+.gallerySlider_3ZgWq.two_3fPuW {
+    width: 160px;
+}
+
+.gallerySlider_3ZgWq,
+.gallerySlider_3ZgWq.three_wgJ79 {
+    width: 240px;
+}
+
+@media (min-width: 348px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.four_2Ogr2 {
+        width: 320px;
+    }
+}
+
+@media (min-width: 428px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.five_GXdOn {
+        width: 400px;
+    }
+}
+
+@media (min-width: 507px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.six_3VW3f {
+        width: 480px;
+    }
+}
+
+@media (min-width: 592px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.seven_2IFmw {
+        width: 560px;
+    }
+}
+
+/** ================================================== */
+
+@media (orientation: landscape) and (max-width: 767px) {
+    [class*="x-modal-container"] .slideShowContainer_1NmHT {
+        display: none;
+    }
+
+    [class~="x-modal-container"] .sliderContainer_m5nB5 [class~="slick-list"],
+    [class~="x-modal-container"] .sliderContainer_m5nB5 [class~="slick-track"] {
+        height: 100vh;
+        height: calc(var(--vh) * 100);
+    }
+
+    [class~="x-modal-container"] .sliderContainer_m5nB5 [class~="x-zoomable-container"] img {
+        max-height: 100vh;
+        max-height: calc(var(--vh) * 100);
+        max-width: 100vh;
+        max-width: calc(var(--vh) * 100);
+    }
+}
+
+/**
+    In landscape more for the mobile displays, the screen size is "small-screen" and height is
+    is not enough to display carousel and thumbnail slider and hence they following rules
+*/
+
+@media (orientation: landscape) and (max-height: 500px) {
+    /** Increased the specificity of this rule by adding the attributes to override the default styles */
+    [class~="x-modal-contaiiner"],
+    [class~="x-modal-container"] [class*="slick-slider"].sliderContainer_m5nB5 [class~="slick-list"],
+    [class~="x-modal-container"] [class*="slick-slider"].sliderContainer_m5nB5 [class~="slick-track"] {
+        height: 100vh;
+        height: calc(var(--vh) * 100);
+        margin-top: 0;
+    }
+
+    [class~="x-modal-container"] [class*="slick-slider"].sliderContainer_m5nB5 [class~="x-zoomable-container"] img {
+        max-height: 100vh;
+        max-height: calc(var(--vh) * 100);
+        max-width: 100vh;
+        max-width: calc(var(--vh) * 100);
+    }
+
+    [class*="x-modal-container"] .slideShowContainer_1NmHT {
+        display: none;
+    }
+
+    /** Override style applied by screen sizes and YoutubePlayer component */
+    [class~="x-modal-container"] [class*="x-youtube-video"] [class*="videoContainer"] {
+        position: relative;
+        padding: 0;
+        height: calc(100vh - 28px);
+        height: calc(var(--vh) * 100 - 28px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .productImageSliderContainer_1XC21 {
+        margin-top: 24px;
+    }
+
+    [class~="x-modal-container"] .sliderContainer_m5nB5 [class~="slick-list"],
+    [class~="x-modal-container"] .sliderContainer_m5nB5 [class~="slick-track"] {
+        height: calc(100vh - 223px);
+        height: calc(var(--vh) * 100 - 223px);
+    }
+
+    [class~="x-modal-container"] .sliderContainer_m5nB5 [class~="x-zoomable-container"] img {
+        max-width: calc(100vh - 223px);
+        max-width: calc(var(--vh) * 100 - 223px);
+        max-height: calc(100vh - 223px);
+        max-height: calc(var(--vh) * 100 - 223px);
+    }
+
+    [class*="x-thumbnail-gallery-control"] .slideShowContainer_1NmHT {
+        margin: 0 auto;
+    }
+
+    [class~="x-modal-container"] .sliderContainer_m5nB5 .container_21hGe {
+        margin-top: 0;
+    }
+
+    [class*="x-modal-container"] .container_21hGe {
+        height: 100vh;
+        height: calc(var(--vh) * 100);
+    }
+
+    /** Override default styles applied by YoutubePlayer component */
+    [class~="x-modal-container"] [class*="videoContainer"] {
+        position: relative;
+        padding: 0;
+        height: calc(100vh - 260px);
+        height: calc(var(--vh) * 100 - 260px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    [class*="x-modal-container"] [class*="x-zoom-buttons-container"] {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+    }
+}
+
+/** ===========   Small Screen - Thumbnail slider sizing ========== */
+
+@media (min-width: 768px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.two_3fPuW,
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.two_3fPuW,
+    .gallerySlider_3ZgWq.three_wgJ79,
+    .gallerySlider_3ZgWq.four_2Ogr2,
+    .gallerySlider_3ZgWq.five_GXdOn,
+    .gallerySlider_3ZgWq.six_3VW3f,
+    .gallerySlider_3ZgWq.seven_2IFmw {
+        width: 240px;
+    }
+
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.three_wgJ79 {
+        width: 240px;
+    }
+
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.four_2Ogr2 {
+        width: 320px;
+    }
+
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.five_GXdOn {
+        width: 400px;
+    }
+
+    [class*="x-modal-container"] .gallerySlider_3ZgWq,
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.six_3VW3f,
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.seven_2IFmw {
+        width: 480px;
+    }
+}
+
+@media (min-width: 841px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.four_2Ogr2,
+    .gallerySlider_3ZgWq.five_GXdOn,
+    .gallerySlider_3ZgWq.six_3VW3f,
+    .gallerySlider_3ZgWq.seven_2IFmw {
+        width: 320px;
+    }
+}
+
+/** ============================== */
+
+@media (min-width: 1025px) {
+    .navigationExpandIcon_2-lKx {
+        padding-right: 24px;
+    }
+
+    .navigationExpandIcon_2-lKx {
+        padding-right: 24px;
+    }
+
+    .thumbnailItemContainer_CWxw7:hover {
+        border: #0046be 2px solid;
+        border-radius: 4px;
+    }
+
+    .icon_2g-vF.sliderNextArrow_G3QRI,
+    .icon_2g-vF.sliderPrevArrow_37AmG {
+        height: 40px;
+        width: 40px;
+    }
+
+    .gallerySlider_3ZgWq {
+        margin: 0 auto;
+    }
+
+    [class*="x-modal-container"] .slideShowContainer_1NmHT {
+        max-width: 800px;
+    }
+
+    [class*="x-modal-container"] .container_21hGe {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/** ===========   Medium Screen - Thumbnail slider sizing ========== */
+
+@media (min-width: 1025px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.five_GXdOn,
+    .gallerySlider_3ZgWq.six_3VW3f,
+    .gallerySlider_3ZgWq.seven_2IFmw {
+        width: 480px;
+    }
+
+    [class*="x-modal-container"] .gallerySlider_3ZgWq,
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.seven_2IFmw {
+        width: 560px;
+    }
+}
+
+@media (min-width: 1079px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.seven_2IFmw {
+        width: 560px;
+    }
+}
+
+@media (min-width: 1141px) {
+    .gallerySlider_3ZgWq,
+    .gallerySlider_3ZgWq.eight_3hmlP {
+        width: 640px;
+    }
+}
+
+@media (min-width: 1281px) {
+    [class*="x-modal-container"] .gallerySlider_3ZgWq,
+    [class*="x-modal-container"] .gallerySlider_3ZgWq.eight_3hmlP {
+        width: 640px;
+    }
+}
+
+/** -========================== */

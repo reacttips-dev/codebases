@@ -1,0 +1,97 @@
+.title_u8BgX {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 0 0 32px;
+}
+
+.helpLink_1q-WC {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.helpContainer_1S0Eu {
+    margin-bottom: 40px;
+}
+
+.storeHours_1VTZe {
+    font-size: 14px;
+    margin: 24px 0;
+}
+
+.disclaimer_dmtYB {
+    font-size: 14px;
+}
+
+.linksContainer_qLTDZ {
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.hiddenFields_1Iwm2 {
+    display: none;
+}
+
+.submitButton_SgHlp {
+    margin-bottom: 16px;
+}
+
+.submitButton_SgHlp,
+.cancelButton_1IzJA {
+    display: block;
+    width: 100%;
+    height: 48px;
+}
+
+@media (min-width: 768px) {
+    .title_u8BgX {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .flexContainer_l3ZiL {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+    }
+
+    .flexContainer_l3ZiL,
+    .mediumInput_1Nq7R {
+        width: 395px;
+    }
+
+    .provinceInput_2Xjye {
+        width: 190px;
+    }
+
+    .submitButton_SgHlp {
+        margin: 0 24px 0 0;
+    }
+
+    .submitButton_SgHlp,
+    .cancelButton_1IzJA {
+        display: inline-block;
+    }
+
+    .submitButton_SgHlp {
+        width: 177px;
+    }
+
+    .cancelButton_1IzJA {
+        width: 96px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .customerDetailsContainer_2dgyH {
+        width: 918px;
+        margin: 0 auto;
+    }
+
+    .storeHours_1VTZe {
+        margin-top: 30px;
+    }
+}

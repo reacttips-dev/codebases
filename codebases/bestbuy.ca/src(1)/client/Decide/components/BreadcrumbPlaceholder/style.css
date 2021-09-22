@@ -1,0 +1,41 @@
+
+
+.breadcrumbPlaceholderContainer_2PSKe {
+    padding: 12px 16px;
+    height: 24px;
+}
+
+.breadcrumbPlaceholder_13xIx {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.breadcrumbPlaceholder_13xIx {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.breadcrumbPlaceholder_13xIx {
+    height: 19px;
+    width: 100%;
+    display: inline-block;
+}
+
+@media (min-width: 1025px) {
+    .breadcrumbPlaceholderContainer_2PSKe {
+        padding: 12px 24px;
+    }
+}

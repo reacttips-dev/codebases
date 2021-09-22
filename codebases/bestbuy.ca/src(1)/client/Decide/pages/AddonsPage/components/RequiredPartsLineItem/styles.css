@@ -1,0 +1,81 @@
+
+
+.requiredPartsLineItemContainer_Ut4dY {
+    background: #fff;
+}
+
+    .requiredPartsLineItemContainer_Ut4dY .requiredPartsLineItem_2xUa- {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .requiredPartsLineItem_2xUa- * {
+    font-size: 14px;
+    line-height: 20px;
+    color: #1d252c;
+    margin: 0;
+}
+
+    .requiredPartsLineItemContainer_Ut4dY .productInfo_35RVs {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        padding: 0 0 16px;
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .thumbnailSlot_2E4k0 {
+        padding-left: 0;
+        margin-right: 16px;
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .thumbnailSlot_2E4k0 .productThumbnail_8b-Eg {
+            height: 60px;
+            width: 60px;
+        }
+
+    .requiredPartsLineItemContainer_Ut4dY .details_2CdMe {
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+                flex-grow: 1;
+        font-weight: normal;
+        margin-right: 16px;
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .productDescription_21S0q {
+        margin: 0 8px 0 0;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+                flex-grow: 1;
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .productDescription_21S0q .productName_1l791 {
+            margin-bottom: 4px;
+        }
+
+    .requiredPartsLineItemContainer_Ut4dY .requiredPart_352cG {
+        color: #55555a;
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .price_aU4XB {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .salePrice_1n1hB {
+        color: #bb0628;
+    }
+
+    .requiredPartsLineItemContainer_Ut4dY .radioGroup_ZVDoC {
+        padding: 0 0 8px;
+    }

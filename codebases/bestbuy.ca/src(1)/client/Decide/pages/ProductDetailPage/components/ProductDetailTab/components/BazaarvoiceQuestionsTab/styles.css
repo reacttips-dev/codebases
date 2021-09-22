@@ -1,0 +1,36 @@
+.containerText_3bisX {
+    font-size: 20px;
+}
+
+div[class="bv-header"] ~ div[class="bv-content-placeholder"] > button[class="bv-ask-question-label bv-text-link bv-focusable bv-submission-button"] {
+    display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h2.containerText_3bisX {
+        font-size: 18px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    h2.containerText_3bisX {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    div[class="bv-control-bar-sort"] {
+        -webkit-box-flex: 0 !important;
+        -webkit-flex: 0 1 100% !important;
+                flex: 0 1 100% !important;
+    }
+
+    div[class="bv-control-bar-sort"] div[class="bv-sort-native"] {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: flex !important;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
+}

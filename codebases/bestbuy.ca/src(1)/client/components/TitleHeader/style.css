@@ -1,0 +1,31 @@
+
+
+.container_1l_Qd {
+    padding: 16px 0 0;
+}
+
+.title_3A6Uh {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .container_1l_Qd {
+        padding: 24px 0 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container_1l_Qd {
+        padding: 24px 0;
+    }
+}
+
+/* This no padding top will over write the container padding for all size devices */
+
+.noPaddingTop_8SwHq {
+    padding-top: 0;
+}
+
+.noPaddingBottom_21dD_ {
+    padding-bottom: 0;
+}

@@ -1,0 +1,31 @@
+
+.videoContainer_2xHTb {
+    position: relative;
+    padding: 0 0 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoContainer_2xHTb iframe,
+.video-container_2Dw7I object,
+.video-container_2Dw7I embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoTitle_2ut39 {
+    display: block;
+    color: #1d252c;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    word-wrap: normal;
+    padding-top: 8px;
+}
+
+.videoLine_2aP54 {
+    position: absolute;
+}

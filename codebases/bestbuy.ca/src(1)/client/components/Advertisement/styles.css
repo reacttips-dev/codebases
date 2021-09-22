@@ -1,0 +1,86 @@
+
+
+.sponsoredLabel_1WCtE {
+    color: #55555a;
+    margin-bottom: 4px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.adSlotContainerStyles_OLaaG {
+    display: block;
+    text-align: left;
+}
+
+.nativeAdSlotContainerStyles_31ArX {
+    width: 100%;
+}
+
+.adContainer_14-9T {
+    width: 100%;
+}
+
+.leaderboard_27_Db {
+    min-height: 50px;
+}
+
+.billboard_3S1GJ {
+    min-height: 250px;
+}
+
+.pencilAd_EE9DV {
+    min-height: 0;
+    margin: 0;
+}
+
+.mediumRectangle_3q6ew {
+    min-height: 50px;
+}
+
+.barBanner_1c0pP {
+    min-height: 75px;
+}
+
+.featureBanner_2wToG {
+    min-height: 539px;
+}
+
+.offer_15anH {
+    min-height: 160px;
+}
+
+@media (min-width: 768px) {
+    .leaderboard_27_Db {
+        min-height: 90px;
+    }
+
+    .mediumRectangle_3q6ew {
+        min-height: 250px;
+    }
+
+    .barBanner_1c0pP {
+        min-height: 115px;
+    }
+
+    .featureBanner_2wToG {
+        min-height: 232px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .leaderboard_27_Db {
+        min-height: 90px;
+    }
+
+    .mediumRectangle_3q6ew {
+        min-height: 250px;
+    }
+
+    .barBanner_1c0pP {
+        min-height: 123px;
+    }
+
+    .featureBanner_2wToG {
+        min-height: 308px;
+    }
+}

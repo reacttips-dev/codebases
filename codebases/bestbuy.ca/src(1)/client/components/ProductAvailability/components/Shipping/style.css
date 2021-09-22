@@ -1,0 +1,18 @@
+.shippingAvailability_2X3xt {
+    color: #55555a;
+    height: 26px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+    .shippingAvailability_2X3xt svg {
+        margin-bottom: 0;
+    }

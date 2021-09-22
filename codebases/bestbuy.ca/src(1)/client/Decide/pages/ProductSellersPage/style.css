@@ -1,0 +1,125 @@
+
+
+.productItemImage_159l4 {
+    height: 100%;
+    width: 100%;
+}
+
+.productGrid_1abF_ {
+    padding: 0 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+.productGridImage_2ug0l {
+    padding: 16px 4px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
+}
+
+.productGridName_3A0qw {
+    color: #1d252c;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: auto 0;
+    padding-left: 14px;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.productSellerHeader_D2rZR {
+    display: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #e0e6ef;
+    padding-bottom: 8px;
+}
+
+.productSellerHeaderItem_23l1Y {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
+}
+
+.productSellerNameHeaderItem_2o9St {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+            flex: 2;
+}
+
+.productSellerWrapperRight_1pqxl {
+    margin: auto 0;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.productSellerEmptyHeaderItem_1_vaJ {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
+    max-width: 150px;
+}
+
+.productSellerPriceCondition_GNidZ {
+    margin: 16px 16px 64px;
+    font-size: 12px;
+    color: #55555a;
+}
+
+@media (min-width: 768px) {
+    .productGrid_1abF_ {
+        margin: 0 16px;
+        padding: 0;
+        border: none;
+    }
+
+    .productGridImage_2ug0l {
+        padding: 16px 0 24px;
+    }
+
+    .imageWrapper_2J3mQ {
+        height: 120px;
+        width: 120px;
+        place-self: center;
+    }
+
+    .productGridName_3A0qw {
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    .productSellerHeader_D2rZR {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+                justify-content: space-around;
+        margin: 0 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .productGrid_1abF_ {
+        margin: 0 24px;
+    }
+
+    .productSellerHeader_D2rZR {
+        margin: 0 24px;
+    }
+
+    .productSellerPriceCondition_GNidZ {
+        margin: 16px 24px 64px;
+    }
+}

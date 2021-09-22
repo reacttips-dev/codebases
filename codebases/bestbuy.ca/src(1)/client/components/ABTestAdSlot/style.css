@@ -1,0 +1,38 @@
+
+
+.hardCodedAdSlot_3-u_t {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.superLeaderboard_2Sp0u {
+    max-width: calc(1281px - 1px);
+    margin: 0 auto;
+    position: relative;
+}
+
+.superLeaderboard_2Sp0u > section {
+    min-height: 0;
+    margin: 0 24px;
+    padding: 0;
+}
+
+.pencilAd_iKfnd > section {
+    min-height: 0;
+    line-height: 0;
+}
+
+.hide_3yVPj {
+    display: none;
+}

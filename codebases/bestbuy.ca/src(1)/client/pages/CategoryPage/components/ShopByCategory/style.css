@@ -1,0 +1,212 @@
+
+
+.container_2FUqV {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+            flex: 1 100%;
+    position: relative;
+}
+
+.categoryContainer_1rL-C {
+    word-wrap: break-word;
+    padding: 24px 0;
+}
+
+.header_3PR61 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 16px 24px;
+}
+
+.merchRow__yMxq {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+    padding: 0 16px;
+}
+
+.merchRow__yMxq .merchCategoryContainer_14OpC {
+    -webkit-flex-basis: 40%;
+            flex-basis: 40%;
+    max-width: 40%;
+}
+
+.merchCategoryContainer_14OpC {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+            flex: 0 0 40%;
+}
+
+.merchCategoryContainer_14OpC a:hover,
+.merchCategoryContainer_14OpC a:focus {
+    color: #1d252c;
+}
+
+.categoryListSlider_2Tp3H {
+    margin: 0 0 24px;
+    max-width: 100%;
+}
+
+.categoryListSlider_2Tp3H [class="slick-track"] {
+    opacity: 0;
+}
+
+.icon_1GEjb.sliderPrevArrow_1n0Wi {
+    left: 6px;
+}
+
+.icon_1GEjb.sliderNextArrow_3HXv4 {
+    right: 6px;
+}
+
+.sliderItem_36kbc {
+    text-align: center;
+}
+
+.dots_1E5nh {
+    bottom: -20px;
+    position: relative;
+}
+
+.dots_1E5nh li button::before {
+    font-size: 10px;
+    opacity: 1;
+    color: #e0e6ef;
+}
+
+.dots_1E5nh li:not([class=""]) button::before {
+    opacity: 1;
+    color: #001e73;
+}
+
+.dots_1E5nh li:not([class=""]) button:hover::before,
+.dots_1E5nh li:not([class=""]) button:focus::before {
+    color: #001e73;
+    cursor: default;
+}
+
+.dots_1E5nh li button:hover::before,
+.dots_1E5nh li button:focus::before {
+    color: #0046be;
+}
+
+.icon_1GEjb.sliderNextArrow_3HXv4,
+.icon_1GEjb.sliderPrevArrow_1n0Wi {
+    fill: #0046be;
+    height: 32px;
+    width: 32px;
+    top: auto;
+    bottom: -40px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.icon_1GEjb.sliderNextArrow_3HXv4:hover,
+.icon_1GEjb.sliderPrevArrow_1n0Wi:hover,
+.icon_1GEjb.sliderNextArrow_3HXv4:focus,
+.icon_1GEjb.sliderPrevArrow_1n0Wi:focus {
+    fill: #2c75c3;
+}
+
+@media (min-width: 768px) {
+    .categoryListSlider_2Tp3H {
+        margin: 0 38px;
+        padding-bottom: 3px;
+    }
+
+    .dots_1E5nh {
+        bottom: -12px;
+    }
+
+    .icon_1GEjb.sliderPrevArrow_1n0Wi {
+        left: -32px;
+    }
+
+    .icon_1GEjb.sliderNextArrow_3HXv4 {
+        right: -32px;
+    }
+
+    .icon_1GEjb.sliderNextArrow_3HXv4,
+    .icon_1GEjb.sliderPrevArrow_1n0Wi {
+        top: 50%;
+        bottom: auto;
+    }
+
+    .dividerWithMargin_1n27j {
+        margin-right: 16px;
+    }
+
+    .merchRow__yMxq {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+    }
+
+    .merchRow__yMxq .merchCategoryContainer_14OpC {
+        -webkit-flex-basis: 14%;
+                flex-basis: 14%;
+        max-width: 14%;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container_2FUqV {
+        margin: 24px 0 0;
+        width: 100%;
+    }
+
+    .categoryContainer_1rL-C {
+        padding-top: 0;
+        padding-bottom: 32px;
+        width: 100%;
+    }
+
+    .categoryListSlider_2Tp3H {
+        margin: 0 44px;
+        padding-bottom: 33px;
+    }
+
+    .dots_1E5nh {
+        bottom: -7px;
+        position: absolute;
+    }
+
+    .header_3PR61 {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .merchRow__yMxq {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .merchRow__yMxq {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+    }
+
+    .merchRow__yMxq .merchCategoryContainer_14OpC {
+        -webkit-flex-basis: 14%;
+                flex-basis: 14%;
+        max-width: 14%;
+        margin-right: 16px;
+    }
+
+    .icon_1GEjb.sliderNextArrow_3HXv4,
+    .icon_1GEjb.sliderPrevArrow_1n0Wi {
+        height: 40px;
+        width: 40px;
+    }
+
+    .dividerWithMargin_1n27j {
+        margin-right: 24px !important;
+    }
+}

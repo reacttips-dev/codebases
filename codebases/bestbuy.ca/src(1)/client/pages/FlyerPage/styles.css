@@ -1,0 +1,21 @@
+
+
+.flyerPageContainer_1Iaaj,
+.dividerWithMargin_1o_wB {
+    margin: 0 16px;
+}
+
+.flyerTitle_3ngDN {
+    padding: 16px;
+}
+
+@media (min-width: 1025px) {
+    .flyerTitle_3ngDN {
+        padding: 24px;
+    }
+
+    .flyerPageContainer_1Iaaj,
+    .dividerWithMargin_1o_wB {
+        margin: 0 24px;
+    }
+}

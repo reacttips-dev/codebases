@@ -1,0 +1,29 @@
+
+
+.packageOverviewContainer_28Ybg {
+    font-size: 16px;
+    padding: 0 16px 24px;
+}
+
+.packageOverviewContainer_28Ybg .bundleText_3E03T {
+    margin-bottom: 8px;
+    display: block;
+}
+
+.packageOverviewContainer_28Ybg ol:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .packageOverviewContainer_28Ybg {
+        padding: 24px 16px;
+        border-bottom: 1px solid #e0e6ef;
+    }
+}
+
+@media (min-width: 1025px) {
+    .packageOverviewContainer_28Ybg {
+        padding: 0 0 32px;
+        border-bottom: 0;
+    }
+}

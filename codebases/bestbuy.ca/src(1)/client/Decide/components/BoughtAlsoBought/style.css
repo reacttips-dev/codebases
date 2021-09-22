@@ -1,0 +1,209 @@
+.header_OgHpw {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+            flex: 1 100%;
+    margin: 24px 16px 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container_kVOCc {
+    position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 8px;
+    padding: 0 0 24px;
+}
+
+.productCardContainer_1q39w {
+    border-radius: 4px;
+    border: 1px #e0e6ef solid;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    background: #fff;
+}
+
+.productItemContainer_Bdxbs {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 16px;
+}
+
+.addToCartButton_3xB7V,
+.addToCartButton_3xB7V:hover,
+.addToCartButton_3xB7V:focus {
+    background-color: transparent;
+    color: #0046be;
+    border: 0;
+    border-top: 1px solid #e0e6ef;
+    border-radius: 0;
+}
+
+/* we need to use important to override the add to card from checkout component,
+    this component is used in different components so we don't want to update it */
+
+.addToCartButton_3xB7V svg {
+    margin-right: 8px !important;
+    fill: #0046be !important;
+    height: 16px !important;
+    width: 16px !important;
+}
+
+.buttonContainer_3c_6_ {
+    border-radius: 0 0 4px 4px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #0046be;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48px;
+            flex: 0 0 48px;
+    position: relative;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.cardFooterContainer_AumQS {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    font-weight: 600;
+    color: #1d252c;
+}
+
+.cardFooterContainer_AumQS form {
+    height: 100%;
+    width: 100%;
+}
+
+.outOfStockContainer_Y8xLa {
+    background-color: #e0e6ef;
+}
+
+.errorContainer_3acWr {
+    background-color: #bb0628;
+    color: #fff;
+}
+
+.cardFooterMessage_1zfHJ {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.boughtAlsoBoughtItem_bR2h1 {
+    padding: 0 !important;
+}
+
+.iconSize_17zCS {
+    height: 16px;
+    width: 16px;
+}
+
+.colorWarning_2g4zZ {
+    fill: #fff;
+}
+
+.footerDivider_2fGIl {
+    display: none;
+}
+
+.innerColumn_1DSH1 {
+    height: 100%;
+}
+
+.loader_3uEJ- {
+    width: 24px;
+    color: rgba(0, 0, 0, .87);
+}
+
+@media (min-width: 768px) {
+    .headerDivider_2tgHy {
+        display: none;
+    }
+
+    .footerDivider_2fGIl {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    .footerDivider_2fGIl {
+        display: none;
+    }
+
+    .headerDivider_2tgHy {
+        display: block;
+        margin-left: 24px !important;
+        margin-right: 24px !important;
+    }
+
+    .container_kVOCc {
+        margin: 0 12px;
+        padding: 0 0 32px;
+    }
+
+    .header_OgHpw {
+        margin: 24px 24px 16px;
+    }
+
+    .columns_Q6CtF {
+        padding: 0 12px;
+    }
+
+    .innerColumn_1DSH1 {
+        padding: 0 4px;
+    }
+
+    .addToCartButton_3xB7V {
+        font-size: 14px;
+    }
+
+    .addToCartButton_3xB7V svg {
+        margin-right: 8px !important;
+        padding-bottom: 4px;
+        height: 24px !important;
+        width: 24px !important;
+    }
+
+    .addToCartButton_3xB7V span div {
+        font-size: 14px;
+    }
+
+    .cardFooterMessage_1zfHJ {
+        margin-left: 8px;
+        font-size: 14px;
+    }
+
+    .outOfStockIcon_3Ll_V {
+        padding-top: 5px;
+    }
+
+    .iconSize_17zCS {
+        height: 24px !important;
+        width: 24px !important;
+    }
+}

@@ -1,0 +1,84 @@
+.overallRatingSummaryWithLink_2AUAL {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+
+.overallRatingSummaryTitle_2ZNy4 {
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: top;
+    margin-bottom: 16px;
+}
+
+.overallScore_3R7Oo {
+    font-size: 56px;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 1;
+    margin-right: 8px;
+}
+
+.overallStarContainer_2VwRB {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+.overallRatingContent_DNpZq {
+    display: inline-block;
+}
+
+.overallRatingContent_DNpZq div {
+    margin-bottom: 0;
+    margin-right: 0;
+    height: 32px;
+}
+
+.overallRatingContent_DNpZq svg {
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.overallRatingContent_DNpZq [class*="container"] {
+    display: block;
+}
+
+.overallRatingCopy_3cMjW {
+    color: #1d252c;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.noOverallRatingCopy_mV9cC {
+    padding-top: 16px;
+}
+
+/* Product Review Page specific styles */
+
+.isFullWidth_3OSfu .overallRatingSummaryWithLink_2AUAL {
+    padding: 0 16px;
+}
+
+.isFullWidth_3OSfu .overallScore_3R7Oo {
+    line-height: 40px;
+}
+
+@media (min-width: 1025px) {
+    .isFullWidth_3OSfu .overallRatingSummaryWithLink_2AUAL {
+        padding: 0;
+    }
+
+    .overallRatingSummaryWithNoLink_3H5ip {
+        padding: 0;
+    }
+}

@@ -1,0 +1,54 @@
+.buttonSeparation_nXYqH {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.checkoutOptionsPanel_2V50X {
+    padding-top: 18px;
+}
+
+p.optionsNotAvailable_3l4wx {
+    color: #1d252c;
+    background-color: #f4f6f9;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.checkoutOptions_1VB1L {
+    text-align: center;
+    max-width: 243px;
+    margin: 0 auto;
+}
+
+.continueToCheckout_3Dgpe {
+    color: #1d252c;
+    width: 100%;
+    height: auto
+}
+
+.continueToCheckout_3Dgpe:hover,
+    .continueToCheckout_3Dgpe:focus {
+    text-decoration: none;
+}
+
+.disabled_136zN {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+}
+
+.disabled_136zN .checkoutOptions_1VB1L {
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+        opacity: 0.48;
+        cursor: not-allowed;
+    }
+
+.disabled_136zN .checkoutOptions_1VB1L a,
+        .disabled_136zN .checkoutOptions_1VB1L button {
+            pointer-events: none;
+        }

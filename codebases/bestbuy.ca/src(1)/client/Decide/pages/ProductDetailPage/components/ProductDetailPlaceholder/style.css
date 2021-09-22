@@ -1,0 +1,108 @@
+
+
+.container_1yKig {
+    padding: 8px 16px 0;
+}
+
+.topHr_1oq8R {
+    margin: 0 0 16px;
+    height: 1px;
+    border: 0;
+    background-color: #e0e6ef;
+}
+
+.bottomHr_3KIke {
+    margin: 16px 0 0;
+    height: 1px;
+    border: 0;
+    background-color: #e0e6ef;
+}
+
+.namePlaceholder_3UNfP,
+.ratingPlaceholder_3WKYr,
+.imagePlaceholder_2gT37,
+.pricePlaceholder_1xe95,
+.availabilityPlaceholder_3vzF6,
+.overviewPlaceholder_3iz5D,
+.descriptionPlaceholder_a7l4O {
+  position: relative;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+
+  -webkit-animation-timing-function: linear;
+
+          animation-timing-function: linear;
+  background: #f0f0f0;
+  background: -webkit-linear-gradient(left, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+}
+
+.namePlaceholder_3UNfP, .ratingPlaceholder_3WKYr, .imagePlaceholder_2gT37, .pricePlaceholder_1xe95, .availabilityPlaceholder_3vzF6, .overviewPlaceholder_3iz5D, .descriptionPlaceholder_a7l4O {
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+        }
+
+.namePlaceholder_3UNfP {
+    height: 40px;
+    width: 75%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.ratingPlaceholder_3WKYr {
+    height: 20px;
+    width: 88px;
+    margin-bottom: 8px;
+}
+
+.imagePlaceholder_2gT37 {
+    margin-top: 16px;
+    height: 52vh;
+    width: 100%;
+}
+
+.pricePlaceholder_1xe95 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    height: 34px;
+    width: 50px;
+}
+
+.availabilityPlaceholder_3vzF6 {
+    height: 24px;
+    width: 50%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.overviewPlaceholder_3iz5D {
+    margin-top: 16px;
+    height: 34px;
+    width: 180px;
+}
+
+.descriptionPlaceholder_a7l4O {
+    margin-top: 16px;
+    height: 20px;
+    width: 75%;
+}
+
+@media (min-width: 1025px) {
+    .topHr_1oq8R {
+        display: none;
+    }
+
+    .namePlaceholder_3UNfP {
+        margin-top: 32px;
+    }
+
+    .imagePlaceholder_2gT37 {
+        height: 75vh;
+        max-width: 740px;
+    }
+}

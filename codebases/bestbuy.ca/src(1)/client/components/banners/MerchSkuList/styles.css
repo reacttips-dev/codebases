@@ -1,0 +1,218 @@
+.container_zlzpr {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+            flex: 1 100%;
+    position: relative;
+    max-width: 100%;
+}
+
+.productContainer_2SvEt {
+    word-wrap: break-word;
+    padding: 0;
+}
+
+ul.productsRow_3GfNU {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -16px 32px 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+ul.productsRow_3GfNU li {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0 16px 16px 0;
+}
+
+ul.productsRow_3GfNU.alignLeft_1WHJM {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+            justify-content: start;
+    margin: 0;
+}
+
+.productItemContainer_1KkmO {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+            flex: 0 0 50%;
+}
+
+.productContainer_2SvEt .productItemTextContainer_10oAg {
+    padding: 0;
+}
+
+.productItemContainer_1KkmO a {
+    z-index: 2;
+}
+
+.productItemContainer_1KkmO a:hover,
+.productItemContainer_1KkmO a:focus {
+    text-decoration: none;
+    color: #1d252c;
+}
+
+.skuListSlider_tjXMh {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.icon_2muIh {
+    fill: #0046be;
+    height: 32px;
+    width: 32px;
+}
+
+.icon_2muIh.sliderPrevArrow_2FtXd {
+    left: 6px;
+}
+
+.icon_2muIh.sliderNextArrow_1bq3k {
+    right: 6px;
+}
+
+.dots_3g3J2 {
+    position: relative;
+    bottom: 8px;
+}
+
+.dots_3g3J2 li button::before {
+    font-size: 10px;
+    opacity: 1;
+    color: #e0e6ef !important;
+}
+
+/* This is to select the active dots created by react slick */
+
+.dots_3g3J2 li:not([class=""]) button::before {
+    opacity: 1 !important;
+    color: #001e73 !important;
+}
+
+.dots_3g3J2 li:not([class=""]) button:hover::before,
+.dots_3g3J2 li:not([class=""]) button:focus::before {
+    color: #001e73 !important;
+    cursor: default;
+}
+
+.dots_3g3J2 li button:hover::before,
+.dots_3g3J2 li button:focus::before {
+    color: #0046be !important;
+}
+
+.icon_2muIh.sliderNextArrow_1bq3k,
+.icon_2muIh.sliderPrevArrow_2FtXd {
+    fill: #0046be;
+    height: 32px;
+    width: 32px;
+    top: auto;
+    bottom: -14px;
+    z-index: 1;
+}
+
+.icon_2muIh.sliderNextArrow_1bq3k:hover,
+.icon_2muIh.sliderPrevArrow_2FtXd:hover,
+.icon_2muIh.sliderNextArrow_1bq3k:focus,
+.icon_2muIh.sliderPrevArrow_2FtXd:focus {
+    fill: #2c75c3;
+}
+
+.productItemContainer_1KkmO .skuListItem_3SbcZ {
+    padding: 0;
+    list-style: none;
+}
+
+.productItemContainer_1KkmO .skuListItem_3SbcZ img {
+    height: 80%;
+    width: 80%;
+    margin: 16px auto 0;
+}
+
+.productItemContainer_1KkmO .skuListItem_3SbcZ > div > div:first-child {
+    padding-bottom: 32px;
+    margin-bottom: 0;
+}
+
+.productsRow_3GfNU .skuListItem_3SbcZ {
+    padding-bottom: 32px;
+}
+
+/* intermediate break point between xs and sm */
+
+@media (min-width: 360px) {
+    .productItemContainer_1KkmO {
+        -webkit-flex-basis: 50%;
+                flex-basis: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .productItemContainer_1KkmO {
+        -webkit-flex-basis: 25%;
+                flex-basis: 25%;
+    }
+
+    .skuListSlider_tjXMh {
+        padding: 0 48px;
+    }
+
+    .icon_2muIh.sliderPrevArrow_2FtXd {
+        left: 0;
+    }
+
+    .icon_2muIh.sliderNextArrow_1bq3k {
+        right: 16px;
+    }
+
+    .icon_2muIh.sliderNextArrow_1bq3k,
+    .icon_2muIh.sliderPrevArrow_2FtXd {
+        top: 50%;
+        bottom: auto;
+    }
+
+    .productContainer_2SvEt {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .productItemContainer_1KkmO {
+        -webkit-flex-basis: 20%;
+                flex-basis: 20%;
+    }
+
+    .icon_2muIh.slick-prev {
+        left: 0;
+    }
+
+    .icon_2muIh.slick-next {
+        right: 16px;
+    }
+
+    .header_1L2Kd {
+        margin: 24px;
+    }
+
+    .icon_2muIh.sliderPrevArrow_2FtXd {
+        height: 48px;
+        width: 48px;
+    }
+
+    .icon_2muIh.sliderNextArrow_1bq3k {
+        height: 48px;
+        width: 48px;
+    }
+
+    .icon_2muIh.sliderNextArrow_1bq3k,
+    .icon_2muIh.sliderPrevArrow_2FtXd {
+        height: 40px;
+        width: 40px;
+    }
+}

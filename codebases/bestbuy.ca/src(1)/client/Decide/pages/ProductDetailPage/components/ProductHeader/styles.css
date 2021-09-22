@@ -1,0 +1,268 @@
+.mediaGalleryContainer_3YBUi {
+    min-height: 400px;
+    margin-bottom: 24px;
+}
+
+.productName_3nyxM {
+    margin: 16px 16px 4px;
+    color: #1d252c;
+}
+
+.productContent_3F2HL {
+    padding: 24px 16px 0;
+}
+
+.modelDetailSection_1Ou2j {
+    margin: 0 16px 16px;
+}
+
+.modelInformationContainer_3hV4x {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.modelInformationContainer_3hV4x .modelInformation_1ZG9l:last-child {
+    margin-right: 0;
+}
+
+.modelInformation_1ZG9l {
+    color: #1d252c;
+    font-size: 12px;
+    margin: 0 16px 0 0;
+}
+
+.modelInformation_1ZG9l strong {
+    font-weight: 600;
+}
+
+.reviewsDetailContainer_2I633 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    line-height: 1;
+    height: 16px;
+}
+
+.starRatingContainer_sabZo {
+    margin-right: 16px;
+}
+
+.writeReviewLinkContainer_3Zmav {
+    margin-top: -4px;
+}
+
+.writeReviewLink_mymRv {
+    position: relative;
+    font-size: 12px;
+    margin: 1px 0 0;
+}
+
+.writeReviewLink_mymRv.zeroReviews_1Zqjx {
+    margin: 1px 16px 0 0;
+}
+
+.ctaIcon_LIYVb {
+    position: absolute;
+    fill: #0046be;
+    height: 1em;
+    width: 1em;
+    top: 2px;
+    right: 0;
+}
+
+.collapseColContainer_2eCPT {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.overviewContainer_38adT {
+    padding: 24px 16px;
+}
+
+.overview_GiGpL {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1d252c;
+}
+
+.description_2Qiri {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d252c;
+    margin-bottom: 0;
+}
+
+.withChatInitiator_jCUj- .description_2Qiri {
+    margin-bottom: 24px;
+}
+
+.divider_2kA5_ {
+    margin: 0;
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, .12);
+}
+
+.greaterThanSmall_3_GLK {
+    display: none;
+}
+
+.lessThanMedium_IKv5a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+[class*="x-modal-container"] .mediaGalleryContainer_3YBUi {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .productName_3nyxM {
+        margin: 0 16px 4px;
+    }
+
+    .productContent_3F2HL {
+        padding-right: 24px;
+    }
+
+    .modelDetailSection_1Ou2j {
+        margin: 0 16px 24px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+    }
+
+    .modelInformationContainer_3hV4x {
+        -webkit-flex-basis: auto;
+                flex-basis: auto;
+    }
+
+    .collapseColContainer_2eCPT {
+        margin-bottom: 8px;
+        padding-right: 16px;
+    }
+
+    .overviewContainer_38adT {
+        padding: 24px 16px;
+        border-bottom: solid 1px #e0e6ef;
+    }
+
+    .lessThanMedium_IKv5a.chatEnabled_1vw8n {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .productDescription_WlKr4 {
+        width: 100%;
+        margin-right: 24px;
+    }
+
+    .productDescription_WlKr4.withChatInitiator_jCUj- {
+        width: 70%;
+        margin-right: 24px;
+    }
+
+    .withChatInitiator_jCUj- .description_2Qiri {
+        margin-bottom: 0;
+    }
+
+    .modelInformationDivider_S2yju {
+        display: block;
+    }
+
+    .reviewsContainer_1HJ8R {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .writeReviewLinkContainerZeroReviews_3yNgC {
+        margin-top: -4px;
+        margin-left: 8px;
+    }
+
+    .writeReviewLinkContainer_3Zmav {
+        margin: -4px 4px 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .mediaGalleryContainer_3YBUi {
+        margin-bottom: 48px;
+    }
+
+    .productName_3nyxM {
+        margin: 0 24px 4px;
+    }
+
+    .productContent_3F2HL {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .modelDetailSection_1Ou2j {
+        margin: 0 24px 24px;
+    }
+
+    .modelInformationDivider_S2yju {
+        margin: 0 24px !important;
+    }
+
+    .collapseColContainer_2eCPT {
+        padding-right: 24px;
+    }
+
+    .overviewContainer_38adT {
+        padding: 0 0 32px;
+        border-bottom: 0;
+    }
+
+    .writeReviewLink_mymRv {
+        margin: 1px 16px 0 0;
+    }
+
+    .divider_2kA5_.productBodyDivider_it17O,
+    .lessThanMedium_IKv5a,
+    .lessThanMedium_IKv5a.chatEnabled_1vw8n {
+        display: none;
+    }
+
+    .greaterThanSmall_3_GLK,
+    .greaterThanSmall_3_GLK.chatEnabled_1vw8n {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+    }
+}

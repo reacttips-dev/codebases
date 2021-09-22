@@ -1,0 +1,132 @@
+
+
+.productItemGridTile_3ygMB {
+    padding: 0 8px;
+}
+
+.productItemName_3IZ3c,
+.productItemNameNoRating_1i59o {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.productItemName_3IZ3c {
+    margin-bottom: 4px;
+
+    /** To prevent SKU wrapping */
+}
+
+@media (max-width: 767px) {
+
+    .productItemName_3IZ3c.detailsBelow_3RbA6 {
+        max-width: 170px;
+    }
+}
+
+.productItemName_3IZ3c:hover,
+.productItemName_3IZ3c:focus {
+    text-decoration: underline;
+}
+
+.productItemNameNoRating_1i59o {
+    margin-bottom: 8px;
+}
+
+.productItemNameNoRating_1i59o:hover,
+.productItemNameNoRating_1i59o:focus {
+    text-decoration: underline;
+}
+
+.productItemImageContainer_3qUiK {
+    padding: 0;
+    text-align: center;
+}
+
+.productItemTextContainer_HocvR {
+    padding: 0;
+}
+
+.productImgMarginBottom_1DDWd {
+    padding-bottom: 16px;
+}
+
+.productImgMarginRight_1NXDl {
+    padding-right: 16px;
+}
+
+.productItemImage_2u2zj {
+    height: 100%;
+    width: 100%;
+}
+
+.ratingContainer_29ZF- {
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+span[class*="reviewCountContainer"] {
+    color: #55555a;
+}
+
+.productItemRow_hyNOs {
+    width: 100%;
+}
+
+.materialOverride_vWsDY.listItem_10CIq {
+    padding: 16px 16px 16px 0;
+    margin-bottom: 0;
+    color: #1d252c;
+    opacity: 1;
+}
+
+.sponsoredProductLabel_3aNyA {
+    color: #55555a;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 4px;
+}
+
+.badgeWrp_30ify {
+    margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+    .productItemImageContainer_3qUiK,
+    .productItemTextContainer_HocvR {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .materialOverride_vWsDY.listItem_10CIq {
+        padding: 0 0 32px;
+    }
+
+    .productItemImageContainer_3qUiK {
+        margin-bottom: 16px;
+    }
+
+    .productImgMarginBottom_1DDWd {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .materialOverride_vWsDY.listItem_10CIq {
+        padding: 0;
+    }
+
+    .productItemImageContainer_3qUiK {
+        margin-bottom: 16px;
+    }
+
+    .ratingContainer_29ZF- {
+        display: block;
+    }
+}

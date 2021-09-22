@@ -1,0 +1,123 @@
+
+
+.storyBannerRow_303_Q {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+}
+
+.productMedia_2Xbs8 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.productMedia_2Xbs8 > div {
+    height: 100%;
+}
+
+.column_2YVMi {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+.textContainer_2SwTp {
+    color: #1d252c;
+    text-decoration: none;
+}
+
+.textContainer_2SwTp:hover,
+.textContainer_2SwTp:focus {
+    text-decoration: none;
+}
+
+.title_1yqmG {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.body_3YU2j {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.productMedia_2Xbs8 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.productMedia_2Xbs8 img {
+    width: 100%;
+}
+
+.linkTextContainer_1OPti {
+    margin-top: 8px;
+}
+
+.linkTextContainer_1OPti span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #0046be;
+}
+
+.linkTextContainer_1OPti:hover,
+.linkTextContainer_1OPti:focus {
+    text-decoration: underline;
+}
+
+.ctaIcon_1Ln0x.arrowIcon_Woddn {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    fill: #0046be;
+}
+
+@media (min-width: 768px) {
+    .storyBannerRow_303_Q {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        margin-right: 24px;
+    }
+
+    .column_2YVMi {
+        width: 50%;
+    }
+
+    .right_135aq {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+    }
+
+    .left_2K8j1 .productMedia_2Xbs8 {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+    }
+
+    .productMedia_2Xbs8 {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+    }
+}

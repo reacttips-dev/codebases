@@ -1,0 +1,88 @@
+.bundleProductDetails_MTzPU:first-child {
+    padding-top: 8px;
+}
+
+.bundleProductDetails_MTzPU button[class*="compactButton"] {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+}
+
+.readMoreToggle_3ZfqA button,
+.showMoreDetailsToggle_UNo69 button {
+    margin: 8px 0 0;
+}
+
+.showMoreDetailsToggle_UNo69 button {
+    padding-left: 16px;
+}
+
+.readMoreBody_2QPp4 {
+    padding: 0;
+    font-size: 16px;
+}
+
+.showMoreDetailsBody_Xz-mK {
+    padding: 0;
+}
+
+.bundleProductDetails_MTzPU hr {
+    margin: 24px 0;
+}
+
+.productInfoContainer_3eV0T div[class="bv-action-bar"],
+.productInfoContainer_3eV0T div[class="bv-masthead-product"].div_1c-3n[class="bv-summary-bar"] {
+    display: none !important;
+}
+
+.productInfoContainer_3eV0T div[class="bv-header"] div[class="bv-control-bar"],
+.productInfoContainer_3eV0T div[class="bv-header"] div[class="bv-cv2-cleanslate"].div_1c-3n[class="bv-core-container-50"].div_1c-3n[class="bv-content-item"],
+.productInfoContainer_3eV0T div[class="bv-header"] div[class="bv-content-question"] {
+    margin: 0 !important;
+}
+
+.fromTheManufacturerContainer_1TO3M {
+    padding: 0 16px 24px;
+}
+
+.fromTheManufacturerContainer_1TO3M .defaultText_2y_u4 {
+    margin: 0;
+}
+
+.verticalTabs_10Xbe [class*="bodyContainer"] {
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .readMoreToggle_3ZfqA {
+        padding: 0 16px;
+    }
+
+    div[class~="moreInfo"]:last-child,
+    div[class~="detailsAndSpecs"]:last-child {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .productInfoContainer_3eV0T {
+        padding: 0 16px 24px;
+        border-bottom: solid 1px #e0e6ef;
+    }
+
+    .productInfoContainer_3eV0T:last-child {
+        border-bottom: 0;
+    }
+
+    .fromTheManufacturerContainer_1TO3M {
+        padding: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .productInfoContainer_3eV0T {
+        box-sizing: border-box;
+        padding: 0 24px 32px;
+        border-bottom: 0;
+    }
+}

@@ -1,0 +1,31 @@
+
+
+.loadingIframe_16NDY {
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+.iframe_3O3Xf {
+    border: 0;
+    width: 100%;
+
+    /* Set height of the iFrame to be the viewport height minus the size of the header */
+    height: calc(100vh - 112px);
+}
+
+.circularProgress_2En2i {
+    left: 50%;
+    position: absolute;
+    top: 200px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation: none;
+            animation: none;
+}
+
+@media (min-width: 768px) {
+    .iframe_3O3Xf {
+        height: calc(100vh - 153px);
+    }
+}

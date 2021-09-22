@@ -1,0 +1,68 @@
+.dividerWithMargin_2QRhz {
+    margin: 0 16px !important;
+}
+
+.badgeWrp_2lCj1 {
+    margin: 24px 16px -12px;
+}
+
+.pricingContainer_30UxF {
+    margin: 24px 16px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.correctionNoticeContainer_11pDo {
+    margin: 24px 0;
+}
+
+.mobileOfferDetailsStoreStatusMessage_2PmUf {
+    margin: 0 16px 24px;
+}
+
+.soldByBestBuy_Vkn7q {
+    margin: 0 16px 24px;
+    padding-top: 24px;
+}
+
+.soldByBestBuy_Vkn7q svg {
+    width: 40px;
+    height: 20px;
+}
+
+@media (min-width: 768px) {
+    .dividerWithMargin_2QRhz {
+        display: none;
+    }
+
+    .badgeWrp_2lCj1 {
+        margin: 24px 0 -20px;
+    }
+
+    .pricingContainer_30UxF {
+        margin: 24px 0 0;
+    }
+
+    .mobilePlanInquiryButton_Qc3wl {
+        margin-bottom: 16px;
+    }
+
+    .soldByBestBuy_Vkn7q {
+        margin: 0 0 24px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .dividerWithMargin_2QRhz {
+        margin: 0 !important;
+    }
+
+    .pricingContainer_30UxF {
+        margin-right: 0;
+    }
+
+    .mobileOfferDetailsStoreStatusMessage_2PmUf {
+        margin: 0;
+    }
+}

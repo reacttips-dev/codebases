@@ -1,0 +1,51 @@
+.specCategory_1KbYe {
+    margin-bottom: 24px;
+}
+
+.container_1XvFQ {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .overwriteContainer_cqIma {
+        padding: 0 16px 24px;
+    }
+}
+
+div.specContainer_2iBkq {
+    margin-bottom: 16px;
+}
+
+.icon_2C0wN.arrowIcon_Q5JmT {
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.disclaimer_3wcXI {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #55555a;
+}
+
+.ctaContainer_1SODH {
+    color: #0046be;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 16px 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+
+@media (min-width: 768px) {
+    .container_1XvFQ {
+        padding: 0;
+    }
+}

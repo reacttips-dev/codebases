@@ -1,0 +1,181 @@
+.parentProductContainer_3TDfx {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+    .parentProductContainer_3TDfx .moveToCartButton_Q2Grx {
+        margin-top: 24px;
+        max-width: 200px;
+    }
+
+    .parentProductContainer_3TDfx .removeButton_39a77 {
+        margin-top: 12px;
+        max-width: 200px;
+    }
+
+.parentProductContainer_3TDfx.offline_1Dqvv .imageContainer_3gEWo {
+            opacity: 0.4;
+}
+
+.parentProductContainer_3TDfx.offline_1Dqvv .productName_1x0d_ {
+            color: #1d252c !important;
+}
+
+.parentProductContainer_3TDfx.offline_1Dqvv .productName_1x0d_,
+        .parentProductContainer_3TDfx.offline_1Dqvv .imageContainer_3gEWo {
+            pointer-events: none;
+}
+
+.parentProductContainer_3TDfx.offline_1Dqvv .rightContainer_-f0G2 * {
+            color: #55555a;
+}
+
+.parentProductContainer_3TDfx.offline_1Dqvv .removeButton_39a77 {
+            margin-top: 24px;
+}
+
+.s4lCta_2DqGE {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+.offlineMessageContainer_2uoXo {
+    padding: 16px;
+    background-color: #f4f6f9;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.productDetails_2wCR9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+}
+
+.productDetails_2wCR9 .imageContainer_3gEWo {
+        width: 112px;
+        height: 112px;
+        margin: auto;
+    }
+
+.productDetails_2wCR9 .detailsContainer_1F-dX {
+        margin-top: 16px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+    }
+
+.productDetails_2wCR9 .detailsContainer_1F-dX .moveToCartButton_Q2Grx,
+        .productDetails_2wCR9 .detailsContainer_1F-dX .removeButton_39a77,
+        .productDetails_2wCR9 .detailsContainer_1F-dX .offlineMessageContainer_2uoXo {
+            display: none;
+        }
+
+.productDetails_2wCR9 .detailsContainer_1F-dX .leftContainer_W9SGt a:hover {
+                text-decoration: underline;
+            }
+
+.productDetails_2wCR9 .detailsContainer_1F-dX .leftContainer_W9SGt .productName_1x0d_ {
+                color: #1d252c;
+                line-height: 24px;
+            }
+
+.productDetails_2wCR9 .detailsContainer_1F-dX .rightContainer_-f0G2 {
+            margin: 8px 0 0;
+        }
+
+@media (min-width: 768px) {
+    .productDetails_2wCR9 {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+        .productDetails_2wCR9 .imageContainer_3gEWo {
+            margin: 0;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 112px;
+                    flex: 0 0 112px;
+        }
+
+        .productDetails_2wCR9 .detailsContainer_1F-dX {
+            margin: 0 0 0 16px;
+        }
+
+            .productDetails_2wCR9 .detailsContainer_1F-dX .rightContainer_-f0G2 {
+                margin: 16px 0 0;
+            }
+}
+
+@media (min-width: 1025px) {
+    .productDetails_2wCR9 .detailsContainer_1F-dX {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        height: 100%;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        margin: 0 0 0 24px;
+        width: 100%;
+    }
+
+        .productDetails_2wCR9 .detailsContainer_1F-dX .moveToCartButton_Q2Grx,
+        .productDetails_2wCR9 .detailsContainer_1F-dX .removeButton_39a77,
+        .productDetails_2wCR9 .detailsContainer_1F-dX .offlineMessageContainer_2uoXo {
+            display: block;
+        }
+
+        .productDetails_2wCR9 .detailsContainer_1F-dX .removeButton_39a77 {
+            margin-top: 24px;
+        }
+
+        .productDetails_2wCR9 .detailsContainer_1F-dX .leftContainer_W9SGt {
+            display: inline-block;
+            width: 450px;
+        }
+
+        .productDetails_2wCR9 .detailsContainer_1F-dX .rightContainer_-f0G2 {
+            margin: 0;
+        }
+
+    .s4lCta_2DqGE {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .parentProductContainer_3TDfx {
+        position: relative;
+    }
+
+        .parentProductContainer_3TDfx .moveToCartButton_Q2Grx,
+        .parentProductContainer_3TDfx .removeButton_39a77,
+        .parentProductContainer_3TDfx .offlineMessageContainer_2uoXo {
+            display: none;
+        }
+
+    .parentProductContainer_3TDfx.offline_1Dqvv .removeButton_39a77 {
+                margin-top: 16px;
+    }
+}

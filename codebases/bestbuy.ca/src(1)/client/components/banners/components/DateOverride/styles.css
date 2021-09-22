@@ -1,0 +1,46 @@
+
+
+.dateOverride_39h6k {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    font-size: 12px;
+    background: #fff;
+    z-index: 10000;
+    box-shadow: 0 0 3px 0 #c5cbd5;
+}
+
+    .dateOverride_39h6k .label_2jiHh {
+        color: #55555a;
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    .dateOverride_39h6k .input_rNjUZ {
+        margin-bottom: 0;
+        max-width: 250px;
+    }
+
+    .dateOverride_39h6k .icon_1suKf {
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+    }
+
+    .dateOverride_39h6k .icon_1suKf svg {
+            height: 24px;
+            width: 24px;
+        }
+
+    .dateOverride_39h6k .icon_1suKf:hover svg {
+    fill: #0046be;
+}
+
+    .dateOverride_39h6k .hidden_2zF2Z {
+        display: none;
+    }

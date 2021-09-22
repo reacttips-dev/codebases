@@ -1,0 +1,44 @@
+.vendor_2QFzx {
+    margin-bottom: 8px;
+    list-style: none;
+}
+
+.vendor_2QFzx:last-child {
+    margin-bottom: 0;
+}
+
+.header_m7iIF {
+    padding: 0 0 16px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.lineItems_2PRRQ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.lineItems_2PRRQ li:first-of-type {
+        margin-top: 0;
+    }
+
+.lineItems_2PRRQ li {
+        padding: 0;
+        list-style: none;
+        margin: 8px 0 0;
+    }
+
+.soldBy_2nCbc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.sellerLogo_2hCpx {
+    width: 24px;
+    height: 16px;
+    margin: 2px 8px 2px 0;
+}

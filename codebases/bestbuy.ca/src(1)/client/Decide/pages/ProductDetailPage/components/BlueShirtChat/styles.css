@@ -1,0 +1,89 @@
+.blueShirtChatContainer_3KuMS {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    border: 1px solid #e0e6ef;
+    padding: 24px 24px 16px;
+    border-radius: 4px;
+}
+
+.chatAvailable_1X_9d {
+    cursor: pointer;
+}
+
+.chatStatus_1QPer {
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.chatHeading_1_T9E {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 8px;
+    width: 66%;
+}
+
+.onlineChatButton_3msBn {
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    height: auto;
+}
+
+.offlineChatButton_33jT0 {
+    display: block;
+    color: #1d252c;
+    cursor: default;
+    font-size: 12px;
+    width: 70%;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: normal;
+    line-height: unset;
+    background-color: transparent;
+}
+
+[class^="liveAgentStatus"] {
+    position: relative;
+    top: 2px;
+}
+
+.circularProgress_2Wc0c {
+    padding: 7px;
+}
+
+.chatSubHeading_1W_-d {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    width: 66%;
+}
+
+.becLogo_3xs_n {
+    height: 16px;
+}
+
+.brandExpertChatHeading_3ZdQC {
+    padding-bottom: 4px;
+    padding-top: 8px;
+}
+
+.brandOfflineChat_3PX4a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 60%;
+}
+
+@media (min-width: 768px) {
+    .blueShirtChatContainer_3KuMS {
+        width: 240px;
+    }
+
+    .initiator_3uKkw {
+        display: inline-block;
+    }
+}

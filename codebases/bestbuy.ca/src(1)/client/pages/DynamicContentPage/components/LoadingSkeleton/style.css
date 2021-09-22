@@ -1,0 +1,45 @@
+
+
+.contentLoadingContainer_2Xopp {
+    padding: 0 16px;
+}
+
+.loadingBanner_2toqD,
+.loadingTitle_3zSp7,
+.loadingContent6_2bNmq {
+    margin-bottom: 24px;
+}
+
+.loadingContent1_28jmL {
+    margin-right: 20px;
+}
+
+.loadingContent2_K8Qj_ {
+    margin-right: 40px;
+}
+
+.loadingContent3_6qf6e {
+    margin-right: 60px;
+}
+
+.loadingContent4_2H2vd {
+    margin-right: 50px;
+}
+
+.loadingContent5_1uNTd {
+    margin-right: 100px;
+}
+
+.loadingBanner_2toqD {
+    height: 576px;
+}
+
+@media (min-width: 1025px) {
+    .contentLoadingContainer_2Xopp {
+        padding: 0 24px;
+    }
+
+    .loadingBanner_2toqD {
+        height: 448px;
+    }
+}

@@ -1,0 +1,81 @@
+
+
+.heading_2sZrs {
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.scaleTitle_3qt8b {
+    text-align: center;
+    width: 8px;
+    font-size: 12px;
+    margin-right: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 16px;
+}
+
+.scaleValue_2PopJ {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 12px;
+    margin-left: 8px;
+    line-height: 16px;
+}
+
+.reviewFilterContainer_1ePMh {
+    margin: 24px 0 32px;
+    width: 100%;
+}
+
+.reviewFilterItem_3cQMQ {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 16px;
+    height: 16px;
+}
+
+.starContainer_ByC6X {
+    margin-left: 0;
+    margin-right: 8px;
+    width: 16px;
+}
+
+.starContainer_ByC6X button {
+    background-color: transparent;
+}
+
+.starContainer_ByC6X button svg {
+    margin-left: 0;
+}
+
+.starContainer_ByC6X button:hover {
+    cursor: default;
+}
+
+.percentageBarContainer_2YWBI {
+    width: 82%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.percentageBar_3ONek {
+    border-radius: 8px;
+    height: 8px;
+}
+
+@media (min-width: 1025px) {
+    .reviewFilterContainer_1ePMh {
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,31 @@
+.container_23b42 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin-right: -16px;
+}
+
+.category_LRby8 {
+    font-size: 14px;
+    margin-bottom: 48px;
+    text-align: center;
+    padding: 0 16px 0 0;
+}
+
+.category_LRby8 a:hover,
+.category_LRby8 a:focus {
+    color: #1d252c;
+}
+
+.shopByCategoryHeader_rDFfi .sectionTitle_36HOf:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 1025px) {
+    .category_LRby8 {
+        font-size: 16px;
+    }
+}

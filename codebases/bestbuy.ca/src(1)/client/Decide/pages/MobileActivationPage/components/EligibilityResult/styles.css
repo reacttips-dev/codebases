@@ -1,0 +1,56 @@
+.title_3Q0CS {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.descriptionContainer_3_iBi {
+    margin-bottom: 32px;
+}
+
+.descriptionBorderedContainer_3xsRi {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+.paragraphText_3m3GY {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.paragraphInlineText_1FyeH {
+    display: inline;
+}
+
+.paragraphInlineBoldText_3AXFp {
+    display: inline;
+    font-weight: 600;
+}
+
+.storesLink_2Jv24 {
+    color: #0046be;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .title_3Q0CS {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 48px;
+    }
+
+    .paragraphText_3m3GY {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .eligibilityResult_3ARsV {
+        width: 918px;
+        margin: 0 auto;
+    }
+}

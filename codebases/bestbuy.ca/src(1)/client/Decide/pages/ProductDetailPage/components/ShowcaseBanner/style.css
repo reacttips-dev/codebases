@@ -1,0 +1,98 @@
+
+
+.showcaseBannerContainer_3YYjw {
+    background-color: lightgrey;
+    min-height: 328px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+}
+
+.bannerContent_3uhZG {
+    padding: 0 16px 16px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.tag_2qI2M {
+    background-color: #001e73;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    line-height: 14px;
+    font-size: 10px;
+    padding: 2px;
+    margin-bottom: 8px;
+}
+
+.headline_fwUFo {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.bannerLink_2h8La {
+    margin-top: auto;
+}
+
+.bannerLink_2h8La:hover,
+.bannerLink_2h8La:focus {
+    text-decoration: none;
+}
+
+.showcaseBannerButton_Unqti {
+    margin-top: 16px;
+}
+
+.materialOverride_2WrEb.icon_ba8Ab {
+    height: 14px;
+    width: 14px;
+}
+
+.imagePositionWrapper_1Z5bS {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    height: inherit;
+}
+
+.imageWrapper_1A2G1 {
+    position: relative;
+    height: 100%;
+}
+
+.imageWrapper_1A2G1 > div,
+.imageWrapper_1A2G1 > div > div {
+    height: 100%;
+}
+
+.imagePositionWrapper_1Z5bS img {
+    position: relative;
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.gradient_3k9uf {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .87) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .87) 100%);
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}

@@ -1,0 +1,102 @@
+.text_2go6_ {
+    font-size: 14px;
+}
+
+    .text_2go6_ ol li {
+        list-style: decimal;
+    }
+
+    .text_2go6_ h2,
+    .text_2go6_ h3,
+    .text_2go6_ h4,
+    .text_2go6_ h5 {
+        font-weight: 700;
+    }
+
+    .text_2go6_ h3,
+    .text_2go6_ h4 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    .text_2go6_ h3 {
+        margin-bottom: 16px;
+    }
+
+    .text_2go6_ h3 + h4 {
+        position: relative;
+        margin-top: -8px;
+        margin-bottom: 16px;
+    }
+
+    .text_2go6_ h4 {
+        margin-bottom: 8px;
+    }
+
+    .text_2go6_ table {
+        margin: 0 -8px;
+        border-collapse: collapse;
+    }
+
+    .text_2go6_ table td {
+            padding: 8px;
+        }
+
+    .text_2go6_ .inlineImage {
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+    .text_2go6_ .inlineImage img {
+                max-width: 100%;
+            }
+
+    .text_2go6_ .inlineImage figcaption {
+                display: none;
+            }
+
+    .text_2go6_ .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 24px;
+        }
+
+    .text_2go6_ .videoWrapper embed,
+            .text_2go6_ .videoWrapper iframe,
+            .text_2go6_ .videoWrapper object {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+    .text_2go6_ .videoWrapper:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+    .text_2go6_ > *:last-child {
+        margin-bottom: 0;
+    }
+@media (min-width: 768px) {
+        .text_2go6_ h3 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+            .text_2go6_ .inlineImage.left {
+        margin: 0 24px 24px 0;
+        text-align: left;
+    }
+            .text_2go6_ .inlineImage.right {
+        margin: 0 0 24px 24px;
+        text-align: right;
+    }
+
+            .text_2go6_ .videoWrapper:not(:last-child) {
+                margin-bottom: 48px;
+            }
+}

@@ -1,0 +1,111 @@
+
+
+.container_2sKRg {
+    width: 100%;
+}
+
+.bannerContainer_2FEdi {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    padding: 24px 16px;
+}
+
+.bannerContainer_2FEdi.noPadding_7T0nB {
+    padding: 0;
+}
+
+.textContainer_ZrwdC {
+    text-decoration: none;
+}
+
+.textContainer_ZrwdC:hover,
+.textContainer_ZrwdC:focus {
+    text-decoration: none;
+}
+
+.textContainer_ZrwdC:hover .ctaContainer_1eJhJ,
+.textContainer_ZrwdC:focus .ctaContainer_1eJhJ {
+    text-decoration: underline;
+}
+
+.ctaContainer_1eJhJ {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 8px;
+}
+
+.ctaContainer_1eJhJ:hover,
+.ctaContainer_1eJhJ:focus {
+    text-decoration: underline;
+}
+
+.icon_3ZAnE.arrowIcon_2jsAP {
+    height: 14px;
+    width: 14px;
+    position: relative;
+    top: -2px;
+}
+
+.headline1_297K7,
+.headline2_lGqUd {
+    color: #1d252c;
+    margin-bottom: 8px;
+}
+
+.headline1_297K7 {
+    margin-top: 16px;
+}
+
+.headline2_lGqUd {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 768px) {
+    .bannerContainer_2FEdi {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+    }
+
+    .headline1_297K7 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 0;
+    }
+
+    .headline2_lGqUd {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .textContainer_ZrwdC {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        margin-right: 24px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .bannerContainer_2FEdi {
+        padding: 24px;
+    }
+
+    .dividerWithMargin_3F7Cj {
+        margin-right: 24px !important;
+    }
+}

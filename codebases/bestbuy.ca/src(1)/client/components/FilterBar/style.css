@@ -1,0 +1,44 @@
+
+
+.container_uHvrD {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding-right: 16px;
+    background-color: #f4f6f9;
+    border-bottom: 1px solid #e0e6ef;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    height: 80px;
+}
+
+.container_uHvrD .element_3ZxQf {
+    width: 100%;
+    padding: 16px 0 16px 16px;
+}
+
+.container_uHvrD button > span {
+    padding: 0;
+}
+
+.icon_3mc-4 {
+    height: 24px;
+    width: 24px;
+    fill: currentColor;
+    margin-right: 8px;
+}
+
+.filterBtnContent_1zFM6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.filterBtnLabel__zgEL {
+    margin-top: 5px;
+}

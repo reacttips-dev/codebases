@@ -1,0 +1,173 @@
+
+
+.productListingContainer_1Iyio {
+    width: 100%;
+}
+
+.facetContainer_1YBYR {
+    margin-top: 4px;
+}
+
+.buttonLoadMoreLink_dlYUu:hover,
+.buttonLoadMoreLink_dlYUu:focus {
+    text-decoration: none;
+}
+
+.dynamicContentTitle_2nlLS {
+    padding: 16px;
+}
+
+.brandOverview_1_CdG {
+    border-top: 1px solid #e0e6ef;
+    padding: 24px 16px;
+}
+
+.hide_2nrjF {
+    display: none;
+}
+
+.productsContainer_2xEUC {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.searchPageTitle_2RHXM {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.noSearchResults_2OS_z {
+    margin: 4px;
+    padding: 16px 16px 0;
+}
+
+.noSearchResultsTips_C1DpH {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.noSearchResultsContact_7L4gr {
+    padding-bottom: 32px;
+}
+
+.pillList_uzdpl {
+    margin: 24px 0 0;
+    padding: 0 16px 8px;
+    border-bottom: 1px solid #e0e6ef;
+}
+
+.loadMoreButtonContainer_22Bmg {
+    padding: 8px 8px 0;
+}
+
+.noResultMessageContainer_1fah3 {
+    margin: 24px 0 -16px;
+}
+
+@media (min-width: 768px) {
+    .noSearchResults_2OS_z {
+        padding: 0 16px;
+    }
+
+    .noSearchResultsContact_7L4gr {
+        padding-bottom: 48px;
+    }
+
+    .feedbackButton_2kVPZ {
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container_zUj6w {
+        margin-bottom: 0;
+    }
+
+    .dividerWithMargin_1EmOy {
+        margin: 0 24px !important;
+    }
+
+    .facetContainer_1YBYR {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 25%;
+                flex: 1 1 25%;
+    }
+
+    .facetContainer_1YBYR hr {
+        margin: -1px 0 0;
+    }
+
+    .productListingContainer_1Iyio {
+        border-left: 1px solid #e0e6ef;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 75%;
+                flex: 1 1 75%;
+        padding: 24px 0 0 24px;
+    }
+
+    .brandOverview_1_CdG {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        padding: 32px 0;
+        margin: 0 24px;
+    }
+
+    .CollapsibleBlockContainer_2Pahc {
+        width: calc(100% - 256px);
+    }
+
+    .noSearchResults_2OS_z {
+        padding: 0 24px;
+    }
+
+    .feedbackButton_2kVPZ {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .searchResultHeader_1L3oq {
+        width: auto;
+    }
+
+    .pillList_uzdpl {
+        margin: 24px 0 0;
+        padding: 0 0 16px;
+    }
+
+    .loadMoreButtonContainer_22Bmg {
+        margin-bottom: 32px;
+    }
+}
+
+@media (min-width: 1281px) {
+    .facetContainer_1YBYR {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 20%;
+                flex: 1 1 20%;
+    }
+
+    .productListingContainer_1Iyio {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 80%;
+                flex: 1 1 80%;
+    }
+
+    .noSearchResults_2OS_z {
+        padding: 0 16px;
+    }
+
+    .noSearchResultsContact_7L4gr {
+        padding-bottom: 64px;
+    }
+}

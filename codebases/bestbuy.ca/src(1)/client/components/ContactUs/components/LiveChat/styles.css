@@ -1,0 +1,53 @@
+.boxComponent_fPMe4 {
+    border: 2px solid #e0e6ef;
+    border-radius: 4px;
+    padding: 38px 24px 16px;
+    margin: 12px 0;
+}
+
+.link_2Yr7v,
+.link_2Yr7v:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.enabledComponent_DED53 {
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .16);
+    padding: 38px 24px 16px;
+}
+
+.enabledComponent_DED53:hover {
+    border: 2px solid #0046be;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boxComponent_fPMe4 {
+        margin: 12px 0;
+        height: 95%;
+        box-sizing: border-box;
+    }
+}
+
+.agentUnavailable_3UGF_ {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.chatStatus_2-43W {
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.liveChat_2txLI {
+    color: #0046be;
+}
+
+.textBubbleLogo_2OkSZ {
+    height: 42px;
+    width: 42px;
+}

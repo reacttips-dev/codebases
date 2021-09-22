@@ -1,0 +1,127 @@
+.barBanner_3ONwb {
+    margin: 0;
+    padding: 24px 16px;
+}
+
+    .barBanner_3ONwb .bannerContent_2iL-v {
+        text-align: center;
+    }
+
+    .barBanner_3ONwb .foregroundImage_1e8w_ {
+        height: 176px;
+    }
+
+    .barBanner_3ONwb .logoContainer_1vrKp {
+        margin-bottom: 8px;
+    }
+
+.barBanner_3ONwb.dark_xmsks {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .featureBanner_1HsEj .foregroundImage_1e8w_ img {
+        float: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .barBanner_3ONwb {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        min-height: 136px;
+        padding: 32px 64px;
+    }
+
+        .barBanner_3ONwb .bannerContent_2iL-v {
+            text-align: left;
+            padding-top: 0;
+            width: 65%;
+        }
+
+        .barBanner_3ONwb .foregroundImage_1e8w_ {
+            margin-bottom: 0;
+        }
+
+        .barBanner_3ONwb .headline_3zEWk {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+    .barBanner_3ONwb.left_3VhXy {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+    }
+                .barBanner_3ONwb.left_3VhXy .logoContainer_1vrKp img {
+                    margin: 0;
+                }
+
+    .barBanner_3ONwb.left_3VhXy .foregroundImage_1e8w_ {
+                margin-left: 24px;
+    }
+
+    .barBanner_3ONwb.right_WPACX {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+    }
+                .barBanner_3ONwb.right_WPACX .logoContainer_1vrKp img {
+                    margin: 0;
+                }
+
+    .barBanner_3ONwb.right_WPACX .foregroundImage_1e8w_ {
+                margin-right: 24px;
+    }
+
+    .barBanner_3ONwb.centre_3YSaT {
+        text-align: center;
+        margin: 0 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .barBanner_3ONwb.centre_3YSaT .ctaBlock_2nasZ {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                        justify-content: center;
+    }
+
+    .barBanner_3ONwb.centre_3YSaT .bannerContent_2iL-v {
+                width: 100%;
+    }
+
+    .barBanner_3ONwb.centre_3YSaT .bannerContent_2iL-v,
+            .barBanner_3ONwb.centre_3YSaT .logoContainer_1vrKp {
+                text-align: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .barBanner_3ONwb {
+        padding: 32px 80px
+    }
+    .barBanner_3ONwb.centre_3YSaT {
+        width: 80%;
+    }
+    .barBanner_3ONwb.centre_3YSaT .bannerContent_2iL-v {
+                width: auto;
+    }
+    .barBanner_3ONwb.centre_3YSaT .logoContainer_1vrKp {
+                width: 70%;
+                margin: 0 auto;
+    }
+}

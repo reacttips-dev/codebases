@@ -1,0 +1,67 @@
+.specCategory_2rDp2 {
+    margin-bottom: 24px;
+}
+
+.groupName_3O9-v {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    border-bottom: 1px solid #e0e6ef;
+    color: #1d252c;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 52px;
+    line-height: inherit;
+    margin: 0;
+    padding: 0 16px;
+}
+
+.itemContainer_uqm6b {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    color: #1d252c;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 16px;
+}
+
+.itemContainer_uqm6b:nth-of-type(odd) {
+    background-color: #f4f6f9;
+}
+
+.itemName_GaNqp {
+    -webkit-box-align: top;
+    -webkit-align-items: top;
+            align-items: top;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    width: 50%;
+    margin-right: 24px;
+}
+
+.itemValue_3FLTX {
+    -webkit-box-pack: right;
+    -webkit-justify-content: right;
+            justify-content: right;
+    width: 50%;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 768px) {
+    .itemName_GaNqp {
+        width: 40%;
+    }
+
+    .itemValue_3FLTX {
+        width: 60%;
+    }
+
+    .specCategory_2rDp2:last-child {
+        margin-bottom: 0;
+    }
+}

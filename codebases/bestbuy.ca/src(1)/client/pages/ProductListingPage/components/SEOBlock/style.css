@@ -1,0 +1,26 @@
+.seoContainer_3yFBJ {
+    border-top: 1px solid #e0e6ef;
+    padding: 32px 16px;
+}
+
+.seoTextContent_2ff79 {
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .seoContainer_3yFBJ {
+        padding: 64px 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .seoContainer_3yFBJ {
+        margin: 0 24px;
+        padding: 64px 0;
+    }
+
+    .seoText_o9Fa4 {
+        margin: 0 -24px;
+    }
+}

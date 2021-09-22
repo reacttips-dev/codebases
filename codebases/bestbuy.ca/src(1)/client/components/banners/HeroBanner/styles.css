@@ -1,0 +1,131 @@
+.heroBanner_11atp {
+    margin: 0;
+    padding: 24px 16px;
+}
+
+    .heroBanner_11atp .bannerContent_2n9PU {
+        padding-top: 176px;
+        text-align: center;
+    }
+
+    .heroBanner_11atp .foregroundImage_153SW {
+        height: 176px;
+        margin-bottom: -152px;
+    }
+
+.heroBanner_11atp.dark_16jbu {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .featureBanner_3aZoZ .foregroundImage_153SW img {
+        float: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .heroBanner_11atp {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        box-sizing: border-box;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        min-height: 264px;
+        padding: 32px 64px;
+    }
+
+        .heroBanner_11atp .bannerContent_2n9PU {
+            text-align: left;
+            box-sizing: border-box;
+            padding-top: 0;
+            width: 45%;
+        }
+
+        .heroBanner_11atp .foregroundImage_153SW {
+            width: 55%;
+            height: auto;
+            box-sizing: border-box;
+            -webkit-flex-shrink: 0;
+                    flex-shrink: 0;
+            margin-bottom: 0;
+            padding: 0 24px 0 0;
+        }
+
+        .heroBanner_11atp .logoContainer_2NOBm {
+            text-align: left;
+        }
+
+            .heroBanner_11atp .logoContainer_2NOBm .logo_3efxt {
+                width: 50%;
+            }
+
+    .heroBanner_11atp.left_3iq-5 {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+    }
+
+    .heroBanner_11atp.left_3iq-5 .foregroundImage_153SW {
+                padding: 0 0 0 24px;
+    }
+
+    .heroBanner_11atp.right_19K5n {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+    }
+
+    .heroBanner_11atp.centre_3NpyQ {
+        text-align: center;
+        margin: 0 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .heroBanner_11atp.centre_3NpyQ .foregroundImage_153SW {
+                padding: 0 0 24px;
+                width: 100%;
+    }
+
+    .heroBanner_11atp.centre_3NpyQ .ctaBlock_1nEyA {
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                        justify-content: center;
+    }
+
+    .heroBanner_11atp.centre_3NpyQ .bannerContent_2n9PU {
+                width: 100%;
+    }
+
+    .heroBanner_11atp.centre_3NpyQ .bannerContent_2n9PU,
+            .heroBanner_11atp.centre_3NpyQ .logoContainer_2NOBm {
+                text-align: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .heroBanner_11atp {
+        padding: 32px 80px
+    }
+    .heroBanner_11atp.centre_3NpyQ {
+        width: 75%;
+    }
+    .heroBanner_11atp.centre_3NpyQ .bannerContent_2n9PU {
+                width: auto;
+    }
+    .heroBanner_11atp.centre_3NpyQ .logoContainer_2NOBm {
+                width: 70%;
+                margin: 0 auto;
+    }
+}

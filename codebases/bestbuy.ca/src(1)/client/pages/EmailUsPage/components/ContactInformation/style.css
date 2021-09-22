@@ -1,0 +1,16 @@
+
+
+.contactInfo_11hCt {
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .nameField_Km9gO {
+        width: 292px;
+        display: inline-block;
+    }
+
+    .firstName_1B_w1 {
+        margin-right: 16px;
+    }
+}

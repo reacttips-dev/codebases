@@ -1,0 +1,61 @@
+.activationProgressHeaderContainer_372ZN {
+    border-bottom: 1px solid #e0e6ef;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.activationProgressHeader_vzl66 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+}
+
+.pageTitle_95_UJ {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    margin: 0 0 24px;
+}
+
+@media (min-width: 768px) {
+    .activationProgressHeader_vzl66 {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
+    }
+
+    .pageTitle_95_UJ {
+        margin: 0;
+    }
+
+    .stylesOverride_1Puhf ol {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .activationProgressHeaderContainer_372ZN {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+    }
+
+    .activationProgressHeader_vzl66 {
+        width: 1232px;
+    }
+}

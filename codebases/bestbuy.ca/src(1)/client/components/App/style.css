@@ -1,0 +1,264 @@
+.pencilAdABCDTestContainer_1ocOE {
+    max-width: calc(1281px - 1px);
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+@media (min-width: 1025px) {
+    .pencilAdABCDTestContainer_1ocOE {
+        padding: 0 24px;
+    }
+}
+@font-face {
+    font-family: "Human BBY";
+    src: url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-55Regular-Web.eot");
+    src: url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-55Regular-Web.woff2") format("woff2"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-55Regular-Web.woff") format("woff"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/Human-BBY-Web-55Regular.ttf") format("truetype"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-55Regular-Web.svg") format("svg");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Human BBY";
+    src: url("https://www.bestbuy.ca/BBYHumanFontfiles/Human-BBY-Web-65-Medium.eot");
+    src: url("https://www.bestbuy.ca/BBYHumanFontfiles/Human-BBY-Web-65-Medium.woff2") format("woff2"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/Human-BBY-Web-65-Medium.woff") format("woff"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/Human-BBY-Web-65-Medium.ttf") format("truetype"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/Human-BBY-Web-65-Medium.svg") format("svg");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Human BBY";
+    src: url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-75Bold-Web.eot");
+    src: url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-75Bold-Web.woff2") format("woff2"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-75Bold-Web.woff") format("woff"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-75Bold-Web.ttf") format("truetype"),
+         url("https://www.bestbuy.ca/BBYHumanFontfiles/HumanBBY-75Bold-Web.svg") format("svg");
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+}
+:root {
+
+    /* Colors */
+
+    /* Primary */
+}
+.small, .smallOnly,
+.medium, .mediumOnly,
+.large, .largeOnly,
+.extraLarge, .extraLargeOnly {
+    display: none;
+}
+.extraSmall,
+.extraSmallOnly {
+    display: block;
+}
+@media (min-width: 768px) {
+    .extraSmallOnly {
+        display: none;
+    }
+
+    .small, .smallOnly {
+        display: block;
+    }
+}
+@media (min-width: 1025px) {
+    .smallOnly {
+        display: none;
+    }
+    
+    .medium, .mediumOnly  {
+        display: block;
+    }
+}
+@media (min-width: 1281px) {
+    .mediumOnly {
+        display: none;
+    }
+
+    .large, .largeOnly  {
+        display: block;
+    }
+}
+@media (min-width: 1920px) {
+    .largeOnly {
+        display: none;
+    }
+
+    .extraLarge, .extraLargeOnly {
+        display: block;
+    }
+}
+@-webkit-keyframes placeHolderShimmer {
+      0% {
+          background-position: -468px 0;
+      }
+  
+      100% {
+          background-position: 468px 0;
+      }
+  }
+@keyframes placeHolderShimmer {
+      0% {
+          background-position: -468px 0;
+      }
+  
+      100% {
+          background-position: 468px 0;
+      }
+  }
+body {
+    background: #fff;
+    color: #000;
+    color: initial;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body,
+button,
+input,
+optgroup,
+select,
+span,
+textarea {
+    font-family: "Human BBY", Arial, sans-serif;
+}
+a {
+    color: #0046be;
+    text-decoration: none;
+    text-decoration: initial;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 16px;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 16px;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 16px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 8px;
+}
+h4 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    margin: 0 0 8px;
+}
+h2 + h3 {
+    margin-top: 24px;
+}
+p + h2 {
+    margin-top: 32px;
+}
+p + h3 {
+    margin-top: 24px;
+}
+hr {
+    height: 1px;
+    border: 0;
+    margin: 32px 0;
+    background: #e0e6ef;
+}
+ul {
+    padding-left: 32px;
+    margin: 0 0 16px;
+}
+ol {
+    padding-left: 32px;
+    margin: 0 0 16px;
+}
+li {
+    line-height: 24px;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    font-size: 16px;
+    list-style: disc;
+}
+ul li ul {
+    padding: 16px 0 0 32px;
+}
+ul li ul li {
+    list-style: disc;
+}
+strong {
+    font-weight: 600;
+}
+button:focus {
+    outline: 0;
+}
+/* Change Autocomplete styles in Chrome */
+@media screen and (prefers-reduced-motion: reduce) {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus input:-webkit-autofill,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-text-fill-color: #1d252c;
+        -webkit-box-shadow: 0 0 0 1000px transparent inset;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #1d252c;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.pageLoader_YBA42 {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+}
+.container_3ohj7 {
+    position: relative;
+    min-height: calc(100vh - 96px);
+}
