@@ -51,3 +51,7 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
+
+# Dependency directories
+node_modules/
+jspm_packages/
