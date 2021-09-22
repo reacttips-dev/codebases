@@ -76,7 +76,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ---
 ### S
 * SendBird (https://dashboard.sendbird.com) - Messaging / Cong Nguyen, 2021/09/20
-* Skillshare (https:/skillshare.com) - Education / Cong Nguyen, 2021/09/22
+* Skillshare (https://skillshare.com) - Education / Cong Nguyen, 2021/09/22
 
 ---
 ### T
