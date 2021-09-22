@@ -1,0 +1,1 @@
+export const BLOCK_TYPES = { SIMPLE: 'SIMPLE', GRID: 'GRID', ENG: 'ENG', TEMPLATE: 'TEMPLATE' };

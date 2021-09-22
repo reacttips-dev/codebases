@@ -1,0 +1,1 @@
+module.exports = {"name":"Lti","parameters":[{"name":"isEnterpriseRecaptchaForLtiLaunchEnabled","valid":[false,true],"value":false},{"name":"enterpriseRecaptchaScoreForLti","value":0}]}

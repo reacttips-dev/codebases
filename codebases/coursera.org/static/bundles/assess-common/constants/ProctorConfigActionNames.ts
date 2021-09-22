@@ -1,0 +1,10 @@
+const ActionNames: {
+  LOADING_PROCTOR_CONFIG: 'LOADING_PROCTOR_CONFIG';
+  LOADED_PROCTOR_CONFIG: 'LOADED_PROCTOR_CONFIG';
+} = {
+  LOADING_PROCTOR_CONFIG: 'LOADING_PROCTOR_CONFIG',
+  LOADED_PROCTOR_CONFIG: 'LOADED_PROCTOR_CONFIG',
+};
+
+/* eslint-disable import/prefer-default-export */
+export { ActionNames };

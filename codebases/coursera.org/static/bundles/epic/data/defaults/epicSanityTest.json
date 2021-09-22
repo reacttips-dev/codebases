@@ -1,0 +1,1 @@
+module.exports = {"name":"epicSanityTest","parameters":[{"name":"byUrlAATest","value":""},{"name":"byUserAATest","value":""},{"name":"bySessionAllocationTest","value":0.5},{"name":"byUserAllocationTest","value":0.5},{"name":"byUserTagTargetingTest","value":0.5}]}

@@ -1,0 +1,1 @@
+module.exports = {"name":"FlexSupport","parameters":[{"name":"customLabelsEnabled","value":false},{"name":"degreeHomeCustomLabelsEnabled","value":false}]}

@@ -1,0 +1,1 @@
+module.exports = {"name":"Finaid","parameters":[{"name":"showLongLetter","valid":[false,true],"value":false},{"name":"enableFinaidRigor","valid":[false,true],"value":false}]}

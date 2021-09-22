@@ -1,0 +1,1 @@
+module.exports = {"name":"PeerReview","parameters":[{"name":"anonymizePeerReview","value":false},{"name":"enableMinWordCount","value":false},{"name":"enableDefaultMinWordCount","value":false}]}

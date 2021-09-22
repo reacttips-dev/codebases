@@ -1,0 +1,1 @@
+module.exports = {"name":"FrontendInfra","parameters":[{"name":"muxEnabled","value":false},{"name":"enableBrotliCompression","value":false},{"name":"hasModernRouterEnabled","value":[]}]}

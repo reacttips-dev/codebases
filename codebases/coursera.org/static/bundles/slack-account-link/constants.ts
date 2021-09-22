@@ -1,0 +1,3 @@
+export const VERIFY = 'VERIFY';
+export const LINKED = 'LINKED';
+export const SLACK_ACCOUNT_STATUS = { UNLINKED: 'UNLINKED', EMAIL_VERIFIED: 'EMAIL_VERIFIED' };

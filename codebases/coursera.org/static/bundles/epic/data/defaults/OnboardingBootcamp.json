@@ -1,0 +1,1 @@
+module.exports = {"name":"OnboardingBootcamp","parameters":[{"name":"gotSpoiler","valid":[1,2,3],"value":1},{"name":"navAlignment","valid":["left","right"],"value":"left"}]}

@@ -1,0 +1,32 @@
+(function(wndw) {
+  var jadify = function(jade, _t, _h) {
+    var yudify = function template(locals) {
+var buf = [];
+var jade_mixins = {};
+var jade_interp;
+;var locals_for_with = (locals || {});(function (_t) {
+buf.push("<div class=\"hide confirm-navigation modal\"><div class=\"modal-header\"><h3>" + (jade.escape((jade_interp = _t("Confirm Navigation")) == null ? '' : jade_interp)) + "</h3></div><div class=\"modal-body\"><div class=\"confirm-navigation-message\"></div><div>" + (jade.escape((jade_interp = _t("Are you sure you want to leave this page?")) == null ? '' : jade_interp)) + "</div></div><div class=\"modal-footer\"><button data-modal-close=\"data-modal-close\" class=\"passive confirm-navigation-stay\">" + (jade.escape((jade_interp = _t("Stay on this Page")) == null ? '' : jade_interp)) + "</button>&nbsp;&nbsp;<button data-modal-close=\"data-modal-close\" data-modal-action=\"leave\" class=\"primary confirm-navigation-leave\">" + (jade.escape((jade_interp = _t("Leave this Page")) == null ? '' : jade_interp)) + "</button></div></div>");}.call(this,"_t" in locals_for_with?locals_for_with._t:typeof _t!=="undefined"?_t:undefined));;return buf.join("");
+};
+    return function(locals) {
+      if (locals) {
+        if ("_t" in locals) { _t = locals._t.merge(_t); }
+        // Jade helper objects must define this merge method.
+      }
+      return yudify(locals);
+    };
+  };
+  if(typeof define === "function" && define.amd) {
+    define([
+      "js/vendor/jade"
+      ,"i18n!bundles/confirmNavigation/nls/confirmNavigation"
+    ], function(
+      jade
+      ,_t
+    ) {
+      var _h;
+      return jadify(jade, _t, _h);
+    });
+  } else {
+    wndw.jade.templates["bundles.confirmNavigation.confirmNavigation"] = jadify(wndw.jade.helpers);
+  }
+})(window);

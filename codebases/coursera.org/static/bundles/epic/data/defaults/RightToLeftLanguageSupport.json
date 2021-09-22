@@ -1,0 +1,1 @@
+module.exports = {"name":"RightToLeftLanguageSupport","parameters":[{"name":"RTLBuildEnabled","valid":[false,true],"value":false}]}

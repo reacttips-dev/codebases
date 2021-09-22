@@ -1,0 +1,1 @@
+module.exports = {"name":"NotificationCenter","parameters":[{"name":"notificationCenterEnabled","valid":[false,true],"value":false},{"name":"showPrivacyBanner","valid":[false,true],"value":false}]}

@@ -1,0 +1,1 @@
+module.exports = {"name":"GoogleCertScholarship","parameters":[{"name":"enableGoogleCertScholarship","valid":[false,true],"value":false},{"name":"enableGoogleCertScholarshipSplashPage","valid":[false,true],"value":false}]}

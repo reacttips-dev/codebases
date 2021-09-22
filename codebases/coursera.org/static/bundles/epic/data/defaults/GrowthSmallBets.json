@@ -1,0 +1,1 @@
+module.exports = {"name":"GrowthSmallBets","parameters":[{"name":"ctaCopy","valid":["start_learning","enroll_now"],"value":"default"},{"name":"hideEnrollSessionDate","valid":[true,false],"value":false},{"name":"shouldShowEmployerSocialProof","valid":[true,false],"value":false},{"name":"showCompanyLogos","valid":[true,false],"value":false}]}

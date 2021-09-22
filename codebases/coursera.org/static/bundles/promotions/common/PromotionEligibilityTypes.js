@@ -1,0 +1,10 @@
+import keysToConstants from 'js/lib/keysToConstants';
+
+export default keysToConstants([
+  'ELIGIBLE',
+  'PROMOTION_INACTIVE',
+  'TOTAL_REDEMPTION_LIMIT_REACHED',
+  'PRODUCT_NOT_ELIGIBLE',
+  'USER_REDEMPTION_LIMIT_REACHED',
+  'NOT_ELIGIBLE_FOR_NEW_PAID_LEARNER_PROMOTION',
+]);

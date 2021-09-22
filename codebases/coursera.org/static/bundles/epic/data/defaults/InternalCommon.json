@@ -1,0 +1,1 @@
+module.exports = {"name":"InternalCommon","parameters":[{"name":"v2ExperienceFlags","value":{"ALL":false,"LEARNER":false,"DEGREE":false,"ENTERPRISE":false}},{"name":"learnerAppPhase2ExperienceFlags","value":{"all":false,"activityLog":false,"degreeTile":false,"programTile":false,"learnerDetails":false,"learnerGDPRButton":false,"enrollmentFilter":false,"favicon":false}}]}

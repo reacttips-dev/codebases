@@ -1,0 +1,6 @@
+export const DEADLINE_PROGRESS = {
+  COMPLETE: 'COMPLETE',
+  OVERDUE: 'OVERDUE',
+  UPCOMING: 'UPCOMING',
+} as const;
+

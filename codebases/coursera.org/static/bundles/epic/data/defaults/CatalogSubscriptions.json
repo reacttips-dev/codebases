@@ -1,0 +1,1 @@
+module.exports = {"name":"CatalogSubscriptions","parameters":[{"name":"catalogSubscriptionsV2_1","valid":["control","original","improved","hidden"],"value":"control"},{"name":"catalogSubscriptionsV2_2","valid":["control","hidden","improved","reserved"],"value":"control"}]}

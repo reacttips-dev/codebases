@@ -1,0 +1,1 @@
+module.exports = {"name":"EnterpriseSSO","parameters":[{"name":"whitelistedSkipPasswordSSO","value":["ibWwRHhNQy2j24yTzlB0vA"]},{"name":"SSO_MODES","value":{"GDPR_CONTROLLER_AFTER_FIRST_ENROLLMENT":[],"PASSIVE_GDPR_CONTROLLER":[],"RESTRICTIVE":[]}}]}

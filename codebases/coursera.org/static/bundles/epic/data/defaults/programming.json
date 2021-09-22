@@ -1,0 +1,1 @@
+module.exports = {"name":"programming","parameters":[{"name":"enabledProgrammingSubmissionDownloads","valid":[false,true],"value":false},{"name":"isIframeLabsEnabled","valid":[false,true],"value":false}]}

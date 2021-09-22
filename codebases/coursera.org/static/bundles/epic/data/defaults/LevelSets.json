@@ -1,0 +1,1 @@
+module.exports = {"name":"LevelSets","parameters":[{"name":"GA_Branch_Enabled","valid":[false,true],"value":false},{"name":"Limit_Collection_Enabled","valid":[false,true],"value":false}]}
