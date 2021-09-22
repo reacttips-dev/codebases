@@ -1,0 +1,35 @@
+import type ReadingPaneInfoBarId from './ReadingPaneInfoBarId';
+
+export default function initializeInfoBarIdsForItem(): ReadingPaneInfoBarId[] {
+    return [
+        'unsubscribeInfoBar',
+        'safetyBar',
+        'infoImportance',
+        'infoSensitivity',
+        'infoFlagStatus',
+        'irmInfoBar',
+        'infoMessageSubmitted',
+        'agendaMailFeedback',
+        'unauthenticatedSender',
+        'infoDelegate',
+        'infoMeetingAttendeeDoNotForward',
+        'infoSMIME',
+        'infoSmimeDecodeError',
+        'infoSmimeSigned',
+        'infoItemPartLoadFailure',
+        'infoLastUserAction',
+        'infoReadReceiptRequested',
+        'translateInfoBar',
+        'infoResend',
+        'infoPolicyTag',
+        'infoMessageApprovalAndVoting',
+        'nudged',
+        'nudgeFeedback',
+        'infoMessageClassification',
+        'infoCLPLabel',
+        'infoRevocation',
+        'externalMessage',
+        'spotlight',
+        'spotlightFeedback',
+    ];
+}

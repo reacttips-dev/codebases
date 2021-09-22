@@ -1,0 +1,1 @@
+export { createLazyApolloComponent } from './createLazyApolloComponent';

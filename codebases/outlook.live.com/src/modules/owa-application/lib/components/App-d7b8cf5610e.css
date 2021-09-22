@@ -1,0 +1,8 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._2kUAzKQd_A7zj30wwO3Tty{height:100%;-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column;position:relative;z-index:0}._2kUAzKQd_A7zj30wwO3Tty,.zZJcFiYp1GsQ-Zkcz02eC{overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-direction:normal}.zZJcFiYp1GsQ-Zkcz02eC{height:auto;min-height:0;-webkit-box-flex:1;-ms-flex:1;flex:1;-webkit-box-orient:horizontal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}", ""]);
+// Exports
+exports.locals = {
+	"appContainer": "_2kUAzKQd_A7zj30wwO3Tty",
+	"main": "zZJcFiYp1GsQ-Zkcz02eC"
+};

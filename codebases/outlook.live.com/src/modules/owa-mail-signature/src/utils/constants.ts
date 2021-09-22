@@ -1,0 +1,9 @@
+export const CLOUD_SETTING_BASE_URL = '/ows/beta/OutlookCloudSettings/settings/account';
+export const SIGNATURE_LIST_SETTING_NAME = 'Roaming_Signature_List';
+export const DEFAULT_SIGNATURE_SETTING_NAME = 'Roaming_New_Signature';
+export const DEFAULT_SIGNATURE_REPLY_SETTING_NAME = 'Roaming_Reply_Signature';
+export const HTML_SIGNATURE_SETTING_NAME = 'signaturehtml';
+export const TXT_SIGNATURE_SETTING_NAME = 'signaturetxt';
+export const SIGNATURE_LIST_SETTING_NAME_LO = SIGNATURE_LIST_SETTING_NAME.toLowerCase();
+export const DEFAULT_SIGNATURE_SETTING_NAME_LO = DEFAULT_SIGNATURE_SETTING_NAME.toLowerCase();
+export const DEFAULT_SIGNATURE_REPLY_SETTING_NAME_LO = DEFAULT_SIGNATURE_REPLY_SETTING_NAME.toLowerCase();

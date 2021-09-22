@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "../resources/graphql/schema.all.min-c6710570062267ed18a5f29811298a3b.graphql";

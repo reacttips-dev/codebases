@@ -1,0 +1,9 @@
+var content = require("!!../../../../css-loader/dist/cjs.js??ref--7-1!../../../../postcss-loader/src/index.js??ref--7-2!../../../../sass-loader/lib/loader.js!./ProofingCards.scss");
+var loader = require("/agent/_work/2/s/node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js");
+
+if(typeof content === "string") content = [[module.id, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], false);
+
+if(content.locals) module.exports = content.locals;

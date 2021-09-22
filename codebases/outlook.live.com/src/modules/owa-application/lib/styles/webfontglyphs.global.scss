@@ -1,0 +1,23 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, ".o365-Icon--direct:before{content:\"\\e369\"}.o365-Icon--emptyDocuments:before{content:\"\\e324\"}.o365-Icon--emptyDocumentSearch:before{content:\"\\e404\"}.o365-Icon--emptyDraft:before{content:\"\\e325\"}.o365-Icon--emptyError:before{content:\"\\e347\"}.o365-Icon--emptyFolder:before{content:\"\\e348\"}.o365-Icon--emptyMail:before{content:\"\\e326\"}.o365-Icon--emptySearch:before{content:\"\\e327\"}.o365-Icon--emptyTrash:before{content:\"\\e328\"}.o365-Icon--emptyTrophy:before{content:\"\\e329\"}.o365-Icon--emptyImage:before{content:\"\\e406\"}.o365-Icon--emptyImageSearch:before{content:\"\\e405\"}.o365-Icon--flag2:before{content:\"\\e36b\"}.o365-Icon--magnifyingGlass:before{content:\"\\e36c\"}.o365-Icon--unread:before{content:\"\\e367\"}.o365-Icon--folderClosed:before{content:\"\\e394\"}.o365-Icon--lock3:before{content:\"\\e36f\"}", ""]);
+// Exports
+exports.locals = {
+	"o365-Icon--direct": "o365-Icon--direct",
+	"o365-Icon--emptyDocuments": "o365-Icon--emptyDocuments",
+	"o365-Icon--emptyDocumentSearch": "o365-Icon--emptyDocumentSearch",
+	"o365-Icon--emptyDraft": "o365-Icon--emptyDraft",
+	"o365-Icon--emptyError": "o365-Icon--emptyError",
+	"o365-Icon--emptyFolder": "o365-Icon--emptyFolder",
+	"o365-Icon--emptyMail": "o365-Icon--emptyMail",
+	"o365-Icon--emptySearch": "o365-Icon--emptySearch",
+	"o365-Icon--emptyTrash": "o365-Icon--emptyTrash",
+	"o365-Icon--emptyTrophy": "o365-Icon--emptyTrophy",
+	"o365-Icon--emptyImage": "o365-Icon--emptyImage",
+	"o365-Icon--emptyImageSearch": "o365-Icon--emptyImageSearch",
+	"o365-Icon--flag2": "o365-Icon--flag2",
+	"o365-Icon--magnifyingGlass": "o365-Icon--magnifyingGlass",
+	"o365-Icon--unread": "o365-Icon--unread",
+	"o365-Icon--folderClosed": "o365-Icon--folderClosed",
+	"o365-Icon--lock3": "o365-Icon--lock3"
+};

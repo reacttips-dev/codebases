@@ -1,0 +1,12 @@
+exports = module.exports = require("../../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "html[dir=ltr] ._2P_yKOl5KL20iZbOJlTB2Z{float:right;margin-right:5px}html[dir=rtl] ._2P_yKOl5KL20iZbOJlTB2Z{float:left;margin-left:5px}html[dir=ltr] ._3rc0c7kPVoG2dXSU99_bN_{margin-left:15px}html[dir=rtl] ._3rc0c7kPVoG2dXSU99_bN_{margin-right:15px}html[dir=ltr] ._31clemL5n5JbBnsG5JGzg1{margin-left:25px}html[dir=rtl] ._31clemL5n5JbBnsG5JGzg1{margin-right:25px}._1PmtKVCb-WsRGx2rQRJqK9{font-size:1.6em;font-weight:200}html[dir=ltr] ._1PmtKVCb-WsRGx2rQRJqK9{margin-left:25px}html[dir=rtl] ._1PmtKVCb-WsRGx2rQRJqK9{margin-right:25px}._3dLeSHyu4nmupQuwJF2aED{color:\"[theme:redDark, default:#a80000]\";font-weight:500}html[dir=ltr] ._3dLeSHyu4nmupQuwJF2aED{margin-left:25px}html[dir=rtl] ._3dLeSHyu4nmupQuwJF2aED{margin-right:25px}.INOG8y0dyXE1m3XBfRQ4v{color:\"[theme:neutralTertiary, default:#a19f9d]\"}", ""]);
+// Exports
+exports.locals = {
+	"closeButton": "_2P_yKOl5KL20iZbOJlTB2Z",
+	"addToFavoriteButton": "_3rc0c7kPVoG2dXSU99_bN_",
+	"headerText": "_31clemL5n5JbBnsG5JGzg1",
+	"headerTitle": "_1PmtKVCb-WsRGx2rQRJqK9",
+	"errorText": "_3dLeSHyu4nmupQuwJF2aED",
+	"greyed": "INOG8y0dyXE1m3XBfRQ4v"
+};

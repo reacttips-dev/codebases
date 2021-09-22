@@ -1,0 +1,10 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "html[dir] #FlexPane_OwaTimePanel{background-color:\"[theme:white, default:#ffffff]\"}#FlexPane_OwaTimePanel>div:first-child{width:calc(100% - 32px)}#CustomFlexPane_OwaTimePanel>div{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex}.ufjvef2RsqQpCvKDDB7dd{overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;min-height:0}html[dir] .ufjvef2RsqQpCvKDDB7dd{background-color:\"[theme:white, default:#ffffff]\"}.pPkCreCbV5oY80xVPHSAS{-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;min-height:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:100%}.pPkCreCbV5oY80xVPHSAS,._2itqRfSo1nalWGnQ1N8hZg{position:relative}.BM2ZzE__WY6_Km3OklryH{font-weight:600;font-size:21px}html[dir] .BM2ZzE__WY6_Km3OklryH{margin-bottom:8px}", ""]);
+// Exports
+exports.locals = {
+	"container": "ufjvef2RsqQpCvKDDB7dd",
+	"contentWrapper": "pPkCreCbV5oY80xVPHSAS",
+	"notificationBarHostWrapper": "_2itqRfSo1nalWGnQ1N8hZg",
+	"conflictsHeader": "BM2ZzE__WY6_Km3OklryH"
+};

@@ -62,6 +62,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### O
+* Microsoft Outlook (https://outlook.live.com) - Utilities, Email / Cong Nguyen, 2021/09/23
 
 ---
 ### P

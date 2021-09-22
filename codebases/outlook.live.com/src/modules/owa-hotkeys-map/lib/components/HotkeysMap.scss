@@ -1,0 +1,14 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "html[dir] h3{margin-top:0;margin-bottom:6px}._3hXDWJoSdWdEkEojDUCmNa{-webkit-touch-callout:text;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;cursor:auto;display:-webkit-box;display:-ms-flexbox;display:flex;width:716px}html[dir=ltr] ._3hXDWJoSdWdEkEojDUCmNa{padding:36px 0 0 36px}html[dir=rtl] ._3hXDWJoSdWdEkEojDUCmNa{padding:36px 36px 0 0}._1naLsUhs-GlsHzKhacJVKy{-webkit-touch-callout:text;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;cursor:auto;display:-webkit-box;display:-ms-flexbox;display:flex;width:716px}html[dir=ltr] ._1naLsUhs-GlsHzKhacJVKy{padding:36px 0 18px 36px}html[dir=rtl] ._1naLsUhs-GlsHzKhacJVKy{padding:36px 36px 18px 0}html[dir=ltr] .NVx7082tpzzV7Rr06VYM3{float:right;margin:12px 12px 0 0}html[dir=rtl] .NVx7082tpzzV7Rr06VYM3{float:left;margin:12px 0 0 12px}html[dir] ._3EPTJRxn-PBRwl0otzcTas{margin-bottom:18px}._1V6K4xUhZnmRpS8e5lz9hY{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}._2e2L1gqorJgdN-IftsErKE{font-size:12px;font-weight:400}html[dir=ltr] ._2e2L1gqorJgdN-IftsErKE{margin-right:1em}html[dir=rtl] ._2e2L1gqorJgdN-IftsErKE{margin-left:1em}._4c_VuGF04t5Pvul7AiX1g{font-size:12px;font-weight:400;width:160px;-ms-flex-negative:0;flex-shrink:0;word-wrap:break-word}html[dir=ltr] ._4c_VuGF04t5Pvul7AiX1g{text-align:left}html[dir=rtl] ._4c_VuGF04t5Pvul7AiX1g{text-align:right}html[dir] ._109HD6CzkkndBavVGCClCd{padding:12px 36px 36px 36px}", ""]);
+// Exports
+exports.locals = {
+	"containerWithFooter": "_3hXDWJoSdWdEkEojDUCmNa",
+	"containerWithoutFooter": "_1naLsUhs-GlsHzKhacJVKy",
+	"closeButton": "NVx7082tpzzV7Rr06VYM3",
+	"commandCategoryContainer": "_3EPTJRxn-PBRwl0otzcTas",
+	"shortcut": "_1V6K4xUhZnmRpS8e5lz9hY",
+	"description": "_2e2L1gqorJgdN-IftsErKE",
+	"hotkey": "_4c_VuGF04t5Pvul7AiX1g",
+	"footer": "_109HD6CzkkndBavVGCClCd"
+};

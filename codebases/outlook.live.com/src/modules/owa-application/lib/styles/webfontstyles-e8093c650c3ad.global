@@ -1,0 +1,3 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "[class*=\" o365-Icon--\"]:before,[class^=o365-Icon--]:before{font-family:office365icons;font-style:normal;font-weight:400;speak:none;display:inline-block;text-decoration:inherit;width:1em;font-variant:normal;line-height:1em}html[dir] [class*=\" o365-Icon--\"]:before,html[dir] [class^=o365-Icon--]:before{text-align:center;text-transform:none}html[dir=ltr] [class*=\" o365-Icon--\"]:before,html[dir=ltr] [class^=o365-Icon--]:before,html[dir=rtl] [class*=\" o365-Icon--\"]:before,html[dir=rtl] [class^=o365-Icon--]:before{margin-right:.2em;margin-left:.2em}", ""]);

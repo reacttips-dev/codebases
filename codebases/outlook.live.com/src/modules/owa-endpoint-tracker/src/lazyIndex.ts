@@ -1,0 +1,1 @@
+export { addEndpointDataForOwa } from './addEndpointDataForOwa';

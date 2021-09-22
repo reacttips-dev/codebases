@@ -1,0 +1,15 @@
+export enum AttachmentSelectionSource {
+    MailList = 0,
+    ReadingPane = 1,
+    FilesHub = 2,
+    PhotoHub = 3,
+    GroupFilesHub = 4,
+    ConversationAttachmentWell = 5,
+    Deeplink = 6,
+    FileSuggestion = 7,
+    LinkSuggestion = 8,
+    ComposeDocLink = 9,
+    ReadingPaneDocLink = 10,
+    ConsumerGroupFilesHub = 11,
+    FolderTree = 12,
+}

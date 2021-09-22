@@ -1,0 +1,12 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._2NsSdZqD1si2UsTp8YPZ3T{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:100%;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:\"[theme:neutralSecondary, default:#605e5c]\"}._2UtFvyMQ9RpLwzeLn0zwHp{color:\"[theme:themePrimary, default:#0078D4]\";font-size:120px}._23MM0SwTAkA4lya21UOXC5{font-size:17px;font-weight:300}.tNUFCdu1CTQDWlqMSKrT2{font-size:14px;font-weight:400}html[dir] .tNUFCdu1CTQDWlqMSKrT2{margin-top:10px}._2Sq13vFoSekv4dvwAkzDy3{list-style-type:none}._2Sq13vFoSekv4dvwAkzDy3 .bWpN8XBt3RS-_4z0sEawh{font-size:14px;font-weight:400;color:\"[theme:neutralSecondary, default:#605e5c]\";cursor:pointer;display:block}", ""]);
+// Exports
+exports.locals = {
+	"unsupportedContainer": "_2NsSdZqD1si2UsTp8YPZ3T",
+	"unsupportedIcon": "_2UtFvyMQ9RpLwzeLn0zwHp",
+	"mainText": "_23MM0SwTAkA4lya21UOXC5",
+	"subText": "tNUFCdu1CTQDWlqMSKrT2",
+	"actions": "_2Sq13vFoSekv4dvwAkzDy3",
+	"triageActionButton": "bWpN8XBt3RS-_4z0sEawh"
+};

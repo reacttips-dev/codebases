@@ -1,0 +1,1 @@
+export { wrapItemWithEwsIdGetter } from './wrapItemWithEwsIdGetter';

@@ -1,0 +1,10 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._1XCpy7CCJEpje93rdOAmxN{position:absolute;z-index:2;width:100%;height:calc(100% - 10px);opacity:.9;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:\"[theme:themePrimary, default:#0078D4]\";font-size:14px}html[dir] ._1XCpy7CCJEpje93rdOAmxN{background-color:\"[theme:white, default:#ffffff]\"}.CRBQoAktSskT1zhu_AWYa{color:#107c10}html[dir=ltr] .CRBQoAktSskT1zhu_AWYa{padding-right:4px}html[dir=rtl] .CRBQoAktSskT1zhu_AWYa{padding-left:4px}html[dir=ltr] ._2YW6nJJO9KhKcL8RvJ3zLD{padding-right:8px}html[dir=rtl] ._2YW6nJJO9KhKcL8RvJ3zLD{padding-left:8px}._1zb58oJHCMCQ7jKj9xaJ3B{opacity:0}html[dir] ._1zb58oJHCMCQ7jKj9xaJ3B{-webkit-transition:opacity 4s cubic-bezier(.95,.05,.5,.12);transition:opacity 4s cubic-bezier(.95,.05,.5,.12)}", ""]);
+// Exports
+exports.locals = {
+	"overlay": "_1XCpy7CCJEpje93rdOAmxN",
+	"check": "CRBQoAktSskT1zhu_AWYa",
+	"spinner": "_2YW6nJJO9KhKcL8RvJ3zLD",
+	"fadeOut": "_1zb58oJHCMCQ7jKj9xaJ3B"
+};

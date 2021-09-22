@@ -1,0 +1,17 @@
+export enum CalendarComponent {
+    Unknown = 'Unknown',
+    CalendarModule = 'CalendarModule',
+    CalendarItemPeek = 'CalendarItemPeek',
+    CalendarReadForm = 'CalendarReadForm',
+    CalendarQuickCompose = 'CalendarQuickCompose',
+    CalendarFullCompose = 'CalendarFullCompose',
+    CalendarSurface = 'CalendarSurface',
+    CalendarEventContextMenu = 'CalendarEventContextMenu',
+    MyDayPanel = 'MyDayPanel',
+    MyDayPanelCompose = 'MyDayPanelCompose',
+    MyDayPanelEventView = 'MyDayPanelEventView',
+    MailCalendarCard = 'MailCalendarCard',
+    MailMeetingMessage = 'MailMeetingMessage',
+    MailListViewActions = 'MailListViewActions',
+    SearchResultsActions = 'SearchResultsActions',
+}

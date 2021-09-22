@@ -1,0 +1,1 @@
+export { showModal } from './showModal';export type { OwaModalProps } from './showModal';

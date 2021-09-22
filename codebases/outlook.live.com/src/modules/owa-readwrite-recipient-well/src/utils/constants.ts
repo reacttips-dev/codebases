@@ -1,0 +1,3 @@
+export const FIND_PEOPLE_REQUEST_COUNT_THRESHOLD = 3;
+export const MAX_ENTRIES_TYPEDOWN = 5;
+export const MAX_ENTRIES_DIRECTORY = 20;

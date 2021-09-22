@@ -1,0 +1,7 @@
+exports = module.exports = require("../../../css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "#OwaReferenceAttachments{display:none}", ""]);
+// Exports
+exports.locals = {
+	"OwaReferenceAttachments": "OwaReferenceAttachments"
+};

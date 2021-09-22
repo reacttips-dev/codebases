@@ -1,0 +1,7 @@
+export const INLINEIMAGE_CUSTOM_DATA_TEMPLATE = '{id}';
+export const INLINEIMAGE_URL_TEMPLATE =
+    'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7';
+export const INLINEIMAGE_ATTRIBUTE_DATA_CUSTOM = 'data-custom';
+export const INLINEIMAGE_ATTRIBUTE_ORIGINALSRC = 'originalsrc';
+export const INLINEIMAGE_ATTRIBUTE_LOADSTATUS = 'data-loadstatus';
+export const INLINEIMAGE_ATTRIBUTE_VALUE_PENDING = 'pending';

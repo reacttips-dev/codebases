@@ -1,0 +1,12 @@
+export const LINK_CONTEXT_MENU = 'LinkContextMenu';
+export const SPAN_TAG_NAME = 'SPAN';
+export const ANCHOR_TAG_NAME_LOWER_CASE = 'a';
+export const CONTEXT_MENU_EVENT_NAME = 'contextmenu';
+export const CLICK_EVENT_NAME = 'click';
+export const ATTRIBUTE_STYLE_NAME = 'style';
+export const ATTRIBUTE_CONTENTEDITABLE_NAME = 'contenteditable';
+export const STYLE_SEPARATOR = ';';
+export const BACKGROUND_COLOR_CONVERTED = 'rgb(58, 58, 58)';
+export const BACKGROUND_COLOR_CONVERTED_CSS = 'background-color: rgb(58, 58, 58) !important;';
+export const BEAUTIFUL_LINK_COMPOSE_ONLY_ATTRIBUTE_NAME = 'owa-btf-l-cmp-only';
+export const LINK_CHANGE_SOURCE = 'link';

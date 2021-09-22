@@ -1,0 +1,1 @@
+export const DEFAULT_OUTLOOK_THEME_COLOR = '#0078D4';

@@ -1,0 +1,14 @@
+export type { Adapter } from './adapters/AdapterManager';
+export { isAdapterPresent } from './adapters/AdapterManager';
+export { getAdapter, deleteAdapter, addAdapter } from './adapters/AdapterManager';
+export type { default as CommonAdapter } from './adapters/CommonAdapter';
+export type { default as MessageComposeAdapter } from './adapters/MessageComposeAdapter';
+export type { default as TaskPaneAdapter } from './adapters/TaskPaneAdapter';
+export type { default as MessageReadAdapter } from './adapters/MessageReadAdapter';
+export type { default as AppointmentComposeAdapter } from './adapters/AppointmentComposeAdapter';
+export type { default as AppointmentReadAdapter } from './adapters/AppointmentReadAdapter';
+export type { default as ComposeTimeAdapter } from './adapters/ComposeTimeAdapter';
+export type { default as ReadDisplayAdapter } from './adapters/ReadDisplayAdapter';
+export type { default as ComposeRecurrenceAdapter } from './adapters/ComposeRecurrenceAdapter';
+export type { default as RecurrenceAdapter } from './adapters/ComposeRecurrenceAdapter';
+export type { default as ComposeSignatureAdapter } from './adapters/ComposeSignatureAdapter';

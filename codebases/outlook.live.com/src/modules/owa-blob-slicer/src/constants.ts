@@ -1,0 +1,2 @@
+export const DEFAULT_SLICE_SIZE = 14 * 1024 * 1024; // 14 Mb
+export const DEFAULT_NUMBER_OF_SLICES_TO_PARALLELIZE = 2;

@@ -1,0 +1,1 @@
+export { touchHandler } from './utils/touchHandler';export type { ITouchHandlerParams } from './utils/touchHandler';
