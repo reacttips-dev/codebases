@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/anchor.fm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/codebases/bestbuy.ca(1)/src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/bestbuy.ca/src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/cloud.elastic.co" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/codebases/cloud.elastic.co (1)" vcs="Git" />
