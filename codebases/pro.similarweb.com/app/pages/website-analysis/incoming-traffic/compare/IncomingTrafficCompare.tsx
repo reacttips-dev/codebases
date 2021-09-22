@@ -1,0 +1,848 @@
+import { colorsPalettes } from "@similarweb/styles";
+import { ECategoryType } from "common/services/categoryService.types";
+import { swSettings } from "common/services/swSettings";
+import BoxTitle from "components/BoxTitle/src/BoxTitle";
+import Chart from "components/Chart/src/Chart";
+import { TrafficShareWithVisits } from "components/React/Table/cells";
+import { TrafficShareWithTooltip } from "components/TrafficShare/src/TrafficShareWithTooltip";
+import { StyledCoreWebsiteCell } from "pages/segments/analysis/StyledComponents";
+import { getOverTimeChartAbsNumsConfigCompare } from "pages/website-analysis/incoming-traffic/commonOverTime";
+import TrafficOverTimeChartNoData from "pages/website-analysis/TrafficOverTimeChartNoData";
+import * as queryString from "query-string";
+import * as React from "react";
+import { connect } from "react-redux";
+import DurationService from "services/DurationService";
+import { ETableSelectionNewGroupDropdownMode } from "../../../../../.pro-features/components/TableSelection/src/TableSelectionNewGroupDropdown";
+import ComponentsProvider from "../../../../../.pro-features/components/WithComponent/src/ComponentsProvider";
+import { Injector } from "../../../../../scripts/common/ioc/Injector";
+import { SwNavigator } from "../../../../../scripts/common/services/swNavigator";
+import { tableActionsCreator } from "../../../../actions/tableActions";
+import { showSuccessToast } from "../../../../actions/toast_actions";
+import { SWReactTableWrapperWithSelection } from "../../../../components/React/Table/SWReactTableWrapperSelectionContext";
+import { getToastItemComponent } from "../../../../components/React/Toast/ToastItem";
+import { WebsiteTooltip } from "../../../../components/React/Tooltip/WebsiteTooltip/WebsiteTooltip";
+import { CHART_COLORS } from "../../../../constants/ChartColors";
+import SWReactRootComponent from "../../../../decorators/SWReactRootComponent";
+import { ServerUrl } from "../../../../exporters/HighchartExport";
+import {
+    changeFilter,
+    i18nCategoryFilter,
+    i18nFilter,
+    smallNumbersPercentageFilter,
+} from "../../../../filters/ngFilters";
+import { IncomingReferralsAdvancedFilterService } from "../../../../services/AdvancedFilterService/IncomingReferralsAdvancedFilter";
+import { DefaultFetchService } from "../../../../services/fetchService";
+import { PngExportService } from "../../../../services/PngExportService";
+import { allTrackers } from "../../../../services/track/track";
+import {
+    IncomingTrafficLineChart,
+    IncomingTrafficLineChartDataTransformer,
+} from "../IncomingTrafficLineChart";
+import {
+    IncomingTrafficPieChart,
+    IncomingTrafficPieChartDataTransformer,
+} from "../IncomingTrafficPieChart";
+import {
+    CloseIconButton,
+    EnrichedRowHeaderTrafficShare,
+    ReferralsPage,
+    ToggleIconButton,
+    TrafficOverTime,
+    TrafficOverTimeChangeWrapShare,
+    TrafficOverTimeChart,
+    TrafficOverTimeChartTitle,
+    TrafficOverTimeIndex,
+    TrafficOverTimeLeft,
+    TrafficOverTimeShareWithAbsWrap,
+    TrafficOverTimeTitle,
+    TrafficOverTimeWebSiteWrapForAbsNums,
+} from "../StyledComponents";
+import { IncomingTrafficCompareTableSettings } from "./IncomingTrafficCompareTableSettings";
+import { IncomingTrafficCompareTableTop } from "./IncomingTrafficCompareTableTop";
+import { DomainSelection } from "components/React/TableSelectionComponents/DomainSelection";
+import { CookieManager } from "components/cookie-manager/CookieManager";
+import { MAX_DOMAINS_IN_CATEGORY } from "components/customCategoriesWizard/custom-categories-wizard-react";
+import { apiHelper } from "common/services/apiHelper";
+import { UserCustomCategoryService } from "services/category/userCustomCategoryService";
+import categoryService from "common/services/categoryService";
+
+const cookieManager: CookieManager = new CookieManager();
+interface IBackendData {
+    AllCategories: Array<{
+        Count: number;
+        Name: string;
+        Value: number;
+    }>;
+    TopCategories: Array<{
+        Count: number;
+        Name: string;
+        Value: number;
+    }>;
+    TotalShare: number;
+    TotalUnGroupedCount: number;
+    TotalVisits: number;
+    TotalVisitsGlobalList: { [key: string]: number };
+    Categories: { [key: string]: Array<{ Name: string; Value: number }> };
+    Topics: Array<{ Name: string; Value: number }>;
+}
+
+export interface IIncomingTrafficPageData {
+    dictionary: {
+        [key: string]: {
+            Dates: string[];
+            SearchTotal: number;
+            VolumeTotal: number;
+            Volumes: Array<[number, number]>;
+        };
+    };
+}
+
+interface IIncomingTrafficCompareProps {
+    selectedRows: Array<{ Domain: string }>;
+    clearAllSelectedRows: () => void;
+    showToast: (href, text, label) => void;
+    params: any;
+}
+
+const i18n = i18nFilter();
+
+class IncomingTrafficCompare extends React.PureComponent<IIncomingTrafficCompareProps, any> {
+    private dropdownRef;
+    private swNavigator = Injector.get<SwNavigator>("swNavigator");
+    private swSettings: any = swSettings;
+    private chosenSites = Injector.get<any>("chosenSites");
+    private pageSize = 100;
+    private pieChartInstance;
+    private lineChartInstance;
+
+    constructor(props) {
+        super(props);
+        this.dropdownRef = React.createRef();
+        this.state = {
+            allCategories: [],
+            totalSectionData: null,
+            newGroupType: ECategoryType.PARTNERS_LIST,
+            tableSelectionMode: ETableSelectionNewGroupDropdownMode.GROUP_LIST,
+            lineChartTitle: i18n("analysis.common.trafficsource.referrals.title"),
+            lineChartTitleTooltip: i18n("analysis.common.trafficsource.referrals.title.tooltip"),
+            pageNumber: 0,
+            sort: this.props.params?.orderBy,
+        };
+        this.changePageCallback = this.changePageCallback.bind(this);
+    }
+
+    public async componentDidMount() {
+        const { orderBy } = this.props.params;
+        if (orderBy && orderBy.includes("EngagementScore")) {
+            this.swNavigator.updateParams({ orderBy: null });
+        }
+        const data = await this.getPageData();
+        const { lineChartData } = IncomingTrafficLineChartDataTransformer(data, this.chosenSites);
+        const { pieChartData } = IncomingTrafficPieChartDataTransformer(data, this.chosenSites);
+        this.setState({
+            lineChartData,
+            pieChartData,
+        });
+    }
+
+    public onCheckboxChange = ({ field, value }) => {
+        this.swNavigator.applyUpdateParams({ [field]: value });
+    };
+
+    public render() {
+        const downloadExcelPermitted = this.swSettings.current.resources.IsExcelAllowed;
+        const {
+            referralsCategory: category,
+            limits,
+            engagementTypeFilter,
+            webSource,
+            duration,
+            key,
+        } = this.props?.params;
+        const durationObject = DurationService.getDurationData(duration, null, null, null);
+        const { from, to, isWindow, isCustom } = durationObject.raw;
+        const categoryName = category ? decodeURIComponent(category).split(",") : null;
+        const { lineChartTitle, lineChartTitleTooltip } = this.state;
+        const hasCustomCategoriesPermission = categoryService.hasCustomCategoriesPermission();
+        const selectedRows = this.props.selectedRows;
+        const pageSize = this.pageSize;
+        const pageNumber = this.state.pageNumber;
+        const durationDiff = DurationService.getDiffSymbol(from, to);
+        const showTrafficOverTimeChartNoData = ["28d", "1m"].includes(durationDiff);
+        return (
+            <ReferralsPage className="sharedTooltip">
+                {this.state.lineChartData && (
+                    <div className="row-fluid is-compare">
+                        <IncomingTrafficPieChart
+                            afterRender={this.afterPieChartRender}
+                            onExport={this.onPieChartExport}
+                            data={this.state.pieChartData}
+                            webSource={webSource}
+                            to={to}
+                            from={from}
+                        />
+                        <IncomingTrafficLineChart
+                            afterRender={this.afterLineChartRender}
+                            onExport={this.onLineChartExport}
+                            isDaily={isWindow}
+                            data={this.state.lineChartData}
+                            webSource={webSource}
+                            to={to}
+                            from={from}
+                            title={lineChartTitle}
+                            titleTooltip={lineChartTitleTooltip}
+                            is28d={duration === "28d"}
+                        />
+                    </div>
+                )}
+                <SWReactTableWrapperWithSelection
+                    changePageCallback={this.changePageCallback}
+                    tableSelectionKey="IncomingTrafficCompare"
+                    tableSelectionProperty="Domain"
+                    maxSelectedRows={MAX_DOMAINS_IN_CATEGORY}
+                    cleanOnUnMount={true}
+                    serverApi={this.getApiEndpoint()}
+                    initialFilters={this.getInitialFilters()}
+                    tableColumns={this.getColumns(hasCustomCategoriesPermission, to)}
+                    transformData={this.transformData}
+                    getDataCallback={this.onGetData}
+                    dataParamsAdapter={this.dataParamsAdapter}
+                    tableOptions={{
+                        metric: "MarketingWorkspaceWebsiteGroupTable",
+                        aboveHeaderComponents: [
+                            <DomainSelection
+                                key="DomainSelection"
+                                showToast={this.props.showToast}
+                                clearAllSelectedRows={this.props.clearAllSelectedRows}
+                                selectedRows={this.props.selectedRows}
+                            />,
+                        ],
+                        showCompanySidebar: true,
+                        tableSelectionTrackingParam: "Domain",
+                        trackName: "Traffic Sources",
+                        get enrichedRowComponentClass() {
+                            return `DropdownContent-container ${
+                                selectedRows && selectedRows.length > 0 ? "selected" : ""
+                            }`;
+                        },
+                        get EnrichedRowComponent() {
+                            return (props) => {
+                                const {
+                                    index,
+                                    Favicon,
+                                    Domain,
+                                    trafficDistribution,
+                                    SiteOriginsPerMonth,
+                                    TotalVisitsAndSharePerMonth = [],
+                                    TotalShare,
+                                } = props.row;
+                                const keys = key.split(",");
+                                const clickOutsideXButton = (e) => {
+                                    allTrackers.trackEvent(
+                                        "Open",
+                                        "Click",
+                                        "Traffic Over Time/Collapsed",
+                                    );
+                                    document.body.click();
+                                };
+                                const colors = CHART_COLORS.compareMainColors.slice();
+                                const categories = SiteOriginsPerMonth.map((x) =>
+                                    new Date(x.Key).getTime(),
+                                );
+                                const data = keys.reduce((result, site) => {
+                                    const siteData = [];
+                                    // to keep date in order we transform to array
+                                    const totalVisitsAndSharePerMonthArray = Object.entries(
+                                        TotalVisitsAndSharePerMonth,
+                                    ).sort((a, b) => (a[0] > b[0] ? 1 : -1));
+                                    for (const value of totalVisitsAndSharePerMonthArray) {
+                                        const siteObj = (value[1] as Array<{
+                                            AbsValue: number;
+                                            Value: number;
+                                            Site: string;
+                                        }>).find((item) => item.Site === site);
+                                        if (siteObj) {
+                                            siteData.push({
+                                                y: siteObj.AbsValue,
+                                                share: siteObj.Value,
+                                            });
+                                        }
+                                    }
+                                    result.push({ name: site, data: siteData });
+                                    return result;
+                                }, []);
+                                return (
+                                    <div>
+                                        <TrafficOverTime>
+                                            <TrafficOverTimeLeft>
+                                                <div onClick={clickOutsideXButton}>
+                                                    <ToggleIconButton
+                                                        iconName="chev-up"
+                                                        type="flat"
+                                                    />
+                                                </div>
+                                                <TrafficOverTimeIndex>
+                                                    {pageNumber * pageSize + index + 1}
+                                                </TrafficOverTimeIndex>
+                                                <TrafficOverTimeWebSiteWrapForAbsNums>
+                                                    <ComponentsProvider
+                                                        components={{ WebsiteTooltip }}
+                                                    >
+                                                        <StyledCoreWebsiteCell
+                                                            icon={Favicon}
+                                                            domain={Domain}
+                                                            externalLink={`http://${Domain}`}
+                                                            trackExternalLink={() =>
+                                                                allTrackers.trackEvent(
+                                                                    "external link",
+                                                                    "click",
+                                                                    `Conversion Category Overview`,
+                                                                )
+                                                            }
+                                                        />
+                                                    </ComponentsProvider>
+                                                </TrafficOverTimeWebSiteWrapForAbsNums>
+                                                <TrafficOverTimeShareWithAbsWrap>
+                                                    <TrafficOverTimeTitle>
+                                                        {i18n(
+                                                            "analysis.source.search.all.table.columns.totalShareCompare.title",
+                                                        )}
+                                                    </TrafficOverTimeTitle>
+                                                    <EnrichedRowHeaderTrafficShare>
+                                                        <TrafficShareWithVisits
+                                                            {...props.row}
+                                                            value={TotalShare}
+                                                            row={props.row}
+                                                            layout="row"
+                                                            applyAbbrNumberFilter={true}
+                                                        />
+                                                    </EnrichedRowHeaderTrafficShare>
+                                                </TrafficOverTimeShareWithAbsWrap>
+                                                <TrafficOverTimeChangeWrapShare>
+                                                    <TrafficOverTimeTitle>
+                                                        {i18n(
+                                                            "analysis.source.search.all.table.columns.shareCompare.title",
+                                                        )}
+                                                    </TrafficOverTimeTitle>
+                                                    <TrafficShareWithTooltip
+                                                        data={trafficDistribution}
+                                                        title={i18n(
+                                                            "incomingtraffic.competitivetrafficshare.tooltip",
+                                                        )}
+                                                    />
+                                                </TrafficOverTimeChangeWrapShare>
+                                            </TrafficOverTimeLeft>
+                                            <CloseIconButton
+                                                type="flat"
+                                                onClick={clickOutsideXButton}
+                                                iconName="clear"
+                                                placement="left"
+                                            />
+                                        </TrafficOverTime>
+                                        {!showTrafficOverTimeChartNoData ? (
+                                            <TrafficOverTimeChart>
+                                                <TrafficOverTimeChartTitle>
+                                                    <BoxTitle
+                                                        tooltip={i18n(
+                                                            "incomingtraffic.overtime.compare.chart.title.tooltip",
+                                                        )}
+                                                    >
+                                                        {i18n(
+                                                            "incomingtraffic.overtime.compare.chart.title",
+                                                        )}
+                                                    </BoxTitle>
+                                                </TrafficOverTimeChartTitle>
+                                                <Chart
+                                                    type="column"
+                                                    config={getOverTimeChartAbsNumsConfigCompare({
+                                                        type: "column",
+                                                        colors,
+                                                        categories,
+                                                    })}
+                                                    data={data}
+                                                    domProps={{ style: { height: "250px" } }}
+                                                />
+                                            </TrafficOverTimeChart>
+                                        ) : (
+                                            <TrafficOverTimeChartNoData />
+                                        )}
+                                    </div>
+                                );
+                            };
+                        },
+                        get enrichedRowComponentHeight() {
+                            return 580;
+                        },
+                        shouldApplyEnrichedRowHeightToCell: false,
+                        shouldEnrichRow: (props, index, e) => {
+                            const openEnrich = e?.currentTarget?.childNodes[0]?.className.includes(
+                                "enrich",
+                            );
+                            if (openEnrich) {
+                                allTrackers.trackEvent("Open", "Click", "Traffic Over Time/Expand");
+                            }
+                            return openEnrich;
+                        },
+                        get enrichOnLoadRowNumber() {
+                            const cookieName = "IncomingTrafficCompareEnrichOnLoad";
+                            const cookie = cookieManager.getCookie(cookieName);
+                            let isMinThreeMonths;
+                            // 'isCustom' ie. not a preset duration.
+                            if (!isCustom) {
+                                isMinThreeMonths = duration !== "28d" && duration !== "1m";
+                            } else {
+                                isMinThreeMonths =
+                                    DurationService.diffByUnit(
+                                        durationObject.forAPI.from,
+                                        durationObject.forAPI.to,
+                                        "months",
+                                    ) +
+                                        1 >=
+                                    3;
+                            }
+
+                            if (isMinThreeMonths && !cookie) {
+                                cookieManager.setCookie(cookieName, true, 1);
+                                return 1;
+                            }
+                            return null;
+                        },
+                        onEnrichedRowClick: (isOpen, rowIndex, row) => {
+                            // console.log('onEnrichedRowClick');
+                        },
+                        customTableClass: "incoming-traffic-table",
+                    }}
+                    recordsField="records"
+                    totalRecordsField="TotalCount"
+                    onSort={this.onSort}
+                    pageIndent={1}
+                >
+                    {(topComponentProps) => (
+                        <IncomingTrafficCompareTableTop
+                            {...topComponentProps}
+                            selectedLimits={limits}
+                            selectedEngagementTypeFilter={engagementTypeFilter || null}
+                            selectedCategoryId={category}
+                            selectedCategory={categoryName}
+                            allCategories={this.state.allCategories}
+                            totalSectionData={this.state.totalSectionData}
+                            referralsTrafficShare={this.state.referralsTrafficShare}
+                            excelLink={this.getExcel()}
+                            downloadExcelPermitted={downloadExcelPermitted}
+                            topics={this.state.topics}
+                            categoriesData={this.state.categoriesData}
+                            domainMetaData={this.state.domainMetaData}
+                            onCheckboxChange={this.onCheckboxChange}
+                            href={this.swNavigator.href.bind(this.swNavigator)}
+                            current={this.swNavigator.current.bind(this.swNavigator)}
+                            updateParams={this.swNavigator.updateParams.bind(this.swNavigator)}
+                            params={this.props.params}
+                            convertLimitsToApiParam={this.convertLimitsToApiParam}
+                        />
+                    )}
+                </SWReactTableWrapperWithSelection>
+            </ReferralsPage>
+        );
+    }
+
+    private changePageCallback(page) {
+        this.setState({ pageNumber: page });
+    }
+
+    private afterLineChartRender = (chart) => {
+        this.lineChartInstance = chart;
+        return {};
+    };
+
+    private afterPieChartRender = (chart) => {
+        this.pieChartInstance = chart;
+        return {};
+    };
+
+    private onLineChartExport = () => {
+        allTrackers.trackEvent(`Download`, `submit-ok`, `Referral Visits/PNG`);
+        if (this.lineChartInstance) {
+            const { lineChartTitle } = this.state;
+            let trimmedDateTitle =
+                lineChartTitle.indexOf("from") != -1
+                    ? lineChartTitle.substr(0, lineChartTitle.indexOf("from") - 1)
+                    : lineChartTitle;
+            trimmedDateTitle =
+                lineChartTitle.indexOf("Last") != -1
+                    ? lineChartTitle.substr(0, lineChartTitle.indexOf("Last") - 1)
+                    : trimmedDateTitle;
+            Injector.get<PngExportService>("pngExportService").export(
+                this.lineChartInstance,
+                trimmedDateTitle,
+            );
+        }
+    };
+
+    private dataParamsAdapter = (params) => {
+        const transformedParams = { ...params };
+        if (transformedParams.filter) {
+            delete transformedParams.filter;
+        }
+        if (transformedParams.sort) {
+            delete transformedParams.sort;
+        }
+        if (transformedParams.referralsCategory) {
+            transformedParams.Category = transformedParams.referralsCategory;
+            delete transformedParams.referralsCategory;
+        }
+        // convert limits param to actual api param
+        if (transformedParams.limits) {
+            transformedParams.limits = this.convertLimitsToApiParam(transformedParams.limits);
+        }
+        return transformedParams;
+    };
+
+    private onPieChartExport = () => {
+        allTrackers.trackEvent(`Download`, `submit-ok`, `Traffic Share/PNG`);
+        if (this.pieChartInstance) {
+            const chartTitle = i18n("analysis.compare.trafficsource.overview.share");
+            const exportOptions = {
+                exporting: {
+                    url: ServerUrl,
+                },
+                filename: chartTitle.replace(/[,`]/g, " "),
+            };
+            const chartOptions = {
+                title: {
+                    text: chartTitle,
+                    style: {
+                        fontSize: "14px",
+                        fontFamily: '"Roboto", sans-serif',
+                    },
+                },
+                plotOptions: {
+                    pie: {
+                        dataLabels: {
+                            enabled: false,
+                        },
+                    },
+                },
+            };
+            this.pieChartInstance.exportChart(exportOptions, chartOptions);
+        }
+    };
+    public getColumns = (useSelection, to) => {
+        const { webSource, duration } = this.props.params;
+        let sortedColumn;
+        if (this.state.sort) {
+            const [field, sortDirection] = this.state.sort.split(" ");
+            sortedColumn = {
+                field,
+                sortDirection,
+            };
+        }
+        const columns = IncomingTrafficCompareTableSettings.getColumns(
+            sortedColumn,
+            useSelection,
+            webSource,
+            duration === "28d",
+            !to.isBefore("2018-10-01"),
+        );
+        return columns;
+    };
+
+    public convertLimitsToApiParam = (limits) => {
+        const filters = IncomingReferralsAdvancedFilterService.getAllFilters();
+        return filters.find((filter) => filter.id === limits).api;
+    };
+
+    public getInitialFilters = () => {
+        const params = { ...this.props.params };
+        // orderBy
+        if (!params.orderBy) {
+            params.orderBy = "TotalShare desc";
+        }
+        const apiParams = apiHelper.transformParamsForAPI(params);
+        return apiParams;
+    };
+
+    public getApiEndpoint = () => {
+        const { webSource } = this.props.params;
+        switch (webSource) {
+            case "MobileWeb":
+                return "/api/websiteanalysis/GetTrafficSourcesMobileWebReferralsTable";
+            case "Total":
+                return "/api/websiteanalysis/GetTrafficSourcesTotalReferralsTable";
+            case "Desktop":
+                return "/api/websiteanalysis/GetTrafficSourcesReferralsTable";
+        }
+    };
+
+    public transformData = (data) => {
+        const params = this.props.params;
+        const keys = params.key.split(",");
+        return {
+            ...data,
+            records: data.Records.map((record) => {
+                return {
+                    ...record,
+                    TotalSharePerMonth: record.TotalSharePerMonth ? record.TotalSharePerMonth : [],
+                    SiteOriginsPerMonth: record.SiteOriginsPerMonth
+                        ? record.SiteOriginsPerMonth
+                        : [],
+                    url: this.swNavigator.href("websites-worldwideOverview", {
+                        ...params,
+                        key: record.Domain,
+                    }),
+                    EngagementScores: record.EngagementScores
+                        ? Object.entries(record.EngagementScores).map(([key, val]) => ({
+                              name: key,
+                              score: val,
+                          }))
+                        : [],
+                    TotalShare: record.FilteredShare && record.FilteredShare,
+                    trafficDistribution: record.SiteOrigins
+                        ? Object.entries(record.SiteOrigins).map(([site, value], index) => {
+                              const colorIndex = keys.indexOf(site);
+                              return {
+                                  color: colorsPalettes.carbon[0],
+                                  backgroundColor: CHART_COLORS.main[colorIndex],
+                                  width: value,
+                                  text: smallNumbersPercentageFilter()(value, 1),
+                                  name: site,
+                              };
+                          })
+                        : [],
+                    Children: Array.isArray(record.Children)
+                        ? record.Children.map((child) => {
+                              return {
+                                  ...child,
+                                  url: this.swNavigator.href("websites-worldwideOverview", {
+                                      ...params,
+                                      key: child.Domain,
+                                  }),
+                                  trafficDistribution: child.SiteOrigins
+                                      ? Object.entries(child.SiteOrigins).map(
+                                            ([site, value], index) => {
+                                                const colorIndex = keys.indexOf(site);
+                                                return {
+                                                    color: colorsPalettes.carbon[0],
+                                                    backgroundColor: CHART_COLORS.main[colorIndex],
+                                                    width: value,
+                                                    text: smallNumbersPercentageFilter()(value, 1),
+                                                    name: site,
+                                                };
+                                            },
+                                        )
+                                      : [],
+                              };
+                          })
+                        : null,
+                };
+            }),
+            TotalVisitsGlobalList: Object.entries<number>(data.TotalVisitsGlobalList).map(
+                ([domain, percentage]) => {
+                    return {
+                        color: this.chosenSites.getSiteColor(domain),
+                        name: domain,
+                        percentage,
+                        valueText: changeFilter()(percentage),
+                        width: percentage * 100,
+                    };
+                },
+            ),
+        };
+    };
+
+    public onGetData = (data: IBackendData) => {
+        // This code uses legacy chosenItems service to populate the categories table
+        const temp = {
+            categories: {
+                CategoriesList: [],
+            },
+        };
+        this.chosenSites.registerLists(
+            temp,
+            [
+                {
+                    name: "Categories",
+                    topList: data.TopCategories,
+                    func(obj, category) {
+                        if (
+                            category.Name.toLowerCase() !== "others" &&
+                            category.Name.toLowerCase() !== "other"
+                        ) {
+                            obj.Id = category.Name.replace("/", "~");
+                        }
+                        return obj;
+                    },
+                },
+            ],
+            "categories",
+            data,
+        );
+        //
+
+        this.setState({
+            allCategories: data.AllCategories,
+            topCategories: data.TopCategories,
+            totalSectionData: {
+                totalShare: data.TotalShare > 0.99 ? 1 : data.TotalShare,
+                totalUnGroupedCount: data.TotalUnGroupedCount,
+                totalVisits: data.TotalVisits,
+            },
+            referralsTrafficShare: data.TotalVisitsGlobalList,
+            topics: data.Topics,
+            categoriesData: temp.categories.CategoriesList.map((cat) => {
+                return {
+                    category: i18nCategoryFilter()(cat.name),
+                    categoryApi: cat.Id,
+                    ...Object.entries(data.Categories).reduce((acc, [domain, domainCategories]) => {
+                        const { value } = cat.sites.find((site) => site.name === domain);
+                        return {
+                            ...acc,
+                            [domain]: [value],
+                        };
+                    }, {}),
+                };
+            }),
+            domainMetaData: this.chosenSites.map((site) => {
+                return {
+                    icon: this.chosenSites.listInfo[site].icon,
+                    name: site,
+                    color: this.chosenSites.getSiteColor(site),
+                };
+            }),
+        });
+    };
+    public getExcel = () => {
+        const params = this.dataParamsAdapter(this.getInitialFilters());
+        const queryStringParams = queryString.stringify(params);
+        return `export/analysis/GetTrafficSourcesReferralsTsv?${queryStringParams}`;
+    };
+
+    public showSuccessToast = (name, isNewGroup, workspaceId?: string) => {
+        this.props.clearAllSelectedRows();
+        this.setState({
+            tableSelectionMode: ETableSelectionNewGroupDropdownMode.GROUP_LIST,
+            newGroupErrorMessage: null,
+            newGroupError: false,
+        });
+        this.dropdownRef.current.close();
+        const text = isNewGroup
+            ? i18n("table.selection.websites.groupcreated")
+            : i18n("table.selection.websites.groupupdated");
+        this.showGroupLinkToast(name, text, i18n("table.selection.websites.seegroup"), workspaceId);
+    };
+
+    public showGroupLinkToast = (name, text, label, workspaceId?: string) => {
+        const params = this.props.params;
+        let linkToGroup;
+        if (workspaceId) {
+            const groupId = UserCustomCategoryService.getCustomCategories().find(
+                (c) => c.text === name,
+            ).categoryId;
+            linkToGroup = this.swNavigator.href("marketingWorkspace-websiteGroup", {
+                websiteGroupId: groupId,
+                workspaceId,
+                ...params,
+            });
+        } else {
+            linkToGroup = this.swNavigator.href("industryAnalysis-overview", {
+                ...params,
+                category: `*${name}`,
+            });
+        }
+        this.dropdownRef.current.close();
+        this.props.showToast(linkToGroup, text, label);
+    };
+
+    public onAdd = (s) => (event) => {};
+
+    public onSort = ({ field, sortDirection }) => {
+        this.swNavigator.applyUpdateParams({
+            orderBy: `${field} ${sortDirection}`,
+        });
+        this.setState({
+            sort: `${field} ${sortDirection}`,
+        });
+    };
+
+    public setStateAsync(newState) {
+        return new Promise<void>((resolve, reject) => {
+            this.setState(newState, resolve);
+        });
+    }
+
+    public onListTypeSelect = (typeId) => {
+        this.setState({ newGroupType: typeId });
+    };
+
+    private getPageData = (): Promise<IIncomingTrafficPageData> => {
+        const params = { ...this.props.params };
+        Object.keys(params).forEach((key) => params[key] === undefined && delete params[key]);
+        if (params.limits) {
+            delete params.limits;
+        }
+        const apiParams = apiHelper.transformParamsForAPI(params);
+        let endpoint = "";
+        switch (params.webSource) {
+            case "MobileWeb":
+                endpoint = "/api/websiteanalysis/GetTrafficSourcesMobileWebReferrals";
+                break;
+            case "Total":
+                endpoint = "/api/websiteanalysis/GetTrafficSourcesTotalReferrals";
+                break;
+            case "Desktop":
+                endpoint = "/api/websiteanalysis/GetTrafficSourcesReferrals";
+                break;
+        }
+
+        return DefaultFetchService.getInstance().get(endpoint, apiParams);
+    };
+}
+
+const mapStateToProps = ({ routing: { params }, tableSelection: { IncomingTrafficCompare } }) => {
+    return {
+        params,
+        selectedRows: IncomingTrafficCompare,
+    };
+};
+
+export const mapDispatchToProps = (dispatch) => {
+    return {
+        clearAllSelectedRows: () => {
+            dispatch(
+                tableActionsCreator("IncomingTrafficCompare", "Domain").clearAllSelectedRows(),
+            ); // todo
+        },
+        showToast: (href, text, label) => {
+            dispatch(
+                showSuccessToast(
+                    getToastItemComponent({
+                        text,
+                        linkText: label,
+                        href,
+                        onClick: () =>
+                            allTrackers.trackEvent(
+                                "add to Custom Category",
+                                "click",
+                                "internal link/websites.overview",
+                            ),
+                    }),
+                ),
+            );
+        },
+    };
+};
+
+export default SWReactRootComponent(
+    connect(mapStateToProps, mapDispatchToProps, null, {
+        areStatesEqual: (next, prev) => {
+            if (
+                next.routing.currentPage !== "websites-trafficReferrals" &&
+                next.routing.currentPage !== "competitiveanalysis_website_referrals_incomingtraffic"
+            ) {
+                return true;
+            } else {
+                return next === prev;
+            }
+        },
+    })(IncomingTrafficCompare),
+    "IncomingTrafficCompare",
+);

@@ -1,0 +1,11 @@
+export const OVERVIEW_ID = "overview";
+export const INVESTORS_TYPE = "Investors";
+export const SALES_TYPE = "Sales";
+export const RECOMMENDATIONS_NUMBER = 20;
+export const FEED_TAB = "FEED_TAB";
+export const DASHBOARDS_TAB = "DASHBOARDS_TAB";
+export const ANALYSIS_TAB = "ANALYSIS_TAB";
+export const FEED_FEEDBACK_POSITIVE = "positive";
+export const FEED_FEEDBACK_NEGATIVE = "negative";
+export const LIST_SETTING_INFO = "info";
+export const LIST_SETTING_FEED = "feed";

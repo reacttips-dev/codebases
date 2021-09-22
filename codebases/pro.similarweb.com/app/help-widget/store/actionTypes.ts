@@ -1,0 +1,1 @@
+export const UPDATE_COUNT = "HELP_WIDGET_UPDATE_COUNT";

@@ -1,0 +1,1 @@
+export const SET_SIDE_NAV_ITEMS = "SET_SIDE_NAV_ITEMS";

@@ -80,6 +80,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ### S
 * SendBird (https://dashboard.sendbird.com) - Messaging / Cong Nguyen, 2021/09/20
 * Skillshare (https://skillshare.com) - Education / Cong Nguyen, 2021/09/22
+* Similarweb (https://pro.similarweb.com) - Ranking / Cong Nguyen, 2021/09/23
 
 ---
 ### T
