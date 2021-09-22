@@ -1,0 +1,27 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.goalButtons {
+	display: flex;
+
+	> button,
+	[role='combobox'] {
+		margin-left: 8px;
+	}
+}
+
+.dropmenuOption {
+	display: flex;
+	align-items: center;
+}
+
+.dropdownOptionIcon {
+	margin-right: 8px;
+
+	.dropmenuOption:hover & {
+		fill: $color-white-hex;
+	}
+}
+
+.goalButton {
+	margin-left: 8px;
+}

@@ -1,0 +1,24 @@
+
+    var doc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"userFragment"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"User"}},"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"email"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"name"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"phone"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"locale"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"timezone_id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"currency"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"last_login"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"add_time"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"update_time"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"creator_company_id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"pic_url"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"role_id"},"arguments":[],"directives":[]}]}}],"loc":{"start":0,"end":231}};
+    doc.loc.source = {"body":"fragment userFragment on User {\n\tid\n\temail\n\tname\n\tphone\n\tlocale\n\ttimezone_id\n\tcurrency\n\tlast_login\n\tadd_time\n\tupdate_time\n\tcreator_company_id\n\tpic_url\n\trole_id\n\n\t# has_created_company # missing\n\t# signup_flow_variation # missing\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+      module.exports = doc;
+    

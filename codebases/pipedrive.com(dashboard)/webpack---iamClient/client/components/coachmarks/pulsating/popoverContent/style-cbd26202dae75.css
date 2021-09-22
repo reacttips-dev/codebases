@@ -1,0 +1,14 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___PopoverContent___39J2j39J{\n\ttext-align:left;\n}\n\n\t.iam___PopoverContent__body___YShB_YSh{\n\t\tdisplay:flex;\n\t}\n\n\t.iam___PopoverContent__text___3M5At3M5{\n\t\tmin-width:312px;\n\t}\n\n\t.iam___PopoverContent__actions___2VwXE2Vw{\n\t\tdisplay:block;\n\t\ttext-align:right;\n\t\tmargin-top:16px;\n\t}\n\n\t.iam___PopoverContent__action___3eQZQ3eQ{\n\t\tdisplay:inline-block;\n\t\ttext-transform:uppercase;\n\t\tfont-size:13px;\n\t\tcursor:pointer;\n\t\tcolor:#721ea9;\n\t\tfont-weight:600;\n\t}\n\n\t.iam___PopoverContent__action___3eQZQ3eQ + .iam___PopoverContent__action___3eQZQ3eQ{\n\t\t\tmargin-left:16px;\n\t\t}\n", ""]);
+// Exports
+exports.locals = {
+	"PopoverContent": "iam___PopoverContent___39J2j39J",
+	"PopoverContent__body": "iam___PopoverContent__body___YShB_YSh",
+	"PopoverContent__text": "iam___PopoverContent__text___3M5At3M5",
+	"PopoverContent__actions": "iam___PopoverContent__actions___2VwXE2Vw",
+	"PopoverContent__action": "iam___PopoverContent__action___3eQZQ3eQ"
+};
+module.exports = exports;

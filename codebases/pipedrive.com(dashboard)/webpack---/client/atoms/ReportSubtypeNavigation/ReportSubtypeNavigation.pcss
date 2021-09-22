@@ -1,0 +1,22 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.buttonGroup {
+	position: relative;
+	margin-left: 12px;
+	padding-left: 12px;
+
+	&::before {
+		content: '';
+		background: $color-black-hex-12;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 1px;
+	}
+}
+
+.inlineInfoWrapper {
+	display: inline-flex;
+	margin-left: 16px;
+}

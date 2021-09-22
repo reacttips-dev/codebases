@@ -1,0 +1,44 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+
+	:global {
+		.cui4-button--ghost > .cui4-icon {
+			fill: $color-black-hex;
+		}
+
+		.cui4-button--active > .cui4-icon {
+			fill: $color-blue-hex;
+		}
+	}
+}
+
+.buttons {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	> div {
+		z-index: 3;
+	}
+
+	> * + * {
+		margin-left: 4px;
+		position: relative;
+	}
+
+	:global {
+		.cui4-spinner {
+			position: static;
+			margin-left: 8px;
+		}
+	}
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+}

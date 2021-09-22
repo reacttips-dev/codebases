@@ -1,0 +1,46 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.chart {
+	:global {
+		.recharts-cartesian-grid-vertical {
+			line {
+				stroke: $color-black-hex-8;
+			}
+
+			line:last-child {
+				stroke-opacity: 0;
+			}
+		}
+
+		.recharts-cartesian-axis-tick .recharts-text {
+			font: $font-body-s;
+			color: $color-black-hex;
+		}
+
+		.recharts-cartesian-axis.recharts-xAxis {
+			.recharts-cartesian-axis-tick-value {
+				font: $font-badge;
+				color: $color-black-hex-64;
+			}
+		}
+
+		.xAxis .recharts-text.recharts-label {
+			font-weight: $font-weight-normal;
+			font-size: $font-size-m;
+		}
+	}
+}
+
+.chartInWidget {
+	:global {
+		.recharts-cartesian-axis-tick .recharts-text {
+			font: $font-body-s;
+			color: $color-black-hex;
+		}
+
+		.xAxis .recharts-text.recharts-label {
+			display: none;
+		}
+	}
+}

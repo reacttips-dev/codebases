@@ -1,0 +1,11 @@
+var React = require('react');
+
+function LockedReport (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","fillRule":"evenodd"},[React.createElement("path",{"d":"M240 0H0v160h240z","key":0}),React.createElement("path",{"stroke":"#CBCCCD","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2.5","d":"M50.75 90.697V60.83a5 5 0 0 1 5-5h138a5 5 0 0 1 5 5v94.97","key":1}),React.createElement("g",{"transform":"matrix(-1 0 0 1 73 111.08)","key":2},[React.createElement("path",{"stroke":"#26292C","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2.5","d":"M34.5 13.333V11.39C34.5 5.099 29.127 0 22.5 0s-12 5.099-12 11.389v1.944","key":0}),React.createElement("path",{"fill":"#FC0","d":"M0 40.5v4a2 2 0 0 0 2 2h41a2 2 0 0 0 2-2v-29a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2V33","key":1}),React.createElement("circle",{"cx":"22.5","cy":"30","r":"4.953","stroke":"#26292C","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2.5","transform":"matrix(-1 0 0 1 45 0)","key":2})]),React.createElement("g",{"transform":"translate(95.053 86.497)","key":3},[React.createElement("path",{"stroke":"#747678","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2.5","d":"M24.03 49.333v-27.25a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v32a2 2 0 0 1-2 2h-8.75m-27.25-18h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2v-14a2 2 0 0 1 2-2z","key":0}),React.createElement("rect",{"width":"18.5","height":"56.5","x":"46.78","y":".833","fill":"#B9BABB","rx":"2.667","key":1})])]));
+}
+
+LockedReport.defaultProps = {"width":"240","height":"160","viewBox":"0 0 240 160"};
+
+module.exports = LockedReport;
+
+LockedReport.default = LockedReport;

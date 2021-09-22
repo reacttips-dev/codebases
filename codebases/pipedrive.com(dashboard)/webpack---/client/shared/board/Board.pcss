@@ -1,0 +1,82 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/elevations.scss';
+
+.board {
+	position: relative;
+	list-style: none;
+	padding-bottom: 84px;
+	min-height: calc(100% - 60px);
+
+	:global {
+		.react-grid-item-scaled {
+			cursor: grab;
+
+			> * {
+				pointer-events: none;
+			}
+
+			> article {
+				transform: scale(0.4);
+				transform-origin: top right;
+				transition: transform 0.3s ease;
+			}
+
+			.react-resizable-handle {
+				display: none;
+			}
+		}
+
+		.react-grid-item {
+			& > .react-resizable-handle {
+				z-index: 2;
+
+				&.react-resizable-handle-se {
+					cursor: nwse-resize;
+				}
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&:hover {
+				article {
+					box-shadow: $elevation-02;
+				}
+
+				.insight-widget-footer {
+					display: block;
+				}
+
+				.widget-edit-handle,
+				.widget-drag-handle,
+				.widget-resize-handle,
+				.priority-list-popover-trigger {
+					display: flex;
+				}
+			}
+
+			&:active {
+				article {
+					box-shadow: $elevation-03;
+				}
+			}
+		}
+
+		.react-grid-item.react-grid-placeholder {
+			position: static;
+			background: $color-black-hex-8;
+			opacity: 1;
+			z-index: 1;
+		}
+
+		.react-grid-item.resizing {
+			z-index: 2;
+		}
+
+		.react-grid-item-hidden {
+			display: none;
+		}
+	}
+}

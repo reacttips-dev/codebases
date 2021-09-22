@@ -1,0 +1,1 @@
+module.exports = "<% if (!_.isEmpty(result)) { %>\n\n<span><%- result.get('title') == 'N/A' ? result.get('name') : result.get('title') %><%- (result.get('org_name') ? \" (\" + result.get('org_name') + \")\" : \"\") %></span>\n\n<% } else if (!_.isEmpty(message)) { %>\n\n\t<span><%= message %></span>\n\n<% } %>"

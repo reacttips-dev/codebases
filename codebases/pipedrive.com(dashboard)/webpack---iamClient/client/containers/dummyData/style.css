@@ -1,0 +1,17 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___titleWrapper___3sWcz3sW{\n\tmargin-top:16px;\n\tmargin-bottom:24px;\n}\n.iam___title___3oaOQ3oa{\n\tmargin-top:24px;\n\tfont:400 27px/32px 'Source Sans Pro',sans-serif;\n}\n.iam___subTitle___9QkKy9Qk{\n\tfont:400 15px/20px 'Source Sans Pro',sans-serif;\n\tmargin-top:4px;\n\tmargin-bottom:24px;\n}\n.iam___icon___1Yaew1Ya{\n\tmargin-top:24px;\n\theight:80px;\n\twidth:240px;\n}\n.iam___wrapper___3eARl3eA{\n\tflex-direction:column;\n}\n.iam___wrapper___3eARl3eA,.iam___spinner___2SURR2SU{\n\tjustify-content:center;\n\tdisplay:flex;\n\talign-items:center;\n}\n.iam___spinner___2SURR2SU{\n\twidth:352px;\n\theight:208px;\n}\n.iam___parentWrapper___35Kw235K{\n\twidth:352px;\n\tmargin:24px 0;\n\tmin-height:200px;\n}\n.iam___parentWrapperSmall___3mP5q3mP{\n\twidth:352px;\n\theight:208px;\n}", ""]);
+// Exports
+exports.locals = {
+	"titleWrapper": "iam___titleWrapper___3sWcz3sW",
+	"title": "iam___title___3oaOQ3oa",
+	"subTitle": "iam___subTitle___9QkKy9Qk",
+	"icon": "iam___icon___1Yaew1Ya",
+	"wrapper": "iam___wrapper___3eARl3eA",
+	"spinner": "iam___spinner___2SURR2SU",
+	"parentWrapper": "iam___parentWrapper___35Kw235K",
+	"parentWrapperSmall": "iam___parentWrapperSmall___3mP5q3mP"
+};
+module.exports = exports;

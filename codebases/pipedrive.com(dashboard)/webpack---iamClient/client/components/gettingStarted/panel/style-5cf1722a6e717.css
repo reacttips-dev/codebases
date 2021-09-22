@@ -1,0 +1,10 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___GSPanel___17l6W17l{\n\ttop:auto;\n\tleft:auto;\n\tbottom:24px;\n\tright:24px;\n\tmargin-top:24px;\n\tmin-width:360px;\n\tmax-height:calc(100% - 24px);\n}\n\n\t.iam___GSPanel___17l6W17l:hover{\n\t\tbox-shadow:0 5px 8px 0 rgba(38,41,44,.12);\n\t}", ""]);
+// Exports
+exports.locals = {
+	"GSPanel": "iam___GSPanel___17l6W17l"
+};
+module.exports = exports;

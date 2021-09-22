@@ -1,0 +1,76 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.list {
+	width: 268px;
+	border-right: 1px solid $color-black-hex-12;
+}
+
+.listTitle {
+	font-size: $font-size-xs;
+	font-weight: $font-weight-semi;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	min-height: 54px;
+	margin-bottom: 2px;
+	padding: 8px 16px;
+	border-radius: 4px;
+
+	&:hover {
+		background: $color-black-hex-4;
+	}
+}
+
+.linkActive {
+	background: $color-blue-hex-8;
+	color: $color-blue-hex;
+	font-weight: $font-weight-semi;
+
+	&:hover {
+		background: $color-blue-hex-8;
+	}
+}
+
+.linkText {
+	white-space: nowrap;
+	overflow: hidden;
+	align-items: center;
+}
+
+.linkIcon {
+	margin-right: 16px;
+
+	.linkActive & {
+		fill: $color-blue-hex;
+	}
+
+	.link:active & {
+		fill: $color-white-hex;
+	}
+}
+
+.linkTitle {
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	.linkActive & {
+		color: $color-blue-hex;
+		font-weight: $font-weight-semi;
+	}
+
+	.link:active & {
+		color: $color-white-hex;
+	}
+}
+
+.arrowIcon {
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+}

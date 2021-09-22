@@ -1,0 +1,16 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___Header___B97kiB97{\n\tflex-grow:1;\n\tpadding:1em 24px;\n}\n\n\t.iam___Header__controls___23jUw23j{\n\t\tposition:relative;\n\t\tdisplay:flex;\n\t\toverflow:hidden;\n\t\talign-items:center;\n\t\tline-height:1;\n\t}\n\n\t.iam___Header__back___1VJ9h1VJ{\n\t\tposition:relative;\n\t\tcursor:pointer;\n\t}\n\n\t.iam___Header__title___2L3c52L3{\n\t\tdisplay:inline-block;\n\t\tfont:400 15px/20px 'Source Sans Pro',sans-serif;\n\t\tcolor:#747678;\n\t}\n\n\t.iam___Header__title___2L3c52L3:hover{\n\t\ttext-decoration:underline;\n\t\tcursor:pointer;\n\t\tcolor:#404346;\n\t}\n\n\t.iam___Header__icon___32vxr32v{\n\t\tmargin-right:22px;\n\t\twidth:20px;\n\t\theight:20px;\n\t}\n\n\t.iam___Header__iconLabel___16-pp16-{\n\t\tdisplay:inline-block;\n\t\tfont-size:15px;\n\t\ttext-transform:uppercase;\n\t\tcolor:#747678;\n\t\tvertical-align:middle;\n\t}\n\n\t.iam___Header__close___3LQpA3LQ{\n\t\tposition:relative;\n\t\tmargin-left:auto;\n\t\tcursor:pointer;\n\t}\n\n\t.iam___Header__close___3LQpA3LQ:hover .iam___Header__iconLabel___16-pp16-{\n\t\ttext-decoration:underline;\n\t}\n\n\t.iam___Header__back___1VJ9h1VJ, .iam___Header__close___3LQpA3LQ{\n\t \topacity:0.75;\n\t}\n\n\t.iam___Header__back___1VJ9h1VJ:hover, .iam___Header__close___3LQpA3LQ:hover{\n\t\t\topacity:1;\n\t\t}\n", ""]);
+// Exports
+exports.locals = {
+	"Header": "iam___Header___B97kiB97",
+	"Header__controls": "iam___Header__controls___23jUw23j",
+	"Header__back": "iam___Header__back___1VJ9h1VJ",
+	"Header__title": "iam___Header__title___2L3c52L3",
+	"Header__icon": "iam___Header__icon___32vxr32v",
+	"Header__iconLabel": "iam___Header__iconLabel___16-pp16-",
+	"Header__close": "iam___Header__close___3LQpA3LQ"
+};
+module.exports = exports;

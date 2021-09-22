@@ -1,0 +1,105 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+%limitedWidthBase {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.button:not(:first-child) {
+	margin-left: 8px;
+}
+
+.limitedWidthXLarge {
+	@extend %limitedWidthBase;
+	max-width: 340px;
+}
+
+.limitedWidthLarge {
+	@extend %limitedWidthBase;
+	max-width: 264px;
+}
+
+.limitedWidthMedium {
+	@extend %limitedWidthBase;
+	max-width: 160px;
+}
+
+.limitedWidthSmall {
+	@extend %limitedWidthBase;
+	max-width: 120px;
+}
+
+.limitedWidthXSmall {
+	@extend %limitedWidthBase;
+	max-width: 96px;
+}
+
+.rotatedButton {
+	> div {
+		transform: rotate(90deg);
+		z-index: 2;
+		left: -12px;
+		top: 16px;
+		position: relative;
+	}
+}
+
+.tooltip {
+	min-width: 165px;
+	z-index: 99;
+}
+
+.popover {
+	width: 260px;
+	max-height: 420px;
+}
+
+.options {
+	max-height: 320px;
+	overflow: auto;
+}
+
+.footerLink {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: $color-blue-hex;
+
+	&:hover {
+		color: $color-white-hex;
+		background: $color-blue-hex;
+
+		:global {
+			.cui4-icon {
+				fill: $color-white-hex;
+			}
+		}
+	}
+}
+
+.linkText {
+	flex-grow: 1;
+	padding-left: 8px;
+}
+
+.redirect {
+	width: 16px;
+}
+
+.filterRow {
+	display: flex;
+	margin-right: 8px;
+
+	&:last-child {
+		margin-right: 24px;
+	}
+}
+
+.label {
+	position: relative;
+	top: 6px;
+	right: 8px;
+}

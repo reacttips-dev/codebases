@@ -1,0 +1,1 @@
+module.exports = "<div class=\"item field bulk\">\n\t<% if(!settings.valueOnly) { %>\n\t\t<div class=\"labelWrap clearfix\">\n\t\t\t<span class=\"label\"><%- settings.customTitle || field.name %></span>\n\t\t</div>\n\t<% } %>\n\n\t<div class=\"valueWrap clearfix <%-field.field_type%>\">\n\t\t<%= _.form.object(_.assignIn(_.clone(field), value_editor)) %>\n\t</div>\n</div>"

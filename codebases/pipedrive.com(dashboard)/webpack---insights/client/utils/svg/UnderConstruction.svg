@@ -1,0 +1,11 @@
+var React = require('react');
+
+function UnderConstruction (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","fillRule":"evenodd"},[React.createElement("path",{"d":"M0 0h160v80H0z","key":0}),React.createElement("g",{"fill":"#FC0","key":1},React.createElement("path",{"d":"M86.64 35H74.184l3.378-11.287A1 1 0 0 1 78.52 23h3.784a1 1 0 0 1 .958.713L86.64 35zm3.592 12l3.592 12H67l3.592-12h19.64zM62 64h36a1 1 0 0 1 1 1v3H61v-3a1 1 0 0 1 1-1z"})),React.createElement("path",{"stroke":"#747678","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2","d":"M144.029 68.5H28.123m-6.558 0H16","key":2}),React.createElement("g",{"stroke":"#747678","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2","key":3},React.createElement("path",{"d":"M121 14v3M121 21v3M116 19h3M123 19h3"})),React.createElement("g",{"stroke":"#747678","strokeLinecap":"round","strokeLinejoin":"round","key":4},React.createElement("g",{"strokeWidth":"2"},React.createElement("path",{"d":"M38 39v3M38 46v3M33 44h3M40 44h3"})))]));
+}
+
+UnderConstruction.defaultProps = {"width":"160","height":"80","viewBox":"0 0 160 80"};
+
+module.exports = UnderConstruction;
+
+UnderConstruction.default = UnderConstruction;

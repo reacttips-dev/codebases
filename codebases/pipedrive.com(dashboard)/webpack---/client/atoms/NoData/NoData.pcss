@@ -1,0 +1,65 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.noData {
+	background: $color-black-rgba-5;
+	font-size: $font-size-s;
+	color: $color-black-hex-64;
+	border-radius: 4px;
+	margin-bottom: 8px;
+
+	& > div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 12px 16px;
+	}
+
+	&.is-loading {
+		background: $color-white-hex;
+	}
+}
+
+.iconContainer {
+	display: inline-flex;
+	align-items: center;
+
+	svg {
+		fill: $color-black-hex-32;
+		vertical-align: middle;
+		margin: 0 8px 0 4px;
+	}
+
+	:global {
+		.cui4-spinner {
+			position: static;
+			margin-left: 8px;
+		}
+	}
+}
+
+.messageContainer {
+	display: flex;
+	align-items: center;
+
+	svg {
+		margin-left: 10px;
+	}
+}
+
+.tabsContainer {
+	display: flex;
+	font: $font-title-m;
+	color: $color-black-hex-32;
+	align-items: center;
+
+	span {
+		margin-right: 16px;
+	}
+
+	:global {
+		.cui4-spinner {
+			position: static;
+		}
+	}
+}

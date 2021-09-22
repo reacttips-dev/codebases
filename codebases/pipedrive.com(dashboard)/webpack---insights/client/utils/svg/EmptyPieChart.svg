@@ -1,0 +1,11 @@
+var React = require('react');
+
+function EmptyPieChart (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","fillRule":"evenodd"},[React.createElement("path",{"d":"M0 0h80v80H0z","key":0}),React.createElement("g",{"stroke":"#CBCCCD","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2","key":1},[React.createElement("path",{"fill":"#CBCCCD","d":"M70 40H40V10c16.569 0 30 13.431 30 30z","key":0}),React.createElement("path",{"d":"M40 40h30a29.86 29.86 0 0 1-4.472 15.766L40 40z","key":1}),React.createElement("path",{"d":"M63.297 58.903C57.797 65.673 49.403 70 40 70c-16.569 0-30-13.431-30-30 0-11.277 6.222-21.1 15.42-26.225m4.879-2.172a29.785 29.785 0 0 1 4.308-1.12","key":2})])]));
+}
+
+EmptyPieChart.defaultProps = {"width":"80","height":"80","viewBox":"0 0 80 80"};
+
+module.exports = EmptyPieChart;
+
+EmptyPieChart.default = EmptyPieChart;

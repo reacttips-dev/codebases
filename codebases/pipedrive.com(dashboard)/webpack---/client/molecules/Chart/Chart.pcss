@@ -1,0 +1,61 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.filters {
+	display: flex;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px $color-black-hex-24 solid;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+}
+
+.btngroup {
+	padding-right: 8px;
+}
+
+.chart {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+
+	&:not(.is-widget):not(.is-goalChart) {
+		margin-left: 40px;
+	}
+
+	:global {
+		.recharts-layer {
+			.pieLabel {
+				font-weight: $font-weight-semi;
+				position: relative;
+				bottom: 2px;
+				pointer-events: none;
+			}
+		}
+
+		.recharts-tooltip-wrapper {
+			z-index: 100;
+		}
+
+		.recharts-text.recharts-label {
+			color: $color-black-hex;
+			font-weight: $font-weight-semi;
+			font-size: $font-size-s;
+		}
+
+		.recharts-text.recharts-cartesian-axis-tick-value {
+			color: $color-black-hex-64;
+		}
+	}
+}
+
+.title {
+	font-size: $font-size-l;
+	font-weight: $font-weight-semi;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

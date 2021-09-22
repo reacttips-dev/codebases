@@ -1,0 +1,68 @@
+@import '@pipedrive/convention-ui-css/dist/scss/config.scss';
+
+.selectButtonName {
+	max-width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: $color-black-hex;
+}
+
+.content {
+	padding: 0px;
+	width: 370px;
+	min-height: 100px;
+}
+
+.emptyContent {
+	composes: content;
+
+	min-height: 1px;
+}
+
+.searchBlock {
+	padding: 8px 8px 0;
+
+	input[type='text'] {
+		padding-right: 32px;
+
+		&::-ms-clear {
+			display: none;
+		}
+	}
+}
+
+.searchClearIcon {
+	position: absolute;
+	top: 26px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.actionsListSection {
+	border-top: 1px solid $color-black-hex-12;
+	padding: 8px 0px;
+}
+
+.filterActive {
+	font-weight: $font-weight-semi;
+}
+
+.filterAction {
+	&:hover {
+		background: $color-blue-hex;
+		color: $color-white-hex;
+	}
+}
+
+.filterActionIcon {
+	margin: 0px 20px;
+}
+
+.editButton svg {
+	height: 24px;
+}
+
+.popover {
+	z-index: 1000;
+}

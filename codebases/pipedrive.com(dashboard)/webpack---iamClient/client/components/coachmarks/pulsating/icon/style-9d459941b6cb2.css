@@ -1,0 +1,11 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___Icon___1m8Cq1m8{\n\tmin-width:80px;\n\tmin-height:80px;\n\tpadding-right:16px;\n}\n\n\t.iam___Icon__image___S2wkpS2w{\n\t\tdisplay:block;\n\t\tmargin:auto;\n\t}\n", ""]);
+// Exports
+exports.locals = {
+	"Icon": "iam___Icon___1m8Cq1m8",
+	"Icon__image": "iam___Icon__image___S2wkpS2w"
+};
+module.exports = exports;

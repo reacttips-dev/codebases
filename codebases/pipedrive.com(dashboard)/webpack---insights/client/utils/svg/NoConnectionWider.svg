@@ -1,0 +1,11 @@
+var React = require('react');
+
+function NoConnectionWider (props) {
+    return React.createElement("svg",props,[React.createElement("path",{"d":"M166.223 101.124H146.8C143.03 101.124 139.975 98.0682 139.975 94.2989V88.2677C139.975 83.5215 136.127 79.6739 131.381 79.6739C126.635 79.6739 122.787 83.5215 122.787 88.2677V114.09C122.787 118.638 119.1 122.325 114.552 122.325C110.004 122.325 106.317 118.638 106.317 114.09V108.756C106.317 102.901 101.571 101.124 95.7163 101.124H1.5","stroke":"#26292C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","key":0}),React.createElement("path",{"d":"M186.774 94.657H196.634C197.112 94.657 197.499 95.0443 197.499 95.5219V97.6922C197.499 98.1698 197.112 98.557 196.634 98.557H186.774V94.657Z","fill":"white","stroke":"#26292C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","key":1}),React.createElement("path",{"d":"M186.774 103.933H196.634C197.112 103.933 197.499 104.32 197.499 104.798V106.968C197.499 107.446 197.112 107.833 196.634 107.833H186.774V103.933Z","fill":"white","stroke":"#26292C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","key":2}),React.createElement("path",{"d":"M167.654 101.129C167.654 95.54 172.184 91.0096 177.773 91.0096H187.239C187.599 91.0096 187.892 91.3019 187.892 91.6624V110.595C187.892 110.955 187.599 111.247 187.239 111.247H177.773C172.184 111.247 167.654 106.717 167.654 101.129Z","fill":"#DCDDDD","stroke":"#26292C","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","key":3}),React.createElement("path",{"d":"M220.294 33.4563L217.605 36.1451M214.02 39.7301L211.331 42.4189M211.331 33.4563L214.02 36.1451M217.605 39.7301L220.294 42.4189","stroke":"#747678","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","key":4}),React.createElement("path",{"d":"M202.744 63.6813L200.055 66.3701M196.47 69.9551L193.781 72.6439M193.781 63.6813L196.47 66.3701M200.055 69.9551L202.744 72.6439","stroke":"#747678","strokeWidth":"2.5","strokeLinecap":"round","strokeLinejoin":"round","key":5})]);
+}
+
+NoConnectionWider.defaultProps = {"width":"240","height":"160","viewBox":"0 0 240 160","fill":"none"};
+
+module.exports = NoConnectionWider;
+
+NoConnectionWider.default = NoConnectionWider;

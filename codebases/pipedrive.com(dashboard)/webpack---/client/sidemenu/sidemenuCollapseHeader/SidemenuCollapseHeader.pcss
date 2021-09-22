@@ -1,0 +1,38 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	font-weight: $font-weight-semi;
+	cursor: pointer;
+
+	&:focus {
+		outline: none; /* should have some styles for keyboard */
+	}
+}
+
+.disabled {
+	cursor: default;
+}
+
+.text {
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+}
+
+.icon {
+	margin: 4px;
+}
+
+.tooltip {
+	z-index: 99;
+}
+
+.headerRightSideActions {
+	display: flex;
+	align-items: center;
+}

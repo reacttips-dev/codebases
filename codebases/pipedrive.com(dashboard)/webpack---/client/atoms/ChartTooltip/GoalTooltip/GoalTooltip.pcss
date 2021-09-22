@@ -1,0 +1,61 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.tooltip {
+	border-radius: 2px;
+	border: solid 1px $color-black-hex-12;
+	background-color: $color-white-hex;
+	padding: 16px;
+	min-width: 208px;
+}
+
+.tooltipTitle {
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+	font-weight: $font-weight-semi;
+	margin-bottom: 12px;
+	text-transform: capitalize;
+}
+
+.tooltipRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.tooltipRowTitle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font: $font-body;
+
+	span {
+		align-self: center;
+		line-height: 20px;
+		margin-left: 10px;
+	}
+}
+
+.tooltipFooter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 8px;
+	border-top: 1px solid $color-black-hex-16;
+	font: $font-title-m;
+}
+
+.tooltipFooterTitle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.tooltipNegativeDifference {
+	color: $color-red-hex;
+}
+
+.tooltipPositiveDifference {
+	color: $color-green-hex;
+}

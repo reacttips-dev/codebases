@@ -1,0 +1,11 @@
+var React = require('react');
+
+function LinkEmailsToLeads (props) {
+    return React.createElement("svg",props,[React.createElement("path",{"d":"M71.9 90.778c-20.082-3.126-41.807-15.76-43.175-30.003-1.381-14.22 17.617-30.034 33.56-34.435 15.981-4.41 28.87 2.603 39.455 13.606 10.573 11.027 18.828 26.066 13.74 36.795-5.088 10.73-23.496 17.162-43.58 14.037z","fill":"#F6F7F8","key":0}),React.createElement("path",{"d":"M66.765 52.852L52.99 40.697C35.507 25.271 8 37.684 8 61c0 23.316 27.507 35.729 44.99 20.303l46.02-40.606C116.493 25.271 144 37.684 144 61c0 23.316-27.507 35.729-44.99 20.303L83.55 67.663","stroke":"#C8CCD2","strokeWidth":"1.5","strokeLinecap":"round","key":1}),React.createElement("rect",{"x":"20.535","y":"48","width":"32","height":"24","rx":"1","fill":"#9CBFF1","key":2}),React.createElement("path",{"d":"M24.535 51l10.082 8.387a3 3 0 003.837 0L48.535 51","stroke":"#2A3647","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round","key":3}),React.createElement("path",{"d":"M128.764 60c0 6.496-5.267 11.764-11.765 11.764-6.497 0-11.765-5.267-11.765-11.765 0-5.96 4.433-10.886 10.181-11.659.518-.07 1.047-.106 1.584-.106 6.498 0 11.765 5.268 11.765 11.765z","fill":"#FFDF5C","key":4}),React.createElement("path",{"d":"M117.001 62.94a2.941 2.941 0 100-5.882 2.941 2.941 0 000 5.883z","stroke":"#2A3647","strokeWidth":"1.5","key":5}),React.createElement("path",{"d":"M117.139 43.578c7.94.01 14.677 5.728 16.037 13.476M117.002 76.418c-7.94-.01-14.677-5.728-16.037-13.476M133.491 60.068c-.01 7.94-5.729 14.677-13.476 16.038M100.65 59.932c.01-7.94 5.728-14.677 13.476-16.038M97 60h6.588M117 40v6.588M137 60h-6.588M117 79.59v-6.588","stroke":"#2A3647","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round","key":6}),React.createElement("path",{"d":"M66.94 46.42v6.52h-6.52","stroke":"#CBCCCD","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round","key":7})]);
+}
+
+LinkEmailsToLeads.defaultProps = {"width":"160","height":"120","fill":"none"};
+
+module.exports = LinkEmailsToLeads;
+
+LinkEmailsToLeads.default = LinkEmailsToLeads;

@@ -1,0 +1,11 @@
+var React = require('react');
+
+function EmptyColumnChart (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","fillRule":"evenodd"},[React.createElement("path",{"d":"M0 0h80v80H0z","key":0}),React.createElement("g",{"stroke":"#CBCCCD","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2","key":1},[React.createElement("path",{"d":"M11.4 62.35h2.1a1.5 1.5 0 0 0 1.5-1.5V48.187a1.5 1.5 0 0 1 1.5-1.5h9a1.5 1.5 0 0 1 1.5 1.5V60.85a1.5 1.5 0 0 0 1.5 1.5H33a2 2 0 0 0 2-2V34a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v26.35a2 2 0 0 0 2 2h1.7","key":0}),React.createElement("path",{"fill":"#CBCCCD","d":"M57.5 18.35h9a1.5 1.5 0 0 1 1.5 1.5v41a1.5 1.5 0 0 1-1.5 1.5h-9a1.5 1.5 0 0 1-1.5-1.5v-41a1.5 1.5 0 0 1 1.5-1.5z","key":1}),React.createElement("path",{"d":"M4 62.35h2.4M72 62.35h4","key":2})])]));
+}
+
+EmptyColumnChart.defaultProps = {"width":"80","height":"80","viewBox":"0 0 80 80"};
+
+module.exports = EmptyColumnChart;
+
+EmptyColumnChart.default = EmptyColumnChart;

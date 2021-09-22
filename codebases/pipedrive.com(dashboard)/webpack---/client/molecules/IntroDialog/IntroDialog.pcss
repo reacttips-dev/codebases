@@ -1,0 +1,37 @@
+@import '@pipedrive/convention-ui-css/dist/postcss/config.postcss';
+
+.IntroDialog {
+	:global {
+		.cui4-dialog__wrap {
+			width: 736px;
+			padding: 64px 56px;
+		}
+
+		.cui4-dialog__title {
+			font: $font-title-xl;
+			text-align: center;
+			margin: 0 0 32px;
+		}
+	}
+}
+
+.IntroDialogActions {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	margin: 8px 0 0;
+}
+
+.IntroDialogColumns {
+	display: flex;
+}
+
+.IntroDialogColumn {
+	margin: 0 24px;
+
+	p {
+		font: $font-title-m;
+		text-align: center;
+		margin: 24px 5px 0;
+	}
+}

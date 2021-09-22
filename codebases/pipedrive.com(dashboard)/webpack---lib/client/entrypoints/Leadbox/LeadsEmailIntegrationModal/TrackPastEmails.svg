@@ -1,0 +1,11 @@
+var React = require('react');
+
+function TrackPastEmails (props) {
+    return React.createElement("svg",props,[React.createElement("path",{"d":"M133 56.478C133 73.485 120.818 90 99.087 90 77.356 90 46 73.485 46 56.478 46 39.5 77.356 22 99.087 22S133 39.5 133 56.478z","fill":"#F6F7F8","key":0}),React.createElement("circle",{"cx":"51","cy":"78.125","r":"18","fill":"#FFDF5C","key":1}),React.createElement("path",{"d":"M41 78.3l.078-1.44a10.007 10.007 0 019.747-8.733c5.522-.097 10.076 4.302 10.173 9.824.096 5.522-4.302 10.076-9.824 10.172a9.953 9.953 0 01-5.542-1.56 10.052 10.052 0 01-2.945-2.877M51 71.086v7.041h5.036","stroke":"#2A3647","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round","key":2}),React.createElement("path",{"d":"M41 78.887l-.562.495a.75.75 0 001.058.067l-.495-.562zm-1.908-3.302a.75.75 0 10-1.126.992l1.126-.992zm5.21 1.393a.75.75 0 00-.992-1.126l.992 1.126zm-2.739 1.413l-2.471-2.806-1.126.992 2.472 2.805 1.125-.991zm1.747-2.539l-2.805 2.472.991 1.126 2.806-2.472-.992-1.126z","fill":"#2A3647","key":3}),React.createElement("rect",{"x":"123.09","y":"32.68","width":"10","height":"7","rx":"1","fill":"#DADDE1","key":4}),React.createElement("rect",{"x":"97","y":"19","width":"18","height":"13","rx":"1","fill":"#E4E6E9","key":5}),React.createElement("path",{"fillRule":"evenodd","clipRule":"evenodd","d":"M68.34 28.477a1 1 0 011-1h35.5a1 1 0 011 1v26.05a1 1 0 01-1 1h-35.5a1 1 0 01-1-1v-26.05z","fill":"#9CBFF1","key":6}),React.createElement("path",{"d":"M71.465 30.664l12.372 10.6a5 5 0 006.506 0l9.625-8.246 2.747-2.354","stroke":"#2A3647","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round","key":7}),React.createElement("path",{"fillRule":"evenodd","clipRule":"evenodd","d":"M94.32 47.867a1 1 0 011-1h37.59a1 1 0 011 1V74.9a1 1 0 01-1 1H95.32a1 1 0 01-1-1V47.867z","fill":"#fff","stroke":"#2A3647","strokeWidth":"1.5","strokeLinecap":"round","strokeLinejoin":"round","key":8}),React.createElement("path",{"d":"M94.98 48.148l15.948 13.198a5 5 0 006.375 0l12.583-10.413 3.365-2.785","stroke":"#2A3647","strokeWidth":"1.65","strokeLinecap":"round","strokeLinejoin":"round","key":9})]);
+}
+
+TrackPastEmails.defaultProps = {"width":"160","height":"120","fill":"none"};
+
+module.exports = TrackPastEmails;
+
+TrackPastEmails.default = TrackPastEmails;

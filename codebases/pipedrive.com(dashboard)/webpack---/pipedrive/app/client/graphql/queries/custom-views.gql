@@ -1,0 +1,24 @@
+
+    var doc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"customViewsQueryFragment"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Query"}},"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"customViews"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"view_type"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"view_key"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"user_id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"filter_id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"fields"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"item_type"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"key"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"sort_sequence"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"sort_direction"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"width"},"arguments":[],"directives":[]}]}}]}}]}}],"loc":{"start":0,"end":194}};
+    doc.loc.source = {"body":"fragment customViewsQueryFragment on Query {\n\tcustomViews {\n\t\tid\n\t\tview_type\n\t\tview_key\n\t\tuser_id\n\t\tfilter_id\n\t\tfields {\n\t\t\titem_type\n\t\t\tkey\n\t\t\tsort_sequence\n\t\t\tsort_direction\n\t\t\twidth\n\t\t}\n\t}\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+      module.exports = doc;
+    

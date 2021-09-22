@@ -1,0 +1,11 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___InfoMessage___3r-A33r-{\n    padding:12px 64px 12px 24px;\n    background-color:#eff5fd;\n}\n\n    .iam___InfoMessage__link___2TrLX2Tr{\n        padding-left:2px;\n        padding-right:2px;\n        color:#317ae2;\n        cursor:pointer;\n    }\n", ""]);
+// Exports
+exports.locals = {
+	"InfoMessage": "iam___InfoMessage___3r-A33r-",
+	"InfoMessage__link": "iam___InfoMessage__link___2TrLX2Tr"
+};
+module.exports = exports;

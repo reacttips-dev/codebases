@@ -1,0 +1,101 @@
+{
+    "name": "tape",
+    "version": "5.3.1",
+    "description": "tap-producing test harness for node and browsers",
+    "main": "index.js",
+    "exports": {
+        ".": [
+            {
+                "default": "./index.js"
+            },
+            "./index.js"
+        ],
+        "./lib/default_stream": "./lib/default_stream.js",
+        "./lib/results": "./lib/results.js",
+        "./lib/test": "./lib/test.js",
+        "./package": "./package.json",
+        "./package.json": "./package.json"
+    },
+    "bin": "./bin/tape",
+    "directories": {
+        "example": "example",
+        "test": "test"
+    },
+    "dependencies": {
+        "call-bind": "^1.0.2",
+        "deep-equal": "^2.0.5",
+        "defined": "^1.0.0",
+        "dotignore": "^0.1.2",
+        "for-each": "^0.3.3",
+        "get-package-type": "^0.1.0",
+        "glob": "^7.1.7",
+        "has": "^1.0.3",
+        "has-dynamic-import": "^2.0.0",
+        "inherits": "^2.0.4",
+        "is-regex": "^1.1.4",
+        "minimist": "^1.2.5",
+        "object-inspect": "^1.11.0",
+        "object-is": "^1.1.5",
+        "object.assign": "^4.1.2",
+        "resolve": "^2.0.0-next.3",
+        "resumer": "^0.0.0",
+        "string.prototype.trim": "^1.2.4",
+        "through": "^2.3.8"
+    },
+    "devDependencies": {
+        "@ljharb/eslint-config": "^17.6.0",
+        "array.prototype.flatmap": "^1.2.4",
+        "aud": "^1.1.5",
+        "concat-stream": "^1.6.2",
+        "eclint": "^2.8.1",
+        "ecstatic": "^4.1.4",
+        "es-value-fixtures": "^1.2.1",
+        "eslint": "^7.32.0",
+        "falafel": "^2.2.4",
+        "js-yaml": "^3.14.0",
+        "safe-publish-latest": "^1.1.4",
+        "tap": "^8.0.1",
+        "tap-parser": "^3.0.5"
+    },
+    "scripts": {
+        "prepublishOnly": "safe-publish-latest",
+        "prepublish": "!(type not-in-publish) || not-in-publish || npm run prepublishOnly",
+        "prelint": "eclint check",
+        "lint": "eslint --ext .js,.cjs,.mjs . bin/*",
+        "pretest": "npm run lint",
+        "test": "npm run tests-only",
+        "posttest": "aud --production",
+        "tests-only": "nyc tap test/*.js",
+        "test:example": "find example -name '*.js' | grep -v fail | grep -v static | xargs tap"
+    },
+    "testling": {
+        "files": "test/browser/*.js",
+        "browsers": [
+            "ie/6..latest",
+            "chrome/20..latest",
+            "firefox/10..latest",
+            "safari/latest",
+            "opera/11.0..latest",
+            "iphone/6",
+            "ipad/6"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/substack/tape.git"
+    },
+    "homepage": "https://github.com/substack/tape",
+    "keywords": [
+        "tap",
+        "test",
+        "harness",
+        "assert",
+        "browser"
+    ],
+    "author": {
+        "name": "James Halliday",
+        "email": "mail@substack.net",
+        "url": "http://substack.net"
+    },
+    "license": "MIT"
+}

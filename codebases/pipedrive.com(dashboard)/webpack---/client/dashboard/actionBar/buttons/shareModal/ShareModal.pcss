@@ -1,0 +1,43 @@
+@import '@pipedrive/convention-ui-css/dist/postcss/colors.postcss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.container {
+	width: 450px;
+}
+
+.shareLinkModalContainer {
+	min-height: 148px;
+	max-height: calc(100vh - 96px);
+	overflow: auto;
+}
+
+.submitButton {
+	margin-left: 8px;
+}
+
+.userRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 0;
+
+	.meta,
+	.name {
+		display: flex;
+		align-items: center;
+	}
+
+	.everyoneName {
+		padding-left: 40px;
+	}
+
+	.rights {
+		margin-right: 8px;
+		font: $font-body-s;
+		color: $color-black-hex-64;
+	}
+
+	:global(.cui4-avatar) {
+		margin-right: 16px;
+	}
+}

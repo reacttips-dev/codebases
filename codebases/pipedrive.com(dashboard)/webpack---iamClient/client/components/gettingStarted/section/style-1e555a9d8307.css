@@ -1,0 +1,12 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___Section___1KXaC1KX{\n\tpadding-bottom:10.66667px;\n}\n\n\t.iam___Section__title___2qy0w2qy{\n\t\tmargin-left:16px;\n\t\tfont-size:18px;\n\t\tfont-weight:600;\n\t\tcolor:#747678;\n\t}\n\n\t.iam___Section__link___3Q8Mr3Q8{\n\t\tcolor:#317ae2;\n\t\tfont-size:18px;\n\t\tfont-weight:400;\n\t}\n", ""]);
+// Exports
+exports.locals = {
+	"Section": "iam___Section___1KXaC1KX",
+	"Section__title": "iam___Section__title___2qy0w2qy",
+	"Section__link": "iam___Section__link___3Q8Mr3Q8"
+};
+module.exports = exports;

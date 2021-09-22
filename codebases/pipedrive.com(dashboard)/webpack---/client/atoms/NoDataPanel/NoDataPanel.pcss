@@ -1,0 +1,34 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.noDataPanel {
+	background: $color-yellow-hex-16;
+	font-size: $font-size-m;
+	color: $color-black-hex-64;
+	border-radius: 0;
+	border-bottom: 1px $color-black-hex-16 solid;
+	padding: 0px;
+	flex: 1 auto;
+
+	& > div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&.is-loading {
+		background: $color-white-hex;
+	}
+}
+
+.messageContainer {
+	display: flex;
+	flex: 1 auto;
+	align-items: center;
+	color: $color-black-hex;
+}
+
+.noDataPanelIcon {
+	display: flex;
+	flex: 1 auto;
+}

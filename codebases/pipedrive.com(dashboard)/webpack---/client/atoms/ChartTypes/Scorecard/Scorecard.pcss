@@ -1,0 +1,33 @@
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '../../../utils/styleConstants.pcss';
+
+.container {
+	position: relative;
+	left: calc($chart-full-width-change + 12px);
+}
+
+.widgetContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.score {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: $font-weight-semi;
+	text-align: center;
+}
+
+.description {
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+	color: $color-black-hex-64;
+	text-align: center;
+}
+
+.isClickable {
+	cursor: pointer;
+}

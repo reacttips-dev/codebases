@@ -1,0 +1,35 @@
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.footerWrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.bottomText {
+	font-size: $font-size-s;
+	color: $color-black-hex-64;
+}
+
+.bottomTextWithMargin {
+	font-size: $font-size-s;
+	color: $color-black-hex-64;
+	margin-left: 16px;
+}
+
+.buttonPrimary {
+	margin-left: 8px;
+}
+
+.exportModal {
+	:global {
+		.cui4-modal__wrap {
+			min-width: 480px;
+		}
+	}
+}
+
+.downloadStepContainer {
+	text-align: center;
+}

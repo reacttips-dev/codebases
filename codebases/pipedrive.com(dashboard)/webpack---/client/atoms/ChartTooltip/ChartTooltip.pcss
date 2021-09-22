@@ -1,0 +1,51 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.tooltip {
+	border-radius: 2px;
+	border: solid 1px $color-black-hex-12;
+	background-color: $color-white-hex;
+	padding: 12px;
+}
+
+.tooltipTitle {
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+	font-weight: $font-weight-semi;
+	margin-bottom: 8px;
+}
+
+.tooltipSubtitle {
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+	margin-bottom: 4px;
+}
+
+.tooltipValue {
+	font-size: $font-size-m;
+	line-height: $line-height-m;
+	margin-bottom: 2px;
+}
+
+%dot {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	margin-right: 8px;
+	margin-top: 6px;
+}
+
+.dotWithoutIndentation {
+	@extend %dot;
+}
+
+.dotWithIndentation {
+	@extend %dot;
+	margin-left: 12px;
+}
+
+.tooltipItemContainer {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 4px;
+}

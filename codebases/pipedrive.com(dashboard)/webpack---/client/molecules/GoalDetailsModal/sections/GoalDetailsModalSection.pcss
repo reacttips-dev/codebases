@@ -1,0 +1,47 @@
+.row {
+	display: flex;
+	flex-direction: row;
+	padding: 6px 0;
+}
+
+.label {
+	flex: 1;
+	text-align: right;
+	align-self: center;
+	padding: 0 12px;
+}
+
+.fieldSection {
+	flex: 3;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	:global(.ff-date-range-start-picker) {
+		width: 100%;
+	}
+
+	:global(.ff-date-range-end-picker) {
+		width: 100%;
+	}
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.dateRange {
+	& > div {
+		align-items: flex-start;
+	}
+}
+
+.selectOption {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.badge {
+	opacity: 1;
+}

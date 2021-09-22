@@ -1,0 +1,11 @@
+var React = require('react');
+
+function TrafficCone (props) {
+    return React.createElement("svg",props,[React.createElement("title",{"key":0},"Illustration/empty_state/48x48_traffic_cone"),React.createElement("desc",{"key":1},"Created with Sketch."),React.createElement("g",{"id":"Illustration/empty_state/48x48_traffic_cone","stroke":"none","strokeWidth":"1","fill":"none","fillRule":"evenodd","key":2},React.createElement("g",{"id":"Group-2","transform":"translate(6.000000, 4.000000)"},React.createElement("g",{"id":"Group","transform":"translate(0.188871, 0.000000)"},[React.createElement("path",{"d":"M1.81112853,36 L33.8111285,36 C34.3634133,36 34.8111285,36.4477153 34.8111285,37 L34.8111285,39 C34.8111285,39.5522847 34.3634133,40 33.8111285,40 L1.81112853,40 C1.25884378,40 0.811128527,39.5522847 0.811128527,39 L0.811128527,37 C0.811128527,36.4477153 1.25884378,36 1.81112853,36 Z","id":"Rectangle","fill":"#FFCC00","key":0}),React.createElement("path",{"d":"M20.3848362,0.710812161 L31.1798118,36.4444444 L31.1798118,36.4444444 L4.44244529,36.4444444 L15.2374209,0.710812161 C15.3649231,0.288753104 15.7537957,-4.57590985e-15 16.1946933,0 L19.4275638,0 C19.8684614,-5.25080778e-16 20.2573339,0.288753104 20.3848362,0.710812161 Z","id":"Path","fill":"#FFCC00","key":1}),React.createElement("line",{"x1":"25.8111285","y1":"29","x2":"9.81112853","y2":"29","id":"Path","stroke":"#26292C","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","key":2}),React.createElement("line",{"x1":"21.8111285","y1":"15","x2":"13.8111285","y2":"15","id":"Path","stroke":"#26292C","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","key":3})])))]);
+}
+
+TrafficCone.defaultProps = {"width":"48px","height":"48px","viewBox":"0 0 48 48","version":"1.1"};
+
+module.exports = TrafficCone;
+
+TrafficCone.default = TrafficCone;

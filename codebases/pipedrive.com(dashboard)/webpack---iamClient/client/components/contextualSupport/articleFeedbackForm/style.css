@@ -1,0 +1,18 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___ArticleFeedbackForm___2hgZZ2hg{\n\tdisplay:flex;\n\tflex-direction:column;\n\tpadding:0 24px 16px;\n}\n\n\t.iam___ArticleFeedbackForm__header___2mEPz2mE{\n\t\tmargin-bottom:8px;\n\t\ttext-align:center;\n\t\tcolor:#747678;\n\t}\n\n\t.iam___ArticleFeedbackForm__textarea___nH4fXnH4{\n\t\tmargin-bottom:8px;\n\t}\n\n\t.iam___ArticleFeedbackForm__textarea___nH4fXnH4 textarea{\n\t\t\tborder-radius:4px;\n\t\t}\n\n\t.iam___ArticleFeedbackForm__checkbox___sqHHdsqH{\n\t\tmargin-bottom:8px;\n\t}\n\n\t.iam___ArticleFeedbackForm__submitButtonWrapper___yMk2ryMk{\n\t\tdisplay:flex;\n\t\tjustify-content:flex-end;\n\t}\n\n\t.iam___ArticleFeedbackForm__successMessage___LWYUhLWY{\n\t\ttext-align:center;\n\t\tcolor:#747678;\n\t}\n.iam___VotingControl____fE3M_fE{\n\tdisplay:flex;\n\tjustify-content:center;\n\tmargin-bottom:24px;\n}\n.iam___VotingControl__voteButton___1C6kb1C6{\n\t\tdisplay:flex;\n\t\tpadding:4px 8px;\n\t\tbackground-color:#ffffff;\n\t\tborder:none;\n\t\tborder-radius:4px;\n\t\tcursor:pointer;\n\t}\n.iam___VotingControl__voteButton___1C6kb1C6:hover{\n\t\t\tbackground-color:#eeeeee;\n\t\t}\n.iam___VotingControl__voteButton--active___3X6-53X6{\n\t\t\tbackground-color:#eff5fd;\n\t\t}\n.iam___VotingControl__voteButton--active___3X6-53X6:hover{\n\t\t\t\tbackground-color:#e6effb;\n\t\t\t}\n.iam___VotingControl__voteButton___1C6kb1C6:focus{\n\t\t\toutline:none;\n\t\t}\n", ""]);
+// Exports
+exports.locals = {
+	"ArticleFeedbackForm": "iam___ArticleFeedbackForm___2hgZZ2hg",
+	"ArticleFeedbackForm__header": "iam___ArticleFeedbackForm__header___2mEPz2mE",
+	"ArticleFeedbackForm__textarea": "iam___ArticleFeedbackForm__textarea___nH4fXnH4",
+	"ArticleFeedbackForm__checkbox": "iam___ArticleFeedbackForm__checkbox___sqHHdsqH",
+	"ArticleFeedbackForm__submitButtonWrapper": "iam___ArticleFeedbackForm__submitButtonWrapper___yMk2ryMk",
+	"ArticleFeedbackForm__successMessage": "iam___ArticleFeedbackForm__successMessage___LWYUhLWY",
+	"VotingControl": "iam___VotingControl____fE3M_fE",
+	"VotingControl__voteButton": "iam___VotingControl__voteButton___1C6kb1C6",
+	"VotingControl__voteButton--active": "iam___VotingControl__voteButton--active___3X6-53X6"
+};
+module.exports = exports;

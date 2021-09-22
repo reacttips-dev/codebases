@@ -1,0 +1,36 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/postcss/config.postcss';
+
+.actionBarWrapper {
+	height: 72px;
+	margin-bottom: -16px;
+	top: -16px;
+	z-index: 3;
+	position: sticky;
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		height: 16px;
+		position: sticky;
+	}
+
+	&::after {
+		background: linear-gradient(
+			$color-black-hex-4,
+			rgba(247, 247, 247, 0.4)
+		);
+		top: 0;
+		z-index: 2;
+	}
+
+	&::before {
+		box-shadow: $elevation-01;
+		top: 40px;
+	}
+}
+
+.actionBarDashboard {
+	margin-top: -16px;
+}

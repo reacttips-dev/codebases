@@ -1,0 +1,126 @@
+{
+  "name": "deep-equal",
+  "version": "2.0.5",
+  "description": "node's assert.deepEqual algorithm",
+  "main": "index.js",
+  "exports": {
+    ".": [
+      {
+        "default": "./index.js"
+      },
+      "./index.js"
+    ],
+    "./package": "./package.json",
+    "./package.json": "./package.json"
+  },
+  "directories": {
+    "lib": ".",
+    "example": "example",
+    "test": "test"
+  },
+  "scripts": {
+    "prepublish": "safe-publish-latest",
+    "pretest": "npm run lint",
+    "lint": "eslint .",
+    "tests-only": "nyc tape 'test/**/*.js'",
+    "test": "npm run tests-only",
+    "posttest": "npx aud --production",
+    "version": "auto-changelog && git add CHANGELOG.md",
+    "postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
+  },
+  "dependencies": {
+    "call-bind": "^1.0.0",
+    "es-get-iterator": "^1.1.1",
+    "get-intrinsic": "^1.0.1",
+    "is-arguments": "^1.0.4",
+    "is-date-object": "^1.0.2",
+    "is-regex": "^1.1.1",
+    "isarray": "^2.0.5",
+    "object-is": "^1.1.4",
+    "object-keys": "^1.1.1",
+    "object.assign": "^4.1.2",
+    "regexp.prototype.flags": "^1.3.0",
+    "side-channel": "^1.0.3",
+    "which-boxed-primitive": "^1.0.1",
+    "which-collection": "^1.0.1",
+    "which-typed-array": "^1.1.2"
+  },
+  "devDependencies": {
+    "@ljharb/eslint-config": "^17.3.0",
+    "aud": "^1.1.3",
+    "auto-changelog": "^2.2.1",
+    "eslint": "^7.14.0",
+    "has-symbols": "^1.0.1",
+    "has-typed-arrays": "^1.0.0",
+    "nyc": "^10.3.2",
+    "object.getownpropertydescriptors": "^2.1.1",
+    "safe-publish-latest": "^1.1.4",
+    "semver": "^6.3.0",
+    "tape": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/inspect-js/node-deep-equal.git"
+  },
+  "keywords": [
+    "equality",
+    "equal",
+    "compare"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "contributors": [
+    "James Halliday <mail@substack.net> (https://substack.net)",
+    "Jordan Harband <ljharb@gmail.com>"
+  ],
+  "funding": {
+    "url": "https://github.com/sponsors/ljharb"
+  },
+  "license": "MIT",
+  "testling": {
+    "files": "test/*.js",
+    "browsers": {
+      "ie": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "ff": [
+        3.5,
+        10,
+        15
+      ],
+      "chrome": [
+        10,
+        22
+      ],
+      "safari": [
+        5.1
+      ],
+      "opera": [
+        12
+      ]
+    }
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": false,
+    "commitLimit": false,
+    "backfillLimit": false,
+    "hideCredit": true
+  },
+  "greenkeeper": {
+    "ignore": [
+      "nyc",
+      "semver"
+    ]
+  },
+  "browser": {
+    "assert.js": false
+  }
+}

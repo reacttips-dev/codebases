@@ -1,0 +1,25 @@
+@import '@pipedrive/convention-ui-css/dist/postcss/colors.postcss';
+
+.shareLinkModalContainer {
+	min-height: 148px;
+	max-height: calc(100vh - 96px);
+	overflow: auto;
+}
+
+.modalWrapper {
+	max-height: 100vh;
+
+	& div[class='cui4-modal__wrap'] {
+		width: 800px;
+	}
+
+	& div[class='cui4-modal__content'] {
+		max-height: calc(100vh - 48px);
+	}
+}
+
+.modalWrapperNotRoundedBorders {
+	& div[class='cui4-modal__content'] {
+		border-radius: 0;
+	}
+}

@@ -1,0 +1,11 @@
+var React = require('react');
+
+function EmptyBarChart (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","fillRule":"evenodd"},[React.createElement("path",{"d":"M0 0h80v80H0z","key":0}),React.createElement("g",{"stroke":"#CBCCCD","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2","key":1},[React.createElement("path",{"d":"M10.5 34.5h7M22.442 34.5H52.5A1.5 1.5 0 0 1 54 36v9.003a1.5 1.5 0 0 1-1.5 1.5H7M7 54.503h33.563a1.5 1.5 0 0 1 1.5 1.5V65a1.5 1.5 0 0 1-1.5 1.5L7 66.503","key":0}),React.createElement("path",{"fill":"#CBCCCD","d":"M73 16.003v9a1.5 1.5 0 0 1-1.5 1.5H7v-12h64.5a1.5 1.5 0 0 1 1.5 1.5z","key":1}),React.createElement("path",{"d":"M7 60.503V8.513M7 72.5v-5.997","key":2})])]));
+}
+
+EmptyBarChart.defaultProps = {"width":"80","height":"80","viewBox":"0 0 80 80"};
+
+module.exports = EmptyBarChart;
+
+EmptyBarChart.default = EmptyBarChart;

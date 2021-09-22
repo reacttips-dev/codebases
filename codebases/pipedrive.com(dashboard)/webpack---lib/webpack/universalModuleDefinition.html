@@ -1,0 +1,11 @@
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("@pipedrive/convention-ui-react"), require("styled-components"));
+	else if(typeof define === 'function' && define.amd)
+		define(["react", "@pipedrive/convention-ui-react", "styled-components"], factory);
+	else if(typeof exports === 'object')
+		exports["lib"] = factory(require("react"), require("@pipedrive/convention-ui-react"), require("styled-components"));
+	else
+		root["lib"] = factory(root["react"], root["@pipedrive/convention-ui-react"], root["styled-components"]);
+})(self, function(__WEBPACK_EXTERNAL_MODULE__69297__, __WEBPACK_EXTERNAL_MODULE__26796__, __WEBPACK_EXTERNAL_MODULE__9914__) {
+return 

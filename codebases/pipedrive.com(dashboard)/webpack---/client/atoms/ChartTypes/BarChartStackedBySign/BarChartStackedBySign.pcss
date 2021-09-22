@@ -1,0 +1,28 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.stackedBarChart {
+	:global {
+		.recharts-cartesian-grid-horizontal {
+			line {
+				stroke: $color-black-hex-16;
+			}
+		}
+
+		.recharts-label-list .recharts-text {
+			font-weight: bold;
+			font-size: $font-size-s;
+			line-height: $line-height-s;
+		}
+
+		.recharts-cartesian-axis-tick-value {
+			font: $font-badge;
+			color: $color-black-hex-64;
+		}
+
+		.yAxis .recharts-text.recharts-label {
+			font-weight: $font-weight-normal;
+			font-size: $font-size-m;
+		}
+	}
+}

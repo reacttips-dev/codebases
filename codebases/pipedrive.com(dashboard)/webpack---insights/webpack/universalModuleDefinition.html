@@ -1,0 +1,11 @@
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("react-dom"), require("@pipedrive/convention-ui-react"), require("lodash"), require("prop-types"), require("moment"), require("react-dnd"));
+	else if(typeof define === 'function' && define.amd)
+		define(["react", "react-dom", "@pipedrive/convention-ui-react", "lodash", "prop-types", "moment", "react-dnd"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("react"), require("react-dom"), require("@pipedrive/convention-ui-react"), require("lodash"), require("prop-types"), require("moment"), require("react-dnd")) : factory(root["react"], root["react-dom"], root["@pipedrive/convention-ui-react"], root["lodash"], root["prop-types"], root["moment"], root["react-dnd"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(self, function(__WEBPACK_EXTERNAL_MODULE__69297__, __WEBPACK_EXTERNAL_MODULE__92268__, __WEBPACK_EXTERNAL_MODULE__26796__, __WEBPACK_EXTERNAL_MODULE__33804__, __WEBPACK_EXTERNAL_MODULE__34229__, __WEBPACK_EXTERNAL_MODULE__12470__, __WEBPACK_EXTERNAL_MODULE__19001__) {
+return 

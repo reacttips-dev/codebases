@@ -1,0 +1,53 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+%removeArea {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	height: 64px;
+	left: 312px;
+	transform: translateY(100%);
+	transition: transform 0.15s linear;
+}
+
+.removeAreaInvisible {
+	@extend %removeArea;
+
+	z-index: 10;
+}
+
+.removeAreaVisible {
+	@extend %removeArea;
+
+	display: flex;
+	box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1),
+		0 3px 3px -2px rgba(0, 0, 0, 0.06), 0 3px 4px 0 rgba(0, 0, 0, 0.05),
+		0 0 2px 0 rgba(0, 0, 0, 0.16);
+	background: $color-black-hex-4;
+	text-align: center;
+	z-index: 2;
+}
+
+.removeAreaTextWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 8px 74px;
+	border-radius: 2px;
+	border: 2px dashed $color-black-hex-16;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: $font-weight-bold;
+	color: $color-red-hex;
+
+	.removeAreaInvisible:hover + .removeAreaVisible & {
+		background: $color-black-hex-12;
+		border-style: solid;
+		border-color: $color-black-hex-12;
+	}
+}
+
+.isShown {
+	transform: none;
+}

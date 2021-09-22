@@ -1,0 +1,32 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/elevations.scss';
+
+$padding-side: 16px;
+
+.sidemenu {
+	width: calc(256px - 2 * $padding-side);
+	flex-shrink: 0;
+	background-color: $color-white-hex;
+	box-shadow: $elevation-01;
+	padding: 0 $padding-side $padding-side $padding-side;
+	overflow-y: auto;
+	z-index: 6003;
+}
+
+.searchWrapper {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	padding-top: $padding-side;
+	background: $color-white-hex;
+}
+
+.searchAndAddNewWrapper {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	padding-top: $padding-side;
+	background: $color-white-hex;
+	display: flex;
+}

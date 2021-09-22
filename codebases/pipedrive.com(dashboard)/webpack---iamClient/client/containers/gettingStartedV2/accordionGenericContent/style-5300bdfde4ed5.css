@@ -1,0 +1,11 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___GenericContent___GV86DGV8{\n\tbox-sizing:border-box;\n\tpadding:16px 0;\n\tborder-top:1px solid #eeeeee;\n\tmargin:0 16px;\n}\n\n\t .iam___GenericContent__body___YqBUbYqB{\n\t\t  font-size:13px;\n\t\t  line-height:20px;\n\t\t  margin-bottom:16px;\n\t }", ""]);
+// Exports
+exports.locals = {
+	"GenericContent": "iam___GenericContent___GV86DGV8",
+	"GenericContent__body": "iam___GenericContent__body___YqBUbYqB"
+};
+module.exports = exports;

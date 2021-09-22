@@ -1,0 +1,13 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___footer___26vZy26v{\n\tcursor:pointer;\n\tborder-top:1px solid #dcdddd;\n}\n\t.iam___footer___26vZy26v:hover{\n\t\t box-shadow:0px -1px 4px rgba(0, 0, 0, 0.1);\n\t}\n.iam___container___2rKvV2rK{\n\tpadding:12px 0;\n\tdisplay:flex;\n\talign-items:center;\n\tjustify-content:center;\n}\n.iam___footerText___130SJ130{\n\tfont:600 13px/16px 'Source Sans Pro',sans-serif;\n\ttext-transform:uppercase;\n\tmargin-left:8px;\n\tcolor:#317ae2;\n}\n.iam___icon___3qvmg3qv{\n\twidth:24px;\n\theight:24px;\n}\n", ""]);
+// Exports
+exports.locals = {
+	"footer": "iam___footer___26vZy26v",
+	"container": "iam___container___2rKvV2rK",
+	"footerText": "iam___footerText___130SJ130",
+	"icon": "iam___icon___3qvmg3qv"
+};
+module.exports = exports;

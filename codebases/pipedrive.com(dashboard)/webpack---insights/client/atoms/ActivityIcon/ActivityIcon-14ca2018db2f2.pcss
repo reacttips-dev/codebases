@@ -1,0 +1,13 @@
+import api from "!../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js";
+            import content from "!!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./ActivityIcon.pcss";
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+export default content.locals || {};

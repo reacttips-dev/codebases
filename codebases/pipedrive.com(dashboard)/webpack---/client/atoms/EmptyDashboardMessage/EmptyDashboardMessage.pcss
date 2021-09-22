@@ -1,0 +1,38 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 16px;
+	border: 2px dashed $color-black-hex-12;
+	border-radius: 4px;
+	min-height: 360px;
+	height: calc(100% - 34px);
+	text-align: center;
+}
+
+.hover {
+	background: $color-black-hex-8;
+}
+
+.title {
+	font-size: $font-size-xxl;
+	margin-top: 32px;
+}
+
+.subtitle {
+	font-size: $font-size-l;
+	margin-top: 20px;
+	color: $color-black-hex-64;
+}
+
+.link {
+	text-decoration: none;
+	color: $color-blue-hex;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

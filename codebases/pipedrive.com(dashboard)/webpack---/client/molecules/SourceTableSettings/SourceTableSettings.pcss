@@ -1,0 +1,92 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.tableSettingsButton {
+	position: absolute;
+	right: 0;
+	top: 1px;
+	box-shadow: none;
+	border-left: 1px solid $color-black-hex-24;
+	border-radius: 0;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	z-index: 1;
+}
+
+.dropMenu {
+	width: 370px;
+
+	:global {
+		.cui4-dropmenu__content {
+			padding: 0 0 8px 0;
+		}
+	}
+}
+
+.dropMenuPopover {
+	z-index: 6000;
+}
+
+.selectOption {
+	display: flex;
+
+	label {
+		padding: 6px 16px;
+		position: relative;
+		cursor: pointer;
+		flex: 1 1 auto;
+
+		span {
+			cursor: pointer;
+		}
+	}
+
+	&:hover {
+		background: $color-blue-hex;
+
+		span {
+			color: $color-white-hex;
+		}
+	}
+
+	&:active {
+		background: $color-blue-hex-shade-16;
+
+		span {
+			color: $color-white-hex;
+		}
+	}
+}
+
+.selectOptionDisabled {
+	pointer-events: none;
+}
+
+.scrollableContent {
+	max-height: calc(100vh - 270px);
+
+	:global {
+		.cui4-separator {
+			margin: 0;
+		}
+	}
+}
+
+.settingsHeader {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+
+	h5 {
+		flex: 1;
+		font: $font-title-l;
+	}
+
+	& + section {
+		margin: 0;
+	}
+}

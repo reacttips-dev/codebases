@@ -1,0 +1,89 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.list {
+	width: 291px;
+}
+
+.listTitle {
+	font-size: $font-size-xs;
+	font-weight: $font-weight-semi;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	min-height: 54px;
+
+	margin-bottom: 2px;
+	padding: 8px 16px;
+
+	border-radius: 4px;
+
+	&:hover {
+		background: $color-black-hex-4;
+	}
+}
+
+.linkActive {
+	background: $color-blue-hex-8;
+	color: $color-blue-hex;
+	font-weight: $font-weight-semi;
+
+	&:hover {
+		background: $color-blue-hex-8;
+	}
+}
+
+.linkText {
+	white-space: nowrap;
+	overflow: hidden;
+	align-items: center;
+}
+
+.linkTitle {
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	.linkActive & {
+		color: $color-blue-hex;
+		font-weight: $font-weight-semi;
+	}
+
+	.link:active & {
+		color: $color-white-hex;
+	}
+
+	.linkDisabled:active & {
+		color: $color-black-hex;
+	}
+}
+
+.linkSubtitle {
+	color: $color-black-hex-64;
+	font-size: $font-size-s;
+	white-space: initial;
+	padding-right: 22px;
+
+	.linkActive & {
+		color: $color-blue-hex;
+		font-weight: $font-weight-normal;
+	}
+
+	.link:active & {
+		color: $color-white-hex;
+	}
+
+	.linkDisabled:active & {
+		color: $color-black-hex-64;
+	}
+}
+
+.planBadge {
+	flex-shrink: 0;
+	opacity: 1;
+
+	margin-left: 8px;
+}

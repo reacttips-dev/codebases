@@ -1,0 +1,27 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.TableTabsWrapper {
+	display: flex;
+	justify-content: space-between;
+
+	:global {
+		.cui4-button--ghost > .cui4-icon {
+			fill: $color-black-hex;
+		}
+
+		.cui4-button--active > .cui4-icon {
+			fill: $color-blue-hex;
+		}
+
+		.cui4-spinner {
+			position: static;
+			margin-left: 8px;
+		}
+	}
+}
+
+.TableTabsWrapperActions {
+	display: flex;
+	align-items: center;
+}

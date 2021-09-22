@@ -1,0 +1,20 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___Results__list___1G_6y1G_{\n\t\t list-style:none;\n\t\t margin:0;\n\t\t padding:0;\n\t\t font-size:18px;\n\t}\n\t.iam___Results__item___3T4DQ3T4{\n\t\tposition:relative;\n\t\tpadding:0 24px;\n\t\tcursor:pointer;\n\t}\n\t.iam___Results__item___3T4DQ3T4:hover{\n\t\t\tbackground-color:#f7f7f7;\n\t\t}\n\t.iam___Results__item___3T4DQ3T4:hover svg{\n\t\t\t\tfill:#747678;\n\t\t\t}\n\t.iam___Results__item___3T4DQ3T4:active{\n\t\t\t background-color:#eeeeee;\n\t\t}\n\t.iam___Results__linkContainer___3Hq663Hq{\n\t\t display:grid;\n\t\t grid-template-columns:auto 2fr;\n\t\t height:auto;\n\t\t align-items:center;\n\t}\n\t.iam___Results__thumbnailWrapper___2HZhK2HZ{\n\t\tpadding:3px;\n\t\tmargin-right:16px;\n\t\tborder:0.5px solid #dcdddd;\n\t}\n\t.iam___Results__thumbnail___3flta3fl{\n\t\twidth:67px;\n\t\theight:38px;\n\t\tbackground-size:contain;\n\t\tbackground-repeat:no-repeat;\n\t\tbackground-position:center center;\n\t}\n\t.iam___Results__meta___1OntO1On{\n\t\tfont-size:13px;\n\t\tfont-weight:400;\n\t\tcolor:#747678;\n\t\tmargin-top:2px;\n\t}\n\t.iam___Results__meta___1OntO1On :first-child:after{\n\t\t\tcontent:'-';\n\t\t\tpadding:0 4px;\n\t\t}\n\t.iam___Results__meta___1OntO1On :last-child{\n\t\t\tpadding-left:16px;\n\t\t}\n\t.iam___Results__link___2hV3p2hV{\n\t\tpadding:12px 0;\n\t\tdisplay:flex;\n\t\talign-items:center;\n\t\tcolor:#26292c;\n\t\tfont:400 15px/20px 'Source Sans Pro',sans-serif;\n\t}\n\t.iam___Results__linkText___1d2Fi1d2{\n\t\tcolor:#26292c !important;\n\t\tflex:1;\n\t}\n\t.iam___Results__icon___1gkkN1gk{\n\t\tdisplay:none;\n\t}\n\t.iam___Results__icon___1gkkN1gk svg{\n\t\t\twidth:16px;\n\t\t\theight:16px;\n\t\t}\n\t.iam___Results__item___3T4DQ3T4:hover .iam___Results__icon___1gkkN1gk{\n\t\tjustify-self:end;\n\t\tdisplay:block;\n\t}\n\t.iam___Results__highlight___2SwRs2Sw{\n\t\tbackground:#fff570;\n\t}\n\t.iam___Results__line___3ctpD3ct{\n\t\tdisplay:grid;\n\t\tborder-top:1px solid #eeeeee;\n\t}\n\n\n", ""]);
+// Exports
+exports.locals = {
+	"Results__list": "iam___Results__list___1G_6y1G_",
+	"Results__item": "iam___Results__item___3T4DQ3T4",
+	"Results__linkContainer": "iam___Results__linkContainer___3Hq663Hq",
+	"Results__thumbnailWrapper": "iam___Results__thumbnailWrapper___2HZhK2HZ",
+	"Results__thumbnail": "iam___Results__thumbnail___3flta3fl",
+	"Results__meta": "iam___Results__meta___1OntO1On",
+	"Results__link": "iam___Results__link___2hV3p2hV",
+	"Results__linkText": "iam___Results__linkText___1d2Fi1d2",
+	"Results__icon": "iam___Results__icon___1gkkN1gk",
+	"Results__highlight": "iam___Results__highlight___2SwRs2Sw",
+	"Results__line": "iam___Results__line___3ctpD3ct"
+};
+module.exports = exports;

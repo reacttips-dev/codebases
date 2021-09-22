@@ -1,0 +1,11 @@
+var React = require('react');
+
+function LeadboosterIcon (props) {
+    return React.createElement("svg",props,React.createElement("path",{"fillRule":"nonzero","d":"M12 2a1 1 0 0 1 1 1v2h7c1.05 0 1.918.82 1.994 1.851L22 7v10c0 1.05-.82 1.918-1.851 1.994L20 19H6l-4 3V7c0-1.05.82-1.918 1.851-1.994L4 5h7V3a1 1 0 0 1 1-1zm8 5H4v11.544L6 17h14V7zm-7 6a1 1 0 0 1 0 2h-2a1 1 0 0 1 0-2zM7.5 9a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"}));
+}
+
+LeadboosterIcon.defaultProps = {"width":"24","height":"24","viewBox":"0 0 24 24"};
+
+module.exports = LeadboosterIcon;
+
+LeadboosterIcon.default = LeadboosterIcon;

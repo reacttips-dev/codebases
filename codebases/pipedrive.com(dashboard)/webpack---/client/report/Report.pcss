@@ -1,0 +1,18 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.reportWrapper {
+	height: auto;
+}
+
+.stickyHeader {
+	position: sticky;
+	top: 0;
+	background: $color-black-hex-4;
+	z-index: 6002;
+
+	:global {
+		.cui4-option--disabled:hover .cui4-icon {
+			fill: $color-black-hex-88;
+		}
+	}
+}

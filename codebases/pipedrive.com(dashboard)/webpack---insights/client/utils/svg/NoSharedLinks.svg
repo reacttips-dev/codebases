@@ -1,0 +1,11 @@
+var React = require('react');
+
+function NoSharedLinks (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none","fillRule":"evenodd"},[React.createElement("path",{"fill":"#317AE2","d":"M57.392 54.53a7.003 7.003 0 0 0 6.791 12.251l17.696-9.809a7.003 7.003 0 0 0-6.791-12.25L57.392 54.53zm-3.772-6.806l17.695-9.808c7.142-3.96 16.14-1.379 20.1 5.763 3.958 7.142 1.378 16.14-5.764 20.1l-17.695 9.808c-7.142 3.959-16.14 1.378-20.1-5.763-3.958-7.142-1.378-16.14 5.764-20.1z","key":0}),React.createElement("g",{"stroke":"#26292C","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":"2.5","key":1},[React.createElement("path",{"d":"M76.849 39.424c-3.106 1.722-4.212 5.664-2.471 8.805 1.741 3.141 5.67 4.292 8.776 2.57l17.996-9.974c3.106-1.722 4.212-5.664 2.47-8.805-1.74-3.142-5.67-4.293-8.776-2.571L76.85 39.424z","key":0}),React.createElement("path",{"d":"M72.645 31.84l17.995-9.975c7.247-4.017 16.416-1.331 20.479 5.998 4.062 7.33 1.481 16.528-5.766 20.545l-17.995 9.975c-7.247 4.017-16.415 1.332-20.478-5.998-4.063-7.33-1.482-16.528 5.765-20.545z","key":1})]),React.createElement("path",{"fill":"#317AE2","d":"M56.712 54.908l-3.773-6.806 18.348-10.17c7.155-3.967 16.167-1.397 20.127 5.747l-6.805 3.773c-1.874-3.381-6.149-4.6-9.55-2.715l-18.347 10.17z","key":2})]));
+}
+
+NoSharedLinks.defaultProps = {"width":"160","height":"80","viewBox":"0 0 160 80"};
+
+module.exports = NoSharedLinks;
+
+NoSharedLinks.default = NoSharedLinks;

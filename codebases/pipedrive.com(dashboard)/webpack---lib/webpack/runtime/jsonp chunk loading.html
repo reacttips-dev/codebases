@@ -1,0 +1,47 @@
+// no baseURI
+
+// object to store loaded and loading chunks
+// undefined = chunk not loaded, null = chunk preloaded/prefetched
+// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+var installedChunks = {
+	81: 0
+};
+
+// no chunk on demand loading
+
+// no prefetching
+
+// no preloaded
+
+// no HMR
+
+// no HMR manifest
+
+__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+
+// install a JSONP callback for chunk loading
+var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+	var [chunkIds, moreModules, runtime] = data;
+	// add "moreModules" to the modules object,
+	// then flag all "chunkIds" as loaded and fire callback
+	var moduleId, chunkId, i = 0;
+	for(moduleId in moreModules) {
+		if(__webpack_require__.o(moreModules, moduleId)) {
+			__webpack_require__.m[moduleId] = moreModules[moduleId];
+		}
+	}
+	if(runtime) var result = runtime(__webpack_require__);
+	if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+	for(;i < chunkIds.length; i++) {
+		chunkId = chunkIds[i];
+		if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+			installedChunks[chunkId][0]();
+		}
+		installedChunks[chunkIds[i]] = 0;
+	}
+	return __webpack_require__.O(result);
+}
+
+var chunkLoadingGlobal = self["leadbox-fe"] = self["leadbox-fe"] || [];
+chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));

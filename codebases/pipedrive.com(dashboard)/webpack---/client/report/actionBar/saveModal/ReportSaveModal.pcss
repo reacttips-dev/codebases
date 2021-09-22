@@ -1,0 +1,40 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.modal {
+	:global {
+		.cui4-modal__wrap {
+			width: 320px;
+		}
+	}
+}
+
+.listItem {
+	+ .listItem {
+		margin-top: 4px;
+	}
+
+	span {
+		cursor: pointer;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	:global {
+		.cui4-checkbox {
+			display: flex;
+		}
+	}
+}
+
+.notification {
+	display: block;
+	font: $font-body-s;
+	color: $color-black-hex-64;
+	margin: 0 0 0 24px;
+}
+
+.submit {
+	margin-left: 8px;
+}

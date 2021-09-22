@@ -1,0 +1,27 @@
+var _g;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+function SvgNone(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "16px",
+    height: "16px",
+    viewBox: "0 1 16 16",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink"
+  }, props), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "triangle",
+    stroke: "none",
+    strokeWidth: 1,
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M0.140609415,13.4207204 L7.09307041,1.50870657 C7.38538348,1.00787136 8.0283572,0.838830762 8.52919241,1.13114383 C8.68547883,1.22236058 8.8155384,1.35242015 8.90675515,1.50870657 L15.8592161,13.4207204 C16.1515292,13.9215556 15.9824886,14.5645293 15.4816534,14.8568424 C15.3210198,14.9505964 15.1383656,15 14.9523738,15 L1.04745178,15 C0.467552796,15 -0.00254821717,14.529899 -0.00254821717,13.95 C-0.00254821717,13.7640082 0.0468554312,13.581354 0.140609415,13.4207204 Z M6.99075153,4.95802382 L6.99075153,9.97901191 L9.00924646,9.97901191 L9.00924646,4.95802382 L6.99075153,4.95802382 Z M6.99075153,10.9832095 L6.99075153,12.9916048 L9.00924646,12.9916048 L9.00924646,10.9832095 L6.99075153,10.9832095 Z",
+    id: "Combined-Shape",
+    fill: "#FFDF5C"
+  }))));
+}
+
+export default SvgNone;

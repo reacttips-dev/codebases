@@ -1,0 +1,40 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.panel {
+	margin-bottom: 0px;
+	border-radius: 4px;
+	height: 48px;
+	position: sticky;
+	top: 56px;
+	z-index: 1;
+
+	:global {
+		.cui4-input {
+			width: auto;
+		}
+	}
+}
+
+.panelExpanded {
+	border-radius: 4px 4px 0 0;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+.title {
+	display: flex;
+	flex: 0 0 auto;
+	font: $font-title-m;
+	color: $color-black-hex;
+}
+
+.summary {
+	flex: 1;
+	justify-content: flex-end;
+	overflow: hidden;
+	margin-left: 8px;
+}

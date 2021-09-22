@@ -1,0 +1,15 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___ImportDataContent___myURJmyU{\n\tbox-sizing:border-box;\n\tbackground-color:#f7f7f7;\n\tpadding:16px;\n}\n\n\t.iam___ImportDataContent__separator___1cQJL1cQ{\n\t\tborder-top:1px solid #eeeeee;\n\t\tmargin:16px 0;\n\t}\n\n\t.iam___ImportDataContent__title___23AKG23A{\n\t\tmargin:16px 0 12px 0;\n\t\tfont-size:13px;\n\t\tline-height:16px;\n\t\tfont-weight:600;\n\t\ttext-transform:uppercase;\n\t}\n\n\t.iam___ImportDataContent__linkWrapper___1PRSJ1PR{\n\t\tmargin-bottom:8px;\n\t}\n\n\t.iam___ImportDataContent__link___1-5Fn1-5{\n\t\tfont-weight:400 !important;\n\t\tfont-size:15px !important;\n\t\tline-height:20px !important;\n\t}\n\n\t.iam___ImportDataContent__video___42Qmr42Q{\n\t\twidth:154px;\n\t\theight:87px;\n\t}", ""]);
+// Exports
+exports.locals = {
+	"ImportDataContent": "iam___ImportDataContent___myURJmyU",
+	"ImportDataContent__separator": "iam___ImportDataContent__separator___1cQJL1cQ",
+	"ImportDataContent__title": "iam___ImportDataContent__title___23AKG23A",
+	"ImportDataContent__linkWrapper": "iam___ImportDataContent__linkWrapper___1PRSJ1PR",
+	"ImportDataContent__link": "iam___ImportDataContent__link___1-5Fn1-5",
+	"ImportDataContent__video": "iam___ImportDataContent__video___42Qmr42Q"
+};
+module.exports = exports;

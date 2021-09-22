@@ -1,0 +1,39 @@
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.titleWrap {
+	display: flex;
+	padding: 0 10px 0 16px;
+	align-items: center;
+	overflow: hidden;
+
+	:global {
+		.cui4-editable-text--readonly {
+			.cui4-editable-text__input {
+				color: inherit;
+			}
+
+			.cui4-editable-text__box:hover {
+				background: none;
+
+				.cui4-editable-text__input {
+					background: none;
+				}
+			}
+		}
+	}
+}
+
+.title {
+	overflow: hidden;
+
+	:global {
+		.cui4-editable-text__input {
+			padding-right: 0;
+
+			&:not(:focus) {
+				background: $color-black-hex-4;
+			}
+		}
+	}
+}

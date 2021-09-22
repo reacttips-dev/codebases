@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ApiIcon (props) {
+    return React.createElement("svg",props,React.createElement("path",{"d":"M3.91664 5.79093L0.959717 3.83304L3.91664 1.87514M11.9729 1.87514L14.9298 3.83304L11.9729 5.79093M6.6221 6.78996L9.26742 1.20996","stroke":"currentColor","strokeWidth":"1.125","strokeLinecap":"round","strokeLinejoin":"round"}));
+}
+
+ApiIcon.defaultProps = {"width":"16","height":"8","viewBox":"0 0 16 8","fill":"none"};
+
+module.exports = ApiIcon;
+
+ApiIcon.default = ApiIcon;

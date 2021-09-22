@@ -1,0 +1,304 @@
+var _g;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+function SvgNoDeals(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 377,
+    height: 172,
+    viewBox: "0 0 377 172"
+  }, props), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    fill: "none",
+    fillRule: "evenodd",
+    transform: "translate(1 1)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    stroke: "#DCDDDD",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M260.818 45.724h63.233c.355 0 .696-.15.949-.415l-.005-20.92a1.31 1.31 0 0 0-.924-.389h-73.716c-.748 0-1.355.648-1.355 1.448v18.827c0 .8.607 1.449 1.355 1.449h4.628"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    stroke: "#DCDDDD",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M195 45.724h59.619c.331 0 .65-.15.886-.415l6.93-9.66c.499-.56.506-1.477.017-2.048-.009-.01-2.326-3.08-6.951-9.212a1.185 1.185 0 0 0-.864-.389h-68.87c-.7 0-1.267.648-1.267 1.448v18.827c0 .8.567 1.449 1.266 1.449H189"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    stroke: "#DCDDDD",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M128.785 45.724h59.834c.331 0 .65-.15.886-.415l6.93-9.66c.499-.56.506-1.477.017-2.048-.009-.01-2.326-3.08-6.951-9.212a1.185 1.185 0 0 0-.864-.389h-68.87c-.7 0-1.267.648-1.267 1.448v18.827c0 .8.567 1.449 1.266 1.449h4.859"
+  }), /*#__PURE__*/React.createElement("text", {
+    fill: "#CBCCCD",
+    fontFamily: "Panton-BlackCaps, Panton",
+    fontSize: 8,
+    fontWeight: 700
+  }, /*#__PURE__*/React.createElement("tspan", {
+    x: 134.5,
+    y: 38.182
+  }, "2")), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M120.09 84h65.306c.402 0 .728.326.728.727v21.859a.727.727 0 0 1-.728.727h-65.305a.727.727 0 0 1-.727-.727V84.727c0-.401.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M128.423 92h30.201a1.06 1.06 0 1 1 0 2.12h-30.2a1.06 1.06 0 0 1 0-2.12zM128.423 96.727h8.478a1.06 1.06 0 1 1 0 2.12h-8.478a1.06 1.06 0 0 1 0-2.12z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M49.182 56.364h65.305c.402 0 .728.325.728.727v21.858a.727.727 0 0 1-.728.728H49.182a.727.727 0 0 1-.727-.728V57.091c0-.402.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 107.545,
+    cy: 67.818,
+    r: 2.727,
+    fill: "#F94839"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M57.514 69.455h10.067a1.06 1.06 0 1 1 0 2.12l-10.067-.001a1.06 1.06 0 1 1 0-2.12zM57.514 64.727h25.433a1.06 1.06 0 1 1 0 2.12H57.514a1.06 1.06 0 1 1 0-2.12z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M120.09 56.364h65.306c.402 0 .728.325.728.727v21.858a.727.727 0 0 1-.728.728h-65.305a.727.727 0 0 1-.727-.728V57.091c0-.402.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 178.455,
+    cy: 67.818,
+    r: 2.727,
+    fill: "#DCDDDD"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M128.423 64.727h25.433a1.06 1.06 0 1 1 0 2.12h-25.433a1.06 1.06 0 0 1 0-2.12zM128.423 69.455h19.604a1.06 1.06 0 1 1 0 2.12l-19.604-.001a1.06 1.06 0 0 1 0-2.12z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M49.182 137.818h65.305c.402 0 .728.326.728.727v21.859a.727.727 0 0 1-.728.727H49.182a.727.727 0 0 1-.727-.727v-21.859c0-.401.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M57.514 145.818h19.604a1.06 1.06 0 1 1 0 2.12H57.514a1.06 1.06 0 0 1 0-2.12zM57.514 151.273h10.067a1.06 1.06 0 1 1 0 2.12H57.514a1.06 1.06 0 0 1 0-2.12z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 107.545,
+    cy: 149.636,
+    r: 2.727,
+    fill: "#DCDDDD"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M49.182 110.91h65.305c.402 0 .728.325.728.726v21.859a.727.727 0 0 1-.728.727H49.182a.727.727 0 0 1-.727-.727v-21.859c0-.401.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 107.545,
+    cy: 122.727,
+    r: 2.727,
+    fill: "#DCDDDD"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M57.514 118.91h26.492a1.06 1.06 0 0 1 0 2.12l-26.492-.002a1.06 1.06 0 0 1 0-2.12zM57.514 124H71.29a1.06 1.06 0 1 1 0 2.12H57.514a1.06 1.06 0 0 1 0-2.12z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#FC0",
+    d: "M107.568 92.928l2.06 4.122a.364.364 0 0 1-.325.526h-4.121a.364.364 0 0 1-.325-.526l2.06-4.122a.364.364 0 0 1 .65 0z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M49.182 84h65.305c.402 0 .728.326.728.727v21.859a.727.727 0 0 1-.728.727H49.182a.727.727 0 0 1-.727-.727V84.727c0-.401.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M57.514 92h18.464a1.06 1.06 0 1 1 0 2.12H57.514a1.06 1.06 0 1 1 0-2.12zM57.514 96.727h10.067a1.06 1.06 0 1 1 0 2.12H57.514a1.06 1.06 0 1 1 0-2.12z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#FC0",
+    d: "M107.87 93.236l2.392 4.783a.364.364 0 0 1-.325.526h-4.783a.364.364 0 0 1-.325-.526l2.391-4.783a.364.364 0 0 1 .65 0z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M120.09 110.91h65.306c.402 0 .728.325.728.726v21.892a.727.727 0 0 1-.728.727h-65.305a.727.727 0 0 1-.727-.727v-21.892c0-.401.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#FC0",
+    d: "M179.052 120.145l2.392 4.783a.364.364 0 0 1-.325.527h-4.783a.364.364 0 0 1-.326-.527l2.392-4.783a.364.364 0 0 1 .65 0z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M128.447 118.91h29.906a1.084 1.084 0 0 1 0 2.168l-29.906-.001a1.084 1.084 0 0 1 0-2.168zM128.447 123.636h8.597a1.084 1.084 0 1 1 0 2.168h-8.597a1.084 1.084 0 0 1 0-2.168z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M190.636 84h65.306c.402 0 .727.326.727.727v21.892a.727.727 0 0 1-.727.727h-65.306a.727.727 0 0 1-.727-.727V84.727c0-.401.326-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M198.993 92h29.906a1.084 1.084 0 1 1 0 2.168h-29.906a1.084 1.084 0 1 1 0-2.168zM198.993 96.727h8.596a1.084 1.084 0 1 1 0 2.168h-8.596a1.084 1.084 0 1 1 0-2.168z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 249,
+    cy: 95.455,
+    r: 2.727,
+    fill: "#08A742"
+  }), /*#__PURE__*/React.createElement("path", {
+    stroke: "#EEE",
+    strokeDasharray: "3.636363636363637,3.636363636363637",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M191 111.273h64.246c.402 0 .727.325.727.727v20.83a.727.727 0 0 1-.727.728H191a.727.727 0 0 1-.727-.727V112c0-.402.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#EEE",
+    d: "M200.09 117.09h65.306c.402 0 .728.327.728.728v21.892a.727.727 0 0 1-.728.727h-65.305a.727.727 0 0 1-.727-.727v-21.892c0-.401.325-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M208.447 125.09h29.906a1.084 1.084 0 1 1 0 2.168h-29.906a1.084 1.084 0 0 1 0-2.168zM208.447 129.818h8.597a1.084 1.084 0 1 1 0 2.168h-8.597a1.084 1.084 0 0 1 0-2.168z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 258.091,
+    cy: 128.909,
+    r: 2.727,
+    fill: "#08A742"
+  }), /*#__PURE__*/React.createElement("rect", {
+    width: 66.76,
+    height: 23.346,
+    x: 260.818,
+    y: 56.364,
+    fill: "#F7F7F7",
+    rx: 0.727
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M269.902 64.727h27.97a1.084 1.084 0 1 1 0 2.168h-27.97a1.084 1.084 0 1 1 0-2.168zM269.902 69.455h10.21a1.084 1.084 0 0 1 0 2.168h-10.21a1.084 1.084 0 1 1 0-2.168z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 319.909,
+    cy: 67.818,
+    r: 2.727,
+    fill: "#DCDDDD"
+  }), /*#__PURE__*/React.createElement("path", {
+    stroke: "#EEE",
+    strokeDasharray: "3.636363636363637,3.636363636363637",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M262.273 84.364h64.246c.401 0 .727.325.727.727v20.83a.727.727 0 0 1-.727.728h-64.246a.727.727 0 0 1-.728-.727V85.09c0-.402.326-.727.728-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    d: "M190.636 56.364h65.306c.402 0 .727.325.727.727v21.858a.727.727 0 0 1-.727.728h-65.306a.727.727 0 0 1-.727-.728V57.091c0-.402.326-.727.727-.727z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#DCDDDD",
+    d: "M198.969 64.727h28.081a1.06 1.06 0 1 1 0 2.12H198.97a1.06 1.06 0 0 1 0-2.12zM198.969 69.455h10.067a1.06 1.06 0 1 1 0 2.12l-10.067-.001a1.06 1.06 0 0 1 0-2.12z"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 249,
+    cy: 67.818,
+    r: 2.727,
+    fill: "#DCDDDD"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F7F7F7",
+    stroke: "#DCDDDD",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M114.02 45.724h4.553c.332 0 .65-.15.887-.415l6.929-9.66c.5-.56.507-1.477.017-2.048-.008-.01-2.326-3.08-6.95-9.212a1.185 1.185 0 0 0-.864-.389H49.72c-.7 0-1.266.648-1.266 1.448v18.827c0 .8.567 1.449 1.266 1.449h58.056"
+  }), /*#__PURE__*/React.createElement("text", {
+    fill: "#CBCCCD",
+    fontFamily: "Panton-BlackCaps, Panton",
+    fontSize: 8,
+    fontWeight: 700
+  }, /*#__PURE__*/React.createElement("tspan", {
+    x: 56.818,
+    y: 38.182
+  }, "1")), /*#__PURE__*/React.createElement("text", {
+    fill: "#CBCCCD",
+    fontFamily: "Panton-BlackCaps, Panton",
+    fontSize: 8,
+    fontWeight: 700
+  }, /*#__PURE__*/React.createElement("tspan", {
+    x: 202.864,
+    y: 38.182
+  }, "3")), /*#__PURE__*/React.createElement("text", {
+    fill: "#CBCCCD",
+    fontFamily: "Panton-BlackCaps, Panton",
+    fontSize: 8,
+    fontWeight: 700
+  }, /*#__PURE__*/React.createElement("tspan", {
+    x: 269,
+    y: 38.182
+  }, "4")), /*#__PURE__*/React.createElement("path", {
+    stroke: "#08A742",
+    strokeDasharray: "3.272727272727273,3.636363636363637",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M270.273 128.809c15.509 0 28.081-12.573 28.081-28.082"
+  }), /*#__PURE__*/React.createElement("path", {
+    stroke: "#08A742",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M295.727 102.284l2.648-2.648 2.807 2.807"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#FFF",
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M111 57.455l-3.273 3.272-3.272-3.272h-9.819A3.636 3.636 0 0 1 91 53.818V32a3.636 3.636 0 0 1 3.636-3.636h26.352A3.636 3.636 0 0 1 124.625 32v21.818a3.636 3.636 0 0 1-3.637 3.637H111zM181.785 111.273l-3.193 2.909-3.193-2.91h-9.49a3.636 3.636 0 0 1-3.636-3.636V85.818a3.636 3.636 0 0 1 3.636-3.636h25.455A3.636 3.636 0 0 1 195 85.818v21.818a3.636 3.636 0 0 1-3.636 3.637h-9.58z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#FC0",
+    d: "M172.09 90.91h12.99c.603 0 1.09.488 1.09 1.09v9.155a1.09 1.09 0 0 1-1.09 1.09h-12.99a1.09 1.09 0 0 1-1.09-1.09V92c0-.602.488-1.09 1.09-1.09z"
+  }), /*#__PURE__*/React.createElement("path", {
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M172.264 92.169l5.861 4.789a.727.727 0 0 0 .92 0l5.862-4.79"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#F94839",
+    d: "M102.93 36.083c.936-.28 1.947.174 2.258 1.015l.745 2.007c.25.676-.006 1.42-.637 1.85l-.517.353a10.977 10.977 0 0 0 1.945 2.664c.757.756 1.623 1.38 2.6 1.872l.621-.51a2.008 2.008 0 0 1 1.817-.352l1.905.554c.09.027.18.06.265.097.952.426 1.34 1.466.866 2.321l-.522.942c-.318.575-.975.933-1.689.922-2.734-.043-5.405-1.368-8.016-3.973-2.21-2.206-3.694-6.1-4.026-6.94-.222-.56-.034-1.162.562-1.807l1.823-1.015z"
+  }), /*#__PURE__*/React.createElement("g", {
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#FFF",
+    d: "M252.454 83.636l-3.272 3.273-3.273-3.273h-9.454A3.636 3.636 0 0 1 232.818 80V58.182a3.636 3.636 0 0 1 3.637-3.637h25.454a3.636 3.636 0 0 1 3.636 3.637V80a3.636 3.636 0 0 1-3.636 3.636h-9.455z"
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M254.983 65.422c0-.986-.773-1.786-1.727-1.786-.954 0-1.727.8-1.727 1.786s.773 1.786 1.727 1.786c.954 0 1.727-.8 1.727-1.786zM257.182 72.5c-.388-1.91-2.018-3.344-3.97-3.344-1.111 0-2.119.465-2.852 1.219M247.364 66.91a1.818 1.818 0 1 0-3.636-.001 1.818 1.818 0 0 0 3.636 0zM249.545 74.182c0-2.21-1.871-4-4.181-4s-4.182 1.79-4.182 4"
+  })), /*#__PURE__*/React.createElement("path", {
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M13.11 169.818h348.825M366.273 169.818h5.09M3.91 169.818h3.635M37.182 169.09V7.274A7.273 7.273 0 0 1 44.455 0h284.363a7.273 7.273 0 0 1 7.273 7.273V147.23"
+  }), /*#__PURE__*/React.createElement("g", {
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M179.727 7.636H189M192.09 7.636h1.455"
+  })), /*#__PURE__*/React.createElement("path", {
+    fill: "#08A742",
+    d: "M321.16 161.807c-3.864-4.8-5.796-10.129-5.796-15.987 0-5.858 1.932-11.187 5.797-15.986a.727.727 0 0 1 1.133 0c3.865 4.8 5.797 10.128 5.797 15.986 0 5.858-1.932 11.187-5.797 15.987a.727.727 0 0 1-1.133 0zM321.234 165.626c1.831-4.248 4.7-7.499 8.605-9.754 3.905-2.254 8.154-3.113 12.749-2.575a.727.727 0 0 1 .583 1.01c-1.832 4.248-4.7 7.499-8.605 9.753-3.905 2.255-8.155 3.113-12.75 2.576a.727.727 0 0 1-.582-1.01z"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "#08A742",
+    d: "M321.496 165.624c-1.832-4.247-4.7-7.498-8.605-9.753-3.905-2.255-8.155-3.113-12.75-2.576a.727.727 0 0 0-.583 1.01c1.832 4.248 4.7 7.5 8.605 9.754 3.906 2.255 8.155 3.113 12.75 2.576a.727.727 0 0 0 .583-1.01z"
+  }), /*#__PURE__*/React.createElement("path", {
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091,
+    d: "M321.545 143.636v25.819M332.09 159.636l-10.363 5.637M311.364 159.636l9.818 5.455"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 373.182,
+    cy: 142.545,
+    r: 1.818,
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 2.909,
+    cy: 116.727,
+    r: 2.909,
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: 15.182,
+    cy: 145.636,
+    r: 2,
+    stroke: "#26292C",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 1.091
+  }))));
+}
+
+export default SvgNoDeals;

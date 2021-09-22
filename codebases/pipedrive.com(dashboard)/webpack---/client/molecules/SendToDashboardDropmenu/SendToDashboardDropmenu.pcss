@@ -1,0 +1,42 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+$frootHeaderHeight: 56px;
+$actionBarHeight: 56px;
+
+.dropmenuWrapper {
+	max-height: calc(100vh - $frootHeaderHeight - $actionBarHeight);
+}
+
+.dropmenuFooter {
+	padding: 8px 0;
+}
+
+.dropmenuOption {
+	display: flex;
+	align-items: center;
+}
+
+.dropmenuOptionHighlighted {
+	color: $color-blue-hex;
+
+	& > span {
+		color: $color-blue-hex;
+	}
+}
+
+.dropdownOptionIcon {
+	margin-right: 8px;
+
+	.dropmenuOptionHighlighted & {
+		fill: $color-blue-hex;
+	}
+
+	.dropmenuOption:hover & {
+		fill: $color-white-hex;
+	}
+
+	.dropmenuOptionDisabled:hover & {
+		fill: $color-black-hex-88;
+		opacity: 0.32;
+	}
+}

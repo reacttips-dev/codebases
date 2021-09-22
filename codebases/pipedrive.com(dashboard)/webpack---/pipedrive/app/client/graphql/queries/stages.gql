@@ -1,0 +1,24 @@
+
+    var doc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"stagesQueryFragment"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Query"}},"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"stages"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"order_nr"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"name"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"active_flag"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"rotten_flag"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"rotten_days"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"add_time"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"update_time"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"deal_probability"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"pipeline_id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"pipeline_name"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"pipeline_deal_probability"},"arguments":[],"directives":[]}]}}]}}],"loc":{"start":0,"end":222}};
+    doc.loc.source = {"body":"fragment stagesQueryFragment on Query {\n\tstages {\n\t\tid\n\t\torder_nr\n\t\tname\n\t\tactive_flag\n\t\trotten_flag\n\t\trotten_days\n\t\tadd_time\n\t\tupdate_time\n\t\tdeal_probability\n\t\tpipeline_id\n\t\tpipeline_name\n\t\tpipeline_deal_probability\n\t}\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+      module.exports = doc;
+    

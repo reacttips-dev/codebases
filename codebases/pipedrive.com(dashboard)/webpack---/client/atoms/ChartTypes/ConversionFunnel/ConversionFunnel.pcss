@@ -1,0 +1,57 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.chart {
+	:global {
+		.recharts-wrapper {
+			display: flex;
+		}
+
+		.recharts-surface {
+			paint-order: stroke;
+		}
+
+		.recharts-cartesian-grid-horizontal {
+			line {
+				stroke: $color-black-hex-8;
+				transform: translate(0, 2px);
+			}
+
+			line:last-child {
+				stroke-opacity: 0;
+			}
+		}
+
+		.recharts-cartesian-axis-tick .recharts-text {
+			font: $font-body-s;
+			color: $color-black-hex;
+		}
+
+		.recharts-cartesian-axis.recharts-yAxis {
+			.recharts-cartesian-axis-tick-value {
+				font: $font-badge;
+				color: $color-black-hex-64;
+			}
+		}
+	}
+}
+
+.chartInWidget {
+	:global {
+		.recharts-cartesian-axis-tick .recharts-text {
+			font: $font-body-s;
+			color: $color-black-hex;
+		}
+	}
+}
+
+.paginationLine {
+	display: none;
+}
+
+.visiblePaginationLine {
+	display: initial;
+	position: relative;
+	border-left: 1px solid $color-black-hex-12;
+	box-shadow: -1px 0px 3px 0 rgba(38, 41, 44, 0.32);
+}

@@ -1,0 +1,12 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___NoResults___4Be4J4Be{\n    display:flex;\n    justify-content:center;\n    padding-top:40px;\n    padding-bottom:48px;\n    color:#747678;\n}\n    \n    .iam___NoResults__text___2Jol62Jo{\n        padding-right:4px;\n    }\n    \n    .iam___NoResults__query___1WVnw1WV{\n        max-width:50%;\n        overflow-wrap:anywhere;\n    }\n", ""]);
+// Exports
+exports.locals = {
+	"NoResults": "iam___NoResults___4Be4J4Be",
+	"NoResults__text": "iam___NoResults__text___2Jol62Jo",
+	"NoResults__query": "iam___NoResults__query___1WVnw1WV"
+};
+module.exports = exports;

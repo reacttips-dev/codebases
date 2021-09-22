@@ -1,0 +1,120 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.popoverTrigger {
+	box-shadow: none;
+	background: $color-black-hex-4;
+	border-radius: 16px;
+	margin: 0 8px 0 0;
+	display: flex;
+	flex: 1 0 auto;
+	position: relative;
+
+	&:hover {
+		background: $color-black-hex-8;
+	}
+
+	&:before {
+		content: '';
+		background: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 80%
+		);
+		width: 16px;
+		height: inherit;
+		position: absolute;
+		left: -16px;
+		pointer-events: none;
+	}
+}
+
+.listWrapper {
+	position: relative;
+	white-space: nowrap;
+	display: flex;
+	min-height: 24px;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.listItem {
+	font: $font-badge;
+	color: $color-black-hex-64;
+	display: inline-flex;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 0 8px;
+
+	&:after {
+		content: '';
+		width: 2px;
+		height: 2px;
+		border-radius: 100%;
+		background: $color-black-hex-64;
+		display: inline-flex;
+		position: absolute;
+		right: 0;
+		top: 7px;
+	}
+
+	&:first-of-type {
+		padding-left: 0;
+	}
+
+	&:last-of-type {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.listItemContent {
+	display: flex;
+	align-items: center;
+}
+
+.legend {
+	text-transform: none;
+	font: $font-body-s;
+	padding: 0 8px 0 0;
+	display: flex;
+	align-items: center;
+
+	&:after {
+		display: none;
+	}
+}
+
+.legendDot {
+	width: 10px;
+	height: 10px;
+	margin-right: 4px;
+	border-radius: 100%;
+	display: inline-flex;
+}
+
+.alignLeft {
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.alignRight {
+	overflow: hidden;
+	justify-content: flex-end;
+}
+
+.customBadge {
+	color: $color-blue-hex;
+	background: $color-blue-hex-8;
+	border: 1px solid $color-blue-hex-64;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 0 8px;
+}

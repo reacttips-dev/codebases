@@ -1,0 +1,24 @@
+
+    var doc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"userCompaniesQueryFragment"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Query"}},"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"userCompanies"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"company"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"name"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"region"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"status"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"domain"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"account_type"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"migration_status"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"public_traffic_lock_flag"},"arguments":[],"directives":[]}]}},{"kind":"Field","name":{"kind":"Name","value":"verified_flag"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"admin_flag"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"suites"},"arguments":[],"directives":[]}]}}]}}],"loc":{"start":0,"end":231}};
+    doc.loc.source = {"body":"fragment userCompaniesQueryFragment on Query {\n\tuserCompanies {\n\t\tcompany {\n\t\t\tid\n\t\t\tname\n\t\t\tregion\n\t\t\tstatus\n\t\t\tdomain\n\t\t\taccount_type\n\t\t\tmigration_status\n\t\t\tpublic_traffic_lock_flag\n\t\t}\n\t\tverified_flag\n\t\tadmin_flag\n\t\tsuites\n\t}\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+      module.exports = doc;
+    

@@ -1,0 +1,11 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___SectionHeader__container___1PL8t1PL{\n        display:flex;\n        align-items:center;\n    }\n    .iam___SectionHeader__title___26DLn26D{\n\t\t font:600 13px/16px 'Source Sans Pro',sans-serif;\n\t\t text-transform:uppercase;\n\t\t color:#26292c;\n\t\t padding-left:24px;\n\t }", ""]);
+// Exports
+exports.locals = {
+	"SectionHeader__container": "iam___SectionHeader__container___1PL8t1PL",
+	"SectionHeader__title": "iam___SectionHeader__title___26DLn26D"
+};
+module.exports = exports;

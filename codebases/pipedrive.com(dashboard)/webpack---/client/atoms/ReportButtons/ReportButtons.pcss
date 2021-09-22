@@ -1,0 +1,26 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.dropmenuOption {
+	display: flex;
+	align-items: center;
+}
+
+.dropmenuOptionHighlighted {
+	color: $color-blue-hex;
+}
+
+.dropdownOptionIcon {
+	margin-right: 8px;
+
+	.dropmenuOptionHighlighted & {
+		fill: $color-blue-hex;
+	}
+
+	.dropmenuOption:hover & {
+		fill: $color-white-hex;
+	}
+}
+
+.saveAsNewDisabled {
+	min-width: 100px;
+}

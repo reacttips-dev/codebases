@@ -1,0 +1,136 @@
+
+    var doc = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"getUserSelf"},"variableDefinitions":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"userSettings"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"companyFeatures"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"legacyUserSettings"},"arguments":[],"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"userSelfQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"userCompaniesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"companyQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"activityTypesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"pipelinesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"stagesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"currenciesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"customViewsQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"customFieldsQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"userEmailsQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"integrationsQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"constantsQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"currentCompanyInfoQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"globalMessagesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"billingDetailsFragment"},"directives":[]}]}},{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"manualWriteQuery"},"variableDefinitions":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"userSelfQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"userCompaniesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"companyQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"activityTypesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"pipelinesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"stagesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"currenciesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"globalMessagesQueryFragment"},"directives":[]},{"kind":"FragmentSpread","name":{"kind":"Name","value":"billingDetailsFragment"},"directives":[]}]}}],"loc":{"start":0,"end":1148}};
+    doc.loc.source = {"body":"#import '../me.gql'\n#import '../user-companies/query.gql'\n#import '../custom-fields.gql'\n#import '../company/query.gql'\n#import '../activity-types.gql'\n#import '../pipelines.gql'\n#import '../stages.gql'\n#import '../currencies.gql'\n#import '../custom-views.gql'\n#import '../legacy.gql'\n#import '../global-messages/query.gql'\n#import '../billing-details/query.gql'\n\nquery getUserSelf {\n\tuserSettings\n\tcompanyFeatures\n\tlegacyUserSettings\n\n\t...userSelfQueryFragment\n\t...userCompaniesQueryFragment\n\t...companyQueryFragment\n\t...activityTypesQueryFragment\n\t...pipelinesQueryFragment\n\t...stagesQueryFragment\n\t...currenciesQueryFragment\n\t...customViewsQueryFragment\n\t...customFieldsQueryFragment\n\t...userEmailsQueryFragment\n\t...integrationsQueryFragment\n\t...constantsQueryFragment\n\t...currentCompanyInfoQueryFragment\n\t...globalMessagesQueryFragment\n\t...billingDetailsFragment\n}\n\nquery manualWriteQuery {\n\t...userSelfQueryFragment\n\t...userCompaniesQueryFragment\n\t...companyQueryFragment\n\t...activityTypesQueryFragment\n\t...pipelinesQueryFragment\n\t...stagesQueryFragment\n\t...currenciesQueryFragment\n\t...globalMessagesQueryFragment\n\t...billingDetailsFragment\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  doc.definitions = doc.definitions.concat(unique(require('../me.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../user-companies/query.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../custom-fields.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../company/query.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../activity-types.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../pipelines.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../stages.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../currencies.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../custom-views.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../legacy.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../global-messages/query.gql').definitions));
+doc.definitions = doc.definitions.concat(unique(require('../billing-details/query.gql').definitions));
+
+
+    // Collect any fragment/type references from a node, adding them to the refs Set
+    function collectFragmentReferences(node, refs) {
+      if (node.kind === "FragmentSpread") {
+        refs.add(node.name.value);
+      } else if (node.kind === "VariableDefinition") {
+        var type = node.type;
+        if (type.kind === "NamedType") {
+          refs.add(type.name.value);
+        }
+      }
+
+      if (node.selectionSet) {
+        node.selectionSet.selections.forEach(function(selection) {
+          collectFragmentReferences(selection, refs);
+        });
+      }
+
+      if (node.variableDefinitions) {
+        node.variableDefinitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+
+      if (node.definitions) {
+        node.definitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+    }
+
+    var definitionRefs = {};
+    (function extractReferences() {
+      doc.definitions.forEach(function(def) {
+        if (def.name) {
+          var refs = new Set();
+          collectFragmentReferences(def, refs);
+          definitionRefs[def.name.value] = refs;
+        }
+      });
+    })();
+
+    function findOperation(doc, name) {
+      for (var i = 0; i < doc.definitions.length; i++) {
+        var element = doc.definitions[i];
+        if (element.name && element.name.value == name) {
+          return element;
+        }
+      }
+    }
+
+    function oneQuery(doc, operationName) {
+      // Copy the DocumentNode, but clear out the definitions
+      var newDoc = {
+        kind: doc.kind,
+        definitions: [findOperation(doc, operationName)]
+      };
+      if (doc.hasOwnProperty("loc")) {
+        newDoc.loc = doc.loc;
+      }
+
+      // Now, for the operation we're running, find any fragments referenced by
+      // it or the fragments it references
+      var opRefs = definitionRefs[operationName] || new Set();
+      var allRefs = new Set();
+      var newRefs = new Set();
+
+      // IE 11 doesn't support "new Set(iterable)", so we add the members of opRefs to newRefs one by one
+      opRefs.forEach(function(refName) {
+        newRefs.add(refName);
+      });
+
+      while (newRefs.size > 0) {
+        var prevRefs = newRefs;
+        newRefs = new Set();
+
+        prevRefs.forEach(function(refName) {
+          if (!allRefs.has(refName)) {
+            allRefs.add(refName);
+            var childRefs = definitionRefs[refName] || new Set();
+            childRefs.forEach(function(childRef) {
+              newRefs.add(childRef);
+            });
+          }
+        });
+      }
+
+      allRefs.forEach(function(refName) {
+        var op = findOperation(doc, refName);
+        if (op) {
+          newDoc.definitions.push(op);
+        }
+      });
+
+      return newDoc;
+    }
+
+    module.exports = doc;
+    
+        module.exports["getUserSelf"] = oneQuery(doc, "getUserSelf");
+        
+        module.exports["manualWriteQuery"] = oneQuery(doc, "manualWriteQuery");
+        

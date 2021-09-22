@@ -1,0 +1,80 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.filters {
+	position: relative;
+	padding: 0 0 0 23px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&:hover {
+		background: $color-black-hex-4;
+	}
+}
+
+.filtersDisabled {
+	&:hover {
+		background: transparent;
+	}
+}
+
+.filterActions {
+	display: flex;
+	visibility: hidden;
+	justify-content: center;
+	width: 32px;
+	margin-right: 16px;
+
+	.filters:hover & {
+		visibility: visible;
+	}
+}
+
+.value {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 8px 0 0 26px;
+
+	&::before {
+		content: '';
+		border-radius: 100%;
+		width: 7px;
+		height: 7px;
+		border: solid 2px $color-black-hex-12;
+		background-color: $color-white-hex;
+		position: absolute;
+		left: 0;
+		top: 20px;
+		z-index: 1;
+	}
+
+	&::after {
+		.filters:not(:last-child) & {
+			content: '';
+			width: 1px;
+			background: $color-black-hex-12;
+			position: absolute;
+			top: 0;
+			bottom: -20px;
+			left: 5px;
+		}
+
+		.filters:first-child & {
+			top: 20px;
+		}
+	}
+}
+
+.filterBy {
+	padding-right: 4px;
+	color: $color-black-hex-64;
+}
+
+.operators {
+	display: flex;
+}
+
+.input {
+	margin-right: 8px;
+}

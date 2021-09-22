@@ -1,0 +1,43 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.removeButton {
+	margin-left: -2px !important;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-radius: 0 4px 4px 0;
+}
+
+.buttonWithOutBorderRadius {
+	:global {
+		.cui4-button:first-child {
+			border-top-right-radius: 0px;
+			border-bottom-right-radius: 0px;
+			background: $color-blue-hex-8;
+			box-sizing: border-box;
+			border-radius: 4px 0px 0px 4px;
+			color: $color-blue-hex;
+
+			span {
+				color: $color-blue-hex !important;
+			}
+		}
+	}
+}
+
+.userSelect {
+	margin-left: 8px;
+}
+
+.periodSelect {
+	:global {
+		.cui4-select {
+			margin: 0px;
+
+			.cui4-select__box > span {
+				color: $color-black-hex;
+				font-weight: $font-weight-bold;
+			}
+		}
+	}
+}

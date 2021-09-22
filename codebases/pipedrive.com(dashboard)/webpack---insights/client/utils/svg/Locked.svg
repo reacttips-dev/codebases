@@ -1,0 +1,11 @@
+var React = require('react');
+
+function Locked (props) {
+    return React.createElement("svg",props,[React.createElement("title",{"key":0},"components/lock/simple/48/2px yellow"),React.createElement("desc",{"key":1},"Created with Sketch."),React.createElement("g",{"id":"Upselling-&-tier-restriction-screens","stroke":"none","strokeWidth":"1","fill":"none","fillRule":"evenodd","key":2},React.createElement("g",{"id":"Inisghts-2.0---Restricted-widget-with-custom-fields---Admin","transform":"translate(-760.000000, -257.000000)"},React.createElement("g",{"id":"Group-14-Copy","transform":"translate(612.000000, 121.000000)"},React.createElement("g",{"id":"Group-4"},React.createElement("g",{"id":"Group-3"},React.createElement("g",{"id":"Group-2"},React.createElement("g",{"id":"Group-6"},React.createElement("g",{"id":"Group-13","transform":"translate(24.000000, 131.000000)"},React.createElement("g",{"id":"components/lock/simple/48/2px-yellow","transform":"translate(118.000000, 0.000000)"},React.createElement("g",{"id":"components/lock/simple/48/stroke-2.5px"},React.createElement("g",{"id":"Group","transform":"translate(5.400000, 6.000000)"},[React.createElement("path",{"d":"M9,10.6666667 L9,9.11111111 C9,4.07918339 13.2980664,2.27373675e-13 18.6,2.27373675e-13 C23.9019336,2.27373675e-13 28.2,4.07918339 28.2,9.11111111 L28.2,10.6666667","id":"semicircle","stroke":"#26292C","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","key":0}),React.createElement("path",{"d":"M36.6,32.4 L36.6,34.8 C36.6,36.1254834 35.5254834,37.2 34.2,37.2 L3,37.2 C1.6745166,37.2 0.6,36.1254834 0.6,34.8 L0.6,13.2 C0.6,11.8745166 1.6745166,10.8 3,10.8 L34.2,10.8 C35.5254834,10.8 36.6,11.8745166 36.6,13.2 L36.6,26.4 L36.6,26.4","id":"Rectangle","fill":"#FFCC00","key":1}),React.createElement("circle",{"id":"circle","stroke":"#26292C","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","cx":"18.6","cy":"24","r":"3.96226415","key":2})])))))))))))]);
+}
+
+Locked.defaultProps = {"width":"36px","height":"39px","viewBox":"0 0 36 39","version":"1.1"};
+
+module.exports = Locked;
+
+Locked.default = Locked;

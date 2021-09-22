@@ -1,0 +1,51 @@
+.container {
+	:global(.cui4-dropmenu__content) {
+		max-width: 370px;
+		min-width: 210px;
+
+		:global(.cui4-option) {
+			display: flex;
+
+			&:hover {
+				:global(.cui4-option-check) {
+					color: white;
+				}
+
+				:global(.cui4-button) {
+					top: 4px;
+					visibility: visible;
+					align-self: center;
+				}
+			}
+		}
+
+		:global(.cui4-option--selected) {
+			padding-right: 0;
+		}
+
+		:global(.cui4-button) {
+			z-index: 999;
+			position: absolute;
+			right: 14px;
+			visibility: hidden;
+		}
+	}
+
+	:global(.cui4-button) {
+		margin-right: 8px;
+	}
+
+	:global(.cui4-button) {
+		max-width: 180px;
+		text-align: left;
+		margin-right: -1px;
+	}
+
+	.optionTitle {
+		flex: 1;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		padding-right: 40px;
+	}
+}

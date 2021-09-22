@@ -1,0 +1,73 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.titleWrapper {
+	display: flex;
+	justify-content: space-between;
+	min-height: 32px;
+	align-items: flex-start;
+	margin-bottom: -8px;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.titleContent {
+	display: inline-flex;
+	position: relative;
+	align-items: center;
+	flex: 1 1 auto;
+	overflow: hidden;
+
+	svg {
+		margin-right: 6px;
+	}
+}
+
+.titleLink {
+	color: $color-black-hex;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	:global {
+		.iamClient__Coachmark {
+			margin-left: 16px;
+		}
+	}
+}
+
+.dragHandle {
+	cursor: grab;
+	flex-shrink: 0;
+	justify-content: flex-end;
+}
+
+.editButton {
+	margin: 0 8px 0 auto;
+}
+
+.widgetButton {
+	display: none;
+	min-width: 32px;
+	height: 32px;
+	padding: 0;
+	justify-content: center;
+}
+
+.widgetActions {
+	display: flex;
+}
+
+.widgetActionsVisible {
+	> button {
+		display: inline-flex;
+	}
+}
+
+.widgetTop {
+	top: 0;
+	width: 100%;
+	background: $color-white-hex;
+}

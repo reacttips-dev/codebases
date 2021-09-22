@@ -1,0 +1,11 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___Footer___2rE7G2rE{\n\tfont-size:18px;\n}\n\n\t.iam___Footer__skip___3Om593Om{\n\t\tposition:relative;\n\t\tdisplay:inline-block;\n\t\tmargin:9px 0 9px 24px;\n\t\ttext-transform:uppercase;\n\t\tfont-size:15px;\n\t\tcolor:#747678;\n\t\tcursor:pointer;\n\t}\n\n\t.iam___Footer__skip___3Om593Om:hover{\n\t\ttext-decoration:underline;\n\t}\n", ""]);
+// Exports
+exports.locals = {
+	"Footer": "iam___Footer___2rE7G2rE",
+	"Footer__skip": "iam___Footer__skip___3Om593Om"
+};
+module.exports = exports;

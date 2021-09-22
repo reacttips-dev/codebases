@@ -1,0 +1,57 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.listHeader {
+	margin: 8px 8px 8px 0;
+}
+
+.sectionContainer {
+	margin: 8px 8px 0 0;
+}
+
+.listItem {
+	margin: 4px 8px 0 16px;
+	display: flex;
+
+	&:hover {
+		:global {
+			.cui4-icon--white {
+				fill: $color-blue-hex;
+			}
+		}
+	}
+}
+
+.listItemIcon {
+	position: relative;
+	top: 2px;
+	margin-right: 8px;
+	fill: $color-black-hex-64;
+}
+
+.redirectIcon {
+	margin-left: 8px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	min-width: 434px;
+}
+
+.footerActions {
+	margin: 0 4px;
+}
+
+.selectActions {
+	display: flex;
+	flex-direction: row;
+}
+
+.selectButton {
+	margin-right: 8px;
+}

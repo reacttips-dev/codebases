@@ -1,0 +1,56 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.panel {
+	margin-bottom: 0px;
+	border-radius: 4px;
+	height: 48px;
+
+	:global {
+		.cui4-input {
+			width: auto;
+		}
+	}
+
+	&:hover {
+		button {
+			display: inline-flex;
+		}
+	}
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filtersCountTitle {
+	position: relative;
+	bottom: 1px;
+}
+
+.headerAction {
+	margin-left: 8px;
+}
+
+.panelTitle {
+	white-space: nowrap;
+	font: $font-title-m;
+	color: $color-black-hex;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.panelIcon {
+	margin-right: 16px;
+	position: relative;
+	bottom: 2px;
+}
+
+.headerActions {
+	display: flex;
+	height: 32px;
+	position: relative;
+	align-items: center;
+}

@@ -1,0 +1,155 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.tableWrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	border: none;
+}
+
+.tableWrapperWithDynamicSize {
+	overflow: auto;
+	max-height: calc(100vh - 232px);
+}
+
+.tableHead {
+	display: flex;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.tableBody {
+	display: flex;
+	flex-direction: column;
+
+	.tr {
+		overflow: visible;
+	}
+}
+
+.tr {
+	flex: 1 0 auto;
+	display: inline-flex;
+	overflow: hidden;
+
+	&:hover {
+		.td {
+			background: $color-black-hex-4;
+		}
+	}
+}
+
+.th {
+	display: flex;
+	flex: 1 0 auto;
+	font-weight: $font-weight-semi;
+	border-top: 1px solid $color-black-hex-24;
+}
+
+.td {
+	position: relative;
+	display: flex;
+	flex: 1 0 auto;
+
+	:global {
+		.cui4-tag {
+			margin-right: 4px;
+		}
+	}
+}
+
+.th,
+.td {
+	min-height: 32px;
+	border-right: 1px solid $color-black-hex-24;
+	border-bottom: 1px solid $color-black-hex-24;
+	background: $color-white-hex;
+	padding: 5px 8px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	&:before {
+		content: '';
+		width: 3px;
+		background: $color-blue-hex-88;
+		height: calc(100% + 2px);
+		position: absolute;
+		top: -1px;
+		display: none;
+	}
+
+	&:first-child {
+		border-left: none;
+		padding: 5px 8px 5px 16px;
+	}
+
+	&:last-child {
+		border-right: none;
+		padding: 5px 16px 5px 8px;
+	}
+
+	span {
+		display: block;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+.left {
+	&:before {
+		display: block;
+		left: 0;
+	}
+}
+
+.right {
+	&:before {
+		display: block;
+		right: 0;
+	}
+}
+
+.tdActive {
+	background: $color-black-hex-4;
+}
+
+.resizer {
+	display: inline-block;
+	width: 16px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(50%);
+	z-index: 1;
+}
+
+.cellWrapper {
+	position: relative;
+}
+
+.isRightAligned {
+	text-align: right;
+
+	.sortCaret {
+		left: 8px;
+	}
+}
+
+.sortCaret {
+	position: absolute;
+	top: 5px;
+	right: 8px;
+}
+
+.isSorted {
+	background: $color-black-hex-12;
+}
+
+.isHightlighted {
+	font-weight: $font-weight-semi;
+}

@@ -1,0 +1,11 @@
+var React = require('react');
+
+function ResizeHandle (props) {
+    return React.createElement("svg",props,React.createElement("g",{"fill":"none"},[React.createElement("path",{"d":"M-3-3h16v16H-3z","key":0}),React.createElement("path",{"fill":"#747678","d":"M9 2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm-4 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm-4 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z","key":1})]));
+}
+
+ResizeHandle.defaultProps = {"width":"10","height":"10"};
+
+module.exports = ResizeHandle;
+
+ResizeHandle.default = ResizeHandle;

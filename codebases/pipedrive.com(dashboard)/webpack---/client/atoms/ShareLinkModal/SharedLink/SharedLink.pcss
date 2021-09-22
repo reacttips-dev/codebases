@@ -1,0 +1,61 @@
+@import '@pipedrive/convention-ui-css/dist/postcss/colors.postcss';
+
+.linkCard {
+	margin: 8px 0;
+	padding: 8px 16px 12px 12px;
+	position: static;
+
+	&:hover {
+		.editNameButton {
+			visibility: visible;
+		}
+	}
+}
+
+.editNameButton {
+	visibility: hidden;
+	margin-left: 8px;
+}
+
+.inputContainer {
+	display: flex;
+}
+
+.input {
+	width: 100%;
+
+	input[type='text'][readonly] {
+		border-right: none;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+
+		&:focus {
+			border-right: none;
+		}
+	}
+}
+
+.deleteButton {
+	margin-left: 8px;
+}
+
+.copyToClipboardButton {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-left: none;
+}
+
+.linkTitle {
+	display: inline-block;
+	font-weight: 600;
+}
+
+.linkNameContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 6px;
+}

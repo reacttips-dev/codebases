@@ -1,0 +1,12 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___PulsatingCoachmark___3GHHf3GH{\n\tposition:absolute;\n\tz-index:3;\n\twidth:10px;\n\theight:10px;\n}\n\n\t.iam___PulsatingCoachmark--topLeft___nP3zNnP3{\n\t\tleft:0;\n\t\ttop:0;\n\t\ttransform:translateX(-50%) translateY(-50%);\n\t}\n\n\t.iam___PulsatingCoachmark--topRight___39q1w39q{\n\t\tright:0;\n\t\ttop:0;\n\t\ttransform:translateX(50%) translateY(-50%);\n\t}\n", ""]);
+// Exports
+exports.locals = {
+	"PulsatingCoachmark": "iam___PulsatingCoachmark___3GHHf3GH",
+	"PulsatingCoachmark--topLeft": "iam___PulsatingCoachmark--topLeft___nP3zNnP3",
+	"PulsatingCoachmark--topRight": "iam___PulsatingCoachmark--topRight___39q1w39q"
+};
+module.exports = exports;

@@ -1,0 +1,87 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.link {
+	padding: 10px 16px;
+	width: 100%;
+
+	&:hover {
+		background: $color-blue-hex;
+		color: $color-white-hex;
+	}
+}
+
+.linkActive,
+.linkDisabled {
+	&:hover {
+		background: $color-white-hex;
+		color: $color-black-hex;
+		cursor: default;
+	}
+}
+
+.linkText {
+	margin-right: 24px;
+	display: flex;
+	align-items: center;
+}
+
+.linkIcon {
+	margin-right: 16px;
+
+	.link:hover & {
+		fill: $color-white-hex;
+	}
+
+	.linkDisabled:hover &,
+	.linkActive:hover & {
+		fill: $color-black-hex;
+	}
+}
+
+.linkTitle {
+	display: block;
+
+	.link:hover & {
+		color: $color-white-hex;
+	}
+
+	.linkActive & {
+		font-weight: $font-weight-semi;
+	}
+
+	.linkDisabled:hover &,
+	.linkActive:hover & {
+		color: $color-black-hex;
+	}
+}
+
+.linkSubtitle {
+	display: block;
+	color: $color-black-hex-64;
+	font-size: $font-size-s;
+
+	.link:hover & {
+		color: $color-white-hex;
+	}
+
+	.linkActive & {
+		font-weight: $font-weight-normal;
+	}
+
+	.linkDisabled:hover &,
+	.linkActive:hover & {
+		color: $color-black-hex-64;
+	}
+}
+
+.addOn {
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.fullWidth {
+	width: 100%;
+}

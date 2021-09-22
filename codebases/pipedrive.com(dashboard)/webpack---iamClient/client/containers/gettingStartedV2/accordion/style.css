@@ -1,0 +1,17 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___Accordion___21y8B21y{\n\tbox-sizing:border-box;\n}\n\n\t.iam___Accordion__wrapper___bdPs6bdP:not(:last-child){\n\t\tmargin-bottom:16px;\n\t}\n\n\t.iam___Accordion__titleWrapper___LGZ0OLGZ{\n\t\tjustify-content:space-between;\n\t\tpadding:16px;\n\t\tcursor:pointer;\n\t}\n\n\t.iam___Accordion__titleWrapper___LGZ0OLGZ,.iam___Accordion__leftTitleWrapper___1OBXM1OB{\n\t\tdisplay:flex;\n\t\talign-items:center;\n\t}\n\n\t.iam___Accordion__mainTitle___22QPw22Q{\n\t\tfont-size:15px;\n\t\tline-height:20px;\n\t\tfont-weight:600;\n\t\tmargin-bottom:4px;\n\t}\n\n\t.iam___Accordion__subTitle___3pfT13pf{\n\t\tfont-size:13px;\n\t\tline-height:16px;\n\t}\n\n\t.iam___Accordion__icon___18ji018j{\n\t\tmargin-right:8px;\n\t}\n\n\t.iam___Accordion__content___32ME632M{\n\t}", ""]);
+// Exports
+exports.locals = {
+	"Accordion": "iam___Accordion___21y8B21y",
+	"Accordion__wrapper": "iam___Accordion__wrapper___bdPs6bdP",
+	"Accordion__titleWrapper": "iam___Accordion__titleWrapper___LGZ0OLGZ",
+	"Accordion__leftTitleWrapper": "iam___Accordion__leftTitleWrapper___1OBXM1OB",
+	"Accordion__mainTitle": "iam___Accordion__mainTitle___22QPw22Q",
+	"Accordion__subTitle": "iam___Accordion__subTitle___3pfT13pf",
+	"Accordion__icon": "iam___Accordion__icon___18ji018j",
+	"Accordion__content": "iam___Accordion__content___32ME632M"
+};
+module.exports = exports;

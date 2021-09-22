@@ -1,0 +1,37 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/elevations.scss';
+
+.widget {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background: $color-white-hex;
+	box-shadow: $elevation-01;
+	border-radius: 2px;
+	height: 100%;
+
+	:global {
+		.cui4-separator {
+			margin: 0;
+		}
+
+		.cui4-spinner.cui4-spinner--light {
+			position: absolute;
+			top: 16px;
+			left: unset;
+			right: 16px;
+		}
+	}
+
+	&:hover {
+		button {
+			visibility: visible;
+			display: inline-flex;
+		}
+	}
+}
+
+.textStrong {
+	font-weight: $font-weight-semi;
+}

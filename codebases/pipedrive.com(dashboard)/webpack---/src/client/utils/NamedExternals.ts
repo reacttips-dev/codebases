@@ -1,0 +1,46 @@
+export default {
+	'@pipedrive/convention-ui-react': () =>
+		import(/* webpackChunkName: "@pipedrive/convention-ui-react" */ '@pipedrive/convention-ui-react'),
+	'@pipedrive/logger-fe': () => import(/* webpackChunkName: "@pipedrive/logger-fe" */ '@pipedrive/logger-fe'),
+	'@pipedrive/fetch': () => import(/* webpackChunkName: "@pipedrive/fetch" */ '@pipedrive/fetch'),
+	'@pipedrive/form-fields': () => import(/* webpackChunkName: "@pipedrive/form-fields" */ '@pipedrive/form-fields'),
+	'@pipedrive/form-fields5': () =>
+		import(/* webpackChunkName: "@pipedrive/form-fields5" */ '@pipedrive/form-fields5'),
+	'react': () => import(/* webpackChunkName: "react" */ 'react'),
+	'react-dom': () => import(/* webpackChunkName: "react-dom" */ 'react-dom'),
+	'react-router6': () => import(/* webpackChunkName: "react-router6" */ 'react-router'),
+	'react-router-dom6': () => import(/* webpackChunkName: "react-router-dom6" */ 'react-router-dom'),
+	'react-router-dom': () => import(/* webpackChunkName: "reactRouterDom5" */ 'reactRouterDom5'),
+	'prop-types': () => import(/* webpackChunkName: "prop-types" */ 'prop-types'),
+	'redux': () => import(/* webpackChunkName: "redux" */ 'redux3'),
+	'react-dnd': () => import(/* webpackChunkName: "react-dnd" */ 'react-dnd'),
+	'react-dnd14': () => import(/* webpackChunkName: "react-dnd14" */ 'react-dnd14'),
+	'react-redux': () => import(/* webpackChunkName: "react-redux5" */ 'reactRedux5'),
+	'styled-components': () => import(/* webpackChunkName: "styled-components" */ 'styled-components'),
+	'@apollo/client': () => import(/* webpackChunkName: "@apollo/client" */ '@apollo/client'),
+	'iframe-resizer': () => import(/* webpackChunkName: "iframe-resizer" */ 'iframe-resizer'),
+	'@reduxjs/toolkit': () => import(/* webpackChunkName: "@reduxjs/toolkit" */ '@reduxjs/toolkit'),
+	'@pipedrive/formatter': () => import(/* webpackChunkName: "@pipedrive/formatter" */ '@pipedrive/formatter'),
+	'react16': () => import(/* webpackChunkName: "react" */ 'react'),
+	'react-dom16': () => import(/* webpackChunkName: "react-dom" */ 'react-dom'),
+	'prop-types15': () => import(/* webpackChunkName: "prop-types" */ 'prop-types'),
+	'redux3': () => import(/* webpackChunkName: "redux" */ 'redux3'),
+	'react-redux5': () => import(/* webpackChunkName: "react-redux5" */ 'reactRedux5'),
+	'react-redux7': () => import(/* webpackChunkName: "react-redux7" */ 'react-redux'),
+	'@pipedrive/translator-client/fe': async () =>
+		(await import(/* webpackChunkName: "@pipedrive/translator-client/fe" */ '@pipedrive/translator-client/fe'))
+			.default,
+	'@pipedrive/translator-client': async () =>
+		(await import(/* webpackChunkName: "@pipedrive/translator-client" */ '@pipedrive/translator-client')).default,
+	'@pipedrive/pd-wysiwyg': () => import(/* webpackChunkName: "@pipedrive/pd-wysiwyg" */ '@pipedrive/pd-wysiwyg'),
+	'@pipedrive/sanitize-html': () =>
+		import(/* webpackChunkName: "@pipedrive/sanitize-html" */ '@pipedrive/sanitize-html'),
+	'backbone': async () => (await import(/* webpackChunkName: "backbone" */ 'backbone')).default,
+	'lodash': async () => (await import(/* webpackChunkName: "lodash" */ 'lodash')).default,
+	'underscore': async () => (await import(/* webpackChunkName: "lodash" */ 'lodash')).default,
+	'jquery': async () => (await import(/* webpackChunkName: "jquery" */ 'jquery')).default,
+	'moment': async () => (await import(/* webpackChunkName: "moment" */ 'moment')).default,
+	'moment-timezone': async () => (await import(/* webpackChunkName: "moment-timezone" */ 'moment-timezone')).default,
+	'pikaday': async () => (await import(/* webpackChunkName: "pikaday" */ 'pikaday')).default,
+	'lottie-web': async () => (await import(/* webpackChunkName: "lottie-web" */ 'lottie-web')).default,
+};

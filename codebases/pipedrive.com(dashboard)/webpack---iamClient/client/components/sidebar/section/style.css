@@ -1,0 +1,13 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___Section___b8vBcb8v{\n\tflex-grow:0;\n\tz-index:1;\n}\n\n\t.iam___Section--scrollable___wL5HswL5{\n\t\tflex-grow:2;\n\t\toverflow-y:auto;\n\t\toverflow-x:auto;\n\t}\n\n\t.iam___Section--staticWidth___1p74e1p7{\n\t\t width:400px;\n\t}\n\n\t.iam___Section--contentOffset___BKi9gBKi{\n\t\tpadding-bottom:120px;\n\t}\n", ""]);
+// Exports
+exports.locals = {
+	"Section": "iam___Section___b8vBcb8v",
+	"Section--scrollable": "iam___Section--scrollable___wL5HswL5",
+	"Section--staticWidth": "iam___Section--staticWidth___1p74e1p7",
+	"Section--contentOffset": "iam___Section--contentOffset___BKi9gBKi"
+};
+module.exports = exports;

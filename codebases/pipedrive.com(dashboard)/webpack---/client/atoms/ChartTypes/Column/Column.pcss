@@ -1,0 +1,71 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.chart {
+	:global {
+		.recharts-wrapper {
+			display: flex;
+		}
+
+		.recharts-surface {
+			paint-order: stroke;
+		}
+
+		.recharts-cartesian-grid-horizontal {
+			line {
+				stroke: $color-black-hex-8;
+				transform: translate(0, 2px);
+			}
+
+			line:last-child {
+				stroke-opacity: 0;
+			}
+		}
+
+		.recharts-cartesian-axis-tick .recharts-text {
+			font: $font-body-s;
+			color: $color-black-hex;
+		}
+
+		.recharts-cartesian-axis.recharts-yAxis {
+			.recharts-cartesian-axis-tick-value {
+				font: $font-badge;
+				color: $color-black-hex-64;
+			}
+		}
+
+		.yAxis .recharts-text.recharts-label {
+			font-weight: $font-weight-normal;
+			font-size: $font-size-m;
+		}
+	}
+}
+
+.chartInWidget {
+	:global {
+		.recharts-cartesian-axis-tick .recharts-text {
+			font: $font-body-s;
+			color: $color-black-hex;
+		}
+
+		.yAxis .recharts-text.recharts-label {
+			font-weight: $font-weight-normal;
+			font-size: $font-size-m;
+		}
+	}
+}
+
+.columnBarTextWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.columnBarText {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 2px;
+}

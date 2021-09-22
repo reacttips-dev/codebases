@@ -1,0 +1,14 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___ArticleHeader___2oSFy2oS{\n\tposition:relative;\n\tmargin-top:10px;\n}\n\n\t.iam___ArticleHeader__icon___1Vi0j1Vi{\n\t\tposition:absolute;\n\t\ttop:16px;\n\t\tleft:4px;\n\t}\n\n\t.iam___ArticleHeader__title___1MWkf1MW{\n\t\tpadding-left:44px;\n\t\tdisplay:inline-block;\n\t\tfont-weight:600;\n\t\tfont-size:27px;\n\t\tcursor:auto;\n\t\tline-height:32px;\n\t}\n\n\t.iam___ArticleHeader__subtitle___3fyOL3fy{\n\t\tfont-weight:400;\n\t\tfont-size:15px;\n\t\tcursor:auto;\n\t\tcolor:#747678;\n\t\tpadding:0 0 24px 44px;\n\t}\n\n\t.iam___ArticleHeader--withoutIcon___1BuZP1Bu{\n\t\tpadding-left:0px;\n\t}\n", ""]);
+// Exports
+exports.locals = {
+	"ArticleHeader": "iam___ArticleHeader___2oSFy2oS",
+	"ArticleHeader__icon": "iam___ArticleHeader__icon___1Vi0j1Vi",
+	"ArticleHeader__title": "iam___ArticleHeader__title___1MWkf1MW",
+	"ArticleHeader__subtitle": "iam___ArticleHeader__subtitle___3fyOL3fy",
+	"ArticleHeader--withoutIcon": "iam___ArticleHeader--withoutIcon___1BuZP1Bu"
+};
+module.exports = exports;

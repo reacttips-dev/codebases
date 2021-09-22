@@ -1,0 +1,31 @@
+var _g;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+function SvgArrow(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    className: "arrow",
+    width: 16,
+    height: 56,
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("path", {
+    className: "arrow__right",
+    fill: "#F7F7F7",
+    d: "M0 0h16v56H0z"
+  }), /*#__PURE__*/React.createElement("path", {
+    className: "arrow__border",
+    fill: "#E5E5E5",
+    d: "M1 0l8 28-8 28H0V0z"
+  }), /*#__PURE__*/React.createElement("path", {
+    className: "arrow__left",
+    fill: "#F7F7F7",
+    d: "M0 1l8 27-8 27z"
+  }))));
+}
+
+export default SvgArrow;

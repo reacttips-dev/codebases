@@ -1,0 +1,24 @@
+
+    var doc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"pipelinesQueryFragment"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"Query"}},"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"pipelines"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"name"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"url_title"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"order_nr"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"active"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"deal_probability"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"add_time"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"update_time"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"selected"},"arguments":[],"directives":[]}]}}]}}],"loc":{"start":0,"end":160}};
+    doc.loc.source = {"body":"fragment pipelinesQueryFragment on Query {\n\tpipelines {\n\t\tid\n\t\tname\n\t\turl_title\n\t\torder_nr\n\t\tactive\n\t\tdeal_probability\n\t\tadd_time\n\t\tupdate_time\n\t\tselected\n\t}\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+      module.exports = doc;
+    

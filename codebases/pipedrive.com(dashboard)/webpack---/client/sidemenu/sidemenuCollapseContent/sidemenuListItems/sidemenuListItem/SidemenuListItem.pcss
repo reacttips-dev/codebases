@@ -1,0 +1,100 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/elevations.scss';
+
+.listItem {
+	margin-bottom: 2px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 4px;
+	color: $color-black-hex-64;
+	font-size: $font-size-m;
+	text-decoration: none;
+	padding: 6px 0;
+
+	&:focus {
+		outline: none; /* should have some styles for keyboard */
+	}
+
+	&:hover {
+		background: $color-black-hex-8;
+		color: $color-black-hex;
+	}
+
+	> * {
+		pointer-events: none;
+	}
+}
+
+.linkActive {
+	background: $color-blue-hex-16;
+	color: $color-blue-hex;
+	font-weight: $font-weight-bold;
+
+	&:hover {
+		background: $color-blue-hex-16;
+		color: $color-blue-hex;
+	}
+}
+
+.name {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.nameSpan {
+	display: block;
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 8px;
+}
+
+.icon {
+	fill: currentColor;
+	margin-left: 16px;
+	margin-right: 10px;
+}
+
+.iconDrag {
+	display: none;
+	margin-left: 0;
+
+	.linkActive & {
+		fill: $color-black-hex;
+	}
+
+	.canDragThisItem.link:hover & {
+		display: inline-flex;
+	}
+}
+
+.iconLocked {
+	fill: $color-black-hex-32;
+
+	.linkActive & {
+		fill: currentColor;
+	}
+}
+
+.hoverActive {
+	background: $color-black-hex-8;
+	color: $color-black-hex;
+}
+
+.hasWarning {
+	cursor: not-allowed;
+	background: transparent;
+}

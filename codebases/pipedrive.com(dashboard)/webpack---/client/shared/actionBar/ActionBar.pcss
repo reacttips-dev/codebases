@@ -1,0 +1,14 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+.actionBar {
+	background: $color-black-hex-4;
+	top: 0;
+	z-index: 3;
+	position: sticky;
+
+	:global {
+		.cui4-option--disabled:hover .cui4-icon {
+			fill: $color-black-hex-88;
+		}
+	}
+}

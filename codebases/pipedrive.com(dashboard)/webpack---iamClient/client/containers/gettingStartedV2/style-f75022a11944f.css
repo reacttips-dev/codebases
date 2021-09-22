@@ -1,0 +1,12 @@
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = require("../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.id, ".iam___GettingStartedV2___1UcVD1Uc{\n\tbox-sizing:border-box;\n\tpadding:0 24px 24px 24px;\n\theight:100%;\n}\n\n\t.iam___GettingStartedV2__listTitleWrapper___3vQqe3vQ{\n\t\tmargin-bottom:12px;\n\t}\n\n\t.iam___GettingStartedV2__listTitle___McehRMce{\n\t\tfont-size:13px;\n\t\tfont-weight:600;\n\t\tline-height:16px;\n\t\ttext-transform:uppercase;\n\t}", ""]);
+// Exports
+exports.locals = {
+	"GettingStartedV2": "iam___GettingStartedV2___1UcVD1Uc",
+	"GettingStartedV2__listTitleWrapper": "iam___GettingStartedV2__listTitleWrapper___3vQqe3vQ",
+	"GettingStartedV2__listTitle": "iam___GettingStartedV2__listTitle___McehRMce"
+};
+module.exports = exports;

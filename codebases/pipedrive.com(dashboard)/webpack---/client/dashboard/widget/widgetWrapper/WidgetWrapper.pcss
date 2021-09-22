@@ -1,0 +1,148 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+.clickableWidget {
+	cursor: pointer;
+
+	:global {
+		.recharts-wrapper {
+			cursor: pointer !important;
+		}
+	}
+}
+
+.resizeHandle {
+	display: none;
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	z-index: 2;
+}
+
+.chartArea {
+	position: absolute;
+	bottom: 72px;
+	top: 80px;
+	width: 100%;
+
+	> div {
+		padding: 16px;
+	}
+}
+
+.chartWithTitleArea {
+	top: 116px;
+}
+
+.withoutLegendArea {
+	bottom: 32px;
+}
+
+.withoutData {
+	top: 80px;
+	bottom: 32px;
+}
+
+.TableArea {
+	bottom: 0;
+	overflow: scroll;
+	cursor: default;
+
+	> div {
+		padding: 0;
+	}
+}
+
+.showFooterOnHover {
+	display: none;
+	height: 40px;
+}
+
+.widgetFooter {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: $color-white-hex;
+}
+
+.fadedBars {
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		width: 10%;
+		pointer-events: none;
+	}
+	&:before {
+		left: 54px;
+		top: 4px;
+		bottom: -30px;
+	}
+
+	&:after {
+		right: 0;
+		top: 4px;
+		bottom: -30px;
+	}
+}
+
+.fadeFirst {
+	&:before {
+		background: linear-gradient(
+			to left,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 80%
+		);
+	}
+}
+
+.fadeLast {
+	&:after {
+		background: linear-gradient(
+			to right,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 80%
+		);
+	}
+}
+
+.fadedBarsHorizontal {
+	&:before {
+		top: 4px;
+		right: 0;
+		bottom: auto;
+		left: 0;
+		width: 100%;
+		height: 10%;
+	}
+
+	&:after {
+		top: auto;
+		right: 0;
+		bottom: 14px;
+		left: 0;
+		width: 100%;
+		height: 10%;
+	}
+}
+
+.fadeFirstHoriz {
+	&:before {
+		background: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 80%
+		);
+	}
+}
+
+.fadeLastHoriz {
+	&:after {
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 80%
+		);
+	}
+}
