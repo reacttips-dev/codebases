@@ -1,0 +1,11 @@
+var React = require('react');
+
+function CreateFreehand (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},React.createElement("polygon",{"id":"create-freehand-path-1","points":"17.9351298 23.7840352 19.7393973 21.4623004 21.5436647 23.7840352 21.5436647 34.6096397 17.9351298 34.6096397"})),React.createElement("g",{"stroke":"none","strokeWidth":"1","fill":"none","fillRule":"evenodd","key":1},React.createElement("g",{"transform":"translate(-12.000000, -15.000000)"},[React.createElement("g",{"transform":"translate(15.000000, 15.000000)","stroke":"#FF3366","strokeWidth":"2","key":0},React.createElement("rect",{"x":"1","y":"1","width":"16","height":"16","rx":"2"})),React.createElement("g",{"transform":"translate(19.739397, 28.035970) rotate(-135.000000) translate(-19.739397, -28.035970) ","key":1},[React.createElement("use",{"fill":"#FF3366","fillRule":"evenodd","xlinkHref":"#create-freehand-path-1","key":0}),React.createElement("path",{"stroke":"#FFFFFF","strokeWidth":"2","d":"M16.9351298,23.4411564 L19.7393973,19.8326197 L22.5436647,23.4411564 L22.5436647,35.6096397 L16.9351298,35.6096397 L16.9351298,23.4411564 Z","key":1})]),React.createElement("rect",{"fill":"#FF3366","x":"16","y":"16","width":"3","height":"3","key":2}),React.createElement("rect",{"fill":"#FF3366","x":"29","y":"16","width":"3","height":"3","key":3}),React.createElement("rect",{"fill":"#FF3366","x":"29","y":"29","width":"3","height":"3","key":4})]))]);
+}
+
+CreateFreehand.defaultProps = {"width":"21px","height":"20px","viewBox":"0 0 21 20"};
+
+module.exports = CreateFreehand;
+
+CreateFreehand.default = CreateFreehand;

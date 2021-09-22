@@ -1,0 +1,44 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.i(require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css"), "");
+// Module
+exports.push([module.id, "._31-3MO-euuDQCuwfjOuMhU {\n  align-self: end;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  flex-shrink: 0;\n  z-index: var(--hds-z-index-100);\n  width: 280px;\n}\n\n._2g3bVDu_2Vh93FKpeO1oW0 {\n  transition: none !important\n}\n\n._1w0bjYGqmCrFdXSgBMGCfy {\n  background: var(--hds-palette-surface-0);\n}\n\n._1w0bjYGqmCrFdXSgBMGCfy {\n  border-top: 1px solid var(--hds-palette-surface-10);\n}\n\n.DpPwAFPUPfytO2AJlD-Dg {\n  padding: var(--hds-spacing-16);\n  cursor: pointer;\n  margin: 0;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.DpPwAFPUPfytO2AJlD-Dg:hover,\n.DpPwAFPUPfytO2AJlD-Dg:focus {\n  background: var(--hds-palette-surface-5);\n}\n\n.DpPwAFPUPfytO2AJlD-Dg:active {\n  background: var(--hds-palette-surface-10);\n}\n\n._2ZRB9iiTMQsiqefJGCcFH0 {\n  flex: 1;\n}\n\n._3i2HZpu_KIdVYDzUWNoDiO {\n  margin-right: -4px;\n  margin-left: var(--hds-spacing-4);\n}\n\n._3grqXgp539XibEQeaaVW4m {\n  transform: rotate(180deg);\n}\n\n._2R_ffgncTVfNguMVr2x_eP {\n  display: block;\n}\n\n.ggFBUVUcDmv2qSPBAcufX {\n  display: none;\n}\n\n/* .accordion :global(.hds-accordion-button) {\n  padding: var(--hds-spacing-16) !important;\n  margin: 0;\n  background: transparent;\n}\n\n.accordion :global(.hds-accordion-icon) {\n  height: 24px;\n  width: 24px;\n  margin-right: -4px;\n} */\n\n._2g3bVDu_2Vh93FKpeO1oW0._1w0bjYGqmCrFdXSgBMGCfy button {\n  pointer-events: none;\n}\n\n.oUESqDkanPG-zmvsqUid- button {\n  cursor: default !important;\n}\n\n.oUESqDkanPG-zmvsqUid- button:hover {\n  background: transparent !important;\n}\n\n._262EoMUv96w9kAf1_cEQwG {\n  font-size: 13px;\n}\n\n._3oaMpQMD7HGoz_22k0M8H5 {\n  height: 32px;\n  width: 32px;\n  display: block;\n  border-radius: var(--hds-radii-5);\n}\n\n._32n233ExFHI6-E6Dsgeg8d {\n  padding: var(--hds-spacing-16) var(--hds-spacing-8);\n  display: flex;\n  flex-direction: column;\n}\n\n._2c3risqeRC5cvMj9vvXyw4 {\n  color: var(--hds-palette-surface-100);\n  text-decoration: none;\n  display: flex;\n  align-items: center;\n  height: var(--hds-spacing-32);\n  border-radius: var(--hds-radii-5);\n  padding: 0 var(--hds-spacing-12);\n  width: 100%;\n}\n\n._2c3risqeRC5cvMj9vvXyw4:hover,\n._2c3risqeRC5cvMj9vvXyw4:focus,\n._2c3risqeRC5cvMj9vvXyw4:active,\n._2c3risqeRC5cvMj9vvXyw4._2zNmHXR3TTqLZGllF2mfoE {\n  color: var(--hds-palette-surface-100);\n  background: var(--hds-palette-surface-5);\n}\n\n._2c3risqeRC5cvMj9vvXyw4 + ._2c3risqeRC5cvMj9vvXyw4 {\n  margin-top: var(--hds-spacing-4);\n}\n\n._2f41vGqosLwDzo6yWriTV8 {\n  margin-top: var(--hds-spacing-24);\n  display: flex;\n  justify-content: center;\n}\n\n._2g3bVDu_2Vh93FKpeO1oW0 ._2c3risqeRC5cvMj9vvXyw4 {\n  pointer-events: none;\n}\n\n._3D1PdqvnVkamrZ0paLgmKG {\n  line-height: 16px !important;\n}\n\n._3wm6tpSEgH9z4NqL3WNpae {\n  margin-left: 12px;\n}\n\n@media only screen and (" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + ") {\n  ._2G5Rh_ETGuYQD8gSVwOz-a ._3wm6tpSEgH9z4NqL3WNpae {\n    display: none;\n  }\n\n  ._2G5Rh_ETGuYQD8gSVwOz-a .hds-accordion-icon {\n    display: none;\n  }\n\n  ._2G5Rh_ETGuYQD8gSVwOz-a .hds-accordion-panel {\n    display: none;\n  }\n}\n\n._1epKj4Mfi40dSoHsKk8VXb {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  max-width: 160px;\n}\n\n.psaidhft3WUXbZjnetFqg {\n  z-index: var(--hds-z-index-100);\n\tbackground-color: rgba(255, 255, 255, .7);\n\tposition: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0;\n  pointer-events: none;\n  transition: opacity 0.2s ease-out;\n}\n\n.psaidhft3WUXbZjnetFqg.TWzBhBlVvM_kQ6OJ9L9vE {\n  opacity: 1;\n  pointer-events: initial;\n}\n\n._2oLdmzh6stbozXb3RA_LSO {\n  text-decoration: none;\n}", ""]);
+// Exports
+exports.locals = {
+	"vars": "\"./vars.css\"",
+	"bpSidebarVisible": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + "",
+	"root": "_31-3MO-euuDQCuwfjOuMhU",
+	"transitioning": "_2g3bVDu_2Vh93FKpeO1oW0",
+	"accordion": "_1w0bjYGqmCrFdXSgBMGCfy",
+	"accordion-button": "DpPwAFPUPfytO2AJlD-Dg",
+	"accordionButton": "DpPwAFPUPfytO2AJlD-Dg",
+	"accordion-title": "_2ZRB9iiTMQsiqefJGCcFH0",
+	"accordionTitle": "_2ZRB9iiTMQsiqefJGCcFH0",
+	"accordion-icon": "_3i2HZpu_KIdVYDzUWNoDiO",
+	"accordionIcon": "_3i2HZpu_KIdVYDzUWNoDiO",
+	"accordion-icon-open": "_3grqXgp539XibEQeaaVW4m",
+	"accordionIconOpen": "_3grqXgp539XibEQeaaVW4m",
+	"accordion-panel": "_2R_ffgncTVfNguMVr2x_eP",
+	"accordionPanel": "_2R_ffgncTVfNguMVr2x_eP",
+	"accordion-panel-hide": "ggFBUVUcDmv2qSPBAcufX",
+	"accordionPanelHide": "ggFBUVUcDmv2qSPBAcufX",
+	"disabled": "oUESqDkanPG-zmvsqUid-",
+	"company-url": "_262EoMUv96w9kAf1_cEQwG",
+	"companyUrl": "_262EoMUv96w9kAf1_cEQwG",
+	"avatar": "_3oaMpQMD7HGoz_22k0M8H5",
+	"content": "_32n233ExFHI6-E6Dsgeg8d",
+	"link": "_2c3risqeRC5cvMj9vvXyw4",
+	"active": "_2zNmHXR3TTqLZGllF2mfoE",
+	"link-space": "_2f41vGqosLwDzo6yWriTV8",
+	"linkSpace": "_2f41vGqosLwDzo6yWriTV8",
+	"name": "_3D1PdqvnVkamrZ0paLgmKG",
+	"name-wrap": "_3wm6tpSEgH9z4NqL3WNpae",
+	"nameWrap": "_3wm6tpSEgH9z4NqL3WNpae",
+	"hide-ui": "_2G5Rh_ETGuYQD8gSVwOz-a",
+	"hideUi": "_2G5Rh_ETGuYQD8gSVwOz-a",
+	"truncate": "_1epKj4Mfi40dSoHsKk8VXb",
+	"overlay": "psaidhft3WUXbZjnetFqg",
+	"open": "TWzBhBlVvM_kQ6OJ9L9vE",
+	"switch-teams-button": "_2oLdmzh6stbozXb3RA_LSO",
+	"switchTeamsButton": "_2oLdmzh6stbozXb3RA_LSO"
+};

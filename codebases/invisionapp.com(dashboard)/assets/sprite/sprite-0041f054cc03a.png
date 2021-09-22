@@ -1,0 +1,2 @@
+require("-!file-loader?name=[path][name].[ext]!/srv/app/client/assets/sprite/sprite.png");
+module.exports = require("-!file-loader?name=[path][name].[hash:16].[ext]!/srv/app/client/assets/sprite/sprite.png");

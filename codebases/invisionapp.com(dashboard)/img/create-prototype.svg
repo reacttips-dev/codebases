@@ -1,0 +1,11 @@
+var React = require('react');
+
+function CreatePrototype (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},React.createElement("path",{"d":"M19.8789757,30.1851378 L30.6210243,24.5992726 C31.09826,24.35111 31.1064692,23.9375692 30.6210243,23.6851378 L19.8789757,18.0992726 C19.40174,17.85111 19,18.0892499 19,18.6407075 L19,29.6437029 C19,30.1947158 19.3935308,30.4375692 19.8789757,30.1851378 Z M20.8016812,31.9595714 C18.9784433,32.9076552 17,31.6882744 17,29.6437029 L17,18.6407075 C17,16.5930418 18.9890777,15.3822852 20.8016812,16.324839 L31.5437297,21.9107042 C33.4691339,22.9119144 33.4538709,25.3804328 31.5437297,26.3737062 L20.8016812,31.9595714 Z","id":"create-prototype-path-1"})),React.createElement("g",{"stroke":"none","strokeWidth":"1","fill":"none","fillRule":"evenodd","key":1},React.createElement("g",{"transform":"translate(-17.000000, -16.000000)"},[React.createElement("mask",{"fill":"white","key":0},React.createElement("use",{"xlinkHref":"#create-prototype-path-1"})),React.createElement("use",{"fill":"#FF3366","fillRule":"nonzero","xlinkHref":"#create-prototype-path-1","key":1})]))]);
+}
+
+CreatePrototype.defaultProps = {"width":"16px","height":"17px","viewBox":"0 0 16 17"};
+
+module.exports = CreatePrototype;
+
+CreatePrototype.default = CreatePrototype;

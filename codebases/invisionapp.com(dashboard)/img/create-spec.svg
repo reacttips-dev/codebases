@@ -1,0 +1,11 @@
+var React = require('react');
+
+function CreateSpec (props) {
+    return React.createElement("svg",props,React.createElement("g",{"id":"specs-icon-monochromatic","stroke":"none","strokeWidth":"1","fill":"none","fillRule":"evenodd"},[React.createElement("circle",{"id":"Oval","stroke":"#22252B","strokeWidth":"3","cx":"13","cy":"35","r":"5","key":0}),React.createElement("polyline",{"id":"Path","stroke":"#22252B","strokeWidth":"3","strokeLinejoin":"round","points":"18 35 24 35 24 15.1442935 31.6901599 15.1442935","key":1}),React.createElement("polygon",{"id":"Triangle","stroke":"#22252B","strokeWidth":"3","strokeLinejoin":"round","transform":"translate(35.500000, 15.000000) rotate(90.000000) translate(-35.500000, -15.000000) ","points":"35.5 11 42 19 29 19","key":2}),React.createElement("use",{"fill":"#FF3366","fillRule":"nonzero","key":3})]));
+}
+
+CreateSpec.defaultProps = {"width":"48px","height":"48px","viewBox":"0 0 48 48","version":"1.1"};
+
+module.exports = CreateSpec;
+
+CreateSpec.default = CreateSpec;

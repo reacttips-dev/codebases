@@ -1,0 +1,13 @@
+export const TAB_KEY = 9
+export const ESC_KEY = 27
+export const DEL_KEY = 8
+export const LEFT_KEY = 37
+export const RIGHT_KEY = 39
+export const UP_KEY = 38
+export const DOWN_KEY = 40
+export const ENTER_KEY = 13
+export const SPACE_KEY = 32
+export const PAGE_UP_KEY = 33
+export const PAGE_DOWN_KEY = 34
+export const END_KEY = 35
+export const HOME_KEY = 36

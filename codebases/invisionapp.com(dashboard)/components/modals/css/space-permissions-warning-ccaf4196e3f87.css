@@ -1,0 +1,12 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._2Wlm1YQQE04g3rTS-NNDbs {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  text-align: center;\n}\n\n._1A7qbnHDkp4uwqZsd_Cflb {\n  width: 768px;\n}\n\n.w8TVhWnHsCecC-e9XkhPl:first-letter {\n  text-transform: capitalize;\n}\n\n._2P32c6d0vJLSflDfdbQ9iX {\n  align-self: center;\n}", ""]);
+// Exports
+exports.locals = {
+	"root": "_2Wlm1YQQE04g3rTS-NNDbs",
+	"inner": "_1A7qbnHDkp4uwqZsd_Cflb",
+	"warning-text": "w8TVhWnHsCecC-e9XkhPl",
+	"warningText": "w8TVhWnHsCecC-e9XkhPl",
+	"button-group": "_2P32c6d0vJLSflDfdbQ9iX",
+	"buttonGroup": "_2P32c6d0vJLSflDfdbQ9iX"
+};

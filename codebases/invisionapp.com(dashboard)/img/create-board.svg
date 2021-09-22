@@ -1,0 +1,11 @@
+var React = require('react');
+
+function CreateBoard (props) {
+    return React.createElement("svg",props,React.createElement("g",{"stroke":"none","strokeWidth":"1","fill":"none","fillRule":"evenodd"},React.createElement("g",{"transform":"translate(-15.000000, -15.000000)","stroke":"#FF3366","strokeWidth":"2"},React.createElement("g",{"transform":"translate(15.000000, 15.000000)"},[React.createElement("path",{"d":"M9,1.5 L9,17.0322246","strokeLinecap":"square","key":0}),React.createElement("path",{"d":"M2,11 L9,11","strokeLinecap":"square","key":1}),React.createElement("path",{"d":"M10,8 L17,8","strokeLinecap":"square","key":2}),React.createElement("rect",{"x":"1","y":"1","width":"16","height":"16","rx":"2","key":3})]))));
+}
+
+CreateBoard.defaultProps = {"width":"18px","height":"19px","viewBox":"0 0 18 19"};
+
+module.exports = CreateBoard;
+
+CreateBoard.default = CreateBoard;

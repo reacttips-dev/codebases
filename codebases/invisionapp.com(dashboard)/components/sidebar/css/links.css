@@ -1,0 +1,15 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.i(require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css"), "");
+// Module
+exports.push([module.id, ".W5igsPWs1dpLkL4-qaRvg {\n  position: relative;\n  width: 280px;\n  white-space: nowrap;\n}\n\n.W5igsPWs1dpLkL4-qaRvg .hds-nav-link {\n  text-decoration: none;\n}\n\n.W5igsPWs1dpLkL4-qaRvg .hds-icon {\n  display: block;\n}\n\n.W5igsPWs1dpLkL4-qaRvg .hds-nav-label {\n  transition: opacity 0.2s;\n}\n\n@media only screen and (" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + ") {\n  ._29s6zhrvo0C93F9tQbO0Kl .W5igsPWs1dpLkL4-qaRvg {\n    width: 48px;\n  }\n\n  ._29s6zhrvo0C93F9tQbO0Kl._2nVGIrNHmkCgfArbcbHDj .W5igsPWs1dpLkL4-qaRvg {\n    width: 264px;\n  }\n\n  ._29s6zhrvo0C93F9tQbO0Kl .hds-nav-icon {\n    margin-right: 0 !important;\n  }\n\n  ._29s6zhrvo0C93F9tQbO0Kl._2nVGIrNHmkCgfArbcbHDj .hds-nav-icon {\n    margin-right: var(--hds-spacing-12) !important;\n  }\n\n  ._29s6zhrvo0C93F9tQbO0Kl .hds-nav-label {\n    display: none;\n  }\n\n  ._29s6zhrvo0C93F9tQbO0Kl._2nVGIrNHmkCgfArbcbHDj .hds-nav-label {\n    display: block;\n  }\n}\n", ""]);
+// Exports
+exports.locals = {
+	"vars": "\"./vars.css\"",
+	"bpSidebarVisible": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + "",
+	"links": "W5igsPWs1dpLkL4-qaRvg",
+	"hide-ui": "_29s6zhrvo0C93F9tQbO0Kl",
+	"hideUi": "_29s6zhrvo0C93F9tQbO0Kl",
+	"show-ui": "_2nVGIrNHmkCgfArbcbHDj",
+	"showUi": "_2nVGIrNHmkCgfArbcbHDj"
+};

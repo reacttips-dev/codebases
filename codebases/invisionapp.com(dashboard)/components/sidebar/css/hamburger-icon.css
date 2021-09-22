@@ -1,0 +1,28 @@
+var api = require("!../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = require("!!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./hamburger-icon.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.id, content, '']];
+            }
+
+var options = {"attributes":{"data-sidebar-css":true}};
+
+options.insert = function insertAtTop (element) {
+                  var sidebarRoot = document.querySelector('div[id="app-shell:sidebar-root"]')
+                  // insert just before the sidebar root so that it's
+                  // lower in the order than the base helios styles but
+                  // higher order that other features preventing order conflicts
+                  // for where they put their styles
+                  sidebarRoot.parentNode.insertBefore(element, sidebarRoot)
+                };
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;

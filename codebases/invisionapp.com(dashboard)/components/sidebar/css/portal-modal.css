@@ -1,0 +1,10 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, ".e7i_iBWiWJZkaWCqZM5L5 {\n  z-index: 20;\n}\n\n.e7i_iBWiWJZkaWCqZM5L5 ._3A0tsDA7S-hl2q7T6_oXOj {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n}\n\n._21avsfB7AIW40U7HyxZ3WC {\n  width: 550px;\n  max-width: 550px !important;\n}\n\n._21avsfB7AIW40U7HyxZ3WC .hds-dialog-close-action {\n  display: none !important;\n}\n", ""]);
+// Exports
+exports.locals = {
+	"fullscreen": "e7i_iBWiWJZkaWCqZM5L5",
+	"modal": "_3A0tsDA7S-hl2q7T6_oXOj",
+	"wide-dialog": "_21avsfB7AIW40U7HyxZ3WC",
+	"wideDialog": "_21avsfB7AIW40U7HyxZ3WC"
+};

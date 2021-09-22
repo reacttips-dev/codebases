@@ -1,0 +1,10 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._314qmBMw0CNb1bWDFHtzaA {\n  margin: var(--hds-spacing-8) 0 0 var(--hds-spacing-8);\n}\n\n._2XXZEeTlDUIEqHFm94GbWJ {\n  margin-bottom: var(--hds-spacing-24);\n}\n\n._2qwRxa-yamHhqz80TSgYd4 {\n  border-radius: 16px;\n  min-height: 16px !important;\n}", ""]);
+// Exports
+exports.locals = {
+	"root": "_314qmBMw0CNb1bWDFHtzaA",
+	"skeleton-wrap": "_2XXZEeTlDUIEqHFm94GbWJ",
+	"skeletonWrap": "_2XXZEeTlDUIEqHFm94GbWJ",
+	"skeleton": "_2qwRxa-yamHhqz80TSgYd4"
+};

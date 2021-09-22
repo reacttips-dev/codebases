@@ -1,0 +1,12 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "/* Breakpoints */", ""]);
+// Exports
+exports.locals = {
+	"sidebarWidth": "280px",
+	"sidebarWidthCondensed": "64px",
+	"projectsSidebarWidth": "280px",
+	"bpStaticLinks": "min-width: 607px",
+	"bpSidebarVisible": "min-width: 1024px",
+	"bpSidebarHidden": "max-width: 1023px"
+};

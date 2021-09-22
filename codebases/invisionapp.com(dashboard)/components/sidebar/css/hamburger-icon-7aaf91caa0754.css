@@ -1,0 +1,18 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.i(require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css"), "");
+// Module
+exports.push([module.id, "@media screen and (" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + ") {\n  ._18xxQQ-2ZIVAjJN4QxW_fy {\n    opacity: 0;\n    pointer-events: none;\n    display: none !important;\n  }\n}\n\n._1QrFcXgP_-2oLru_kRo6oJ {\n  height: 2px;\n  position: absolute;\n  transform: translateY(-6px);\n  transition: all 0.3s var(--hds-beziers-out);\n  transition-delay: 0.2s;\n  width: 18px;\n}\n\n._1QrFcXgP_-2oLru_kRo6oJ:nth-of-type(2) {\n  transform: translateY(0);\n}\n\n._1QrFcXgP_-2oLru_kRo6oJ:nth-of-type(3) {\n  transform: translateY(6px);\n}\n\n._1QrFcXgP_-2oLru_kRo6oJ:before {\n  background-color: var(--hds-palette-surface-100);\n  border-radius: 50px;\n  content: \"\";\n  height: 2px;\n  left: 0;\n  position: absolute;\n  transform: none;\n  transition: 0.3s var(--hds-beziers-out);\n  transition-delay: 0s;\n  width: 18px;\n}\n\n._1QrFcXgP_-2oLru_kRo6oJ:nth-of-type(2):before {\n  transition-delay: 0s;\n}\n\n._3fIrl9RlJtL8WKtFssP5jU ._1QrFcXgP_-2oLru_kRo6oJ {\n  transform: translateY(0px);\n  transition-delay: 0s;\n}\n\n._3fIrl9RlJtL8WKtFssP5jU ._1QrFcXgP_-2oLru_kRo6oJ:nth-of-type(3) {\n  transform: translateY(0px);\n}\n\n._3fIrl9RlJtL8WKtFssP5jU ._1QrFcXgP_-2oLru_kRo6oJ:before {\n  transform: rotate(45deg);\n  transition: 0.3s all var(--hds-beziers-out);\n  transition-delay: 0.1s;\n}\n\n._3fIrl9RlJtL8WKtFssP5jU ._1QrFcXgP_-2oLru_kRo6oJ:nth-of-type(2):before {\n  opacity: 0;\n  transform: scale(0);\n}\n\n._3fIrl9RlJtL8WKtFssP5jU ._1QrFcXgP_-2oLru_kRo6oJ:nth-of-type(3):before {\n  transform: rotate(-45deg);\n}\n\n._2yizpCTVRVgZUhTPEEiFTH ._1QrFcXgP_-2oLru_kRo6oJ:before {\n  transition: none;\n}\n\n._1C7S2qQrpQGQGlr7w6c785 ._1QrFcXgP_-2oLru_kRo6oJ:before {\n  /* background-color: color-black-80 !important; */\n}\n\n._1C7S2qQrpQGQGlr7w6c785._3fIrl9RlJtL8WKtFssP5jU {\n  pointer-events: none;\n}\n\n@media screen and (" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + ") {\n  ._1C7S2qQrpQGQGlr7w6c785 {\n    pointer-events: none;\n  }\n}\n", ""]);
+// Exports
+exports.locals = {
+	"vars": "\"./vars.css\"",
+	"bpSidebarVisible": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + "",
+	"root": "_18xxQQ-2ZIVAjJN4QxW_fy",
+	"line-wrapper": "_1QrFcXgP_-2oLru_kRo6oJ",
+	"lineWrapper": "_1QrFcXgP_-2oLru_kRo6oJ",
+	"active": "_3fIrl9RlJtL8WKtFssP5jU",
+	"disable-transitions": "_2yizpCTVRVgZUhTPEEiFTH",
+	"disableTransitions": "_2yizpCTVRVgZUhTPEEiFTH",
+	"team-settings-open": "_1C7S2qQrpQGQGlr7w6c785",
+	"teamSettingsOpen": "_1C7S2qQrpQGQGlr7w6c785"
+};

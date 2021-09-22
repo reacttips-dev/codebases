@@ -1,0 +1,9 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._2Mph5yiWmHw-7CBES10tQO {\n  position: relative;\n  overflow: hidden;\n  width: 455px;\n  margin: 0px;\n  height: 201px;\n  display: flex;\n  border: 1px solid #EAEAEB;\n  align-content: center;\n  flex-direction: row;\n  align-items: center;\n}\n\n._2hwzQJNRql7TX8Z3BzOPdR {\n  width: 75%;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  position: absolute;\n  z-index: 2;\n  padding-bottom: 7px;\n  margin-left: 24px;\n  word-break: break-word;\n  -webkit-hyphens: auto;\n      -ms-hyphens: auto;\n          hyphens: auto;\n}\n\n._3LM9jPIg0VqbkiIOFz5KLS {\n  position: absolute;\n  right: 12px;\n  z-index: 1;\n}", ""]);
+// Exports
+exports.locals = {
+	"root": "_2Mph5yiWmHw-7CBES10tQO",
+	"title": "_2hwzQJNRql7TX8Z3BzOPdR",
+	"shape": "_3LM9jPIg0VqbkiIOFz5KLS"
+};

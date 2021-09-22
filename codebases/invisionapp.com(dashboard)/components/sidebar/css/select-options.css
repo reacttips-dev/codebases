@@ -1,0 +1,18 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._2mC3jYQl1SuaoRqgJw-_Cp {\n  z-index: 100000 !important;\n}\n\n._2mC3jYQl1SuaoRqgJw-_Cp .hds-menu-item-wrap,\n._2mC3jYQl1SuaoRqgJw-_Cp .hds-menu-item {\n  height: var(--hds-spacing-48);\n}\n\n._3p8p1alWK58-2LBhaIuDMH {\n  width: min(75vw, 540px);\n}\n\n._3p8p1alWK58-2LBhaIuDMH._3p8p1alWK58-2LBhaIuDMH {\n  justify-content: flex-start;\n  padding: 0 var(--hds-spacing-16);\n}\n\n._1yrqsohzuLbkvAcq3j7eR6 {\n  margin-left: var(--hds-spacing-12);\n}\n\n._3p8p1alWK58-2LBhaIuDMH + div {\n  margin-top: 14px;\n}\n\n.WE4V8OFj0jLWlMlWK2Jkk {\n  padding-left: var(--hds-spacing-12);\n  flex: 1;\n  text-align: left;\n}\n\n._1s2g1Hx2W5kpRtAxh0Cctk {\n  margin-top: -2px;\n}\n\n._2_ZrK7DaXBSgtfzW0JSIO0 {\n  margin-top: -2px;\n}\n\n", ""]);
+// Exports
+exports.locals = {
+	"dropdown-container": "_2mC3jYQl1SuaoRqgJw-_Cp",
+	"dropdownContainer": "_2mC3jYQl1SuaoRqgJw-_Cp",
+	"trigger-container": "_3p8p1alWK58-2LBhaIuDMH",
+	"triggerContainer": "_3p8p1alWK58-2LBhaIuDMH",
+	"trigger-icon": "_1yrqsohzuLbkvAcq3j7eR6",
+	"triggerIcon": "_1yrqsohzuLbkvAcq3j7eR6",
+	"details-container": "WE4V8OFj0jLWlMlWK2Jkk",
+	"detailsContainer": "WE4V8OFj0jLWlMlWK2Jkk",
+	"icon-lock": "_1s2g1Hx2W5kpRtAxh0Cctk",
+	"iconLock": "_1s2g1Hx2W5kpRtAxh0Cctk",
+	"icon-team": "_2_ZrK7DaXBSgtfzW0JSIO0",
+	"iconTeam": "_2_ZrK7DaXBSgtfzW0JSIO0"
+};

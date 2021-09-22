@@ -1,0 +1,2 @@
+require("-!file-loader?name=[path][name].[ext]!/srv/app/client/assets/confirm-space-delete@2x.png");
+module.exports = require("-!file-loader?name=[path][name].[hash:16].[ext]!/srv/app/client/assets/confirm-space-delete@2x.png");

@@ -1,0 +1,17 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.i(require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css"), "");
+// Module
+exports.push([module.id, ".jXkMY9VDwqwyf4B5rz_su {\n  display: flex;\n  position: fixed;\n  background: #ffffff;\n  width: " + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["projectsSidebarWidth"] + ";\n  flex-shrink: 0;\n  height: 100vh;\n  border-left: 1px solid #e5e7eb;\n  flex-direction: column;\n  margin-left: " + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["sidebarWidthCondensed"] + ";\n}\n\n._243N6X4xkx9kzuungyE6h_ {\n  margin-left: " + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["sidebarWidth"] + ";\n}\n\n@media screen and (" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["bpSidebarHidden"] + ") {\n  .jXkMY9VDwqwyf4B5rz_su {\n    display: none;\n  }\n\n  .HGe4afSOBlW3bb-KBkAkL {\n    display: flex;\n    margin-left: " + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["sidebarWidth"] + ";\n    z-index: 10;\n  }\n}\n", ""]);
+// Exports
+exports.locals = {
+	"vars": "\"../../sidebar/css/vars.css\"",
+	"bpSidebarHidden": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["bpSidebarHidden"] + "",
+	"projectsSidebarWidth": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["projectsSidebarWidth"] + "",
+	"sidebarWidthCondensed": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["sidebarWidthCondensed"] + "",
+	"sidebarWidth": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!../../sidebar/css/vars.css").locals["sidebarWidth"] + "",
+	"root": "jXkMY9VDwqwyf4B5rz_su",
+	"sidebar-expanded": "_243N6X4xkx9kzuungyE6h_",
+	"sidebarExpanded": "_243N6X4xkx9kzuungyE6h_",
+	"open": "HGe4afSOBlW3bb-KBkAkL"
+};

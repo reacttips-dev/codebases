@@ -1,0 +1,11 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._3xyrHEm0ddMMcN9asSVtOf {\n  width: 32px;\n  height: 32px;\n  margin: 12px 0 0 16px;\n  display: inline-block;\n}\n\n._2E4Ly5PcqcSAZ-WiUoGcMq {\n  width: 100%;\n  height: 100%;\n  position: relative;\n}\n\n._5bQFWLD3dGSnkGDFlTslo {\n  position: absolute;\n  background: white;\n  width: 50%;\n  height: 50%;\n  left: 25%;\n  top: 25%;\n}\n\n._1sQv41WgJ5ocAjtBlvS0M5,\n._1sQv41WgJ5ocAjtBlvS0M5 ._5bQFWLD3dGSnkGDFlTslo {\n  border-top-left-radius: 50%;\n  border-top-right-radius: 50%;\n}\n\n._3oCnsZXmNq2lApFSNinpEL,\n._3oCnsZXmNq2lApFSNinpEL ._5bQFWLD3dGSnkGDFlTslo {\n  border-radius: 50%;\n}\n", ""]);
+// Exports
+exports.locals = {
+	"root": "_3xyrHEm0ddMMcN9asSVtOf",
+	"outer": "_2E4Ly5PcqcSAZ-WiUoGcMq",
+	"inner": "_5bQFWLD3dGSnkGDFlTslo",
+	"arch": "_1sQv41WgJ5ocAjtBlvS0M5",
+	"circle": "_3oCnsZXmNq2lApFSNinpEL"
+};

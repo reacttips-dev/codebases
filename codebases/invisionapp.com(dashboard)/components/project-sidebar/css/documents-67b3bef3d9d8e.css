@@ -1,0 +1,7 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._6K-DnVAWok2SE1_gRJH3b {\n  flex-grow: 2;\n  display: flex;\n  flex-direction: column;\n}", ""]);
+// Exports
+exports.locals = {
+	"root": "_6K-DnVAWok2SE1_gRJH3b"
+};

@@ -1,0 +1,66 @@
+var map = {
+	"./archive-modal@2x.png": "Uhmp",
+	"./collaborator-clipping-circle.png": "f6VN",
+	"./collaborator-clipping-mask.png": "2k6z",
+	"./confirm-space-delete@2x.png": "TcZa",
+	"./craft-single.png": "96aT",
+	"./craft.png": "gn8n",
+	"./craft@2x.png": "OZkn",
+	"./create-first-document@2x.png": "YZiu",
+	"./cta-background.png": "JtRd",
+	"./deletespace-collaborator-clipping-mask.png": "hsWo",
+	"./design-better@2x.png": "usvc",
+	"./freehand/learn-freehand.png": "frvd",
+	"./get-inspired-blog-2.png": "uevn",
+	"./get-inspired-blog.jpg": "p93Y",
+	"./get-inspired-craft-2.png": "vuHO",
+	"./get-inspired-craft.png": "Vtvh",
+	"./get-inspired-inspect-2.png": "Dqyt",
+	"./get-inspired-inspect.png": "2am6",
+	"./get-inspired-specs.png": "wyPC",
+	"./get-inspired-studio-2.png": "IXpJ",
+	"./get-inspired-studio.png": "Rxby",
+	"./icon-team.png": "BgAL",
+	"./inside-design@2x.png": "hUVU",
+	"./no-documents-space.png": "jgcE",
+	"./no-documents.png": "LWzc",
+	"./no-matches.png": "BcVB",
+	"./no-spaces.png": "E03x",
+	"./open-laptop-sm-2x.png": "RpLw",
+	"./share-dialog-addmore@2x.png": "xGO5",
+	"./share-dialog-empty@2x.png": "32U9",
+	"./share-dialog-error@2x.png": "xikI",
+	"./share-dialog-no-members.png": "k//1",
+	"./share-dialog-no-results.png": "m5TR",
+	"./share-dialog-nomatches-guest@2x.png": "vGnB",
+	"./share-dialog-nomatches@2x.png": "8Vqh",
+	"./share-dialog-privacy-tooltip@2x.png": "+AeB",
+	"./share-dialog-upgrade-sprite.png": "C00W",
+	"./space-collaborator-clipping-mask.png": "0Jgt",
+	"./spaces-banner-cta.png": "6FuK",
+	"./spaces-banner-cta@2x.png": "dr4g",
+	"./spaces-cta.jpg": "Yl63",
+	"./sprite/sprite.png": "Dju3",
+	"./sprite/sprite@2x.png": "XTxX",
+	"./studio.png": "T5FX"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "FSkl";

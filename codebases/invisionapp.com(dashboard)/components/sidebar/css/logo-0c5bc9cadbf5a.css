@@ -1,0 +1,31 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.i(require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css"), "");
+// Module
+exports.push([module.id, ".F6a-7-bniuhN297gOFprL { \n  z-index: var(--hds-z-index-100);\n  position: fixed;\n  width: 72px;\n  height: 32px;\n  left: 16px;\n  top: 16px;\n  transform: translateX(280px);\n}\n\n.F6a-7-bniuhN297gOFprL._1tbo8S_YLMj-NAhaJTOvE2 {\n  transform: none;\n}\n\n.mu4H6QC9irZkb4ADHV57j {\n  margin-right: var(--hds-spacing-8);\n}\n\n.mu4H6QC9irZkb4ADHV57j img {\n  display: block;\n}\n\n.F6a-7-bniuhN297gOFprL._1tbo8S_YLMj-NAhaJTOvE2 .mu4H6QC9irZkb4ADHV57j {\n  display: block;\n}\n\n.lHvdViOnPDN5GSTYHQ7-a {\n  position: absolute !important;\n  right: 0;\n  top: 0;\n  z-index: var(--hds-z-index-100);\n  display: none;\n}\n\n.lHvdViOnPDN5GSTYHQ7-a img {\n  transition: .2s var(--hds-beziers-out);\n}\n\n._3VMkWXWQ1x5vM9TKfSuDct {\n  transform: rotateY(180deg);\n}\n\n@media screen and (" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarHidden"] + ") {\n  .F6a-7-bniuhN297gOFprL._1tbo8S_YLMj-NAhaJTOvE2 .lHvdViOnPDN5GSTYHQ7-a {\n    display: none;\n  }\n}\n\n@-webkit-keyframes _1WNiV6WSlfmhOC254nm8G_ {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n\n@keyframes _1WNiV6WSlfmhOC254nm8G_ {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n\n@media screen and (" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + ") {\n  .F6a-7-bniuhN297gOFprL {\n    transform: none;\n    width: 256px;\n  }\n\n  .F6a-7-bniuhN297gOFprL._3uuH6Uuw7eQzpq91Jc1Zdu {\n    width: 64px;\n  }\n  .F6a-7-bniuhN297gOFprL._1tVRawrvN_Y0_Vvb8mgn5 {\n    width: 256px;\n  }\n\n  .mu4H6QC9irZkb4ADHV57j {\n    display: block;\n  }\n\n  .lHvdViOnPDN5GSTYHQ7-a._3sTtTu9gz1nl6uEfxOhliA {\n    display: flex;\n  }\n\n  .lHvdViOnPDN5GSTYHQ7-a._1f9I1kdRML-sevPgA0jrRA {\n    display: flex;\n    -webkit-animation: _1WNiV6WSlfmhOC254nm8G_ .15s ease .15s both;\n            animation: _1WNiV6WSlfmhOC254nm8G_ .15s ease .15s both;\n  }\n\n  ._3nZj043Iuo0ytNQb3rXTeq {\n    pointer-events: none;\n  }\n\n}\n", ""]);
+// Exports
+exports.locals = {
+	"vars": "\"./vars.css\"",
+	"bpLogoShift": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpLogoShift"] + "",
+	"bpSidebarVisible": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarVisible"] + "",
+	"bpSidebarHidden": "" + require("-!../../../../../node_modules/css-loader/dist/cjs.js??ref--7-1!../../../../../node_modules/postcss-loader/src/index.js??ref--7-2!./vars.css").locals["bpSidebarHidden"] + "",
+	"root": "F6a-7-bniuhN297gOFprL",
+	"open": "_1tbo8S_YLMj-NAhaJTOvE2",
+	"logo": "mu4H6QC9irZkb4ADHV57j",
+	"sidebar-toggle": "lHvdViOnPDN5GSTYHQ7-a",
+	"sidebarToggle": "lHvdViOnPDN5GSTYHQ7-a",
+	"icon-is-condensed": "_3VMkWXWQ1x5vM9TKfSuDct",
+	"iconIsCondensed": "_3VMkWXWQ1x5vM9TKfSuDct",
+	"root-condensed": "_3uuH6Uuw7eQzpq91Jc1Zdu",
+	"rootCondensed": "_3uuH6Uuw7eQzpq91Jc1Zdu",
+	"root-hovered": "_1tVRawrvN_Y0_Vvb8mgn5",
+	"rootHovered": "_1tVRawrvN_Y0_Vvb8mgn5",
+	"show-ui": "_3sTtTu9gz1nl6uEfxOhliA",
+	"showUi": "_3sTtTu9gz1nl6uEfxOhliA",
+	"delay-show-ui": "_1f9I1kdRML-sevPgA0jrRA",
+	"delayShowUi": "_1f9I1kdRML-sevPgA0jrRA",
+	"show-sidebar-toggle": "_1WNiV6WSlfmhOC254nm8G_",
+	"showSidebarToggle": "_1WNiV6WSlfmhOC254nm8G_",
+	"team-settings-open": "_3nZj043Iuo0ytNQb3rXTeq",
+	"teamSettingsOpen": "_3nZj043Iuo0ytNQb3rXTeq"
+};

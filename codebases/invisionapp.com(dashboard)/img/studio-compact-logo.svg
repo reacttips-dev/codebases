@@ -1,0 +1,11 @@
+var React = require('react');
+
+function StudioCompactLogo (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},[React.createElement("path",{"id":"studio-compact-path-1","opacity":"1","fillRule":"evenodd","d":"M1,0 L23,0 C23.551915024494,0 24,0.448084975506 24,1 L24,23 C24,23.551915024494 23.551915024494,24 23,24 L1,24 C0.4480849755060001,24 1.1102230246251565e-16,23.551915024494 0,23 L0,1 C0,0.4480849755060001 0.4480849755059998,1.1102230246251565e-16 1,0Z","key":0}),React.createElement("rect",{"id":"studio-compact-rect-2","opacity":"1","x":"16.470588235294144","y":"16.470588235294144","width":"4.2352941176470935","height":"4.235294117647065","key":1})]),React.createElement("g",{"opacity":"1","key":1},[React.createElement("g",{"opacity":"1","key":0},React.createElement("use",{"xlinkHref":"#studio-compact-path-1","fill":"rgb(255,51,102)","fillOpacity":"1"})),React.createElement("g",{"opacity":"1","key":1},React.createElement("use",{"xlinkHref":"#studio-compact-rect-2","fill":"rgb(255,255,255)","fillOpacity":"1"}))])]);
+}
+
+StudioCompactLogo.defaultProps = {"height":"24","width":"24"};
+
+module.exports = StudioCompactLogo;
+
+StudioCompactLogo.default = StudioCompactLogo;

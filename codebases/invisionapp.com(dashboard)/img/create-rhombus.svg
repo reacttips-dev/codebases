@@ -1,0 +1,11 @@
+var React = require('react');
+
+function CreateRhombus (props) {
+    return React.createElement("svg",props,React.createElement("path",{"d":"M2.487 9.028l5.506 7.203 5.505-7.203-5.505-7.204-5.506 7.204zM9.42.733l5.505 7.203a1.796 1.796 0 0 1 0 2.183l-5.505 7.203a1.796 1.796 0 0 1-2.855 0L1.061 10.12a1.796 1.796 0 0 1 0-2.183L6.566.733a1.796 1.796 0 0 1 2.855 0zM7.993 6.488L6.05 9.028l1.942 2.54 1.941-2.54-1.941-2.54z","fill":"#F36","fillRule":"nonzero"}));
+}
+
+CreateRhombus.defaultProps = {"width":"16","height":"18"};
+
+module.exports = CreateRhombus;
+
+CreateRhombus.default = CreateRhombus;

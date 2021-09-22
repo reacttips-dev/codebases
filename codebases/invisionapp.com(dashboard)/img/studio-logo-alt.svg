@@ -1,0 +1,11 @@
+var React = require('react');
+
+function StudioLogoAlt (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},[React.createElement("rect",{"id":"rect-1","opacity":"1","x":"0","y":"0","width":"24","height":"24","rx":"0","ry":"0","key":0}),React.createElement("rect",{"id":"rect-2","opacity":"1","x":"16.470588235294144","y":"16.470588235294144","width":"4.2352941176470935","height":"4.235294117647065","key":1})]),React.createElement("g",{"opacity":"1","key":1},[React.createElement("g",{"opacity":"1","key":0},React.createElement("use",{"xlinkHref":"#rect-1","fill":"rgb(255,51,102)","fillOpacity":"1"})),React.createElement("g",{"opacity":"1","key":1},React.createElement("use",{"xlinkHref":"#rect-2","fill":"rgb(255,255,255)","fillOpacity":"1"}))])]);
+}
+
+StudioLogoAlt.defaultProps = {"version":"1.1","height":"24","width":"24"};
+
+module.exports = StudioLogoAlt;
+
+StudioLogoAlt.default = StudioLogoAlt;

@@ -1,0 +1,11 @@
+var React = require('react');
+
+function InspectIcon (props) {
+    return React.createElement("svg",props,[React.createElement("defs",{"key":0},[React.createElement("path",{"id":"path-1","opacity":"1","fillRule":"evenodd","d":"M1 0L23 0C23.551915024494 0 24 0.448084975506 24 1L24 23C24 23.551915024494 23.551915024494 24 23 24L1 24C0.4480849755060001 24 1.1102230246251565e-16 23.551915024494 0 23L0 1C0 0.4480849755060001 0.4480849755059998 1.1102230246251565e-16 0.9999999999999998 0Z","key":0}),React.createElement("mask",{"id":"mask-2","maskUnits":"userSpaceOnUse","maskContentUnits":"userSpaceOnUse","x":"0","y":"0","key":1},[React.createElement("rect",{"opacity":"1","x":"0","y":"0","width":"24","height":"24","fill":"black","key":0}),React.createElement("use",{"xlinkHref":"#path-1","fill":"white","key":1})])]),React.createElement("g",{"opacity":"1","key":1},[React.createElement("g",{"opacity":"1","key":0},[React.createElement("use",{"xlinkHref":"#path-1","fill":"rgb(255,255,255)","fillOpacity":"1","key":0}),React.createElement("use",{"xlinkHref":"#path-1","fillOpacity":"0","stroke":"rgb(199,202,209)","strokeOpacity":"1","strokeWidth":"2","strokeLinecap":"butt","strokeLinejoin":"miter","mask":"url(#mask-2)","key":1})]),React.createElement("g",{"opacity":"1","key":1},React.createElement("path",{"fill":"rgb(34,37,43)","fillOpacity":"1","opacity":"1","fillRule":"evenodd","d":"M13.9515380859375 6.98992919921875L12.989990234375 6.7152099609375L10.048583984375 17.01007080078125L11.0101318359375 17.2847900390625L13.9515380859375 6.98992919921875ZM6.0404052734375 12L8.70709228515625 14.66668701171875L8 15.373779296875L4.626220703125 12L8 8.626220703125L8.70709228515625 9.33331298828125L6.0404052734375 12ZM15.2928466796875 9.33331298828125L16 8.626220703125L19.373779296875 12L16 15.373779296875L15.2928466796875 14.66668701171875L17.95947265625 12L15.2928466796875 9.33331298828125Z"}))])]);
+}
+
+InspectIcon.defaultProps = {"version":"1.1","height":"24","width":"24"};
+
+module.exports = InspectIcon;
+
+InspectIcon.default = InspectIcon;

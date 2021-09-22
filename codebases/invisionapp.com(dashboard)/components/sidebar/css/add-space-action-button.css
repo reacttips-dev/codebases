@@ -1,0 +1,8 @@
+exports = module.exports = require("../../../../../node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.id, "._29L6XBcBP7zteeme__3Yek {\n  transform: inherit;\n  margin: auto;\n}\n", ""]);
+// Exports
+exports.locals = {
+	"add-icon": "_29L6XBcBP7zteeme__3Yek",
+	"addIcon": "_29L6XBcBP7zteeme__3Yek"
+};
