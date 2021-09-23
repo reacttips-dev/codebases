@@ -1,0 +1,105 @@
+.touch
+  [data-tooltip]::before,
+  [data-tooltip]::after
+    display:none
+
+[data-tooltip]
+  position: relative
+  box-sizing: border-box
+
+  &:hover
+    &::before, &::after
+      visibility: visible
+      opacity: 1
+
+  &::before, &::after
+    border: none
+    box-sizing: inherit
+    display: inline-block
+    font-style: normal
+    font-weight: normal
+    opacity: 0
+    pointer-events: none
+    position: absolute
+    transform: translateX(50%)
+    right: 50%
+    text-align: center
+    text-decoration: none
+    text-shadow: none
+    text-transform: none
+    top: 100%
+    transition: opacity 0.2s step-start 100ms
+    visibility:hidden
+    z-index: 12
+
+  // tooltip body
+  &::before
+    background: tooltip-background
+    border-radius: 5px
+    font-size: 12px
+    padding: 6px 8px
+    color: primary-background
+    content: attr(data-tooltip)
+    margin-top: 5px
+    white-space: pre
+    word-wrap: break-word
+    line-height: 1.2
+
+  // tooltip pointer
+  &::after
+    border: 5px solid transparent
+    border-bottom-color: tooltip-background
+    content: ''
+    margin-top: -5px
+
+[data-tooltip-left]
+  &::before
+    transform: translateX(0)
+    left: 0
+    right: auto
+    min-width: calc(50% + 14px)
+
+[data-tooltip-right]
+  &::before
+    transform: translateX(15%)
+    left: auto
+    right: 0
+
+[data-tooltip-top]
+  &::before, &::after
+    top: auto
+    bottom: 100%;
+    margin-top: auto;
+  &::before
+    margin-bottom: 5px
+  &::after
+    transform: rotate(180deg) translateX(-4px)
+    margin-bottom: -5px
+
+[data-tooltip-persistent]
+  &::before, &::after
+    visibility: visible
+    opacity: 1
+
+[data-tooltip-error]
+  &::before
+    background-color: error
+  &::after
+    border-top-color: error
+
+[data-tooltip-notification]
+  &::before
+    background-color: notification
+  &::after
+    border-bottom-color: notification
+
+[data-tooltip-clickable]
+  &::before, &::after
+    pointer-events: auto
+    cursor: pointer
+
+[data-tooltip-hidden]
+  &:hover::before,
+  &:hover::after
+    visibility:hidden
+    opacity:0

@@ -1,0 +1,120 @@
+.app-preview
+  position: relative
+  width: 40vw
+  min-width: 200px
+  max-width: 75%
+  min-height: 100px
+  -webkit-overflow-scrolling: touch
+  @media (max-width: small-viewport-width)
+    max-width: 65%
+    
+  resizer, div.resizer
+    display: block
+    position: absolute
+    z-index: 2
+    user-select: none
+    height: 100%
+    width: 10px
+    cursor: ew-resize
+    border-left: 1px solid section-line
+
+  .resize-helper
+    width: 100%
+    opacity: 0
+    position: absolute
+    height: calc(100% - 45px)
+    pointer-events: none
+
+  .iframe-wrapper
+    height: calc(100% - 45px)
+    overflow: hidden
+
+  iframe
+    width: 100%
+    height: 100%
+    border: 0
+    background-color: white
+
+  .close
+    top: 10px
+    right 15px
+
+.app-preview-transition
+  transition: 0.2s
+
+.app-preview-helper
+  flex: 0
+  border-left: 1px section-line solid
+  border-bottom: 1px section-line solid
+  padding: 10px 20px
+  position: relative
+
+  .button
+    button-small()
+    button-secondary()
+    margin-right: 5px
+    vertical-align: middle
+    
+  .url-wrapper
+    position: relative
+    display: inline-block
+
+  .icon-collapse
+    cursor: e-resize
+    height: 25px
+    background-size: 14px 12px
+    margin-left: -7px
+    margin-right: 5px
+    padding: 0 14px
+    user-select: none
+    transition: right 0.1s
+    transform: rotate(-180deg)
+    vertical-align: middle
+
+.app-preview-collapsed
+  border-left: 1px solid section-line
+  animation: sidebar-collapse .1s ease
+  cursor: w-resize
+  max-width: 31px
+  min-width: initial
+  overflow: hidden
+  transition: none
+  user-select: none
+  height: 100%
+  &:hover
+    background-color: secondary-background-hover
+    .icon-collapse
+      opacity: 0.8
+  > *
+    pointer-events: none
+    &:not(.app-preview-helper)
+      opacity: 0
+
+  resizer, div.resizer
+    display: none
+
+  .app-preview-helper
+    border: none
+    > *
+      opacity: 0
+
+  .icon-collapse
+    transform: rotate(0deg) translateX(-5px)
+    cursor: w-resize
+    opacity: 0.4
+    margin-left: -14px
+  
+.is-resizing
+  &.app-preview
+    user-select: none
+  .resize-helper
+    pointer-events: auto
+
+.is-embedded
+  &.app-preview
+    max-width: initial
+    min-width: initial
+  .iframe-wrapper
+    height: calc(100% + 5px)
+  resizer, div.resizer
+    cursor: default

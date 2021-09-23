@@ -1,0 +1,235 @@
+// Shared styles used by all pop-overs
+// You shouldn't need to change this to make a new pop-over
+// Put pop-over specific overrides and rules are in custom-pop-overs.styl
+
+.pop-over
+  background-color: primary-background
+  font-size: 14px
+  margin: 0
+  cursor: initial
+  display: block
+  position: absolute
+  top: 24px
+  left: side-padding
+  border-radius: 3px
+  border: 1px solid secondary
+  box-shadow: pop-shadow
+  z-index: 10
+  width: 255px
+  padding: 0
+  -webkit-overflow-scrolling: touch
+  overflow-y: auto
+  max-height: calc(88vh - 45px)
+
+  div.pop-loader
+    display: flex
+    justify-content: center
+    padding: 1rem
+
+  a.no-select
+    user-select: none
+
+  section
+    color: primary
+    padding: vertical-rhythm
+    padding-top: 14px
+    padding-bottom: 14px
+    position: relative
+    border-bottom: 1px solid secondary
+    &:first-child
+      border-top-left-radius: 3px
+      border-top-right-radius: 3px
+    &:last-child
+      border-bottom: none
+      border-bottom-left-radius: 3px
+      border-bottom-right-radius: 3px
+
+    p
+      color: primary
+      margin-bottom: vertical-rhythm
+      margin-top: 0
+      position: relative
+      &:last-child,
+      &:only-child
+        margin-bottom: 0
+      a
+        color: general-link
+        word-break: break-all
+        &:hover
+          text-decoration: none
+      img
+        max-width: 100%
+
+    .back
+      padding: 10px
+      width: 10px
+      height: 10px
+      dulled()
+      hover-highlight()
+      hover-highlight-on-secondary-background()
+
+    h1
+      display: inline-block
+      font-weight: bold
+      font-size: 14px
+      margin: 0
+      vertical-align: -1px
+
+    h2
+      margin: 0
+      margin-bottom: vertical-rhythm
+      display: inline-block
+      font-weight: bold
+      font-size: 14px
+      [data-module="Icon"]
+        cursor: default
+        margin: 0
+        margin-right: 5px
+        margin-top: -3px
+
+    .input-wrap
+      margin-bottom: vertical-rhythm
+      position: relative
+      &:last-child,
+      &:only-child
+        margin-bottom: 0
+      .input
+        margin: 0
+      .search-input
+        search-input()
+
+  section.no-bottom-border
+    padding-bottom: 0
+
+  // Action sections are used to present the user with something they use to directly control their editor instance or project
+  // They should be considered the default type of section
+  section.actions
+    background-color: primary-background
+    .button
+      button-large()
+    .segmented-buttons
+      segmented-buttons()
+      .button
+        button-secondary()
+    .button-copy, .button-copy-only-style
+      button-copy()
+    .button-small
+      button-small()
+    .button-secondary
+      button-secondary()
+
+
+  // Info sections are used for things that are either less important, or secondary, to editing the current project.
+  // As well as for sectioning off non-interactive information to the user
+  section.info
+    background-color: secondary-background
+    .button
+      button-small()
+      button-secondary-on-secondary-background()
+    .segmented-buttons
+      segmented-buttons()
+      .button
+        button-secondary-on-secondary-background()
+    .button-copy, .button-copy-only-style
+      button-copy()
+
+  section.danger-zone
+    background-color: warning-background
+    .button
+      button-small()
+      button-secondary()
+
+  .results-list
+    results-list()
+
+    &.swapped-li-a
+      li.result
+        padding: 0
+        padding-top: 0
+        padding-right: 0
+        padding-bottom: 0
+        padding-left: 0
+
+        a
+          display: block
+          padding: 12px 6px
+
+  .clickable-label
+    cursor: pointer
+    &:hover,
+    &:active
+      .back
+        opacity: 1
+        border-radius: 5px
+        border: none
+    &:hover
+      .back
+        background-color: secondary-background-hover
+    &:active
+      .back
+        background-color: secondary-background-active
+
+  .profile-summary
+    .avatar
+      width: 44px
+      height: 44px
+      vertical-align: middle
+      margin-right: 10px
+      border: none
+      cursor: pointer
+    .anon-avatar
+      background-size: 30px
+      background-position: center 55%
+    .user-info
+      display: inline-block
+      vertical-align: middle
+      line-height: 20px
+    h1,
+    .login
+      font-weight: bold
+      margin: 0
+    .login
+      color: text-on-secondary-background
+      font-weight: 600
+
+  .input
+    pop-over-input()
+
+  a
+    section:not(.no-bottom-border)
+      &:last-child
+        border-bottom: 1px solid secondary
+        border-radius: 0
+
+  .status
+    margin-left: 0
+    margin-bottom: 12px
+
+.wide-pop
+  width: 90%
+  max-width: 380px
+
+.mini-pop
+  max-width: 180px
+  font-family: sans-serif
+  color: primary
+  user-select: none
+  position: absolute
+  [data-module="Icon"]
+    margin-left: 3px
+    height: 1.2em
+  .mini-pop-action
+    font-weight: 600
+    cursor: pointer
+    padding: 12px
+    padding-top: 8px
+    padding-bottom: 8px
+    border-bottom: 1px solid section-line
+    &:hover
+      background-color: secondary-background
+    &:active,
+    &:focus
+      background-color: secondary-background-active
+      outline: none
+    &:last-child
+      border-bottom: 0

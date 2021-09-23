@@ -1,0 +1,313 @@
+// Backgrounds
+
+no-search-results = illustrations +  'no-search-results.svg'
+
+// Icons and Logos
+
+.anon-avatar
+  background-image: url('/edit/images/anon-avatar-smile.svg')
+  background-size: contain
+  vertical-align: middle
+
+// .apple-logo
+//   background-image: url(logos + 'apple-logo.svg')
+
+.close
+  themed-url(background-image, icons + 'x.svg')
+
+.close-icon
+  themed-url(background-image, icons + 'x.svg')
+
+.options
+  themed-url(background-image, icons + 'options.svg')
+
+.icon-collapse
+  themed-url(background-image, icons + 'collapse.svg')
+
+.new-stuff-doggo
+  background-image: url(illustrations + 'new-stuff-doggo.svg')
+
+.fire-truck
+  background-image: url(illustrations + 'fire-truck.svg')
+
+.private-icon
+  themed-url(background-image, icons + 'private.svg')
+
+.public-icon
+  themed-url(background-image, icons + 'public.svg')
+
+.search-input
+  themed-url(background-image, icons + 'search.svg')
+
+search-input-icon()
+  themed-url(background-image, icons + 'search.svg')
+
+.search-icon
+  themed-url(background-image, icons + 'search-icon.svg')
+
+.show-app-icon
+  themed-url(background-image, icons + 'show-app.svg')
+
+.share-public-project
+  themed-url(background-image, icons + 'share-public-project.svg')
+
+.share-private-code
+  themed-url(background-image, icons + 'share-private-code.svg')
+
+.share-private-project
+  themed-url(background-image, icons + 'share-private-project.svg')
+
+.eye
+  themed-url(background-image, icons + 'eye.svg')
+
+.refresh
+  themed-url(background-image, icons + 'refresh.svg')
+
+.justice
+  themed-url(background-image, icons + 'justice.svg')
+
+// Rewind icons
+
+.rewind
+  themed-url(background-image, icons + 'rewind.svg')
+
+.ask-for-help
+  themed-url(background-image, icons + 'ask-for-help.svg')
+  width: 21px
+  height: 19px
+
+.playhead-arrow
+  themed-url(background-image, icons + 'playhead-arrow.svg')
+
+// Sidebar Icons
+
+.assets-sidebar-icon
+  themed-url(background-image, sidebar-icons + 'assets.svg')
+  &.active
+    themed-url(background-image, sidebar-icons + 'assets-active.svg')
+
+.secrets-sidebar-icon
+  width: 19px
+  height: 19px
+  transform: translate(-1px, -2.5px) rotate(-25deg)
+  themed-url(background-image, sidebar-icons + 'secrets.svg')
+  &.active
+    themed-url(background-image, sidebar-icons + 'secrets-active.svg')
+
+.icon
+  display: inline-block
+  background-repeat: no-repeat
+  cursor: pointer
+  background-position: center
+  vertical-align: middle
+
+.ask-for-help-icon
+  themed-url(background-image, sidebar-icons + 'ask-for-help.svg')
+  width: 17px
+  height: 15px
+  margin-left: 2px
+  margin-right: 5px
+  vertical-align: -3px
+  background-size: contain
+
+.down-arrow,
+.up-arrow
+  themed-url(background-image, icons + 'down-arrow.svg')
+  width: 10px
+  height: 8px
+  margin-left: 5px
+  opacity: 0.6
+  &:hover
+    opacity: 1
+down-arrow-in-input()
+  themed-url(background-image, icons + 'down-arrow-in-input.svg')
+
+.up-arrow
+  transform: rotate(180deg)
+  position: relative
+  top: -1px
+
+.left-arrow,
+.right-arrow
+  themed-url(background-image, icons + 'left-arrow.svg')
+  width: 10px
+  height: 10px
+
+.right-arrow
+  transform: rotate(180deg)
+
+.back
+  themed-url(background-image, icons + 'left-arrow.svg')
+
+.glitch-logo
+  background-size: contain
+  background-position: initial
+  width: 31px
+  height: 25px
+  vertical-align: middle
+  background-image: url(logos + 'glitch/logo.svg')
+  &.party
+    background-image: url(logos + 'glitch/party.svg')
+  &.sunset
+    background-image: url(logos + 'glitch/logo-sunset.svg')
+  &.night
+    background-image: url(logos + 'glitch/logo-night.svg')
+  &.development
+    background-image: url(logos + 'glitch/logo-day-dev.svg')
+    &.sunset
+      background-image: url(logos + 'glitch/logo-sunset-dev.svg')
+    &.night
+      background-image: url(logos + 'glitch/logo-night-dev.svg')
+
+// .glitch-biz-logo
+//   background-size: contain
+//   background-position: initial
+//   width: 35px
+//   height: 22px
+
+.add
+  font-size: 18px
+  font-weight: 600
+  padding-left: 5px
+  padding-right: 5px
+  position: relative
+  user-select: none
+  opacity: 0.3
+  dulled-secondary()
+  hover-highlight()
+  hover-highlight-secondary()
+  transition: none
+  vertical-align: -2px
+
+.icon-collapse
+  dulled-secondary()
+  hover-highlight()
+  hover-highlight-secondary()
+
+.npm
+  width: 38px
+  vertical-align: text-bottom
+  margin-right: 6px
+  background-image: url(logos + 'npm.svg')
+
+.makerbase
+  width: 20px
+  vertical-align: -1px
+  margin-right: 6px
+
+.private-icon,
+.public-icon
+  background-repeat: no-repeat
+  background-position: center
+  width: 10px
+  height: 14px
+  display: inline-block
+  vertical-align: middle
+
+.search-in-badge
+  themed-url(background-image, icons + 'search-in-badge.svg')
+  width: 11px
+  height: 11px
+  margin-left: 2px
+  margin-right: 0
+  vertical-align: -1px
+  background-size: contain
+
+.status-badge
+  font-weight: 600
+  font-size: 12px
+  line-height: 14px
+  vertical-align: middle
+  color: primary-background
+
+  .status
+    padding-top: 2px
+    padding-bottom: 0px
+    border-radius: 5px
+    padding-left: 5px
+    padding-right: 5px
+    display: inline-block
+    margin-left: 5px
+    background-color: line-on-secondary-background
+
+  .status-standalone
+    height: 13px
+    width: 13px
+    border-radius: 13px
+    position: relative
+    top: 1px
+    display: inline-block
+    margin-left: 5px
+
+  .loading
+    padding: 0
+    background-color: transparent
+    [data-module="Loader"]
+      margin: 0
+      width: 14px
+      height: 14px
+      vertical-align: middle
+  .error
+    background-color: error
+  .off
+    background-color: text-on-secondary-background
+  .success,
+  .ok
+    background-color: success
+  .warning
+    background-color: warning
+
+  &.show-badge
+    vertical-align: middle
+    .loader
+      width: 16px
+      height: 16px
+      vertical-align: -1px
+
+.eye,
+.justice,
+.refresh
+  height: 12px
+  width: 18px
+  vertical-align: -2px
+  dulled-secondary()
+
+.eye,
+.justice
+  height: 13px
+  vertical-align: middle
+
+.refresh
+  height: 13px
+  width: 12px
+
+.rewind
+  width: 14px
+  height: 10px
+  position: relative
+  top: -1px
+
+.search-icon
+  dulled-secondary()
+  width: 14px
+  height: 14px
+  vertical-align: middle
+  background-repeat: no-repeat
+
+.playhead-arrow
+  width: 17px
+  height: 16px
+
+.fullscreen
+  themed-url(background-image, icons + 'fullscreen.svg')
+  width: 14px
+  height: 14px
+  background-size: cover
+  dulled-secondary()
+
+.grecaptcha-badge
+  visibility: hidden
+
+// Modal
+.upsell-graphic
+  background-image: url(illustrations + 'upsell-graphic.svg')

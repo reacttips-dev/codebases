@@ -1,0 +1,102 @@
+.markdown-container
+  -webkit-overflow-scrolling: touch
+  flex: 1 0 auto
+  height: calc(100% - 50px)
+  overflow: auto
+  padding: 0 side-padding
+  position: relative
+
+  @media (max-width: small-viewport-width)
+    padding-left: 10px
+    padding-right: 10px
+    font-size: 90%
+
+.markdown-content
+  max-width: 612px
+  padding-bottom: 30%
+  padding-top: 12px
+
+  p
+    font-size: 16px
+    line-height: 20px
+  a
+    color: general-link
+    &:hover
+      text-decoration: none
+  h1
+    font-size: 1.6em
+  h2
+    font-size: 1.35em
+  img
+    max-width: 100%
+    display: block
+    margin: 1.5rem 0
+
+
+  // code
+  pre
+    background-color: secondary-background
+    padding: 16px
+    border-radius: 5px
+    code
+      border-radius: 0
+      padding: 0
+  code
+    font-family: monospace
+    background-color: secondary-background
+    border-radius: 3px
+    padding: 2px 3px
+    font-size: 14px
+
+  // tables
+  table,
+  th,
+  td
+    border: 1px solid section-line
+    padding: 7px 14px
+  tr:nth-child(even)
+    background-color: secondary-background
+  hr
+    border: 0
+    border-top: 1px solid section-line
+
+  // lists
+  ul,
+  ol
+    margin-bottom: 1rem
+  ul
+    list-style-type: square
+    ul
+      list-style-type: square
+  ol
+    ul
+      list-style-type: square
+  li
+    line-height: 24px
+
+  > :first-child
+    margin-top: 0
+
+.license-summary
+  font-size: 14px
+  margin-bottom: 1rem
+  overflow-x: scroll
+  display: flex
+  .license-column
+    width: calc(33% - 5%)
+    margin-right: 5%
+    min-width: 120px
+    max-width: 200px
+    &:last-child
+      margin-right: 0
+    .column-title
+      margin-top: 0
+      font-weight: bold
+    ul
+      padding-left: 1rem
+      margin: 0
+      li
+        margin-bottom: 5px
+        background-position: center
+        background-repeat: no-repeat
+        list-style-type:square

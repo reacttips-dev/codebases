@@ -1,0 +1,78 @@
+// inherits from pop-overs.styl
+
+.show-app-pop
+  left: 5px
+  top: 24px
+  @media (max-width: small-viewport-width)
+    left: -100%
+
+.show-app-pop-button-container
+  object-position: top
+  justify-items: auto
+  align-items: flex-start
+  display: flex;
+  > * + * {
+    margin-left: 12px;
+  }
+
+
+.show-app-pop-button
+  flex: 1
+  cursor: pointer
+  position: relative
+  text-decoration: inherit
+  color: text-on-secondary-background
+  &:hover,
+  &:active,
+  &.active,
+  &:focus
+    outline: none
+    color: primary
+  &:hover::before,
+  &.active::before,
+  &:active::before,
+  &:focus::before
+    content: ''
+    position: absolute
+    top: -4px
+    right: -4px
+    bottom: -4px
+    left: -4px
+    background-color: secondary-background-hover
+    border-radius: 8px
+  &:active::before,
+  &:focus::before
+    background-color: secondary-background-active
+
+.show-app-pop-button-image
+  height: 0
+  padding-bottom: 78.89%
+  background-size: contain
+  background-repeat: no-repeat
+  position: relative
+  img
+    display: block
+
+.show-app-pop-image-live-app
+  themed-url(background-image, editor-path + 'live-app-' + theme + '.svg')
+  width: 110px;
+
+.show-app-pop-image-editor-preview
+  themed-url(background-image, editor-path + 'editor-preview-' + theme + '.svg')
+  width: 110px;
+
+.show-app-pop-button-title
+  position: relative
+  font-size: 12px
+  font-weight: 600
+  margin: 12px 0 6px
+  text-align: center
+
+.show-app-pop-side-by-side
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.show-app-pop-button-title-disabled
+  font-size: 8px;

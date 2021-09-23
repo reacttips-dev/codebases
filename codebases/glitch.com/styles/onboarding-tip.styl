@@ -1,0 +1,50 @@
+.onboarding-tip
+  background: onboarding-background
+  border-radius: 8px
+  padding: 12px
+  font-size: 12px
+  position: relative
+
+  strong
+    font-weight: 600
+
+  .button-wrap
+    margin-top: 8px
+
+    .button
+      + .button
+        margin-left: 8px
+
+.onboarding-tip-link
+  text-decoration: none
+
+.onboarding-tip + .onboarding-tip
+  border-radius: 0 0 8px 8px
+  margin-top: -8px
+  padding-top: 20px
+
+  &::before
+    content: ''
+    width: 100%
+    background: onboarding-background
+    height: 8px
+    top:  0
+    position: absolute
+    left: 0
+    border-bottom: 1px solid #fff
+
+.onboarding-tip-wholly-clickable
+  cursor: pointer
+
+  &:hover
+    .button-cta
+      background-color: cta
+      box-shadow: 2px 2px 0 primary
+
+.onboarding-tip-decoration-image
+  position: absolute
+  bottom: 8px
+  right: 8px
+  transform: rotate(6deg)
+  width: 30px
+  height: 30px

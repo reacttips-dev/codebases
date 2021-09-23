@@ -1,0 +1,26 @@
+.blank-slate
+  background-size: cover
+  background-repeat: no-repeat
+  background-color: primary-background
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  padding: 12px
+  overflow: hidden
+
+  [data-module="Loader"]
+    margin-left: 0
+    width: 30px
+    height: 30px
+
+.blank-slate-full-width
+  z-index: 9 /* needs to be < 10 so it doesn't hide the notifications */
+
+.blank-slate-with-editor-helper
+  top: 45px

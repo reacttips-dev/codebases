@@ -1,0 +1,374 @@
+.filetree
+  transition: all 0.1s
+  font-size: 13px
+  margin: 0
+  padding: 0
+  line-height: 1.5em
+  width: 100%
+  padding-bottom: 105px
+  padding-left: side-padding
+
+  .filetree-child
+    transition: none
+    cursor: pointer
+    list-style-type: none
+    position: relative
+    font-family: monospace
+    white-space: nowrap
+    min-height: sidebar-file-height
+    &.file
+      /* We must ensure that we only add padding onto files and not folders in this way because otherwise the nested folders
+      cause the highlight inside to not reach the full width of the sidebar */
+      padding-left: 5px
+      padding-right: 48px
+    .current-users
+      display: inline
+      height: 100%
+      position: absolute
+      left: - side-padding
+      width: side-padding - 1px
+      overflow: hidden
+      pointer-events: none
+      .current-user
+        width: 5px
+        border-radius: 5px
+        height: 100%
+        margin-left: 1px
+        float: left
+    .options
+      width: 10px
+      height: 100%
+      position: absolute
+      right: 0
+      top: 0
+      padding: 0 21px
+      background-position: center
+      transition: all 0.1s
+      opacity: 0
+      &:hover,
+      &:focus
+        opacity: 1
+      z-index: 2
+    .display-file-name,
+    .display-folder-name
+      white-space: pre
+      line-height: sidebar-line-height
+      height: sidebar-file-height
+    .filename
+      display: flex
+      height: sidebar-file-height
+    &.active
+      color: primary-background
+      .folder-path
+        color: primary-background
+    .file-rename-input, .folder-rename-input
+      border-radius: 0
+
+  .filetree-child:not(.folder),
+  .folder-path
+    &:hover,
+    &:focus,
+    &.active
+      outline: none
+      border-radius: 10px
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+      .options
+        display: inline-block
+
+  .secrets-sidebar-icon,
+  .assets-sidebar-icon
+    sidebar-item-with-icon()
+  .filetree-child
+    &.secrets-sidebar-icon
+      padding-left: 28px
+
+  details
+    display: inline-block
+    width: 100%
+    > summary.folder-path
+      width: 100%
+      padding-right: 48px
+      position: relative
+      outline: none
+      &::-webkit-details-marker
+        display: none
+      &:before
+        align-items: center
+        themed-url(background, icons + 'down-arrow.svg', no-repeat)
+        background-position: center
+        content: " "
+        display: inline-block;
+        height: 10px;
+        left: -3px;
+        opacity: 0.4;
+        position: relative;
+        transform: rotate(-90deg);
+        width: 10px;
+    &[open] > summary:before
+        transform: rotate(0deg);
+    &[open] > summary .current-users,
+    &[open] > summary .rewind-state,
+    &[open] > summary .search-state
+        display: none
+    &:not([open]) .other.active.folder-path
+      box-shadow: 0 0 0 2px file-other
+      color: text-on-secondary-background
+
+.rewind-state
+  display: inline-block
+  margin-right: 5px
+  margin-left: 1px
+  vertical-align: -2px
+  .rewind-state-icon
+    background-color: line-added-active
+    border-radius: 3px
+    position: relative
+    width: 13px
+    height: 13px
+    .mixed-lines-background
+      background-color: line-removed-active
+      position: absolute
+      height: 50%
+      width: 100%
+      border-bottom-left-radius: 3px
+      border-bottom-right-radius: 3px
+      bottom: 0
+      left: 0
+    &.deleted
+      background-color: line-removed-active
+    &.added
+      .mixed-lines-background
+        display: none
+
+.search-state
+  display: inline
+  margin-right: 5px
+  .status
+    margin: 0
+
+.display-file-name,
+.display-folder-name
+  position: relative
+  display: inline-block
+  width: 100%
+
+.extension-type
+  color: file-other
+
+.filetree-child.file,
+.filetree-child .folder-path,
+.filetree-child.assets-sidebar-icon
+  &:hover,
+  &:focus
+    .extension-type
+      color: primary
+      background-color: transparent
+    .options
+      opacity: 1
+  &.active
+    .extension-type
+      color: primary-background
+      background-color: transparent
+.filetree-child.file,
+.filetree-child.assets-sidebar-icon
+  &.active
+    .options
+      opacity: 1
+      filter: invert(1)
+
+// extensions type colors
+
+.logic
+  .extension-type
+    color: file-logic
+  &:hover,
+  &:focus
+    background-color: file-logic-secondary
+  &.active
+    background-color: file-logic
+  .file-rename-input
+    background-color: file-logic-secondary
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-logic-secondary
+  &.files
+    background-color: file-logic-secondary
+
+.data
+  .extension-type
+    color: file-data
+  &:hover,
+  &:focus
+    background-color: file-data-secondary
+  &.active
+    background-color: file-data
+  .file-rename-input
+    background-color: file-data-secondary
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-data-secondary
+  &.files
+    background-color: file-data-secondary
+
+.info
+  .extension-type
+    color: file-info
+  &:hover,
+  &:focus
+    background-color: file-info-secondary
+  &.active
+    background-color: file-info
+  .file-rename-input
+    background-color: file-info-secondary
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-info-secondary
+  &.files
+    background-color: file-info-secondary
+
+.view
+  .extension-type
+    color: file-view
+  &:hover,
+  &:focus
+    background-color: file-view-secondary
+  &.active
+    background-color: file-view
+  .file-rename-input
+    background-color: file-view-secondary
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-view-secondary
+  &.files
+    background-color: file-view-secondary
+
+.style
+  .extension-type
+    color: file-styles
+  &:hover,
+  &:focus
+    background-color: file-styles-secondary
+  &.active
+    background-color: file-styles
+  .file-rename-input
+    background-color: file-styles-secondary
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-styles-secondary
+  &.files
+    background-color: file-styles-secondary
+
+.image
+  .extension-type
+    color: file-image
+  &:hover,
+  &:focus
+    background-color: file-image-secondary
+  &.active
+    background-color: file-image
+  .file-rename-input
+    background-color: file-image-secondary
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-image-secondary
+  &.files
+    background-color: file-image-secondary
+
+li.file.audio, li.file.pdf
+  &:hover,
+  &:focus
+    background-color: file-other-secondary
+  &.active
+    background-color: file-other
+  .file-rename-input
+    background-color: file-other-secondary
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-other-secondary
+  &.files
+    background-color: file-other-secondary
+
+ul.filetree li.filetree-child.env
+  color: file-env-color
+  .extension-type
+    color: file-env-color
+  &:hover,
+  &:focus
+    background-color: file-env-secondary
+  &.active
+    background-color: file-env
+    color: file-env-active-color
+    .extension-type
+      color: file-env-active-color
+  .file-rename-input
+    background-color: file-env
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-env
+  &.files
+    background-color: file-env
+
+.other
+  &:hover,
+  &:focus
+    background-color: file-other-secondary
+  &.active:not(.folder-path)
+    background-color: file-other
+  .file-rename-input,
+  .folder-rename-input
+    background-color: inherit
+  &.mini-pop
+    &:hover,
+    &:focus
+      background-color: primary-background
+    .mini-pop-action
+      &:hover,
+      &:focus
+        background-color: file-other-secondary
+  &.files
+    background-color: file-other-secondary
+
+.folder-path
+  font-style: italic
+  color: text-on-secondary-background
