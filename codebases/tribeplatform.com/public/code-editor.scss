@@ -1,0 +1,17 @@
+.CodeMirror.cm-s-disabled {
+  background: var(--tribe-colors-bg-secondary);
+  border: 1px solid #e2e8f0;
+  color: var(--tribe-colors-label-muted);
+}
+
+.CodeMirror-linenumber {
+  color: var(--tribe-colors-label-muted) !important;
+}
+
+.CodeMirror-wrap pre {
+  word-break: break-word;
+}
+
+.CodeMirror-placeholder {
+  color: var(--tribe-colors-placeholder) !important;
+}
