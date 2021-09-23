@@ -1,0 +1,1 @@
+No Content: webpack:///./src/reddit/icons/svgs/SnooHappy/index.tsx

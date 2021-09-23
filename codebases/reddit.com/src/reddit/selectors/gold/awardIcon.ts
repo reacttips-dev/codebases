@@ -1,0 +1,1 @@
+No Content: webpack:///./src/reddit/selectors/gold/awardIcon.ts
