@@ -4,6 +4,11 @@ This is collection of some big project's codebases built with Reactjs that direc
 
 All of codebases in this repo should be reviewed by our team, to ensure they are good for users to reference.
 
+## How we get the source code?
+This picture show how we get the source code.
+
+<img width="100%" alt="how to download website source code" src="https://user-images.githubusercontent.com/51266596/134523169-60b69193-856b-45c5-ad89-6044157713c5.jpg">
+
 ## Index
 
 **Notes:**
