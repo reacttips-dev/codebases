@@ -39,6 +39,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### H
+* Hubspot (https://app.hubspot.com) - CRM / Cong Nguyen, 2021/09/23
 
 ---
 ### I

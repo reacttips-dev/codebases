@@ -1,0 +1,4 @@
+'use es6';
+
+export var SELECT_THREAD = 'SELECT_THREAD';
+export var CLEAR_SELECTED_THREAD = 'CLEAR_SELECTED_THREAD';

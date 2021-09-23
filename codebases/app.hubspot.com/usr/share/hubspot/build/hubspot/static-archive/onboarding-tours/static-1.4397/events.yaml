@@ -1,0 +1,67 @@
+module.exports = {
+  "tourStart": {
+    "name": "onboarding tour start",
+    "class": "view",
+    "properties": {
+      "tourId": "string",
+      "prevTourId": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "onboarding-tours"
+  },
+  "tourFinish": {
+    "name": "onboarding tour finish",
+    "class": "interaction",
+    "properties": {
+      "tourId": "string"
+    },
+    "namespace": "onboarding-tours"
+  },
+  "tourViewStep": {
+    "name": "onboarding tour view step",
+    "class": "view",
+    "properties": {
+      "attachToExists": "boolean",
+      "tourId": "string",
+      "stepId": "string"
+    },
+    "namespace": "onboarding-tours"
+  },
+  "tourClose": {
+    "name": "onboarding tour close",
+    "class": "interaction",
+    "properties": {
+      "tourId": "string"
+    },
+    "namespace": "onboarding-tours"
+  },
+  "tourViewFinishModal": {
+    "name": "onboarding tour view finish modal",
+    "class": "view",
+    "properties": {
+      "tourId": "string"
+    },
+    "namespace": "onboarding-tours"
+  },
+  "tourViewCloseModal": {
+    "name": "onboarding tour view close modal",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "tourId": "string",
+      "stepId": "string"
+    },
+    "namespace": "onboarding-tours"
+  },
+  "tourClickExternalStepLink": {
+    "name": "onboarding tour click external step link",
+    "class": "interaction",
+    "properties": {
+      "tourId": "string",
+      "stepId": "string"
+    },
+    "namespace": "onboarding-tours"
+  }
+};

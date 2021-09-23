@@ -1,0 +1,1 @@
+export var CRM_OBJECT = 'CRM_OBJECT';

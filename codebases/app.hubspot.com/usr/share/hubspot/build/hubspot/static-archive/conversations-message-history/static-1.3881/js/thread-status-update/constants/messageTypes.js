@@ -1,0 +1,3 @@
+'use es6';
+
+export var THREAD_STATUS_UPDATE = 'THREAD_STATUS_UPDATE';

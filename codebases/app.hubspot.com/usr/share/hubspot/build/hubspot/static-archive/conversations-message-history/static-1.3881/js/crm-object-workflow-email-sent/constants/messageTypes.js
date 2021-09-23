@@ -1,0 +1,4 @@
+'use es6';
+
+export var CRM_OBJECT_WORKFLOW_EMAIL_SENT = 'CRM_OBJECT_WORKFLOW_EMAIL_SENT';
+export var MESSAGE_TYPE_ID = '@type';

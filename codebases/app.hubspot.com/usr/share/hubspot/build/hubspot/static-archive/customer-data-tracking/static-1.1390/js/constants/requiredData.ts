@@ -1,0 +1,18 @@
+var PORTAL_AGE_DAYS = 'portal-age-days';
+var PORTAL_AGE_MONTHS = 'portal-age-months';
+var USER_AGE_DAYS = 'user-age-days';
+var USER_AGE_MONTHS = 'user-age-months';
+var USAGE_PORTAL_FIRST_WEEK = 'usage-portal-first-week';
+var CHROME_EXTENSION_INSTALLED = 'chrome-extension-installed';
+var USER_WAS_INVITED = 'user_was_invited';
+var OPTED_INTO_3_COLUMN = 'opted-into-new-record';
+export default {
+  PORTAL_AGE_DAYS: PORTAL_AGE_DAYS,
+  PORTAL_AGE_MONTHS: PORTAL_AGE_MONTHS,
+  USER_AGE_DAYS: USER_AGE_DAYS,
+  USER_AGE_MONTHS: USER_AGE_MONTHS,
+  USAGE_PORTAL_FIRST_WEEK: USAGE_PORTAL_FIRST_WEEK,
+  CHROME_EXTENSION_INSTALLED: CHROME_EXTENSION_INSTALLED,
+  USER_WAS_INVITED: USER_WAS_INVITED,
+  OPTED_INTO_3_COLUMN: OPTED_INTO_3_COLUMN
+};

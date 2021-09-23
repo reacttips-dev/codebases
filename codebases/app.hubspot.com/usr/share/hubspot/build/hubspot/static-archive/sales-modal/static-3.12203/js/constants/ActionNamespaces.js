@@ -1,0 +1,3 @@
+'use es6';
+
+export var CONNECTED_ACCOUNTS = 'CONNECTED_ACCOUNTS';

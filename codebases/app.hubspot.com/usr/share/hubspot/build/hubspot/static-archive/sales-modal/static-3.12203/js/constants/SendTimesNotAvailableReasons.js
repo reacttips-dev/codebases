@@ -1,0 +1,4 @@
+'use es6';
+
+export var THROTTLED = 'THROTTLED';
+export var SEND_LIMIT_EXCEEDED = 'SEND_LIMIT_EXCEEDED';

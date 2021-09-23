@@ -1,0 +1,3 @@
+'use es6';
+
+export var DECK_FETCH_SUCCEEDED = 'DECK_FETCH_SUCCEEDED';

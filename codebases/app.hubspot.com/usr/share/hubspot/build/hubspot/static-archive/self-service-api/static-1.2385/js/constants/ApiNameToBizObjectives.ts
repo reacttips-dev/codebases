@@ -1,0 +1,12 @@
+import _defineProperty from "@babel/runtime/helpers/esm/defineProperty";
+
+var _ApiNameToBizObjectiv;
+
+import { MARKETING, SALES, SERVICE, CMS, OPERATIONS } from './ProductLines';
+import { STARTER, PROFESSIONAL, ENTERPRISE } from './ProductLevels';
+import * as ApiNames from './ApiNames';
+import HighlightedProductsBizObjectives from './HighlightedProductsBizObjectives'; // the preferred way to access biz objectives is directly via HighlightedProductsBizObjectives
+// however, this is a stopgap for when we don't have productLine and productLevel information
+
+var ApiNameToBizObjectives = (_ApiNameToBizObjectiv = {}, _defineProperty(_ApiNameToBizObjectiv, ApiNames.MARKETING_HUB_STARTER, HighlightedProductsBizObjectives[MARKETING][STARTER]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.MARKETING_HUB_PROFESSIONAL, HighlightedProductsBizObjectives[MARKETING][PROFESSIONAL]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.MARKETING_HUB_ENTERPRISE, HighlightedProductsBizObjectives[MARKETING][ENTERPRISE]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.SALES_HUB_STARTER, HighlightedProductsBizObjectives[SALES][STARTER]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.SALES_HUB_PROFESSIONAL, HighlightedProductsBizObjectives[SALES][PROFESSIONAL]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.SALES_HUB_ENTERPRISE, HighlightedProductsBizObjectives[SALES][ENTERPRISE]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.SERVICE_HUB_STARTER, HighlightedProductsBizObjectives[SERVICE][STARTER]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.SERVICE_HUB_PROFESSIONAL, HighlightedProductsBizObjectives[SERVICE][PROFESSIONAL]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.SERVICE_HUB_ENTERPRISE, HighlightedProductsBizObjectives[SERVICE][ENTERPRISE]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.CMS_HUB_STARTER, HighlightedProductsBizObjectives[CMS][STARTER]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.CMS_HUB_PROFESSIONAL, HighlightedProductsBizObjectives[CMS][PROFESSIONAL]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.CMS_HUB_ENTERPRISE, HighlightedProductsBizObjectives[CMS][ENTERPRISE]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.OPERATIONS_HUB_STARTER, HighlightedProductsBizObjectives[OPERATIONS][STARTER]), _defineProperty(_ApiNameToBizObjectiv, ApiNames.OPERATIONS_HUB_PROFESSIONAL, HighlightedProductsBizObjectives[OPERATIONS][PROFESSIONAL]), _ApiNameToBizObjectiv);
+export default ApiNameToBizObjectives;

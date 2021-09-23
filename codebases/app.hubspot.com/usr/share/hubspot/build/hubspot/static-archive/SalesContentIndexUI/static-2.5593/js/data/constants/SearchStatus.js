@@ -1,0 +1,8 @@
+'use es6';
+
+import keyMirror from 'react-utils/keyMirror';
+export default keyMirror({
+  SUCCEEDED: null,
+  FAILED: null,
+  LOADING: null
+});

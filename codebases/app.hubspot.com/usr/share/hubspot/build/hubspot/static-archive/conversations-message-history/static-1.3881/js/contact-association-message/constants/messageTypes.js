@@ -1,0 +1,3 @@
+'use es6';
+
+export var CONTACT_ASSOCIATION = 'CONTACT_ASSOCIATION';

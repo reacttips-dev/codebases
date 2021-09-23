@@ -1,0 +1,7 @@
+module.exports = {
+  "/": {
+    "success": [
+      "BANNER_LOAD"
+    ]
+  }
+};

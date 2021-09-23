@@ -1,0 +1,17 @@
+'use es6';
+
+export var HEADER_HEIGHT = 68;
+export var THREADLIST_HEADER_HEIGHT = 182;
+export var THREADLIST_FOOTER_HEIGHT = 40;
+export var LAUNCHER_HEIGHT = 80;
+export var LAUNCHER_WIDTH = 84;
+export var OFFSET_HEIGHT = 64;
+export var OFFSET_HEIGHT_EXTENDED = 76;
+export var MOBILE_OFFSET_HEIGHT = 104;
+export var MOBILE_OFFSET_HEIGHT_EXTENDED = 116;
+export var BASE_WIDGET_HEIGHT = 530;
+export var SMALLEST_WIDGET_HEIGHT = 247;
+export var BASE_WIDGET_WIDTH = 396;
+export var WIDGET_SHADOW_WIDTH = 24;
+export var CLOSE_BUTTON_AND_SPACING = 16 + 60 + 16;
+export var SPACING_ABOVE_WIDGET = 24 + 20;

@@ -1,0 +1,3 @@
+'use es6';
+
+export var THREAD_INBOX_UPDATED = 'THREAD_INBOX_UPDATED';

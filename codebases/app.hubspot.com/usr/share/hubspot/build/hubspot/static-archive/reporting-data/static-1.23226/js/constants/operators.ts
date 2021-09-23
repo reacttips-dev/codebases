@@ -1,0 +1,11 @@
+export var BETWEEN = 'BETWEEN';
+export var GT = 'GT';
+export var GTE = 'GTE';
+export var LT = 'LT';
+export var LTE = 'LTE';
+export var EQ = 'EQ';
+export var NEQ = 'NEQ';
+export var IN = 'IN';
+export var NOT_IN = 'NOT_IN';
+export var HAS_PROPERTY = 'HAS_PROPERTY';
+export var NOT_HAS_PROPERTY = 'NOT_HAS_PROPERTY';

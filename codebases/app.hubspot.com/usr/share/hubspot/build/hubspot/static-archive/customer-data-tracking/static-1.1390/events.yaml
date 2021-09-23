@@ -1,0 +1,4400 @@
+module.exports = {
+  "createTaskFromUI": {
+    "name": "Create Task From UI",
+    "class": "interaction",
+    "properties": {
+      "datePreset": {
+        "type": [
+          "today",
+          "tomorrow",
+          "oneBusinessDay",
+          "twoBusinessDays",
+          "threeBusinessDays",
+          "oneWeek",
+          "twoWeeks",
+          "oneMonth",
+          "threeMonths",
+          "sixMonths",
+          "CUSTOM"
+        ],
+        "isOptional": true
+      },
+      "reminderPreset": {
+        "type": [
+          "sameTime",
+          "halfHourBefore",
+          "hourBefore",
+          "dayBefore",
+          "weekBefore",
+          "CUSTOM"
+        ],
+        "isOptional": true
+      },
+      "screen": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": [
+          "CONTACT",
+          "COMPANY",
+          "DEAL",
+          "TICKET",
+          "CUSTOM"
+        ],
+        "isOptional": true
+      }
+    },
+    "namespace": "tasks"
+  },
+  "taskQueueBarInteraction": {
+    "name": "Task Queue Bar Interaction",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "backToTasks",
+          "completed",
+          "rescheduled",
+          "skipped",
+          "skipToRemainingTask",
+          "viewRemainingTasks"
+        ],
+        "isOptional": false
+      },
+      "category": {
+        "type": "string",
+        "isOptional": true
+      },
+      "screen": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": [
+          "private",
+          "shared",
+          "view"
+        ],
+        "isOptional": true
+      }
+    },
+    "namespace": "tasks"
+  },
+  "unassociatedTaskModalInteraction": {
+    "name": "Unassociated Task Modal Interaction",
+    "class": "interaction",
+    "properties": {
+      "screen": "string",
+      "action": {
+        "type": [
+          "viewed",
+          "associationsAdded",
+          "dismissed",
+          "markedCompleted",
+          "skipped"
+        ]
+      },
+      "associationCount": {
+        "type": "number",
+        "isOptional": true
+      },
+      "category": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "tasks"
+  },
+  "indexInteractions": {
+    "name": "index interactions",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": "string"
+      },
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "property": {
+        "type": "string",
+        "isOptional": true
+      },
+      "objectTypeId": {
+        "type": "string",
+        "isOptional": true
+      },
+      "objectTypeName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "isInactive": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "hasDealPriority": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "dealPriority": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "filterUsage": {
+    "name": "filter usage",
+    "class": "usage",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "subscreen2": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "filterInteractions": {
+    "name": "filter interactions",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "property": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "useLocalSearch": {
+    "name": "use local search",
+    "class": "interaction",
+    "properties": {
+      "type": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "createSavedView": {
+    "name": "create saved view",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "fromClone": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "editSavedView": {
+    "name": "edit saved view",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "openSavedView": {
+    "name": "open saved view",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    },
+    "namespace": "crm"
+  },
+  "exportSavedView": {
+    "name": "export view",
+    "class": "usage",
+    "properties": {
+      "exportedPropertiesNum": {
+        "type": "number"
+      },
+      "exportType": {
+        "type": [
+          "selected columns",
+          "all columns"
+        ]
+      }
+    },
+    "namespace": "crm"
+  },
+  "movedBoardColumnItem": {
+    "name": "moved board column item",
+    "class": "usage",
+    "properties": {
+      "type": {
+        "type": "string"
+      },
+      "objectTypeId": {
+        "type": "string"
+      },
+      "stageType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "stageName": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "editColumns": {
+    "name": "edit columns",
+    "class": "usage",
+    "properties": {
+      "subscreen2": {
+        "type": "string"
+      },
+      "objectTypeId": {
+        "type": "string"
+      },
+      "objectTypeName": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "bulkAssign": {
+    "name": "bulk assign",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "bulkEditRecords": {
+    "name": "bulk edit records",
+    "class": "usage",
+    "properties": {
+      "subscreen2": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "bulkDelete": {
+    "name": "bulk delete",
+    "class": "usage",
+    "properties": {
+      "subscreen2": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "indexPageview": {
+    "name": "index pageview",
+    "class": "view",
+    "properties": {
+      "viewType": {
+        "type": "string"
+      },
+      "objectTypeId": {
+        "type": "string"
+      },
+      "objectTypeName": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "saveBulkCommunicationSubscription": {
+    "name": "save bulk communication subscription",
+    "class": "usage",
+    "properties": {
+      "type": {
+        "type": "string"
+      },
+      "removeFromAllEmail": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "crm"
+  },
+  "marketingEventsOptInModal": {
+    "name": "marketing events opt in modal",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "object added",
+          "object rejected"
+        ]
+      }
+    },
+    "namespace": "crm"
+  },
+  "embeddedReportView": {
+    "name": "embedded report view",
+    "class": "view",
+    "properties": {
+      "action": "string",
+      "subscreen2": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "reporting"
+  },
+  "embeddedReportInteraction": {
+    "name": "embedded report interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "value": {
+        "type": "string",
+        "isOptional": true
+      },
+      "subscreen2": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "reporting"
+  },
+  "openCreateQuoteTemplateModal": {
+    "properties": {
+      "action": [
+        "Open modal"
+      ]
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template interaction",
+    "class": "interaction"
+  },
+  "previewQuoteTemplate": {
+    "properties": {
+      "action": [
+        "Preview quote template"
+      ],
+      "templateId": {
+        "type": "number"
+      },
+      "templatePath": {
+        "type": "string"
+      }
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template interaction",
+    "class": "interaction"
+  },
+  "chooseQuoteTemplate": {
+    "properties": {
+      "action": [
+        "Choose quote template"
+      ],
+      "templateId": {
+        "type": "number"
+      },
+      "templatePath": {
+        "type": "string"
+      }
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template interaction",
+    "class": "interaction"
+  },
+  "toggleModule": {
+    "properties": {
+      "action": [
+        "Hide module",
+        "Show module"
+      ],
+      "moduleName": {
+        "type": "string"
+      }
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template interaction",
+    "class": "interaction"
+  },
+  "saveQuoteTemplate": {
+    "properties": {
+      "action": [
+        "Save quote template"
+      ],
+      "templateId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "templatePath": {
+        "type": "string"
+      },
+      "saveType": [
+        "create",
+        "edit"
+      ]
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template usage",
+    "class": "usage"
+  },
+  "openQuoteTemplateEditor": {
+    "properties": {
+      "action": [
+        "Open quote template editor"
+      ],
+      "templateId": {
+        "type": "number"
+      },
+      "templatePath": {
+        "type": "string"
+      }
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template usage",
+    "class": "usage"
+  },
+  "deleteQuoteTemplate": {
+    "properties": {
+      "action": [
+        "Delete quote template"
+      ]
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template usage",
+    "class": "usage"
+  },
+  "editModule": {
+    "properties": {
+      "action": [
+        "Edit module"
+      ],
+      "moduleName": {
+        "type": "string"
+      }
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template usage",
+    "class": "usage"
+  },
+  "viewQuoteTemplateLibrary": {
+    "properties": {
+      "screen": "string"
+    },
+    "namespace": "custom-quote-templates",
+    "name": "Custom quote template pageview",
+    "class": "view"
+  },
+  "viewQuotesIndex": {
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes pageview",
+    "class": "view"
+  },
+  "quoteApprovalActivation": {
+    "properties": {
+      "action": [
+        "Create quote workflows"
+      ],
+      "version": [
+        "v1",
+        "v2"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes activation",
+    "class": "activation"
+  },
+  "createQuote": {
+    "name": "Quote create",
+    "properties": {
+      "action": [
+        "Created quote",
+        "Drafted quote",
+        "Requested quote"
+      ],
+      "location": {
+        "type": [
+          "dealRecord",
+          "index"
+        ],
+        "isOptional": true
+      },
+      "template": {
+        "type": [
+          "ORIGINAL",
+          "BASIC",
+          "MODERN"
+        ],
+        "isOptional": true
+      },
+      "templateType": [
+        "CUSTOMIZABLE_QUOTE_TEMPLATE",
+        "QUOTE",
+        "PROPOSAL"
+      ],
+      "numberOfRecipientContacts": {
+        "type": "number"
+      },
+      "signatureEnabled": {
+        "type": "boolean"
+      },
+      "esignatureEnabled": {
+        "type": "boolean"
+      },
+      "stripeEnabled": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "quotes-admin",
+    "class": "usage"
+  },
+  "quoteApprovalUsage": {
+    "properties": {
+      "action": [
+        "Approved quote",
+        "Requested quote changes"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes usage",
+    "class": "usage"
+  },
+  "createDeal": {
+    "properties": {
+      "action": [
+        "Create deal"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes usage",
+    "class": "usage"
+  },
+  "selectDeal": {
+    "properties": {
+      "action": [
+        "Select deal"
+      ],
+      "hasCreatedDeal": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes usage",
+    "class": "usage"
+  },
+  "quoteWizardProgress": {
+    "properties": {
+      "action": [
+        "Quote wizard progress"
+      ],
+      "step": [
+        "Deal information",
+        "Quote details",
+        "Buyer information",
+        "Sender information",
+        "Review line items",
+        "Signature and payment",
+        "Review"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteWizardInteraction": {
+    "properties": {
+      "action": [
+        "Edit terms",
+        "Edit comments",
+        "Change expiration date",
+        "Open buyer contact",
+        "Edit buyer contact",
+        "Open buyer company",
+        "Edit buyer company",
+        "Open edit sender contact",
+        "Edit sender contact",
+        "Open edit sender company",
+        "Edit sender company",
+        "Add additional fee",
+        "Remove additional fee",
+        "Enable print signature",
+        "Enable print countersignature",
+        "Modify esign countersignature",
+        "Change quote language",
+        "Change quote locale"
+      ],
+      "editedProperties": {
+        "type": "string",
+        "isOptional": true
+      },
+      "category": {
+        "type": [
+          "DISCOUNT",
+          "FEE",
+          "TAX"
+        ],
+        "isOptional": true
+      },
+      "modifyType": {
+        "type": [
+          "ADD",
+          "REMOVE"
+        ],
+        "isOptional": true
+      }
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteWizardCancel": {
+    "properties": {
+      "action": [
+        "Cancel quote"
+      ],
+      "location": [
+        "create flow",
+        "edit flow"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteInteraction": {
+    "properties": {
+      "action": [
+        "Click create quote button",
+        "Click quote title",
+        "Clone quote",
+        "Copy quote link",
+        "Copy quote approval link",
+        "Edit quote",
+        "Download quote",
+        "Countersign quote",
+        "View esign signatures",
+        "Delete quote",
+        "Open recall quote modal",
+        "Recall quote"
+      ],
+      "location": [
+        "dealRecord",
+        "dealLineItemEditor",
+        "index"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteTableStatusFilter": {
+    "properties": {
+      "action": [
+        "Filter by status"
+      ],
+      "status": [
+        "ALL",
+        "DRAFT",
+        "PENDING_APPROVAL",
+        "CHANGES_REQUESTED",
+        "PENDING_SIGNATURE",
+        "SIGNED",
+        "PENDING_PAYMENT",
+        "PAID"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteTableOwnersFilter": {
+    "properties": {
+      "action": [
+        "Filter by owner"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteTableClearFilters": {
+    "properties": {
+      "action": [
+        "Clear all filters"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "downloadAllQuotes": {
+    "properties": {
+      "action": [
+        "Download all quotes"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteApprovalPermissionSetup": {
+    "properties": {
+      "action": [
+        "Open quote approval permissions modal",
+        "Confirm quote approval permissions modal"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteApprovalWorkflowSetup": {
+    "properties": {
+      "action": [
+        "Open quote approval notifications modal",
+        "Confirm quote approval notifications modal",
+        "Manage quote approval workflows"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "quoteTimelineEvent": {
+    "properties": {
+      "action": [
+        "Click public quote link"
+      ]
+    },
+    "namespace": "quotes-admin",
+    "name": "Quotes interaction",
+    "class": "interaction"
+  },
+  "productPanelUsage": {
+    "name": "Product panel",
+    "properties": {
+      "action": [
+        "Create product",
+        "Edit product"
+      ],
+      "subAction": [
+        "Save",
+        "Save and add another"
+      ],
+      "propertyName": {
+        "type": "string"
+      }
+    },
+    "namespace": "products",
+    "class": "usage"
+  },
+  "productExport": {
+    "name": "Products export",
+    "properties": {
+      "action": [
+        "Export success"
+      ],
+      "subAction": [
+        "Export specific objects",
+        "Export all objects"
+      ],
+      "containsSearchQuery": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "products",
+    "class": "usage"
+  },
+  "deleteObject": {
+    "properties": {
+      "action": [
+        "Delete product",
+        "Delete folder"
+      ]
+    },
+    "namespace": "products",
+    "name": "Products usage",
+    "class": "usage"
+  },
+  "bulkDeleteObjects": {
+    "properties": {
+      "action": [
+        "Bulk delete"
+      ],
+      "containsSearchQuery": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "products",
+    "name": "Products usage",
+    "class": "usage"
+  },
+  "modifyFolderModal": {
+    "properties": {
+      "action": [
+        "Create folder",
+        "Edit folder"
+      ]
+    },
+    "namespace": "products",
+    "name": "Products usage",
+    "class": "usage"
+  },
+  "moveProductToFolder": {
+    "properties": {
+      "action": [
+        "Move product to folder"
+      ]
+    },
+    "namespace": "products",
+    "name": "Products usage",
+    "class": "usage"
+  },
+  "openProductOrLineItemPanel": {
+    "properties": {
+      "action": [
+        "create",
+        "edit",
+        "view"
+      ],
+      "objectType": [
+        "PRODUCT",
+        "LINE_ITEM"
+      ],
+      "sourceIsShopify": "boolean",
+      "sourceIsEcommBridge": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "products",
+    "name": "Products interaction",
+    "class": "interaction"
+  },
+  "productLibraryFilter": {
+    "properties": {
+      "action": [
+        "Filter product library"
+      ]
+    },
+    "namespace": "products",
+    "name": "Products interaction",
+    "class": "interaction"
+  },
+  "viewLineItems": {
+    "properties": {
+      "screen": "string",
+      "sourceIsShopify": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "sourceIsEcommBridge": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "readOnly": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "line-items",
+    "name": "pageview",
+    "class": "view"
+  },
+  "bulkSaveLineItems": {
+    "properties": {
+      "action": [
+        "Bulk save line items"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems usage",
+    "class": "usage"
+  },
+  "updateDealAmount": {
+    "properties": {
+      "action": [
+        "Update deal amount"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems usage",
+    "class": "usage"
+  },
+  "updateLineItemTableColumns": {
+    "properties": {
+      "action": [
+        "Update line item table columns"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems usage",
+    "class": "usage"
+  },
+  "addLineItem": {
+    "properties": {
+      "action": [
+        "Add line item"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ],
+      "isCustom": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "editLineItem": {
+    "properties": {
+      "action": [
+        "Edit line item"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ],
+      "propertyName": {
+        "type": "string"
+      },
+      "isInlineEdit": "boolean"
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "removeLineItem": {
+    "properties": {
+      "action": [
+        "Remove line item"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "reorderLineItem": {
+    "properties": {
+      "action": [
+        "Reorder line item"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "selectInvalidCurrencyResolutionOption": {
+    "properties": {
+      "action": [
+        "Select invalid currency resolution option"
+      ],
+      "option": [
+        "product_price",
+        "exchange_rate",
+        "custom"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "resolveInvalidCurrencies": {
+    "properties": {
+      "action": [
+        "Resolve line item currencies"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "cancelStagedLineItemChanges": {
+    "properties": {
+      "action": [
+        "Cancel staged line item changes"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "goToLineItemEditorFromRecordCard": {
+    "properties": {
+      "action": [
+        "Click line items sidebar card button"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "goToDealFromLineItemEditor": {
+    "properties": {
+      "action": [
+        "Click deal link"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "editGlobalTerms": {
+    "properties": {
+      "action": [
+        "Edit global terms"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ],
+      "propertyName": {
+        "type": "string"
+      }
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "openGlobalTermsModal": {
+    "properties": {
+      "action": [
+        "Open global terms modal"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "openEditColumnsModal": {
+    "properties": {
+      "action": [
+        "Open edit columns modal"
+      ],
+      "screen": [
+        "DEAL",
+        "QUOTE"
+      ]
+    },
+    "namespace": "line-items",
+    "name": "LineItems interaction",
+    "class": "interaction"
+  },
+  "communicatorPermissionsPageview": {
+    "name": "communicator permissions page view",
+    "class": "view",
+    "namespace": "communicator"
+  },
+  "communicatorInteraction": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicatorSettingsInteraction": {
+    "name": "Manage Settings",
+    "namespace": "calling",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  },
+  "communicator_SelectCallOutCome": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "select call outcome"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "outcomeType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_SelectCallType": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "select call type"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_RateCall": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "rate call quality"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callRating": {
+        "type": "number"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_Feedback": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "call quality feedback"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_SaveCall": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "save call"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "outcomeType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "noteCharacterCount": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callRecording": [
+        "yes",
+        "no"
+      ]
+    },
+    "namespace": "communicator"
+  },
+  "communicator_ProviderSwitch": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "provider switch"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "switchFrom": {
+        "type": "string"
+      },
+      "switchTo": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_fileInteraction": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "fileType": {
+        "type": "string"
+      },
+      "fileSource": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_bannerInteraction": {
+    "name": "banner interaction",
+    "class": "interaction",
+    "properties": {
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "bannerName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "cta": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_manageSettings": {
+    "name": "manage settings",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_callActivation": {
+    "name": "call activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "communicator_bannerView": {
+    "name": "view banner",
+    "class": "interaction",
+    "properties": {
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "bannerName": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_firstCallActivation": {
+    "name": "first call activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "callUsage_startCall": {
+    "name": "start call",
+    "class": "usage",
+    "properties": {
+      "action": [
+        "start call"
+      ],
+      "callMedium": {
+        "type": "string"
+      },
+      "provider": {
+        "type": "string"
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicatorUsage_createFollowUpTask": {
+    "name": "create followup task",
+    "class": "usage",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_callSignup": {
+    "name": "call signup",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "zero state",
+        "add phone number",
+        "registration complete"
+      ],
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "calling_manageSettings": {
+    "name": "manage settings",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "add phone number",
+        "delete phone number",
+        "connect to third party provider",
+        "enable recording",
+        "disconnect calling",
+        "enable calling"
+      ]
+    },
+    "namespace": "communicator"
+  },
+  "callingExtensions_interaction": {
+    "name": "calling extensions interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "application_id": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "callingExtensions_initialLoadTime": {
+    "name": "calling extensions initial load time",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "application_id": {
+        "type": "number",
+        "isOptional": true
+      },
+      "version": [
+        "1",
+        "2"
+      ]
+    },
+    "namespace": "communicator"
+  },
+  "callingExtensions_startCallTime": {
+    "name": "calling extensions time to start call from dial number",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "application_id": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_emailActivation": {
+    "name": "email activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "communicator_firstEmailActivation": {
+    "name": "first email activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "communicator_timelineInteraction": {
+    "name": "timeline interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "outcomeType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_formatText": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "format text"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "formatType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_saveSignature": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "save signature"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "signatureType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_recipientInteraction": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "Add \"to\" recipient",
+        "Add \"cc\" recipient",
+        "Add \"bcc\" recipient"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "count": {
+        "type": "number"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_sendEmail": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "click to send email",
+        "click to schedule email"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "emailType": "string",
+      "replyAllCount": "number",
+      "isReply": "boolean",
+      "scheduleEmailType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicatorUsage_sendEmail": {
+    "name": "send email",
+    "class": "usage",
+    "properties": {
+      "emailType": "string",
+      "replyAllCount": "number",
+      "isReply": "boolean",
+      "source": "string",
+      "numberOfAttachments": "number",
+      "numberOfImages": "number",
+      "numberOfLinks": "number",
+      "numberOfVideos": "number",
+      "scheduleEmailType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "senderAccountType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "use-android-app-installprompt": {
+    "name": "use-android-app-installprompt",
+    "class": "interaction",
+    "properties": {
+      "what_event_subtype": "string"
+    },
+    "namespace": "crm"
+  },
+  "use-bulk-add-to-list": {
+    "name": "use-bulk-add-to-list",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "use-bulk-create-tasks": {
+    "name": "use-bulk-create-tasks",
+    "class": "usage",
+    "properties": {
+      "what_event_subtype": "string"
+    },
+    "namespace": "crm"
+  },
+  "use-bulk-enroll-in-sequence": {
+    "name": "use-bulk-enroll-in-sequence",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "use-bulk-enroll-in-workflow": {
+    "name": "use-bulk-enroll-in-workflow",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "use-bulk-remove-from-list": {
+    "name": "use-bulk-remove-from-list",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "use-linked-sales-object-iframe": {
+    "name": "use-linked-sales-object-iframe",
+    "class": "usage",
+    "properties": {
+      "applicationName": "string"
+    },
+    "namespace": "crm"
+  },
+  "use-sequence-timeline-edit": {
+    "name": "use-sequence-timeline-edit",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "use-sfdc-card-clicked-force-sync": {
+    "name": "use-sfdc-card-clicked-force-sync",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "inserted-content-from-popover": {
+    "name": "inserted-content-from-popover",
+    "class": "interaction",
+    "properties": {
+      "sawPopover": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "inserted-snippet": {
+    "name": "inserted-snippet",
+    "class": "interaction",
+    "namespace": "crm"
+  },
+  "settings-interaction": {
+    "name": "settings-interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "app": {
+        "type": "string",
+        "isOptional": true
+      },
+      "actionType": {
+        "type": [
+          "CONTACT",
+          "COMPANY",
+          "DEAL",
+          "TASK",
+          "TICKET"
+        ],
+        "isOptional": true
+      },
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "clientType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "quotasChanged": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "settingsui"
+  },
+  "settingsInteractionWithType": {
+    "name": "settings interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "type": "string",
+      "screen": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "settingsui"
+  },
+  "settingsInteractionWithSuccess": {
+    "name": "settings interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "type": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "settingsui"
+  },
+  "settings-email-plugin-check-retry-clicked": {
+    "name": "settings-email-plugin-check-retry-clicked",
+    "class": "interaction",
+    "namespace": "settingsui"
+  },
+  "settings-enable-company-autocreate": {
+    "name": "settings-enable-company-autocreate",
+    "class": "usage",
+    "properties": {
+      "backfillRequired": "boolean",
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "settings-import-export-clicked-import-button": {
+    "name": "settings-import-export-clicked-import-button",
+    "class": "interaction",
+    "namespace": "settingsui"
+  },
+  "settings-start-company-autocreate-backfill": {
+    "name": "settings-start-company-autocreate-backfill",
+    "class": "interaction",
+    "namespace": "settingsui"
+  },
+  "view-settings-activitytypes": {
+    "name": "view-settings-activitytypes",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-bcc": {
+    "name": "view-settings-bcc",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-calling": {
+    "name": "view-settings-calling",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-companies": {
+    "name": "view-settings-companies",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-config": {
+    "name": "view-settings-config",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-contacts": {
+    "name": "view-settings-contacts",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-deals": {
+    "name": "view-settings-deals",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-email": {
+    "name": "view-settings-email",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-importexport": {
+    "name": "view-settings-importexport",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-notifications": {
+    "name": "view-settings-notifications",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-privacy": {
+    "name": "view-settings-privacy",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-supportForm": {
+    "name": "view-settings-supportForm",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-salestools": {
+    "name": "view-settings-salestools",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-tasks": {
+    "name": "view-settings-tasks",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-settings-tickets": {
+    "name": "view-settings-tickets",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "deal-pipeline-saved": {
+    "name": "Deal Pipeline Saved",
+    "class": "usage",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "deal-pipeline-created": {
+    "name": "Deal Pipeline Created",
+    "class": "usage",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string",
+      "atPipelineLimit": {
+        "type": "boolean"
+      },
+      "pipelineLimit": {
+        "type": "number"
+      }
+    },
+    "namespace": "settingsui"
+  },
+  "ticket-pipeline-saved": {
+    "name": "Ticket Pipeline Saved",
+    "class": "usage",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "ticket-pipeline-created": {
+    "name": "Ticket Pipeline Created",
+    "class": "usage",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string",
+      "atPipelineLimit": {
+        "type": "boolean"
+      },
+      "pipelineLimit": {
+        "type": "number"
+      }
+    },
+    "namespace": "settingsui"
+  },
+  "deal-stage-created": {
+    "name": "Deal Stage Created",
+    "class": "usage",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "ticket-stage-created": {
+    "name": "Ticket Stage Created",
+    "class": "usage",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "settings-usage": {
+    "name": "Settings Usage",
+    "class": "usage",
+    "properties": {
+      "screen": "string",
+      "subscreen": {
+        "type": "string",
+        "isOptional": true
+      },
+      "action": "string",
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "settingsui"
+  },
+  "settings-navigation": {
+    "name": "Settings Navigation",
+    "class": "interaction",
+    "properties": {
+      "screen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "contact-settings-pageview": {
+    "name": "Contact Settings Pageview",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "company-settings-pageview": {
+    "name": "Company Settings Pageview",
+    "class": "view",
+    "properties": {
+      "screen": "string",
+      "subscreen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "deal-settings-pageview": {
+    "name": "Deal Settings Pageview",
+    "class": "view",
+    "properties": {
+      "screen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "ticket-settings-pageview": {
+    "name": "Ticket Settings Pageview",
+    "class": "view",
+    "properties": {
+      "screen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "import-export-pageview": {
+    "name": "Import Export Pageview",
+    "class": "view",
+    "properties": {
+      "screen": "string"
+    },
+    "namespace": "settingsui"
+  },
+  "view-listcreate": {
+    "name": "view-listcreate",
+    "class": "view",
+    "properties": {
+      "action": "string",
+      "screen": "string",
+      "subscreen": {
+        "isOptional": true,
+        "type": "string"
+      }
+    },
+    "namespace": "lists"
+  },
+  "view-listdetail": {
+    "name": "view-listdetail",
+    "class": "view",
+    "properties": {
+      "action": "string",
+      "screen": "string",
+      "subscreen": {
+        "isOptional": true,
+        "type": "string"
+      }
+    },
+    "namespace": "lists"
+  },
+  "view-listsindex": {
+    "name": "view-listsindex",
+    "class": "view",
+    "properties": {
+      "action": "string",
+      "screen": "string",
+      "subscreen": {
+        "isOptional": true,
+        "type": "string"
+      }
+    },
+    "namespace": "lists"
+  },
+  "createReport": {
+    "name": "create report",
+    "class": "usage",
+    "properties": {
+      "objectTypeId": "string",
+      "screen": [
+        "list-detail"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "editListColumns": {
+    "name": "edit columns",
+    "class": "usage",
+    "properties": {
+      "objectTypeId": "string",
+      "screen": [
+        "list-detail"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "createList": {
+    "name": "create list",
+    "class": "usage",
+    "properties": {
+      "objectTypeId": "string",
+      "classicListId": {
+        "isOptional": true,
+        "type": "number"
+      },
+      "ilsListId": {
+        "isOptional": true,
+        "type": "number"
+      },
+      "fromClone": {
+        "isOptional": true,
+        "type": "boolean"
+      },
+      "listType": [
+        "static",
+        "dynamic"
+      ],
+      "screen": [
+        "list-detail",
+        "list-index",
+        "unused-lists"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "deleteList": {
+    "name": "delete list",
+    "class": "usage",
+    "properties": {
+      "objectTypeId": "string",
+      "isBulk": {
+        "isOptional": true,
+        "type": "boolean"
+      },
+      "partialSuccess": {
+        "isOptional": true,
+        "type": "boolean"
+      },
+      "screen": [
+        "list-detail",
+        "list-index",
+        "unused-lists"
+      ],
+      "subscreen": {
+        "isOptional": true,
+        "type": "string"
+      }
+    },
+    "namespace": "lists"
+  },
+  "exportList": {
+    "name": "export list",
+    "class": "usage",
+    "properties": {
+      "objectTypeId": "string",
+      "screen": [
+        "list-detail",
+        "list-index",
+        "unused-lists"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "updateList": {
+    "name": "update list",
+    "class": "usage",
+    "properties": {
+      "objectTypeId": "string",
+      "classicListId": {
+        "isOptional": true,
+        "type": "number"
+      },
+      "ilsListId": {
+        "isOptional": true,
+        "type": "number"
+      },
+      "listType": [
+        "static",
+        "dynamic"
+      ],
+      "screen": [
+        "list-detail",
+        "list-index",
+        "unused-lists"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "createFolder": {
+    "name": "create folder",
+    "class": "usage",
+    "properties": {
+      "screen": [
+        "list-index"
+      ],
+      "subscreen": "string"
+    },
+    "namespace": "lists"
+  },
+  "deleteFolder": {
+    "name": "delete folder",
+    "class": "usage",
+    "properties": {
+      "screen": [
+        "list-index"
+      ],
+      "subscreen": "string"
+    },
+    "namespace": "lists"
+  },
+  "moveToFolder": {
+    "name": "move to folder",
+    "class": "usage",
+    "properties": {
+      "isBulk": {
+        "isOptional": true,
+        "type": "boolean"
+      },
+      "screen": [
+        "list-detail",
+        "list-index"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "listsPageview": {
+    "name": "pageview",
+    "class": "view",
+    "properties": {
+      "screen": [
+        "list-detail",
+        "list-index",
+        "unused-lists"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "listsInteraction": {
+    "name": "lists interaction",
+    "class": "interaction",
+    "properties": {
+      "objectTypeId": {
+        "type": "string",
+        "isOptional": true
+      },
+      "action": "string",
+      "screen": {
+        "isOptional": true,
+        "type": [
+          "list-detail",
+          "list-index",
+          "unused-lists",
+          "manage-registration"
+        ]
+      },
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "condition": {
+        "type": "string",
+        "isOptional": true
+      },
+      "filterFamily": {
+        "type": "string",
+        "isOptional": true
+      },
+      "panelKey": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "lists"
+  },
+  "addContactsToRestrictedList": {
+    "name": "lists interaction",
+    "class": "interaction",
+    "properties": {
+      "objectTypeId": "string",
+      "action": "string",
+      "count": "number"
+    },
+    "namespace": "lists"
+  },
+  "bulkAddToList": {
+    "name": "bulk add to list",
+    "class": "usage",
+    "properties": {
+      "objectTypeId": "string",
+      "screen": "string",
+      "subscreen": [
+        "index"
+      ],
+      "subscreen2": [
+        "bulk-list-modal"
+      ]
+    },
+    "namespace": "lists"
+  },
+  "view-indexinteraction": {
+    "name": "index-interaction",
+    "class": "view",
+    "properties": {
+      "action": "string",
+      "screen": "string",
+      "subscreen": {
+        "isOptional": true,
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "view-recordinteraction": {
+    "name": "record-interaction",
+    "class": "view",
+    "properties": {
+      "action": "string",
+      "screen": "string",
+      "subscreen": {
+        "isOptional": true,
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "individualEmailThreadInteraction": {
+    "name": "record interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    },
+    "namespace": "crm"
+  },
+  "bizops-interaction": {
+    "name": "bizops-interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    },
+    "namespace": "crm"
+  },
+  "internal-crm-tracking": {
+    "name": "internal-crm-tracking",
+    "class": "interaction",
+    "properties": {
+      "cachedVersion": "string",
+      "asset": "string"
+    },
+    "namespace": "crm"
+  },
+  "createRecord": {
+    "name": "create record",
+    "class": "usage",
+    "properties": {
+      "type": "string",
+      "objectTypeId": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "createRecordActivation": {
+    "name": "create first record",
+    "class": "activation",
+    "properties": {
+      "type": [
+        "contact",
+        "company",
+        "deal",
+        "ticket"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "createEngagementActivation": {
+    "name": "create first engagement",
+    "class": "activation",
+    "properties": {
+      "type": [
+        "email",
+        "task",
+        "call",
+        "meeting",
+        "note"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "crmActivation": {
+    "name": "crm activation",
+    "class": "activation",
+    "properties": {
+      "type": "string"
+    },
+    "namespace": "crm"
+  },
+  "crm-onboarding": {
+    "name": "crm-onboarding",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "link": {
+        "type": "string",
+        "isOptional": true
+      },
+      "text": {
+        "type": "string",
+        "isOptional": true
+      },
+      "experiment": {
+        "type": "string",
+        "isOptional": true
+      },
+      "step": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "crm-debug": {
+    "name": "crm-debug",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "consumer": "string"
+    },
+    "namespace": "crm"
+  },
+  "debugChunkLoadIssues": {
+    "name": "crm-debug",
+    "class": "interaction",
+    "properties": {
+      "chunk": "string",
+      "error": "string"
+    },
+    "namespace": "crm"
+  },
+  "crm-api-error": {
+    "name": "crm-api-error",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "taskId": "number"
+    },
+    "namespace": "crm"
+  },
+  "crmErrorBoundary": {
+    "name": "crm error boundary",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": false
+      },
+      "type": {
+        "type": "string",
+        "isOptional": false
+      }
+    },
+    "namespace": "crm"
+  },
+  "exportView": {
+    "name": "index interaction",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "exportedPropertiesNum": "number",
+      "exportType": "string",
+      "exportPageType": {
+        "type": [
+          "allViews",
+          "table",
+          "board"
+        ]
+      }
+    },
+    "namespace": "crm"
+  },
+  "emailCommunicatorInteraction": {
+    "name": "record interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "subAction": "string"
+    },
+    "namespace": "crm"
+  },
+  "index-interaction": {
+    "name": "index-interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "count": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "indexUsage": {
+    "name": "index interaction",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "objectTypeId": {
+        "type": "string",
+        "isOptional": true
+      },
+      "inactiveCardsIsTurnedOn": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "inactiveCardsUnit": {
+        "type": [
+          "days",
+          "weeks"
+        ],
+        "isOptional": true
+      },
+      "inactiveCardsValue": {
+        "type": "number",
+        "isOptional": true
+      },
+      "cozyCardsStyle": {
+        "type": [
+          "COZY",
+          "COMFORTABLE"
+        ],
+        "isOptional": true
+      },
+      "cozyCardsBottomPanel": {
+        "type": [
+          "WITH_PANEL",
+          "WITHOUT_PANEL"
+        ],
+        "isOptional": true
+      },
+      "type": {
+        "type": [
+          "CONTACT",
+          "COMPANY",
+          "DEAL",
+          "TICKET",
+          "TASK",
+          "VISIT"
+        ],
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "indexPageActivation": {
+    "name": "first view crm index",
+    "class": "activation",
+    "namespace": "crm"
+  },
+  "savedFilterActivation": {
+    "name": "load first saved filter",
+    "class": "activation",
+    "properties": {
+      "type": {
+        "type": [
+          "contact",
+          "company",
+          "deal",
+          "ticket",
+          "visit"
+        ],
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "useFilters": {
+    "name": "index interaction",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "subAction": "string",
+      "type": [
+        "contacts",
+        "companies",
+        "deals",
+        "tickets",
+        "visits"
+      ],
+      "property": {
+        "type": "string",
+        "isOptional": true
+      },
+      "filter": {
+        "type": "string",
+        "isOptional": true
+      },
+      "isFirstTime": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "record-interaction": {
+    "name": "record-interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "label": {
+        "type": "string",
+        "isOptional": true
+      },
+      "count": {
+        "type": "number",
+        "isOptional": true
+      },
+      "step": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "recordUsage": {
+    "name": "record interaction",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "location": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "what_value": {
+        "type": "number",
+        "isOptional": true
+      },
+      "property_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "property": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "playbookInteraction": {
+    "namespace": "playbooks-admin-ui",
+    "name": "playbook interaction",
+    "class": "interaction",
+    "properties": {
+      "playbookId": "number",
+      "playbookType": "string",
+      "action": "string",
+      "engagementType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activityType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDisposition": {
+        "type": "string",
+        "isOptional": true
+      }
+    }
+  },
+  "openIntegrationIframeInTimeline": {
+    "name": "record-interaction",
+    "class": "interaction",
+    "properties": {
+      "applicationName": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "timelineCardInteraction": {
+    "name": "record interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "subAction": "string",
+      "eventType": "string",
+      "type": [
+        "CONTACT",
+        "COMPANY",
+        "DEAL",
+        "TICKET",
+        "CRM_OBJECT"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineUsage": {
+    "name": "timeline usage",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "activity": [
+        "conversation_session",
+        "email",
+        "logged-email",
+        "note",
+        "logged-activity",
+        "call",
+        "logged-call",
+        "schedule",
+        "logged-meeting",
+        "task",
+        "sequence",
+        "meeting"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineViewTrimmedContentInteraction": {
+    "name": "timeline interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "eventType": "string",
+      "type": [
+        "CONTACT",
+        "COMPANY",
+        "DEAL",
+        "TICKET",
+        "CRM_OBJECT"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineInteraction": {
+    "name": "timeline interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "eventType": "string",
+      "type": [
+        "CONTACT",
+        "COMPANY",
+        "DEAL",
+        "TICKET",
+        "CRM_OBJECT"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineEmailThreadInteraction": {
+    "name": "timeline interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "engagementId": "number",
+      "threadId": "string"
+    },
+    "namespace": "crm"
+  },
+  "communicatorFullScreenOpenInteraction": {
+    "name": "record interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "expand to full screen"
+      ],
+      "type": [
+        "NOTE",
+        "EMAIL",
+        "LOGGED-CALL",
+        "LOGGED-EMAIL",
+        "LOGGED-MEETING"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "communicatorFullScreenSaveInteraction": {
+    "name": "record interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "save engagement in full screen"
+      ],
+      "activity": [
+        "NOTE",
+        "EMAIL",
+        "LOGGED-CALL",
+        "LOGGED-EMAIL",
+        "LOGGED-MEETING"
+      ],
+      "fullScreen": "boolean"
+    },
+    "namespace": "crm"
+  },
+  "productExperimentExposure": {
+    "name": "product experiment exposure",
+    "class": "interaction",
+    "properties": {
+      "experimentName": "string",
+      "experimentParams": "string",
+      "version": "string"
+    },
+    "namespace": "crm"
+  },
+  "sidebarInteraction": {
+    "name": "record interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "subAction": "string"
+    },
+    "namespace": "crm"
+  },
+  "previewSidebarObject": {
+    "name": "sidebar interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "objectTypeId": "string"
+    },
+    "namespace": "crm"
+  },
+  "ticketsActivation": {
+    "name": "tickets activation",
+    "class": "activation",
+    "namespace": "crm"
+  },
+  "ticketsDayZero": {
+    "name": "tickets day zero",
+    "class": "activation",
+    "namespace": "crm"
+  },
+  "virality-sent-email-with-brand-banner": {
+    "name": "virality",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "loop": "string"
+    },
+    "namespace": "crm"
+  },
+  "virality-removed-brand-banner": {
+    "name": "virality",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "loop": "string"
+    },
+    "namespace": "crm"
+  },
+  "use-bulk-double-opt-in": {
+    "name": "use-bulk-double-opt-in",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "createMeeting": {
+    "name": "create meeting",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "meeting created"
+        ]
+      },
+      "outcome": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "createTask": {
+    "name": "create task",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "task created"
+        ]
+      },
+      "createMethod": {
+        "type": [
+          "manual",
+          "automatic"
+        ]
+      },
+      "createSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "reminderType": {
+        "type": [
+          "absolute",
+          "relative"
+        ],
+        "isOptional": true
+      },
+      "relativeReminderOption": {
+        "type": "number",
+        "isOptional": true
+      },
+      "hasAssociations": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "priority": {
+        "type": [
+          "HIGH",
+          "NONE"
+        ],
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "changeFollowUpTaskDate": {
+    "name": "create task",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "changed date"
+      ],
+      "customDate": "boolean"
+    },
+    "namespace": "crm"
+  },
+  "completedTask": {
+    "name": "complete task",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "mark as complete",
+        "mark as incomplete",
+        "bulk mark as complete"
+      ],
+      "version": {
+        "type": [
+          "control",
+          "tasks-usability-beta"
+        ],
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "startTaskQueueActivation": {
+    "namespace": "tasks",
+    "name": "start first task queue",
+    "class": "activation"
+  },
+  "finishTaskQueueActivation": {
+    "namespace": "tasks",
+    "name": "finish first task queue",
+    "class": "activation"
+  },
+  "sentFirstCrmEmail": {
+    "name": "sent first crm email",
+    "class": "activation",
+    "namespace": "crm"
+  },
+  "selectedActionsRedesignOption": {
+    "name": "activity interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "opened communicator from activity redesign"
+      ],
+      "subAction": [
+        "click from the timeline dropdown"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "communicationSubscriptionCardInteraction": {
+    "name": "record interactions",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "open current subscriptions",
+          "open add subscription",
+          "open subscription history",
+          "open updated subscription panel",
+          "subscription feedback",
+          "subscribe action",
+          "unsubscribe action",
+          "gdpr note click",
+          "open brand",
+          "open primary",
+          "open secondary",
+          "open default",
+          "view history"
+        ]
+      },
+      "isHelpful": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "textFeedback": {
+        "type": "string",
+        "isOptional": true
+      },
+      "isGdprEnabled": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "isGdprEnforced": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "saved-properties": {
+    "name": "saved-properties",
+    "class": "interaction",
+    "properties": {
+      "properties": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "objectType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "associateSidebarInteraction": {
+    "name": "record interaction",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "Associated objects from the associate panel",
+          "Associated objects from the associate panel with flexible associations flow",
+          "Created a new object from the associate panel"
+        ]
+      },
+      "type": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "interactionAssociationInteraction": {
+    "name": "activity interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "activity": [
+        "email",
+        "logged-email",
+        "note",
+        "logged-activity",
+        "call",
+        "logged-call",
+        "schedule",
+        "logged-meeting",
+        "task",
+        "sequence",
+        "meeting"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineShowDetailsInteraction": {
+    "name": "timeline interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "activity": [
+        "email",
+        "note",
+        "call",
+        "task",
+        "sequence",
+        "meeting"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineUsageDetailsInteraction": {
+    "name": "timeline usage",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "activity": [
+        "email",
+        "note",
+        "call",
+        "task",
+        "sequence",
+        "meeting",
+        "integration"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineEngagementInteraction": {
+    "name": "timeline usage",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "activity": [
+        "call",
+        "email",
+        "logged-call",
+        "logged-email",
+        "logged-meeting",
+        "meeting",
+        "note",
+        "sequence",
+        "task"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineEditEventInteraction": {
+    "name": "timeline usage",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "activity": [
+        "email",
+        "note",
+        "call",
+        "task",
+        "sequence",
+        "meeting",
+        "logged-call",
+        "logged-email",
+        "logged-meeting"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "pageRefresh": {
+    "name": "refresh",
+    "class": "interaction",
+    "properties": {
+      "objectType": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "propertyEditorInteraction": {
+    "name": "record interactions",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "open single property history sidebar",
+          "open email from contact property"
+        ]
+      },
+      "property": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "aboutCardUsage": {
+    "name": "record usage",
+    "class": "usage",
+    "properties": {
+      "action": {
+        "type": [
+          "add property to about card",
+          "reorder about card",
+          "confirm record properties account default reset"
+        ]
+      },
+      "property": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "recordHighlightInteraction": {
+    "name": "record interactions",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": [
+          "unbounce"
+        ]
+      }
+    },
+    "namespace": "crm"
+  },
+  "recordHighlightUsage": {
+    "name": "record usage",
+    "class": "usage",
+    "properties": {
+      "action": {
+        "type": [
+          "edit record highlight",
+          "merge objects"
+        ]
+      },
+      "objectType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "recordPageView": {
+    "name": "Record Pageview",
+    "class": "view",
+    "properties": {
+      "type": "string"
+    },
+    "namespace": "crm"
+  },
+  "pageview": {
+    "name": "pageview",
+    "class": "view",
+    "namespace": "crm"
+  },
+  "savedProperties": {
+    "name": "saved properties",
+    "class": "usage",
+    "properties": {
+      "action": {
+        "type": [
+          "update primary in multiple emails",
+          "add new secondary in multiple emails",
+          "delete secondary in multiple emails",
+          "update secondary in multiple emails"
+        ]
+      },
+      "property": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "characterLimitExceeded": {
+    "name": "record interaction",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "activity": [
+        "email",
+        "logged-email",
+        "note",
+        "logged-activity",
+        "call",
+        "logged-call",
+        "schedule",
+        "logged-meeting",
+        "task",
+        "sequence",
+        "meeting"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "communicatorFullScreenOpenInteractionV2": {
+    "name": "activity interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "expand to full screen"
+      ],
+      "activity": [
+        "EMAIL",
+        "NOTE",
+        "LOGGED-CALL",
+        "LOGGED-EMAIL",
+        "LOGGED-MEETING",
+        "SCHEDULE"
+      ]
+    },
+    "namespace": "crm"
+  },
+  "timelineInteractions": {
+    "name": "timeline interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    },
+    "namespace": "crm"
+  },
+  "timelineThreadInteractions": {
+    "name": "timeline interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "threadId": "string",
+      "engagementId": "string"
+    },
+    "namespace": "crm"
+  },
+  "recordInteractions": {
+    "name": "record interactions",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "objectType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "engagementUsage": {
+    "name": "create engagement",
+    "class": "usage",
+    "properties": {
+      "activity": "string"
+    },
+    "namespace": "crm"
+  },
+  "engagementInteraction": {
+    "name": "create engagement",
+    "class": "interaction",
+    "properties": {
+      "activity": "string"
+    },
+    "namespace": "crm"
+  },
+  "activityInteractions": {
+    "name": "activity interactions",
+    "class": "interaction",
+    "properties": {
+      "activity": "string"
+    },
+    "namespace": "crm"
+  },
+  "onboardingMissionInteraction": {
+    "name": "onboarding mission interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    },
+    "namespace": "crm"
+  },
+  "useMention": {
+    "name": "use @mention",
+    "class": "usage",
+    "properties": {
+      "location": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "changeTicketStatusToClosedInRecord": {
+    "name": "change ticket status to closed in record",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "changeTicketStatusToOpenInRecord": {
+    "name": "change ticket status to open in record",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "deleteRecord": {
+    "name": "delete record",
+    "class": "usage",
+    "namespace": "crm"
+  },
+  "addAssociation": {
+    "name": "add association",
+    "class": "usage",
+    "properties": {
+      "toObjectTypeId": {
+        "type": "string"
+      },
+      "fromObjectTypeId": {
+        "type": "string"
+      },
+      "action": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "removeAssociation": {
+    "name": "remove association",
+    "class": "usage",
+    "properties": {
+      "toObjectTypeId": {
+        "type": "string"
+      },
+      "fromObjectTypeId": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "sidebar-interaction": {
+    "name": "sidebar-interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "subAction": {
+        "type": "string",
+        "isOptional": true
+      },
+      "type": {
+        "type": "string",
+        "isOptional": true
+      },
+      "subType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "crm"
+  },
+  "universalAssociationsSelect": {
+    "name": "universal associations select",
+    "class": "usage",
+    "properties": {
+      "action": {
+        "type": "string"
+      },
+      "toObjectTypId": {
+        "type": "string",
+        "isOptional": true
+      },
+      "engagementOrInteractionType": {
+        "type": "string"
+      },
+      "location": {
+        "type": "string"
+      },
+      "pluralObjectName": {
+        "type": "string"
+      },
+      "subjectObjectTypeId": {
+        "type": "string"
+      }
+    },
+    "namespace": "crm"
+  },
+  "marketableContactsCheckboxInteraction": {
+    "name": "record interactions",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "checkbox-marketing-contact"
+      ],
+      "isEnabled": {
+        "type": "boolean"
+      }
+    },
+    "namespace": "crm"
+  },
+  "sample-contact-failure": {
+    "name": "sample-contact-failure",
+    "class": "interaction",
+    "namespace": "crm"
+  }
+};

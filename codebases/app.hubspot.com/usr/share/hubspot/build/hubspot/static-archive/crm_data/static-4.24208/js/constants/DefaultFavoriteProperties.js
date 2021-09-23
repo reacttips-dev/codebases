@@ -1,0 +1,8 @@
+'use es6';
+
+import _defineProperty from "@babel/runtime/helpers/esm/defineProperty";
+
+var _COMPANY$CONTACT$DEAL;
+
+import { COMPANY, CONTACT, DEAL, FEEDBACK_SUBMISSION, VISIT, TICKET } from 'customer-data-objects/constants/ObjectTypes';
+export default (_COMPANY$CONTACT$DEAL = {}, _defineProperty(_COMPANY$CONTACT$DEAL, COMPANY, ['name', 'domain', 'industry', 'phone', 'hubspot_owner_id', 'type', 'city', 'state', 'zip', 'numberofemployees', 'annualrevenue', 'timezone', 'description', 'linkedin_company_page']), _defineProperty(_COMPANY$CONTACT$DEAL, CONTACT, ['firstname', 'lastname', 'email', 'phone', 'hubspot_owner_id', 'notes_last_contacted', 'lifecyclestage', 'hs_lead_status']), _defineProperty(_COMPANY$CONTACT$DEAL, DEAL, ['amount', 'deal_currency_code', 'dealstage', 'closedate', 'hubspot_owner_id', 'notes_last_updated', 'dealtype']), _defineProperty(_COMPANY$CONTACT$DEAL, FEEDBACK_SUBMISSION, ['hs_submission_timestamp', 'hs_survey_type', 'hs_value', 'hs_response_group', 'hs_content', 'hs_survey_channel']), _defineProperty(_COMPANY$CONTACT$DEAL, VISIT, ['name', 'domain', 'industry', 'employees', 'revenue', 'firstTimestamp', 'description', 'state', 'city', 'zipcode', 'originalSource', 'sourceData1', 'sourceData2']), _defineProperty(_COMPANY$CONTACT$DEAL, TICKET, ['subject', 'content', 'hubspot_owner_id', 'createdate', 'last_reply_date', 'hs_ticket_priority']), _COMPANY$CONTACT$DEAL);

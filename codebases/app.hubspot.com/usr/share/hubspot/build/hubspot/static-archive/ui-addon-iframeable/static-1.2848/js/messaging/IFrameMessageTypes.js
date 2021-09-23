@@ -1,0 +1,3 @@
+'use es6';
+
+export var MSG_TYPE_MODAL_DIALOG_CLOSE = 'MODAL_DIALOG_CLOSE';

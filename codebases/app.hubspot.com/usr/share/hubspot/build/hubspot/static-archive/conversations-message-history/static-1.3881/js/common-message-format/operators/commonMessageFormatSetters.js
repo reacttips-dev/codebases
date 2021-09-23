@@ -1,0 +1,20 @@
+'use es6';
+
+import setIn from 'transmute/setIn';
+import { ATTACHMENTS, CLIENT_TYPE, CONTENT_TYPE, ID, MESSAGE_DELETE_STATUS, MESSAGE_STATUS, MESSAGE_STATUS_SOURCE, MESSAGE_STATUS_TIMESTAMP, RICH_TEXT, SENDER, SENDER_TYPE, STATUS, TEXT, TIMESTAMP, IN_REPLY_TO_ID, RECIPIENTS } from '../constants/keyPaths';
+export var setClientType = setIn(CLIENT_TYPE);
+export var setId = setIn(ID);
+export var setStatus = setIn(STATUS);
+export var setMessageStatus = setIn(MESSAGE_STATUS);
+export var setMessageStatusSouce = setIn(MESSAGE_STATUS_SOURCE);
+export var setMessageStatusTimestamp = setIn(MESSAGE_STATUS_TIMESTAMP);
+export var setMessageDeletedStatus = setIn(MESSAGE_DELETE_STATUS);
+export var setTimestamp = setIn(TIMESTAMP);
+export var setAttachments = setIn(ATTACHMENTS);
+export var setContentType = setIn(CONTENT_TYPE);
+export var setSender = setIn(SENDER);
+export var setSenderType = setIn(SENDER_TYPE);
+export var setText = setIn(TEXT);
+export var setRichText = setIn(RICH_TEXT);
+export var setInReplyToId = setIn(IN_REPLY_TO_ID);
+export var setRecipients = setIn(RECIPIENTS);

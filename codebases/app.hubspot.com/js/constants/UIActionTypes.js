@@ -1,0 +1,3 @@
+'use es6';
+
+export var SET_TABLE_CONTENT_STATE = 'SET_TABLE_CONTENT_STATE';

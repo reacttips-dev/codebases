@@ -1,0 +1,7 @@
+'use es6';
+
+export var SEND_TEMPLATE = 'SEND_TEMPLATE';
+export var SCHEDULE_TASK = 'SCHEDULE_TASK';
+export var FIRST_CARD = 'FIRST_CARD';
+export var LAST_CARD = 'LAST_CARD';
+export var FINISH_ENROLLMENT = 'FINISH_ENROLLMENT';

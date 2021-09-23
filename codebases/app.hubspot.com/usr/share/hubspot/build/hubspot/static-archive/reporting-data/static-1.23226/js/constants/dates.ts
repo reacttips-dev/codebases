@@ -1,0 +1,1 @@
+export var DEFAULT_START = '2006-01-01';

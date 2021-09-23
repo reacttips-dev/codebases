@@ -1,0 +1,4 @@
+'use es6';
+
+export var SEND_IMMEDIATELY = 'SEND_IMMEDIATELY';
+export var SEND_SPECIFIC_TIME = 'SEND_SPECIFIC_TIME';

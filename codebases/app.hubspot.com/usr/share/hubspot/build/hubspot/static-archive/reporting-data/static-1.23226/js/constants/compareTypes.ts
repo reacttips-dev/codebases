@@ -1,0 +1,2 @@
+export var PRIOR_YEAR = 'PRIOR_YEAR';
+export var PRIOR_PERIOD = 'PRIOR_PERIOD';

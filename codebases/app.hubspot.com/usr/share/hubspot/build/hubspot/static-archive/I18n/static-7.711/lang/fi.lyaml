@@ -1,0 +1,10 @@
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "fi": { "i18n": { "duration": { "seconds": "{{ seconds }} s", "minutes": "{{ minutes }} min", "hours": "{{ hours }} h", "hoursAndMinutes": "{{ hours }} h {{ minutes }} min", "days": "{{ days }} vrk", "shortForm": { "seconds": "{{ seconds }} s", "minutes": "{{ minutes }} min", "hours": "{{ hours }} h", "days": "{{ days }} vrk", "hoursAndMinutes": "{{ hours }} h {{ minutes }} min" } }, "dateTime": { "quarterAndYear": "K{{quarterNumber}} {{yearNumber}}" }, "numberRepresentation": { "fraction": "{{ numerator }}/{{ denominator }}", "numberWithCurrencyCode": "{{amountNumberValue}} {{currencyCode}}", "phoneNumberWithExtension": "{{phoneNumber}}, alanro {{extension}}" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+

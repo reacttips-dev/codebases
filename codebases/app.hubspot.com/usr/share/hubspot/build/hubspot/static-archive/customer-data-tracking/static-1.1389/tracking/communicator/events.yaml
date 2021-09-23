@@ -1,0 +1,1386 @@
+module.exports = {
+  "communicatorPermissionsPageview": {
+    "name": "communicator permissions page view",
+    "class": "view",
+    "namespace": "communicator"
+  },
+  "communicatorInteraction": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicatorSettingsInteraction": {
+    "name": "Manage Settings",
+    "namespace": "calling",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  },
+  "communicator_SelectCallOutCome": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "select call outcome"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "outcomeType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_SelectCallType": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "select call type"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_RateCall": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "rate call quality"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callRating": {
+        "type": "number"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_Feedback": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "call quality feedback"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_SaveCall": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "save call"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "outcomeType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "noteCharacterCount": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callRecording": [
+        "yes",
+        "no"
+      ]
+    },
+    "namespace": "communicator"
+  },
+  "communicator_ProviderSwitch": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "provider switch"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "switchFrom": {
+        "type": "string"
+      },
+      "switchTo": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_fileInteraction": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "fileType": {
+        "type": "string"
+      },
+      "fileSource": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_bannerInteraction": {
+    "name": "banner interaction",
+    "class": "interaction",
+    "properties": {
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "bannerName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "cta": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_manageSettings": {
+    "name": "manage settings",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_callActivation": {
+    "name": "call activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "communicator_bannerView": {
+    "name": "view banner",
+    "class": "interaction",
+    "properties": {
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "bannerName": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_firstCallActivation": {
+    "name": "first call activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "callUsage_startCall": {
+    "name": "start call",
+    "class": "usage",
+    "properties": {
+      "action": [
+        "start call"
+      ],
+      "callMedium": {
+        "type": "string"
+      },
+      "provider": {
+        "type": "string"
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicatorUsage_createFollowUpTask": {
+    "name": "create followup task",
+    "class": "usage",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_callSignup": {
+    "name": "call signup",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "zero state",
+        "add phone number",
+        "registration complete"
+      ],
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "calling_manageSettings": {
+    "name": "manage settings",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "add phone number",
+        "delete phone number",
+        "connect to third party provider",
+        "enable recording",
+        "disconnect calling",
+        "enable calling"
+      ]
+    },
+    "namespace": "communicator"
+  },
+  "callingExtensions_interaction": {
+    "name": "calling extensions interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "application_id": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "callingExtensions_initialLoadTime": {
+    "name": "calling extensions initial load time",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "application_id": {
+        "type": "number",
+        "isOptional": true
+      },
+      "version": [
+        "1",
+        "2"
+      ]
+    },
+    "namespace": "communicator"
+  },
+  "callingExtensions_startCallTime": {
+    "name": "calling extensions time to start call from dial number",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "provider_name": {
+        "type": "string",
+        "isOptional": true
+      },
+      "application_id": {
+        "type": "number",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_emailActivation": {
+    "name": "email activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "communicator_firstEmailActivation": {
+    "name": "first email activation",
+    "class": "activation",
+    "namespace": "communicator"
+  },
+  "communicator_timelineInteraction": {
+    "name": "timeline interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "outcomeType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_formatText": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "format text"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "formatType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_saveSignature": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "save signature"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "signatureType": {
+        "type": "string"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_recipientInteraction": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "Add \"to\" recipient",
+        "Add \"cc\" recipient",
+        "Add \"bcc\" recipient"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "count": {
+        "type": "number"
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicator_sendEmail": {
+    "name": "communicator interaction",
+    "class": "interaction",
+    "properties": {
+      "action": [
+        "click to send email",
+        "click to schedule email"
+      ],
+      "message": {
+        "type": "string",
+        "isOptional": true
+      },
+      "source": {
+        "type": "string",
+        "isOptional": true
+      },
+      "channel": {
+        "type": "string",
+        "isOptional": true
+      },
+      "activity": {
+        "type": "string",
+        "isOptional": true
+      },
+      "status": {
+        "type": "string",
+        "isOptional": true
+      },
+      "duration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "widgetName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "averageMosScore": {
+        "type": "string",
+        "isOptional": true
+      },
+      "is_inverse_registration": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "issues": {
+        "type": "string",
+        "isOptional": true
+      },
+      "comments": {
+        "type": "string",
+        "isOptional": true
+      },
+      "callDuration": {
+        "type": "number",
+        "isOptional": true
+      },
+      "callToCountry": {
+        "type": "string",
+        "isOptional": true
+      },
+      "startCallSla": {
+        "type": "number",
+        "isOptional": true
+      },
+      "emailType": "string",
+      "replyAllCount": "number",
+      "isReply": "boolean",
+      "scheduleEmailType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  },
+  "communicatorUsage_sendEmail": {
+    "name": "send email",
+    "class": "usage",
+    "properties": {
+      "emailType": "string",
+      "replyAllCount": "number",
+      "isReply": "boolean",
+      "source": "string",
+      "numberOfAttachments": "number",
+      "numberOfImages": "number",
+      "numberOfLinks": "number",
+      "numberOfVideos": "number",
+      "scheduleEmailType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "senderAccountType": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "communicator"
+  }
+};

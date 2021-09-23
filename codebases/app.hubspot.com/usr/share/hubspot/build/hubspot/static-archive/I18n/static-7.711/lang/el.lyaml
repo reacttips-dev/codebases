@@ -1,0 +1,10 @@
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "el": { "i18n": { "duration": { "seconds": "{{ seconds }} \u03B4\u03B5\u03C5\u03C4.", "minutes": "{{ minutes }} \u03BB\u03B5\u03C0\u03C4.", "hours": "{{ hours }} \u03CE\u03C1.", "hoursAndMinutes": "{{ hours }} \u03CE\u03C1. {{ minutes }} \u03BB\u03B5\u03C0\u03C4.", "days": "{{ days }} \u03B7\u03BC\u03AD\u03C1\u03B5\u03C2", "shortForm": { "seconds": "{{ seconds }}\u03B4.", "minutes": "{{ minutes }}\u03BB.", "hours": "{{ hours }}\u03CE\u03C1.", "days": "{{ days }}\u03B7\u03BC.", "hoursAndMinutes": "{{ hours }}\u03CE\u03C1. {{ minutes }}\u03BB." } }, "dateTime": { "quarterAndYear": "{{quarterNumber}}\u03BF \u03C4\u03C1\u03AF\u03BC. {{yearNumber}}" }, "numberRepresentation": { "fraction": "{{ numerator }}/{{ denominator }}", "numberWithCurrencyCode": "{{currencyCode}} {{amountNumberValue}}", "phoneNumberWithExtension": "{{phoneNumber}}, \u03B5\u03C3\u03C9\u03C4. {{extension}}" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+

@@ -1,0 +1,10 @@
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "ar-eg": { "i18n": { "duration": { "seconds": "{{ seconds }} \u062B\u0627\u0646\u064A\u0629", "minutes": "{{ minutes }} \u062F\u0642\u064A\u0642\u0629", "hours": "{{ hours }} \u0633\u0627\u0639\u0629", "hoursAndMinutes": "{{ hours }} \u0633\u0627\u0639\u0629 {{ minutes }} \u062F\u0642\u064A\u0642\u0629", "days": "{{ days }} \u0623\u064A\u0627\u0645", "shortForm": { "seconds": "{{ seconds }} \u062B", "minutes": "{{ minutes }} \u062F", "hours": "{{ hours }} \u0633", "days": "{{ days }} \u064A", "hoursAndMinutes": "{{ hours }} \u0633 {{ minutes }} \u062F" } }, "dateTime": { "quarterAndYear": "Q{{quarterNumber}} {{yearNumber}}" }, "numberRepresentation": { "fraction": "{{ numerator }}/{{ denominator }}", "numberWithCurrencyCode": "{{currencyCode}} {{amountNumberValue}}", "phoneNumberWithExtension": "{{phoneNumber}}\u060C \u062A\u0645\u062F\u064A\u062F {{extension}}" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+

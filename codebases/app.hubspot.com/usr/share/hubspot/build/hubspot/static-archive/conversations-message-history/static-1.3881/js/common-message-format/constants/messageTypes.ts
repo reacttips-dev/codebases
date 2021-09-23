@@ -1,0 +1,1 @@
+export var COMMON_MESSAGE = 'COMMON_MESSAGE';

@@ -1,0 +1,7 @@
+'use es6';
+
+export var CONNECTED = 'CONNECTED';
+export var RECONNECTING = 'RECONNECTING';
+export var DISCONNECTED = 'DISCONNECTED';
+export var RESUBSCRIBING = 'RESUBSCRIBING';
+export var SUSPENDED = 'SUSPENDED';

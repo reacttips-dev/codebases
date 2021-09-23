@@ -1,0 +1,1 @@
+export var arrow_left_icon = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<svg class=\"left\" viewBox=\"1 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"m10.8 2.26a.87.87 0 0 0 -1.24 0l-4.36 4.37a.87.87 0 0 0 0 1.24l4.37 4.37a.87.87 0 1 0 1.23-1.24l-3.75-3.75 3.75-3.76a.87.87 0 0 0 0-1.23z\" fill=\"#0091ae\"/>\n</svg>\n";

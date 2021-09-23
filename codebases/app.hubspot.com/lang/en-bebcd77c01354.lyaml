@@ -1,0 +1,16 @@
+export default {
+  mode: "lazy",
+  source: "crm-index-ui/lang",
+  context: {
+    "de": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./de.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-de" */); },
+    "en": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./en.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-en" */); },
+    "es": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./es.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-es" */); },
+    "fi": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./fi.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-fi" */); },
+    "fr": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./fr.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-fr" */); },
+    "it": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./it.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-it" */); },
+    "ja": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./ja.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-ja" */); },
+    "nl": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./nl.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-nl" */); },
+    "pl": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./pl.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-pl" */); },
+    "pt-br": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./pt-br.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-pt-br" */); },
+    "sv": function () { return import("!/usr/share/hubspot/build/.bpm/packages/asset-bender/static-1.777/node_modules/bender-lyaml-loader/lib/index.js??ref--4-oneOf-0-rules-12!./sv.lyaml?sporks" /* webpackChunkName: "crm-index-ui-lang-sv" */); }  }
+};

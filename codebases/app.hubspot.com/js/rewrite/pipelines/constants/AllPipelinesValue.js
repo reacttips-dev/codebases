@@ -1,0 +1,4 @@
+'use es6';
+
+export var ALL_PIPELINES_VALUE = 'ALL_PIPELINES_VALUE';
+export var ALL_PIPELINES_VALUE_FROM_QUERY_PARAM = 'all';
