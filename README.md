@@ -28,6 +28,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ---
 ### E
 * Elastic (https://cloud.elastic.co) - Searching / Cong Nguyen, 2021/09/20
+* Ello (https://ello.co) - Social / Cong Nguyen, 2021/09/23
 
 ---
 ### F
