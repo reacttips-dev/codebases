@@ -1,0 +1,32 @@
+.advanced-options
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  > .button-wrap
+    background-color: line-on-secondary-background
+    border-radius: 6px
+    margin: 8px 5px 0 0
+    display: inline-block
+    position: relative
+
+    &.boosted
+      background: linear-gradient(12deg, #C454FF, #2800FF, #FA8A7C, #FE7DAB)
+
+    > .button
+      button-small()
+      button-secondary()
+      border: none
+      margin: 1px;
+      white-space: nowrap
+
+  .pop-over
+    max-height: calc(88vh - 70px)
+
+  .zebrafish
+    display: block
+    width: 100%
+    border: 1px solid var(--variable-shim-warning)
+    margin-top: 12px
+    padding: 6px
+    border-radius: 5px

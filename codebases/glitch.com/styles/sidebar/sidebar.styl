@@ -1,0 +1,145 @@
+sidebar-item-with-icon()
+  background-repeat: no-repeat
+  background-position-y: center
+  background-position-x: 5px
+  padding-left: 25px
+
+.sidebar
+  -webkit-overflow-scrolling: touch
+  display: flex
+  flex-direction: column
+  max-width: 50%
+  min-width: 185px
+  height: 100%
+  position: relative
+  z-index: 5
+
+  .sidebar-section
+    padding: 10px
+    padding-left: side-padding
+    position: relative
+    border-bottom: 1px solid section-line
+
+    > .button-wrap
+      > button
+        button-small()
+        button-secondary()
+
+  .new-file
+    &:not(.disabled)
+      position: sticky
+      top: 0
+
+  .icon-collapse
+    cursor: w-resize
+    height: 25px
+    background-size: 14px 12px
+    position: absolute
+    right: 13px
+    top: 10px
+    padding: 0 14px
+    user-select: none
+    transition: right 0.1s
+    z-index: 3
+
+  .sidebar-status-when-collapsed
+    display: none
+
+  .sidebar-files
+    overflow-x: hidden
+    overflow-y: auto
+    user-select: none
+    border-bottom: 0
+    padding-left: 0
+    padding-right: 0
+
+  .sidebar-people-wrap
+    padding-bottom: 2px
+    padding-right: 40px
+    .button
+      button-small()
+      button-secondary()
+      padding-top: 2px
+      &.active
+        .label
+          color: primary
+
+  .sidebar-project-actions-wrap
+    .button
+      button-small()
+      button-secondary()
+      &.active
+        .label
+          color: primary
+
+  .sidebar-file-controls
+    border-bottom: 0
+    padding-bottom: 0
+
+  resizer, div.resizer
+    cursor: ew-resize
+    display: block
+    height: 100%
+    position: absolute
+    right: -10px
+    top: 0
+    width: 10px
+    user-select: none
+    z-index: 2
+
+@keyframes sidebar-collapse
+  from
+    max-width: 75%
+  to
+    max-width: 30px
+
+.sidebar-collapsed
+  animation-duration: 0.1s
+  animation-name: sidebar-collapse
+  cursor: e-resize
+  max-width: 30px
+  min-width: initial
+  overflow: hidden
+  user-select: none
+  &:hover
+    background-color: secondary-background-hover
+    .icon-collapse
+      opacity: 0.8
+  > *
+    pointer-events: none
+    &:not(.icon-collapse):not(.sidebar-status-when-collapsed)
+      opacity: 0
+      display: none
+
+  .icon-collapse
+    transform: rotate(-180deg) translateX(-6px)
+    cursor: e-resize
+    opacity: 0.4
+    right: 7px
+
+  .sidebar-status-when-collapsed
+    display: block
+    position: absolute
+    top: 60px
+    left: 1px
+    opacity: 1
+    [data-module="Loader"],
+    .error,
+    .off,
+    .warning
+      display: block
+      width: 14px
+      height: 14px
+      margin-top: -12px
+      margin-left: 8px
+      margin-bottom: 10px
+      border-radius: 100px
+    .error
+      background-color: error
+    .off
+      background-color: line-on-secondary-background
+    .warning
+      background-color: warning
+
+  > resizer, div.resizer
+    display: none

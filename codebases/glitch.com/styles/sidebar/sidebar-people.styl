@@ -1,0 +1,113 @@
+.sidebar-people
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  @media(max-width: small-viewport-width)
+    flex-direction: column
+    align-items: stretch
+
+  .collaborators
+    transition: all 0.05s
+  
+  .opens-pop-over
+      display: flex
+      flex-wrap: wrap
+
+  .avatar.online-active-user::after
+      content: ''
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background: success
+      border: 1px solid primary-background
+      position: absolute
+      bottom: -3px
+      left: 0
+
+  .collaborators-buttons
+    position: relative
+
+  .join-project-button
+    margin-bottom: 0
+    margin-top: 0
+    margin-right: 8px
+
+  .share-project,
+  .join-people
+    vertical-align: top
+    margin-top: 0
+    position: relative
+    margin-bottom: 8px
+
+.viewers
+  margin: 0
+  margin-top: 5px
+  margin-bottom: 0.5rem
+  font-size: 13px
+  padding-right: side-padding
+
+.collaborators,
+.collaborators-buttons
+  .button
+    height: initial
+    display: flex
+    align-items: center
+  
+.collaborators-buttons
+  height: 27px
+
+.project-is-private
+  background-color: private
+  border-radius: 3px
+  margin-right: 4px
+  padding: 1px 6px
+  display: inline-block
+  vertical-align: 1px
+  .private-icon
+    width: 9px
+    height: 11px
+
+.avatar
+  .heart
+    opacity: 0
+    width: 14px
+    height: 13px
+    background-image: url(editor-path + 'heart.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    animation: floating 0.8s ease-out
+    position: absolute
+
+  .heart-child
+    width: 10px
+    height: 10px
+    animation-delay: 0.5s
+    animation: floating-child 0.8s ease-out
+    position: absolute
+
+.teams-list
+  padding: 5px 0px
+
+@keyframes floating
+  0%
+    transform: translateX(10px) translateY(25px)
+  50%
+    opacity: 1
+    transform: translateX(6px) translateY(4px) rotate(-5deg)
+  85%
+    opacity: 1
+  100%
+    opacity: 0
+    transform: translateX(10px) translateY(-10px) rotate(5deg)
+
+@keyframes floating-child
+  0%
+    transform: translateX(10px) translateY(25px)
+  50%
+    opacity: 1
+    transform: translateX(0px) translateY(14px) rotate(-8deg)
+  85%
+    opacity: 1
+  100%
+    opacity: 0
+    transform: translateX(6px) translateY(4px) rotate(8deg)

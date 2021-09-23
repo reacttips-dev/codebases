@@ -1,0 +1,66 @@
+
+.CodeMirror-dialog
+  // text-align: right
+  position: absolute
+  top: 40px
+  z-index: 12
+  font-family: sans-serif
+  padding: 8px
+  background-color: secondary-background
+  border: 1px solid section-line
+  border-right: none
+  max-width: initial
+  transform: translateY(-40px)
+  border-radius: 0
+  border-top-left-radius: 5px
+  border-bottom-left-radius: 5px
+  width: 40%
+  right: 0
+  box-shadow: pop-shadow
+
+  .CodeMirror-search-field
+    width: 75%
+    margin-left: 0
+
+  .button-wrap
+    display: inline-block
+    width: 14%
+    vertical-align: middle
+    margin: 0
+    @media (max-width: medium-viewport-width)
+      display: none
+
+  .close
+    display: inline
+    position: initial
+    width: 11%
+    margin-left: 0.2rem
+
+  .CodeMirror-search-hint
+    display: none
+
+  .CodeMirror-jump-input
+    max-width: 100px
+
+  .CodeMirror-search-button
+    cursor: pointer
+    background-color: secondary-background
+    text-transform: lowercase
+    opacity: 0.4
+    border-radius: 5px
+    &:hover
+      opacity: 1
+      background-color: secondary-background-hover
+    &.next,
+    &.prev
+      padding: 10px
+      margin-left: 0.2rem
+
+  button
+    color: #9b9b9b
+    font-weight: 600
+    border-radius: 5px
+    border: 1px solid #c3c3c3
+    width: 45px
+    font-size: 12px
+

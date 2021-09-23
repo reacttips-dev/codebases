@@ -1,0 +1,161 @@
+monospace = Menlo, Consolas, Monaco, "Lucida Console", Monospace
+sans-serif = "Benton Sans", Helvetica, Sans-serif
+
+micro-viewport-width = 415px
+small-viewport-width = 580px
+medium-viewport-width = 750px
+large-viewport-width = 1850px
+side-padding = 20px
+sidebar-file-height = 20px
+sidebar-line-height = 21px
+vertical-rhythm = 12px
+half-vertical-rhythm = 6px
+
+theme = '__THEME__'
+icons = "/edit/images/background-" + theme + "/icons/"
+logos ='/edit/images/logos/'
+sidebar-icons = "/edit/images/background-" + theme + "/sidebar-file-icons/"
+illustrations = "/edit/images/illustrations/"
+editor-path = "/edit/images/editor/"
+
+themed-url(prop, attr)
+  .theme-cosmos &
+    {prop}: url(replace(theme, 'dark', attr)) slice(arguments, 2)
+  .theme-sugar &
+    {prop}: url(replace(theme, 'light', attr)) slice(arguments, 2)
+
+:root {
+  --primary-background: primary-background;
+  --rewind-revision-width: 82px;
+}
+
+*
+  box-sizing: border-box
+
+html
+  height: 100%
+  display: flex
+
+body
+  font-family: sans-serif
+  font-weight: normal
+  color: primary
+  display: flex
+  flex: 1
+  margin: 0
+  overflow: hidden
+  background-color: primary-background
+  -webkit-tap-highlight-color: transparent
+
+div#__react-app-root
+  display: flex
+  flex: 1
+
+a
+  color: primary
+
+#application
+  display: flex
+  flex: 1
+  flex-direction: column
+  width: 1px // css hack for getting width: 100% to work in logs.
+  min-width: 5%
+  position: relative
+  overflow: hidden
+  background-color: primary-background
+
+
+// 🌙 handy utils and mixins
+
+dulled()
+  opacity: 0.7
+
+dulled-secondary()
+  opacity: 0.4
+
+hover-highlight()
+  &:hover,
+  &:focus,
+  &.active
+    background-color: secondary-background-hover
+    opacity: 1
+    border-radius: 5px
+    border: none
+  &:active
+    background-color: secondary-background-active
+
+hover-highlight-secondary()
+  &:hover
+    opacity: 0.8
+
+truncate()
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.hidden
+  display: none !important
+
+.cursor-default
+  cursor: default !important
+
+.small-viewport-only
+  display: none !important
+  @media (max-width: small-viewport-width)
+    display: block !important
+
+.small-viewport-only-inline
+  display: none !important
+  @media (max-width: small-viewport-width)
+    display: inline-block !important
+
+.hidden-on-small-viewport
+  @media (max-width: small-viewport-width)
+    display: none !important
+
+.jiggle
+  animation: jiggle 0.4s cubic-bezier(0.5, -0.05, 0.5, 1.25)
+
+.jiggle-anchor-right-side
+  transform-origin: center right
+
+.offline
+  filter: grayscale(100%)
+  &:hover
+    filter: none
+
+.embedded
+  border: 1px solid secondary
+  border-radius: 5px
+  box-shadow: 4px 4px secondary
+  background-color: transparent
+  margin-bottom: 4px
+  margin-right: 4px
+  overflow: hidden
+  #application
+    border-radius: 5px
+
+.avatar
+  background-size: cover
+  border-radius: 50%
+  width: 25px
+  height: 25px
+  background-color: section-line
+
+#community-auth-iframe
+  position: absolute
+  right: 0
+  bottom: 0
+  height: 1px
+  width: 1px
+  border: 0
+  pointer-events: none
+
+.no-margin
+  margin: 0 !important
+
+.ask-for-help-container
+  position: relative
+
+.pointer-events-none
+  pointer-events: none

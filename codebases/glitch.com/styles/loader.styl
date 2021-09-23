@@ -1,0 +1,23 @@
+// The span part of this selector gives it a higher specificity than the
+// styled-component default sizing for the Loader component, which lets us set
+// the default size of Loaders used across the editor without having to wrap the
+// Loader component itself.
+span[data-module="Loader"]
+  width: 25px
+  height: 25px
+
+.loader-ellipses
+  font-weight: bold
+  font-family: monospace
+  font-size: 13px
+  &:after
+    overflow: hidden
+    display: inline-block
+    vertical-align: bottom
+    animation: ellipsis steps(4,end) 1000ms infinite
+    content: "\2026"
+    width: 0px
+
+@keyframes ellipsis
+  to
+    width: 1.25em

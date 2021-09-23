@@ -1,0 +1,289 @@
+#editor
+  display: flex
+  flex: 1
+  flex-flow: nowrap
+  // for Firefox
+  overflow: hidden
+  z-index: 0
+
+.editor-read-only,
+.editor-connection-error
+  background-color: secondary-background
+
+.editor-container
+  display: flex
+  flex: 1
+  flex-flow: nowrap
+  overflow: hidden
+  position: relative
+
+.assets-wrap
+  overflow: auto
+  flex: 1
+  position: relative
+  border-left: 1px section-line solid
+
+.app-type-config-wrap
+  overflow: auto
+  flex: 1
+  position: relative
+  border-left: 1px section-line solid
+
+.editor-wrap
+  display: flex
+  flex-direction: column
+  flex: 1
+  z-index: 1
+  overflow-x: auto
+  overflow-y: hidden
+  position: relative
+  border-left: 1px section-line solid
+
+.media-wrap
+  align-items: center
+  border-left: 1px solid section-line
+  display: flex
+  flex: 1
+  justify-content: center
+
+  > img
+    max-width: 100%
+
+.text-editor
+  -webkit-overflow-scrolling: touch
+
+  .CodeMirror
+    height: var(--editor-height, calc(100vh - 49px))
+    font-family: monospace
+    font-size: 13px
+    line-height: 16px
+    background: transparent
+
+    pre
+      padding-left: 6px
+
+  .CodeMirror-cursors,
+  .CodeMirror-line,
+  .CodeMirror-selected
+    transform: translateX(3px)
+
+  .CodeMirror-cursor
+    border-left: 2px solid primary
+
+  .CodeMirror-linebackground
+    left: -100%
+
+  // GUTTERS
+
+  .CodeMirror-gutters
+    border-right: none
+    background-color: primary-background
+    white-space: nowrap
+
+    .editor-read-only &,
+    .editor-connection-error &
+      background-color: secondary-background
+
+  .CodeMirror-gutter-background
+    background-color: gutter-active-line-color
+
+  // WIDGETS
+
+  .CodeMirror-linewidget
+    overflow: initial
+    position: absolute !important
+    top: 0
+    left: 15px
+
+  // FOLDING
+
+  .CodeMirror-foldgutter-open,
+  .CodeMirror-foldgutter-folded
+    &::after
+      content: ""
+    width: 7px
+    height: 3px
+    padding: 8px 5px
+    background-repeat: no-repeat
+    background-position: center
+    margin-left: 1px
+    padding-right: 1px
+    dulled-secondary()
+    hover-highlight()
+
+  .CodeMirror-foldgutter-open
+    themed-url(background-image, editor-path + 'fold-widget-' + theme + '.svg')
+
+  .CodeMirror-foldgutter-folded
+    themed-url(background-image, editor-path + 'fold-widget-folded-' + theme + '.svg')
+
+  .CodeMirror-foldmarker
+    margin: 0 2px
+    padding: 0px 4px
+    color: primary
+    border-radius: 3px
+    background-color: secondary-background
+    text-shadow: none
+    hover-highlight()
+
+  // LINE NUMBERS
+
+  .CodeMirror-linenumber
+    min-width: 20px
+    text-align: right
+    white-space: nowrap
+    color: gutter-text-color
+    font-size: 10px
+    padding-left: 0
+
+  // LINTING
+
+  .CodeMirror-lint-markers
+     width: 10px
+
+  .CodeMirror-lint-marker-error,
+  .CodeMirror-lint-marker-warning
+    background-image: url(editor-path + 'error.svg')
+    background-position: center
+    width: 12px
+    margin-left: 4px
+
+  .CodeMirror-lint-marker-warning
+    background-image: url(editor-path + 'warning.svg')
+
+  .CodeMirror-lint-marker-multiple
+    &:after
+      content: ""
+
+  .CodeMirror-lint-mark-error
+    background-image: url(editor-path + 'lint-error-line.svg')
+
+  .CodeMirror-lint-mark-warning
+    background-image: url(editor-path + 'lint-warning-line.svg')
+
+
+.CodeMirror-lint-tooltip
+  background-color: warning-background
+  border-radius: 3px
+  font-size: 12px
+  margin-left: -10px
+  word-wrap: break-word
+  border: none
+  .CodeMirror-lint-message-error,
+  .CodeMirror-lint-message-warning
+    background-image: url(editor-path + 'error.svg')
+    background-position: left 1px
+    padding-right: 2px
+    padding-left: 18px
+  .CodeMirror-lint-message-warning
+    background-image: url(editor-path + 'warning.svg')
+
+
+// SYNTAX COLORS
+
+.CodeMirror-code
+
+  // reset
+  .cm-keyword,
+  .cm-def,
+  .cm-comment,
+  .cm-string,
+  .cm-operator,
+  .cm-variable
+    font-weight: normal
+    font-style: normal
+    color: primary
+
+  // code colors 🎄
+
+  .CodeMirror-activeline-background
+    background-color: active-line-color
+
+  .cm-keyword
+    color: keyword
+    font-weight: bold
+
+  .cm-comment
+    font-style: italic
+    color: comment
+
+  .cm-string
+    color: string
+
+  .cm-property
+    color: property
+
+  .cm-operator,
+  .cm-tag
+    color: operator
+    font-weight: bold
+
+  .cm-number,
+  .cm-atom
+    color: number
+
+  .cm-qualifier
+    font-style: italic
+
+  .cm-def
+    color: definition
+
+  // markdown colors
+
+  .cm-link
+    color: property
+
+  .cm-url
+    color: primary
+    text-decoration: underline
+
+  .cm-header
+    color: operator
+    font-weight: bold
+
+  .cm-strong
+    color: string
+    font-weight: bold
+
+  .cm-em
+    font-style: italic
+
+  .cm-quote
+    color: string
+
+// highlight colors
+
+.CodeMirror-matchingbracket
+  background-color: matching-bracket-highlight
+
+.CodeMirror-matchingtag
+  background-color: matching-tag-highlight
+
+
+.CodeMirror-selected
+  background-color: selection-unfocused-highlight
+
+.CodeMirror-focused
+  .CodeMirror-selected
+    background-color: selection-highlight
+
+// Match highlighting in document
+.cm-matchhighlight
+  background-color: matching-bracket-highlight
+
+// Match markers on scrollbar
+.CodeMirror-selection-highlight-scrollbar
+  background-color: matching-bracket-highlight
+  border-radius: 4px
+
+.diff-added-line
+  background-color: line-added
+
+.diff-removed-line
+  background-color: line-removed
+
+// .diff-added-line-gutter
+//   background-color: line-added-active !important
+
+// .diff-removed-line-gutter
+//   background-color: line-removed-active !important

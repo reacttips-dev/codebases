@@ -1,0 +1,44 @@
+.progress
+  appearance: none
+  height: 9px
+  width: 70px
+  border: 1px solid background-color
+  // firefox
+  background-color: transparent
+  border-radius: 5px
+
+  // ugly prefixes sadly required
+  &::-webkit-progress-bar
+    background-color: transparent
+
+  &::-webkit-progress-value
+    background-color: primary-background
+    border-radius: 0px
+
+  &::-moz-progress-bar
+    background-color: primary-background
+    border-radius: 0px
+
+.notify-progress
+  margin-left: 5px
+
+.progress-inline
+  border: 1px solid line-on-secondary-background
+  &::-webkit-progress-value
+    background-color: line-on-secondary-background
+    border-radius: 2px
+  &::-moz-progress-bar
+    background-color: line-on-secondary-background
+    border-radius: 2px
+
+  &.error
+    &::-webkit-progress-value
+      background-color: error
+    &::-moz-progress-bar
+      background-color: error
+
+  &.warning
+    &::-webkit-progress-value
+      background-color: warning
+    &::-moz-progress-bar
+      background-color: warning

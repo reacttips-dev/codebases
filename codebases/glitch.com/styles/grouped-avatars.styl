@@ -1,0 +1,28 @@
+.grouped-avatars
+  .person
+    margin-bottom: 5px
+
+  .person, .person a
+    display: inline-block
+
+  .person:not(.team):not(.person-current-user):not(:last-child)
+    margin-right: -5px
+
+  .person:last-child,
+  .person-current-user:not(:last-child),
+  .person.team
+    margin-right: 5px
+
+  .avatar
+    width: 25px
+    height: 25px
+    cursor: pointer
+    background-size: cover
+    vertical-align: middle
+
+  .anon-avatar
+    background-size: 18px
+    background-position: center
+  .button.person.team
+    padding: 0px
+    height: unset
