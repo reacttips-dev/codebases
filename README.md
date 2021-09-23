@@ -13,7 +13,6 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ### A
 * Anchor (https://anchor.fm/) - Audio / Cong Nguyen, 2021/09/20
-* Auth Udacity - (https://auth.udacity.com/) - education / Nguy Thang, 2021/09/20
 
 ---
 ### B
@@ -21,7 +20,6 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### C
-* Classroom Udacity (https://classroom.udacity.com) - education / Nguy Thang, 2021/09/20
 * Coursera (https://coursera.org) - education / Cong Nguyen, 2021/09/22
 
 ---
@@ -89,6 +87,8 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 
 ---
 ### U
+* Auth Udacity - (https://auth.udacity.com/) - education / Nguy Thang, 2021/09/20
+* Classroom Udacity (https://classroom.udacity.com) - education / Nguy Thang, 2021/09/20
 
 ---
 ### V
