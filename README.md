@@ -86,6 +86,7 @@ This picture show how we get the source code.
 * SendBird (https://dashboard.sendbird.com) - Messaging / Cong Nguyen, 2021/09/20
 * Skillshare (https://skillshare.com) - Education / Cong Nguyen, 2021/09/22
 * Similarweb (https://pro.similarweb.com) - Ranking / Cong Nguyen, 2021/09/23
+* Stackshare (https://stackshare.io) - QA / Cong Nguyen, 2021/09/24
 
 ---
 ### T

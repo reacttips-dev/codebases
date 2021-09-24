@@ -1,0 +1,12 @@
+export const POST_TOGGLE_COMMENTS = 'post-toggle-comments';
+export const POST_OPEN_COMPOSER = 'post-open-composer';
+export const POST_CLOSE_COMPOSER = 'post-close-composer';
+export const POST_SET_NEW_COMMENT = 'post-set-new-comment';
+export const POST_ADD_ACTIVE_REPLY = 'post-add-active-reply';
+export const POST_REMOVE_ACTIVE_REPLY = 'post-remove-active-reply';
+export const POST_TOGGLE_DELETE_MODAL = 'post-toggle-delete-modal';
+export const POST_TOGGLE_EDIT_MODE = 'post-toggle-edit-mode';
+export const POST_TOGGLE_EDIT_MODE_PERMALINK = 'post-toggle-edit-mode-permalink';
+export const POST_TOGGLE_SHOW_FIRST_RUN = 'post-toggle-show-first-run';
+export const POST_TOGGLE_SHOW_UPVOTE_HINT = 'post-toggle-show-upvote-hint';
+export const POST_TOGGLE_SHOW_ADVICE_COMPOSER = 'post-toggle-show-advice-composer';

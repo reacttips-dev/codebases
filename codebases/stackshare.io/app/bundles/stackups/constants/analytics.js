@@ -1,0 +1,16 @@
+export const STACKUPS_QUESTION_CLICK_CTA = 'stackups_question_click_cta';
+export const STACKUPS_QUESTION_SMALL_CLICK_CTA = 'stackups_question_small_click_cta';
+export const STACKUPS_QUESTION_CLICK_SUBMIT_QUESTION = 'stackups_question_click_submit_question';
+export const STACKUPS_QUESTION_CLICK_CLOSE_MODAL = 'stackups_question_click_close_modal';
+export const STACKUPS_QUESTION_FOCUS_COMPOSER = 'stackups_question_focus_composer';
+export const STACKUPS_QUESTION_FIRST_CHANGE_COMPOSER = 'stackups_question_first_change_composer';
+export const STACKUPS_QUESTION_VIEWED = 'stackups_question_viewed';
+export const STACKUPS_QUESTION_SMALL_VIEWED = 'stackups_question_viewed';
+export const STACKUPS_QUESTION_DWELL = 'stackups_question_dwell';
+export const STACKUPS_QUESTION_SMALL_DWELL = 'stackups_question_small_dwell';
+export const STACKUPS_SEARCH_QUERY = 'stackups_search_query';
+export const STACKUPS_SEARCH_SELECT_TOOL = 'stackups_search_select_tool';
+export const STACKUPS_SEARCH_REMOVE_TOOL = 'stackups_search_remove_tool';
+export const STACKUPS_SEARCH_CLICK_COMPARE = 'stackups_search_click_compare';
+export const STACKUPS_DECISIONS_TOGGLE = 'stackups_decisions_toggle';
+export const STACKUPS_DECISIONS_LIST = 'stackups_decisions_list';
