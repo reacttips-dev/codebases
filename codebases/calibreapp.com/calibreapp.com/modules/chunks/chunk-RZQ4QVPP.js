@@ -1,0 +1,2 @@
+import{b as n,r as c,u as l}from"./chunk-BBW4QHNN.js";import{f as p,i as d}from"./chunk-ORNWO27Z.js";var t=p(d());function D(r,o){var u=(0,t.useContext)(c()),i=(0,t.useState)({called:!1,loading:!1}),s=i[0],m=i[1],f=o?n(n({},o),{mutation:r}):{mutation:r},a=(0,t.useRef)();function x(){return a.current||(a.current=new l({options:f,context:u,result:s,setResult:m})),a.current}var e=x();return e.setOptions(f),e.context=u,(0,t.useEffect)(function(){return e.afterExecute()}),e.execute(s)}export{D as a};
+//# sourceMappingURL=chunk-RZQ4QVPP.js.map
