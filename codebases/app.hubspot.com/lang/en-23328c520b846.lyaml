@@ -1,0 +1,200 @@
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "sanitizedEmail": { "imageError": "This image is too large to display.", "expandEmailButtonText": "Expand", "collapseEmailButtonText": "Collapse", "hideEmailRepliesButtonText": "Hide trimmed content", "showEmailRepliesButtonText": "View trimmed content" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-internal-schema": { "availability": { "awayMessage": { "defaultMessageText": "We're away right now, but we'll get back to you as soon as we can." }, "outsideOfficeHoursMessage": { "defaultMessageText": "We're away right now, but we'll get back to you as soon as we can." } } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-internal-schema": { "typicalResponseTime": { "standardResponses": { "FEW_MINUTES": "We typically reply in a few minutes", "FEW_HOURS": "We typically reply in a few hours", "WITHIN_DAY": "We typically reply in a day" }, "customResponses": { "MINUTES": { "one": "We typically reply in {{ count }} minute", "other": "We typically reply in {{ count }} minutes" }, "HOURS": { "one": "We typically reply in {{ count }} hour", "other": "We typically reply in {{ count }} hours" }, "DAYS": { "one": "We typically reply in {{ count }} day", "other": "We typically reply in {{ count }} days" } } } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-internal-schema": { "default": { "repText": "Hi there! Let me know if you have any questions about the product or pricing.", "visitorText": "Can you go into a bit more detail about your pricing structure?", "name": "New chatflow ({{timeStamp}})", "qualifiedLead": { "initialMessage": "Hi there! I'm happy to help you today." }, "initialMessage": "Got any questions? I'm happy to help.", "askForEmailMessage": "Don\u2019t have time to wait for a response? Leave your email and we\u2019ll be in touch as soon as possible.", "awayMessage": "I'm away at the moment, but let me know if you have any questions and I'll reply to you soon." } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-internal-schema": { "we-wont-use-this-key-in-the-product-but-this-file-wont-update-with-new-languages-without-a-key": "okay" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-message-history": { "responder": { "automatic": "Automated", "bot": "Bot", "unknownResponder": "Unknown user", "unknownSender": "Unknown sender", "unknownVisitor": "Unknown visitor", "unknownVisitorAvatar": "Unknown Visitor" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-message-history": { "status": { "closed": "This thread was closed on {{ dateString }}", "restore": "Restore this message", "publishing": { "UNPUBLISHED": "Sending... ", "PUBLISH_FAILED": "Not delivered. Click to retry." } } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-message-history": { "noContent": "This message has no content", "default": { "repText": "Hi there! Let me know if you have any questions about the product or pricing.", "visitorText": "Can you go into a bit more detail about your pricing structure?" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-visitor-experience-components": { "stagedAttachment": { "uploadProgress": "{{uploadedBytes}} of {{totalBytes}}" }, "fileSizeLimit": "{{size}} max upload" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-visitor-experience-components": { "code-splitting": { "error": { "title": "There was a network connection issue.", "message": "Please check your connection and try again.", "button": "Try again" } } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-visitor-experience-components": { "emailCapture": { "failedToPublish": "Sorry, we couldn't verify your email address." } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-visitor-experience-components": { "visitorWidget": { "header": { "threadListTitle": "Conversations" }, "threadListCard": { "YourChats": "Your Chats", "oneDayAgo": "One Day ago" } } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "helpWidgetComponents": { "knowledgeBaseSearch": { "header": "Find answers quickly", "seeMoreResults": "See more results", "searchPlaceholder": "Search articles", "noResultsForTerm": "No results for <strong>\"{{ searchTerm }}\"</strong>.<br/> Try another search term.", "didntFindResults": "Didn't find what you were looking for?", "goToKnowledgeBase": "Go to knowledge base" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-visitor-experience-components": { "install-code-step": { "description": "<p>Copy the code below and paste it into every page you\u2019d like chat to appear on. When you\u2019re adding the code, make sure it\u2019s placed just before the end of the &lt;body&gt; tag. You can also add it to your site footer.</p><p>If you\u2019re a Marketing customer using the HubSpot CMS, you don't need to do anything. Your tracking code is automatically installed on all HubSpot-hosted pages.</p>", "howToLink": "How do I add the code?", "copyButton": "Copy", "installCodeEmailForm": { "title": "Need someone else to install the code?", "description": "Email the code snippet to your web developer or admin.", "placeholder": "Enter email address", "error": "Please enter a valid email address.", "send": "Send" } }, "officeHours": { "defaultMessageText": "We'll return tomorrow at 9:00 AM", "sameDay": "We'll return today at {{time}}", "nextDay": "We'll return tomorrow at {{time}}", "nextWeek": "We'll return {{dayOfWeek}} at {{time}}" }, "alerts": { "pubNubStatus": { "visiblyOffline": { "title": "Sorry. There was an issue connecting to the network. ", "description": "Please wait a few seconds and try again." }, "PNNetworkUpCategory": { "title": "The network connection issue is resolved.", "description": "Success! You're connected to messages again." }, "PNRsubscribeLimitReached": { "title": "Sorry. We can't connect you to messages right now.", "description": "Please refresh your page." } } }, "errorAlert": { "titleText": "Something went wrong.", "message_jsx": function (createElement, options, props) { return createElement( options, "wrapper", null, "Please try again. If it keeps happening, ", createElement( options, "Link", { onClick: props.onClick }, "let us know" ), "." ); }, "eventId": "Event Id: {{ eventId }}" }, "unknownVisitor": "Unknown visitor", "notifications": { "unknownVisitor": "Unknown visitor", "title": { "withIdentity": "{{ identifier }} | HubSpot Messages" }, "newMessage": "New live chat from {{ identifier }}", "newEmail": "New email from {{ identifier }}", "assignment": "{{ identifier }} assigned a conversation to you.", "pushText": "A visitor has sent you a new message." }, "buttons": { "agree": "I agree", "disagree": "Decline for now" }, "visitorExperienceAriaLabels": { "dismiss": "Dismiss", "open": "Open live chat", "close": "Close live chat", "attachment": "attach a file", "send": "send message", "showThreadList": "View thread list, {{ unreadThreadCount }} unread threads", "createNewThread": "Create new thread", "badgeDescription": "New notifications" }, "chatArea": { "branding_jsx": function (createElement, options, props) { return createElement( options, "wrapper", null, "Add free ", createElement( options, "Link", props, "live chat" ), " to your site" ); }, "brandingAriaLabel": "Add free live chat to your site" }, "chatTextArea": { "validationMessage": "Message is too long.", "placeholder": "Write a message" }, "newThreadPrompt": { "heading": "Your chat has been ended.", "newHeading": "Your chat has ended.", "paragraph": "if you want to continue the conversation", "button": "start a new chat", "newButton": "To start a new chat, click here." }, "botAwayMessage": { "heading": "Our team isn't online at the moment.", "paragraph": "We'll be back during our business hours and look forward to chatting with you then." }, "default": { "repText": "Hi there! Let me know if you have any questions about the product or pricing.", "initialMessage": "Got any questions? I'm happy to help.", "askForEmailMessage": "Don\u2019t have time to wait for a response? Leave your email and we\u2019ll be in touch as soon as possible.", "knowledgeBaseHeaderText": "Help", "agent": "Agent" }, "dateStringWithOn": "on {{ dateString }}" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-visitor-message-history": { "email-capture": { "thanks": "Thank you for your email. We'll be in touch as soon as possible.", "invalid": "You entered an invalid email.", "failed": "Sorry, we couldn't verify your email address.", "placeholderText": "Enter email address", "consentToCommunicate": "I agree to receive other communications from {{ accountName }}", "sendEmail": "send email" }, "initial-message": { "header": "Welcome message", "headerTooltip": "A welcome message is a prompt used to invite your website visitors to start a conversation." }, "status": { "publishing": { "UNPUBLISHED": "Sending... ", "PUBLISH_FAILED": "Not delivered. Click to retry." } }, "quickReply": { "selectionPlaceholder": "Select one", "selectionComplete": "Done" }, "myMessage": "My message:", "agentMessage": "Agent message:", "systemMessage": "System message:" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-error-reporting": { "errorAlert": { "message_jsx": function (createElement, options, props) { return createElement( options, "wrapper", null, "Please try again. If it keeps happening, ", createElement( options, "Link", { onClick: props.onClick }, "let us know" ), "." ); }, "eventId": "Event Id: {{ eventId }}", "errorCode": "Error Code: {{ errorCode }}" }, "debugOverlay": { "title": "Debug Menu", "enableLogs": "Enable Logs", "disableLogs": "Disable Logs", "sendData": "Send Debug Data to HubSpot", "lastEventMessage": "Debug data sent.  Event Id: {{ lastEventId }}" }, "fatalError": { "refreshThePage": "Something's wrong. <br /> Refresh the page or log in again.", "contactSupport": "If this keeps happening, please contact support" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "cvVisitorUIAttachments": { "errors": { "fileSizeExceeded": "File exceeds the {{maxSize}} max upload.", "uploadError": "Unable to upload attachment.", "invalidFileType": "Invalid file type selected." }, "tryAgain": "Try again", "threadPreview": "An attachment has been sent" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversationsVisitorUIAvailability": { "sameDay": "We'll return today at {{time}}", "nextDay": "We'll return tomorrow at {{time}}", "nextWeek": "We'll return {{dayOfWeek}} at {{time}}" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversationsVisitorUIPageTitleNotifications": { "newMessage": "New Message" } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "conversations-visitor-ui": { "timeSince": { "secondsAgo": "a few seconds ago" }, "default": { "agent": "Agent", "meetingsLinkText": "Schedule some time with me" }, "emailCapture": { "outsideOfficeHoursMessage": "Leave your email and we\u2019ll be in touch as soon as possible.", "defaultAwayEmailCaptureMessage": "What email address should we use to follow up?" }, "threadList": { "header": "Your chats", "seeAllButton": "See all", "seeLessButton": "See less", "chatEndedMessage": "Your chat has ended." }, "network": { "offline": { "title": "Sorry. It looks like there was an issue with your internet connection. Please check your connection and try again." }, "pubSubFailure": { "title": "Sorry. There seems to be a connection issue. Please try again later.", "retry": "Refresh" }, "newThreadFailure": { "title": "Sorry. There was a problem loading this message. Please check your connection and try again." } }, "asyncError": { "body": "We're having technical difficulties", "noRetry": "Please check your connection and try again.", "retry": "Retry" }, "widgetErrorRetryPanel": { "title": "There was a problem loading the chat.", "body_jsx": function (createElement, options, props) { return createElement( options, "wrapper", null, "Please refresh the page or ", createElement( options, "Link", props.LinkProps, "retry." ) ); } }, "knowledgeBaseContainer": { "headerText": "Help", "yourChats": "Your Chats" }, "chatTextArea": { "validationMessage": "Message is too long.", "placeholder": "Write a message", "forceQuickReplyPlaceholder": "Choose an option" }, "newThreadPrompt": { "heading": "Your chat has been ended.", "newHeading": "Your chat has ended.", "paragraph": "if you want to continue the conversation", "button": "start a new chat", "newButton": "To start a new chat, click here." }, "visitorExperienceAriaLabels": { "send": "send message", "attachment": "attach a file" }, "stagedAttachment": { "uploadProgress": "{{uploadedBytes}} of {{totalBytes}}" }, "fileSizeLimit": "{{size}} max upload", "askForEmailMessage": "Don\u2019t have time to wait for a response? Leave your email and we\u2019ll be in touch as soon as possible.", "gdpr": { "consentToCookies": { "promptHeader": "Your chat will be lost if you leave", "pageLoadCookieConsent": "This chat widget uses a cookie to interact with website visitors and to provide your chat history. To find out more about this cookie, see our <a target='_blank' href=\"https://legal.hubspot.com/privacy-policy\">Privacy Policy</a>.", "exitIntentCookieConsent": "Your chat will be lost if you leave this page without consenting to accept cookies. This chat widget stores cookies on your browser to collect information about how you interact with our website and allows us to remember you." } } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+

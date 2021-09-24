@@ -1,0 +1,10 @@
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "en": { "signatureEditorModal": { "labels": { "ok": "Okay", "signature": "Signature", "preview": "Preview", "editEmailSignature": "Edit email signature", "save": "Save", "visual": "Simple", "text": "HTML", "cancel": "Cancel", "update": { "prompt": "Also update my account signature with these changes", "tooltip": "Leave this box unchecked to only update the signature in the email you are composing" }, "signatureSaved": "Your signature has been saved." }, "descriptions": { "signature": "Your signature will be used in one-on-one emails throughout the HubSpot CRM." }, "errors": { "title": "Something went wrong", "unableToLoadSignature": "An error occurred while trying to load your email signature. Please try again.", "unableToUpdateSignature": "An error occurred while trying to save your email signature. Please try again.", "signatureTooLong": "Your email signature is too long and can't be saved. It must be less than {{ maxLength }} characters. Try making it smaller." }, "unsupportedHTML": { "header": "Unable to switch modes", "description": "Your signature has some HTML elements that aren't supported in the simple editor. Please use the HTML button to edit your signature with the raw HTML editor.", "saveButtonDisabled": "Your signature has unsupported HTML. Please remove any of the following tags from your signature:" }, "unsubscribeLink": { "link": "here", "RELEVANT": "Is this email not relevant to you? Click {{ link }}", "STOP_GETTING_MESSAGES": "To stop receiving these emails, click {{ link }}", "PREFER_LESS": "Prefer fewer emails from me? Click {{ link }}", "edit": { "header": "Choose an unsubscribe link", "submit": "Apply", "cancel": "Cancel", "removeLink": "Remove link" }, "info": { "header": "Why is this here?", "list": { "one": "HubSpot respects the sender and the recipient by allowing both sides to manage communications.", "two": "This is legally necessary. {{ infoLink }} to read more." }, "infoLink": "Click here" } } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+

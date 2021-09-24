@@ -1,0 +1,59 @@
+@keyframes large-star-animation {
+  from { transform: scale(1); }
+
+  to { transform: scale(.8); }
+}
+
+@keyframes medium-star-animation {
+  from { transform: scale(.9); }
+
+  to { transform: scale(1.1); }
+}
+
+@keyframes small-star-animation {
+  from { transform: rotate(0deg); }
+
+  to { transform: rotate(360deg); }
+}
+
+.prettier-button:hover,
+.prettier-button:focus
+  .prettier-sparkles-emoji-large-star,
+  .prettier-sparkles-emoji-medium-star,
+  .prettier-sparkles-emoji-small-star
+    animation-play-state: running
+    opacity: 1
+
+  .prettier-sparkles-emoji-large-star
+    fill: #FF5F5F
+
+  .prettier-sparkles-emoji-medium-star
+    fill: #C454FF
+
+  .prettier-sparkles-emoji-small-star
+    fill: #FFAABF
+
+.prettier-sparkles-emoji-large-star,
+.prettier-sparkles-emoji-medium-star,
+.prettier-sparkles-emoji-small-star
+  animation-duration: 1s
+  animation-timing-function: linear;
+  animation-iteration-count: infinite
+  animation-play-state: paused
+  fill: primary
+  dulled-secondary()
+
+.prettier-sparkles-emoji-large-star
+  transform-origin: 12px 8px
+  animation-name: large-star-animation
+  animation-direction: alternate
+
+.prettier-sparkles-emoji-medium-star
+  transform-origin: 6px 4px
+  animation-name: medium-star-animation
+  animation-direction: alternate
+
+.prettier-sparkles-emoji-small-star
+  transform-origin: 6.5px 15.5px
+  animation-name: small-star-animation
+  animation-direction: normal

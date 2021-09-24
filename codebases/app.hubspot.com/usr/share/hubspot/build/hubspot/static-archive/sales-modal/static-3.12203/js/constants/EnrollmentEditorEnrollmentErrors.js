@@ -1,0 +1,4 @@
+'use es6';
+
+export var GENERAL_ERROR = 'GENERAL_ERROR';
+export var CONTACT_MISSING_EMAIL = 'CONTACT_MISSING_EMAIL';

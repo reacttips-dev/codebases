@@ -1,0 +1,886 @@
+module.exports = {
+  "genericUpgradeEvent": {
+    "name": "placeholder-definition-dont-use",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "externalLinkClick": {
+    "name": "external-link-click",
+    "class": "interaction",
+    "properties": {
+      "name": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "usageLimitUpgradeEvent": {
+    "name": "placeholder-definition-dont-use",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "hasReachedLimit": "boolean",
+      "value": "number",
+      "limit": "number",
+      "currencyCode": {
+        "type": "string",
+        "isOptional": true
+      },
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "communicationMethodsInteraction": {
+    "name": "communication-methods",
+    "class": "interaction",
+    "properties": {
+      "meetingLink": {
+        "type": "string",
+        "isOptional": true
+      },
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "contactSalesButtonInteraction": {
+    "name": "contact-sales-button",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "contactSalesModalInteraction": {
+    "name": "contact-sales-modal",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "experimentExposure": {
+    "name": "experiment-exposure",
+    "class": "exposure",
+    "properties": {
+      "experimentGroup": "string",
+      "experimentNamespace": "string",
+      "experimentName": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "limitPackInteraction": {
+    "name": "limit-pack",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "hasReachedLimit": "boolean",
+      "value": "number",
+      "limit": "number",
+      "currencyCode": {
+        "type": "string",
+        "isOptional": true
+      },
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "lockedAppInteraction": {
+    "name": "locked-app",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "lockedFeatureInteraction": {
+    "name": "locked-feature",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "lockedFeatureBannerInteraction": {
+    "name": "locked-feature-banner",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "pricingPageRedirectButtonInteraction": {
+    "name": "pricing-page-redirect-button",
+    "class": "interaction",
+    "properties": {
+      "upgradeProduct": "string",
+      "source": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "productActivationButtonInteraction": {
+    "name": "product-activation-button",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "productActivationInteraction": {
+    "name": "product-activation",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "trialActivationButtonInteraction": {
+    "name": "trial-activation-button",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "trialActivationInteraction": {
+    "name": "trial",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "app": "string",
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "surveyResponses": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "trialActionPromptInteraction": {
+    "name": "trial-action-prompt",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "app": "string",
+      "screen": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "numUsers": {
+        "type": "number",
+        "isOptional": true
+      },
+      "numContacts": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "trialModalInteraction": {
+    "name": "trial-modal",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "app": "string",
+      "screen": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "trialAlertBannerInteraction": {
+    "name": "trial-alert-banner",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "app": "string",
+      "screen": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "trialActivationRedirected": {
+    "name": "trial-activation-redirected",
+    "class": "interaction",
+    "properties": {
+      "redirectTarget": "string",
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "upgradeButtonInteraction": {
+    "name": "upgrade-button",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "upgradeModalInteraction": {
+    "name": "upgrade-modal",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "usageLimitInteraction": {
+    "name": "usage-limit",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "hasReachedLimit": "boolean",
+      "value": "number",
+      "limit": "number",
+      "currencyCode": {
+        "type": "string",
+        "isOptional": true
+      },
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "viewUpgradeAdminPrompt": {
+    "name": "view-upgrade-admin-prompt",
+    "class": "interaction",
+    "properties": {
+      "app": "string",
+      "screen": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "apiName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "modalType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "checkoutButtonInteraction": {
+    "name": "checkout-button",
+    "class": "interaction",
+    "properties": {
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "currencyCode": {
+        "type": "string"
+      },
+      "termName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "offerId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isQuantityUpgrade": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "merchandiseNames": {
+        "type": "array",
+        "isOptional": true
+      },
+      "merchandiseIds": {
+        "type": "array",
+        "isOptional": true
+      },
+      "productNames": {
+        "type": "array",
+        "isOptional": true
+      },
+      "skuIds": {
+        "type": "array",
+        "isOptional": true
+      },
+      "productBasedOfferNames": {
+        "type": "array",
+        "isOptional": true
+      },
+      "productBasedOfferIds": {
+        "type": "array",
+        "isOptional": true
+      },
+      "checkoutType": [
+        "embedded",
+        "full"
+      ],
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "errorInteraction": {
+    "name": "error",
+    "class": "interaction",
+    "properties": {
+      "name": "string",
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "pqlInteraction": {
+    "name": "pql",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "purchaseMotionEligibility": {
+        "type": "array",
+        "isOptional": true
+      },
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string",
+      "upgradeSource": {
+        "type": "string",
+        "isOptional": true
+      },
+      "termId": {
+        "type": "number",
+        "isOptional": true
+      },
+      "additionalUnitQuantity": {
+        "type": "number",
+        "isOptional": true
+      },
+      "isMultiTrial": {
+        "type": "boolean",
+        "isOptional": true
+      },
+      "activeTrials": {
+        "type": "array",
+        "isOptional": true
+      },
+      "expiredTrials": {
+        "type": "array",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "requestUpgradeInteraction": {
+    "name": "request-upgrade",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "apiName": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  },
+  "requestSeatBannerInteraction": {
+    "name": "request-seat-banner",
+    "class": "interaction",
+    "properties": {
+      "banner": "string",
+      "action": "string",
+      "app": "string",
+      "screen": "string",
+      "source": "string",
+      "upgradeProduct": "string",
+      "uniqueId": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "addAdditionalSeatsClick": {
+    "name": "add-additional-seats-click",
+    "class": "interaction",
+    "properties": {
+      "merchandiseId": "number",
+      "trackingSource": "string"
+    },
+    "namespace": "upgrades"
+  },
+  "interaction": {
+    "name": "interaction",
+    "class": "interaction",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "app": {
+        "type": "string",
+        "isOptional": true
+      },
+      "screen": {
+        "type": "string",
+        "isOptional": true
+      },
+      "feature": {
+        "type": "string",
+        "isOptional": true
+      },
+      "upgradeProduct": {
+        "type": "string",
+        "isOptional": true
+      },
+      "upgradeKey": {
+        "type": "string",
+        "isOptional": true
+      },
+      "team": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "upgrades"
+  }
+};

@@ -1,0 +1,4 @@
+'use es6';
+
+export var PRIMARY_SEQUENCE_ID = 'ALL';
+export var POST_PROCESS_ERROR_ID = 'POST_PROCESS_ERROR_ID';

@@ -1,0 +1,3 @@
+'use es6';
+
+export var SET_RECONCILED_OBJECTS = 'SET_RECONCILED_OBJECTS';

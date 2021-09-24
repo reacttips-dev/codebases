@@ -1,0 +1,3 @@
+'use es6';
+
+export var EMAIL_CAPTURE_PROMPT = 'EMAIL_CAPTURE_PROMPT';

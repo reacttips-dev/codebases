@@ -1,0 +1,174 @@
+.input,
+.textarea,
+.p[contenteditable=true]
+  font-family: monospace
+  font-size: 13px
+
+pop-over-input()
+  position: relative
+  background-color: transparent
+  padding: 0
+  padding-bottom: 2px
+  line-height: 17px
+  border: none
+  outline: none
+  border-bottom: 1px solid secondary
+  width: 100%
+  color: primary
+  cursor: text
+  margin-bottom: vertical-rhythm
+  &:only-child
+    margin: 0
+  &[disabled="true"],
+  &[disabled]
+    border: none
+    border: 0
+    padding: 0
+  &[type="checkbox"]
+    width: 14px
+    margin: 0
+    margin-right: 5px
+    vertical-align: middle
+    cursor: pointer
+
+search-input()
+  width: 100%
+  margin-left: 0
+  background-color: primary-background
+  border-color: input-border
+  font-weight: normal
+  padding-left: 6px
+  padding-bottom: initial
+  border: 1px solid input-border
+  search-input-icon()
+  background-repeat: no-repeat
+  background-position: right 5px center
+
+.search-input,
+.replace-input,
+.CodeMirror-search-field
+  border-color: input-border
+  max-width: 500px
+  height: 25px
+  border-radius: 3px
+  border-style: solid
+  border-width: 1px
+  padding-left: 10px
+  font-size: 13px
+  background-repeat: no-repeat
+  background-position: right 5px center
+  transition: all .1s
+  background-color: primary-background
+  vertical-align: middle
+  &:focus
+    outline: none
+    box-shadow: 0px 0px 3px 0px input-border-focused
+
+.active .file-rename-input
+  color: primary-background
+.folder-rename-input
+  color: file-other // folders never get selected in the same way as files, so we highlight them differently
+.file-rename-input,
+.folder-rename-input
+  padding: 0
+  border: none
+  &:focus
+    outline: none
+    border: none
+
+.field-error,
+.field-warning
+  background-image: url(fire_engine) // from emoji.styl
+  background-repeat: no-repeat
+  background-size: 18px
+  background-position-x: 99%
+  border-color: warning
+
+.field-error-message,
+.field-warning-message
+  color: primary-background
+  background-color: error
+  display: inline-block
+  padding: 3px 6px
+  border-radius: 5px
+  font-weight: 600
+  font-size: 13px
+  border-top-left-radius: 0
+  border-top-right-radius: 0
+
+.field-warning
+  background-image: url(raisedHand) // from emoji.styl
+
+.field-warning-message
+  background-color: warning
+
+.tag-input-field
+  font-weight: normal
+  border-bottom: 1px solid secondary
+  padding-bottom: 2px
+  position: relative
+  .tag-pill
+    display: inline-block
+    color: primary-background
+    transition: all 0.1s
+    margin-bottom: 2px
+    &.active
+      margin-right: 3px
+      border-radius: 5px
+      padding: 2px 5px
+    .tag-name
+      display: inline
+    .tag-remove
+      display: inline
+      cursor: pointer
+      padding-left: 3px
+      dulled()
+      &:hover
+        opacity: 1
+  .tag-input
+    outline: none
+    border: none
+    width: 100px
+    background-color: transparent
+
+.fieldset
+  border: 0
+  margin: 0
+  padding: 0
+
+.input[type="radio"]
+  margin-right: 5px
+
+.textarea:not(.content-editable):not(.report-abuse-input)
+  height: 82px
+  border: 1px solid secondary
+  border-radius: 3px
+  padding: 6px
+  box-shadow: 4px 4px secondary
+  width: 100%
+  color: primary
+  background-color: secondary-background-hover
+
+p.content-editable
+  outline: none
+  border-bottom: 1px solid secondary
+  padding-bottom: 2px
+  position: relative
+  margin-bottom: vertical-rhythm
+  &.read-only
+    padding: 0
+    border-color: transparent
+    margin: 0
+
+.textarea.content-editable
+  resize: none
+  width: 100%
+  background-color: transparent
+  border-top: none
+  border-left: none
+  border-right: none
+  border-bottom: 1px solid secondary
+  outline: none
+
+.textarea.report-abuse-input
+  min-height: 100px

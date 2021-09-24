@@ -1,0 +1,6 @@
+import _defineProperty from "@babel/runtime/helpers/esm/defineProperty";
+
+var _COMPANY$CONTACT$DEAL;
+
+import { COMPANY, CONTACT, DEAL, ENGAGEMENT, FEEDBACK_SUBMISSION, LINE_ITEM, OBJECT_LIST, PRODUCT, QUOTE, TASK, TICKET, VISIT } from './ObjectTypes';
+export default (_COMPANY$CONTACT$DEAL = {}, _defineProperty(_COMPANY$CONTACT$DEAL, COMPANY, ['companyId']), _defineProperty(_COMPANY$CONTACT$DEAL, CONTACT, ['vid']), _defineProperty(_COMPANY$CONTACT$DEAL, DEAL, ['dealId']), _defineProperty(_COMPANY$CONTACT$DEAL, ENGAGEMENT, ['engagement', 'id']), _defineProperty(_COMPANY$CONTACT$DEAL, FEEDBACK_SUBMISSION, ['objectId']), _defineProperty(_COMPANY$CONTACT$DEAL, LINE_ITEM, ['objectId']), _defineProperty(_COMPANY$CONTACT$DEAL, OBJECT_LIST, ['listId']), _defineProperty(_COMPANY$CONTACT$DEAL, PRODUCT, ['objectId']), _defineProperty(_COMPANY$CONTACT$DEAL, QUOTE, ['objectId']), _defineProperty(_COMPANY$CONTACT$DEAL, TASK, ['engagement', 'id']), _defineProperty(_COMPANY$CONTACT$DEAL, TICKET, ['objectId']), _defineProperty(_COMPANY$CONTACT$DEAL, VISIT, ['domain']), _COMPANY$CONTACT$DEAL);

@@ -1,0 +1,6 @@
+'use es6'; // Panels
+
+export var FILTER_PANEL = 'FILTER_PANEL';
+export var OBJECT_BUILDER_PANEL = 'OBJECT_BUILDER_PANEL';
+export var PREVIEW_PANEL = 'PREVIEW_PANEL';
+export var EDIT_CARDS_PANEL = 'EDIT_CARDS_PANEL';

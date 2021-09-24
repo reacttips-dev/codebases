@@ -1,0 +1,168 @@
+.header
+  border-bottom: 1px solid section-line
+  padding-left: side-padding - 5px
+  padding-right: side-padding - 5px
+  position: relative
+  padding-top: 11px
+  padding-bottom: 11px
+  height: 49px
+
+  nav
+    display: flex
+    flex-direction: row
+
+  .header-project
+    position: relative
+    font-size: 14px
+    cursor: pointer
+    display: inline-block
+    position: relative
+    hover-highlight()
+    display: flex
+    align-items: center
+    line-height: 1
+    outline: none
+    .context
+      truncate()
+      display: inline-block
+      font-weight: normal
+      display: flex
+      align-items: center
+      max-width: 200px
+      @media(max-width: small-viewport-width)
+        max-width: 150px
+      @media(max-width: micro-viewport-width)
+        max-width: 100px
+    .project-name-loader
+      [data-module="Loader"]
+        width: 18px
+        height: 18px
+        margin: 0
+        margin-right: 5px
+    .project-avatar-image
+      width: 18px
+      height: 18px
+      background-color: section-line
+      border-radius: 3px
+      margin-right: 5px
+      flex-shrink: 0
+      &[src=""]
+         display: none
+    &:hover
+      .down-arrow
+        opacity: 1
+    .project-name
+      font-weight: bold
+      text-align: left
+      truncate()
+    .project-name-width-placeholder
+      width: 100px
+      height: 1em
+      font-weight: bold
+      text-align: left
+    &:active .project-name-width-placeholder
+      background: secondary-background-active
+
+  .show-app
+    margin-left: 5px
+    font-weight: 600
+    font-size: 14px
+    display: flex
+    align-items: center
+    line-height: 1
+    outline: none
+    @media(max-width: small-viewport-width)
+      margin-left: 0
+      .show-text
+        display: none
+    &:hover
+      .down-arrow
+        opacity: 1
+    .show-app-icon
+      width: 30px
+      height: 15px
+      margin-right: 4px
+
+  a.show-app
+    text-decoration: none
+
+  .status-badge
+    .status-loading
+      margin-left: 0
+      margin-top: -2px
+      background: transparent
+
+  .nav-item
+    padding-top: 5px
+    padding-bottom: 4px
+    padding-left: 5px
+    padding-right: 5px
+    white-space: nowrap
+    hover-highlight()
+    height: 28px
+
+  .show-app-wrapper
+    position: relative
+
+  .project-search-wrapper
+    margin-top: 1px
+    position: relative
+    margin-left: 16px
+    flex-grow: 2
+    @media(max-width: small-viewport-width)
+      position: static
+
+    &.expanded
+      position: absolute
+      width: 94%
+      margin: auto
+      z-index: 10
+      left: 1px
+
+    .search-input
+      width: 100%
+      padding-right: 26px
+
+  .sign-in-button
+    margin-left: 16px
+
+  .right-options
+    margin-left: auto
+    white-space: nowrap
+    .action
+      display: inline-block
+      cursor: pointer
+      margin-left: 16px
+      padding-right: 5px
+      user-select: none
+      hover-highlight()
+      &:hover
+        .down-arrow
+          opacity: 1
+      @media(max-width: small-viewport-width)
+        padding-right: 0
+
+  .hidden-on-small-viewport
+    @media(max-width: small-viewport-width)
+      display: none
+
+  .user-is-logging-in
+    display: inline-block
+    margin-right: 5px
+
+  .anon-avatar
+    background-size: 18px
+    background-position: center 9px
+
+  .account-pop-button
+    outline: none
+
+  .about-button
+    outline: none
+
+  .button
+    button-small()
+
+.no-header-styles
+  margin: 0px;
+  height: unset;

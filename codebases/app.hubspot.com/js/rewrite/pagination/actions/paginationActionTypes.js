@@ -1,0 +1,4 @@
+'use es6';
+
+export var PAGE_CHANGED = 'PAGE_CHANGED';
+export var PAGE_SIZE_CHANGED = 'PAGE_SIZE_CHANGED';

@@ -1,0 +1,8 @@
+'use es6';
+
+export var VISITOR_SENDER = 'VISITOR_SENDER';
+export var AGENT_SENDER = 'AGENT_SENDER';
+export var BOT_SENDER = 'BOT_SENDER';
+export var SYSTEM_SENDER = 'SYSTEM_SENDER';
+export var VID_SENDER = 'VID_SENDER';
+export var INTEGRATOR_SENDER = 'INTEGRATOR_SENDER';

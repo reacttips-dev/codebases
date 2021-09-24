@@ -1,0 +1,371 @@
+module.exports = {
+  "templateEditorInteraction": {
+    "name": "Template Editor Interaction",
+    "class": "interaction",
+    "properties": {
+      "screen": "string",
+      "action": [
+        "include-link-preview",
+        "viewed-suggestions",
+        "used-suggestions",
+        "used-all-suggestions",
+        "inserted-snippet",
+        "inserted-snippet-from-popover",
+        "inserted-content",
+        "inserted-content-from-popover",
+        "inserted-document",
+        "set-to-private",
+        "shared-with-everyone",
+        "inserted-meetings-link",
+        "inserted-contact-token",
+        "inserted-company-token",
+        "inserted-ticket-token",
+        "inserted-deal-token",
+        "inserted-sender-token",
+        "inserted-custom-token"
+      ]
+    },
+    "namespace": "template-editor"
+  },
+  "templateInteraction": {
+    "namespace": "templates",
+    "name": "Template Interaction",
+    "class": "interaction",
+    "properties": {
+      "screen": [
+        "index",
+        "onboarding"
+      ],
+      "action": [
+        "update-template",
+        "viewTemplateAccessRequestTooltip"
+      ],
+      "ownership": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  },
+  "fileManagerLib": {
+    "name": "File Manager Lib",
+    "class": "usage",
+    "properties": {
+      "hostApp": {
+        "type": "string",
+        "isOptional": true
+      },
+      "componentName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "drawerType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "pickerType": {
+        "type": "string",
+        "isOptional": true
+      },
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerSetPanelExploreFiles": {
+    "name": "Explore Files",
+    "class": "interaction",
+    "properties": {
+      "panel": "string",
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerExploreFiles": {
+    "name": "Explore Files",
+    "class": "interaction",
+    "properties": {
+      "fileType": {
+        "isOptional": true,
+        "type": [
+          "IMG",
+          "MOVIE",
+          "DOCUMENT",
+          "AUDIO",
+          "OTHER"
+        ]
+      },
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerSearchEfficiency": {
+    "name": "Search efficiency",
+    "class": "interaction",
+    "properties": {
+      "selectedObjectName": {
+        "type": "string",
+        "isOptional": true
+      },
+      "searchQueryWithoutExtension": {
+        "type": "string",
+        "isOptional": true
+      },
+      "extension": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "objectType": {
+        "isOptional": true,
+        "type": [
+          "file",
+          "folder"
+        ]
+      },
+      "searchType": {
+        "isOptional": true,
+        "type": [
+          "contains",
+          "equals",
+          "startsWith",
+          "endsWith",
+          "other"
+        ]
+      },
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerImageOptimization": {
+    "name": "Change image optimization setting",
+    "class": "interaction",
+    "properties": {
+      "setting": "string",
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerManageFiles": {
+    "name": "Manage Files",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "filetype": {
+        "isOptional": true,
+        "type": [
+          "IMG",
+          "MOVIE",
+          "DOCUMENT",
+          "AUDIO",
+          "OTHER"
+        ]
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerManageFolders": {
+    "name": "Manage Folders",
+    "class": "interaction",
+    "namespace": "file-picker",
+    "version": "v2",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  },
+  "fileManagerBrowseShutterstock": {
+    "name": "Browse Shutterstock",
+    "class": "interaction",
+    "namespace": "file-picker",
+    "version": "v2",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  },
+  "fileManagerAcceptVideoTOS": {
+    "name": "Accept Video TOS",
+    "class": "interaction",
+    "properties": {
+      "action": "boolean",
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerAlert": {
+    "name": "Alert interaction",
+    "class": "interaction",
+    "namespace": "file-picker",
+    "version": "v2",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  },
+  "fileManagerBulkImport": {
+    "name": "Bulk Import Images",
+    "class": "interaction",
+    "properties": {
+      "imageCount": "number",
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    },
+    "namespace": "file-picker",
+    "version": "v2"
+  },
+  "fileManagerVideoMigrationAlert": {
+    "name": "Video two",
+    "class": "interaction",
+    "namespace": "file-picker",
+    "version": "v2",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  },
+  "fileManagerVideoPQL": {
+    "name": "Video PQL",
+    "class": "interaction",
+    "namespace": "file-picker",
+    "version": "v2",
+    "properties": {
+      "action": {
+        "type": "string",
+        "isOptional": true
+      },
+      "target": {
+        "type": "string",
+        "isOptional": true
+      },
+      "withPanelNavigator": {
+        "type": "boolean",
+        "isOptional": true
+      }
+    }
+  }
+};

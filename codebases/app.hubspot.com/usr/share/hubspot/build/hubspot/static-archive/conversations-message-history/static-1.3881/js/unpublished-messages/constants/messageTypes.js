@@ -1,0 +1,5 @@
+'use es6';
+
+export var MESSAGE_TYPE_ID = '@type';
+export var ACTIVELY_PUBLISHING = 'ACTIVELY_PUBLISHING';
+export var FAILED_TO_PUBLISH = 'FAILED_TO_PUBLISH';

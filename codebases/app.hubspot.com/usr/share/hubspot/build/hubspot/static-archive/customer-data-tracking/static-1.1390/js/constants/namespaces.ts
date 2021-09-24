@@ -1,0 +1,10 @@
+export var CRM = 'crm';
+export var CALLING = 'calling';
+export var COMMUNICATOR = 'communicator';
+export var SETTINGS = 'settingsui';
+export var LISTS = 'lists';
+export var QUOTES = 'quotes-admin';
+export var PRODUCTS = 'products';
+export var LINEITEMS = 'line-items';
+export var REPORTING = 'reporting';
+export var TASKS = 'tasks';

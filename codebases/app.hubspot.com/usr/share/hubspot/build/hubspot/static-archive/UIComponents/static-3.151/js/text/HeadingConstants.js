@@ -1,0 +1,3 @@
+'use es6';
+
+export var HEADING_SIZES = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];

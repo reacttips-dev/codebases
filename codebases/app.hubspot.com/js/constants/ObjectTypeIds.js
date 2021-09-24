@@ -1,0 +1,4 @@
+'use es6';
+
+export var ENGAGEMENT_OBJECT_TYPE_ID = '0-4';
+export var SEQUENCE_ENROLLMENT_OBJECT_TYPE_ID = '0-68';

@@ -1,0 +1,12 @@
+export const JOBS_SEARCH = 'jobs_search';
+export const JOBS_CLICK = 'jobs_click';
+export const JOBS_SAVE_SEARCH = 'jobs_save_search';
+export const JOBS_VIEW = 'jobs_view';
+export const JOBS_DWELL = 'jobs_dwell';
+export const CLICK_SAVE_SEARCH = 'click_saved_search';
+export const CLICK_JOBS_BOOKMARK = 'click_jobs_bookmark';
+export const VIEW_BOOKMARKED_JOBS = 'view_bookmarked_jobs';
+export const JOBS_CLICK_MENUOPTION = 'jobs_click_menuOption';
+export const REMOVE_SAVED_SEARCH = 'remove_saved_search';
+export const EMAIL_SAVED_SEARCH = 'email_saved_search';
+export const VIEW_FOLLOWED_COMPANIES_JOBS = 'view_followed_companies_jobs';

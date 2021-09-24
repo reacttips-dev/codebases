@@ -1,0 +1,7 @@
+'use es6';
+
+export var SINGLE = 'SINGLE';
+export var INFINITE = 'INFINITE';
+export var INFINITE_WITH_BACKOFF = 'INFINITE_WITH_BACKOFF';
+export var MULTIPLE = 'MULTIPLE';
+export var MULTIPLE_WITH_BACKOFF = ' MULTIPLE_WITH_BACKOFF';

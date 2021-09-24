@@ -1,0 +1,47 @@
+'use es6';
+
+import 'I18n';
+import moment from 'moment-timezone';
+import 'moment/locale/de';
+import 'moment/locale/ja';
+import 'moment/locale/en-gb';
+import 'moment/locale/es';
+import 'moment/locale/zh-cn';
+import 'moment/locale/zh-hk';
+import 'moment/locale/nl';
+import 'moment/locale/en-au';
+import 'moment/locale/en-ca';
+import 'moment/locale/fi';
+import 'moment/locale/fr';
+import 'moment/locale/fr-ca';
+import 'moment/locale/it';
+import 'moment/locale/pt-br';
+import 'moment/locale/sv';
+import 'moment/locale/da';
+import 'moment/locale/pl';
+import 'moment/locale/cs';
+import 'moment/locale/es-do';
+import 'moment/locale/ko';
+import 'moment/locale/hr';
+import 'moment/locale/ro';
+import 'moment/locale/ru';
+import 'moment/locale/th';
+import 'moment/locale/vi';
+import 'moment/locale/id';
+import 'moment/locale/bn';
+import 'moment/locale/hu';
+import 'moment/locale/af';
+import 'moment/locale/ar';
+import 'moment/locale/ca';
+import 'moment/locale/bg';
+import 'moment/locale/sl';
+import 'moment/locale/uk';
+import 'moment/locale/tr';
+import 'moment/locale/he';
+import 'moment/locale/sk';
+import 'moment/locale/lt';
+import Cookies from 'js-cookie';
+window.Cookies = Cookies;
+window.moment = moment; // Lazy require is necessary to ensure Cookies and moment globals are set
+
+require('sporks!../coffee/setup-classic-loader');

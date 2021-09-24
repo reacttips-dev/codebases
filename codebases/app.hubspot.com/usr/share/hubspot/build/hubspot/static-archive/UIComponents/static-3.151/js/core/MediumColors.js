@@ -1,0 +1,14 @@
+'use es6';
+
+import { CANDY_APPLE_MEDIUM, CALYPSO_MEDIUM, KOALA, LORAX_MEDIUM, MARIGOLD_MEDIUM, NORMAN_MEDIUM, OZ_MEDIUM, SORBET_MEDIUM, THUNDERDOME_MEDIUM } from 'HubStyleTokens/colors';
+export default {
+  'candy-apple': CANDY_APPLE_MEDIUM,
+  calypso: CALYPSO_MEDIUM,
+  koala: KOALA,
+  lorax: LORAX_MEDIUM,
+  marigold: MARIGOLD_MEDIUM,
+  norman: NORMAN_MEDIUM,
+  oz: OZ_MEDIUM,
+  sorbet: SORBET_MEDIUM,
+  thunderdome: THUNDERDOME_MEDIUM
+};

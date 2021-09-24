@@ -1,0 +1,1 @@
+export var FOCUSABLE = "\n  a[href]:not([tabindex=\"-1\"]),\n  button:enabled:not([tabindex=\"-1\"]),\n  input:enabled:not([tabindex=\"-1\"]),\n  textarea:enabled:not([tabindex=\"-1\"]),\n  select:enabled:not([tabindex=\"-1\"]),\n  [tabindex]:not(:disabled):not([tabindex=\"-1\"]),\n  [contenteditable]:not(:disabled):not([tabindex=\"-1\"])\n";

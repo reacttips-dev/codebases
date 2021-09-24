@@ -1,0 +1,36 @@
+const ALLOWED_AGENTS = [
+  'Googlebot',
+  'Applebot',
+  'Bingbot',
+  'msnbot',
+  'Slurp',
+  'Googlebot-Image',
+  'baiduspider',
+  'seznambot',
+  'Teoma',
+  'Yandex',
+  'Yeti',
+  'msnbot-media',
+  'Googlebot-News',
+  'Googlebot-Video',
+  'Googlebot-Mobile',
+  'Mediapartners-Google',
+  'AdsBot-Google',
+  'DuckDuckBot',
+  'daumoa',
+  'OrangeBot',
+  'OrangeBot-Collector',
+  'StackRambler',
+  'Twitterbot',
+  'Mail.RU_Bot',
+  'naverbot',
+  'vebidoobot',
+  'MJ12bot',
+  '360Spider',
+  'Sogou',
+  'rogerbot',
+  'deepcrawl'
+];
+
+export const testCrawler = useragent =>
+  Boolean(ALLOWED_AGENTS.find(agent => useragent.toLowerCase().includes(agent.toLowerCase())));

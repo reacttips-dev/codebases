@@ -1,0 +1,31 @@
+// inherits from overlays.styl
+
+.asset-details-overlay
+  .pop-over-hero
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+    padding: 0
+    border-bottom: 1px solid secondary
+    background-image: linear-gradient(45deg, section-line 25%, transparent 25%), linear-gradient(-45deg, section-line 25%, transparent 25%), linear-gradient(45deg, transparent 75%, section-line 75%), linear-gradient(-45deg, transparent 75%, section-line 75%)
+    background-size: 20px 20px
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px
+
+    .asset-hero-image
+      display: block
+      margin-left: auto
+      margin-right: auto
+      max-width: 100%
+      max-height: 50vh
+      height: auto
+      width: auto
+      padding: 0
+
+  section
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+  input
+    text-align: center
+
+  .asset-url
+    word-break: break-all

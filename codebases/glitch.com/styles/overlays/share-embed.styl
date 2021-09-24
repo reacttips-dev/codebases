@@ -1,0 +1,59 @@
+.share-embed-overlay
+  max-width: 960px
+
+  .button-large
+    button-large()
+
+  .button-small
+    button-small()
+    button-secondary()
+
+  // Remove excess padding from global style
+  label.button
+    padding-top: 5px
+
+  .segmented-buttons
+    segmented-buttons()
+
+  .section-wrapper
+    background: primary-background
+    display: flex
+    flex-wrap: wrap
+    padding: 8px 10px
+
+    // Parent padding + child margin should result in 18px x 20px of padding on
+    // the outside and 20px of margin between children in all orientations
+    > *
+      margin: 10px
+
+  .section-embed
+    flex: 1 1 65%
+    overflow: hidden
+
+  .glitch-embed-wrap
+    height: 420px
+    margin-bottom: vertical-rhythm
+
+  .glitch-embed-iframe
+    border: 0
+    height: 100%
+    width: 100%
+
+  .private-icon
+    background-color: private
+    border-radius: 3px
+    margin-right: 4px
+    margin-top: -3px
+    padding: 10px
+
+  .section-embed-options
+    flex: 1
+    min-width: 275px;
+
+  .button-wrap
+    margin-right: 5px
+
+  .input-wrap textarea.textarea
+    height: 160px
+    margin-bottom: vertical-rhythm
+    width: 95%

@@ -1,0 +1,44 @@
+.footer-options
+  position: absolute
+  right: side-padding
+  bottom: 15px
+  z-index: 4
+
+  .button
+    button-small()
+
+  .button,
+  [data-module="Loader"]
+    display: inline-block
+
+  .button-wrap
+    margin: 0
+    margin-left: 10px
+
+  .new-stuff
+    display: inline-block
+    cursor: pointer
+    .new-stuff-doggo
+      width: 50px
+      height: 53px
+      background-size: cover
+      transform: translateY(29px)
+      margin: 0
+
+.footer-project-options
+  position: absolute
+  left: side-padding
+  font-size: 12px
+  color: primary
+  line-height: 160%
+  bottom: 15px
+  max-width: 360px
+  z-index: 5
+  transition: transform .4s ease
+  width: calc(100% - 40px)
+  > section:not(:first-child)
+    margin-top: vertical-rhythm
+  &.embed-helper-expanded // Move up when embed helper is on bottom
+    transform: translateY(-57px)
+  a
+    color: general-link

@@ -1,0 +1,74 @@
+module.exports = {
+  "draftFormatting": {
+    "name": "Edit",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "method": {
+        "type": "string",
+        "isOptional": true
+      },
+      "value": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "rich-text"
+  },
+  "draftLink": {
+    "name": "Edit",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "noFollow": "boolean",
+      "externalLink": "boolean",
+      "isImage": "boolean"
+    },
+    "namespace": "rich-text"
+  },
+  "draftImage": {
+    "name": "Edit",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "method": "string"
+    },
+    "namespace": "rich-text"
+  },
+  "draftToken": {
+    "name": "Edit",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "method": "string",
+      "tokenCategory": "string",
+      "tokenName": "string"
+    },
+    "namespace": "rich-text"
+  },
+  "draftVideo": {
+    "name": "Edit",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "method": "string"
+    },
+    "namespace": "rich-text"
+  },
+  "draftChangeColor": {
+    "name": "Edit",
+    "class": "interaction",
+    "properties": {
+      "action": "string",
+      "format": [
+        "forecolor",
+        "hilitecolor"
+      ],
+      "method": {
+        "type": "string",
+        "isOptional": true
+      }
+    },
+    "namespace": "rich-text"
+  }
+};

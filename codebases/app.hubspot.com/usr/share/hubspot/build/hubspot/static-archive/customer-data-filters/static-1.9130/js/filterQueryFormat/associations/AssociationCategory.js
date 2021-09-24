@@ -1,0 +1,4 @@
+'use es6';
+
+export var HUBSPOT_DEFINED = 'HUBSPOT_DEFINED';
+export var USER_DEFINED = 'USER_DEFINED';

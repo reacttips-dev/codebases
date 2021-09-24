@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "0.version.ba796a0a855769cf4d0c.worker.js"

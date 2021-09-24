@@ -1,0 +1,24 @@
+'use es6';
+
+export var ADS_PROPERTY = 'Ads';
+export var COMPANY_PROPERTY = 'CompanyProperty';
+export var COMPANY_PROPERTY_VALUE = 'CompanyPropertyValue';
+export var CONTACT_PROPERTY = 'ContactProperty';
+export var CTA = 'CTA';
+export var DEAL_PROPERTY = 'DealProperty';
+export var EMAIL_CAMPAIGN = 'Email';
+export var EMAIL_SUBSCRIPTION = 'Subscriptions';
+export var ENGAGEMENT_PROPERTY = 'Engagement';
+export var EVENT = 'Event';
+export var FORM = 'FormSubmission';
+export var IMPORT = 'Import';
+export var INTEGRATION = 'IntegrationsTimeline';
+export var LINE_ITEM_PROPERTY = 'LINE_ITEM';
+export var LIST_MEMBERSHIP = 'ListMembership';
+export var PAGE_VIEW = 'PageView';
+export var PRODUCT_PROPERTY = 'PRODUCT';
+export var PROPERTY_VALUE = 'PropertyValue';
+export var SURVEY_MONKEY = 'SurveyMonkey';
+export var SURVEY_MONKEY_QUESTION = 'SurveyMonkeyQuestion';
+export var WEBINAR = 'Webinar';
+export var WORKFLOW = 'Workflow';

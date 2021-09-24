@@ -1,0 +1,5 @@
+'use es6';
+
+export var SEND_TEMPLATE = 'SEND_TEMPLATE';
+export var SCHEDULE_TASK = 'SCHEDULE_TASK';
+export var FINISH_ENROLLMENT = 'FINISH_ENROLLMENT';

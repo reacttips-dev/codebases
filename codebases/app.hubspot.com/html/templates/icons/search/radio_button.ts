@@ -1,0 +1,1 @@
+export default "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 22 22\"><g fill=\"none\" fill-rule=\"evenodd\" transform=\"translate(1 1)\"><circle cx=\"10\" cy=\"10\" r=\"10\" class=\"private-radio__circle\" stroke=\"currentColor\" stroke-width=\"1.5\"></circle><circle class=\"private-radio__dot\" id=\"a\" cx=\"10\" cy=\"10\" r=\"5\"></circle></g></svg>";

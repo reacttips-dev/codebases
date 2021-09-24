@@ -1,0 +1,42 @@
+'use es6';
+
+var VIDEO_2_LEARN_MORE_LINK = 'learn more video 2';
+var MEDIA_BRIDGE_LEARN_MORE_LINK = 'learn more media bridge';
+var FREE_VIYDARD_ACCOUNT = 'check free vidyard account';
+var UPGRADE_VIYDARD_ACCOUNT = 'upgrade vidyard account';
+var MANUAL_MIGRATION_LEARN_MORE = 'manual migration learn more';
+var USE_VIDYARD_WITH_HUBSPOT = 'use vidyard with hubspot learn more';
+export var UsageTrackingLinkTypes = {
+  VIDEO_2_LEARN_MORE_LINK: VIDEO_2_LEARN_MORE_LINK,
+  MEDIA_BRIDGE_LEARN_MORE_LINK: MEDIA_BRIDGE_LEARN_MORE_LINK,
+  FREE_VIYDARD_ACCOUNT: FREE_VIYDARD_ACCOUNT,
+  UPGRADE_VIYDARD_ACCOUNT: UPGRADE_VIYDARD_ACCOUNT,
+  MANUAL_MIGRATION_LEARN_MORE: MANUAL_MIGRATION_LEARN_MORE,
+  USE_VIDYARD_WITH_HUBSPOT: USE_VIDYARD_WITH_HUBSPOT
+};
+var CLICK_LINK = 'click link';
+var OPT_IN = 'opt in';
+var OPT_OUT = 'opt out';
+var REMIND_ME_LATER = 'remind me later';
+var PAID_VY_USER_ALERT_VIEWED = 'paid vidyard user viewed alert';
+var FREE_VY_USER_ALERT_VIEWED = 'free vidyard alert viewed';
+var PERMISSION_TO_MANUALLY_MIGRATE = 'permission to manually migrate';
+export var UsageTrackingActions = {
+  CLICK_LINK: CLICK_LINK,
+  OPT_IN: OPT_IN,
+  OPT_OUT: OPT_OUT,
+  REMIND_ME_LATER: REMIND_ME_LATER,
+  PAID_VY_USER_ALERT_VIEWED: PAID_VY_USER_ALERT_VIEWED,
+  FREE_VY_USER_ALERT_VIEWED: FREE_VY_USER_ALERT_VIEWED,
+  PERMISSION_TO_MANUALLY_MIGRATE: PERMISSION_TO_MANUALLY_MIGRATE
+};
+var REMIND_ME_LATER_ALERT = 'remind me later alert';
+var PAID_VY_ACCOUNT_ALERT = 'paid vidyard account alert';
+var FREE_VY_ACCOUNT_ALERT = 'free vidyard account alert';
+var PORTAL_BEING_MIGRATED = 'portal already being migrated alert';
+export var AlertTypes = {
+  REMIND_ME_LATER_ALERT: REMIND_ME_LATER_ALERT,
+  PAID_VY_ACCOUNT_ALERT: PAID_VY_ACCOUNT_ALERT,
+  FREE_VY_ACCOUNT_ALERT: FREE_VY_ACCOUNT_ALERT,
+  PORTAL_BEING_MIGRATED: PORTAL_BEING_MIGRATED
+};

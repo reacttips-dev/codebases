@@ -1,0 +1,63 @@
+.panel
+  background-color: secondary-background
+  border-top: 1px solid line-on-secondary-background
+  display: flex
+  flex-direction: column
+  height: 33%
+  min-height: 150px
+  position: relative
+  -webkit-overflow-scrolling: touch
+  @media (max-width: 600px)
+    max-height: calc(100% - 50px)
+
+  header
+    padding-left: side-padding
+    padding-right: side-padding
+    margin-bottom: 10px
+
+  h1
+    display: inline-block
+    font-size: 14px
+    margin: 0
+    line-height: 2
+
+  header
+    background-color: secondary-background
+    border-bottom: 1px solid section-line
+    display: flex;
+    position: sticky
+    top: 0
+    align-items: center;
+    .controls
+      margin-left: 10px
+      display: inline-flex
+      .button-wrap
+        display: inline-block
+        margin: 0
+        margin-right: 5px
+
+  p
+    max-width: 500px
+    margin: 0
+    margin-bottom: vertical-rhythm
+    a
+      color: general-link
+      &:hover
+        text-decoration: none
+
+  .button:not(.button-cta)
+    button-small()
+    button-secondary-on-secondary-background()
+  .segmented-buttons
+    segmented-buttons()
+    .button
+      button-secondary-on-secondary-background()
+
+  > resizer, div.resizer
+    cursor: ns-resize
+    display: block
+    position: absolute
+    height: 10px
+    top: -1px
+    z-index: 3
+    width: 100%

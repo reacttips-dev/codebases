@@ -1,0 +1,10 @@
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "th": { "i18n": { "duration": { "seconds": "{{ seconds }} \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35", "minutes": "{{ minutes }} \u0E19\u0E32\u0E17\u0E35", "hours": "{{ hours }} \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07", "hoursAndMinutes": "{{ hours }} \u0E0A\u0E31\u0E48\u0E27\u0E42\u0E21\u0E07 {{ minutes }} \u0E19\u0E32\u0E17\u0E35", "days": "{{ days }} \u0E27\u0E31\u0E19", "shortForm": { "seconds": "{{ seconds }} \u0E27\u0E34\u0E19\u0E32\u0E17\u0E35", "minutes": "{{ minutes }} \u0E19\u0E32\u0E17\u0E35", "hours": "{{ hours }} \u0E0A\u0E21.", "days": "{{ days }} \u0E27\u0E31\u0E19", "hoursAndMinutes": "{{ hours }} \u0E0A\u0E21. {{ minutes }} \u0E19\u0E32\u0E17\u0E35" } }, "dateTime": { "quarterAndYear": "\u0E44\u0E15\u0E23\u0E21\u0E32\u0E2A {{quarterNumber}} {{yearNumber}}" }, "numberRepresentation": { "fraction": "{{ numerator }}/{{ denominator }}", "numberWithCurrencyCode": "{{amountNumberValue}} {{currencyCode}}", "phoneNumberWithExtension": "{{phoneNumber}} \u0E15\u0E48\u0E2D {{extension}}" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+

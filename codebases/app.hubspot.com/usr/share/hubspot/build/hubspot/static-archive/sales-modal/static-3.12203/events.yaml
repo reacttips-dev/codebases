@@ -1,0 +1,82 @@
+module.exports = {
+  "pageView": {
+    "name": "Pageview",
+    "class": "view",
+    "properties": {
+      "app": "string"
+    },
+    "namespace": "sequences"
+  },
+  "sequencesUsage": {
+    "name": "Usage",
+    "class": "usage",
+    "properties": {
+      "action": "string",
+      "subscreen": [
+        "enroll"
+      ]
+    },
+    "namespace": "sequences"
+  },
+  "sentBulkSequence": {
+    "name": "Sent Bulk Sequence",
+    "class": "usage",
+    "properties": {
+      "count": {
+        "type": "number"
+      },
+      "sentTo": {
+        "type": "number"
+      },
+      "error": {
+        "type": "number"
+      },
+      "sequenceId": {
+        "type": "number"
+      }
+    },
+    "namespace": "sequences"
+  },
+  "dailyEnrollLimit": {
+    "name": "daily enroll limit hit",
+    "class": "usage",
+    "namespace": "sequences"
+  },
+  "dailyLimitNotices": {
+    "name": "Daily Limit Notices",
+    "class": "interaction",
+    "properties": {
+      "type": {
+        "type": "string"
+      },
+      "source": {
+        "type": "string"
+      }
+    },
+    "namespace": "sequences"
+  },
+  "salesModalTemplatesInteraction": {
+    "namespace": "templates",
+    "name": "Interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    }
+  },
+  "salesModalSequencesInteraction": {
+    "namespace": "sequences",
+    "name": "Interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    }
+  },
+  "salesModalDocumentsInteraction": {
+    "namespace": "documents",
+    "name": "Interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    }
+  }
+};

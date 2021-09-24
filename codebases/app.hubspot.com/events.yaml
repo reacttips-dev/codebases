@@ -1,0 +1,26 @@
+module.exports = {
+  "notificationInteraction": {
+    "name": "notification-interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    },
+    "namespace": "notification-floating-alert"
+  },
+  "notificationUsage": {
+    "name": "notification-interaction",
+    "class": "usage",
+    "properties": {
+      "action": "string"
+    },
+    "namespace": "notification-floating-alert"
+  },
+  "browserNotificationsInteraction": {
+    "namespace": "browser-notifications",
+    "name": "browser-notifications-interaction",
+    "class": "interaction",
+    "properties": {
+      "action": "string"
+    }
+  }
+};

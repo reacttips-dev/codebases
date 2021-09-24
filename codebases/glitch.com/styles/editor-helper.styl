@@ -1,0 +1,29 @@
+.editor-helper
+  padding: 10px 20px 5px
+  top: 0
+  position: relative
+  background: primary-background
+  border-bottom: 1px solid primary-background
+  z-index: 5
+
+  .editor-read-only &
+    background-color: secondary-background
+    border-color: secondary-background
+
+.editor-helper-contents
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+
+  .button
+    button-small()
+    button-secondary()
+    margin: 0 5px 5px 0
+
+    &:not(.editor-helper-bar-control) .icon
+      margin-left: 5px;
+
+    [data-module="Loader"]
+      width: 16px;
+      height: 16px;
+      margin-left: 3px;

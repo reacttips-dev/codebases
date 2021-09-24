@@ -1,0 +1,3 @@
+'use es6';
+
+export var SESSION_EXPIRY_TIME_APPROXIMATION_IN_MS = 30 * 60 * 1000;

@@ -1,0 +1,22 @@
+'use es6';
+
+import * as PropertyTypes from 'customer-data-objects/property/PropertyTypes';
+export var BooleanDisplayType = PropertyTypes.BOOLEAN;
+export var CountDisplayType = 'COUNT';
+export var CtaDisplayType = 'CTA';
+export var DateDisplayType = PropertyTypes.DATE;
+export var DatetimeDisplayType = PropertyTypes.DATE_TIME;
+export var DefaultDisplayType = 'DEFAULT';
+export var EmailLinkDisplayType = 'EMAIL_LINK';
+export var EmailSubscriptionDisplayType = 'EMAIL_SUBSCRIPTION';
+export var EnumerationDisplayType = PropertyTypes.ENUMERATION;
+export var NoDisplayType = 'NONE';
+export var NumberDisplayType = PropertyTypes.NUMBER;
+export var PercentageDisplayType = 'percent';
+export var PropertyDisplayType = 'PROPERTY';
+export var RollingDateDisplayType = 'ROLLING_DATE';
+export var RollingInequalityDisplayType = 'ROLLING_INEQUALITY';
+export var RollingPropertyUpdatedDisplayType = 'ROLLING_PROPERTY_UPDATED';
+export var RollingWithUnitDisplayType = 'ROLLING_WITH_UNIT';
+export var StringDisplayType = PropertyTypes.STRING;
+export var RegexString = 'REGEX_STRING';

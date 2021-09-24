@@ -1,0 +1,13 @@
+import get from 'transmute/get';
+export var getFormattedNumber = get('formattedNumber');
+export var getRawNumber = get('rawNumber');
+export var getCountryCode = get('countryCode');
+export var getExtension = get('extension');
+export var getIsFreemium = get('isFreemium');
+export var getIsValid = get('isValid');
+export var getRequiresTwoPartyConsent = get('requiresTwoPartyConsent');
+export var getIsBlacklisted = get('isBlacklisted');
+export var getSourcePropertyName = get('sourcePropertyName');
+export var getGeoPermission = get('geoPermission');
+export var getPhoneNumberInfo = get('phoneNumberInfo');
+export var getLabel = get('label');

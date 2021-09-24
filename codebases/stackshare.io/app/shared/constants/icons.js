@@ -1,0 +1,13 @@
+export const ADD_ICON = 'add';
+export const EDIT_ICON = 'edit';
+export const DELETE_ICON = 'delete';
+export const SETTINGS_ICON = 'settings';
+export const EMBED_ICON = 'embed';
+export const GITHUB_ICON = 'github';
+export const CHECK_MARK_ICON = 'check-mark';
+export const COMPANY_ICON = 'company';
+export const TEAM_ICON = 'team';
+export const MEMBERS_ICON = 'members';
+export const MEMBERS_LEAVE_ICON = 'membersLeave';
+export const APPLICATIONS_ICON = 'applications';
+export const PAYMENT_OPTIONS_ICON = 'payment-options';

@@ -1,0 +1,18 @@
+import _defineProperty from "@babel/runtime/helpers/esm/defineProperty";
+
+var _i18nKeysByUpgradePro;
+
+import I18n from 'I18n';
+import isValidI18nKey from 'I18n/utils/isValidI18nKey';
+import * as UpgradeProducts from 'self-service-api/constants/UpgradeProducts';
+export var i18nKeysByUpgradeProduct = (_i18nKeysByUpgradePro = {}, _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SALES_PRO, 'salesPro'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SALES_STARTER, 'salesStarter'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SALES_PROFESSIONAL, 'salesProfessional'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SALES_ENTERPRISE, 'salesEnterprise'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SUITE_STARTER, 'suiteStarter'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.MARKETING_STARTER, 'marketingStarter'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.MARKETING_STARTER_EMAIL, 'marketingStarterEmail'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.MARKETING_BASIC, 'marketingBasic'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.MARKETING_PRO, 'marketingProfessional'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.MARKETING_ENTERPRISE, 'marketingEnterprise'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SERVICE_STARTER, 'serviceStarter'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SERVICE_PROFESSIONAL, 'serviceProfessional'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.SERVICE_ENTERPRISE, 'serviceEnterprise'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.OPERATIONS_STARTER, 'operations-starter'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.OPERATIONS_PROFESSIONAL, 'operations-professional'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.ADS, 'ads'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.WEBSITE, 'website'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.REPORTING, 'reporting'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.DEDICATED_IP, 'dedicatedIp'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.TRANSACTIONAL_EMAIL, 'transactionalEmail'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.ADDITIONAL_ACCOUNT, 'additionalAccount'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.DESIGNATED_TECHNICAL_SUPPORT, 'designatedTechnicalSupport'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.IN_PERSON_TRAINING, 'inPersonTraining'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.ENTERPRISE, 'enterprise'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.CMS_ENTERPRISE, 'cmsEnterprise'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.CMS_PROFESSIONAL, 'cmsProfessional'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.CMS_STARTER, 'cmsStarter'), _defineProperty(_i18nKeysByUpgradePro, UpgradeProducts.CUSTOM_SSL, 'customSsl'), _i18nKeysByUpgradePro);
+export var getProductNameText = function getProductNameText(upgradeProduct) {
+  var productTitleKey = i18nKeysByUpgradeProduct[upgradeProduct];
+  return I18n.text("upgrades.products." + productTitleKey);
+};
+export var getProductNameTextOrDefault = function getProductNameTextOrDefault(upgradeProduct) {
+  var productTitleKey = i18nKeysByUpgradeProduct[upgradeProduct];
+  var messageKey = "upgrades.products." + productTitleKey;
+  if (isValidI18nKey(messageKey)) return I18n.text(messageKey);
+  return I18n.text('upgrades.products.default');
+};

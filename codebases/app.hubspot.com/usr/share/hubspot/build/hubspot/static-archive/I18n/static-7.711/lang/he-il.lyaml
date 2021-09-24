@@ -1,0 +1,10 @@
+
+(function() {
+  var module = {};
+  var result = {};
+  module.exports = { "he-il": { "i18n": { "duration": { "seconds": "{{ seconds }} \u05E9\u05E0\u05D9\u05D5\u05EA", "minutes": "{{ minutes }} \u05D3\u05E7\u05D5\u05EA", "hours": "{{ hours }} \u05E9\u05E2\u05D5\u05EA", "hoursAndMinutes": "{{ hours }} \u05E9\u05E2\u05D5\u05EA {{ minutes }} \u05D3\u05E7\u05D5\u05EA", "days": "{{ days }} \u05D9\u05DE\u05D9\u05DD", "shortForm": { "seconds": "{{ seconds }} \u05E9\u05E0'", "minutes": "{{ minutes }} \u05D3\u05E7'", "hours": "{{ hours }} \u05E9\u05E2'", "days": "{{ days }} \u05D9\u05DE'", "hoursAndMinutes": "{{ hours }} \u05E9\u05E2' {{ minutes }} \u05D3\u05E7'" } }, "dateTime": { "quarterAndYear": "\u05E8\u05D1\u05E2\u05D5\u05DF{{quarterNumber}} {{yearNumber}}" }, "numberRepresentation": { "fraction": "{{ numerator }}/{{ denominator }}", "numberWithCurrencyCode": "{{amountNumberValue}} {{currencyCode}}", "phoneNumberWithExtension": "{{phoneNumber}}, \u05E9\u05DC\u05D5\u05D7\u05D4 {{extension}}" } } } };
+  result.translations = module.exports;
+  hns('I18n', result)
+})();
+
+

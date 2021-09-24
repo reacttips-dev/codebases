@@ -1,0 +1,7 @@
+'use es6';
+
+export var LOAD_IMAGE = 'LOAD_IMAGE';
+export var UPLOAD_PROGRESS = 'UPLOAD_PROGRESS';
+export var UPLOAD_COMPLETE = 'UPLOAD_COMPLETE';
+export var UPLOAD_FAILED = 'UPLOAD_FAILED';
+export var INSERT_IMAGE = 'INSERT_IMAGE';
