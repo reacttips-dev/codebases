@@ -1,0 +1,2 @@
+import{c as a}from"./chunk-H7BUDTAB.js";import{b as f,c as x}from"./chunk-FJD4SS3V.js";import{a as l,c as p,f as s,i as u}from"./chunk-ORNWO27Z.js";var o=s(u());var c=i=>{var e=i,{avatars:m}=e,k=p(e,["avatars"]);return o.default.createElement(f,null,m.sort((t,r)=>(t==null?void 0:t.url)?-1:(r==null?void 0:r.url)?1:0).map((t,r)=>o.default.createElement(x,l({key:`avatarstack-${r}`,ml:!r||-17,style:{zIndex:m.length-r}},k),o.default.createElement(a,l({},t)))))},A=c;export{A as a};
+//# sourceMappingURL=chunk-KDFOZJXC.js.map

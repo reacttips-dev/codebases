@@ -1,0 +1,4 @@
+import{b as l,c as x}from"./chunk-JXNVBN57.js";import{b as d,c as e}from"./chunk-FJD4SS3V.js";import{a as g}from"./chunk-V454E5QD.js";import{d as t}from"./chunk-CL7MNENB.js";import{a as i,c as m,f as n,i as c}from"./chunk-ORNWO27Z.js";var o=n(c()),s=n(g());var F=(0,s.default)(d)`
+  height: calc(100vh - 60px - 48px - 15px);
+`,a=h=>{var p=h,{id:r,children:f}=p,u=m(p,["id","children"]);return o.default.createElement(F,i({textAlign:"center",flexDirection:"column"},u),o.default.createElement(e,{m:"auto",px:3},o.default.createElement(e,{mb:2},o.default.createElement(x,{as:"h2",level:"md"},o.default.createElement(t,{id:`${r}.notFound.title`}))),f||o.default.createElement(l,{level:"sm"},o.default.createElement(t,{id:`${r}.notFound.description`}))))};a.defaultProps={id:"app"};var T=a;export{T as a};
+//# sourceMappingURL=chunk-JU2GENTG.js.map

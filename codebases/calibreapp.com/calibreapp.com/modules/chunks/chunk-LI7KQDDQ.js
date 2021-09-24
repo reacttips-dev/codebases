@@ -1,0 +1,2 @@
+import{b as r,f as l}from"./chunk-JXNVBN57.js";import{f as s,i as x}from"./chunk-ORNWO27Z.js";var o=s(x());var m=({metric:e,value:t,metadata:g})=>o.default.createElement(o.default.Fragment,null,o.default.createElement(r,{as:"div",color:"grey50"},o.default.createElement(l,{color:"grey50"},e.shortLabel||e.label)),o.default.createElement(r,{as:"div",color:"grey50",level:"lg",mb:3},t),o.default.createElement(r,{as:"div",level:"xs",color:"grey100"},g)),y=m;export{y as a};
+//# sourceMappingURL=chunk-LI7KQDDQ.js.map

@@ -1,0 +1,2 @@
+import{i as p}from"./chunk-JXNVBN57.js";import{a as o,c as m,f as d,i as g}from"./chunk-ORNWO27Z.js";var t=d(g());var f=i=>{var a=i,{items:e}=a,l=m(a,["items"]);return t.default.createElement(p,o({as:"div"},l),e.map((n,r)=>t.default.createElement(t.default.Fragment,{key:r},n,r===e.length-1?null:" \u2219 ")))};f.defaultProps={fontSize:0};var u=f;export{u as a};
+//# sourceMappingURL=chunk-VSZVUKJA.js.map

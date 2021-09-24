@@ -21,6 +21,7 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ---
 ### C
 * Coursera (https://coursera.org) - education / Cong Nguyen, 2021/09/22
+* Calibre (https://calibreapp.com/) - Site monitoring / Nguy Thang, 2021/09/24
 
 ---
 ### D
