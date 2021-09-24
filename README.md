@@ -7,7 +7,9 @@ All of codebases in this repo should be reviewed by our team, to ensure they are
 ## How we get the source code?
 This picture show how we get the source code.
 
-<img width="100%" alt="how to download website source code" src="https://user-images.githubusercontent.com/51266596/134523169-60b69193-856b-45c5-ad89-6044157713c5.jpg">
+<img width="1293" alt="Screen Shot 2021-09-24 at 21 20 37" src="https://user-images.githubusercontent.com/13061304/134693661-e6a53170-505f-44b9-bef0-3c181d6a5d18.png">
+
+
 
 ## Index
 
