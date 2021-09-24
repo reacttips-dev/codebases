@@ -1,0 +1,176 @@
+results-list()
+  padding: half-vertical-rhythm
+  -webkit-overflow-scrolling: touch
+
+  a
+    text-decoration: none
+
+  .results
+    margin: 0
+    padding-left: 0
+
+    .result
+      display: block
+      position: relative
+      text-decoration: none
+      &:hover,
+      &.hover,
+      &:focus,
+      &.active
+        background-color: general-link
+      > .result
+        &:last-child
+          border-bottom: 0
+      &.project-result
+        appearance: none
+        -moz-appearance: none
+        -webkit-appearance: none
+        font-weight: 400
+        border-top: none
+        border-left: none
+        border-right: none
+        height: unset
+        width: 100%
+        text-align: left
+
+  .result
+    list-style-type: none
+    cursor: pointer
+    border-bottom: 1px solid section-line
+    padding: half-vertical-rhythm
+    padding-top: vertical-rhythm
+    padding-bottom: vertical-rhythm
+    &:hover,
+    &.hover,
+    &:focus,
+    &.active
+      border-radius: 3px
+      outline: none
+      color: primary-background
+      .result-tip
+        color: primary
+      .result-description
+        color: secondary-hover-on-color
+      .extension-type
+        color: primary-background
+        background-color: transparent
+      .result-name,
+      .result-code
+        color: primary-background
+      .button
+        color: primary-background
+        background-color: file-data
+        border-color: primary-background
+
+    img, svg
+      margin: 0
+      margin-right: 5px
+      width: 16px;
+      object-fit: contain;
+
+    .button
+      button-small()
+      position: absolute
+      right: 6px
+      top: 15px
+      &:hover
+        background-color: secondary-background
+        color: primary
+        border-color: primary
+
+  .other
+    .result
+      &:hover,
+      &.hover,
+      &:focus
+        background-color: file-other
+  .image
+    .result
+      &:hover,
+      &.hover,
+      &:focus
+        background-color: file-image
+
+  .logic
+    .result
+      &:hover,
+      &.hover,
+      &:focus
+        background-color: file-logic
+
+  .data
+    .result
+      &:hover,
+      &.hover,
+      &:focus
+        background-color: file-data
+
+  .info
+    .result
+      &:hover,
+      &.hover,
+      &:focus
+        background-color: file-info
+
+  .view
+    .result
+      &:hover,
+      &.hover,
+      &:focus
+        background-color: file-view
+
+  .style
+    .result
+      &:hover,
+      &.hover,
+      &:focus
+        background-color: file-styles
+
+  .result-tip
+    display: inline-block
+    background-color: line-added-active
+    border-radius: 5px
+    margin-right: 5px
+    font-size: 12px
+    font-weight: 600
+    padding: 2px 6px
+    // &.result-tip-outdated
+    //   background-color: line-added-active
+
+  .result-loader
+    display: inline
+    [data-module="Loader"]
+      display: inline-block
+      margin-left: 5px
+      width: 16px
+      height: 16px
+
+  .result-description,
+  .result-code
+    color: text-on-secondary-background
+    word-break: break-word
+    font-family: monospace
+    font-size: 12px
+    line-height: 23px
+
+  .result-name,
+  .result-code
+    color: primary
+    display: inline-block
+
+  .see-all
+    color: text-on-secondary-background
+    border-bottom: none
+    padding-bottom: 6px
+
+  .result-match
+    font-weight: 600
+
+  .avatar
+    margin-right: 5px
+    display: inline-block
+    vertical-align: sub
+    width: 18px
+    height: auto
+    border-radius: 3px
+    background-color: transparent

@@ -1,0 +1,64 @@
+.assets
+  padding: 20px
+  padding: 0
+  width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  align-items: center
+  align-content: stretch
+  justify-content: center
+
+  .asset
+    margin: 10px
+    cursor: zoom-in
+    text-align: center
+    position: relative
+    padding: 4px;
+    border-radius: 3px;
+
+    &:hover, &:focus
+      background-color: section-line
+      outline: none
+      .asset-thumbnail-name.show-on-hover
+        opacity: 1
+
+  .asset-background
+    background-image: linear-gradient(45deg, section-line 25%, transparent 25%), linear-gradient(-45deg, section-line 25%, transparent 25%), linear-gradient(45deg, transparent 75%, section-line 75%), linear-gradient(-45deg, transparent 75%, section-line 75%)
+    background-size: 20px 20px
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px
+    display: inline-block
+
+  .asset-thumbnail
+    display: block
+    max-width: 220px
+    height: auto
+    @media(max-width: 500px)
+      max-width: 150px
+      max-height: 150px
+
+  .asset-thumbnail-other
+    max-width: 140px
+    max-height: 140px
+
+  .asset-thumbnail-name
+    font-size: 12px
+    max-width: 220px
+    overflow: hidden
+    text-overflow: ellipsis
+    word-break: break-word
+    margin: 4px
+    &.show-on-hover
+      transition: opacity .2s ease
+      opacity: 0
+
+  .retina-badge
+    position: absolute
+    top: 5px
+    right: 5px
+    background-color: rgba(0,0,0,0.15)
+    color: white
+    font-weight: 600
+    font-size: 12px
+    border-radius: 3px
+    padding: 3px 5px

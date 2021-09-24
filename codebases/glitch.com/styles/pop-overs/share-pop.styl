@@ -1,0 +1,45 @@
+// inherits from pop-overs.styl
+
+.share-pop
+  left: 3px
+  top: 15px
+  max-height: calc(100vh - 90px)
+  overflow: visible
+  [data-module="Loader"]
+    height: 21px
+    width: 21px
+
+  .secrets-sidebar-icon
+    sidebar-item-with-icon()
+    secrets-file-icon()
+    background-position: initial
+    margin: 0
+
+  .show-app-icon
+    width: 24px
+    height: 12px
+    background-size: contain
+    margin-right: 2px
+    cursor: default
+    vertical-align: 0px
+    dulled()
+
+  .private-background
+    background-color: private !important
+
+  .is-private
+    background-color: private
+    border-radius: 3px
+    margin-right: 4px
+    padding: 10px
+    background-position: center
+    margin-top: -3px
+
+  .share-link
+    width: 85%
+    display: block
+    overflow: hidden
+    white-space: nowrap
+
+  .input
+    margin-bottom: unset

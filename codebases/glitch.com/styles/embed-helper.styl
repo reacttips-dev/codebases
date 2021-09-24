@@ -1,0 +1,116 @@
+helper-margin = 20px
+helper-padding-side = 10px
+helper-padding-top = 8px
+helper-icon-width = 25px
+helper-height = 25px
+helper-box-height = helper-height + (2 * helper-padding-top)
+helper-icon-box-width = helper-icon-width + (2 * helper-padding-side)
+
+helper-small-width = 480px
+
+.embed-helper
+  background-color: secondary-background
+  display: flex
+  font-size: 14px
+  padding: helper-padding-top helper-padding-side
+  height: helper-box-height
+  line-height: helper-height
+  z-index: 1
+
+  > *
+    margin-right: 5px
+
+    &:last-child
+      margin-right: 0
+
+  // Used for hiding things without affecting the flex layout, like attribution
+  .invisible
+    visibility: hidden
+
+  .helper-icon
+    flex: 0 0 auto;
+    margin-left: 5px
+
+    .glitch-logo
+      background-size: helper-icon-width helper-height
+      display: inline-block
+      height: helper-height
+      width: helper-icon-width
+
+  .button
+    button-small()
+    button-secondary()
+    height: helper-height
+    line-height: 1em
+
+    [data-module="Icon"]
+      height: 21px // Button height - padding and border
+      margin-left: 0
+
+  .project-name
+    flex: 0 1 auto
+    font-weight: 600
+    max-width: 40%
+    overflow: hidden
+    text-decoration: none
+    text-overflow: ellipsis
+    white-space: nowrap
+
+    @media(max-width: helper-small-width)
+      max-width: initial
+
+    .project-avatar
+      border-radius: 5px
+      height: helper-height
+      margin-right: 5px
+      vertical-align: middle
+      width: helper-height
+
+    &:hover
+      text-decoration: underline
+
+  .preposition
+    // Hide in small viewports to make room
+    @media(max-width: helper-small-width)
+      display: none
+
+  .collaborators
+    flex: 1
+
+    .grouped-avatars .avatar
+      margin-bottom: 16px
+
+    .person
+      // Hide in small viewports to make room
+      @media(max-width: helper-small-width)
+        display: none
+
+  .share-project
+    position: relative
+
+    // Left and top unset to override default pop-over styles
+    .embed-share-pop
+      bottom: helper-height
+      left: unset
+      line-height: 17px
+      position: absolute
+      right: 0
+      top: unset
+      width: 330px
+
+      @media(max-width: helper-small-width)
+        right: unset
+        left: -115px
+        width: 270px
+
+  .switch-view
+    white-space: nowrap
+
+    .small-viewport
+      display: none
+      @media(max-width: helper-small-width)
+        display: inline
+
+    .normal-viewport
+      @media(max-width: helper-small-width)
+        display: none
