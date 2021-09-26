@@ -1,5 +1,5 @@
-import { visit } from "./visitor.mjs";
-import { printBlockString } from "./blockString.mjs";
+import { visit } from './visitor';
+import { printBlockString } from './blockString';
 /**
  * Converts an AST into a string, using one set of reasonable
  * formatting rules.
@@ -9,8 +9,7 @@ export function print(ast) {
   return visit(ast, {
     leave: printDocASTReducer
   });
-}
-var MAX_LINE_LENGTH = 80; // TODO: provide better type coverage in future
+} // TODO: provide better type coverage in future
 
 var printDocASTReducer = {
   Name: function Name(node) {
@@ -50,14 +49,7 @@ var printDocASTReducer = {
         args = _ref3.arguments,
         directives = _ref3.directives,
         selectionSet = _ref3.selectionSet;
-    var prefix = wrap('', alias, ': ') + name;
-    var argsLine = prefix + wrap('(', join(args, ', '), ')');
-
-    if (argsLine.length > MAX_LINE_LENGTH) {
-      argsLine = prefix + wrap('(\n', indent(join(args, '\n')), '\n)');
-    }
-
-    return join([argsLine, join(directives, ' '), selectionSet], ' ');
+    return join([wrap('', alias, ': ') + name + wrap('(', join(args, ', '), ')'), join(directives, ' '), selectionSet], ' ');
   },
   Argument: function Argument(_ref4) {
     var name = _ref4.name,
@@ -145,11 +137,11 @@ var printDocASTReducer = {
     return type + '!';
   },
   // Type System Definitions
-  SchemaDefinition: addDescription(function (_ref20) {
+  SchemaDefinition: function SchemaDefinition(_ref20) {
     var directives = _ref20.directives,
         operationTypes = _ref20.operationTypes;
     return join(['schema', join(directives, ' '), block(operationTypes)], ' ');
-  }),
+  },
   OperationTypeDefinition: function OperationTypeDefinition(_ref21) {
     var operation = _ref21.operation,
         type = _ref21.type;
@@ -183,10 +175,9 @@ var printDocASTReducer = {
   }),
   InterfaceTypeDefinition: addDescription(function (_ref26) {
     var name = _ref26.name,
-        interfaces = _ref26.interfaces,
         directives = _ref26.directives,
         fields = _ref26.fields;
-    return join(['interface', name, wrap('implements ', join(interfaces, ' & ')), join(directives, ' '), block(fields)], ' ');
+    return join(['interface', name, join(directives, ' '), block(fields)], ' ');
   }),
   UnionTypeDefinition: addDescription(function (_ref27) {
     var name = _ref27.name,
@@ -237,10 +228,9 @@ var printDocASTReducer = {
   },
   InterfaceTypeExtension: function InterfaceTypeExtension(_ref35) {
     var name = _ref35.name,
-        interfaces = _ref35.interfaces,
         directives = _ref35.directives,
         fields = _ref35.fields;
-    return join(['extend interface', name, wrap('implements ', join(interfaces, ' & ')), join(directives, ' '), block(fields)], ' ');
+    return join(['extend interface', name, join(directives, ' '), block(fields)], ' ');
   },
   UnionTypeExtension: function UnionTypeExtension(_ref36) {
     var name = _ref36.name,
@@ -273,13 +263,10 @@ function addDescription(cb) {
  */
 
 
-function join(maybeArray) {
-  var _maybeArray$filter$jo;
-
-  var separator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-  return (_maybeArray$filter$jo = maybeArray === null || maybeArray === void 0 ? void 0 : maybeArray.filter(function (x) {
+function join(maybeArray, separator) {
+  return maybeArray ? maybeArray.filter(function (x) {
     return x;
-  }).join(separator)) !== null && _maybeArray$filter$jo !== void 0 ? _maybeArray$filter$jo : '';
+  }).join(separator || '') : '';
 }
 /**
  * Given array, print each item on its own line, wrapped in an
@@ -288,26 +275,26 @@ function join(maybeArray) {
 
 
 function block(array) {
-  return wrap('{\n', indent(join(array, '\n')), '\n}');
+  return array && array.length !== 0 ? '{\n' + indent(join(array, '\n')) + '\n}' : '';
 }
 /**
- * If maybeString is not null or empty, then wrap with start and end, otherwise print an empty string.
+ * If maybeString is not null or empty, then wrap with start and end, otherwise
+ * print an empty string.
  */
 
 
-function wrap(start, maybeString) {
-  var end = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
-  return maybeString != null && maybeString !== '' ? start + maybeString + end : '';
+function wrap(start, maybeString, end) {
+  return maybeString ? start + maybeString + (end || '') : '';
 }
 
-function indent(str) {
-  return wrap('  ', str.replace(/\n/g, '\n  '));
+function indent(maybeString) {
+  return maybeString && '  ' + maybeString.replace(/\n/g, '\n  ');
 }
 
-function isMultiline(str) {
-  return str.indexOf('\n') !== -1;
+function isMultiline(string) {
+  return string.indexOf('\n') !== -1;
 }
 
 function hasMultilineItems(maybeArray) {
-  return maybeArray != null && maybeArray.some(isMultiline);
+  return maybeArray && maybeArray.some(isMultiline);
 }

@@ -1,0 +1,43 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+:local {
+	.select {
+		display: flex;
+	}
+
+	.buttonSelected {
+		background-color: $color-black-hex-12;
+	}
+
+	.selectList {
+		span[type='button'] {
+			box-shadow: none;
+			border-radius: 0 2px 2px 0;
+		}
+	}
+
+	.selectListSelected {
+		span[type='button'] {
+			background-color: $color-black-hex-12;
+		}
+	}
+
+	.selectListItem {
+		display: flex;
+		align-items: center;
+
+		.selectListText {
+			display: none;
+		}
+	}
+
+	.popover {
+		z-index: 2;
+		width: 320px;
+
+		.selectListText {
+			display: flex;
+			padding-left: 16px;
+		}
+	}
+}

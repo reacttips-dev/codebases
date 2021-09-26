@@ -206,23 +206,16 @@ const Modal = Pipedrive.View.extend({
 			contentId.startsWith('person/add');
 
 		if (isAddDealPersonOrganizationModal) {
-			return import(/* webpackChunkName: "modal-[request]" */ 'views/modals/add-modals')
-				.then(({ default: NewAddModalView }) => {
-					const view = new NewAddModalView(contentId, {
-						...params,
-						onClose,
-						onAfterClose
-					});
+			const type = contentId.split('/')[0];
 
-					this.onClose = () => view.close();
+			modals.open('add-modals:froot', {
+				...params,
+				type,
+				onClose,
+				onAfterClose
+			});
 
-					return view;
-				})
-				.catch((err) => {
-					logger.warn(`Could not open Add ${params.modalType} modal`, err);
-
-					loadFailure();
-				});
+			return;
 		}
 
 		if (params.next) {

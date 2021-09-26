@@ -1,0 +1,17 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+:local {
+	.day {
+		position: relative;
+		box-sizing: border-box;
+		border-left: 1px solid $color-black-rgba-12;
+		height: 100%;
+		padding-right: 8px;
+		pointer-events: none;
+	}
+
+	.activitiesWrapper {
+		position: relative;
+		height: 100%;
+	}
+}

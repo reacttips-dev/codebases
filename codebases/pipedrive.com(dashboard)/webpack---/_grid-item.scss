@@ -1,0 +1,143 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+:local {
+	.gridItem {
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		/* font-update-mission: avoid using line-height to control alignment
+		line-height: 18px;
+		*/
+		pointer-events: all;
+	}
+
+	.hide {
+		visibility: hidden;
+	}
+
+	.color--grey {
+		.container {
+			box-shadow: inset 2px 0 0 0 $color-black-hex-32;
+			background-color: $color-black-rgba-8;
+		}
+	}
+
+	.color--dashed-grey {
+		.container {
+			box-shadow: inset 2px 0 0 0 $color-black-hex-32;
+			background: repeating-linear-gradient(-45deg, $color-black-rgba-8, $color-black-rgba-8 7px, #fff 7px, #fff 8px);
+			background-color: $color-black-rgba-8;
+		}
+
+		.subject {
+			color: $color-black-hex-64;
+		}
+
+		.duration {
+			color: $color-black-hex-64;
+		}
+	}
+
+	.color--dark-blue {
+		.container {
+			color: $color-white-rgba;
+			background: $color-blue-rgba-88;
+			box-shadow: none;
+		}
+	}
+
+	.color--light-blue {
+		background-color: $color-blue-rgba-24;
+		box-shadow: inset 2px 0 0 0 $color-blue-hex;
+	}
+
+	.ignoreIntersection {
+		z-index: 1;
+	}
+
+	.container {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		padding: 2px 4px 2px 8px;
+		height: 100%;
+	}
+
+	.containerShrink {
+		padding-left: 4px;
+
+		.asideLeft {
+			margin-right: 1px;
+		}
+	}
+
+	.subjectContainer {
+		flex: 0 1 auto;
+		overflow: hidden;
+		position: relative;
+		padding-right: 16px;
+		min-height: 16px;
+
+		.subjectHidden {
+			display: none;
+		}
+	}
+
+	.subjectInner {
+		width: 100%;
+		font-weight: $font-weight-semi;
+	}
+
+	.subjectInnerWithLeftAside {
+		&::before {
+			content: ' ';
+			padding-right: 20px;
+			height: 16px;
+			float: left;
+		}
+	}
+
+	.durationContainer {
+		flex: 0 0 auto;
+		overflow: hidden;
+	}
+
+	.durationContainerShrink {
+		flex: 0 1 0;
+	}
+
+	.asideLeft {
+		position: absolute;
+		left: 0;
+	}
+
+	.asideRight {
+		position: absolute;
+		right: 0;
+	}
+
+	.duration {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 2px;
+		font: $font-body-s;
+	}
+
+	.durationNoWrap {
+		flex-wrap: nowrap;
+	}
+
+	.durationTime {
+		padding-right: 3px;
+		white-space: nowrap;
+	}
+
+	.resizeHandle {
+		position: absolute;
+		bottom: 0;
+		height: 8px;
+		width: 100%;
+		cursor: row-resize;
+	}
+}

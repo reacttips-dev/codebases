@@ -1,0 +1,119 @@
+@import '@pipedrive/convention-ui-css/dist/scss/config.scss';
+
+$button-height: 24px;
+
+.filters {
+	display: flex;
+	align-items: center;
+}
+
+.disabled {
+	cursor: not-allowed;
+	position: absolute;
+	z-index: 5;
+}
+
+.filtersGroup {
+	position: relative;
+	white-space: nowrap;
+
+	& + & {
+		margin-right: 4px;
+	}
+}
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 2px;
+	height: $button-height;
+
+	&:not(:last-of-type) {
+		margin-right: 2px;
+	}
+}
+
+.buttonIcon {
+	.label {
+		margin-left: 4px;
+	}
+}
+
+.label {
+	font-weight: $font-weight-semi;
+	font-size: $font-size-s;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.popoverWrapper {
+	margin-left: auto;
+	display: inline-block;
+	z-index: 6;
+}
+
+.popoverContent {
+	width: 180px;
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.popoverItem {
+	height: 32px;
+	font-size: $font-size-m;
+	display: flex;
+	align-items: center;
+	cursor: default;
+
+	&:hover {
+		background-color: $color-blue-hex;
+		color: $color-white-hex;
+		cursor: pointer;
+
+		.popoverCheckIcon,
+		.popoverIcon {
+			fill: $color-white-hex;
+		}
+	}
+}
+
+.popoverItemText {
+	max-width: 124px;
+	margin-right: 4px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.popoverIcon {
+	fill: $color-black-hex;
+	margin: 0 8px;
+}
+
+.popoverCheckIcon {
+	margin-left: auto;
+	margin-right: 8px;
+	fill: $color-blue-hex;
+}
+
+.moreFiltersButtonExcluded {
+	> span {
+		color: $color-black-hex-32;
+	}
+
+	> svg {
+		fill: $color-black-hex-32;
+	}
+
+	&:hover {
+		background: $color-black-hex-12;
+	}
+}
+
+.activityFiltersTooltipsContainer {
+	z-index: 3;
+}

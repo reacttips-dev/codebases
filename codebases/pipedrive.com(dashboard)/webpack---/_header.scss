@@ -1,0 +1,70 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '_variables.scss';
+
+:local {
+	.header {
+		flex: 0 0 $header-height;
+		display: flex;
+		font: $font-title-m;
+		border-bottom: 1px solid $color-black-rgba-32;
+		box-sizing: border-box;
+	}
+
+	.agendaViewHeader {
+		flex: 0 0 $header-height;
+		display: flex;
+		font: $font-body;
+		box-shadow: inset 0 -1px 0 0 $color-black-rgba-16;
+		box-sizing: border-box;
+		padding: 12px 0 12px 12px;
+		align-items: center;
+		width: 100%;
+	}
+
+	.agendaViewHeaderDate {
+		margin-right: auto;
+	}
+
+	.buttonGroup {
+		margin-right: 6px;
+	}
+
+	.monthLabel {
+		width: $hours-width;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.daysWrapper {
+		flex: 1 0 0%;
+		display: flex;
+	}
+
+	.date {
+		margin-left: 4px;
+	}
+
+	.day {
+		display: flex;
+		flex: 1 0 0%;
+		align-items: center;
+		justify-content: center;
+		box-sizing: border-box;
+		border-left: 1px solid $color-black-rgba-32;
+	}
+
+	.today {
+		.date {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			color: $color-white-hex;
+			border-radius: 20px;
+			background-color: $color-blue-hex;
+			width: 24px;
+			height: 24px;
+		}
+	}
+}

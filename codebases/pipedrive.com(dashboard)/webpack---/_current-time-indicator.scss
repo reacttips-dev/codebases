@@ -1,0 +1,37 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '_variables.scss';
+
+:local {
+	.currentTimeIndicator {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		padding: 16px 0;
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	.time {
+		color: $color-red-hex;
+		background-color: $color-white-rgba-64;
+		font: $font-badge;
+		min-width: $hours-width;
+		text-align: right;
+	}
+
+	.dot {
+		margin: 2px;
+		width: 4px;
+		height: 4px;
+		background-color: $color-red-hex;
+		border-radius: 4px;
+	}
+
+	.line {
+		border-bottom: 1px solid $color-red-hex;
+		flex-grow: 1;
+	}
+}

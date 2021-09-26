@@ -1,0 +1,118 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+
+:local {
+	.alldayItem {
+		position: absolute;
+		height: 24px;
+	}
+
+	.hide {
+		visibility: hidden;
+	}
+
+	.color--grey {
+		.content {
+			box-shadow: inset 2px 0 0 0 $color-black-hex-32;
+			background-color: $color-black-rgba-8;
+			color: $color-black-hex;
+		}
+	}
+
+	.color--dashed-grey {
+		.content {
+			box-shadow: inset 2px 0 0 0 $color-black-hex-32;
+			background: repeating-linear-gradient(-45deg, $color-black-rgba-8, $color-black-rgba-8 7px, #fff 7px, #fff 8px);
+			background-color: $color-black-rgba-8;
+			color: $color-black-hex-64;
+		}
+	}
+
+	.color--light-blue {
+		.content {
+			background-color: $color-blue-hex-24;
+			color: $color-black-hex;
+		}
+	}
+
+	.color--dark-blue {
+		.content {
+			background-color: $color-blue-rgba-88;
+			color: $color-white-rgba;
+		}
+	}
+
+	.ignoreIntersection {
+		z-index: 2;
+	}
+
+	.collapsible {
+		.content {
+			cursor: pointer;
+		}
+
+		.subject {
+			flex: 0 1 auto;
+			font: $font-caption;
+			text-transform: uppercase;
+		}
+	}
+
+	.content {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		padding: 2px 4px 2px 8px;
+		margin: 0 8px 2px 8px;
+		background-color: transparent;
+		border-radius: 3px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		font-weight: $font-weight-semi;
+		color: $color-blue-hex;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		& > * {
+			flex: 0 1 auto;
+		}
+	}
+
+	.previousWeek {
+		margin-left: 0;
+		border-radius: 0 3px 3px 0;
+	}
+
+	.nextWeek {
+		margin-right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.subject {
+		flex: 1 1 auto;
+		overflow: hidden;
+		margin-right: 4px;
+		text-overflow: ellipsis;
+	}
+
+	.icon {
+		margin: 0 4px;
+		fill: $color-blue-hex;
+	}
+
+	.asideLeft {
+		display: flex;
+		height: 16px;
+		margin-right: 4px;
+	}
+
+	.asideRight {
+		display: flex;
+		height: 16px;
+	}
+}

@@ -1,0 +1,84 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+@import '@pipedrive/convention-ui-css/dist/scss/fonts.scss';
+@import '_variables.scss';
+
+:local {
+	.calendar {
+		display: flex;
+		flex-direction: column;
+		background-color: $color-white-rgba;
+		user-select: none;
+		overflow: hidden;
+		height: 100%;
+		width: 100%;
+	}
+
+	.dragging {
+		cursor: grab !important;
+	}
+
+	.resizing {
+		cursor: row-resize !important;
+	}
+
+	.grid {
+		flex: 1 0 160px;
+		display: flex;
+		position: relative;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	.hourLabelsWrapper {
+		position: relative;
+		width: $hour-labels-width;
+		height: calc((24 * $hours-height) + $halfhours-height);
+	}
+
+	.hourLabel {
+		display: block;
+		position: absolute;
+		right: 8px;
+		font-size: $font-size-s;
+		color: $color-black-rgba-32;
+	}
+
+	.daysWrapper {
+		position: relative;
+		flex: 1 0 0%;
+		display: flex;
+		height: calc((24 * $hours-height) + $halfhours-height);
+		background-size: $hours-height $hours-height;
+		background-image: linear-gradient(
+			$color-white-rgba,
+			$color-white-rgba 23px,
+			$color-black-rgba-32 23px,
+			$color-white-rgba 24px,
+			$color-white-rgba 47px,
+			$color-black-hex-4 47px
+		);
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 1px;
+			background: #fff;
+		}
+
+		& > * {
+			flex: 1 0 0%;
+		}
+	}
+
+	.mouseEvents {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}

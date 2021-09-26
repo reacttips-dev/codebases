@@ -1,0 +1,43 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+:local {
+	.row {
+		display: flex;
+		align-items: center;
+		margin: 16px;
+
+		&:first-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	.viewSwitch {
+		display: flex;
+	}
+
+	.buttonWrapper {
+		margin-left: 16px;
+	}
+
+	.schedulerButton {
+		margin-left: 8px;
+	}
+
+	.buttonBadge {
+		margin-left: 4px;
+	}
+
+	.wideButton {
+		width: 48px;
+	}
+
+	.filter {
+		display: flex;
+		margin-left: auto;
+	}
+
+	.activityTypeFilter {
+		flex-grow: 1;
+		overflow: hidden;
+	}
+}

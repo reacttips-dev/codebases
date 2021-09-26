@@ -1,13 +1,12 @@
-import { syntaxError } from "../error/syntaxError.mjs";
-import { Kind } from "./kinds.mjs";
-import { Location } from "./ast.mjs";
-import { TokenKind } from "./tokenKind.mjs";
-import { Source, isSource } from "./source.mjs";
-import { DirectiveLocation } from "./directiveLocation.mjs";
-import { Lexer, isPunctuatorTokenKind } from "./lexer.mjs";
-/**
- * Configuration options to control parser behavior
- */
+import inspect from '../jsutils/inspect';
+import devAssert from '../jsutils/devAssert';
+import defineToJSON from '../jsutils/defineToJSON';
+import { syntaxError } from '../error/syntaxError';
+import { Kind } from './kinds';
+import { Source } from './source';
+import { createLexer } from './lexer';
+import { DirectiveLocation } from './directiveLocation';
+import { TokenKind } from './tokenKind';
 
 /**
  * Given a GraphQL source, parses it into a Document.
@@ -53,23 +52,15 @@ export function parseType(source, options) {
   parser.expectToken(TokenKind.EOF);
   return type;
 }
-/**
- * This class is exported only to assist people in implementing their own parsers
- * without duplicating too much code and should be used only as last resort for cases
- * such as experimental syntax or if certain features could not be contributed upstream.
- *
- * It is still part of the internal API and is versioned, so any changes to it are never
- * considered breaking changes. If you still need to support multiple versions of the
- * library, please use the `versionInfo` variable for version detection.
- *
- * @internal
- */
 
-export var Parser = /*#__PURE__*/function () {
+var Parser =
+/*#__PURE__*/
+function () {
   function Parser(source, options) {
-    var sourceObj = isSource(source) ? source : new Source(source);
-    this._lexer = new Lexer(sourceObj);
-    this._options = options;
+    var sourceObj = typeof source === 'string' ? new Source(source) : source;
+    sourceObj instanceof Source || devAssert(0, "Must provide Source. Received: ".concat(inspect(sourceObj)));
+    this._lexer = createLexer(sourceObj);
+    this._options = options || {};
   }
   /**
    * Converts a name lex token into a name parse node.
@@ -373,14 +364,12 @@ export var Parser = /*#__PURE__*/function () {
   ;
 
   _proto.parseFragmentDefinition = function parseFragmentDefinition() {
-    var _this$_options;
-
     var start = this._lexer.token;
     this.expectKeyword('fragment'); // Experimental support for defining variables within fragments changes
     // the grammar of FragmentDefinition:
     //   - fragment FragmentName VariableDefinitions? on TypeCondition Directives? SelectionSet
 
-    if (((_this$_options = this._options) === null || _this$_options === void 0 ? void 0 : _this$_options.experimentalFragmentVariables) === true) {
+    if (this._options.experimentalFragmentVariables) {
       return {
         kind: Kind.FRAGMENT_DEFINITION,
         name: this.parseFragmentName(),
@@ -467,36 +456,30 @@ export var Parser = /*#__PURE__*/function () {
         return this.parseStringLiteral();
 
       case TokenKind.NAME:
+        if (token.value === 'true' || token.value === 'false') {
+          this._lexer.advance();
+
+          return {
+            kind: Kind.BOOLEAN,
+            value: token.value === 'true',
+            loc: this.loc(token)
+          };
+        } else if (token.value === 'null') {
+          this._lexer.advance();
+
+          return {
+            kind: Kind.NULL,
+            loc: this.loc(token)
+          };
+        }
+
         this._lexer.advance();
 
-        switch (token.value) {
-          case 'true':
-            return {
-              kind: Kind.BOOLEAN,
-              value: true,
-              loc: this.loc(token)
-            };
-
-          case 'false':
-            return {
-              kind: Kind.BOOLEAN,
-              value: false,
-              loc: this.loc(token)
-            };
-
-          case 'null':
-            return {
-              kind: Kind.NULL,
-              loc: this.loc(token)
-            };
-
-          default:
-            return {
-              kind: Kind.ENUM,
-              value: token.value,
-              loc: this.loc(token)
-            };
-        }
+        return {
+          kind: Kind.ENUM,
+          value: token.value,
+          loc: this.loc(token)
+        };
 
       case TokenKind.DOLLAR:
         if (!isConst) {
@@ -725,19 +708,17 @@ export var Parser = /*#__PURE__*/function () {
     }
   }
   /**
-   * SchemaDefinition : Description? schema Directives[Const]? { OperationTypeDefinition+ }
+   * SchemaDefinition : schema Directives[Const]? { OperationTypeDefinition+ }
    */
   ;
 
   _proto.parseSchemaDefinition = function parseSchemaDefinition() {
     var start = this._lexer.token;
-    var description = this.parseDescription();
     this.expectKeyword('schema');
     var directives = this.parseDirectives(true);
     var operationTypes = this.many(TokenKind.BRACE_L, this.parseOperationTypeDefinition, TokenKind.BRACE_R);
     return {
       kind: Kind.SCHEMA_DEFINITION,
-      description: description,
       directives: directives,
       operationTypes: operationTypes,
       loc: this.loc(start)
@@ -812,25 +793,19 @@ export var Parser = /*#__PURE__*/function () {
   ;
 
   _proto.parseImplementsInterfaces = function parseImplementsInterfaces() {
-    var _this$_options2;
+    var types = [];
 
-    if (!this.expectOptionalKeyword('implements')) {
-      return [];
-    }
-
-    if (((_this$_options2 = this._options) === null || _this$_options2 === void 0 ? void 0 : _this$_options2.allowLegacySDLImplementsInterfaces) === true) {
-      var types = []; // Optional leading ampersand
-
+    if (this.expectOptionalKeyword('implements')) {
+      // Optional leading ampersand
       this.expectOptionalToken(TokenKind.AMP);
 
       do {
         types.push(this.parseNamedType());
-      } while (this.expectOptionalToken(TokenKind.AMP) || this.peek(TokenKind.NAME));
-
-      return types;
+      } while (this.expectOptionalToken(TokenKind.AMP) || // Legacy support for the SDL?
+      this._options.allowLegacySDLImplementsInterfaces && this.peek(TokenKind.NAME));
     }
 
-    return this.delimitedMany(TokenKind.AMP, this.parseNamedType);
+    return types;
   }
   /**
    * FieldsDefinition : { FieldDefinition+ }
@@ -838,10 +813,8 @@ export var Parser = /*#__PURE__*/function () {
   ;
 
   _proto.parseFieldsDefinition = function parseFieldsDefinition() {
-    var _this$_options3;
-
     // Legacy support for the SDL?
-    if (((_this$_options3 = this._options) === null || _this$_options3 === void 0 ? void 0 : _this$_options3.allowLegacySDLEmptyFields) === true && this.peek(TokenKind.BRACE_L) && this._lexer.lookahead().kind === TokenKind.BRACE_R) {
+    if (this._options.allowLegacySDLEmptyFields && this.peek(TokenKind.BRACE_L) && this._lexer.lookahead().kind === TokenKind.BRACE_R) {
       this._lexer.advance();
 
       this._lexer.advance();
@@ -923,14 +896,12 @@ export var Parser = /*#__PURE__*/function () {
     var description = this.parseDescription();
     this.expectKeyword('interface');
     var name = this.parseName();
-    var interfaces = this.parseImplementsInterfaces();
     var directives = this.parseDirectives(true);
     var fields = this.parseFieldsDefinition();
     return {
       kind: Kind.INTERFACE_TYPE_DEFINITION,
       description: description,
       name: name,
-      interfaces: interfaces,
       directives: directives,
       fields: fields,
       loc: this.loc(start)
@@ -966,7 +937,18 @@ export var Parser = /*#__PURE__*/function () {
   ;
 
   _proto.parseUnionMemberTypes = function parseUnionMemberTypes() {
-    return this.expectOptionalToken(TokenKind.EQUALS) ? this.delimitedMany(TokenKind.PIPE, this.parseNamedType) : [];
+    var types = [];
+
+    if (this.expectOptionalToken(TokenKind.EQUALS)) {
+      // Optional leading pipe
+      this.expectOptionalToken(TokenKind.PIPE);
+
+      do {
+        types.push(this.parseNamedType());
+      } while (this.expectOptionalToken(TokenKind.PIPE));
+    }
+
+    return types;
   }
   /**
    * EnumTypeDefinition :
@@ -1174,9 +1156,8 @@ export var Parser = /*#__PURE__*/function () {
   }
   /**
    * InterfaceTypeExtension :
-   *  - extend interface Name ImplementsInterfaces? Directives[Const]? FieldsDefinition
-   *  - extend interface Name ImplementsInterfaces? Directives[Const]
-   *  - extend interface Name ImplementsInterfaces
+   *   - extend interface Name Directives[Const]? FieldsDefinition
+   *   - extend interface Name Directives[Const]
    */
   ;
 
@@ -1185,18 +1166,16 @@ export var Parser = /*#__PURE__*/function () {
     this.expectKeyword('extend');
     this.expectKeyword('interface');
     var name = this.parseName();
-    var interfaces = this.parseImplementsInterfaces();
     var directives = this.parseDirectives(true);
     var fields = this.parseFieldsDefinition();
 
-    if (interfaces.length === 0 && directives.length === 0 && fields.length === 0) {
+    if (directives.length === 0 && fields.length === 0) {
       throw this.unexpected();
     }
 
     return {
       kind: Kind.INTERFACE_TYPE_EXTENSION,
       name: name,
-      interfaces: interfaces,
       directives: directives,
       fields: fields,
       loc: this.loc(start)
@@ -1317,7 +1296,15 @@ export var Parser = /*#__PURE__*/function () {
   ;
 
   _proto.parseDirectiveLocations = function parseDirectiveLocations() {
-    return this.delimitedMany(TokenKind.PIPE, this.parseDirectiveLocation);
+    // Optional leading pipe
+    this.expectOptionalToken(TokenKind.PIPE);
+    var locations = [];
+
+    do {
+      locations.push(this.parseDirectiveLocation());
+    } while (this.expectOptionalToken(TokenKind.PIPE));
+
+    return locations;
   }
   /*
    * DirectiveLocation :
@@ -1360,15 +1347,14 @@ export var Parser = /*#__PURE__*/function () {
   } // Core parsing utility functions
 
   /**
-   * Returns a location object, used to identify the place in the source that created a given parsed object.
+   * Returns a location object, used to identify the place in
+   * the source that created a given parsed object.
    */
   ;
 
   _proto.loc = function loc(startToken) {
-    var _this$_options4;
-
-    if (((_this$_options4 = this._options) === null || _this$_options4 === void 0 ? void 0 : _this$_options4.noLocation) !== true) {
-      return new Location(startToken, this._lexer.lastToken, this._lexer.source);
+    if (!this._options.noLocation) {
+      return new Loc(startToken, this._lexer.lastToken, this._lexer.source);
     }
   }
   /**
@@ -1380,8 +1366,8 @@ export var Parser = /*#__PURE__*/function () {
     return this._lexer.token.kind === kind;
   }
   /**
-   * If the next token is of the given kind, return that token after advancing the lexer.
-   * Otherwise, do not change the parser state and throw an error.
+   * If the next token is of the given kind, return that token after advancing
+   * the lexer. Otherwise, do not change the parser state and throw an error.
    */
   ;
 
@@ -1394,11 +1380,11 @@ export var Parser = /*#__PURE__*/function () {
       return token;
     }
 
-    throw syntaxError(this._lexer.source, token.start, "Expected ".concat(getTokenKindDesc(kind), ", found ").concat(getTokenDesc(token), "."));
+    throw syntaxError(this._lexer.source, token.start, "Expected ".concat(kind, ", found ").concat(getTokenDesc(token)));
   }
   /**
-   * If the next token is of the given kind, return that token after advancing the lexer.
-   * Otherwise, do not change the parser state and return undefined.
+   * If the next token is of the given kind, return that token after advancing
+   * the lexer. Otherwise, do not change the parser state and return undefined.
    */
   ;
 
@@ -1425,12 +1411,12 @@ export var Parser = /*#__PURE__*/function () {
     if (token.kind === TokenKind.NAME && token.value === value) {
       this._lexer.advance();
     } else {
-      throw syntaxError(this._lexer.source, token.start, "Expected \"".concat(value, "\", found ").concat(getTokenDesc(token), "."));
+      throw syntaxError(this._lexer.source, token.start, "Expected \"".concat(value, "\", found ").concat(getTokenDesc(token)));
     }
   }
   /**
-   * If the next token is a given keyword, return "true" after advancing the lexer.
-   * Otherwise, do not change the parser state and return "false".
+   * If the next token is a given keyword, return "true" after advancing
+   * the lexer. Otherwise, do not change the parser state and return "false".
    */
   ;
 
@@ -1446,18 +1432,20 @@ export var Parser = /*#__PURE__*/function () {
     return false;
   }
   /**
-   * Helper function for creating an error when an unexpected lexed token is encountered.
+   * Helper function for creating an error when an unexpected lexed token
+   * is encountered.
    */
   ;
 
   _proto.unexpected = function unexpected(atToken) {
-    var token = atToken !== null && atToken !== void 0 ? atToken : this._lexer.token;
-    return syntaxError(this._lexer.source, token.start, "Unexpected ".concat(getTokenDesc(token), "."));
+    var token = atToken || this._lexer.token;
+    return syntaxError(this._lexer.source, token.start, "Unexpected ".concat(getTokenDesc(token)));
   }
   /**
-   * Returns a possibly empty list of parse nodes, determined by the parseFn.
-   * This list begins with a lex token of openKind and ends with a lex token of closeKind.
-   * Advances the parser to the next lex token after the closing token.
+   * Returns a possibly empty list of parse nodes, determined by
+   * the parseFn. This list begins with a lex token of openKind
+   * and ends with a lex token of closeKind. Advances the parser
+   * to the next lex token after the closing token.
    */
   ;
 
@@ -1473,9 +1461,10 @@ export var Parser = /*#__PURE__*/function () {
   }
   /**
    * Returns a list of parse nodes, determined by the parseFn.
-   * It can be empty only if open token is missing otherwise it will always return non-empty list
-   * that begins with a lex token of openKind and ends with a lex token of closeKind.
-   * Advances the parser to the next lex token after the closing token.
+   * It can be empty only if open token is missing otherwise it will always
+   * return non-empty list that begins with a lex token of openKind and ends
+   * with a lex token of closeKind. Advances the parser to the next lex token
+   * after the closing token.
    */
   ;
 
@@ -1493,9 +1482,10 @@ export var Parser = /*#__PURE__*/function () {
     return [];
   }
   /**
-   * Returns a non-empty list of parse nodes, determined by the parseFn.
-   * This list begins with a lex token of openKind and ends with a lex token of closeKind.
-   * Advances the parser to the next lex token after the closing token.
+   * Returns a non-empty list of parse nodes, determined by
+   * the parseFn. This list begins with a lex token of openKind
+   * and ends with a lex token of closeKind. Advances the parser
+   * to the next lex token after the closing token.
    */
   ;
 
@@ -1508,40 +1498,31 @@ export var Parser = /*#__PURE__*/function () {
     } while (!this.expectOptionalToken(closeKind));
 
     return nodes;
-  }
-  /**
-   * Returns a non-empty list of parse nodes, determined by the parseFn.
-   * This list may begin with a lex token of delimiterKind followed by items separated by lex tokens of tokenKind.
-   * Advances the parser to the next lex token after last item in the list.
-   */
-  ;
-
-  _proto.delimitedMany = function delimitedMany(delimiterKind, parseFn) {
-    this.expectOptionalToken(delimiterKind);
-    var nodes = [];
-
-    do {
-      nodes.push(parseFn.call(this));
-    } while (this.expectOptionalToken(delimiterKind));
-
-    return nodes;
   };
 
   return Parser;
 }();
+
+function Loc(startToken, endToken, source) {
+  this.start = startToken.start;
+  this.end = endToken.end;
+  this.startToken = startToken;
+  this.endToken = endToken;
+  this.source = source;
+} // Print a simplified form when appearing in JSON/util.inspect.
+
+
+defineToJSON(Loc, function () {
+  return {
+    start: this.start,
+    end: this.end
+  };
+});
 /**
- * A helper function to describe a token as a string for debugging.
+ * A helper function to describe a token as a string for debugging
  */
 
 function getTokenDesc(token) {
   var value = token.value;
-  return getTokenKindDesc(token.kind) + (value != null ? " \"".concat(value, "\"") : '');
-}
-/**
- * A helper function to describe a token kind as a string for debugging.
- */
-
-
-function getTokenKindDesc(kind) {
-  return isPunctuatorTokenKind(kind) ? "\"".concat(kind, "\"") : kind;
+  return value ? "".concat(token.kind, " \"").concat(value, "\"") : token.kind;
 }

@@ -1,0 +1,14 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+:local {
+	.container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.calendarContainer {
+		flex: 1 1 100%;
+		position: relative;
+	}
+}

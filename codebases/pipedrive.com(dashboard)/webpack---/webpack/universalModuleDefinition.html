@@ -1,11 +1,11 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("styled-components"), require("@pipedrive/convention-ui-react"), require("@pipedrive/translator-client/fe"), require("@pipedrive/logger-fe"));
+		module.exports = factory(require("react"), require("prop-types"), require("@pipedrive/convention-ui-react"), require("lodash"), require("moment"), require("styled-components"), require("moment-timezone"), require("@pipedrive/logger-fe"), require("redux"), require("react-dom"), require("@pipedrive/pd-wysiwyg"), require("pikaday"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react", "styled-components", "@pipedrive/convention-ui-react", "@pipedrive/translator-client/fe", "@pipedrive/logger-fe"], factory);
+		define(["react", "prop-types", "@pipedrive/convention-ui-react", "lodash", "moment", "styled-components", "moment-timezone", "@pipedrive/logger-fe", "redux", "react-dom", "@pipedrive/pd-wysiwyg", "pikaday"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("react"), require("styled-components"), require("@pipedrive/convention-ui-react"), require("@pipedrive/translator-client/fe"), require("@pipedrive/logger-fe")) : factory(root["react"], root["styled-components"], root["@pipedrive/convention-ui-react"], root["@pipedrive/translator-client/fe"], root["@pipedrive/logger-fe"]);
+		var a = typeof exports === 'object' ? factory(require("react"), require("prop-types"), require("@pipedrive/convention-ui-react"), require("lodash"), require("moment"), require("styled-components"), require("moment-timezone"), require("@pipedrive/logger-fe"), require("redux"), require("react-dom"), require("@pipedrive/pd-wysiwyg"), require("pikaday")) : factory(root["react"], root["prop-types"], root["@pipedrive/convention-ui-react"], root["lodash"], root["moment"], root["styled-components"], root["moment-timezone"], root["@pipedrive/logger-fe"], root["redux"], root["react-dom"], root["@pipedrive/pd-wysiwyg"], root["pikaday"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__5__, __WEBPACK_EXTERNAL_MODULE__15__, __WEBPACK_EXTERNAL_MODULE__106__, __WEBPACK_EXTERNAL_MODULE__119__) {
+})(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__5__, __WEBPACK_EXTERNAL_MODULE__6__, __WEBPACK_EXTERNAL_MODULE__8__, __WEBPACK_EXTERNAL_MODULE__10__, __WEBPACK_EXTERNAL_MODULE__32__, __WEBPACK_EXTERNAL_MODULE__35__, __WEBPACK_EXTERNAL_MODULE__48__, __WEBPACK_EXTERNAL_MODULE__75__, __WEBPACK_EXTERNAL_MODULE__81__) {
 return 

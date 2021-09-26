@@ -1,27 +1,27 @@
 var map = {
 	"./activity/status-time-range": [
 		"./pipedrive/app/views/popovers/activity/status-time-range.js",
-		62
+		61
 	],
 	"./activity/status-time-range.js": [
 		"./pipedrive/app/views/popovers/activity/status-time-range.js",
-		62
+		61
 	],
 	"./alphabet": [
 		"./pipedrive/app/views/popovers/alphabet.js",
-		63
+		62
 	],
 	"./alphabet.js": [
 		"./pipedrive/app/views/popovers/alphabet.js",
-		63
+		62
 	],
 	"./businesscard": [
 		"./pipedrive/app/views/popovers/businesscard.js",
-		64
+		63
 	],
 	"./businesscard.js": [
 		"./pipedrive/app/views/popovers/businesscard.js",
-		64
+		63
 	],
 	"./changefieldvalue": [
 		"./pipedrive/app/views/popovers/changefieldvalue.js",
@@ -29,7 +29,7 @@ var map = {
 		1,
 		4,
 		6,
-		65
+		64
 	],
 	"./changefieldvalue.js": [
 		"./pipedrive/app/views/popovers/changefieldvalue.js",
@@ -37,33 +37,41 @@ var map = {
 		1,
 		4,
 		6,
-		65
+		64
 	],
 	"./column-picker": [
 		"./pipedrive/app/views/popovers/column-picker.js",
-		66
+		65
 	],
 	"./column-picker.js": [
 		"./pipedrive/app/views/popovers/column-picker.js",
-		66
+		65
 	],
 	"./create-teams": [
 		"./pipedrive/app/views/popovers/create-teams.js",
 		0,
-		67
+		66
 	],
 	"./create-teams.js": [
 		"./pipedrive/app/views/popovers/create-teams.js",
 		0,
-		67
+		66
+	],
+	"./deal-win-options": [
+		"./pipedrive/app/views/popovers/deal-win-options.js",
+		68
+	],
+	"./deal-win-options.js": [
+		"./pipedrive/app/views/popovers/deal-win-options.js",
+		68
 	],
 	"./deal/activities": [
 		"./pipedrive/app/views/popovers/deal/activities.js",
-		68
+		67
 	],
 	"./deal/activities.js": [
 		"./pipedrive/app/views/popovers/deal/activities.js",
-		68
+		67
 	],
 	"./mail/filters": [
 		"./pipedrive/app/views/popovers/mail/filters.js",

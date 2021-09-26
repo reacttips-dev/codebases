@@ -1,10 +1,4 @@
-import inspect from "../jsutils/inspect.mjs";
-import { isNode } from "./ast.mjs";
-/**
- * A visitor is provided to visit, it contains the collection of
- * relevant functions to be called during the visitor's traversal.
- */
-
+import inspect from '../jsutils/inspect';
 export var QueryDocumentKeys = {
   Name: [],
   Document: ['definitions'],
@@ -32,13 +26,13 @@ export var QueryDocumentKeys = {
   NamedType: ['name'],
   ListType: ['type'],
   NonNullType: ['type'],
-  SchemaDefinition: ['description', 'directives', 'operationTypes'],
+  SchemaDefinition: ['directives', 'operationTypes'],
   OperationTypeDefinition: ['type'],
   ScalarTypeDefinition: ['description', 'name', 'directives'],
   ObjectTypeDefinition: ['description', 'name', 'interfaces', 'directives', 'fields'],
   FieldDefinition: ['description', 'name', 'arguments', 'type', 'directives'],
   InputValueDefinition: ['description', 'name', 'type', 'defaultValue', 'directives'],
-  InterfaceTypeDefinition: ['description', 'name', 'interfaces', 'directives', 'fields'],
+  InterfaceTypeDefinition: ['description', 'name', 'directives', 'fields'],
   UnionTypeDefinition: ['description', 'name', 'directives', 'types'],
   EnumTypeDefinition: ['description', 'name', 'directives', 'values'],
   EnumValueDefinition: ['description', 'name', 'directives'],
@@ -47,14 +41,14 @@ export var QueryDocumentKeys = {
   SchemaExtension: ['directives', 'operationTypes'],
   ScalarTypeExtension: ['name', 'directives'],
   ObjectTypeExtension: ['name', 'interfaces', 'directives', 'fields'],
-  InterfaceTypeExtension: ['name', 'interfaces', 'directives', 'fields'],
+  InterfaceTypeExtension: ['name', 'directives', 'fields'],
   UnionTypeExtension: ['name', 'directives', 'types'],
   EnumTypeExtension: ['name', 'directives', 'values'],
   InputObjectTypeExtension: ['name', 'directives', 'fields']
 };
 export var BREAK = Object.freeze({});
 /**
- * visit() will walk through an AST using a depth-first traversal, calling
+ * visit() will walk through an AST using a depth first traversal, calling
  * the visitor's enter function at each node in the traversal, and calling the
  * leave function after visiting that node and all of its child nodes.
  *
@@ -88,10 +82,10 @@ export var BREAK = Object.freeze({});
  *
  * Alternatively to providing enter() and leave() functions, a visitor can
  * instead provide functions named the same as the kinds of AST nodes, or
- * enter/leave visitors at a named key, leading to four permutations of the
+ * enter/leave visitors at a named key, leading to four permutations of
  * visitor API:
  *
- * 1) Named visitors triggered when entering a node of a specific kind.
+ * 1) Named visitors triggered when entering a node a specific kind.
  *
  *     visit(ast, {
  *       Kind(node) {
@@ -222,7 +216,7 @@ export function visit(root, visitor) {
 
     if (!Array.isArray(node)) {
       if (!isNode(node)) {
-        throw new Error("Invalid AST Node: ".concat(inspect(node), "."));
+        throw new Error('Invalid AST Node: ' + inspect(node));
       }
 
       var visitFn = getVisitFn(visitor, node.kind, isLeaving);
@@ -261,8 +255,6 @@ export function visit(root, visitor) {
     if (isLeaving) {
       path.pop();
     } else {
-      var _visitorKeys$node$kin;
-
       stack = {
         inArray: inArray,
         index: index,
@@ -271,7 +263,7 @@ export function visit(root, visitor) {
         prev: stack
       };
       inArray = Array.isArray(node);
-      keys = inArray ? node : (_visitorKeys$node$kin = visitorKeys[node.kind]) !== null && _visitorKeys$node$kin !== void 0 ? _visitorKeys$node$kin : [];
+      keys = inArray ? node : visitorKeys[node.kind] || [];
       index = -1;
       edits = [];
 
@@ -289,6 +281,10 @@ export function visit(root, visitor) {
 
   return newRoot;
 }
+
+function isNode(maybeNode) {
+  return Boolean(maybeNode && typeof maybeNode.kind === 'string');
+}
 /**
  * Creates a new visitor instance which delegates to many visitors to run in
  * parallel. Each visitor will be visited for each node before moving on.
@@ -296,12 +292,13 @@ export function visit(root, visitor) {
  * If a prior visitor edits a node, no following visitors will see that node.
  */
 
+
 export function visitInParallel(visitors) {
   var skipping = new Array(visitors.length);
   return {
     enter: function enter(node) {
       for (var i = 0; i < visitors.length; i++) {
-        if (skipping[i] == null) {
+        if (!skipping[i]) {
           var fn = getVisitFn(visitors[i], node.kind,
           /* isLeaving */
           false);
@@ -322,7 +319,7 @@ export function visitInParallel(visitors) {
     },
     leave: function leave(node) {
       for (var i = 0; i < visitors.length; i++) {
-        if (skipping[i] == null) {
+        if (!skipping[i]) {
           var fn = getVisitFn(visitors[i], node.kind,
           /* isLeaving */
           true);
@@ -340,6 +337,48 @@ export function visitInParallel(visitors) {
           skipping[i] = null;
         }
       }
+    }
+  };
+}
+/**
+ * Creates a new visitor instance which maintains a provided TypeInfo instance
+ * along with visiting visitor.
+ */
+
+export function visitWithTypeInfo(typeInfo, visitor) {
+  return {
+    enter: function enter(node) {
+      typeInfo.enter(node);
+      var fn = getVisitFn(visitor, node.kind,
+      /* isLeaving */
+      false);
+
+      if (fn) {
+        var result = fn.apply(visitor, arguments);
+
+        if (result !== undefined) {
+          typeInfo.leave(node);
+
+          if (isNode(result)) {
+            typeInfo.enter(result);
+          }
+        }
+
+        return result;
+      }
+    },
+    leave: function leave(node) {
+      var fn = getVisitFn(visitor, node.kind,
+      /* isLeaving */
+      true);
+      var result;
+
+      if (fn) {
+        result = fn.apply(visitor, arguments);
+      }
+
+      typeInfo.leave(node);
+      return result;
     }
   };
 }

@@ -56,7 +56,7 @@
  	// undefined = chunk not loaded, null = chunk preloaded/prefetched
  	// Promise = chunk loading, 0 = chunk loaded
  	var installedChunks = {
- 		0: 0
+ 		1: 0
  	};
 
  	var deferredModules = [];
@@ -138,7 +138,7 @@
  	// __webpack_public_path__
  	__webpack_require__.p = "";
 
- 	var jsonpArray = window["froot-cappingDialog"] = window["froot-cappingDialog"] || [];
+ 	var jsonpArray = window["activities-components"] = window["activities-components"] || [];
  	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
  	jsonpArray.push = webpackJsonpCallback;
  	jsonpArray = jsonpArray.slice();
@@ -147,6 +147,6 @@
 
 
  	// add entry module to deferred list
- 	deferredModules.push([120,1]);
+ 	deferredModules.push([146,0]);
  	// run deferred modules when ready
  	return checkDeferredModules();

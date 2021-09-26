@@ -1,0 +1,24 @@
+@import '@pipedrive/convention-ui-css/dist/scss/colors.scss';
+
+:local {
+	.addPopover {
+		padding: 24px 0 0;
+		min-width: 304px;
+		pointer-events: all;
+	}
+
+	.row {
+		margin: 8px 16px;
+	}
+
+	.footer {
+		padding: 8px 16px;
+		text-align: right;
+		border-top: 1px solid $color-black-hex-12;
+		background-color: $color-black-hex-4;
+	}
+
+	.button {
+		margin-left: 4px;
+	}
+}
