@@ -1,0 +1,23 @@
+.ql-cursor-selection-block {
+  --topY: 0;
+  --leftX: 0;
+  transform: scale(calc(1 / var(--scale)));
+}
+
+.ql-cursor-caret-container {
+  transform: scale(calc(1 / var(--scale)));
+  margin-left: calc(-9px * calc(1 / var(--scale))) !important;
+}
+
+.ql-cursor-flag {
+  font-size: 1rem;
+  width: auto !important;
+  transform: translate3d(-1px, -100%, 0) scale(calc(1 / var(--scale))) !important;
+}
+
+.ql-cursor-name {
+  //mix-blend-mode: difference;
+  color: white;
+  font-weight: 700;
+  font-family: Rubik;
+}

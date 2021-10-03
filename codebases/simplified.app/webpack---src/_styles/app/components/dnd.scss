@@ -1,0 +1,58 @@
+:root {
+  --tldr-rnd-side-handler-position: -2px;
+  --tldr-rnd-side-handler-size: 2px;
+}
+
+.tldr-resize-handle {
+  position: absolute;
+  // user-select: none;
+  width: 8px !important;
+  height: 8px !important;
+  z-index: 1;
+  // cursor: ne-resize;
+  // background: $primary-color !important;
+  // border-radius: 100%;
+}
+
+.tldr-resize-top-left-handle {
+  @extend .tldr-resize-handle;
+  left: -4px !important;
+  top: -4px !important;
+}
+
+.tldr-resize-top-right-handle {
+  @extend .tldr-resize-handle;
+  right: -4px !important;
+  top: -4px !important;
+}
+
+.tldr-resize-bottom-left-handle {
+  @extend .tldr-resize-handle;
+  left: -4px !important;
+  bottom: -4px !important;
+}
+.tldr-resize-bottom-right-handle {
+  @extend .tldr-resize-handle;
+  right: -4px !important;
+  bottom: -4px !important;
+}
+
+.tldr-resize-top-handle {
+  height: var(--tldr-rnd-side-handler-size) !important;
+  top: var(--tldr-rnd-side-handler-position) !important;
+}
+
+.tldr-resize-bottom-handle {
+  height: var(--tldr-rnd-side-handler-size) !important;
+  bottom: var(--tldr-rnd-side-handler-position) !important;
+}
+
+.tldr-resize-right-handle {
+  width: var(--tldr-rnd-side-handler-size) !important;
+  right: var(--tldr-rnd-side-handler-position) !important;
+}
+
+.tldr-resize-left-handle {
+  width: var(--tldr-rnd-side-handler-size) !important;
+  left: var(--tldr-rnd-side-handler-position) !important;
+}

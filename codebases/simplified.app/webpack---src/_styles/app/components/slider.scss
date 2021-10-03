@@ -1,0 +1,108 @@
+.tldr-slider {
+  position: relative;
+  width: 96%;
+  height: 40px;
+  margin-left: 6px;
+
+  @media (max-width: 768px) {
+    margin-left: 6px;
+  }
+  //border: 1px solid yellowgreen;
+}
+
+.w-83 {
+  width: 83% !important;
+}
+
+.tldr-gradient-angle-slider {
+  position: relative;
+  width: 65% !important;
+  height: 40px;
+  margin: 0rem 0.75rem 0rem 0.25rem;
+}
+
+.tldr-gradient-color-adjustment-slider {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin: 0.5rem 1.5rem 0rem 0.5rem;
+}
+
+.tldr-rail {
+  margin-top: 16px;
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.tldr-track {
+  position: absolute;
+  height: 8px;
+  z-index: 0;
+  margin-top: 16px;
+  background-color: $accent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.slider-gradient-track {
+  position: absolute;
+  height: 6px;
+  z-index: 0;
+  margin-top: 16px;
+  background-color: $white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tldr-handle {
+  position: absolute;
+  margin-left: -6px;
+  margin-top: 11px;
+  // z-index: 2;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $accent;
+  color: $accent;
+}
+
+.tldr-tooltip {
+  font-size: 12px;
+  margin-top: -18px;
+}
+
+.tldr-tick {
+  width: 100%;
+  position: absolute;
+  margin-top: 28px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tldr-gradient-rail {
+  position: absolute;
+  width: 20%;
+  height: 4px;
+  border-radius: 18px;
+  background-color: $white;
+}
+
+.tldr-gradient-handle {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -7px;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $accent;
+  color: $accent;
+}

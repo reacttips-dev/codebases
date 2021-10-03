@@ -1,0 +1,34 @@
+var _path;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgSmpS(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 78,
+    height: 78,
+    viewBox: "0 0 78 78",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "#FFAC41",
+    fillRule: "evenodd",
+    d: "M58.8120778,32.4792 L58.8120778,48.8202 L57.7908556,49.8414222 L49.6196333,58.0140889 L44.5135222,63.1202 C42.2558556,65.3764222 38.5985222,65.3764222 36.3423,63.1202 C34.0860778,60.8639778 34.0860778,57.2052 36.3423,54.9489778 L36.3423,54.9489778 L41.4484111,49.8414222 L49.6196333,41.6716444 L50.6408556,40.6504222 L58.8120778,32.4792 Z M56.7699222,30.4363222 L48.5987,38.6075444 L47.5774778,39.6287667 L38.3850333,48.8212111 L22.0425889,48.8212111 L40.4274778,30.4363222 L56.7699222,30.4363222 Z M34.2991333,16.1364667 C36.5553556,13.8802444 40.2141333,13.8802444 42.4703556,16.1364667 C44.7265778,18.3926889 44.7265778,22.0514667 42.4703556,24.3076889 L42.4703556,24.3076889 L28.1703556,38.6076889 L20.0005778,46.7774667 L20.0005778,30.4364667 L21.0218,29.4138 L29.1915778,21.2440222 Z"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgSmpS);
+export default __webpack_public_path__ + "static/media/smp-s.f6279474.svg";
+export { ForwardRef as ReactComponent };

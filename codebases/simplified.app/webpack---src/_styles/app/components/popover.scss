@@ -1,0 +1,40 @@
+.popover {
+  background-color: $secondary-color;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+}
+
+.bs-popover-bottom .arrow::after {
+  border-bottom-color: $secondary-color;
+}
+
+.popover-body {
+  color: $white;
+}
+
+.popover-title {
+  width: 93px;
+  color: $white;
+  font-family: Rubik;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
+}
+
+.popover-options {
+  height: 12px;
+  width: 20px;
+}
+
+.popover-options-text {
+  height: 14px;
+  width: 51px;
+  color: $white;
+  font-family: Rubik;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+}

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Rubik", "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+.h1 {
+  color: $white;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+h2,
+.h2 {
+  color: $white;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+h3,
+.h3 {
+  color: $white;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+h4,
+.h4 {
+  color: $white;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h5,
+.h5 {
+  color: $white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h6,
+.h6 {
+  color: $white;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.subtitle {
+  color: $white;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.subtitle-s {
+  @extend .subtitle;
+  font-size: 1rem;
+}
+
+.subtitle-xs {
+  @extend .subtitle;
+  font-size: 1rem;
+}
+
+.line-text {
+  color: $white;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.line-text-max {
+  @extend .line-text;
+  font-size: 1.125rem;
+}
+
+.line-text-min {
+  @extend .line-text;
+  font-size: 0.75rem;
+}
+
+.heading-text {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+.body-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $white;
+}
+
+.body-text-max {
+  @extend .body-text;
+  font-size: 1.125rem;
+}
+
+.body-text-min {
+  @extend .body-text;
+  font-size: 0.875rem;
+}
+
+.body-text-xs {
+  @extend .body-text;
+  font-size: 0.75rem;
+}
+
+.photo-text {
+  @extend .heading-text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(https://images.unsplash.com/photo-1541661538396-53ba2d051eed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80);
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+}

@@ -1,0 +1,48 @@
+var _path, _path2, _path3, _path4, _path5, _path6, _path7, _path8;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgGoogleSheets(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "Capa_1",
+    enableBackground: "new 0 0 512 512",
+    height: 512,
+    viewBox: "0 0 512 512",
+    width: 512,
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "m346 120h96.211l-111.211-111.211v96.211c0 8.276 6.724 15 15 15z"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "m271 241h60v30h-60z"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "m271 301h60v30h-60z"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "m181 301h60v30h-60z"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    d: "m271 361h60v30h-60z"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "m106 512h300c24.814 0 45-20.186 45-45v-317h-105c-24.814 0-45-20.186-45-45v-105h-195c-24.814 0-45 20.186-45 45v422c0 24.814 20.186 45 45 45zm45-286c0-8.291 6.709-15 15-15h180c8.291 0 15 6.709 15 15v180c0 8.291-6.709 15-15 15h-180c-8.291 0-15-6.709-15-15z"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    d: "m181 361h60v30h-60z"
+  })), _path8 || (_path8 = /*#__PURE__*/React.createElement("path", {
+    d: "m181 241h60v30h-60z"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgGoogleSheets);
+export default __webpack_public_path__ + "static/media/google-sheets.a510c687.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,330 @@
+export const GET_ERRORS = "GET_ERRORS";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const SYNC_WORKSPACES = "SYNC_WORKSPACES";
+export const UPDATE_CURRENT_USER = "UPDATE_USER";
+export const USER_LOGGED_OUT = "USER_LOGGED_OUT";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
+export const GET_STORIES = "GET_STORIES";
+export const POST_REQUEST = "POST_REQUEST";
+export const RESET_STATE = "RESET_STATE";
+export const REDIRECT = "REDIRECT";
+export const GET_CATEGORIES = "GET_CATEGORIES";
+export const GET_TEMPLATES = "GET_TEMPLATES";
+export const GET_TEMPLATES_VIEW_ALL = "GET_TEMPLATES_VIEW_ALL";
+export const GET_STORY_PAGES = "GET_STORY_PAGES";
+export const SET_STORY_PAGES = "SET_STORY_PAGES";
+export const SET_STORY_LAYER = "SET_STORY_LAYER";
+export const SET_STORY_COMPONENT = "SET_STORY_COMPONENT";
+export const TEMPLATE_PUBLISHED = "TEMPLATE_PUBLISHED";
+export const RESET_TEMPLATES_VIEW_ALL = "RESET_TEMPLATES_VIEW_ALL";
+export const RECENT_STORIES = "RECENT_STORIES";
+
+export const SET_NONCE = "SET_NONCE";
+export const USER_VERIFIED = "USER_VERIFIED";
+export const PASSWORD_RESET_SUCCESS = "PASSWORD_RESET_SUCCESS";
+export const SWITCH_ORG = "SWITCH_ORG";
+export const SET_CURRENT_WORKSPACE = "SET_CURRENT_WORKSPACE";
+export const FILTER_STORIES = "FILTER_STORIES";
+export const USER_NOT_VERIFIED = "USER_NOT_VERIFIED";
+export const HTTP_200_OK = "HTTP_200_OK";
+export const HTTP_403_ERROR = "HTTP_403_ERROR";
+export const HTTP_404_ERROR = "HTTP_404_ERROR";
+export const HTTP_400_ERROR = "HTTP_400_ERROR";
+export const HTTP_500_ERROR = "HTTP_500_ERROR";
+export const NO_MEDIA_RESULTS_MESSAGE = "NO_MEDIA_RESULTS_MESSAGE";
+export const FETCH_FAILED_NETWORK_ERROR = "FETCH_FAILED_NETWORK_ERROR";
+export const FAILED_TO_FETCH_DATA_API_ERROR = "FAILED_TO_FETCH_DATA_API_ERROR";
+export const HTTP_OTHER_ERROR = "HTTP_OTHER_ERROR";
+export const HTTP_REQUEST_ABORTED = "HTTP_REQUEST_ABORTED";
+export const OPEN_SIDEBAR = "OPEN_SIDEBAR";
+export const CLOSE_SIDEBAR = "CLOSE_SIDEBAR";
+export const OPEN_SLIDER = "OPEN_SLIDER";
+export const CLOSE_SLIDER = "CLOSE_SLIDER";
+export const CLOSE_ALL_SLIDERS = "CLOSE_ALL_SLIDERS";
+export const CANCEL_ACTION_REQUESTS = "CANCEL_ACTION_REQUESTS";
+export const CANCEL_ALL_ACTION_REQUESTS = "CANCEL_ALL_ACTION_REQUESTS";
+export const OPEN_ADVANCED_SETTINGS = "OPEN_ADV_PANEL";
+export const CLOSE_ADVANCED_SETTINGS = "CLOSE_ADV_PANEL";
+export const SET_OR_UPDATE_STYLES = "SET_OR_UPDATE_STYLES";
+export const INCREMENT_COUNTER = "INCREMENT_COUNTER";
+export const DECREMENT_COUNTER = "DECREMENT_COUNTER";
+export const SET_COUNTER = "SET_COUNTER";
+export const RESET_PAGE = "RESET_PAGE";
+export const RESET_SIDEBAR_SLIDER_PAYLOAD = "RESET_SIDEBAR_SLIDER_PAYLOAD";
+export const OPEN_ADVANCED_ANIMATION_SETTINGS =
+  "OPEN_ADVANCED_ANIMATION_SETTINGS";
+export const CLOSE_ADVANCED_ANIMATION_SETTINGS =
+  "CLOSE_ADVANCED_ANIMATION_SETTINGS";
+export const SWITCH_MEDIA_TAB = "SWITCH_MEDIA_TAB";
+export const IMAGE_PROVIDER_ERRORS = "IMAGE_PROVIDER_ERRORS";
+export const CLEAR_MESSAGE_TO_USER = "CLEAR_MESSAGE_TO_USER";
+
+export const CANCEL_DATA = { cancelled: true };
+export const BACK_FROM_STUDIO = "BACK_FROM_STUDIO";
+
+// Search
+export const GET_IMAGES = "GET_IMAGES";
+export const SEARCH_IMAGES = "SEARCH_IMAGES";
+export const GET_ICONS = "GET_ICONS";
+export const SEARCH_ICONS = "SEARCH_ICONS";
+export const GET_GIPHY = "GET_GIPHY";
+export const SEARCH_GIPHY = "SEARCH_GIPHY";
+export const GET_VIDEOS = "GET_VIDEOS";
+export const SEARCH_VIDEOS = "SEARCH_VIDEOS";
+export const GET_TEXT_BLOCKS = "GET_TEXT_BLOCKS";
+export const SEARCH_TEXT_BLOCKS = "SEARCH_TEXT_BLOCKS";
+export const GET_TEMPLATE_GROUPS = "GET_TEMPLATE_GROUPS";
+export const SEARCH_ELEMENTS = "SEARCH_ELEMENTS";
+export const GET_ASSETS = "GET_ASSETS";
+export const ADD_ASSETS = "ADD_ASSETS";
+export const DELETE_ASSET = "DELETE_ASSET";
+export const DELETE_TEMPLATE = "DELETE_TEMPLATE";
+export const GET_ELEMENTS_VIEW_ALL = "GET_ELEMENTS_VIEW_ALL";
+export const GET_ICONS_VIEW_ALL = "GET_ICONS_VIEW_ALL";
+export const SEARCH_ELEMENTS_ALL = "SEARCH_ELEMENTS_ALL";
+export const RESET_ELEMENTS_VIEW_ALL = "RESET_ELEMENTS_VIEW_ALL";
+export const SEARCH_TEMPLATES = "SEARCH_TEMPLATES";
+export const GET_MUSIC = "GET_MUSIC";
+export const SEARCH_MUSIC = "SEARCH_MUSIC";
+export const GET_MUSIC_VIEW_ALL = "GET_MUSIC_VIEW_ALL";
+
+//Common
+export const RESET_STORIES = "RESET_STORIES";
+export const DELETE_STORY = "DELETE_STORY";
+export const DELETED_RECENT_STORY = "DELETED_RECENT_STORY";
+export const GET_STORY = "GET_STORY";
+export const USER_JOINED = "USER_JOINED";
+export const USER_LEFT = "USER_LEFT";
+export const PRESENCE = "PRESENCE";
+export const UNDO_REDO = "UNDO_REDO";
+export const BROADCAST = "BROADCAST";
+
+// Story detail actions
+export const ACTIVATE_ELEMENT = "ACTIVATE_ELEMENT";
+export const ACTIVATE_PAGE = "ACTIVATE_PAGE";
+export const SCALE_ELEMENT = "SCALE_ELEMENT";
+export const ACTIVE_ELEMENT_FORMAT = "ACTIVE_ELEMENT_FORMAT";
+
+// Websocket
+export const WEBSOCKET_PREFIX = "REDUX_WEBSOCKET_TLDR";
+export const DEFAULT_PREFIX = "REDUX_WEBSOCKET";
+
+// Library dispatched action types.
+export const WEBSOCKET_BEGIN_RECONNECT = "WS_BEGIN_RECONNECT";
+export const WEBSOCKET_RECONNECT_ATTEMPT = "WS_RECONNECT_ATTEMPT";
+export const WEBSOCKET_RECONNECTED = "WS_RECONNECTED";
+export const WEBSOCKET_BROKEN = "WS_BROKEN";
+export const WEBSOCKET_CLOSED = "WS_CLOSED";
+export const WEBSOCKET_ERROR = "WS_ERROR";
+export const WEBSOCKET_MESSAGE = "WS_MESSAGE";
+export const TOAST_MESSAGE = "TOAST_MESSAGE";
+export const CLOSE_TOAST = "CLOSE_TOAST";
+export const WEBSOCKET_OPEN = "WS_OPEN";
+
+// User dispatched action types.
+export const WEBSOCKET_CONNECT = "WS_CONNECT";
+export const WEBSOCKET_DISCONNECT = "WS_DISCONNECT";
+export const WEBSOCKET_SEND = "WS_SEND";
+
+//Layer actions
+export const MOVE_LAYER = "WS_MOVE_LAYER";
+export const ADD_LAYER = "WS_ADD_LAYER";
+export const ADDED_LAYERS = "WS_ADDED_LAYERS";
+export const ADDED_LAYER = "WS_ADDED_LAYER";
+export const DELETE_LAYERS = "WS_DELETE_LAYERS";
+export const DELETED_LAYERS = "WS_DELETED_LAYERS";
+export const CLONE_LAYERS = "WS_CLONE_LAYERS";
+export const CLONED_LAYER = "WS_CLONED_LAYER";
+export const UPDATE_LAYER = "WS_UPDATE_LAYER";
+export const UPDATE_LAYERS = "WS_UPDATE_LAYERS";
+export const UPDATED_LAYER = "WS_UPDATED_LAYER";
+export const UPDATED_LAYERS = "WS_UPDATED_LAYERS";
+export const LAYER_ACTION_STARTED = "LAYER_ACTION_STARTED";
+export const ADD_PAGE = "WS_ADD_PAGE";
+export const ADDED_PAGE = "WS_ADDED_PAGE";
+export const ADDED_PAGES = "WS_ADDED_PAGES";
+export const UPDATE_PAGE = "WS_UPDATE_PAGE";
+export const UPDATED_PAGE = "WS_UPDATED_PAGE";
+export const UPDATED_STORY = "WS_UPDATED_STORY";
+export const UPDATE_STORY_MUSIC = "UPDATE_STORY_MUSIC";
+export const CLONE_PAGE = "WS_CLONE_PAGE";
+export const CLONED_PAGE = "WS_CLONED_PAGE";
+export const DELETE_PAGE = "WS_DELETE_PAGE";
+export const DELETED_PAGE = "WS_DELETED_PAGE";
+export const SAVE_AS_TEMPLATE = "WS_SAVE_AS_TEMPLATE";
+export const SAVED_AS_TEMPLATE = "WS_SAVED_AS_TEMPLATE";
+export const REPLACE_META = "REPLACE_META";
+export const UPDATE_BKG = "UPDATE_BKG";
+export const REPLACE_BKG_IMAGE = "REPLACE_BKG_IMAGE";
+export const UPDATE_LAYER_PAYLOAD = "WS_UPDATE_LAYER_PAYLOAD";
+export const COPY_FROM_TEMPLATE = "WS_COPY_FROM_TEMPLATE";
+export const GROUP = "WS_GROUP";
+export const UNGROUP = "WS_UNGROUP";
+export const UNDO = "WS_UNDO";
+export const REDO = "WS_REDO";
+export const CHANGE_IMAGE_SOURCE = "CHANGE_IMAGE_SOURCE";
+export const CHANGE_VIDEO_SOURCE = "CHANGE_VIDEO_SOURCE";
+export const UPDATE_STORY = "WS_UPDATE_STORY";
+export const UPDATE_ANIMATIONS = "WS_UPDATE_ANIMATIONS";
+export const MOVE_ARTBOARD = "MOVE_ARTBOARD";
+export const ADD_MASK = "ADD_MASK";
+
+export const ItemTypes = {
+  CARD: "card",
+  ARTBOARD: "artboard",
+  LAYER: "layer",
+};
+
+export const SET_CROP = "SET_CROP";
+export const LAYER_COMPONENT_ACTION_STARTED = "LAYER_COMPONENT_ACTION_STARTED";
+export const LAYER_COMPONENT_ACTION_STOPED = "LAYER_COMPONENT_ACTION_STOPED";
+
+export const GET_FONT_LIST = "GET_FONT_LIST";
+export const FONT_GET_ADDED = "FONT_GET_ADDED";
+export const FONTS_GET_ADDED = "FONTS_GET_ADDED";
+export const DELETE_FONT = "DELETE_FONT";
+export const REMOVE_FONT_FROM_STATE = "REMOVE_FONT";
+
+export const ADD_SELECTED_ELEMENT = "ADD_SELECTED_ELEMENT";
+export const REMOVE_SELECTED_ELEMENT = "REMOVE_SELECTED_ELEMENT";
+export const CLEAR_SELECTED_ELEMENTS = "CLEAR_SELECTED_ELEMENTS";
+
+export const GROUP_SELECTION_STATE = "SET_GROUP_SELECTION";
+export const CLONED_LAYER_IDS = "SET_CLONED_LAYER_IDS";
+
+export const ADDED_CURSOR_BROADCAST = "ADDED_CURSOR_BROADCAST";
+export const ADDED_POINTER_BROADCAST = "ADDED_POINTER_BROADCAST";
+export const ADDED_EVENT_BROADCAST = "ADDED_EVENT_BROADCAST";
+
+export const ImageSources = {
+  UNSPLASH: "Unsplash",
+  PEXELS: "Pexels",
+  PIXABAY: "Pixabay",
+  SHOPIFY: "Shopify",
+  SHUTTERSTOCK: "Shutterstock",
+  GOOGLE_DRIVE: "Google Drive",
+};
+
+export const ImageAppSources = {
+  GOOGLE_DRIVE: "google_drive",
+  SHOPIFY: "shopify_app",
+  COPY_PASTE: "copy_paste",
+  CUSTOM: "custom",
+};
+
+export const SourceTypes = {
+  UNSPLASH: "unsplash",
+  PEXELS: "pexels",
+  PIXABAY: "pixabay",
+  FLATICON: "flaticon",
+  GOOGLE_DRIVE: "google_drive",
+  SHOPIFY: "shopify",
+  SHUTTERSTOCK: "shutterstock",
+  GIPHY: "giphy",
+  BRANDFETCH: "brandfetch",
+  STORYBLOCKS_GRAPHIC: "storyblocks_graphic",
+  STORYBLOCKS_VIDEO: "storyblocks_video",
+  STORYBLOCKS_AUDIO: "storyblocks_audio",
+};
+
+export const IconsSources = {
+  FLATICON: "Flaticon",
+  BRANDFETCH: "Brandfetch",
+};
+
+// Settings
+
+export const USER_INFO = "USER_INFO";
+export const CHANGE_PSWD = "CHANGE_PSWD";
+
+export const NEW_TEAM_CREATED = "NEW_TEAM_CREATED";
+export const SHOW_ALL_TEAMS = "SHOW_ALL_TEAMS";
+export const SHOW_ALL_TEAM_MEMBERS = "SHOW_ALL_TEAM_MEMBERS";
+export const NEW_TEAM_MEMBER_ADDED = "NEW_TEAM_MEMBER_ADDED";
+export const UPDATE_TEAM_MEMBER_INFO = "UPDATE_TEAM_MEMBER_INFO";
+export const DELETE_TEAM_MEMBER = "DELETE_TEAM_MEMBER";
+export const UPDATE_WORKSPACE = "UPDATE_WORKSPACE";
+export const UPDATED_USER_INFO = "UPDATED_USER_INFO";
+export const VideoSources = {
+  PIXABAY: "Pixabay",
+  PEXELS: "Pexels",
+  SHUTTERSTOCK: "Shutterstock",
+  STORYBLOCKS: "Storyblocks",
+};
+export const MusicSources = {
+  STORYBLOCKS: "Storyblocks",
+};
+
+// PRESENT USER
+export const FOLLOW_USER = "FOLLOW_USER";
+export const UNFOLLOW_USER = "UNFOLLOW_USER";
+
+// COMMENTS
+export const UPDATE_COMMENT_COUNT = "UPDATE_COMMENT_COUNT";
+
+// Animations
+export const ADD_ANIMATION = "ADD_ANIMATION";
+export const EDIT_ANIMATION = "EDIT_ANIMATION";
+export const ENTER_ANIMATION = "enter";
+export const EXIT_ANIMATION = "exit";
+
+// Video
+export const SET_VIDEO_PLAY_STATUS = "SET_IS_VIDEO_PLAYING";
+
+// Brandkit
+export const ADD_BRANDKIT = "ADD_BRANDKIT";
+export const GET_BRANDKITS = "GET_BRANDKITS";
+export const DELETED_BRANDKIT = "DELETED_BRANDKIT";
+export const UPDATED_BRANDKIT = "UPDATED_BRANDKIT";
+export const GET_BRANDKIT_PALETTES = "GET_BRANDKIT_PALETTES";
+export const UPDATED_BRANDKIT_PALETTES = "UPDATED_BRANDKIT_PALETTES";
+export const GET_BRANDKIT_LOGOS = "GET_BRANDKIT_LOGOS";
+export const ADD_BRANDKIT_LOGOS = "ADD_BRANDKIT_LOGOS";
+export const DELETED_BRANDKIT_LOGOS = "DELETED_BRANDKIT_LOGOS";
+export const SWITCH_BRANDKIT = "SWITCH_BRANDKIT";
+
+// Homepage cards
+export const SELECT_CARD = "SELECT_CARD";
+export const UNSELECT_CARD = "UNSELECT_CARD";
+export const RESET_CARDS_STATE = "RESET_CARDS_STATE";
+
+// command+k
+export const SHOW_COMMANDK_SEARCH = "SHOW_COMMANDK_SEARCH";
+export const HIDE_COMMANDK_SEARCH = "HIDE_COMMANDK_SEARCH";
+
+// Folders
+export const SET_FOLDERS = "SET_FOLDERS";
+export const RESET_FOLDERS_STATE = "RESET_FOLDERS_STATE";
+export const ADD_FOLDER = "ADD_FOLDER";
+export const ADD_FOLDER_ITEMS = "ADD_FOLDER_ITEMS";
+export const RENAME_FOLDER = "RENAME_FOLDER";
+export const REMOVE_FOLDER = "REMOVE_FOLDER";
+export const REMOVE_FOLDER_ITEM = "REMOVE_FOLDER_ITEM";
+
+// Partner actions
+export const GET_PARTNERS_START = "GET_PARTNERS_START";
+export const GET_PARTNERS = "GET_PARTNERS";
+export const DISCONNECT_PARTNER = "DISCONNECT_PARTNER";
+
+//AI Document
+export const RESET_DOCUMENT = "RESET_DOCUMENT";
+export const UPDATE_DOCUMENT = "UPDATE_DOCUMENT";
+export const DELETE_DOCUMENT = "DELETE_DOCUMENT";
+export const GET_DOCUMENTS = "GET_DOCUMENTS";
+
+// Slide Presets
+export const GET_SLIDE_PRESET_CATEGORIES = "GET_SLIDE_PRESET_CATEGORIES";
+export const GET_SLIDE_PRESETS = "GET_SLIDE_PRESETS";
+
+export const RESET_TEMPLATES = "RESET_TEMPLATES";
+
+// Billing
+export const GET_SUBSCRIPTION = "GET_SUBSCRIPTION";
+// Motion Store actions
+export const UPDATE_STORY_MUSIC_PLAYBACK = "UPDATE_STORY_MUSIC_PLAYBACK";
+
+export const CHANGE_PLAYER_STATE = "CHANGE_PLAYER_STATE";
+
+// Bottom Panel related changes
+export const OPEN_BOTTOM_PANEL = "OPEN_BOTTOM_PANEL";
+export const CLOSE_BOTTOM_PANEL = "CLOSE_BOTTOM_PANEL";

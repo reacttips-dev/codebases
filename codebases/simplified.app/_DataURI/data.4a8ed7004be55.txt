@@ -1,0 +1,1 @@
+chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/js/contentscripts/location-warp.js

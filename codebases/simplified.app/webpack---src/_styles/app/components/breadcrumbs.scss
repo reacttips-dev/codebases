@@ -1,0 +1,24 @@
+.breadcrumb {
+  background-color: transparent !important;
+
+  .breadcrumb-item {
+    a {
+      color: $accent !important;
+    }
+
+    &.breadcrumb-item {
+      &:not(:first-child)::before {
+        content: ">";
+        color: $white;
+      }
+    }
+
+    &.active {
+      color: $content_light_inactive;
+    }
+    &.active::before {
+      content: ">";
+      color: $white;
+    }
+  }
+}

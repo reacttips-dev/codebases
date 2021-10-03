@@ -1,0 +1,43 @@
+var _rect, _path, _path2;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgIconToFront(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "Layer_1",
+    "data-name": "Layer 1",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 64 64",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "icon") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: 4,
+    y: 4,
+    width: 35,
+    height: 35,
+    rx: 4,
+    ry: 4
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M49.5,45.5v-27a4,4,0,0,0-4-4H42v6h1.5v23h-23V42h-6v3.5a4,4,0,0,0,4,4h27A4,4,0,0,0,49.5,45.5Z"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M56,25H52.5v6H54V54H31V52.5H25V56a4,4,0,0,0,4,4H56a4,4,0,0,0,4-4V29A4,4,0,0,0,56,25Z"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgIconToFront);
+export default __webpack_public_path__ + "static/media/icon_to_front.35dec851.svg";
+export { ForwardRef as ReactComponent };

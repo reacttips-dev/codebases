@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+@import "_styles/app.scss";
+@import "~react-pro-sidebar/dist/scss/styles.scss";
+
+body {
+  margin: 0;
+  background-color: $grey-black;
+  user-select: none;
+  --scale: 1;
+  cursor: url("assets/icons/c-default.svg"), auto;
+}

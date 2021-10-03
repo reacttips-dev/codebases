@@ -1,0 +1,36 @@
+var _polygon, _path;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgIconFlipH(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "Layer_1",
+    "data-name": "Layer 1",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 64 64",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "icon") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _polygon || (_polygon = /*#__PURE__*/React.createElement("polygon", {
+    points: "35.88 39.88 40.12 44.12 52.24 32 40.12 19.88 35.88 24.12 40.76 29 35 29 35 35 40.76 35 35.88 39.88"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M56,4H8A4,4,0,0,0,4,8V56a4,4,0,0,0,4,4H56a4,4,0,0,0,4-4V8A4,4,0,0,0,56,4ZM29,35H17V29H29ZM54,54H32V10H54Z"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgIconFlipH);
+export default __webpack_public_path__ + "static/media/icon_flip_h.b9160082.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,48 @@
+.btn-tbasic {
+  font-weight: 500;
+  background-color: $tr_button_enabled;
+  cursor: pointer;
+  border-radius: 8px;
+  color: $content_light_inactive;
+  &:hover {
+    background-color: $tr_button_hover;
+    color: $content_light;
+  }
+
+  &:active {
+    background-color: $tr_button_pressed;
+    color: $content_light;
+  }
+}
+
+.btn-tprimary {
+  border-radius: 8px;
+  background-color: $primary_00;
+  color: #1e1e1e;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0;
+
+  &:hover {
+    background-color: $primary_02;
+  }
+}
+
+.btn-tsecondary {
+  color: $primary_00;
+  border-color: $primary_00;
+
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0;
+
+  &:hover {
+    background-color: $primary_02;
+  }
+}
+
+.btn-xxl {
+  border-radius: 8px;
+}

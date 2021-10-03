@@ -1,0 +1,209 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.tldr-editor-main {
+  display: flex;
+  height: calc(100% - #{$header-height});
+
+  @media (max-width: 768px) {
+    height: calc(100% - #{$header-height});
+  }
+}
+
+.tldr-editor {
+  overflow: visible;
+  display: flex;
+  flex: 1;
+  // margin-left: $sidebar-width;
+  min-height: calc(100vh - #{$header-height});
+
+  @media (max-width: 768px) {
+    min-height: auto;
+    z-index: 10;
+  }
+
+  &-canvas-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      height: 100%;
+    }
+  }
+  &-canvas {
+    position: relative;
+    flex: 1;
+    display: flex;
+  }
+  .tldr-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &-header-toolbar {
+    background: rgba(0, 0, 0, 0.05);
+    transition: width 0.05s linear;
+    display: flex;
+    width: calc(100% - #{$sidebar-width});
+    position: fixed;
+    z-index: 1001;
+    justify-content: center;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  &-lfooter-toolbar {
+    display: flex;
+    align-items: center;
+  }
+  &-mfooter-toolbar {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;
+  }
+  &-rfooter-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &-zoom {
+      background: rgba(0, 0, 0, 0.25);
+      position: absolute;
+      display: block;
+      bottom: 15px;
+      right: 15px;
+      border-radius: 12px;
+      -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.tldr-wrapper {
+  height: 100%;
+  display: flex;
+  position: relative;
+  // overflow-y: hidden;
+
+  &.tldr-wrapper-row {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  &.tldr-wrapper-col {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &.tldr-wrapper-md-row {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  @media (max-width: 786px) {
+    &.tldr-wrapper-sm-col {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    overflow-x: hidden;
+
+    @media (max-width: 768px) {
+      margin-top: -1.5rem;
+    }
+  }
+
+  #infinite-scroll-main-container {
+    overflow-y: auto !important;
+  }
+
+  .tldr-content-wrap {
+    flex: 1;
+    display: flex;
+    position: relative;
+
+    @media (max-width: 768px) {
+      min-height: 100vh;
+    }
+  }
+
+  .search-box {
+    input {
+      padding-left: 0px;
+    }
+  }
+}
+
+.slide-presets-accordion {
+  background-color: transparent !important;
+
+  .accordion-card {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0px !important;
+
+    .accordion-card-header {
+      background-color: transparent !important;
+      padding: unset !important;
+      margin: unset !important;
+      cursor: pointer;
+      border-bottom: 0px solid transparent !important;
+
+      .card-header {
+        background-color: transparent !important;
+        padding: unset !important;
+        border-bottom: 0px solid transparent !important;
+      }
+    }
+
+    .accordion-card-body {
+      padding: 1.25rem 0rem 0rem 0rem !important;
+    }
+  }
+
+  .collapsible-title-row {
+    display: flex;
+    align-items: center;
+
+    svg {
+      path {
+        fill: #d8d8d8;
+      }
+    }
+
+    .collapsible-title {
+      margin: unset !important;
+      color: #d8d8d8;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0.13px;
+      line-height: 19px;
+    }
+  }
+}

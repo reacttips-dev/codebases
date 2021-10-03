@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7AFE994F-568D-4008-B6AF-6E475A0B4029</title>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cursors" transform="translate(-193.000000, -280.000000)">
+            <g id="Group-3" transform="translate(180.000000, 241.000000)">
+                <g id="c-default" transform="translate(13.000000, 39.000000)">
+                    <rect id="box" x="0" y="0" width="16" height="16"></rect>
+                    <path d="M1.5,-0.207106781 L12.2071068,10.5 L6.20710678,10.5 L1.5,15.2071068 L1.5,-0.207106781 Z" id="Fill-1" stroke="#000000" fill="#FEFEFE" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

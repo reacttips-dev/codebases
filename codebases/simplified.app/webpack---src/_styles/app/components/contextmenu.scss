@@ -1,0 +1,35 @@
+.react-contexify {
+  &__item {
+    &:not(&--disabled):hover > &__content {
+      color: white;
+      background-color: $accent;
+    }
+  }
+}
+
+.react-contexify__theme--dark {
+  z-index: 1;
+  min-width: 150px;
+  font-size: 14px;
+  padding: 0px 0;
+  background-color: rgba(40, 40, 40, 0.98);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4), 0 0 0 1px #222;
+  & .react-contexify__submenu {
+    background-color: rgba(40, 40, 40, 0.98);
+  }
+  .react-contexify__separator {
+    background-color: #eee;
+  }
+  .react-contexify__item {
+    &__content {
+      align-items: baseline;
+      color: #ffffff;
+      font-size: 12px;
+    }
+    &__icon {
+      margin-right: 8px;
+      width: 12px;
+      text-align: center;
+    }
+  }
+}

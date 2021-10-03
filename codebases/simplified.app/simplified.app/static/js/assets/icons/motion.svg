@@ -1,0 +1,36 @@
+var _g;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgMotion(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    "data-name": "Layer 1",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 19.32 19.32",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    "data-name": "[FEB]Animation-Sidebar-Slide"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M10.4 13.16a1.124 1.124 0 011.59 1.59l-4.24 4.23a1.13 1.13 0 01-1.59-1.6zm-3.45-2.38a1.124 1.124 0 011.59 1.59L2.71 18.2a1.124 1.124 0 01-1.59-1.59zM4.57 7.33a1.124 1.124 0 011.59 1.59l-4.24 4.24a1.13 1.13 0 01-1.6 0 1.14 1.14 0 010-1.59h.02zm8.77-7.35a6 6 0 11-4.25 10.25A6 6 0 0113.34-.02z",
+    fill: "#fff",
+    fillRule: "evenodd",
+    "data-name": "Icon-/-Animation"
+  }))));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgMotion);
+export default __webpack_public_path__ + "static/media/motion.19a143e4.svg";
+export { ForwardRef as ReactComponent };

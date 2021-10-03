@@ -1,0 +1,70 @@
+var _g;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgSidebarComponents(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, ["title", "titleId"]);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: "40px",
+    height: "41px",
+    viewBox: "0 0 40 41",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title === undefined ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, "93A1C305-96E2-4EE9-BD68-DBEE3A03D247") : title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _g || (_g = /*#__PURE__*/React.createElement("g", {
+    id: "October-Revision",
+    stroke: "none",
+    strokeWidth: 1,
+    fill: "none",
+    fillRule: "evenodd"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "[WIP][OR]Editor-Chapter-Multiple",
+    transform: "translate(-24.000000, -307.000000)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "catalog-sidebar",
+    transform: "translate(0.000000, 72.000000)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Group-4",
+    transform: "translate(0.000000, 44.000000)"
+  }, /*#__PURE__*/React.createElement("g", {
+    id: "Group-2",
+    transform: "translate(0.000000, 176.000000)"
+  }, /*#__PURE__*/React.createElement("rect", {
+    id: "Rectangle",
+    x: 0,
+    y: 0,
+    width: 88,
+    height: 88
+  }), /*#__PURE__*/React.createElement("g", {
+    id: "Icons/editor/sidebar-elements",
+    transform: "translate(24.000000, 15.999743)"
+  }, /*#__PURE__*/React.createElement("rect", {
+    id: "Box",
+    x: 0,
+    y: 0,
+    width: 40,
+    height: 40
+  }), /*#__PURE__*/React.createElement("path", {
+    d: "M20,2 C29.9405,2 38,10.0595 38,20 C38,26.7802752 34.2508734,32.6849467 28.7128909,35.7543557 L28.7123198,32.7023815 L28.7054835,32.5931193 C28.6513349,32.1634092 28.2822221,31.8284383 27.8383904,31.8284522 L27.8383904,31.8284522 L23.2720376,31.8271807 L23.1733829,31.8224733 C22.7663725,31.7807598 22.6285008,31.4672947 22.866194,31.0904111 C22.866194,31.0904111 23.2494528,30.4865488 23.2494791,29.6437039 C23.2481216,27.832153 21.7802596,26.364291 19.9715369,26.3657617 C18.159986,26.3644042 16.6920324,27.8323578 16.6933899,29.6439088 C16.6933636,30.4867537 17.0751705,31.0891779 17.0751705,31.0891779 C17.3339507,31.4978648 17.1500983,31.8287862 16.6692808,31.8288012 L16.6692808,31.8288012 L12.104342,31.8289438 L11.9947543,31.8355096 C11.5637509,31.8887659 11.2276524,32.2592051 11.2289438,32.704342 L11.2289438,32.704342 L11.2269696,35.7210324 C5.72183342,32.6423408 2,26.7558197 2,20 C2,10.0595 10.0588571,2 20,2 Z M27.8672813,9.25732049 L23.2882009,9.2571774 C22.8059692,9.2585765 22.6249658,9.58948647 22.8851856,9.99394704 C22.8851856,9.99394704 23.2769298,10.609123 23.2769564,11.4604529 C23.277013,13.2705897 21.8105651,14.7370375 20.0004283,14.736981 C18.1888774,14.7383385 16.7209237,13.2703848 16.7222813,11.4588339 C16.7208406,10.6089181 17.1153746,9.99376674 17.1153746,9.99376674 C17.3755691,9.58932243 17.1917168,9.25840106 16.7108992,9.25838603 L12.1318188,9.25824294 C11.6510012,9.25822792 11.2578744,9.65135471 11.2578894,10.1321723 L11.2566179,14.6985252 C11.2580472,15.180757 10.925723,15.3603461 10.5198484,15.1043687 C10.5198484,15.1043687 9.91598608,14.72111 9.07314113,14.7210836 C7.26159021,14.7224412 5.79372828,16.1903031 5.79519897,17.9990258 C5.79384141,19.8105767 7.26179508,21.2785304 9.073346,21.2771728 C9.91619095,21.2771992 10.5186152,20.8953923 10.5186152,20.8953923 C10.927302,20.636612 11.2582234,20.8204644 11.2582384,21.301282 L11.2583811,25.8662207 C11.256982,26.3484524 11.6515476,26.743018 12.1337793,26.7416189 L16.698718,26.7417616 C17.1795356,26.7417766 17.3619531,26.4094525 17.1045615,26.0021637 C17.1045615,26.0021637 16.7213027,25.3983014 16.7226906,24.5568706 C16.722634,22.7467338 18.190496,21.2788719 20.0006328,21.2789285 C21.8093554,21.2775708 23.277309,22.7455245 23.2787798,24.5570755 C23.2788062,25.3999205 22.8969992,26.0023447 22.8969992,26.0023447 C22.638219,26.4110315 22.819243,26.7419528 23.3000606,26.7419679 L27.8678277,26.7421106 C28.3486453,26.7421256 28.7417721,26.3489988 28.7417571,25.8681812 L28.7416143,21.3004142 C28.7401852,20.8210107 29.0739234,20.6371791 29.4797981,20.8959848 C29.4797981,20.8959848 30.0836604,21.2792436 30.9279195,21.2778558 C32.7394705,21.2793266 34.2073324,19.8114646 34.2058616,17.9999136 C34.2058051,16.1897768 32.7378514,14.7218231 30.9277146,14.7217666 C30.0834555,14.7231544 29.4810313,15.1049613 29.4810313,15.1049613 C29.0737586,15.3623274 28.7414231,15.1798891 28.741408,14.6990715 L28.7426795,10.1327187 C28.7426645,9.6519011 28.3480989,9.25733551 27.8672813,9.25732049 Z",
+    id: "Combined-Shape",
+    fill: "#888888"
+  })))))))));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgSidebarComponents);
+export default __webpack_public_path__ + "static/media/sidebar-components.b5bfa7dc.svg";
+export { ForwardRef as ReactComponent };

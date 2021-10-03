@@ -1,0 +1,1 @@
+{"detail":"event rejected due to rate limit"}
